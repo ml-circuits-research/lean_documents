@@ -1,0 +1,152 @@
+{
+  "updated_at": "2026-11-04T15:16:58.714936+00:00",
+  "total_documents": 9,
+  "processed_this_batch": [],
+  "complete": false,
+  "documents": [
+    {
+      "id": "D00001",
+      "role": "brief",
+      "original": "input/originals/D00001.md",
+      "logical": "input/brief.md",
+      "external": "/home/salboaie/work/lean_documents/examples/08-scanned-inventory/brief.md",
+      "original_sha": "f7cbb6a2822be482b7587734c0b1e27ffb1de58b9e401256c21cc601c36a41c0",
+      "status": "ready",
+      "warnings": [],
+      "tools": {
+        "python-stdlib": "3.14.8"
+      },
+      "extraction_sha": "e67bf8d27e77729ff20b93943b6cbed057503f73790ffb58af142cb77044c5f7"
+    },
+    {
+      "id": "D00002",
+      "role": "report",
+      "original": "input/originals/D00002.md",
+      "logical": "input/report.md",
+      "external": "/home/salboaie/work/lean_documents/examples/08-scanned-inventory/report-correct.md",
+      "original_sha": "d795479f7863b38a2758c1a6f417823d22c5ed0fbe85a41ea3bca42e9a4a5c47",
+      "status": "ready",
+      "warnings": [],
+      "tools": {
+        "python-stdlib": "3.14.8"
+      },
+      "extraction_sha": "e5759f9de478f58ead1a15f7e8863b38fbe2a047c4111f708de606ba637a81ec"
+    },
+    {
+      "id": "D00003",
+      "role": "source",
+      "original": "input/originals/D00003.md",
+      "logical": "input/sources/01-stock-rules.md",
+      "external": "/home/salboaie/work/lean_documents/examples/08-scanned-inventory/sources/01-stock-rules.md",
+      "original_sha": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53",
+      "status": "ready",
+      "warnings": [],
+      "tools": {
+        "python-stdlib": "3.14.8"
+      },
+      "extraction_sha": "56a820a0e3df54896cb6d74e04674349a122f53e895afa50bebf3e194744ba88"
+    },
+    {
+      "id": "D00004",
+      "role": "source",
+      "original": "input/originals/D00004.md",
+      "logical": "input/sources/02-opening-and-journal.md",
+      "external": "/home/salboaie/work/lean_documents/examples/08-scanned-inventory/sources/02-opening-and-journal.md",
+      "original_sha": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189",
+      "status": "ready",
+      "warnings": [],
+      "tools": {
+        "python-stdlib": "3.14.8"
+      },
+      "extraction_sha": "23f21fac9e0e4a1901baaafbe53a7fc0a7667b58e13a1347a8c132579eb6d9e8"
+    },
+    {
+      "id": "D00005",
+      "role": "source",
+      "original": "input/originals/D00005.md",
+      "logical": "input/sources/03-signed-counts.md",
+      "external": "/home/salboaie/work/lean_documents/examples/08-scanned-inventory/sources/03-signed-counts.md",
+      "original_sha": "902b530d21257c2ef30042baaa46dbc1fd5d2d6e8576e8d8c18fdc3c1b8d28af",
+      "status": "ready",
+      "warnings": [],
+      "tools": {
+        "python-stdlib": "3.14.8"
+      },
+      "extraction_sha": "2edbd5410450a9f46d09c352704ef7a2f9df315260c5e364a9d43818051b91a6"
+    },
+    {
+      "id": "D00006",
+      "role": "source",
+      "original": "input/originals/D00006.md",
+      "logical": "input/sources/04-receiving-messages.md",
+      "external": "/home/salboaie/work/lean_documents/examples/08-scanned-inventory/sources/04-receiving-messages.md",
+      "original_sha": "5902f74c3a28ac0e3f3d0e49dc8503a2d0417d6a3658bde4c64ba768051d0c17",
+      "status": "ready",
+      "warnings": [],
+      "tools": {
+        "python-stdlib": "3.14.8"
+      },
+      "extraction_sha": "2c26867d0cb5a7382f8bd485400263dfb7ce4df3fed14ff15a22e0d7de0d4d9b"
+    },
+    {
+      "id": "D00007",
+      "role": "source",
+      "original": "input/originals/D00007.md",
+      "logical": "input/sources/05-custody-register.md",
+      "external": "/home/salboaie/work/lean_documents/examples/08-scanned-inventory/sources/05-custody-register.md",
+      "original_sha": "54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830",
+      "status": "ready",
+      "warnings": [],
+      "tools": {
+        "python-stdlib": "3.14.8"
+      },
+      "extraction_sha": "24179997e6dde62a30ffcd60c0655a33cd7c058fb6be49483e89f148da8fd61e"
+    },
+    {
+      "id": "D00008",
+      "role": "source",
+      "original": "input/originals/D00008.pdf",
+      "logical": "input/sources/06-shipping-tickets-scan.pdf.md",
+      "external": "/home/salboaie/work/lean_documents/examples/08-scanned-inventory/sources/06-shipping-tickets-scan.pdf",
+      "original_sha": "e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58",
+      "status": "partial",
+      "warnings": [
+        "pdf-page-0001: 5/235 OCR words are below confidence 85.",
+        "OCR text is not independently verified against the original visual source, regardless of confidence.",
+        "pdf-page-0002: 4/236 OCR words are below confidence 85.",
+        "pdf-page-0003: 3/249 OCR words are below confidence 85.",
+        "pdf-page-0004: 4/246 OCR words are below confidence 85.",
+        "pdf-page-0005: 4/241 OCR words are below confidence 85."
+      ],
+      "tools": {
+        "python-stdlib": "3.14.8",
+        "pdfinfo": "pdfinfo version 26.01.0",
+        "pdfimages": "pdfimages version 26.01.0",
+        "pdftotext": "pdftotext version 26.01.0",
+        "pdftoppm": "pdftoppm version 26.01.0",
+        "tesseract": "tesseract 5.5.4"
+      },
+      "extraction_sha": "94aabb1fff77c15b3c55c364422671b5b3a18f69ad90a28ef593106f9f98c9a9"
+    },
+    {
+      "id": "D00009",
+      "role": "source",
+      "original": "input/originals/D00009.md",
+      "logical": "input/sources/07-bin-and-exception-register.md",
+      "external": "/home/salboaie/work/lean_documents/examples/08-scanned-inventory/sources/07-bin-and-exception-register.md",
+      "original_sha": "17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9",
+      "status": "ready",
+      "warnings": [],
+      "tools": {
+        "python-stdlib": "3.14.8"
+      },
+      "extraction_sha": "86a84c204625ea53651d06442dfb0183161aaf68b345d6229f03cd37b7b5f35c"
+    }
+  ],
+  "elapsed_seconds": 0.01218024899935699,
+  "budget": {
+    "max_documents": null,
+    "max_seconds": null
+  },
+  "coverage_meaning": "Extraction coverage only, not claim review completeness or OCR accuracy"
+}

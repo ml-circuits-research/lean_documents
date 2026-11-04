@@ -1,0 +1,221 @@
+{
+  "text": "<a id=\"document-preamble\"></a>\n# Synthetic supplied report: 10-distributed-assurance (correct)\n\nAudit this supplied report independently against the source packet.\n\n<a id=\"C10-OK-01\"></a>\n**C10-OK-01.** The finite identity registry contains exactly sixty nodes N01 through N60.\n\nCitations: sources/00-governance.md#[G01]; sources/04-node-registry.pdf#[RG01]; sources/04-node-registry.pdf#[RG05].\n\n<a id=\"C10-OK-02\"></a>\n**C10-OK-02.** N04 historical release was authorized under revision A without a central permit.\n\nCitations: sources/records/004-n04.md#[N04-01]; sources/03-policy-transition.md#[PV01].\n\n<a id=\"C10-OK-03\"></a>\n**C10-OK-03.** N09 release on 21 September lacked an in-force permit.\n\nCitations: sources/records/009-n09.md#[N09-01]; sources/03-policy-transition.md#[PV02].\n\n<a id=\"C10-OK-04\"></a>\n**C10-OK-04.** The north-operator alias identifies Ben on 21 September, before his credential activated.\n\nCitations: sources/01-alias-register.md#[AL01]; sources/records/021-n21.md#[N21-01].\n\n<a id=\"C10-OK-05\"></a>\n**C10-OK-05.** Devon approval of N41 on 20 September lies within delegated node and time scope.\n\nCitations: sources/02-delegation.docx#[AU01]; sources/records/041-n41.md#[N41-01].\n\n<a id=\"C10-OK-06\"></a>\n**C10-OK-06.** Devon approval of N51 lacked delegated scope.\n\nCitations: sources/02-delegation.docx#[AU04]; sources/records/051-n51.md#[N51-01].\n\n<a id=\"C10-OK-07\"></a>\n**C10-OK-07.** N57 release at 10:00 on 22 September was authorized by the signed board exception.\n\nCitations: sources/98-board-exception.md#[EX01]; sources/records/057-n57.md#[N57-01]; sources/02-delegation.docx#[AU03].\n\n<a id=\"C10-OK-08\"></a>\n**C10-OK-08.** The board exception does not cover N58.\n\nCitations: sources/98-board-exception.md#[EX01]; sources/98-board-exception.md#[EX03].\n\n<a id=\"C10-OK-09\"></a>\n**C10-OK-09.** N58 provides an explicit counterexample to universal recorded-release authorization.\n\nCitations: sources/records/058-n58.md#[N58-01]; sources/03-policy-transition.md#[PV03].\n\n<a id=\"C10-OK-10\"></a>\n**C10-OK-10.** N59 authorization is unsupported because its permit history is missing and incomplete.\n\nCitations: sources/records/059-n59.md#[N59-01]; sources/00-governance.md#[G04].\n\n<a id=\"C10-OK-11\"></a>\n**C10-OK-11.** N60 named release R1 has a complete authorization argument, while its late-month event history is incomplete.\n\nCitations: sources/records/060-n60.md#[N60-01].\n\n<a id=\"C10-OK-12\"></a>\n**C10-OK-12.** The proposal mentioning N58 did not include it in the final signed grant.\n\nCitations: sources/97-request-correspondence.md#[REQ01]; sources/98-board-exception.md#[EX02].\n\n<a id=\"C10-OK-13\"></a>\n**C10-OK-13.** A source change requires checking affected premises before reusing an audit result.\n\nCitations: sources/00-governance.md#[G05].\n\n<a id=\"C10-OK-14\"></a>\n**C10-OK-14.** The ordinary N01 release meets revision B authorization requirements.\n\nCitations: sources/records/001-n01.md#[N01-01]; sources/00-governance.md#[G02].\n",
+  "segments": [
+    {
+      "anchor": "document-preamble",
+      "quote": "# Synthetic supplied report: 10-distributed-assurance (correct)\n\nAudit this supplied report independently against the source packet.",
+      "locator": {
+        "kind": "text",
+        "start_line": 1,
+        "end_line": 3,
+        "start_character": 0,
+        "end_character": 132,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C10-OK-01",
+      "quote": "**C10-OK-01.** The finite identity registry contains exactly sixty nodes N01 through N60.\n\nCitations: sources/00-governance.md#[G01]; sources/04-node-registry.pdf#[RG01]; sources/04-node-registry.pdf#[RG05].",
+      "locator": {
+        "kind": "text",
+        "start_line": 6,
+        "end_line": 8,
+        "start_character": 157,
+        "end_character": 364,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C10-OK-02",
+      "quote": "**C10-OK-02.** N04 historical release was authorized under revision A without a central permit.\n\nCitations: sources/records/004-n04.md#[N04-01]; sources/03-policy-transition.md#[PV01].",
+      "locator": {
+        "kind": "text",
+        "start_line": 11,
+        "end_line": 13,
+        "start_character": 389,
+        "end_character": 573,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C10-OK-03",
+      "quote": "**C10-OK-03.** N09 release on 21 September lacked an in-force permit.\n\nCitations: sources/records/009-n09.md#[N09-01]; sources/03-policy-transition.md#[PV02].",
+      "locator": {
+        "kind": "text",
+        "start_line": 16,
+        "end_line": 18,
+        "start_character": 598,
+        "end_character": 756,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C10-OK-04",
+      "quote": "**C10-OK-04.** The north-operator alias identifies Ben on 21 September, before his credential activated.\n\nCitations: sources/01-alias-register.md#[AL01]; sources/records/021-n21.md#[N21-01].",
+      "locator": {
+        "kind": "text",
+        "start_line": 21,
+        "end_line": 23,
+        "start_character": 781,
+        "end_character": 971,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C10-OK-05",
+      "quote": "**C10-OK-05.** Devon approval of N41 on 20 September lies within delegated node and time scope.\n\nCitations: sources/02-delegation.docx#[AU01]; sources/records/041-n41.md#[N41-01].",
+      "locator": {
+        "kind": "text",
+        "start_line": 26,
+        "end_line": 28,
+        "start_character": 996,
+        "end_character": 1175,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C10-OK-06",
+      "quote": "**C10-OK-06.** Devon approval of N51 lacked delegated scope.\n\nCitations: sources/02-delegation.docx#[AU04]; sources/records/051-n51.md#[N51-01].",
+      "locator": {
+        "kind": "text",
+        "start_line": 31,
+        "end_line": 33,
+        "start_character": 1200,
+        "end_character": 1344,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C10-OK-07",
+      "quote": "**C10-OK-07.** N57 release at 10:00 on 22 September was authorized by the signed board exception.\n\nCitations: sources/98-board-exception.md#[EX01]; sources/records/057-n57.md#[N57-01]; sources/02-delegation.docx#[AU03].",
+      "locator": {
+        "kind": "text",
+        "start_line": 36,
+        "end_line": 38,
+        "start_character": 1369,
+        "end_character": 1588,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C10-OK-08",
+      "quote": "**C10-OK-08.** The board exception does not cover N58.\n\nCitations: sources/98-board-exception.md#[EX01]; sources/98-board-exception.md#[EX03].",
+      "locator": {
+        "kind": "text",
+        "start_line": 41,
+        "end_line": 43,
+        "start_character": 1613,
+        "end_character": 1755,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C10-OK-09",
+      "quote": "**C10-OK-09.** N58 provides an explicit counterexample to universal recorded-release authorization.\n\nCitations: sources/records/058-n58.md#[N58-01]; sources/03-policy-transition.md#[PV03].",
+      "locator": {
+        "kind": "text",
+        "start_line": 46,
+        "end_line": 48,
+        "start_character": 1780,
+        "end_character": 1968,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C10-OK-10",
+      "quote": "**C10-OK-10.** N59 authorization is unsupported because its permit history is missing and incomplete.\n\nCitations: sources/records/059-n59.md#[N59-01]; sources/00-governance.md#[G04].",
+      "locator": {
+        "kind": "text",
+        "start_line": 51,
+        "end_line": 53,
+        "start_character": 1993,
+        "end_character": 2175,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C10-OK-11",
+      "quote": "**C10-OK-11.** N60 named release R1 has a complete authorization argument, while its late-month event history is incomplete.\n\nCitations: sources/records/060-n60.md#[N60-01].",
+      "locator": {
+        "kind": "text",
+        "start_line": 56,
+        "end_line": 58,
+        "start_character": 2200,
+        "end_character": 2373,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C10-OK-12",
+      "quote": "**C10-OK-12.** The proposal mentioning N58 did not include it in the final signed grant.\n\nCitations: sources/97-request-correspondence.md#[REQ01]; sources/98-board-exception.md#[EX02].",
+      "locator": {
+        "kind": "text",
+        "start_line": 61,
+        "end_line": 63,
+        "start_character": 2398,
+        "end_character": 2582,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C10-OK-13",
+      "quote": "**C10-OK-13.** A source change requires checking affected premises before reusing an audit result.\n\nCitations: sources/00-governance.md#[G05].",
+      "locator": {
+        "kind": "text",
+        "start_line": 66,
+        "end_line": 68,
+        "start_character": 2607,
+        "end_character": 2749,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C10-OK-14",
+      "quote": "**C10-OK-14.** The ordinary N01 release meets revision B authorization requirements.\n\nCitations: sources/records/001-n01.md#[N01-01]; sources/00-governance.md#[G02].",
+      "locator": {
+        "kind": "text",
+        "start_line": 71,
+        "end_line": 73,
+        "start_character": 2774,
+        "end_character": 2939,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    }
+  ],
+  "tools": {
+    "python-stdlib": "3.14.8"
+  },
+  "warnings": [],
+  "complete": true,
+  "status": "ready"
+}

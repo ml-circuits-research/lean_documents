@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "dossier_id": "03-audit-arithmetic",
+  "classification": "evaluator_only",
+  "status": "unverified_expectations",
+  "warning": "These are author expectations, not blind-review findings or executed Lean results. Do not provide this file to blind reviewers.",
+  "formal_outcome_scope": "Prospective outcomes assume a faithful, reviewed encoding of the stated conventions and cited sources. No Lean validation has been executed.",
+  "expectations": [
+    {
+      "claim_id": "C03-01",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/ledger.md#L-02"
+      ],
+      "rationale": "The four integer amounts sum to 275000; the euro conversion is exact.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C03-02",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/ledger.md#L-02",
+        "sources/ledger.md#L-03"
+      ],
+      "rationale": "300000 - 275000 = 25000, not 35000.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C03-03",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/ledger.md#L-02",
+        "sources/method.md#M-02"
+      ],
+      "rationale": "Two absent approvals among four sampled entries give 2/4 = 1/2.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C03-04",
+      "semantic_state": "undetermined",
+      "prospective_disposition": "blocked",
+      "source_anchors": [
+        "sources/ledger.md#L-01",
+        "sources/ledger.md#L-02",
+        "sources/method.md#M-01"
+      ],
+      "rationale": "Unsampled approval statuses are unknown. Completions with 2 and with 10 total exceptions both fit; one refutes and one satisfies the claim. A generalization is unsupported, not established false.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C03-05",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/ledger.md#L-02"
+      ],
+      "rationale": "P03 plus P04 is 50000 + 25000 = 75000.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C03-06",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/inspection.md#I-01",
+        "sources/method.md#M-02"
+      ],
+      "rationale": "The cited paragraph explicitly records two missing approvals; invoice matching is a separate control.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C03-07",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/inspection.md#I-01"
+      ],
+      "rationale": "The cited paragraph says approvals were absent for P03 and P04. Its asserted content is the opposite of the report paraphrase. A formal result would require reviewed text-to-proposition extraction.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C03-08",
+      "semantic_state": "undetermined",
+      "prospective_disposition": "blocked",
+      "source_anchors": [
+        "sources/annex-register.md#A-01",
+        "sources/annex-register.md#A-02"
+      ],
+      "rationale": "The annex is absent. Its title does not establish clearance, and missing evidence does not establish that clearance failed.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C03-09",
+      "semantic_state": "not_applicable",
+      "prospective_disposition": "nonformal",
+      "source_anchors": [
+        "sources/inspection.md#I-02"
+      ],
+      "rationale": "Impressive elegance is an aesthetic judgment without a stipulated decision criterion.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C03-10",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/ledger.md#L-01",
+        "sources/ledger.md#L-02"
+      ],
+      "rationale": "The sample is a subset of the population and contains two distinct exceptions; the lower bound survives unknown unsampled statuses.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C03-OK-01",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/ledger.md#L-02"
+      ],
+      "rationale": "The exact sum is 275000.",
+      "report_path": "report-correct.md"
+    },
+    {
+      "claim_id": "C03-OK-02",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/ledger.md#L-02",
+        "sources/ledger.md#L-03"
+      ],
+      "rationale": "The exact difference is 25000.",
+      "report_path": "report-correct.md"
+    },
+    {
+      "claim_id": "C03-OK-03",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/ledger.md#L-02"
+      ],
+      "rationale": "Both the count and summed amount follow from the two named exception rows.",
+      "report_path": "report-correct.md"
+    },
+    {
+      "claim_id": "C03-OK-04",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/ledger.md#L-01",
+        "sources/ledger.md#L-02",
+        "sources/method.md#M-02"
+      ],
+      "rationale": "The rate applies only to the sample; inclusion in the population establishes the lower bound without extrapolating the rate.",
+      "report_path": "report-correct.md"
+    },
+    {
+      "claim_id": "C03-OK-05",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/annex-register.md#A-01"
+      ],
+      "rationale": "This is a claim about the supplied packet and register content, not a claim that clearance failed. A formal proof would require reviewed evidence-inventory encoding.",
+      "report_path": "report-correct.md"
+    }
+  ],
+  "actual_lean_results": null
+}

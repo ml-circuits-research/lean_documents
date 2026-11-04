@@ -1,0 +1,8 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target017.lean
+Audit.rackObligation : Audit.rackAggregates = true ∧
+  Audit.rackTotal = 2500000 ∧
+    Audit.threshold (Audit.revisionAt 540) ≤ Audit.rackTotal ∧
+      Audit.competitionSatisfied 2 Audit.rackTotal false false = false
+'Audit.rackObligation' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.223]

@@ -1,0 +1,3 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target013.lean
+Audit.claim05 : ¬Audit.NeverDiedBefore9
+'Audit.claim05' depends on axioms: [propext]

@@ -1,0 +1,7 @@
+# Semantic correspondence review
+
+Reviewer: coordinating agent, separate from the audit-producing agent. The initial audit agent was instructed to use only the selected report, brief and sources; it was not given the evaluator answers or alternate report. The coordinator is familiar with fixture design, so this correspondence review is not a blind domain-expert certification.
+
+Reviewed the exact ten report paragraphs, P01-P04, R01-R05, the handoff and witness passages, every finding argument, model notes and Audit.lean. Standard approval uses strict ordering; request/grant distinction and full emergency conditions match the source. Register completeness is scoped to C-101..104; C-105 is never assigned a false approval from absent records. The modeled minute offsets and the inclusive 1440-minute emergency endpoint match the timestamps. PA-02/04/08 refutations identify direct contradictions; PA-06 and PA-07 theorem references are auxiliary, not world-event proofs. PA-10 proves bounded package nonmembership only. PA-09 remains nonformal. Role identity is transcribed into the finite data rather than proved separately. Accepted with these declared limits.
+
+Technical logs verify the encoded targets. This review checks transcription, applicability, target correspondence and limits; it does not authenticate synthetic sources, establish general model consistency, or certify unseen documents. No unresolved source-to-target mismatch was identified within the reviewed scope.

@@ -1,0 +1,154 @@
+{
+  "updated_at": "2026-11-04T15:35:42.203842+00:00",
+  "total_documents": 9,
+  "processed_this_batch": [
+    "D00002"
+  ],
+  "complete": true,
+  "documents": [
+    {
+      "id": "D00001",
+      "role": "brief",
+      "original": "input/originals/D00001.md",
+      "logical": "input/brief.md",
+      "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/brief.md",
+      "original_sha": "f7cbb6a2822be482b7587734c0b1e27ffb1de58b9e401256c21cc601c36a41c0",
+      "status": "ready",
+      "warnings": [],
+      "tools": {
+        "python-stdlib": "3.14.8"
+      },
+      "extraction_sha": "e67bf8d27e77729ff20b93943b6cbed057503f73790ffb58af142cb77044c5f7"
+    },
+    {
+      "id": "D00002",
+      "role": "report",
+      "original": "input/originals/D00002.md",
+      "logical": "input/report.md",
+      "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/report-correct.md",
+      "original_sha": "bc6aaaff81ba69ad57927d0a66fd57a19c33732cdb527dec3712c2940f6ca259",
+      "status": "ready",
+      "warnings": [],
+      "tools": {
+        "python-stdlib": "3.14.8"
+      },
+      "extraction_sha": "de6de67e73cbdaff2ef0247d87736cb7226986ad1f9440631696fd5353fa888e"
+    },
+    {
+      "id": "D00003",
+      "role": "source",
+      "original": "input/originals/D00003.docx",
+      "logical": "input/sources/01-specification-v1.docx.md",
+      "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/sources/01-specification-v1.docx",
+      "original_sha": "42b6976d7613cd50e93501e895fe71377ddaa902f793ed8efc9a002e10c3a8be",
+      "status": "ready",
+      "warnings": [
+        "DOCX segments follow body XML order, then header/footer members and notes/comments in member order. This is not rendered pagination or the placement of repeated page headers; no page coordinates are inferred."
+      ],
+      "tools": {
+        "python-stdlib": "3.14.8",
+        "docx-zip-xml": "Python zipfile and ElementTree 3.14.8"
+      },
+      "extraction_sha": "95630c7b941afe24501a6841626194f12178f41eb50727ba3ffab01edb9e7af1"
+    },
+    {
+      "id": "D00004",
+      "role": "source",
+      "original": "input/originals/D00004.docx",
+      "logical": "input/sources/02-specification-v2.docx.md",
+      "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/sources/02-specification-v2.docx",
+      "original_sha": "c780e4bf1b0a0a08647f2713a2f75c76b7654f8c545ba305a8fe29f0d160169c",
+      "status": "ready",
+      "warnings": [
+        "DOCX segments follow body XML order, then header/footer members and notes/comments in member order. This is not rendered pagination or the placement of repeated page headers; no page coordinates are inferred."
+      ],
+      "tools": {
+        "python-stdlib": "3.14.8",
+        "docx-zip-xml": "Python zipfile and ElementTree 3.14.8"
+      },
+      "extraction_sha": "c58175170f5545cdb5dd6cab3335ab5d8ec68eb23866a492c0421d15fc501fcd"
+    },
+    {
+      "id": "D00005",
+      "role": "source",
+      "original": "input/originals/D00005.docx",
+      "logical": "input/sources/03-exception-annex.docx.md",
+      "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/sources/03-exception-annex.docx",
+      "original_sha": "49ae022a5b2a5568215957e54514add6a50d7c2f129a6f5b354af45ac6931e70",
+      "status": "ready",
+      "warnings": [
+        "DOCX segments follow body XML order, then header/footer members and notes/comments in member order. This is not rendered pagination or the placement of repeated page headers; no page coordinates are inferred."
+      ],
+      "tools": {
+        "python-stdlib": "3.14.8",
+        "docx-zip-xml": "Python zipfile and ElementTree 3.14.8"
+      },
+      "extraction_sha": "b56ba25988add5583ccecccc29ec5b42fc3126e85063d46f5c2e1dd4ebdfb3ac"
+    },
+    {
+      "id": "D00006",
+      "role": "source",
+      "original": "input/originals/D00006.pdf",
+      "logical": "input/sources/04-test-runs.pdf.md",
+      "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/sources/04-test-runs.pdf",
+      "original_sha": "44640ce83d9f9b0c669a9d39eb8992d550a5250e75383c8ad15dfe19abb4dd4e",
+      "status": "ready",
+      "warnings": [],
+      "tools": {
+        "python-stdlib": "3.14.8",
+        "pdfinfo": "pdfinfo version 26.01.0",
+        "pdfimages": "pdfimages version 26.01.0",
+        "pdftotext": "pdftotext version 26.01.0"
+      },
+      "extraction_sha": "1d1b92b8364d09a4dded15707ab6f937a72523f400e1eb20bbd589e4faaf3333"
+    },
+    {
+      "id": "D00007",
+      "role": "source",
+      "original": "input/originals/D00007.md",
+      "logical": "input/sources/05-calibration-and-authority.md",
+      "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/sources/05-calibration-and-authority.md",
+      "original_sha": "f4d7b1be08d6dd13db756c34f068696ffe5ec31564ff09ac4b47a63db180e175",
+      "status": "ready",
+      "warnings": [],
+      "tools": {
+        "python-stdlib": "3.14.8"
+      },
+      "extraction_sha": "a5359fd14421f8dc1af502d54ea932bbf3c204726681dcdca9bf674164c03b11"
+    },
+    {
+      "id": "D00008",
+      "role": "source",
+      "original": "input/originals/D00008.md",
+      "logical": "input/sources/06-applicability-and-open-items.md",
+      "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/sources/06-applicability-and-open-items.md",
+      "original_sha": "dec4280b23593ada8abc1e1648682a3f31385bd2a7146aed36688ab157b715dc",
+      "status": "ready",
+      "warnings": [],
+      "tools": {
+        "python-stdlib": "3.14.8"
+      },
+      "extraction_sha": "b5efac528bb93cfd6934c72cf9167f182379bd85964218d53c249ca7d8e5191e"
+    },
+    {
+      "id": "D00009",
+      "role": "source",
+      "original": "input/originals/D00009.md",
+      "logical": "input/sources/07-fault-closure-register.md",
+      "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/sources/07-fault-closure-register.md",
+      "original_sha": "832f5bc068a88b4ee4756897c1c5f36af0e6ba4e0f76e4581918223f338b1d3b",
+      "status": "ready",
+      "warnings": [],
+      "tools": {
+        "python-stdlib": "3.14.8"
+      },
+      "extraction_sha": "1c8273ccaec0ae81f1bcebab704c05673186de2bc72c610d31adba44919f1005"
+    }
+  ],
+  "elapsed_seconds": 0.00938201699682395,
+  "budget": {
+    "max_documents": null,
+    "max_seconds": null
+  },
+  "coverage_meaning": "Extraction coverage only, not claim review completeness or OCR accuracy"
+}

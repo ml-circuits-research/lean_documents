@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target015.lean
+Audit.claim15Conflict : Audit.eliseAffirmsIsolation0500 = true ∧ Audit.pavelDeniesIsolation0500 = true
+'Audit.claim15Conflict' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.208]

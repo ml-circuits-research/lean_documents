@@ -1,0 +1,4 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target012.lean
+Audit.claim12 : Audit.aUncontainedAt (Audit.aDetection + 60) = true ∧
+  Audit.executiveDelivery - (Audit.aDetection + 60) = 12 ∧ Audit.executiveDelivery ≤ Audit.aDetection + 75
+'Audit.claim12' does not depend on any axioms

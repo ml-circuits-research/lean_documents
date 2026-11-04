@@ -1,0 +1,47 @@
+{
+  "reviewed": [
+    {
+      "path": "input/sources/attestations.md",
+      "anchors": [
+        "A01",
+        "A02"
+      ],
+      "scope": "Full supplied document reviewed for support and counterevidence."
+    },
+    {
+      "path": "input/sources/handoff.md",
+      "anchors": [
+        "H01",
+        "H02"
+      ],
+      "scope": "Full supplied document reviewed for support and counterevidence."
+    },
+    {
+      "path": "input/sources/policy.md",
+      "anchors": [
+        "P01",
+        "P02",
+        "P03",
+        "P04"
+      ],
+      "scope": "Full supplied document reviewed for support and counterevidence."
+    },
+    {
+      "path": "input/sources/register.md",
+      "anchors": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05"
+      ],
+      "scope": "Full supplied document reviewed for support and counterevidence."
+    }
+  ],
+  "missing": [
+    "C-105 external approval and emergency records explicitly not transferred; no other unavailable source assumed."
+  ],
+  "limits": [
+    "Corpus search exhaustive for these supplied short source documents, not for external events or records."
+  ]
+}

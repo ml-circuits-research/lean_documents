@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target004.lean
+Audit.activeInterval : Audit.elapsedA = 140 ∧ Audit.excludedA = 45 ∧ Audit.activeA = 95
+'Audit.activeInterval' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.220]

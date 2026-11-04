@@ -1,0 +1,204 @@
+{
+  "checked_at": "2026-11-04T16:58:01.377939+00:00",
+  "status": "passed",
+  "lean_version_required": "4.24.0",
+  "independent_checker": {
+    "status": "not_run",
+    "reason": "No external checker is configured; no independent-kernel assurance is claimed."
+  },
+  "targets": [
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim01",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-001.log",
+      "check_file": "checks/Target001.lean",
+      "model_sha256": "b78d1ae5d500529083ec8b2c8d8030f48453c417ca0b9e2dad6c67a1d5ef3d2c"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim02Conflict",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-002.log",
+      "check_file": "checks/Target002.lean",
+      "model_sha256": "b78d1ae5d500529083ec8b2c8d8030f48453c417ca0b9e2dad6c67a1d5ef3d2c"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim03Alternatives",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-003.log",
+      "check_file": "checks/Target003.lean",
+      "model_sha256": "b78d1ae5d500529083ec8b2c8d8030f48453c417ca0b9e2dad6c67a1d5ef3d2c"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.conditionalReadiness",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-004.log",
+      "check_file": "checks/Target004.lean",
+      "model_sha256": "b78d1ae5d500529083ec8b2c8d8030f48453c417ca0b9e2dad6c67a1d5ef3d2c"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim04MissingPremise",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-005.log",
+      "check_file": "checks/Target005.lean",
+      "model_sha256": "b78d1ae5d500529083ec8b2c8d8030f48453c417ca0b9e2dad6c67a1d5ef3d2c"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim05Cycle",
+      "target": null,
+      "status": "passed",
+      "axioms": [
+        "propext"
+      ],
+      "log": "logs/target-006.log",
+      "check_file": "checks/Target006.lean",
+      "model_sha256": "b78d1ae5d500529083ec8b2c8d8030f48453c417ca0b9e2dad6c67a1d5ef3d2c"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim06Alternatives",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-007.log",
+      "check_file": "checks/Target007.lean",
+      "model_sha256": "b78d1ae5d500529083ec8b2c8d8030f48453c417ca0b9e2dad6c67a1d5ef3d2c"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim01",
+      "target": "Audit.manifestIds.length = 3 ∧ Audit.manifestIds.Nodup",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-008.log",
+      "check_file": "checks/Target008.lean",
+      "model_sha256": "b78d1ae5d500529083ec8b2c8d8030f48453c417ca0b9e2dad6c67a1d5ef3d2c"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim02Conflict",
+      "target": "Audit.qa.scope = Audit.ops.scope ∧ Audit.qa.issuer ≠ Audit.ops.issuer ∧ Audit.qa.assertsEnabled = true ∧ Audit.ops.assertsEnabled = false",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-009.log",
+      "check_file": "checks/Target009.lean",
+      "model_sha256": "b78d1ae5d500529083ec8b2c8d8030f48453c417ca0b9e2dad6c67a1d5ef3d2c"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim03Alternatives",
+      "target": "Audit.possibleTest.certificateAttached = false ∧ Audit.possibleNoTest.certificateAttached = false ∧ Audit.possibleTest.testOccurredBeforeCutoff = true ∧ Audit.possibleNoTest.testOccurredBeforeCutoff = false",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-010.log",
+      "check_file": "checks/Target010.lean",
+      "model_sha256": "b78d1ae5d500529083ec8b2c8d8030f48453c417ca0b9e2dad6c67a1d5ef3d2c"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.conditionalReadiness",
+      "target": "∀ (Smoke Security Ready : Prop), ((Smoke ∧ Security) → Ready) → Smoke → Security → Ready",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-011.log",
+      "check_file": "checks/Target011.lean",
+      "model_sha256": "b78d1ae5d500529083ec8b2c8d8030f48453c417ca0b9e2dad6c67a1d5ef3d2c"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim04MissingPremise",
+      "target": "Audit.policy true false false ∧ Audit.policy true false true ∧ ¬ ((Audit.policy true false false ∧ true = true) → false = true)",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-012.log",
+      "check_file": "checks/Target012.lean",
+      "model_sha256": "b78d1ae5d500529083ec8b2c8d8030f48453c417ca0b9e2dad6c67a1d5ef3d2c"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim05Cycle",
+      "target": "(Audit.CitationNode.reportClaim, Audit.CitationNode.appendix) ∈ Audit.citationEdges ∧ (Audit.CitationNode.appendix, Audit.CitationNode.reportClaim) ∈ Audit.citationEdges ∧ Audit.CitationNode.independentReview ∉ Audit.suppliedReviewArtifacts",
+      "status": "passed",
+      "axioms": [
+        "propext"
+      ],
+      "log": "logs/target-013.log",
+      "check_file": "checks/Target013.lean",
+      "model_sha256": "b78d1ae5d500529083ec8b2c8d8030f48453c417ca0b9e2dad6c67a1d5ef3d2c"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim06Alternatives",
+      "target": "Audit.possibleVerified.markerPresent = true ∧ Audit.possibleUnverified.markerPresent = true ∧ Audit.possibleVerified.verificationArtifactSupplied = false ∧ Audit.possibleUnverified.verificationArtifactSupplied = false ∧ Audit.possibleVerified.verifiedBeforeCutoff = true ∧ Audit.possibleUnverified.verifiedBeforeCutoff = false",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-014.log",
+      "check_file": "checks/Target014.lean",
+      "model_sha256": "b78d1ae5d500529083ec8b2c8d8030f48453c417ca0b9e2dad6c67a1d5ef3d2c"
+    }
+  ],
+  "limitations": "Lean checks the encoded propositions, not source authenticity, extraction accuracy, completeness, legal authority, or the adequacy of the model. Source filters are defensive checks, not a sandbox for hostile Lean code.",
+  "audit_contract": {
+    "version": 1,
+    "coverage": "legacy_unreconciled",
+    "limitation": "This older bundle has no enforced claim register or structured argument audit."
+  },
+  "input_hashes": {
+    "findings.json": "8d842083fdc95e00a4e484fdbba9ee05aabd12c32b0e148fecdf38a52b38aca1",
+    "input/manifest.json": "f6d0cbb7d3fc547da744d57aff8cb116cbb23e8826ad8aebc9d72d15a8414b84",
+    "models/Audit.lean": "b78d1ae5d500529083ec8b2c8d8030f48453c417ca0b9e2dad6c67a1d5ef3d2c"
+  },
+  "lean_version_observed": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "execution_status": "executed",
+  "artifact_hashes": {
+    "environment.lock": "5ed2d0b6eff663ee335df7c00665aba138d8a97e2a51e08dc995d204cdaa5ce9",
+    "lakefile.toml": "01a2fcdf9392e14b2fcf1c49259f3371c897156e002f56d678736f2b1e336653",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "source-ledger.jsonl": "5c407fee851756c0f6cdb205652082452085cd2d77b43087f55797af3b75cbcf",
+    "logs/lake-build.log": "61c0973604fbc6911ca0d858365a39d9896ac13696b6024157c65e2b622852de",
+    "logs/lean-version.log": "52f1249d3d7d977e62ab6494d04ca8a6e1ccd083d113b69aa7f400bc21cc8ee5",
+    "logs/target-001.log": "ed9048f53f14d52281f1a38882498b9a2bfa131793e93540e2f33c4136bbc96b",
+    "logs/target-002.log": "41e3aa11cef5666869d8479e25216fc8bcb17515710ebf520cb16557249f0f80",
+    "logs/target-003.log": "ca6af4d69626a8ba8a116d50b37a2c6192f6ec18d35821b2f9a0e06ead69c410",
+    "logs/target-004.log": "029c352bfdbaa35ec54e20057cb7681a81d22bfde6df97f64fe1535ada88db8b",
+    "logs/target-005.log": "b2dc5a769723ea5e91284d0d721a0e67324ee8d3adbbe50d0ccee00cdba1a17f",
+    "logs/target-006.log": "263dad3669597905680f88569994554a5fe77953e0ddf65467e445356a6614e6",
+    "logs/target-007.log": "f7de95c381f5c012c89c3a6f7cea0201a23c369e323e42a134838d439a272978",
+    "logs/target-008.log": "94c7541be6da2deb9c65b4904c3c2a13b224642e1e3bdea832197282722e93c0",
+    "logs/target-009.log": "7f05f63e42852036da127f909dd78d17347201f5c7cfdb55e9af7f6e63f0e8aa",
+    "logs/target-010.log": "f3144a1aee79125c806f651e0ae3b7bc64c64101512033b848c6b0f602113bfc",
+    "logs/target-011.log": "5342d2e16c6bf378bffbbf9a00011ee5648298e1ed7044f18650730d8eff3f76",
+    "logs/target-012.log": "d035976f39702a0420d639c8d885ce6b07a1e6687f6a20e12b728a399e5ad4ea",
+    "logs/target-013.log": "d1f3cde98b48d052751415c9b750b400b5c09f2453fe772c9f68f402962cbb29",
+    "logs/target-014.log": "f8985353dadc8cf7eaacd3c26b5a6586c2790943cb77cf38082b6d7222c91ad6",
+    "checks/Target001.lean": "28bf85852003c030a5d5e794d7076c23060aa11cbc83f43745c86dade468bfcc",
+    "checks/Target002.lean": "83b7873788e9ff219d0555b446aea3b147723131699a221aa485fba729bb09e2",
+    "checks/Target003.lean": "ee45bbecba45bd8412788a339edb5116cdcae2577970a38c4380dcc5a2aafb6b",
+    "checks/Target004.lean": "38e48bb976526252070442fb2931c184784882a1c3f89c421bd7e51ecf101978",
+    "checks/Target005.lean": "6996b26ee7938de4ae7bd65f0e41de87ca9ae083fdf8f9268f9939fdef7b7036",
+    "checks/Target006.lean": "78dab91d82b6451d0533748e5f7079ef6d6df00e6103d93e95ffffbdcc7c2293",
+    "checks/Target007.lean": "94bf77d3c0c7635a61ab0c3a789e92eb5ce8c5167bf96a2a3b9ba5d9bfe4065b",
+    "checks/Target008.lean": "685b8b6b7d64a194dba65c180cbcc4adf5171ee30d96a5c163b8848b944408ca",
+    "checks/Target009.lean": "9dc8a563a01c6e605f3c46b4d8120ca9b0336a09f3401a60f1fb3eaa8b1dc9de",
+    "checks/Target010.lean": "da0c6bc944aaa250f13ffa918deefb8b10c842ab18f37881807496452f832a98",
+    "checks/Target011.lean": "69292eb7c4447a725c3432251e1b55dc105400d1a29f040f550e071829fa7087",
+    "checks/Target012.lean": "ab664e4cb21ef54f7fd9ac930440d89807e5dc3451544dd166c6d06aff0dabe7",
+    "checks/Target013.lean": "5d5d602941738dc43c5481f608c771629a67d596c256f90c79a29ed7878a7089",
+    "checks/Target014.lean": "ae1f5892c6f2dafe7fe4aca1fabe76fe78f1b2c6e7b03430841bee627a4cd643"
+  }
+}

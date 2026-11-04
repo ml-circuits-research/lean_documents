@@ -1,0 +1,45 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "input/brief.md": {
+      "sha256": "8268795dbeed623467a83dbe71c934698f52d75735ad7609291d500399e6fa98",
+      "bytes": 1722,
+      "original_path": "/home/salboaie/work/lean_documents/examples/03-audit-arithmetic/brief.md"
+    },
+    "input/report-ledger.json": {
+      "sha256": "f21d0a1e9f8ba1ecaf373ea03dc28e186997c057adb7a7d5db7ba98ce941d548",
+      "bytes": 941,
+      "original_path": null
+    },
+    "input/report.md": {
+      "sha256": "4b1f131e61d4bc991c442c8c0c33b02c2a4f925a9e311480bf62b7132e543b94",
+      "bytes": 1104,
+      "original_path": "/home/salboaie/work/lean_documents/examples/03-audit-arithmetic/report-correct.md"
+    },
+    "input/source-ledger.json": {
+      "sha256": "16257fd8cf57da815ea8e925169c9149d9f3830a89e9969956dad41718ff517e",
+      "bytes": 2449,
+      "original_path": null
+    },
+    "input/sources/annex-register.md": {
+      "sha256": "005618ce50dc4e4fb89f15c5d6a5f955ea1b5b9cd1c52d93523003f52eecb864",
+      "bytes": 579,
+      "original_path": "/home/salboaie/work/lean_documents/examples/03-audit-arithmetic/sources/annex-register.md"
+    },
+    "input/sources/inspection.md": {
+      "sha256": "11c7e7c37081edf449ed09594798095d0dbcffd518a6d79a9c7d68eb72c3e390",
+      "bytes": 527,
+      "original_path": "/home/salboaie/work/lean_documents/examples/03-audit-arithmetic/sources/inspection.md"
+    },
+    "input/sources/ledger.md": {
+      "sha256": "82717a9e95619fa2bae4d6108997cd18b72c53b73e7c2310da96ca905b04d04b",
+      "bytes": 776,
+      "original_path": "/home/salboaie/work/lean_documents/examples/03-audit-arithmetic/sources/ledger.md"
+    },
+    "input/sources/method.md": {
+      "sha256": "1961844808811f9b122919c94eaa0ca8c081367c1aed2d260beafe7584308dd9",
+      "bytes": 550,
+      "original_path": "/home/salboaie/work/lean_documents/examples/03-audit-arithmetic/sources/method.md"
+    }
+  }
+}

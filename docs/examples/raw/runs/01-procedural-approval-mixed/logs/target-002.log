@@ -1,0 +1,3 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target002.lean
+Audit.claim02 : Audit.standard Audit.c102 = false ∧ Audit.c102Request ≠ Audit.EventKind.approval
+'Audit.claim02' does not depend on any axioms

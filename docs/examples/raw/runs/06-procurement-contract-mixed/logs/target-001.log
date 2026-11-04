@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target001.lean
+Audit.claim01 : Audit.rackAggregates = true ∧
+  Audit.rackKnownBeforeFirst = true ∧
+    Audit.competitionRequired 2 Audit.rackCents = true ∧ 1240000 < 2500000 ∧ 1260000 < 2500000
+'Audit.claim01' does not depend on any axioms

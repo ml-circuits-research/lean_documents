@@ -1,0 +1,136 @@
+{
+  "executable": "/home/salboaie/.local/share/evidence-to-proof/checker-v4.24.0/lean4checker",
+  "sha256": "742a92543440bd86238297d7044070e5fa79387ce705f7f268fe4d36b9727461",
+  "source": "/home/salboaie/work/lean_documents/tmp/checker-build-8cukjzis/source",
+  "commit": "da26eb05e9959402afcb9bd6dfe5dc4f700f70d6",
+  "version": "v4.24.0",
+  "same_lean_kernel": true,
+  "repository": "https://github.com/leanprover/lean4checker.git",
+  "tag": "v4.24.0",
+  "source_dependencies": [],
+  "source_review": {
+    "files": [
+      "lakefile.toml",
+      "lake-manifest.json",
+      "lean-toolchain",
+      "Main.lean",
+      "Lean4Checker.lean",
+      "Lean4Checker/Lean.lean",
+      "Lean4Checker/Replay.lean"
+    ],
+    "notes": [
+      "Only the lean4checker executable target was built; adversarial upstream test modules were not built.",
+      "The upstream replay sends declarations through Lean kernel addDeclCore and checks constructors/recursors.",
+      "Unsafe and partial constants are skipped by upstream replay; no independent kernel implementation is provided."
+    ]
+  },
+  "lean": {
+    "executable": "/tmp/lean-4.24.0-linux/bin/lean",
+    "version": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)"
+  },
+  "lake": {
+    "executable": "/tmp/lean-4.24.0-linux/bin/lake",
+    "version": "Lake version 5.0.0-src+797c613 (Lean version 4.24.0)"
+  },
+  "build_commands": [
+    {
+      "command": [
+        "/tmp/lean-4.24.0-linux/bin/lean",
+        "--version"
+      ],
+      "cwd": "/home/salboaie/work/lean_documents/tmp/checker-build-8cukjzis/source",
+      "exit_code": 0,
+      "log": "/home/salboaie/work/lean_documents/tmp/checker-build-8cukjzis/lean-version.log"
+    },
+    {
+      "command": [
+        "/tmp/lean-4.24.0-linux/bin/lake",
+        "--version"
+      ],
+      "cwd": "/home/salboaie/work/lean_documents/tmp/checker-build-8cukjzis/source",
+      "exit_code": 0,
+      "log": "/home/salboaie/work/lean_documents/tmp/checker-build-8cukjzis/lake-version.log"
+    },
+    {
+      "command": [
+        "/tmp/lean-4.24.0-linux/bin/lake",
+        "build",
+        "lean4checker"
+      ],
+      "cwd": "/home/salboaie/work/lean_documents/tmp/checker-build-8cukjzis/source",
+      "exit_code": 0,
+      "log": "/home/salboaie/work/lean_documents/tmp/checker-build-8cukjzis/build.log"
+    }
+  ],
+  "source_files_sha256": {
+    ".gitignore": "ea503832a2f75ef84dcce4c8dccbac18e77a99575a435426653a97ef682ebca8",
+    "LICENSE": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "Lean4Checker.lean": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Lean4CheckerTests.lean": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Main.lean": "6ca195ffc07a04597af2e0e5514880aece5135e3bde420e1796aa137bde72d2e",
+    "README.md": "8e62eeaf9cd6c007475e29185b8d2013fdd3b1bd2fddca4184633a5375ee9488",
+    "lake-manifest.json": "de7128f90d1dad1b04ad2d998e4e44232aba463c3d6cc526547e29d0ce5ac3e9",
+    "lakefile.toml": "22be46f7477e8ba11f68034c2195edc0ee7b8b44030829697bd37db237c3d90d",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "test.sh": "77b48ee012a9157cf90c3d20a3b813ad85b93311ad26d092e0f2c26dad88ca3c",
+    ".vscode/settings.json": "7b04ce6dfd8b2751e7a55c0ec21c02140b87739d01f17e5752b9e13eb7d464dc",
+    "Lean4Checker/Lean.lean": "80d422049aeaa3871eee11063bce6d2435de75e379c79e2c068492b1f33743f2",
+    "Lean4Checker/Replay.lean": "0c17b9b3f3bd225167b5c04abe820ca9231eaee33eba4ae163aec9cc67cfdd63",
+    "Lean4CheckerTests/AddFalse.lean": "5b964a976cb341807e4846e4f51957619abb3e80592b0f0053df386b29d660e2",
+    "Lean4CheckerTests/AddFalseConstructor.lean": "894f907279c9ecf6d64b2cfcde3cf8e8f3c4611253e07a2936131831db815e50",
+    "Lean4CheckerTests/OpenPrivate.lean": "8452031354ac15fa939e8857db3243354de32bfe6e65038240fd7f0b6fe8c98e",
+    "Lean4CheckerTests/ReplaceAxiom.lean": "0e55011fda26fd3b2ee8ec8aaeb6d7e58cade4d5e90712a76088eaaacf98d184",
+    "Lean4CheckerTests/TestDriver.lean": "3c2ceab154bc2d9bd65994a4d78b338831cfb233ce36d1fd2ad4895992ce2347",
+    ".github/workflows/test.yml": "799694b57fabc9a4c57db0b3830691a60b68653ff493a35f86d66e4ee44c240a"
+  },
+  "retained_build_directory": "/home/salboaie/work/lean_documents/tmp/checker-build-8cukjzis",
+  "invocation": [
+    "/tmp/lean-4.24.0-linux/bin/lake",
+    "env",
+    "/home/salboaie/.local/share/evidence-to-proof/checker-v4.24.0/lean4checker",
+    "--fresh",
+    "Audit"
+  ],
+  "runtime_requirements": [
+    "Invoke inside the audited workspace using matching Lean 4.24.0 lake env.",
+    "The matching Lean sysroot and the built target module .olean must be available.",
+    "The installed binary links to system libc, pthread, dl, rt, and libm; Lean implementation is statically linked."
+  ],
+  "version_probe": "No --version flag exists in this upstream CLI; identify the build using pinned tag, commit, binary SHA-256 and Lean/Lake versions.",
+  "assurance": "Additional replay through the same Lean kernel; not independent-kernel validation.",
+  "replay": {
+    "command": [
+      "/tmp/lean-4.24.0-linux/bin/lake",
+      "env",
+      "/home/salboaie/.local/share/evidence-to-proof/checker-v4.24.0/lean4checker",
+      "--fresh",
+      "--verbose",
+      "Audit"
+    ],
+    "workspace": "/home/salboaie/work/lean_documents/tmp/corpus-tests-pbnjvxch/test_noop_resume_preserves_successful_proof_fingerprint/runs/claim-audit-us7i5k1u",
+    "exit_code": 0,
+    "elapsed_seconds": 124.1086740239989,
+    "log": "/home/salboaie/work/lean_documents/tmp/checker-build-8cukjzis/replay.log",
+    "status": "passed",
+    "fresh_environment": true,
+    "module": "Audit",
+    "module_source_sha256": "9de98b474e809eb15e53af5a541a8842419695659cb0d6db29ca772a9a7165e7",
+    "module_olean_sha256": "5e9d72b3bac3af5dcd772e6d4a5c37487c9f386cdec9e63e6fa86430e9b474cf",
+    "log_sha256": "4b88d684a56ff9d5c4cb5f3dddb1eafe297827e7cdbb58be87099b341db34099",
+    "recommended_timeout_seconds": 300
+  },
+  "log_files": {
+    "clone.log": "872488e2578926285107217436a4fb5464b139b58ecc542c4cf240922e979b92",
+    "lean-version.log": "620cc3a49badd63a0f237b564ff1758bd9bf83ee82b17278bb5a8762d3a1fc1a",
+    "lake-version.log": "8c6fe07fbd563cea694af3dd50d1ccca519cbc2dbd16dfa2f00894e0445339b3",
+    "build.log": "22ee844bb435f61583baa86396d775cf105f6c421822e2540ad1d2f677016bdf",
+    "replay.log": "4b88d684a56ff9d5c4cb5f3dddb1eafe297827e7cdbb58be87099b341db34099"
+  },
+  "published_logs": {
+    "clone.log": "checker-build/clone.log",
+    "lean-version.log": "checker-build/lean-version.log",
+    "lake-version.log": "checker-build/lake-version.log",
+    "build.log": "checker-build/build.log",
+    "replay.log": "checker-build/replay.log"
+  }
+}

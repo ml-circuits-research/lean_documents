@@ -1,0 +1,118 @@
+{
+  "query": "\"Annex Q\" OR \"approval occurrence\" OR payment",
+  "total_matching_chunks": 11,
+  "offset": 0,
+  "limit": "Ranked retrieval is not exhaustive semantic review; inspect full passages and inventory for exceptions.",
+  "results": [
+    {
+      "id": 83,
+      "path": "input/sources/approval-attestations.scan.pdf.md",
+      "anchor": "pdf-page-0005",
+      "document_id": "D00003",
+      "start_char": 0,
+      "end_char": 686,
+      "text": "[AQ4]\nP-21 has normalized value EUR 8,000.00 and does not aggregate with another\nrequirement. Its commitment record states 2029-06-27 10:30 UTC and identifies the\nsupplier. Competition is therefore not the disputed issue. The provided attestation\npacket contains no invoice-payment entry, bank statement, or payment authorization.\nEven if a reviewer resolved the approval disagreement later, that resolution would\nnot establish payment. The scans are faithful document reproductions prepared for\nthis synthetic fixture. Their visual signatures are textual signature labels, not\ncopied real signatures, and their evidentiary content is limited to the attributed\nassertions printed above.",
+      "rank": -3.9970573482244682
+    },
+    {
+      "id": 69,
+      "path": "input/sources/reconciliation-correspondence.md",
+      "anchor": "F03",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 669,
+      "text": "## [F03]\n\nThe accounts-payable packet contains a signed supplier invoice for P-21 and a warehouse delivery acceptance. The invoice confirms the supplier's request for EUR 8,000.00 payment and names the order. The warehouse acceptance confirms that the specified package arrived. Neither document states that Harbor paid. A finance reply says the bank reconciliation extract for June 27–30 was not transferred, and the analyst cannot confirm or deny payment from the supplied packet. A report that equates the invoice signature with settlement would therefore rely on a missing event premise, rather than on contradictory affirmative evidence that payment did not occur.",
+      "rank": -3.951989157965856
+    },
+    {
+      "id": 57,
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0016",
+      "document_id": "D00006",
+      "start_char": 0,
+      "end_char": 806,
+      "text": "The proprietary-compatibility exception may waive competition when the required component has an only compatible source within the meaning of Annex Q. Annex Q supplies the governing compatibility test, required certification, and treatment of technically workable substitute components. This operative clause does not say whether compatibility is determined by physical interoperability, warranty certification, or another test. Evidence that one vendor is the sole certified vendor does not automatically resolve the unspecified Annex Q standard. Annex Q is a normative attachment, and its absence does not mean its conditions are waived, satisfied, or impossible to satisfy. The dossier's declaration that an attachment is missing concerns the supplied package, not every copy that might exist elsewhere.",
+      "rank": -3.647009817559125
+    },
+    {
+      "id": 78,
+      "path": "input/sources/revision-amendment.pdf.md",
+      "anchor": "pdf-page-0007",
+      "document_id": "D00009",
+      "start_char": 0,
+      "end_char": 778,
+      "text": "[V06]\nThe transition package contains the full operative standard, this amendment, the named\npurchase register, delegation notice, exception file, attestation scans, and reconciliation\ncorrespondence. Annex Q was not supplied. The transition package does not contain a separate\nAnnex Q deadline, compatibility checklist, certification rule, or written interpretation\nadopted by the director. In particular, the administrative phrase \"all attachments\ntransferred except Q\" is a complete inventory statement about this package; it is not an\nassertion that no employee holds Annex Q or that no procurement event occurred outside the\nexplicitly complete transaction coverage. This distinction remains relevant when a report\nattempts to infer event absence from a missing attachment.",
+      "rank": -3.3674231573830506
+    },
+    {
+      "id": 45,
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0004",
+      "document_id": "D00006",
+      "start_char": 0,
+      "end_char": 739,
+      "text": "Harbor Research Cooperative purchases components for an offshore research laboratory. This standard distinguishes a requisition, an approval, an order commitment, delivery acceptance, an invoice, and payment. A requisition records a proposed need. An approval authorizes a specified transaction within the approving person's authority. An order commitment binds Harbor to purchase. Delivery acceptance confirms receipt or technical acceptance. An invoice requests payment. None of these events automatically establishes that any other event occurred. The assessment period is 1 May through 30 June 2029, and all times in this standard and the transaction records are UTC. No external procurement law forms part of this fictional agreement.",
+      "rank": -3.349172074485803
+    },
+    {
+      "id": 82,
+      "path": "input/sources/approval-attestations.scan.pdf.md",
+      "anchor": "pdf-page-0004",
+      "document_id": "D00003",
+      "start_char": 0,
+      "end_char": 761,
+      "text": "[AQ3]\nThe authenticity of both signatures is stipulated for this synthetic dossier. Neither\nwitness has retracted the signed statement. No priority rule, adjudication, amended\nregister, or original approval instrument resolving the disagreement is supplied.\nP-21 is deliberately outside the complete transaction coverage of L@1. Both\nstatements concern the same order and same June 27 morning, so they cannot be\nreconciled by moving one to a different order, date, or timezone. Their contradiction\nconcerns approval occurrence. An audit should not transform both attributed\nstatements into unconditional world facts from which arbitrary conclusions could be\nderived; nor does signature authenticity make one statement automatically\nauthoritative over the other.",
+      "rank": -3.182478463905597
+    },
+    {
+      "id": 41,
+      "path": "input/sources/exception-file.md",
+      "anchor": "X05",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 785,
+      "text": "## [X05]\n\nThe exception file is complete for what the purchasing team transferred to the review package, but it is not a universal inventory of evidence held by suppliers, warranty administrators, or other Harbor departments. The absence of Annex Q is expressly acknowledged by the transition inventory. The file does not report that Annex Q was revoked, waived, blank, or impossible to obtain. The director's order approval for E-20 establishes spending authority only; it does not purport to resolve the compatibility question or to convert a proposed exception into an established exception. A prudent reviewer may request the annex and final determination without claiming that the underlying purchase is necessarily unlawful or that a compatibility exception is necessarily false.",
+      "rank": -2.731110203210847
+    },
+    {
+      "id": 39,
+      "path": "input/sources/exception-file.md",
+      "anchor": "X03",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 820,
+      "text": "## [X03]\n\nE-20 is a June 25 requirement for an underwater connector assembly with normalized value EUR 28,000.00. No competitive solicitation was conducted, and no urgent-safety incident or emergency declaration is claimed for it. A valid director order approval exists, but the file contains only a proposed proprietary-compatibility exception, not a final Annex Q determination. Pelican Instruments is the only vendor certified by the existing system warranty provider. A separate engineering note demonstrates that a rival connector can physically mate with the interface and pass an electrical bench test. Neither note reproduces Annex Q or claims authority to interpret its governing definition. The proposition that only one source is compatible therefore depends on the missing standard rather than on arithmetic.",
+      "rank": -2.6944599408385503
+    },
+    {
+      "id": 61,
+      "path": "input/sources/purchase-register.md",
+      "anchor": "L01",
+      "document_id": "D00007",
+      "start_char": 0,
+      "end_char": 805,
+      "text": "## [L01]\n\nThis register is complete for commitment amounts, approval events, competitive-solicitation certificates, emergency declarations, retrospective reviews, and exception determinations for P-11, P-12, P-13, P-14, P-15, P-16, R-17, R-18, and E-19 from May 1 through June 30, 2029. An explicit entry “none” means the named event did not occur in that coverage, rather than that a page was omitted. That completeness does not cover P-21, E-20, payment events, or anyone's subjective assessment. The recorded original requirements for these entries were fully known at the times stated. All amounts described as normalized include unavoidable charges, exclude recoverable VAT, and already reflect the specified single final rounding unless an entry instead supplies the exact unrounded currency inputs.",
+      "rank": -2.0734436584454827
+    },
+    {
+      "id": 40,
+      "path": "input/sources/exception-file.md",
+      "anchor": "X04",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 769,
+      "text": "## [X04]\n\nThe warranty provider's letter limits its statement to the current certification list. It says it has not assessed the rival component for warranty eligibility. The rival vendor's test report limits its statement to mechanical fit and bench electrical behavior, excluding saltwater durability and warranty acceptance. These are different propositions, not directly contradictory claims about one clearly defined compatibility test. The purchasing team asked whether the standard means functional interchangeability or warranty-certified interchangeability; no answer is in the transferred package. A conclusion that E-20 certainly qualifies, or certainly cannot qualify, would require a supplied interpretation or Annex Q text that the current evidence lacks.",
+      "rank": -1.945707489528399
+    },
+    {
+      "id": 71,
+      "path": "input/sources/reconciliation-correspondence.md",
+      "anchor": "F05",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 759,
+      "text": "## [F05]\n\nAn internal retrospective comment describes the emergency pump purchase as “prudent and commercially elegant.” The comment provides no decision model, risk utility scale, price benchmark, or evaluative definition. It is an attributed management opinion and does not alter the objective timing of EM-19 or the retrospective review. The same meeting asks the audit team to distinguish correct mathematical calculations, valid authority, established exceptions, missing documents, and disputed testimony. That discussion records stakeholder interests; it does not add a new operative rule, resolve the P-21 contradiction, or supply Annex Q. The fictional standard and its explicit transition clauses remain the controlling rules for the finite dossier.",
+      "rank": -1.945707489528399
+    }
+  ]
+}

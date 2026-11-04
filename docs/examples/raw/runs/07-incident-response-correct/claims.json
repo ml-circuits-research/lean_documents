@@ -1,0 +1,210 @@
+[
+  {
+    "claim_id": "C07-C01",
+    "report_anchor": "C07-C01",
+    "report_quote": "**C07-C01.** A's qualifying detection was 00:00 UTC on October 27, after the separate raw warning at 23:30 UTC on October 26. Sources: R01, R02, T01.",
+    "component_propositions": [
+      "Accepted detection at 00:00",
+      "Separate earlier raw warning at 23:30"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C07-C02",
+    "report_anchor": "C07-C02",
+    "report_quote": "**C07-C02.** A's detection-to-containment interval is 140 elapsed minutes: 02:00 +02:00 is 00:00 UTC, while 03:20 +01:00 is 02:20 UTC. Sources: R02, T01, T02, F01.",
+    "component_propositions": [
+      "Correct UTC conversion of both endpoints",
+      "Elapsed interval140 minutes"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C07-C03",
+    "report_anchor": "C07-C03",
+    "report_quote": "**C07-C03.** A's delivered acknowledgement at 00:12 UTC was twelve minutes after detection and met the fifteen-minute P1 requirement. Sources: R03, T01.",
+    "component_propositions": [
+      "Delivered human acknowledgement12 minutes later",
+      "Within15-minute allowance"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C07-C04",
+    "report_anchor": "C07-C04",
+    "report_quote": "**C07-C04.** A's active-response containment interval was ninety-five minutes: 140 elapsed minutes minus the revision 2 cap of forty-five excluded minutes. Sources: R04, R06, T01, T02, T03, F02.",
+    "component_propositions": [
+      "Elapsed140",
+      "Combined exclusion capped45",
+      "Active95"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C07-C05",
+    "report_anchor": "C07-C05",
+    "report_quote": "**C07-C05.** A exceeded the ninety-minute containment allowance by five active-response minutes, despite its timely acknowledgement. Sources: R03, R04, R06, T01, T02, T03, F02.",
+    "component_propositions": [
+      "Containment late by 5 active minutes",
+      "Acknowledgement separately timely"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C07-C06",
+    "report_anchor": "C07-C06",
+    "report_quote": "**C07-C06.** Both A pauses were approved before they began, but only forty-five of their seventy combined minutes are deductible under the applicable cap. Sources: R04, R06, T03.",
+    "component_propositions": [
+      "Both pauses approved before start",
+      "Combined raw70",
+      "Only45 deductible"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C07-C07",
+    "report_anchor": "C07-C07",
+    "report_quote": "**C07-C07.** MA-27 does not defer A's P1 response clocks; the maintenance exception applies only to its specified P2 operation and does not replace approved containment-pause rules. Sources: R03, R07, M01, M02, T01.",
+    "component_propositions": [
+      "MA27 scoped P2 only",
+      "A P1 clocks not deferred",
+      "Maintenance not containment pause"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C07-C08",
+    "report_anchor": "C07-C08",
+    "report_quote": "**C07-C08.** B's effective acknowledgement-clock start was MB-27's 03:20 UTC end, making the 03:45 acknowledgement twenty-five minutes later and timely. Sources: R03, M02, M03, M04, T04, F03.",
+    "component_propositions": [
+      "B matched P2 in half-open window",
+      "Effective start 03:20",
+      "Delivered03:45 after 25 minutes timely"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C07-C09",
+    "report_anchor": "C07-C09",
+    "report_quote": "**C07-C09.** B's raw detection-to-acknowledgement duration was thirty-five minutes, but that duration does not establish a violation because the authorized effective-clock duration was twenty-five minutes. Sources: R03, M02, M03, T04, F03.",
+    "component_propositions": [
+      "Raw duration35",
+      "Effective duration25",
+      "Raw comparison alone not violation"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C07-C10",
+    "report_anchor": "C07-C10",
+    "report_quote": "**C07-C10.** A's technical-lead notification was queued at 00:08 but delivered at 00:11 UTC, one minute after the ten-minute delivered-notification deadline. Sources: R05, N01.",
+    "component_propositions": [
+      "Queued00:08 distinct from delivered00:11",
+      "Deadline00:10",
+      "Delivery late1"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C07-C11",
+    "report_anchor": "C07-C11",
+    "report_quote": "**C07-C11.** A's commander notification arrived at 00:22 UTC, two minutes after its unpaused twenty-minute deadline; containment pauses do not alter escalation deadlines. Sources: R04, R05, N02.",
+    "component_propositions": [
+      "Commander delivery 00:22",
+      "Deadline00:20 unpaused",
+      "Late2"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C07-C12",
+    "report_anchor": "C07-C12",
+    "report_quote": "**C07-C12.** A was still uncontained at the 01:00 UTC executive trigger, and the 01:12 executive delivery met the 01:15 deadline despite earlier escalation delays. Sources: R05, T02, N02.",
+    "component_propositions": [
+      "Uncontained at 60-minute trigger",
+      "Executive delivered72",
+      "Deadline75 met",
+      "Earlier delays remain separate"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C07-C13",
+    "report_anchor": "C07-C13",
+    "report_quote": "**C07-C13.** A uses revision 2 because accepted qualifying detection occurred exactly at its effective boundary; the earlier untriaged warning does not grandfather it. Sources: R01, R06, T01.",
+    "component_propositions": [
+      "Accepted boundary selects revision 2",
+      "Raw warning cannot grandfather"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C07-C14",
+    "report_anchor": "C07-C14",
+    "report_quote": "**C07-C14.** C retains revision 1 because its accepted detection was 23:50 UTC on October 26; later actions do not change that retained version. Sources: R06, T05.",
+    "component_propositions": [
+      "C accepted23:50 prior day",
+      "Revision1 retained despite later actions"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C07-C15",
+    "report_anchor": "C07-C15",
+    "report_quote": "**C07-C15.** The supplied C attestations conflict about complete isolation at 05:00 UTC; no unretracted statement has authority to settle the point over the other. Sources: T05, A01, A02, A03, A04.",
+    "component_propositions": [
+      "Same C05:00 full-isolation proposition opposed",
+      "Both unretracted",
+      "No supplied priority or authoritative resolution"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C07-C16",
+    "report_anchor": "C07-C16",
+    "report_quote": "**C07-C16.** The supplied monitoring evidence does not determine whether exfiltration occurred during the 01:10\u201301:40 UTC gap; absence of retained telemetry is not a negative event record. Sources: R08, G01, G02, G03, G04.",
+    "component_propositions": [
+      "Gap exfiltration unresolved",
+      "No retained telemetry not negative event record"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C07-C17",
+    "report_anchor": "C07-C17",
+    "report_quote": "**C07-C17.** The same monitoring gap also does not establish exfiltration: the storage outage and missing samples supply no positive transfer event, so an assertion of occurrence would lack support. Sources: R08, G01, G02, G03, G04.",
+    "component_propositions": [
+      "Storage outage not positive transfer evidence",
+      "Occurrence assertion unsupported too"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C07-C18",
+    "report_anchor": "C07-C18",
+    "report_quote": "**C07-C18.** The manager's description of the response as professionally managed and reassuring is an attributed opinion; the supplied playbook does not define a formal criterion for that overall judgment. Sources: R08, F05.",
+    "component_propositions": [
+      "Manager opinion attributed",
+      "No formal overall-management metric"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  }
+]

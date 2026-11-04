@@ -1,0 +1,5 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target021.lean
+Audit.claim07 : Audit.deliveredA = 48 ∧ Audit.returnedA = 12
+'Audit.claim07' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.197]

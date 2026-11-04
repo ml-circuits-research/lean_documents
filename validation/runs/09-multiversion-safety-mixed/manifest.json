@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "algorithm": "sha256",
+  "index": "input/index.sqlite3",
+  "files": {
+    "input/brief.md": {
+      "sha256": "e67bf8d27e77729ff20b93943b6cbed057503f73790ffb58af142cb77044c5f7",
+      "bytes": 1746
+    },
+    "input/catalog.json": {
+      "sha256": "b02d4832cd5d83458bc1f09f4adc631dd4fdb22505bfee8123c3327ae4d7fa3d",
+      "bytes": 3182
+    },
+    "input/index.sqlite3": {
+      "sha256": "b9da80a61e5b507719d97314b50041b2b60e3fcc0868c75a4c0f479ab5a04fde",
+      "bytes": 315392
+    },
+    "input/originals/D00001.md": {
+      "sha256": "f7cbb6a2822be482b7587734c0b1e27ffb1de58b9e401256c21cc601c36a41c0",
+      "bytes": 1661
+    },
+    "input/originals/D00002.md": {
+      "sha256": "4d43bf3ddbbd427bce1783365c63d96c06030640230c5d0355f8e4e0ef1ff03b",
+      "bytes": 2614
+    },
+    "input/originals/D00003.docx": {
+      "sha256": "42b6976d7613cd50e93501e895fe71377ddaa902f793ed8efc9a002e10c3a8be",
+      "bytes": 2717
+    },
+    "input/originals/D00004.docx": {
+      "sha256": "c780e4bf1b0a0a08647f2713a2f75c76b7654f8c545ba305a8fe29f0d160169c",
+      "bytes": 3013
+    },
+    "input/originals/D00005.docx": {
+      "sha256": "49ae022a5b2a5568215957e54514add6a50d7c2f129a6f5b354af45ac6931e70",
+      "bytes": 2293
+    },
+    "input/originals/D00006.pdf": {
+      "sha256": "44640ce83d9f9b0c669a9d39eb8992d550a5250e75383c8ad15dfe19abb4dd4e",
+      "bytes": 10342
+    },
+    "input/originals/D00007.md": {
+      "sha256": "f4d7b1be08d6dd13db756c34f068696ffe5ec31564ff09ac4b47a63db180e175",
+      "bytes": 1984
+    },
+    "input/originals/D00008.md": {
+      "sha256": "dec4280b23593ada8abc1e1648682a3f31385bd2a7146aed36688ab157b715dc",
+      "bytes": 1905
+    },
+    "input/originals/D00009.md": {
+      "sha256": "832f5bc068a88b4ee4756897c1c5f36af0e6ba4e0f76e4581918223f338b1d3b",
+      "bytes": 3345
+    },
+    "input/report-ledger.json": {
+      "sha256": "627257cc50d5de06cca12527d86abe089a1a8f12666de6e213b91db48a1719a6",
+      "bytes": 2589
+    },
+    "input/report.md": {
+      "sha256": "fc86ec8320d7d2991f940a64646579ecede51b69e75402deac098d75de4afaa6",
+      "bytes": 2645
+    },
+    "input/sources/01-specification-v1.docx.md": {
+      "sha256": "95630c7b941afe24501a6841626194f12178f41eb50727ba3ffab01edb9e7af1",
+      "bytes": 4843
+    },
+    "input/sources/02-specification-v2.docx.md": {
+      "sha256": "c58175170f5545cdb5dd6cab3335ab5d8ec68eb23866a492c0421d15fc501fcd",
+      "bytes": 5583
+    },
+    "input/sources/03-exception-annex.docx.md": {
+      "sha256": "b56ba25988add5583ccecccc29ec5b42fc3126e85063d46f5c2e1dd4ebdfb3ac",
+      "bytes": 3363
+    },
+    "input/sources/04-test-runs.pdf.md": {
+      "sha256": "1d1b92b8364d09a4dded15707ab6f937a72523f400e1eb20bbd589e4faaf3333",
+      "bytes": 8082
+    },
+    "input/sources/05-calibration-and-authority.md": {
+      "sha256": "a5359fd14421f8dc1af502d54ea932bbf3c204726681dcdca9bf674164c03b11",
+      "bytes": 2052
+    },
+    "input/sources/06-applicability-and-open-items.md": {
+      "sha256": "b5efac528bb93cfd6934c72cf9167f182379bd85964218d53c249ca7d8e5191e",
+      "bytes": 1973
+    },
+    "input/sources/07-fault-closure-register.md": {
+      "sha256": "1c8273ccaec0ae81f1bcebab704c05673186de2bc72c610d31adba44919f1005",
+      "bytes": 3447
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "kind": "pdf",
+  "page": 2,
+  "page_width_points": 600.0,
+  "page_height_points": 800.0,
+  "coordinate_unit": "PDF points; origin at top-left",
+  "words": [],
+  "text_reconstruction": "Words in Poppler line order, joined by one space; lines joined by newline.",
+  "bbox_artifact": "pdf-page-0002.bbox.xhtml",
+  "total_pages": 5
+}

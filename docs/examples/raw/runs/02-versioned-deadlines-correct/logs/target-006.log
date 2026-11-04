@@ -1,0 +1,4 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target006.lean
+Audit.claim06 : Audit.d204.kind = Audit.CaseClass.restricted ∧
+  Audit.revision Audit.d204 = Audit.Revision.two ∧ Audit.standardDeadline Audit.d204 = none
+'Audit.claim06' does not depend on any axioms

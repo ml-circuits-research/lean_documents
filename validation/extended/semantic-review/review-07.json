@@ -1,0 +1,87 @@
+{
+  "dossier": "07",
+  "source_view": "source-view-07.md",
+  "runs": [
+    {
+      "workspace": "tmp/07-incident-response-mixed",
+      "checked_claims": [
+        "C07-01",
+        "C07-02",
+        "C07-03",
+        "C07-04",
+        "C07-05",
+        "C07-06",
+        "C07-07",
+        "C07-08",
+        "C07-09",
+        "C07-10",
+        "C07-11",
+        "C07-12",
+        "C07-13",
+        "C07-14",
+        "C07-15",
+        "C07-16",
+        "C07-17",
+        "C07-18"
+      ],
+      "findings_sha256": "a6424c2dd3b5166232b166ea75976f040d512e006d531253c7e1f8eddd924765",
+      "model_sha256": "5ccba82d954726b22ca50e4592cc77a17a17b01b74104392eca33201bb0a0f12",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "report_sha256": "f15735d0444c4fbf03cf79751c8ef15bc0232cff38083730a486ed48753fa3d6",
+      "catalog_sha256": "1a04110e7262baa3251e4b8d71d16443e749da61c16bc508311ab259c718844a",
+      "proof_results_sha256": "dbd367af2fe113a39410e064cb585fbae34b6eed18a23ee21dcb5e5589117bb3"
+    },
+    {
+      "workspace": "tmp/07-incident-response-correct",
+      "checked_claims": [
+        "C07-C01",
+        "C07-C02",
+        "C07-C03",
+        "C07-C04",
+        "C07-C05",
+        "C07-C06",
+        "C07-C07",
+        "C07-C08",
+        "C07-C09",
+        "C07-C10",
+        "C07-C11",
+        "C07-C12",
+        "C07-C13",
+        "C07-C14",
+        "C07-C15",
+        "C07-C16",
+        "C07-C17",
+        "C07-C18"
+      ],
+      "findings_sha256": "d787c62f18583b4a11521cde4b0bb417f68149033b92e593fc49adad7eadacd6",
+      "model_sha256": "2e94e9e0df4bceedc8cc1e431176f7b55631e827bb8db8a7a74b68e34ea939d6",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "report_sha256": "f9ec237f1d6c08372292f7094070698f513d249b69645fe50d98ffa1ff6117ef",
+      "catalog_sha256": "2ac0f1240c41a2fc0914836eaa03c50eb4b9e91f339513d5b961cc8ee5ca68f5",
+      "proof_results_sha256": "ea043eb26740d8a76f000fe3a2a9e4b4893ab2892ff8a87fd50ff52b0095eb45"
+    }
+  ],
+  "defects": [],
+  "semantic_checks": [
+    "Explicit UTC offsets across clock change, detection versus early warning",
+    "Combined pause cap versus separate deductions",
+    "Maintenance exclusion tied to correct P2 index and detection interval",
+    "Delivered notification times, independent acknowledgment and escalation clocks",
+    "Equal-authority containment conflict and unobserved exfiltration",
+    "Actual raster pages 2\u20133 and original rule DOCX XML"
+  ],
+  "source_original_hashes_identical_between_variants": true,
+  "source_view_sha256": "18968d2354a1996bb1cdb26c47a8e74a1197009627252cbd3c29e7e527c5348a"
+}

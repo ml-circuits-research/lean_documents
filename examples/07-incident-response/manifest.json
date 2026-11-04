@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "fixture_id": "07-incident-response",
+  "synthetic": true,
+  "hash_algorithm": "sha256",
+  "validation_status": "Authoring and structural integrity only; independently executed audit outcomes pending.",
+  "audit_inputs": [
+    {
+      "path": "brief.md",
+      "role": "brief",
+      "sha256": "e6596a5590dfe8e4a1c3506eafdad9cf9cd9568165bfd6910cc54e84275fe168",
+      "bytes": 3381
+    },
+    {
+      "path": "report.md",
+      "role": "report",
+      "sha256": "71e38d93003fb19224003a13e5d73a2e9f5d02cccef445a479cb20b06f7b4357",
+      "bytes": 2989
+    },
+    {
+      "path": "report-correct.md",
+      "role": "report",
+      "sha256": "164b1fea0481bb94e0abfd42ac15ab98e19033dc71a0d9ad18343757f49175be",
+      "bytes": 4075
+    },
+    {
+      "path": "sources/containment-attestations.scan.pdf",
+      "role": "source",
+      "sha256": "0ac923e297094632a74ab4ab8cf60709989191d75b35d5d29d2820007cbde0d0",
+      "bytes": 972928
+    },
+    {
+      "path": "sources/incident-timeline.md",
+      "role": "source",
+      "sha256": "3c7f7f4ffa277289e9f0968044dcee0bb3ada7d8c2c09aa68e34ecae77fa730e",
+      "bytes": 3846
+    },
+    {
+      "path": "sources/maintenance-authorization.pdf",
+      "role": "source",
+      "sha256": "33a2eb21bd3e2d3bc1bc3ee643f5694f958f4d55570d1067685bf2a9a9f5d730",
+      "bytes": 7169
+    },
+    {
+      "path": "sources/monitoring-coverage.md",
+      "role": "source",
+      "sha256": "1ce800a888704355cbfe2e1478cc7111aa84695beb40b6bf419bfba6d11b2c1c",
+      "bytes": 2912
+    },
+    {
+      "path": "sources/notification-register.md",
+      "role": "source",
+      "sha256": "bd983f6678e1509ba7b890bfc8662a6a08ad071f1bb1cde800416784867c4050",
+      "bytes": 3655
+    },
+    {
+      "path": "sources/response-playbook.docx",
+      "role": "source",
+      "sha256": "ea807f0cc7df7f30f991cbe5c74617b2537d0156212ca5f973925be279f78eae",
+      "bytes": 3550
+    },
+    {
+      "path": "sources/review-correspondence.md",
+      "role": "source",
+      "sha256": "2c1cfb5fe6479718615cf4b6445b281ef66b534d4d017c05b46addbf4d27544a",
+      "bytes": 3627
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "07-incident-response-mixed",
+      "report": "report.md"
+    },
+    {
+      "run_id": "07-incident-response-correct",
+      "report": "report-correct.md"
+    }
+  ],
+  "run_selection": "Each audit uses brief.md, all seven sources, and only the selected report.",
+  "excluded_from_audit": [
+    "README.md",
+    "build-notes.md",
+    "manifest.json",
+    "authoring/",
+    "../evaluator/07-incident-response.json"
+  ],
+  "native_source_mappings": [
+    {
+      "path": "sources/response-playbook.docx",
+      "semantic_markers": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08"
+      ],
+      "extraction_tokens": [
+        "[R01]",
+        "[R02]",
+        "[R03]",
+        "[R04]",
+        "[R05]",
+        "[R06]",
+        "[R07]",
+        "[R08]"
+      ]
+    },
+    {
+      "path": "sources/maintenance-authorization.pdf",
+      "semantic_markers": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06"
+      ],
+      "extraction_tokens": [
+        "[M01]",
+        "[M02]",
+        "[M03]",
+        "[M04]",
+        "[M05]",
+        "[M06]"
+      ]
+    },
+    {
+      "path": "sources/containment-attestations.scan.pdf",
+      "semantic_markers": [
+        "A01",
+        "A02",
+        "A03",
+        "A04"
+      ],
+      "extraction_tokens": [
+        "[A01]",
+        "[A02]",
+        "[A03]",
+        "[A04]"
+      ]
+    }
+  ]
+}

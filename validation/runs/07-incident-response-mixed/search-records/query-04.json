@@ -1,0 +1,119 @@
+{
+  "query": "\"exfiltration\" OR \"attestations\"",
+  "total_matching_chunks": 11,
+  "offset": 0,
+  "limit": 60,
+  "results": [
+    {
+      "id": 26,
+      "path": "input/sources/containment-attestations.scan.pdf.md",
+      "anchor": "pdf-page-0001",
+      "document_id": "D00003",
+      "start_char": 0,
+      "end_char": 128,
+      "text": "Scanned shift attestations for incident C\nAll organizations, people, agreements, events, and rules in this source are\nsynthetic.",
+      "rank": -4.070735961127244
+    },
+    {
+      "id": 47,
+      "path": "input/sources/monitoring-coverage.md",
+      "anchor": "G03",
+      "document_id": "D00006",
+      "start_char": 0,
+      "end_char": 655,
+      "text": "## [G03]\n\nA storage support ticket attributes the telemetry outage to a collector volume reaching its configured capacity. The ticket concerns the observation system and does not identify who, if anyone, initiated exfiltration. It does not allege that a malicious actor caused the storage condition, and no source connects the volume event to a successful transfer of protected records. A missing observational period can justify requesting additional evidence or marking a support gap. It cannot supply the absent positive premise for a report that asserts exfiltration, nor the absent complete negative evidence for a report that rules exfiltration out.",
+      "rank": -3.288480699384813
+    },
+    {
+      "id": 23,
+      "path": "input/report.md",
+      "anchor": "C07-16",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 113,
+      "text": "**C07-16.** No exfiltration occurred during A's 01:10–01:40 UTC monitoring gap. Sources: R08, G01, G02, G03, G04.",
+      "rank": -3.203231586600714
+    },
+    {
+      "id": 24,
+      "path": "input/report.md",
+      "anchor": "C07-17",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 163,
+      "text": "**C07-17.** Exfiltration occurred during A's 01:10–01:40 UTC monitoring gap because the collector has no records for that period. Sources: R08, G01, G02, G03, G04.",
+      "rank": -2.9973297336976823
+    },
+    {
+      "id": 46,
+      "path": "input/sources/monitoring-coverage.md",
+      "anchor": "G02",
+      "document_id": "D00006",
+      "start_char": 0,
+      "end_char": 687,
+      "text": "## [G02]\n\nThe sensor design note says the listed alarms detect particular signatures and traffic thresholds. It expressly declines to assert that every possible exfiltration would produce an alarm, even when collection is functioning. Thus the observation “no listed alarms in retained samples” is narrower than “no exfiltration occurred.” During the collection gap, even the narrower alarm observation lacks samples. The operational incident state in T02 remains independently documented: A was uncontained until 02:20 UTC. Being uncontained does not itself prove that data were taken, and becoming contained does not establish a complete retrospective history of earlier data movement.",
+      "rank": -2.7850594966125106
+    },
+    {
+      "id": 72,
+      "path": "input/sources/response-playbook.docx.md",
+      "anchor": "docx-p-0018",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 835,
+      "text": "Monitoring evidence has its own completeness boundaries. A certified monitoring extract can establish that specified sensors reported no listed alarms during the certified observation periods. It does not prove that no underlying exfiltration occurred unless a supplied rule makes the sensors complete for that event type and period. Missing telemetry cannot by itself prove either successful exfiltration or its absence. Signed conflicting statements about containment remain attributed evidence unless authoritative records or an adopted resolution settle the point. The playbook defines timeliness, roles, pauses, and windows but supplies no objective criterion for judging that an overall response was professionally managed, emotionally reassuring, or exemplary. Those broader judgments require additional standards and argument.\n",
+      "rank": -2.6561604946659885
+    },
+    {
+      "id": 29,
+      "path": "input/sources/containment-attestations.scan.pdf.md",
+      "anchor": "pdf-page-0004",
+      "document_id": "D00003",
+      "start_char": 0,
+      "end_char": 696,
+      "text": "[AQ3]\nThe two signatories have not retracted their attestations. No signed correction,\nadjudication, authoritative C containment record, or evidence-priority rule resolving\nthe conflict is supplied. A later signing time alone does not make Pavel's statement\nan authorized correction of Elise's. Likewise, Elise's role as containment operator\ndoes not make her account infallible under the playbook. The packet's authenticity\nstipulation concerns the identity of the signatories and integrity of the text, not\nthe historical truth of every assertion. A reviewer must preserve both attributed\npositions rather than accept both as unconditional facts or silently discard the less\nconvenient account.",
+      "rank": -2.327218800644166
+    },
+    {
+      "id": 81,
+      "path": "input/sources/containment-attestations.scan.pdf.md",
+      "anchor": "pdf-page-0004-reviewed-0001",
+      "document_id": "D00003",
+      "start_char": 0,
+      "end_char": 696,
+      "text": "[A03]\nThe two signatories have not retracted their attestations. No signed correction,\nadjudication, authoritative C containment record, or evidence-priority rule resolving\nthe conflict is supplied. A later signing time alone does not make Pavel's statement\nan authorized correction of Elise's. Likewise, Elise's role as containment operator\ndoes not make her account infallible under the playbook. The packet's authenticity\nstipulation concerns the identity of the signatories and integrity of the text, not\nthe historical truth of every assertion. A reviewer must preserve both attributed\npositions rather than accept both as unconditional facts or silently discard the less\nconvenient account.",
+      "rank": -2.327218800644166
+    },
+    {
+      "id": 36,
+      "path": "input/sources/incident-timeline.md",
+      "anchor": "T05",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 707,
+      "text": "## [T05]\n\nIncident C was accepted as P1 at 2030-10-27 01:50 +02:00, equivalent to 2030-10-26 23:50 UTC. Later actions occurred on October 27, but the qualifying detection timestamp is authoritative and unchanged. The accepted register deliberately contains no authoritative containment timestamp for C. Instead, the shift packet contains the two signed, inconsistent containment attestations reproduced in the scanned attestation source. This is unlike A, whose containment is authoritatively recorded in T02. No rule permits borrowing A's authoritative-record status for C or treating C's latest available testimony as automatically controlling because its document appears later in the transferred packet.",
+      "rank": -2.2812392011481277
+    },
+    {
+      "id": 48,
+      "path": "input/sources/monitoring-coverage.md",
+      "anchor": "G04",
+      "document_id": "D00006",
+      "start_char": 0,
+      "end_char": 657,
+      "text": "## [G04]\n\nThe security liaison requested a packet capture from a separate network appliance for the gap. The response says that archive was not transferred with this dossier. The package inventory is complete for supplied monitoring files only. It says nothing about whether another team possesses a usable capture, whether the capture would reveal an event, or whether collection was complete at that appliance. No report may fill this uncertainty by inventing a favorable or unfavorable result. A future authenticated capture might narrow the uncertainty, but the present finite evidence neither confirms nor denies exfiltration during the missing period.",
+      "rank": -1.9282749207500007
+    },
+    {
+      "id": 45,
+      "path": "input/sources/monitoring-coverage.md",
+      "anchor": "G01",
+      "document_id": "D00006",
+      "start_char": 0,
+      "end_char": 681,
+      "text": "## [G01]\n\nThe monitoring package certifies collection from A's egress sensors during [00:00, 01:10) UTC and [01:40, 02:30] UTC on October 27. It explicitly does not cover [01:10, 01:40) UTC because the collector's storage service was unavailable. Boundary brackets describe the certified collection intervals, not assumptions about attacker behavior. The retained records show no listed exfiltration alarms during the certified periods. There are no retained samples from the thirty-minute gap. The package contains no reconstruction of those missing samples, no redundant complete sensor stream, and no statement that silence from the collector proves absence of network activity.",
+      "rank": -1.8609390396614665
+    }
+  ],
+  "limitations": "Ranked retrieval is not exhaustive semantic review; inspect full passages and inventory for exceptions."
+}

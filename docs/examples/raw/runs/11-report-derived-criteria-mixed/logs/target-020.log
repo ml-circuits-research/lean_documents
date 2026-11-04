@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target020.lean
+Audit.cApproval : ¬Audit.compliant Audit.c
+'Audit.cApproval' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.157]

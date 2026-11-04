@@ -1,0 +1,3 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target015.lean
+Audit.paymentOpen : ∀ (paid : Bool), ∃ w, w.invoice = true ∧ w.delivery = true ∧ w.paid = paid
+'Audit.paymentOpen' does not depend on any axioms

@@ -1,0 +1,159 @@
+{
+  "query": "\"qualifying detection\" OR \"offset\"",
+  "total_matching_chunks": 15,
+  "offset": 0,
+  "limit": 60,
+  "results": [
+    {
+      "id": 60,
+      "path": "input/sources/response-playbook.docx.md",
+      "anchor": "docx-p-0006",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 812,
+      "text": "All elapsed durations must be calculated on a single UTC timeline. Each timestamp bearing a numerical timezone offset is interpreted literally using that offset: UTC equals the printed local clock time minus the printed offset. The offset is fixed for that event even when nearby events display another offset. No outside daylight-saving calendar is needed or permitted to replace an explicit offset. The October dates were selected to make careless subtraction of local clock labels tempting. Exact minute timestamps denote exact instants, rather than intervals of possible occurrence. A deadline expressed as within N minutes is inclusive, so an action at exactly the deadline is timely. All clock changes, windows, and pauses relevant to the assessed incidents are explicitly recorded in the supplied sources.",
+      "rank": -6.5900469959577155
+    },
+    {
+      "id": 8,
+      "path": "input/report.md",
+      "anchor": "C07-01",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 98,
+      "text": "**C07-01.** A's qualifying detection was at 00:00 UTC on October 27, 2030. Sources: R01, R02, T01.",
+      "rank": -2.1914313151102762
+    },
+    {
+      "id": 9,
+      "path": "input/report.md",
+      "anchor": "C07-02",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 148,
+      "text": "**C07-02.** Only eighty minutes elapsed between A's qualifying detection at local 02:00 and containment at local 03:20. Sources: R02, T01, T02, F01.",
+      "rank": -2.0651309394326987
+    },
+    {
+      "id": 68,
+      "path": "input/sources/response-playbook.docx.md",
+      "anchor": "docx-p-0014",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 736,
+      "text": "Revision 2 takes effect at 2030-10-27 00:00 UTC for incidents whose qualifying detection occurs at or after that instant. Incidents detected earlier retain revision 1 throughout their response, even when containment, handover, or evidence collection occurs after the boundary. A raw warning signal before midnight does not grandfather an incident whose accepted qualifying detection occurs at midnight. The revision change affects the containment-pause cap only; the acknowledgement, maintenance, and escalation rules reproduced here apply to both versions. A dashboard displaying the currently published revision does not amend an incident's detection event or its retained version. Exact receipt at the boundary belongs to revision 2.",
+      "rank": -1.8052361456419226
+    },
+    {
+      "id": 32,
+      "path": "input/sources/incident-timeline.md",
+      "anchor": "T01",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 685,
+      "text": "## [T01]\n\nIncident A generated a raw untriaged warning at 2030-10-27 01:30 +02:00, equivalent to 2030-10-26 23:30 UTC. The coordinator accepted its qualifying detection as priority P1 at 2030-10-27 02:00 +02:00, equivalent to 00:00 UTC on October 27. The accepted classification concerns a security incident in the south archive cluster, not an expected indexing warning under MA-27. A delivered human acknowledgement accepting responsibility occurred at 2030-10-27 02:12 +02:00, equivalent to 00:12 UTC. These are separate event fields, all exact to the minute. The raw warning is not itself the qualifying detection, and the classification record has not been corrected or withdrawn.",
+      "rank": -1.7486032255284072
+    },
+    {
+      "id": 66,
+      "path": "input/sources/response-playbook.docx.md",
+      "anchor": "docx-p-0012",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 837,
+      "text": "The escalation procedure contains three distinct duties for a P1 incident. The technical lead must receive a notification no later than ten elapsed minutes after qualifying detection. The incident commander must receive a notification no later than twenty elapsed minutes after qualifying detection. If the incident remains uncontained sixty elapsed minutes after detection, an executive duty officer must receive a notification no later than fifteen minutes after that trigger, giving a latest time of detection plus seventy-five minutes. All escalation clocks use ordinary elapsed UTC time without containment-pause exclusions. Queue submission, draft completion, attempted dialing, and successful delivery are different events. A notification satisfies the duty only on confirmed delivery to the required role, not merely when queued.",
+      "rank": -1.73649734054466
+    },
+    {
+      "id": 75,
+      "path": "input/sources/review-correspondence.md",
+      "anchor": "F02",
+      "document_id": "D00009",
+      "start_char": 0,
+      "end_char": 664,
+      "text": "## [F02]\n\nThe analyst adds A's approved nonoverlapping pause durations, thirty plus forty, obtaining seventy raw approved minutes. Because A's accepted qualifying detection is exactly the revision 2 boundary, only forty-five minutes are excluded from the containment metric. The resulting active-response interval is ninety-five minutes, which exceeds the ninety-minute P1 allowance by five minutes. This calculation treats approval validity and combined exclusion cap as separate questions. Both pauses can be validly approved even though their full combined duration is not deductible. Replacing the cap with sixty minutes would improperly apply revision 1 to A.",
+      "rank": -1.2898704036405377
+    },
+    {
+      "id": 76,
+      "path": "input/sources/review-correspondence.md",
+      "anchor": "F03",
+      "document_id": "D00009",
+      "start_char": 0,
+      "end_char": 653,
+      "text": "## [F03]\n\nFor B, the review note retains 03:10 UTC as actual qualifying detection but uses 03:20 UTC, the authorized MB-27 window end, as the effective acknowledgement-clock start. Delivered acknowledgement at 03:45 UTC is twenty-five minutes after that start, within the thirty-minute allowance. The note explains that a thirty-five-minute raw detection-to-acknowledgement interval is not inherently a failure when an express scoped deferral applies. The same note explicitly rejects applying any maintenance deferral to A because A is priority P1. It does not claim that the existence of planned work alone establishes any other incident's compliance.",
+      "rank": -1.245051365435009
+    },
+    {
+      "id": 36,
+      "path": "input/sources/incident-timeline.md",
+      "anchor": "T05",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 707,
+      "text": "## [T05]\n\nIncident C was accepted as P1 at 2030-10-27 01:50 +02:00, equivalent to 2030-10-26 23:50 UTC. Later actions occurred on October 27, but the qualifying detection timestamp is authoritative and unchanged. The accepted register deliberately contains no authoritative containment timestamp for C. Instead, the shift packet contains the two signed, inconsistent containment attestations reproduced in the scanned attestation source. This is unlike A, whose containment is authoritatively recorded in T02. No rule permits borrowing A's authoritative-record status for C or treating C's latest available testimony as automatically controlling because its document appears later in the transferred packet.",
+      "rank": -1.238901646818215
+    },
+    {
+      "id": 40,
+      "path": "input/sources/maintenance-authorization.pdf.md",
+      "anchor": "pdf-page-0004",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 656,
+      "text": "[M03]\nA separate authorization MB-27 covers operation M-B, a planned metadata migration affecting\nthe west archive service, during [2030-10-27 02:50 UTC, 2030-10-27 03:20 UTC). Incident B is\nexplicitly classified P2 and tied to M-B by both the accepted incident record and the\nmaintenance operator’s completion certificate. Its accepted qualifying detection is\n2030-10-27 04:10 +01:00, which is 03:10 UTC. This instant is strictly after the window\nbegins and strictly before it ends. No unplanned extension, early termination, different\ntimezone, or retroactive cancellation is recorded. The maintenance operation completed at\nthe authorized 03:20 UTC end.",
+      "rank": -1.2267826796920247
+    },
+    {
+      "id": 35,
+      "path": "input/sources/incident-timeline.md",
+      "anchor": "T04",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 686,
+      "text": "## [T04]\n\nIncident B's accepted qualifying detection is 2030-10-27 04:10 +01:00, or 03:10 UTC. Its P2 classification and M-B operation identifier match MB-27. A delivered human acknowledgement identifying B and taking responsibility occurred at 2030-10-27 04:45 +01:00, or 03:45 UTC. No containment pause is claimed for B, and there is no P1 classification or changed maintenance scope in the supplied record. The raw elapsed interval from detection to acknowledgement is thirty-five minutes. The effective P2 acknowledgement interval must nevertheless be determined using the authorized maintenance exception, rather than treating raw elapsed time as the only possible response metric.",
+      "rank": -1.2148985118370357
+    },
+    {
+      "id": 62,
+      "path": "input/sources/response-playbook.docx.md",
+      "anchor": "docx-p-0008",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 779,
+      "text": "Priority P1 requires acknowledgement within fifteen elapsed minutes after qualifying detection and containment within ninety active-response minutes after that detection. Priority P2 requires acknowledgement within thirty elapsed minutes after its effective response-clock start, with the maintenance deferral defined in M02 as the only applicable modification. The P1 acknowledgement clock is never paused or deferred. For a P1 containment clock, approved containment pauses may exclude elapsed time under R04. A pause does not alter the detection timestamp, acknowledgement clock, or escalation clock. No SLA in this dossier treats an unapproved pause request as an approved interruption, and no pause can exclude time before its approved beginning or after actual containment.",
+      "rank": -1.2148985118370357
+    },
+    {
+      "id": 33,
+      "path": "input/sources/incident-timeline.md",
+      "anchor": "T02",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 794,
+      "text": "## [T02]\n\nAuthoritative containment confirmation for A occurred at 2030-10-27 03:20 +01:00, equivalent to 02:20 UTC. The containment team then confirmed the affected security path was isolated. A remained uncontained continuously from qualifying detection until this confirmation; this positive incident-state record is independent of whether the monitoring sensors were continuously available. The source therefore establishes that A was still uncontained at 01:00 UTC, the potential executive escalation trigger. Subtracting the printed local labels 03:20 and 02:00 without accounting for their different offsets would not measure the elapsed response interval. No earlier containment event, partial containment accepted as full, or backdated correction exists in this authoritative A record.",
+      "rank": -1.19180779796191
+    },
+    {
+      "id": 39,
+      "path": "input/sources/maintenance-authorization.pdf.md",
+      "anchor": "pdf-page-0003",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 761,
+      "text": "[M02]\nFor a P2 incident within the explicitly named maintenance operation, a qualifying detection\noccurring inside its authorized half-open window receives an effective acknowledgement-clock\nstart at the window end. A detection outside the window receives no such deferral. The\nthirty-minute P2 acknowledgement allowance then runs from that effective start, inclusive at\nits deadline. This is a specific adjustment to an acknowledgement clock, not a declaration\nthat the incident did not exist until the window ended. It does not change the accepted\ndetection record, allow a missed acknowledgement before an already-ended window to be\nexcused, or add time to a P1 containment limit. The incident and maintenance identifiers\nmust match the authorized operation.",
+      "rank": -1.1861716174172563
+    },
+    {
+      "id": 58,
+      "path": "input/sources/response-playbook.docx.md",
+      "anchor": "docx-p-0004",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 845,
+      "text": "North Channel Observatory operates a synthetic coastal data service. This playbook governs incidents A, B, and C from October 26 through October 28, 2030. A qualifying detection is the first incident classification accepted by the incident coordinator, not an untriaged sensor signal, an email draft, a queue entry, or an invoice from a monitoring provider. Acknowledgement is a delivered human acknowledgement identifying the incident and taking responsibility for response. Containment is an authoritative confirmation that the specified incident path has been isolated; planning an isolation or signing a checklist without completing the isolation is not containment. The source files distinguish authoritative event records from attributed witness claims. The playbook contains no rule making every signed statement an infallible world fact.",
+      "rank": -1.1641500799087459
+    }
+  ],
+  "limitations": "Ranked retrieval is not exhaustive semantic review; inspect full passages and inventory for exceptions."
+}

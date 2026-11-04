@@ -1,0 +1,66 @@
+{
+  "python": "3.14.8 (main, Oct  1 2026, 00:00:00) [GCC 16.2.1 20260819 (Red Hat 16.2.1-2)]",
+  "sqlite": "3.51.2",
+  "stdlib_only_runtime": true,
+  "lean_version_required": "4.24.0",
+  "tools": {
+    "lean": {
+      "available": true,
+      "path": "/home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lean",
+      "version_output": [
+        "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)"
+      ]
+    },
+    "lake": {
+      "available": true,
+      "path": "/home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake",
+      "version_output": [
+        "Lake version 5.0.0-src+797c613 (Lean version 4.24.0)"
+      ]
+    },
+    "pdfinfo": {
+      "available": true,
+      "path": "/usr/bin/pdfinfo",
+      "version_output": [
+        "pdfinfo version 26.01.0",
+        "Copyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org"
+      ]
+    },
+    "pdftotext": {
+      "available": true,
+      "path": "/usr/bin/pdftotext",
+      "version_output": [
+        "pdftotext version 26.01.0",
+        "Copyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org"
+      ]
+    },
+    "pdfimages": {
+      "available": true,
+      "path": "/usr/bin/pdfimages",
+      "version_output": [
+        "pdfimages version 26.01.0",
+        "Copyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org"
+      ]
+    },
+    "pdftoppm": {
+      "available": true,
+      "path": "/usr/bin/pdftoppm",
+      "version_output": [
+        "pdftoppm version 26.01.0",
+        "Copyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org"
+      ]
+    },
+    "tesseract": {
+      "available": true,
+      "path": "/home/salboaie/.local/bin/tesseract",
+      "version_output": [
+        "tesseract 5.5.4",
+        " leptonica-1.87.0"
+      ]
+    },
+    "lean4checker": {
+      "available": false
+    }
+  },
+  "sqlite_fts5": true
+}

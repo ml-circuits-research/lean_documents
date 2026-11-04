@@ -1,0 +1,163 @@
+[
+  {
+    "claim_id": "C10-OK-01",
+    "report_anchor": "C10-OK-01",
+    "report_quote": "**C10-OK-01.** The finite identity registry contains exactly sixty nodes N01 through N60.\n\nCitations: sources/00-governance.md#[G01]; sources/04-node-registry.pdf#[RG01]; sources/04-node-registry.pdf#[RG05].",
+    "component_propositions": [
+      "Exactly60 distinct identities N01-N60"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C10-OK-02",
+    "report_anchor": "C10-OK-02",
+    "report_quote": "**C10-OK-02.** N04 historical release was authorized under revision A without a central permit.\n\nCitations: sources/records/004-n04.md#[N04-01]; sources/03-policy-transition.md#[PV01].",
+    "component_propositions": [
+      "N04 historical revisionA",
+      "ActiveAda and local Emil approval sufficient",
+      "No central permit needed"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C10-OK-03",
+    "report_anchor": "C10-OK-03",
+    "report_quote": "**C10-OK-03.** N09 release on 21 September lacked an in-force permit.\n\nCitations: sources/records/009-n09.md#[N09-01]; sources/03-policy-transition.md#[PV02].",
+    "component_propositions": [
+      "N09 September 21 release outside both permit windows",
+      "Complete history excludes replacement"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C10-OK-04",
+    "report_anchor": "C10-OK-04",
+    "report_quote": "**C10-OK-04.** The north-operator alias identifies Ben on 21 September, before his credential activated.\n\nCitations: sources/01-alias-register.md#[AL01]; sources/records/021-n21.md#[N21-01].",
+    "component_propositions": [
+      "Datedalias identifiesBen",
+      "Credential inactive onSeptember21"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C10-OK-05",
+    "report_anchor": "C10-OK-05",
+    "report_quote": "**C10-OK-05.** Devon approval of N41 on 20 September lies within delegated node and time scope.\n\nCitations: sources/02-delegation.docx#[AU01]; sources/records/041-n41.md#[N41-01].",
+    "component_propositions": [
+      "N41 in delegated nodes",
+      "September 20 approval inside authoritytime"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C10-OK-06",
+    "report_anchor": "C10-OK-06",
+    "report_quote": "**C10-OK-06.** Devon approval of N51 lacked delegated scope.\n\nCitations: sources/02-delegation.docx#[AU04]; sources/records/051-n51.md#[N51-01].",
+    "component_propositions": [
+      "N51 outside delegated range",
+      "Expansion declined with completehistory"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C10-OK-07",
+    "report_anchor": "C10-OK-07",
+    "report_quote": "**C10-OK-07.** N57 release at 10:00 on 22 September was authorized by the signed board exception.\n\nCitations: sources/98-board-exception.md#[EX01]; sources/records/057-n57.md#[N57-01]; sources/02-delegation.docx#[AU03].",
+    "component_propositions": [
+      "Validboard authority",
+      "N57 matched inclusivewindow",
+      "ActiveAda and local Emil approval",
+      "Permit waived withinexception"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C10-OK-08",
+    "report_anchor": "C10-OK-08",
+    "report_quote": "**C10-OK-08.** The board exception does not cover N58.\n\nCitations: sources/98-board-exception.md#[EX01]; sources/98-board-exception.md#[EX03].",
+    "component_propositions": [
+      "Finalexception excludesN58",
+      "No secondgrant in completeSeptember register"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C10-OK-09",
+    "report_anchor": "C10-OK-09",
+    "report_quote": "**C10-OK-09.** N58 provides an explicit counterexample to universal recorded-release authorization.\n\nCitations: sources/records/058-n58.md#[N58-01]; sources/03-policy-transition.md#[PV03].",
+    "component_propositions": [
+      "N58 concrete recordedrelease",
+      "Revocationeffective before release",
+      "No replacement/exception",
+      "Counterexample to universal authorization"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C10-OK-10",
+    "report_anchor": "C10-OK-10",
+    "report_quote": "**C10-OK-10.** N59 authorization is unsupported because its permit history is missing and incomplete.\n\nCitations: sources/records/059-n59.md#[N59-01]; sources/00-governance.md#[G04].",
+    "component_propositions": [
+      "Permit evidence missing/incomplete",
+      "Authorization unsupported notfalse"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C10-OK-11",
+    "report_anchor": "C10-OK-11",
+    "report_quote": "**C10-OK-11.** N60 named release R1 has a complete authorization argument, while its late-month event history is incomplete.\n\nCitations: sources/records/060-n60.md#[N60-01].",
+    "component_propositions": [
+      "NamedN60R1 authorized",
+      "Late-month eventexport incomplete",
+      "No exactmonthlycount inferred"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C10-OK-12",
+    "report_anchor": "C10-OK-12",
+    "report_quote": "**C10-OK-12.** The proposal mentioning N58 did not include it in the final signed grant.\n\nCitations: sources/97-request-correspondence.md#[REQ01]; sources/98-board-exception.md#[EX02].",
+    "component_propositions": [
+      "RequestmentionedN58",
+      "Finalgrant excludedN58"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C10-OK-13",
+    "report_anchor": "C10-OK-13",
+    "report_quote": "**C10-OK-13.** A source change requires checking affected premises before reusing an audit result.\n\nCitations: sources/00-governance.md#[G05].",
+    "component_propositions": [
+      "Sourcechange requires affected-premise review",
+      "Reporthash alone insufficient"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  },
+  {
+    "claim_id": "C10-OK-14",
+    "report_anchor": "C10-OK-14",
+    "report_quote": "**C10-OK-14.** The ordinary N01 release meets revision B authorization requirements.\n\nCitations: sources/records/001-n01.md#[N01-01]; sources/00-governance.md#[G02].",
+    "component_propositions": [
+      "N01 date selectsrevisionB",
+      "AliasAda active",
+      "Cora scope and signedapproval",
+      "Covering unrevokedpermit"
+    ],
+    "coverage": "audited",
+    "excluded_components": []
+  }
+]

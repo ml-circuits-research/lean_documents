@@ -1,0 +1,3 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target005.lean
+Audit.deadline202 : Audit.standardDue Audit.c202 = some (Audit.at17 19)
+'Audit.deadline202' does not depend on any axioms

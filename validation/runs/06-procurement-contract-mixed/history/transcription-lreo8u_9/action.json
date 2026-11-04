@@ -1,0 +1,20 @@
+{
+  "action": "manual-transcription",
+  "at": "2026-11-04T15:03:33.646113+00:00",
+  "path": "input/sources/approval-attestations.scan.pdf.md",
+  "source_anchor": "pdf-page-0005",
+  "root_source_anchor": "pdf-page-0005",
+  "new_anchor": "pdf-page-0005-reviewed-0001",
+  "document_id": "D00003",
+  "reviewer": "audit_01m",
+  "reason": "Actually viewed original preserved page-5 raster with view_image. Marker is A04, not OCR AQ4. EUR 8,000.00, June 27 10:30 commitment and all negative payment-evidence wording were compared against the original; original OCR retained.",
+  "source_sha256": "f7fd20aa2be7a439af133f37c3f045a9d3ce14b786760ec8c806c2e8abcf07f8",
+  "source_segment_sha256": "fc73987f251decce4985401d8141a20b8851b238adfe787d7ede2f9fff3610d5",
+  "new_segment_sha256": "00ec430f823e5fbf0b983b4eb9c2e0f8768915842fecabf5c8844a7d83c98cbd",
+  "transcription_file_sha256": "64eda6f7c9f8621cc75471f06ad1f8be5d19439e1ff546f59a773d544ab814b9",
+  "transcription_snapshot": "input/manual-transcriptions/D00003/88f7763d0ec10b10cfbc90b82a9857fe4d8abdb2e5ba545eef5bc49b897e29bd.txt",
+  "interpretation_limit": "Manual transcription is a reviewer-attributed interpretation of the original source, not machine-certified textual fidelity or source authenticity. Inherited coordinates identify the original passage; inherited OCR words and confidence describe the uncorrected extraction, not the manually transcribed wording.",
+  "technical_results": "Prior successes invalidated; no new proof check has been run.",
+  "state": "recorded",
+  "archived": []
+}

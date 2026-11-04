@@ -1,0 +1,53 @@
+{
+  "text": "<a id=\"P01\"></a>\n# Synthetic operational record N15\n\n<a id=\"P02\"></a>\n[N15-01] Release N15-R1 occurred on 18 September 2034 at 10:00 under revision B. Ada signed as north-operator while that alias mapped to P-AQ; her credential was active. Cora issued signed approval N15-A1 at 09:00 that day. Permit N15-P1 covered the full day and was unrevoked at release. Permit and approval histories are complete for the named interval. The signed handoff identifies the same node, preventing use of another node's permit. No exception is needed for this ordinary release.\n\n<a id=\"P03\"></a>\n[N15-02] Bundle receipt. This node belongs to rack 2, monitoring segment S3. The named handoff transferred configuration bundle sequence 1015, checksum label L3015, to node N15. The receipt confirms bundle identity and administrative handoff, not all future service behavior. It does not independently establish complete event history outside the stated interval.\n",
+  "segments": [
+    {
+      "anchor": "P01",
+      "quote": "# Synthetic operational record N15",
+      "locator": {
+        "kind": "text",
+        "start_line": 1,
+        "end_line": 1,
+        "start_character": 0,
+        "end_character": 34,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P02",
+      "quote": "[N15-01] Release N15-R1 occurred on 18 September 2034 at 10:00 under revision B. Ada signed as north-operator while that alias mapped to P-AQ; her credential was active. Cora issued signed approval N15-A1 at 09:00 that day. Permit N15-P1 covered the full day and was unrevoked at release. Permit and approval histories are complete for the named interval. The signed handoff identifies the same node, preventing use of another node's permit. No exception is needed for this ordinary release.",
+      "locator": {
+        "kind": "text",
+        "start_line": 3,
+        "end_line": 3,
+        "start_character": 36,
+        "end_character": 527,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P03",
+      "quote": "[N15-02] Bundle receipt. This node belongs to rack 2, monitoring segment S3. The named handoff transferred configuration bundle sequence 1015, checksum label L3015, to node N15. The receipt confirms bundle identity and administrative handoff, not all future service behavior. It does not independently establish complete event history outside the stated interval.",
+      "locator": {
+        "kind": "text",
+        "start_line": 5,
+        "end_line": 5,
+        "start_character": 529,
+        "end_character": 892,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    }
+  ],
+  "tools": {
+    "python-stdlib": "3.14.8"
+  },
+  "warnings": [],
+  "complete": true,
+  "status": "ready"
+}

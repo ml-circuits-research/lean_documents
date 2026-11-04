@@ -1,0 +1,119 @@
+{
+  "query": "\"pause\" OR \"cap\"",
+  "total_matching_chunks": 11,
+  "offset": 0,
+  "limit": 60,
+  "results": [
+    {
+      "id": 64,
+      "path": "input/sources/response-playbook.docx.md",
+      "anchor": "docx-p-0010",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 846,
+      "text": "A valid containment pause must identify an external dependency blocking containment, be approved in writing by the incident commander before the pause begins, and specify a beginning and end. Approved pauses exclude only their actual overlap with the detection-to-containment interval. Nonoverlapping approved intervals can be added; overlapping intervals would be unioned so a minute is never excluded twice. Revision 1 caps the total excluded time at sixty minutes for an incident. Revision 2 caps the total at forty-five minutes. The cap applies to the combined excluded duration, not independently to each approved pause. Active-response time equals total elapsed detection-to-containment time minus the smaller of the approved overlapping duration and the applicable combined cap. Approval of a longer pause interval does not waive that cap.",
+      "rank": -6.370497425343045
+    },
+    {
+      "id": 75,
+      "path": "input/sources/review-correspondence.md",
+      "anchor": "F02",
+      "document_id": "D00009",
+      "start_char": 0,
+      "end_char": 664,
+      "text": "## [F02]\n\nThe analyst adds A's approved nonoverlapping pause durations, thirty plus forty, obtaining seventy raw approved minutes. Because A's accepted qualifying detection is exactly the revision 2 boundary, only forty-five minutes are excluded from the containment metric. The resulting active-response interval is ninety-five minutes, which exceeds the ninety-minute P1 allowance by five minutes. This calculation treats approval validity and combined exclusion cap as separate questions. Both pauses can be validly approved even though their full combined duration is not deductible. Replacing the cap with sixty minutes would improperly apply revision 1 to A.",
+      "rank": -4.9661833584779425
+    },
+    {
+      "id": 34,
+      "path": "input/sources/incident-timeline.md",
+      "anchor": "T03",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 728,
+      "text": "## [T03]\n\nCommander approval PA-A1 was granted at 00:25 UTC for an external credential dependency blocking A containment from 00:30 through 01:00 UTC. Commander approval PA-A2 was granted at 01:05 UTC for an external routing dependency blocking A containment from 01:10 through 01:50 UTC. Each approval preceded its pause beginning, identified the dependency, and was effective for the stated interval. The pauses are nonoverlapping and both lie entirely between detection and authoritative containment. Their raw durations are thirty and forty minutes. Both approvals expressly remain subject to the combined cap in the applicable playbook revision. They do not waive, restart, or pause any escalation or acknowledgement clock.",
+      "rank": -4.292025638021727
+    },
+    {
+      "id": 68,
+      "path": "input/sources/response-playbook.docx.md",
+      "anchor": "docx-p-0014",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 736,
+      "text": "Revision 2 takes effect at 2030-10-27 00:00 UTC for incidents whose qualifying detection occurs at or after that instant. Incidents detected earlier retain revision 1 throughout their response, even when containment, handover, or evidence collection occurs after the boundary. A raw warning signal before midnight does not grandfather an incident whose accepted qualifying detection occurs at midnight. The revision change affects the containment-pause cap only; the acknowledgement, maintenance, and escalation rules reproduced here apply to both versions. A dashboard displaying the currently published revision does not amend an incident's detection event or its retained version. Exact receipt at the boundary belongs to revision 2.",
+      "rank": -3.7027209038222093
+    },
+    {
+      "id": 13,
+      "path": "input/report.md",
+      "anchor": "C07-06",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 162,
+      "text": "**C07-06.** All seventy approved pause minutes may be excluded from A's containment clock because each pause was approved before it began. Sources: R04, R06, T03.",
+      "rank": -3.0139532480051505
+    },
+    {
+      "id": 31,
+      "path": "input/sources/incident-timeline.md",
+      "anchor": "document-preamble",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 150,
+      "text": "# Authoritative accepted incident timeline and pause approvals\n\nAll organizations, people, agreements, events, and rules in this source are synthetic.",
+      "rank": -2.579088916592883
+    },
+    {
+      "id": 11,
+      "path": "input/report.md",
+      "anchor": "C07-04",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 146,
+      "text": "**C07-04.** A's active-response containment interval was eighty minutes after permissible pause exclusions. Sources: R04, R06, T01, T02, T03, F02.",
+      "rank": -2.5132155289466707
+    },
+    {
+      "id": 62,
+      "path": "input/sources/response-playbook.docx.md",
+      "anchor": "docx-p-0008",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 779,
+      "text": "Priority P1 requires acknowledgement within fifteen elapsed minutes after qualifying detection and containment within ninety active-response minutes after that detection. Priority P2 requires acknowledgement within thirty elapsed minutes after its effective response-clock start, with the maintenance deferral defined in M02 as the only applicable modification. The P1 acknowledgement clock is never paused or deferred. For a P1 containment clock, approved containment pauses may exclude elapsed time under R04. A pause does not alter the detection timestamp, acknowledgement clock, or escalation clock. No SLA in this dossier treats an unapproved pause request as an approved interruption, and no pause can exclude time before its approved beginning or after actual containment.",
+      "rank": -2.5065070666246823
+    },
+    {
+      "id": 70,
+      "path": "input/sources/response-playbook.docx.md",
+      "anchor": "docx-p-0016",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 767,
+      "text": "An expressly scoped maintenance window may defer the effective P2 acknowledgement-clock start as stated in M02. Priority P1 overrides that deferral. A maintenance window is not itself a containment-pause approval, and its duration cannot be added to an approved external-dependency pause. Where maintenance and a qualifying incident overlap, the analyst must first identify the incident's priority and the maintenance operation's authorized scope. A general statement that maintenance was underway somewhere in the service is insufficient. Unless the relevant clause says otherwise, a window beginning is included and its ending is excluded when deciding whether a detection occurred inside the window. The end timestamp is nevertheless the start of a deferred clock.",
+      "rank": -2.072373294924343
+    },
+    {
+      "id": 35,
+      "path": "input/sources/incident-timeline.md",
+      "anchor": "T04",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 686,
+      "text": "## [T04]\n\nIncident B's accepted qualifying detection is 2030-10-27 04:10 +01:00, or 03:10 UTC. Its P2 classification and M-B operation identifier match MB-27. A delivered human acknowledgement identifying B and taking responsibility occurred at 2030-10-27 04:45 +01:00, or 03:45 UTC. No containment pause is claimed for B, and there is no P1 classification or changed maintenance scope in the supplied record. The raw elapsed interval from detection to acknowledgement is thirty-five minutes. The effective P2 acknowledgement interval must nevertheless be determined using the authorized maintenance exception, rather than treating raw elapsed time as the only possible response metric.",
+      "rank": -1.4298104006542465
+    },
+    {
+      "id": 66,
+      "path": "input/sources/response-playbook.docx.md",
+      "anchor": "docx-p-0012",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 837,
+      "text": "The escalation procedure contains three distinct duties for a P1 incident. The technical lead must receive a notification no later than ten elapsed minutes after qualifying detection. The incident commander must receive a notification no later than twenty elapsed minutes after qualifying detection. If the incident remains uncontained sixty elapsed minutes after detection, an executive duty officer must receive a notification no later than fifteen minutes after that trigger, giving a latest time of detection plus seventy-five minutes. All escalation clocks use ordinary elapsed UTC time without containment-pause exclusions. Queue submission, draft completion, attempted dialing, and successful delivery are different events. A notification satisfies the duty only on confirmed delivery to the required role, not merely when queued.",
+      "rank": -1.3700847239158291
+    }
+  ],
+  "limitations": "Ranked retrieval is not exhaustive semantic review; inspect full passages and inventory for exceptions."
+}

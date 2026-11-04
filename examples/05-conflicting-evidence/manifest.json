@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "hash_algorithm": "sha256",
+  "encoding": "UTF-8",
+  "scope": "Exact bytes of brief, both report variants, and evidence sources; this manifest is a fixture integrity record, not authenticated provenance.",
+  "dossier_id": "05-conflicting-evidence",
+  "synthetic": true,
+  "audit_inputs": [
+    {
+      "path": "brief.md",
+      "sha256": "eef656d92ca5f05b6908f1dadc07b565291954d83113bd82ad1451768d9c138a",
+      "role": "brief"
+    },
+    {
+      "path": "report.md",
+      "sha256": "9e1c8784fcfdb070a0d472cae72feb5e9d639d55779292fe77a1243f817718b4",
+      "role": "report"
+    },
+    {
+      "path": "report-correct.md",
+      "sha256": "1bc850334ebccb8b48bc2f930763fe00bac7255a9462fb66ecee459f14358dae",
+      "role": "report"
+    },
+    {
+      "path": "sources/ops-attestation.md",
+      "sha256": "42b3dad98098678e4482c1bae3f9660464e66c6545c6d657f83d93d8bf8fa240",
+      "role": "source"
+    },
+    {
+      "path": "sources/qa-attestation.md",
+      "sha256": "e0297ca4649c799f49f4938c901cfe98ceb828f6685671379533d7e23180a715",
+      "role": "source"
+    },
+    {
+      "path": "sources/release-inventory.md",
+      "sha256": "7cb8e0f0a774e505c13456cd3193c269e2c055cafe85be945247e24c04800564",
+      "role": "source"
+    },
+    {
+      "path": "sources/release-policy.md",
+      "sha256": "4d9a783c0900b9b7f62e8d150d5bca290160242bf6c287735e74e61dd5e5ae11",
+      "role": "source"
+    },
+    {
+      "path": "sources/verification-excerpt.md",
+      "sha256": "7a0d3a6e39257272943509988e36bf7dbfeddf54b5c66ff8b7ca20a7bfef7be6",
+      "role": "source"
+    }
+  ],
+  "formal_validation_executed": false,
+  "runs": [
+    {
+      "run_id": "05-conflicting-evidence-mixed",
+      "report": "report.md"
+    },
+    {
+      "run_id": "05-conflicting-evidence-correct",
+      "report": "report-correct.md"
+    }
+  ],
+  "run_selection": "Each run receives brief.md, all sources, and exactly one selected report. The alternate report and evaluator expectations are excluded."
+}

@@ -1,0 +1,11 @@
+<a id="P01"></a>
+# Synthetic calibration and authority registry
+
+<a id="P02"></a>
+[CAL01] Instrument K1 was calibrated through 23:59 on 30 June 2033 and was used for L01, N01, N02, E17, and C01 in the test packet. Instrument K2 expired at 23:59 on 1 June and was used for N03 on 3 June. K2 renewal is dated 5 June and contains no retrospective clause. Thus K1 has affirmative evidence of current calibration at the named runs, while K2 has affirmative evidence of expiry at its N03 use. A later renewal cannot be silently moved backward in time. The registry is complete for these instruments and dates, but it does not certify every instrument ever used by the fictional organization.
+
+<a id="P03"></a>
+[AUTH01] Mara Flint holds the AUTH-7 requirements-exception delegation for E17. Operator Oren Vale can execute and record tests but cannot change thresholds or authorize release. Release owner Sera Moss signed release entries for N01, E17, and C01 after checking their listed fault closures. No release signature is supplied for N03. N02 has an explicit release denial because its valid third delay run exceeded the applicable limit. The release ledger is complete for these named units through 5 June. A signatory identity is not interchangeable with a different role, and an operator's favorable comment is not a release signature.
+
+<a id="P04"></a>
+[AUTH02] The specifications and incorporated annex are native DOCX sources. Their tables must remain attached to the correct revision and profile context during extraction. The native PDF supplies grouped test records, including invalidity and missing-data notes. An extracted numeral is not an independent measurement record. Stable markers identify original passages; derived chunk identifiers are optional navigation aids. All signatories and administrative acts are fictional, and this exercise assumes the supplied signature-role statements rather than claiming real cryptographic authentication. Source hashes identify exact bytes, not institutional truth beyond the stated evidence model.

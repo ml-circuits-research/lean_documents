@@ -1,0 +1,42 @@
+{
+  "scope": "Executed negative control on a real completed audit: source-change invalidation and refusal to publish stale results. This altered case intentionally stops before semantic re-audit and is not a new completed audit.",
+  "parent": "/home/salboaie/work/lean_documents/tmp/06-procurement-contract-mixed",
+  "revision": "/home/salboaie/work/lean_documents/tmp/claim-audit-revision-8m7h5cn9",
+  "test_directory": "/home/salboaie/work/lean_documents/tmp/invalidation-demonstration-uu3yut9r",
+  "changed_document": "D00004",
+  "change": "Delegation expiry moved from 17:00 to 17:02 UTC; reminder cutoff updated consistently. P-16 authority premise must be reconsidered.",
+  "parent_manifest_unchanged": true,
+  "parent_proof_unchanged": true,
+  "old_results_archived": true,
+  "stale_render_exit_code": 1,
+  "stale_render_error": "{\"error\": \"C06-06: evidence quote does not match its anchored source paragraph\"}",
+  "invalidation": {
+    "parent_workspace": "/home/salboaie/work/lean_documents/tmp/06-procurement-contract-mixed",
+    "changed_document": "D00004",
+    "old_sha256": "70e6f8d94fc43cfe9cf239a68869f50e63c1df59786623aeb9dcc744c5c9d447",
+    "new_sha256": "53014c550b6a9aab0f3e9af9378e6058ec51bebffd8f92f672d782156d8da2a8",
+    "affected_claims": [
+      "C06-01",
+      "C06-02",
+      "C06-03",
+      "C06-04",
+      "C06-05",
+      "C06-06",
+      "C06-07",
+      "C06-08",
+      "C06-09",
+      "C06-10",
+      "C06-11",
+      "C06-12",
+      "C06-13",
+      "C06-14",
+      "C06-15",
+      "C06-16",
+      "C06-17",
+      "C06-18"
+    ],
+    "technical_results": "all invalidated",
+    "reason": "No complete dependency map: conservatively invalidate every finding."
+  },
+  "revision_review_gate_error": "Changed dependencies require revision-review.json with current manifest hash and every affected claim"
+}

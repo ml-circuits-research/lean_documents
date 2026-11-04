@@ -1,0 +1,228 @@
+{
+  "checked_at": "2026-11-04T16:57:36.786130+00:00",
+  "status": "passed",
+  "lean_version_required": "4.24.0",
+  "independent_checker": {
+    "status": "not_run",
+    "reason": "No external checker is configured; no independent-kernel assurance is claimed."
+  },
+  "targets": [
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim01",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-001.log",
+      "check_file": "checks/Target001.lean",
+      "model_sha256": "3704c3203ce228b3c1e2ac36cf49d69097595f2a68270d8710bd344448ec9554"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim02",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-002.log",
+      "check_file": "checks/Target002.lean",
+      "model_sha256": "3704c3203ce228b3c1e2ac36cf49d69097595f2a68270d8710bd344448ec9554"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim03",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-003.log",
+      "check_file": "checks/Target003.lean",
+      "model_sha256": "3704c3203ce228b3c1e2ac36cf49d69097595f2a68270d8710bd344448ec9554"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim04",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-004.log",
+      "check_file": "checks/Target004.lean",
+      "model_sha256": "3704c3203ce228b3c1e2ac36cf49d69097595f2a68270d8710bd344448ec9554"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim05",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-005.log",
+      "check_file": "checks/Target005.lean",
+      "model_sha256": "3704c3203ce228b3c1e2ac36cf49d69097595f2a68270d8710bd344448ec9554"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim06",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-006.log",
+      "check_file": "checks/Target006.lean",
+      "model_sha256": "3704c3203ce228b3c1e2ac36cf49d69097595f2a68270d8710bd344448ec9554"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim07Alternatives",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-007.log",
+      "check_file": "checks/Target007.lean",
+      "model_sha256": "3704c3203ce228b3c1e2ac36cf49d69097595f2a68270d8710bd344448ec9554"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim08",
+      "target": null,
+      "status": "passed",
+      "axioms": [
+        "propext"
+      ],
+      "log": "logs/target-008.log",
+      "check_file": "checks/Target008.lean",
+      "model_sha256": "3704c3203ce228b3c1e2ac36cf49d69097595f2a68270d8710bd344448ec9554"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim01",
+      "target": "Audit.revision Audit.d201 = .one ∧ Audit.standardDeadline Audit.d201 = some 15420 ∧ Audit.d201.submitted = 15420 ∧ Audit.d201.submitted ≤ 15420",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-009.log",
+      "check_file": "checks/Target009.lean",
+      "model_sha256": "3704c3203ce228b3c1e2ac36cf49d69097595f2a68270d8710bd344448ec9554"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim02",
+      "target": "Audit.revision Audit.d202 = .one ∧ Audit.d202.received + 1 = Audit.boundary ∧ (∀ a, Audit.revision (Audit.withAssignment Audit.d202 a) = .one)",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-010.log",
+      "check_file": "checks/Target010.lean",
+      "model_sha256": "3704c3203ce228b3c1e2ac36cf49d69097595f2a68270d8710bd344448ec9554"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim03",
+      "target": "Audit.standardDeadline Audit.d202 = some 28380 ∧ 28380 < Audit.d202.submitted",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-011.log",
+      "check_file": "checks/Target011.lean",
+      "model_sha256": "3704c3203ce228b3c1e2ac36cf49d69097595f2a68270d8710bd344448ec9554"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim04",
+      "target": "Audit.d203.received = Audit.boundary ∧ Audit.revision Audit.d203 = .two ∧ Audit.standardDeadline Audit.d203 = some 25500 ∧ Audit.d203.submitted = 25500 ∧ Audit.d203.submitted ≤ 25500",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-012.log",
+      "check_file": "checks/Target012.lean",
+      "model_sha256": "3704c3203ce228b3c1e2ac36cf49d69097595f2a68270d8710bd344448ec9554"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim05",
+      "target": "Audit.dashboard Audit.d201 = .two ∧ Audit.dashboard Audit.d202 = .two ∧ Audit.dashboard Audit.d203 = .two ∧ Audit.dashboard Audit.d204 = .two ∧ Audit.dashboard Audit.d201 ≠ Audit.revision Audit.d201 ∧ Audit.dashboard Audit.d202 ≠ Audit.revision Audit.d202",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-013.log",
+      "check_file": "checks/Target013.lean",
+      "model_sha256": "3704c3203ce228b3c1e2ac36cf49d69097595f2a68270d8710bd344448ec9554"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim06",
+      "target": "Audit.d204.kind = .restricted ∧ Audit.revision Audit.d204 = .two ∧ Audit.standardDeadline Audit.d204 = none",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-014.log",
+      "check_file": "checks/Target014.lean",
+      "model_sha256": "3704c3203ce228b3c1e2ac36cf49d69097595f2a68270d8710bd344448ec9554"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim07Alternatives",
+      "target": "Audit.timelyCompletion.annexTransferred = false ∧ Audit.lateCompletion.annexTransferred = false ∧ Audit.timelyCompletion.due ≠ Audit.lateCompletion.due ∧ Audit.d204.submitted ≤ Audit.timelyCompletion.due ∧ Audit.lateCompletion.due < Audit.d204.submitted",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-015.log",
+      "check_file": "checks/Target015.lean",
+      "model_sha256": "3704c3203ce228b3c1e2ac36cf49d69097595f2a68270d8710bd344448ec9554"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim08",
+      "target": "Audit.PauseEvidence.request ∈ Audit.suppliedPauseEvidence ∧ Audit.PauseEvidence.approval ∉ Audit.suppliedPauseEvidence",
+      "status": "passed",
+      "axioms": [
+        "propext"
+      ],
+      "log": "logs/target-016.log",
+      "check_file": "checks/Target016.lean",
+      "model_sha256": "3704c3203ce228b3c1e2ac36cf49d69097595f2a68270d8710bd344448ec9554"
+    }
+  ],
+  "limitations": "Lean checks the encoded propositions, not source authenticity, extraction accuracy, completeness, legal authority, or the adequacy of the model. Source filters are defensive checks, not a sandbox for hostile Lean code.",
+  "audit_contract": {
+    "version": 1,
+    "coverage": "legacy_unreconciled",
+    "limitation": "This older bundle has no enforced claim register or structured argument audit."
+  },
+  "input_hashes": {
+    "findings.json": "c3f50082265a0112c9fb2fe6d90ed60d6f6c7895756bb27ed1de1f89d00eb538",
+    "input/manifest.json": "4ee9da7d02580f010037eabaf9f346f15499491a4c1555c9ec7b4e81deaf8563",
+    "models/Audit.lean": "3704c3203ce228b3c1e2ac36cf49d69097595f2a68270d8710bd344448ec9554"
+  },
+  "lean_version_observed": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "execution_status": "executed",
+  "artifact_hashes": {
+    "environment.lock": "5ed2d0b6eff663ee335df7c00665aba138d8a97e2a51e08dc995d204cdaa5ce9",
+    "lakefile.toml": "01a2fcdf9392e14b2fcf1c49259f3371c897156e002f56d678736f2b1e336653",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "source-ledger.jsonl": "be8292c080e426420ba3cbcf491dbb9fa59d68743c4aa6a53904fc141551592c",
+    "logs/lake-build.log": "a9ac6cce6ab0ee3393329ca06e243ca7820aff3c67dca4c12c33742caac069a7",
+    "logs/lean-version.log": "636dd1a5f41f69b3dbf70d0b2c6d27ec4c485e475e16dd05484a5b03f647f2ea",
+    "logs/target-001.log": "db4dfe4868042fed487b7e0777b630e6d6f86ea302a0d1b650437751aaded3dd",
+    "logs/target-002.log": "d59e791d13ab1f9ffa5d521a2ee926236afd019d7a88c20a17ba41fb255cbe3f",
+    "logs/target-003.log": "172ae039537c2ef12b74f18717e8629f5940409b8d15e66c52327a98e7fb5c42",
+    "logs/target-004.log": "1e726e67f7156b0467a4545fdee6c5dd46a2510d55c98fed69207fa24b748466",
+    "logs/target-005.log": "96fe0fea046fc6276c649e46e74e39b15d66154881db2be9bc11b67d27c500a9",
+    "logs/target-006.log": "b1dba078e99a11adbc3a6569658b9f25810c7f01210df093a4d1ae528038c551",
+    "logs/target-007.log": "7425716e4bfa17370a61d1867d4e410e79bd385d281834a80dcfad21966b17fe",
+    "logs/target-008.log": "4c47e03c4502304bc781e1217a5e7163409187a434e933fea874b20c6efd55e6",
+    "logs/target-009.log": "4d321216becad5952c44fbee680928780d3267a15fea921fdb6a3078109f907d",
+    "logs/target-010.log": "b611eed2d1aad02c72b3ace8a177276bdf360082eac1cc7c0a90e2736ea4f283",
+    "logs/target-011.log": "a3500481515ef9c8a862e41a7b2e957958832b04a3149a24ebf9bd511b42fa2f",
+    "logs/target-012.log": "3763b5cd6bb9e3f06b4363bf34a142dec6c7c33435f8ea5c8550985709a61d40",
+    "logs/target-013.log": "e4a55476b40370447cc41607cf03cdfd4cfa5b1b9c83cc31282620c957651da6",
+    "logs/target-014.log": "d250ce8a912263c0c1c56b5eade0bca75e8ec852951086036d225500e4ce065a",
+    "logs/target-015.log": "f3e4f11c9f03de3702fe60572cb618a0788be9c0f6cfdc0fe709cef9e3f6c5c0",
+    "logs/target-016.log": "24f3f95d4a158180018f8240b713eff31ebbd2e7ceae49821ccd9bd1163675d8",
+    "checks/Target001.lean": "28bf85852003c030a5d5e794d7076c23060aa11cbc83f43745c86dade468bfcc",
+    "checks/Target002.lean": "49faf7b54836825c4a697bf9824d6cffee8a9b004de2a3d8dae1f82fdc774c38",
+    "checks/Target003.lean": "cc4cd7b9417047225f71a0dfb1e01980becc57163e035e214beab5f902c9d218",
+    "checks/Target004.lean": "3674ff2ee0e9ca25460d45deb923dd310c9419c55023c87f6cafb76272bb3233",
+    "checks/Target005.lean": "dd925c02327dc162208c30b3f7ef6190bbaa41676f681fef4d56c241e02da667",
+    "checks/Target006.lean": "753b545177d6050815ec7700ca3bf6dabaf6ecb90a27384c5aaf7c182d9fcce3",
+    "checks/Target007.lean": "b125f1206652e424e7b257692d5c46d5e4cdf8ef41469d073ae831be45b55993",
+    "checks/Target008.lean": "d4bfde4fbb8cd58070b4942f22b91d714deacb4185a51c27a38e28f4e34e867b",
+    "checks/Target009.lean": "b59e3bb41250c18d5f50360478de7c9566989ee9e4c328cbdc39a11613b2d30d",
+    "checks/Target010.lean": "024e982046dc88a6eff47a4294dc18718071ab114e25ae239ed7b2f3b784190a",
+    "checks/Target011.lean": "b17f1ee9d105f7d65f496dc34a59a9367fe5ca7591b60cbf4628efacddca82ec",
+    "checks/Target012.lean": "a78d24f026a5e74d73e2bcc1efdfbf5557de3dd63f0f081ac929feab88081b01",
+    "checks/Target013.lean": "91c056256112003c08d7d96fa146dc9eca57beb3520eb2a2cea861f6f6b75d93",
+    "checks/Target014.lean": "83a453122e849f962d85aeca621325ec0bcfd6d309804fa621a4b3c88269df68",
+    "checks/Target015.lean": "7d47e10ab73e82ed7a7db5e00c4bd7389d2687b4b39cdd3692b892658f8a2b20",
+    "checks/Target016.lean": "827876dccf7d4c11c342593e76547fc0d2071d76f1d989892c209c4986fb8702"
+  }
+}

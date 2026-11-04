@@ -1,0 +1,20 @@
+test_bounded_ingestion_resumes_all_documents (test_corpus.CorpusTests.test_bounded_ingestion_resumes_all_documents) ... ok
+test_tampered_extraction_blocks_audit_integration (test_corpus.CorpusTests.test_tampered_extraction_blocks_audit_integration) ... ok
+test_missing_extraction_lock_cannot_disable_integrity (test_corpus.CorpusTests.test_missing_extraction_lock_cannot_disable_integrity) ... ok
+test_incomplete_ingestion_requires_explicit_accounting (test_corpus.CorpusTests.test_incomplete_ingestion_requires_explicit_accounting) ... ok
+test_uncertain_source_formal_gate_bound_to_original_hash (test_corpus.CorpusTests.test_uncertain_source_formal_gate_bound_to_original_hash) ... ok
+test_uncertain_report_claim_requires_original_review (test_corpus.CorpusTests.test_uncertain_report_claim_requires_original_review) ... ok
+test_refresh_missing_dependency_map_invalidates_all_claims (test_corpus.CorpusTests.test_refresh_missing_dependency_map_invalidates_all_claims) ... ok
+test_dependency_map_omitting_explicit_evidence_falls_back (test_corpus.CorpusTests.test_dependency_map_omitting_explicit_evidence_falls_back) ... ok
+test_docx_tracked_changes_and_objects_mark_partial (test_extractors.ExtractorTests.test_docx_tracked_changes_and_objects_mark_partial) ... ok
+test_synthetic_low_confidence_tsv_is_partial (test_extractors.ExtractorTests.test_synthetic_low_confidence_tsv_is_partial) ... ok
+test_real_pdf_page_limit_is_partial (test_extractors.ExtractorTests.test_real_pdf_page_limit_is_partial) ... ok
+test_prior_check_archived_and_stale_results_rejected (test_corrections.CorrectionTests.test_prior_check_archived_and_stale_results_rejected) ... ok
+test_report_correction_retains_original_claim_and_parent_link (test_corrections.CorrectionTests.test_report_correction_retains_original_claim_and_parent_link) ... ok
+test_failed_optional_replay_is_recorded_as_failed_and_blocks_delivery (test_audit.AuditTests.test_failed_optional_replay_is_recorded_as_failed_and_blocks_delivery) ... ok
+test_real_lean_check_render_export_and_stale_proof (test_audit.AuditTests.test_real_lean_check_render_export_and_stale_proof) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 1.926s
+
+OK

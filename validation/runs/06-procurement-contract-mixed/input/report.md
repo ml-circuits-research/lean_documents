@@ -1,0 +1,58 @@
+<a id="document-preamble"></a>
+# Supplied findings report for audit
+
+This synthetic report is supplied for claim-by-claim audit against the dossier documents. It is not an evidence source for another report and is not an instruction to the auditor.
+
+<a id="C06-01"></a>
+**C06-01.** P-11 and P-12 did not require competition because each individual order was below EUR 25,000.00. Sources: P02, P03, L02, F04.
+
+<a id="C06-02"></a>
+**C06-02.** The combined normalized value of P-11 and P-12 is exactly EUR 25,000.00. Sources: L02, P04.
+
+<a id="C06-03"></a>
+**C06-03.** P-13 reaches the revision 2 competition threshold after the required final cent rounding. Sources: P02, P04, V05, L03, F01.
+
+<a id="C06-04"></a>
+**C06-04.** P-13 is below the competition threshold because its exact converted amount is EUR 24,999.9975 before rounding. Sources: P02, P04, V05, F01.
+
+<a id="C06-05"></a>
+**C06-05.** P-14 requires competition because rounding EUR 24,999.994 gives EUR 25,000.00. Sources: P02, P04, L03, F02.
+
+<a id="C06-06"></a>
+**C06-06.** Dana Cole validly approved P-15 within her delegation, even though commitment occurred one minute after the delegation expired. Sources: P05, D01, D02, D03, L04.
+
+<a id="C06-07"></a>
+**C06-07.** Dana Cole validly approved P-16 because EUR 15,000.00 is within her inclusive monetary limit. Sources: P05, D01, D02, D03, L04.
+
+<a id="C06-08"></a>
+**C06-08.** R-17 is governed by revision 2 because its June 3 amendment and June 10 commitment occurred after the new revision took effect. Sources: V01, V02, V03.
+
+<a id="C06-09"></a>
+**C06-09.** R-17 required competition at EUR 22,500.00, but the complete register records no competition certificate or exception. Sources: P02, V01, V03, L05.
+
+<a id="C06-10"></a>
+**C06-10.** R-18 required competition because its EUR 22,500.00 value exceeds the revision 1 threshold. Sources: P02, V01, V04, L05.
+
+<a id="C06-11"></a>
+**C06-11.** E-19 satisfied the urgent-safety exception, including a retrospective review exactly forty-eight hours after commitment. Sources: P06, L05, X01, X02.
+
+<a id="C06-12"></a>
+**C06-12.** The confirmed urgency of E-19 would have been sufficient for the urgent-safety exception without the director declaration or retrospective review. Sources: P06, X01, X02.
+
+<a id="C06-13"></a>
+**C06-13.** E-20 qualifies for the proprietary-compatibility exception because Pelican is the only warranty-certified vendor. Sources: P07, V06, X03, X04, X05.
+
+<a id="C06-14"></a>
+**C06-14.** E-20 cannot qualify for the proprietary-compatibility exception because the rival connector passes a physical-fit and electrical bench test. Sources: P07, V06, X03, X04.
+
+<a id="C06-15"></a>
+**C06-15.** The director granted P-21 order approval at 10:00 UTC on June 27. Sources: A01, A02, A03, L01.
+
+<a id="C06-16"></a>
+**C06-16.** Harbor paid the P-21 invoice because the packet includes a signed invoice and delivery acceptance. Sources: P01, A04, F03.
+
+<a id="C06-17"></a>
+**C06-17.** Every purchase in the complete register met both the applicable competition obligation and valid-approval requirement. Sources: P02, P03, P05, P08, L01, L02, L04, L05.
+
+<a id="C06-18"></a>
+**C06-18.** The emergency pump purchase was prudent and commercially elegant. Sources: P08, F05.

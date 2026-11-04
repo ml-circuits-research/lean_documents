@@ -1,0 +1,5 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target004.lean
+Audit.c04 : ¬Audit.Standard Audit.c103 ∧
+  Audit.c103.approval = some Audit.c103.start ∧
+    Audit.c103.incident = false ∧ Audit.c103.declaration = none ∧ ¬Audit.Emergency Audit.c103
+'Audit.c04' depends on axioms: [propext]

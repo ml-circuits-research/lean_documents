@@ -1,0 +1,6 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target031.lean
+Audit.approvalConflict : Audit.mara.order = Audit.tomas.order ∧
+  Audit.mara.dateOffset = Audit.tomas.dateOffset ∧
+    Audit.mara.approvalMinute = Audit.tomas.approvalMinute ∧
+      Audit.mara.asserted ≠ Audit.tomas.asserted ∧ Audit.mara.retracted = false ∧ Audit.tomas.retracted = false
+'Audit.approvalConflict' does not depend on any axioms

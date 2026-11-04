@@ -1,0 +1,6 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target006.lean
+Audit.approvalCounterexample : Audit.p03 ∈ Audit.sample ∧
+  Audit.p03.matched = true ∧ Audit.p03.approved = false ∧ ¬∀ (p : Audit.Payment), p ∈ Audit.sample → p.approved = true
+'Audit.approvalCounterexample' depends on axioms: [propext, Quot.sound]
+
+[exit_code=0; elapsed_seconds=0.208]

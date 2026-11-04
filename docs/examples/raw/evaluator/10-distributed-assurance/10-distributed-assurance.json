@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "dossier_id": "10-distributed-assurance",
+  "classification": "evaluator_only",
+  "status": "unverified_expectations",
+  "warning": "Author expectations only, not actual audits or executed Lean results. Withhold from blind reviewers.",
+  "expectations": [
+    {
+      "claim_id": "C10-OK-01",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/00-governance.md#[G01]",
+        "sources/04-node-registry.pdf#[RG01]",
+        "sources/04-node-registry.pdf#[RG05]"
+      ],
+      "rationale": "Bounded supported claim."
+    },
+    {
+      "claim_id": "C10-OK-02",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/records/004-n04.md#[N04-01]",
+        "sources/03-policy-transition.md#[PV01]"
+      ],
+      "rationale": "Bounded supported claim."
+    },
+    {
+      "claim_id": "C10-OK-03",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/records/009-n09.md#[N09-01]",
+        "sources/03-policy-transition.md#[PV02]"
+      ],
+      "rationale": "Complete history excludes extension; old permit expired, v2 covers20 only."
+    },
+    {
+      "claim_id": "C10-OK-04",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/01-alias-register.md#[AL01]",
+        "sources/records/021-n21.md#[N21-01]"
+      ],
+      "rationale": "Bounded supported claim."
+    },
+    {
+      "claim_id": "C10-OK-05",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/02-delegation.docx#[AU01]",
+        "sources/records/041-n41.md#[N41-01]"
+      ],
+      "rationale": "Bounded supported claim."
+    },
+    {
+      "claim_id": "C10-OK-06",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/02-delegation.docx#[AU04]",
+        "sources/records/051-n51.md#[N51-01]"
+      ],
+      "rationale": "Bounded supported claim."
+    },
+    {
+      "claim_id": "C10-OK-07",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/98-board-exception.md#[EX01]",
+        "sources/records/057-n57.md#[N57-01]",
+        "sources/02-delegation.docx#[AU03]"
+      ],
+      "rationale": "Cross-file exception matches node,time,credential,supervisor,grant authority."
+    },
+    {
+      "claim_id": "C10-OK-08",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/98-board-exception.md#[EX01]",
+        "sources/98-board-exception.md#[EX03]"
+      ],
+      "rationale": "Bounded supported claim."
+    },
+    {
+      "claim_id": "C10-OK-09",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/records/058-n58.md#[N58-01]",
+        "sources/03-policy-transition.md#[PV03]"
+      ],
+      "rationale": "09:00 effective revocation precedes10:00 release, no replacement or exception."
+    },
+    {
+      "claim_id": "C10-OK-10",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/records/059-n59.md#[N59-01]",
+        "sources/00-governance.md#[G04]"
+      ],
+      "rationale": "Evidence-gap finding, not categorical unauthorized claim."
+    },
+    {
+      "claim_id": "C10-OK-11",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/records/060-n60.md#[N60-01]"
+      ],
+      "rationale": "Bounded supported claim."
+    },
+    {
+      "claim_id": "C10-OK-12",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/97-request-correspondence.md#[REQ01]",
+        "sources/98-board-exception.md#[EX02]"
+      ],
+      "rationale": "Bounded supported claim."
+    },
+    {
+      "claim_id": "C10-OK-13",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/00-governance.md#[G05]"
+      ],
+      "rationale": "Provenance rule, not an executed incremental run."
+    },
+    {
+      "claim_id": "C10-OK-14",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/records/001-n01.md#[N01-01]",
+        "sources/00-governance.md#[G02]"
+      ],
+      "rationale": "Bounded supported claim."
+    },
+    {
+      "claim_id": "C10-ERR-01",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/00-governance.md#[G02]",
+        "sources/records/058-n58.md#[N58-01]"
+      ],
+      "rationale": "N58 explicit counterexample; also N09/N21/N51."
+    },
+    {
+      "claim_id": "C10-ERR-02",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/03-policy-transition.md#[PV01]",
+        "sources/records/004-n04.md#[N04-01]"
+      ],
+      "rationale": "Historical revisionA route requires no central permit."
+    },
+    {
+      "claim_id": "C10-ERR-03",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/03-policy-transition.md#[PV02]",
+        "sources/records/009-n09.md#[N09-01]"
+      ],
+      "rationale": "v1 expired; v2 not valid21; complete no replacement."
+    },
+    {
+      "claim_id": "C10-ERR-04",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/01-alias-register.md#[AL01]",
+        "sources/records/021-n21.md#[N21-01]"
+      ],
+      "rationale": "Alias maps to Ben whose credential starts22."
+    },
+    {
+      "claim_id": "C10-ERR-05",
+      "report_path": "report.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/02-delegation.docx#[AU01]",
+        "sources/records/041-n41.md#[N41-01]"
+      ],
+      "rationale": "Bounded supported claim."
+    },
+    {
+      "claim_id": "C10-ERR-06",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/02-delegation.docx#[AU01]",
+        "sources/02-delegation.docx#[AU04]",
+        "sources/records/051-n51.md#[N51-01]"
+      ],
+      "rationale": "Authenticity not authority; N51 outside range, expansion declined."
+    },
+    {
+      "claim_id": "C10-ERR-07",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/records/057-n57.md#[N57-01]",
+        "sources/98-board-exception.md#[EX01]"
+      ],
+      "rationale": "Applicable signed board exception changes route for exact window."
+    },
+    {
+      "claim_id": "C10-ERR-08",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/97-request-correspondence.md#[REQ01]",
+        "sources/98-board-exception.md#[EX02]"
+      ],
+      "rationale": "Request not grant; final excludesN58."
+    },
+    {
+      "claim_id": "C10-ERR-09",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/03-policy-transition.md#[PV03]",
+        "sources/records/058-n58.md#[N58-01]"
+      ],
+      "rationale": "Explicit effective09:00 controls before10:00 release."
+    },
+    {
+      "claim_id": "C10-ERR-10",
+      "report_path": "report.md",
+      "semantic_state": "undetermined",
+      "prospective_disposition": "blocked",
+      "source_anchors": [
+        "sources/records/059-n59.md#[N59-01]"
+      ],
+      "rationale": "Incomplete permit history leaves existence unknown."
+    },
+    {
+      "claim_id": "C10-ERR-11",
+      "report_path": "report.md",
+      "semantic_state": "undetermined",
+      "prospective_disposition": "blocked",
+      "source_anchors": [
+        "sources/records/060-n60.md#[N60-01]"
+      ],
+      "rationale": "Event history incomplete26\u201330; no additional event or its absence established."
+    },
+    {
+      "claim_id": "C10-ERR-12",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/04-node-registry.pdf#[RG01-LIMIT]",
+        "sources/records/060-n60.md#[N60-01]"
+      ],
+      "rationale": "Registry explicitly different domain and event export incomplete; false evidence-completeness representation."
+    },
+    {
+      "claim_id": "C10-ERR-13",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/00-governance.md#[G05]"
+      ],
+      "rationale": "Results bind source bytes and assumptions; changed premise may change outcome."
+    },
+    {
+      "claim_id": "C10-ERR-14",
+      "report_path": "report.md",
+      "semantic_state": "not_applicable",
+      "prospective_disposition": "nonformal",
+      "source_anchors": [
+        "sources/00-governance.md#[G01]"
+      ],
+      "rationale": "Subjective opinion without formal criterion."
+    }
+  ],
+  "incremental_mutation_scenario": {
+    "source_path": "sources/98-board-exception.md",
+    "old_text": "from 09:00 through 12:00 inclusive",
+    "new_text": "from 11:00 through 12:00 inclusive",
+    "additional_required_change": "Replace EX01 sentence saying N57 release and Emil approval fall inside scope with an explicit statement that they occur before the new window. Also replace N57-01 statement that the exception governs the release with a neutral reference requiring applicability review; otherwise the mutation creates source contradictions.",
+    "affected_claims": [
+      "C10-OK-07",
+      "C10-ERR-07"
+    ],
+    "expected_effect": "Authorization conclusion must be re-evaluated because the exception no longer covers10:00. Expect correct claim refuted and flawed unauthorized claim supported only after the changed evidence is reviewed for consistency.",
+    "status": "unexecuted design scenario; never mutate baseline in place"
+  }
+}

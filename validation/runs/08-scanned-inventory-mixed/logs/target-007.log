@@ -1,0 +1,3 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target007.lean
+Audit.claim07 : Audit.deliveredA ≠ Audit.dispatchedA
+'Audit.claim07' does not depend on any axioms

@@ -1,0 +1,530 @@
+[
+  {
+    "claim_id": "C04-01",
+    "report_quote": "**C04-01.** Mira was alive when she handed Ivo the brass key at noon on day 2. Citations: chronology T-01; flashback F-02.",
+    "report_anchor": "C04-01",
+    "atomic_target": "Mira is alive at the key handover at day 2 noon.",
+    "parent_finding": "C04-01",
+    "question": "Was Mira alive at the physical brass-key handover at noon on day 2, in the supplied canonical story?",
+    "evidence": [
+      {
+        "path": "input/sources/chronology.md",
+        "anchor": "T-01",
+        "quote": "Mira was alive on day 1 and physically handed a brass key to Ivo at noon on day 2. At dawn on day 5, Mira died in the northern tower. These are world facts, not a character's account."
+      },
+      {
+        "path": "input/sources/flashback.md",
+        "anchor": "F-02",
+        "quote": "In the day 2 flashback, Mira physically hands the brass key to Ivo. Mira is alive in this remembered scene. The chapter then returns to the day 7 frame without staging a present-time meeting with Mira."
+      }
+    ],
+    "rules": [
+      "F-02 explicitly says Mira is alive in the remembered day 2 scene.",
+      "B-02 locates a remembered scene at its stated story time."
+    ],
+    "assumptions": [
+      "The supplied canonical chronology and rules are accepted as authoritative within this fictional world, as directed by brief B-02/B-03; no external authenticity is certified.",
+      "Named story instants are encoded with an order-preserving integer coordinate; dawn=6, noon=12 and evening=18 are coding choices preserving the brief's ordering, not supplied clock measurements."
+    ],
+    "reasoning": [
+      "1. T-01 identifies the handover at day 2 noon as a world fact.",
+      "2. F-02 independently identifies the same physical handover and explicitly records Mira alive.",
+      "3. The model associates that handover with day 2 noon and its positive life fact; claim01 verifies their conjunction."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim01",
+        "relation": "supports",
+        "target": "Audit.keyStoryTime = Audit.tick 2 12 ∧ Audit.ConfirmedAliveAt Audit.keyStoryTime"
+      }
+    ],
+    "limits": [
+      "The result is local to that handover; it does not certify every earlier life state or any later meeting.",
+      "Checked Lean results establish only the transcribed model targets; semantic correspondence still requires review."
+    ],
+    "recommendation": "Retain the claim with both source anchors and the distinction between event date and narration date."
+  },
+  {
+    "claim_id": "C04-02",
+    "report_quote": "**C04-02.** Mira physically attended a meeting with Ivo at noon on day 6. Citations: chronology T-01, T-02; rules R-01, R-02.",
+    "report_anchor": "C04-02",
+    "atomic_target": "Physical meeting attendance with Ivo at day 6 noon.",
+    "parent_finding": "C04-02",
+    "question": "Could Mira physically attend the specified day 6 noon meeting under the death-persistence and physical-attendance rules?",
+    "evidence": [
+      {
+        "path": "input/sources/chronology.md",
+        "anchor": "T-01",
+        "quote": "Mira was alive on day 1 and physically handed a brass key to Ivo at noon on day 2. At dawn on day 5, Mira died in the northern tower. These are world facts, not a character's account."
+      },
+      {
+        "path": "input/sources/chronology.md",
+        "anchor": "T-02",
+        "quote": "At dawn on day 8, the Keeper performed the revival ritual on Mira, restoring her to life. Mira remained alive through the end of day 10. The record does not identify where Ivo kept the brass key after day 2."
+      },
+      {
+        "path": "input/sources/rules.md",
+        "anchor": "R-01",
+        "quote": "For Mira during days 1 through 10, death makes her dead immediately, and that state persists until an explicitly recorded revival ritual restores life. Dead and alive are mutually exclusive at any single instant. Physical attendance at a meeting requires being alive. Death is reversible only through the recorded revival ritual; there is no general rule that death is permanent forever."
+      },
+      {
+        "path": "input/sources/rules.md",
+        "anchor": "R-02",
+        "quote": "The complete list of revival rituals affecting Mira during days 1 through 10 contains exactly one event: the Keeper's ritual at dawn on day 8, recorded in chronology T-02. There were no other revivals of Mira in this interval. This completeness assertion says nothing about events outside this interval or other people."
+      }
+    ],
+    "rules": [
+      "R-01 makes death immediate and persistent until a recorded revival.",
+      "R-02 is complete only for Mira revivals during days 1–10: the only one is day 8 dawn.",
+      "R-01 and B-02 require life for physical attendance; R-01 excludes simultaneous life and death."
+    ],
+    "assumptions": [
+      "The supplied canonical chronology and rules are accepted as authoritative within this fictional world, as directed by brief B-02/B-03; no external authenticity is certified.",
+      "Named story instants are encoded with an order-preserving integer coordinate; dawn=6, noon=12 and evening=18 are coding choices preserving the brief's ordering, not supplied clock measurements."
+    ],
+    "reasoning": [
+      "1. The authoritative death occurs at day 5 dawn.",
+      "2. The complete revival catalog contains only day 8 dawn; day 6 noon lies strictly between these events, so the death state persists then.",
+      "3. Physical attendance would require being alive and hence not dead at that same instant.",
+      "4. Claim02 proves that any occurrence proposition satisfying this independently sourced attendance condition is false at day 6 noon. This is an impossibility refutation, not a deduction from a missing meeting record."
+    ],
+    "semantic_state": "refuted",
+    "argument_status": "invalid_inference",
+    "formal_status": "refuted",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim02",
+        "relation": "refutes",
+        "target": "∀ (attendance : Prop), (attendance → ¬ Audit.DeadAt (Audit.tick 6 12)) → ¬ attendance"
+      }
+    ],
+    "limits": [
+      "The formal target is conditional on the sourced necessary attendance rule and is about physical attendance only; speech, a ghost, dream, impersonator, or metaphor is outside it.",
+      "Checked Lean results establish only the transcribed model targets; semantic correspondence still requires review."
+    ],
+    "recommendation": "Remove the physical meeting claim; an intended revision would require a changed canonical scene or rule, which is not present in the supplied corpus."
+  },
+  {
+    "claim_id": "C04-03",
+    "report_quote": "**C04-03.** The key exchange in chapter seven occurs on day 7 because that is the chapter's narration frame. Citations: flashback F-01, F-02.",
+    "report_anchor": "C04-03",
+    "atomic_target": "The key handover story date is day 7, inferred from the narration frame.",
+    "parent_finding": "C04-03",
+    "question": "Does the unique chapter-seven key exchange have day 7 as its story date merely because its narration frame is day 7?",
+    "evidence": [
+      {
+        "path": "input/sources/flashback.md",
+        "anchor": "F-01",
+        "quote": "The narration frame is the evening of day 7. The narrator announces: “I remember the exchange five days earlier.” The following scene is explicitly marked as a flashback to noon on day 2."
+      },
+      {
+        "path": "input/sources/flashback.md",
+        "anchor": "F-02",
+        "quote": "In the day 2 flashback, Mira physically hands the brass key to Ivo. Mira is alive in this remembered scene. The chapter then returns to the day 7 frame without staging a present-time meeting with Mira."
+      }
+    ],
+    "rules": [
+      "B-02 places a remembered scene at its explicit story date.",
+      "F-01 distinguishes day 7 evening narration from day 2 noon flashback; F-02 returns to the frame without a present meeting."
+    ],
+    "assumptions": [
+      "The supplied canonical chronology and rules are accepted as authoritative within this fictional world, as directed by brief B-02/B-03; no external authenticity is certified.",
+      "Named story instants are encoded with an order-preserving integer coordinate; dawn=6, noon=12 and evening=18 are coding choices preserving the brief's ordering, not supplied clock measurements."
+    ],
+    "reasoning": [
+      "1. F-01 explicitly labels the exchange scene a flashback to day 2 noon.",
+      "2. F-02 confirms that event and explicitly denies staging a present-time meeting upon return to the day 7 frame.",
+      "3. The report substitutes narration time for event time. The model records the event time separately; its extracted story day is 2 and differs from 7."
+    ],
+    "semantic_state": "refuted",
+    "argument_status": "invalid_inference",
+    "formal_status": "refuted",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim03",
+        "relation": "refutes",
+        "target": "¬ (Audit.keyStoryTime / 24 + 1 = 7)"
+      }
+    ],
+    "limits": [
+      "The theorem concerns this identified key exchange, not every possible event narrated in chapter seven.",
+      "Checked Lean results establish only the transcribed model targets; semantic correspondence still requires review."
+    ],
+    "recommendation": "Replace day 7 with day 2 and identify day 7 evening only as the narration frame."
+  },
+  {
+    "claim_id": "C04-04",
+    "report_quote": "**C04-04.** Mira utters the words “I never died” at noon on day 9. Citation: dialogue D-01.",
+    "report_anchor": "C04-04",
+    "atomic_target": "Mira speaks the specified words at day 9 noon.",
+    "parent_finding": "C04-04",
+    "question": "Does the supplied scene record Mira uttering the exact words “I never died” at noon on day 9?",
+    "evidence": [
+      {
+        "path": "input/sources/dialogue.md",
+        "anchor": "D-01",
+        "quote": "At noon on day 9, Mira says to Ivo, “I never died.” This line is quoted character speech. The canonical chronology remains authoritative; the text gives no rule making Mira's testimony infallible."
+      }
+    ],
+    "rules": [
+      "B-03 distinguishes utterance occurrence from the truth of its content.",
+      "D-01 identifies the speaker, exact words, and story time."
+    ],
+    "assumptions": [
+      "The supplied canonical chronology and rules are accepted as authoritative within this fictional world, as directed by brief B-02/B-03; no external authenticity is certified.",
+      "Named story instants are encoded with an order-preserving integer coordinate; dawn=6, noon=12 and evening=18 are coding choices preserving the brief's ordering, not supplied clock measurements."
+    ],
+    "reasoning": [
+      "1. D-01 explicitly reports Mira saying the words to Ivo at day 9 noon.",
+      "2. The model stores this as an attributed Speech record, with the utterance label mapped exactly to those quoted words.",
+      "3. Claim04 checks the speaker, time, and utterance identity; no rule turns this utterance into the world proposition that she never died."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim04",
+        "relation": "supports",
+        "target": "Audit.miraSpeech.speaker = Audit.Person.mira ∧ Audit.miraSpeech.time = Audit.tick 9 12 ∧ Audit.miraSpeech.words = Audit.Utterance.neverDied"
+      }
+    ],
+    "limits": [
+      "The Lean enum denotes the exact cited utterance through the source legend; it does not verify truth of the words or source authenticity.",
+      "Checked Lean results establish only the transcribed model targets; semantic correspondence still requires review."
+    ],
+    "recommendation": "Retain the speech claim; avoid using it as evidence that no death occurred."
+  },
+  {
+    "claim_id": "C04-05",
+    "report_quote": "**C04-05.** Mira never died before day 9. Citation: dialogue D-01.",
+    "report_anchor": "C04-05",
+    "atomic_target": "No death of Mira occurred before day 9.",
+    "parent_finding": "C04-05",
+    "question": "Is the universal absence of Mira death before day 9 compatible with the canonical world chronology?",
+    "evidence": [
+      {
+        "path": "input/sources/dialogue.md",
+        "anchor": "D-01",
+        "quote": "At noon on day 9, Mira says to Ivo, “I never died.” This line is quoted character speech. The canonical chronology remains authoritative; the text gives no rule making Mira's testimony infallible."
+      },
+      {
+        "path": "input/sources/chronology.md",
+        "anchor": "T-01",
+        "quote": "Mira was alive on day 1 and physically handed a brass key to Ivo at noon on day 2. At dawn on day 5, Mira died in the northern tower. These are world facts, not a character's account."
+      }
+    ],
+    "rules": [
+      "B-03 says utterance does not establish world truth.",
+      "D-01 explicitly denies any infallibility rule for Mira.",
+      "T-01 presents the dawn day 5 death as a world fact."
+    ],
+    "assumptions": [
+      "The supplied canonical chronology and rules are accepted as authoritative within this fictional world, as directed by brief B-02/B-03; no external authenticity is certified.",
+      "Named story instants are encoded with an order-preserving integer coordinate; dawn=6, noon=12 and evening=18 are coding choices preserving the brief's ordering, not supplied clock measurements."
+    ],
+    "reasoning": [
+      "1. The cited speech establishes only that Mira says she never died.",
+      "2. Independently checking the chronology finds a canonical death at day 5 dawn, which is strictly before the beginning of day 9.",
+      "3. That one in-scope event contradicts the universal no-death claim. Claim05 refutes even the necessary restriction that no recorded death predates day 9.",
+      "4. No completeness assumption about all deaths is needed: the positive witness is sufficient."
+    ],
+    "semantic_state": "refuted",
+    "argument_status": "invalid_inference",
+    "formal_status": "refuted",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim05",
+        "relation": "refutes",
+        "target": "¬ Audit.NeverDiedBefore9"
+      }
+    ],
+    "limits": [
+      "This rejects the factual no-death assertion, not the existence of the utterance; no inference of narrator inconsistency is warranted when a character says something false.",
+      "Checked Lean results establish only the transcribed model targets; semantic correspondence still requires review."
+    ],
+    "recommendation": "State that Mira says “I never died,” while the authoritative chronology records her death on day 5."
+  },
+  {
+    "claim_id": "C04-06",
+    "report_quote": "**C04-06.** Mira is alive at noon on day 8 following the recorded ritual. Citations: chronology T-02; rules R-01.",
+    "report_anchor": "C04-06",
+    "atomic_target": "Mira is alive at day 8 noon after the ritual.",
+    "parent_finding": "C04-06",
+    "question": "Is Mira alive at day 8 noon after the recorded dawn ritual?",
+    "evidence": [
+      {
+        "path": "input/sources/chronology.md",
+        "anchor": "T-02",
+        "quote": "At dawn on day 8, the Keeper performed the revival ritual on Mira, restoring her to life. Mira remained alive through the end of day 10. The record does not identify where Ivo kept the brass key after day 2."
+      },
+      {
+        "path": "input/sources/rules.md",
+        "anchor": "R-01",
+        "quote": "For Mira during days 1 through 10, death makes her dead immediately, and that state persists until an explicitly recorded revival ritual restores life. Dead and alive are mutually exclusive at any single instant. Physical attendance at a meeting requires being alive. Death is reversible only through the recorded revival ritual; there is no general rule that death is permanent forever."
+      }
+    ],
+    "rules": [
+      "R-01 allows a recorded ritual to restore life.",
+      "T-02 records actual restoration at day 8 dawn and continued life through day 10.",
+      "B-02 orders dawn before noon."
+    ],
+    "assumptions": [
+      "The supplied canonical chronology and rules are accepted as authoritative within this fictional world, as directed by brief B-02/B-03; no external authenticity is certified.",
+      "Named story instants are encoded with an order-preserving integer coordinate; dawn=6, noon=12 and evening=18 are coding choices preserving the brief's ordering, not supplied clock measurements."
+    ],
+    "reasoning": [
+      "1. T-02 states the Keeper revived Mira at day 8 dawn, restoring her to life.",
+      "2. The same paragraph says she remained alive through day 10, so day 8 noon is inside that explicit living interval.",
+      "3. Claim06 verifies membership in that positive living interval; it does not assume an unsupported off-page revival."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim06",
+        "relation": "supports",
+        "target": "Audit.ConfirmedAliveAt (Audit.tick 8 12)"
+      }
+    ],
+    "limits": [
+      "This is bounded to the supplied world chronology and does not assert permanent immortality.",
+      "Checked Lean results establish only the transcribed model targets; semantic correspondence still requires review."
+    ],
+    "recommendation": "Retain the claim with T-02 as the direct event source and R-01 as the transition rule."
+  },
+  {
+    "claim_id": "C04-07",
+    "report_quote": "**C04-07.** Mira is dead at every instant after dawn on day 5 through the end of day 10. Citations: chronology T-01; rules R-01.",
+    "report_anchor": "C04-07",
+    "atomic_target": "Mira is dead at all instants strictly after day 5 dawn through day 10 end.",
+    "parent_finding": "C04-07",
+    "question": "Does Mira remain dead at every instant strictly after dawn day 5 through the end of day 10, including after her revival?",
+    "evidence": [
+      {
+        "path": "input/sources/chronology.md",
+        "anchor": "T-01",
+        "quote": "Mira was alive on day 1 and physically handed a brass key to Ivo at noon on day 2. At dawn on day 5, Mira died in the northern tower. These are world facts, not a character's account."
+      },
+      {
+        "path": "input/sources/chronology.md",
+        "anchor": "T-02",
+        "quote": "At dawn on day 8, the Keeper performed the revival ritual on Mira, restoring her to life. Mira remained alive through the end of day 10. The record does not identify where Ivo kept the brass key after day 2."
+      },
+      {
+        "path": "input/sources/rules.md",
+        "anchor": "R-01",
+        "quote": "For Mira during days 1 through 10, death makes her dead immediately, and that state persists until an explicitly recorded revival ritual restores life. Dead and alive are mutually exclusive at any single instant. Physical attendance at a meeting requires being alive. Death is reversible only through the recorded revival ritual; there is no general rule that death is permanent forever."
+      }
+    ],
+    "rules": [
+      "R-01 makes death persist until revival, not permanently.",
+      "T-02 records restoration at day 8 dawn and subsequent life.",
+      "R-01 excludes being alive and dead simultaneously."
+    ],
+    "assumptions": [
+      "The supplied canonical chronology and rules are accepted as authoritative within this fictional world, as directed by brief B-02/B-03; no external authenticity is certified.",
+      "Named story instants are encoded with an order-preserving integer coordinate; dawn=6, noon=12 and evening=18 are coding choices preserving the brief's ordering, not supplied clock measurements."
+    ],
+    "reasoning": [
+      "1. The cited death event starts a dead interval, but R-01 gives it a revival exception.",
+      "2. The independent T-02 event actually triggers that exception at day 8 dawn.",
+      "3. Day 8 noon is strictly after day 5 dawn and before the end of day 10; T-02 establishes Mira is alive then, so she cannot be dead then.",
+      "4. Claim07 uses that in-scope instant to refute the universal assertion. A single counterexample suffices; it does not discretize away any possible rescue of the universal claim."
+    ],
+    "semantic_state": "refuted",
+    "argument_status": "invalid_inference",
+    "formal_status": "refuted",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim07",
+        "relation": "refutes",
+        "target": "¬ Audit.AlwaysDeadAfter5"
+      }
+    ],
+    "limits": [
+      "Only a concrete counterexample is required; the integer encoding does not purport to enumerate every real instant or to establish events outside days 1–10.",
+      "Checked Lean results establish only the transcribed model targets; semantic correspondence still requires review."
+    ],
+    "recommendation": "State that Mira remained dead from day 5 dawn until the day 8 dawn revival, then remained alive through day 10."
+  },
+  {
+    "claim_id": "C04-08",
+    "report_quote": "**C04-08.** Ivo was inside the southern archive at noon on day 6. Citation: dialogue D-02.",
+    "report_anchor": "C04-08",
+    "atomic_target": "Ivo is inside the southern archive at day 6 noon.",
+    "parent_finding": "C04-08",
+    "question": "Do any supplied sources establish or deny that Ivo was inside the southern archive at day 6 noon?",
+    "evidence": [
+      {
+        "path": "input/sources/dialogue.md",
+        "anchor": "D-02",
+        "quote": "A reader writes, “The revival scene feels tender, but the brass key thread is unresolved.” This is an aesthetic response. No scene or record supplied here identifies Ivo's location at noon on day 6."
+      },
+      {
+        "path": "input/sources/chronology.md",
+        "anchor": "T-01",
+        "quote": "Mira was alive on day 1 and physically handed a brass key to Ivo at noon on day 2. At dawn on day 5, Mira died in the northern tower. These are world facts, not a character's account."
+      },
+      {
+        "path": "input/sources/chronology.md",
+        "anchor": "T-02",
+        "quote": "At dawn on day 8, the Keeper performed the revival ritual on Mira, restoring her to life. Mira remained alive through the end of day 10. The record does not identify where Ivo kept the brass key after day 2."
+      },
+      {
+        "path": "input/sources/flashback.md",
+        "anchor": "F-01",
+        "quote": "The narration frame is the evening of day 7. The narrator announces: “I remember the exchange five days earlier.” The following scene is explicitly marked as a flashback to noon on day 2."
+      },
+      {
+        "path": "input/sources/flashback.md",
+        "anchor": "F-02",
+        "quote": "In the day 2 flashback, Mira physically hands the brass key to Ivo. Mira is alive in this remembered scene. The chapter then returns to the day 7 frame without staging a present-time meeting with Mira."
+      },
+      {
+        "path": "input/sources/dialogue.md",
+        "anchor": "D-01",
+        "quote": "At noon on day 9, Mira says to Ivo, “I never died.” This line is quoted character speech. The canonical chronology remains authoritative; the text gives no rule making Mira's testimony infallible."
+      },
+      {
+        "path": "input/sources/rules.md",
+        "anchor": "R-01",
+        "quote": "For Mira during days 1 through 10, death makes her dead immediately, and that state persists until an explicitly recorded revival ritual restores life. Dead and alive are mutually exclusive at any single instant. Physical attendance at a meeting requires being alive. Death is reversible only through the recorded revival ritual; there is no general rule that death is permanent forever."
+      },
+      {
+        "path": "input/sources/rules.md",
+        "anchor": "R-02",
+        "quote": "The complete list of revival rituals affecting Mira during days 1 through 10 contains exactly one event: the Keeper's ritual at dawn on day 8, recorded in chronology T-02. There were no other revivals of Mira in this interval. This completeness assertion says nothing about events outside this interval or other people."
+      }
+    ],
+    "rules": [
+      "B-03 forbids treating source silence as a negative fact outside explicitly complete catalogs.",
+      "R-02 closes Mira's revival catalog only, not Ivo's locations."
+    ],
+    "assumptions": [
+      "The supplied canonical chronology and rules are accepted as authoritative within this fictional world, as directed by brief B-02/B-03; no external authenticity is certified."
+    ],
+    "reasoning": [
+      "1. The author cites D-02, an aesthetic marginal note; it expressly says no supplied scene or record identifies Ivo's day 6 noon location.",
+      "2. The independent full-corpus search finds Ivo in the day 2 handover and day 9 speech, neither of which determines his day 6 location.",
+      "3. No trajectory, travel constraint, location observation, or complete location catalog resolves the required premise.",
+      "4. The report therefore lacks sufficient support for the archive assertion. The absence of location evidence is not evidence that he was elsewhere; the underlying claim remains undetermined."
+    ],
+    "semantic_state": "undetermined",
+    "argument_status": "insufficient_support",
+    "formal_status": "blocked",
+    "proofs": [],
+    "limits": [
+      "The conclusion is a support-gap finding about this finite corpus, not a refutation of the location claim. No Lean target establishes or negates that location.",
+      "Checked Lean results establish only the transcribed model targets; semantic correspondence still requires review."
+    ],
+    "recommendation": "Obtain a canonical day 6 location scene or an explicit applicable location rule, or mark the archive location as unestablished."
+  },
+  {
+    "claim_id": "C04-09",
+    "report_quote": "**C04-09.** The revival scene is emotionally satisfying and beautifully paced. Citation: dialogue D-02.",
+    "report_anchor": "C04-09",
+    "atomic_target": "The revival is emotionally satisfying and beautifully paced.",
+    "parent_finding": "C04-09",
+    "question": "Is there a supplied operational criterion that determines whether the revival is emotionally satisfying and beautifully paced?",
+    "evidence": [
+      {
+        "path": "input/sources/dialogue.md",
+        "anchor": "D-02",
+        "quote": "A reader writes, “The revival scene feels tender, but the brass key thread is unresolved.” This is an aesthetic response. No scene or record supplied here identifies Ivo's location at noon on day 6."
+      }
+    ],
+    "rules": [
+      "B-03 distinguishes aesthetic response from world facts.",
+      "No supplied rule defines emotional satisfaction or beautiful pacing."
+    ],
+    "assumptions": [
+      "The supplied canonical chronology and rules are accepted as authoritative within this fictional world, as directed by brief B-02/B-03; no external authenticity is certified."
+    ],
+    "reasoning": [
+      "1. D-02 offers one reader's attributed reaction that the scene feels tender and the key thread unresolved.",
+      "2. That reaction supplies neither the exact evaluative content of the report nor a measurable criterion for the report's judgment.",
+      "3. The audit can identify the opinion and its attribution, but cannot prove or refute this aesthetic assessment under the supplied world rules."
+    ],
+    "semantic_state": "not_applicable",
+    "argument_status": "nonformal",
+    "formal_status": "not_attempted",
+    "proofs": [],
+    "limits": [
+      "A subjective evaluation can still be editorially useful. This nonformal classification does not establish the assessment false or aesthetically unreasonable.",
+      "Checked Lean results establish only the transcribed model targets; semantic correspondence still requires review."
+    ],
+    "recommendation": "Label the sentence as an editorial judgment, explain the pacing criteria if desired, and do not present it as a formally verified continuity finding."
+  },
+  {
+    "claim_id": "C04-10",
+    "report_quote": "**C04-10.** No revival of Mira occurred after her death and before noon on day 6. Citations: chronology T-01; rules R-02.",
+    "report_anchor": "C04-10",
+    "atomic_target": "There is no revival after the recorded death and before day 6 noon.",
+    "parent_finding": "C04-10",
+    "question": "Was there any revival affecting Mira strictly after her day 5 dawn death and strictly before day 6 noon?",
+    "evidence": [
+      {
+        "path": "input/sources/chronology.md",
+        "anchor": "T-01",
+        "quote": "Mira was alive on day 1 and physically handed a brass key to Ivo at noon on day 2. At dawn on day 5, Mira died in the northern tower. These are world facts, not a character's account."
+      },
+      {
+        "path": "input/sources/chronology.md",
+        "anchor": "T-02",
+        "quote": "At dawn on day 8, the Keeper performed the revival ritual on Mira, restoring her to life. Mira remained alive through the end of day 10. The record does not identify where Ivo kept the brass key after day 2."
+      },
+      {
+        "path": "input/sources/rules.md",
+        "anchor": "R-01",
+        "quote": "For Mira during days 1 through 10, death makes her dead immediately, and that state persists until an explicitly recorded revival ritual restores life. Dead and alive are mutually exclusive at any single instant. Physical attendance at a meeting requires being alive. Death is reversible only through the recorded revival ritual; there is no general rule that death is permanent forever."
+      },
+      {
+        "path": "input/sources/rules.md",
+        "anchor": "R-02",
+        "quote": "The complete list of revival rituals affecting Mira during days 1 through 10 contains exactly one event: the Keeper's ritual at dawn on day 8, recorded in chronology T-02. There were no other revivals of Mira in this interval. This completeness assertion says nothing about events outside this interval or other people."
+      }
+    ],
+    "rules": [
+      "R-02 explicitly and completely lists Mira revivals only during days 1–10.",
+      "The queried interval is wholly inside that catalog domain."
+    ],
+    "assumptions": [
+      "The supplied canonical chronology and rules are accepted as authoritative within this fictional world, as directed by brief B-02/B-03; no external authenticity is certified.",
+      "Named story instants are encoded with an order-preserving integer coordinate; dawn=6, noon=12 and evening=18 are coding choices preserving the brief's ordering, not supplied clock measurements."
+    ],
+    "reasoning": [
+      "1. T-01 establishes the lower boundary at day 5 dawn.",
+      "2. R-02 states the complete relevant revival list contains exactly the day 8 dawn event recorded in T-02.",
+      "3. Day 8 dawn is later than day 6 noon, so it is not a member of the queried open interval.",
+      "4. Exhausting the one-element complete catalog proves there is no qualifying revival; this is authorized bounded absence reasoning, unlike the unsupported location inference."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim10",
+        "relation": "supports",
+        "target": "Audit.NoRevivalBefore6"
+      }
+    ],
+    "limits": [
+      "The result concerns Mira and this bounded interval only; it says nothing about other people, earlier/later periods, or catalog authenticity.",
+      "Checked Lean results establish only the transcribed model targets; semantic correspondence still requires review."
+    ],
+    "recommendation": "Retain the claim and explicitly cite R-02 completeness; do not generalize it beyond Mira or days 1–10."
+  }
+]

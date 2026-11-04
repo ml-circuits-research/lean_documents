@@ -1,0 +1,39 @@
+{
+  "claim_id": "C09-OK-01",
+  "reason": "An auditor identified a substantive wording ambiguity in a nominally correct fixture: the literal margin reading differs from the intended measured maximum. The correct report is clarified instead of silently assuming punctuation.",
+  "original_text": "its maximum is 118 milliseconds below 120.",
+  "revised_text": "its maximum is 118 milliseconds, below the 120-millisecond limit.",
+  "original_report_sha256": "d4bde05ceea8e5f6c0957fdb8de50e8d39d1b9915ca9f7ed7dea938d8ae2b4df",
+  "revised_report_sha256": "bc6aaaff81ba69ad57927d0a66fd57a19c33732cdb527dec3712c2940f6ca259",
+  "sources_changed": false,
+  "editorial_expectation_changed": false,
+  "validation_status": "Completed: all fourteen claims reviewed in the new report revision, actual Lean check passed, independent semantic review completed, final audit exported.",
+  "original_workspace": "/home/salboaie/work/lean_documents/tmp/09-multiversion-safety-correct-original-wording",
+  "revised_workspace": "/home/salboaie/work/lean_documents/tmp/09-multiversion-safety-correct",
+  "invalidation": {
+    "parent_workspace": "/home/salboaie/work/lean_documents/tmp/09-multiversion-safety-correct-original-wording",
+    "changed_document": "D00002",
+    "old_sha256": "d4bde05ceea8e5f6c0957fdb8de50e8d39d1b9915ca9f7ed7dea938d8ae2b4df",
+    "new_sha256": "bc6aaaff81ba69ad57927d0a66fd57a19c33732cdb527dec3712c2940f6ca259",
+    "affected_claims": [
+      "C09-OK-01",
+      "C09-OK-02",
+      "C09-OK-03",
+      "C09-OK-04",
+      "C09-OK-05",
+      "C09-OK-06",
+      "C09-OK-07",
+      "C09-OK-08",
+      "C09-OK-09",
+      "C09-OK-10",
+      "C09-OK-11",
+      "C09-OK-12",
+      "C09-OK-13",
+      "C09-OK-14"
+    ],
+    "invalidated_manual_transcriptions": [],
+    "technical_results": "all invalidated",
+    "reason": "No complete dependency map: conservatively invalidate every finding."
+  },
+  "revised_findings_sha256": "106d08bcd384ae7c3e2600cf8b2ac5dae496f31c09dba64376f3e20f2d4e69fe"
+}

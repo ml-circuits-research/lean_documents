@@ -1,0 +1,74 @@
+[
+  {
+    "id": "D00001",
+    "role": "brief",
+    "original": "input/originals/D00001.md",
+    "logical": "input/brief.md",
+    "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/brief.md",
+    "original_sha": "f7cbb6a2822be482b7587734c0b1e27ffb1de58b9e401256c21cc601c36a41c0"
+  },
+  {
+    "id": "D00002",
+    "role": "report",
+    "original": "input/originals/D00002.md",
+    "logical": "input/report.md",
+    "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/report-correct.md",
+    "original_sha": "bc6aaaff81ba69ad57927d0a66fd57a19c33732cdb527dec3712c2940f6ca259"
+  },
+  {
+    "id": "D00003",
+    "role": "source",
+    "original": "input/originals/D00003.docx",
+    "logical": "input/sources/01-specification-v1.docx.md",
+    "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/sources/01-specification-v1.docx",
+    "original_sha": "42b6976d7613cd50e93501e895fe71377ddaa902f793ed8efc9a002e10c3a8be"
+  },
+  {
+    "id": "D00004",
+    "role": "source",
+    "original": "input/originals/D00004.docx",
+    "logical": "input/sources/02-specification-v2.docx.md",
+    "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/sources/02-specification-v2.docx",
+    "original_sha": "c780e4bf1b0a0a08647f2713a2f75c76b7654f8c545ba305a8fe29f0d160169c"
+  },
+  {
+    "id": "D00005",
+    "role": "source",
+    "original": "input/originals/D00005.docx",
+    "logical": "input/sources/03-exception-annex.docx.md",
+    "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/sources/03-exception-annex.docx",
+    "original_sha": "49ae022a5b2a5568215957e54514add6a50d7c2f129a6f5b354af45ac6931e70"
+  },
+  {
+    "id": "D00006",
+    "role": "source",
+    "original": "input/originals/D00006.pdf",
+    "logical": "input/sources/04-test-runs.pdf.md",
+    "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/sources/04-test-runs.pdf",
+    "original_sha": "44640ce83d9f9b0c669a9d39eb8992d550a5250e75383c8ad15dfe19abb4dd4e"
+  },
+  {
+    "id": "D00007",
+    "role": "source",
+    "original": "input/originals/D00007.md",
+    "logical": "input/sources/05-calibration-and-authority.md",
+    "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/sources/05-calibration-and-authority.md",
+    "original_sha": "f4d7b1be08d6dd13db756c34f068696ffe5ec31564ff09ac4b47a63db180e175"
+  },
+  {
+    "id": "D00008",
+    "role": "source",
+    "original": "input/originals/D00008.md",
+    "logical": "input/sources/06-applicability-and-open-items.md",
+    "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/sources/06-applicability-and-open-items.md",
+    "original_sha": "dec4280b23593ada8abc1e1648682a3f31385bd2a7146aed36688ab157b715dc"
+  },
+  {
+    "id": "D00009",
+    "role": "source",
+    "original": "input/originals/D00009.md",
+    "logical": "input/sources/07-fault-closure-register.md",
+    "external": "/home/salboaie/work/lean_documents/examples/09-multiversion-safety/sources/07-fault-closure-register.md",
+    "original_sha": "832f5bc068a88b4ee4756897c1c5f36af0e6ba4e0f76e4581918223f338b1d3b"
+  }
+]

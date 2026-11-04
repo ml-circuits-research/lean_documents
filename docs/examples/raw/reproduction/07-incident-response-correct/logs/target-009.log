@@ -1,0 +1,6 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target009.lean
+Audit.bRawVersusEffective : Audit.acknowledgementB - Audit.detectionB = 35 ∧
+  Audit.acknowledgementB - Audit.startB = 25 ∧ Audit.timely Audit.startB Audit.acknowledgementB 30
+'Audit.bRawVersusEffective' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.212]

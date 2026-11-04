@@ -1,0 +1,4 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target016.lean
+Audit.claim08 : Audit.PauseEvidence.request ∈ Audit.suppliedPauseEvidence ∧
+  ¬Audit.PauseEvidence.approval ∈ Audit.suppliedPauseEvidence
+'Audit.claim08' depends on axioms: [propext]

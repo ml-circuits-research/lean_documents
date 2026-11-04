@@ -1,0 +1,17 @@
+<a id="P01"></a>
+# Synthetic bin status and exception register
+
+<a id="P02"></a>
+[BIN01] Shelf trace. The opening A stock occupied shelves A1 and A2. The eight received crates were placed on A3 after acceptance at the gate. The five outbound crates were selected from the received containers and opening full-container stock, but that selection does not change lot identity or the aggregate arithmetic. The returned crate was placed in cage position R2 and remained there until cutoff. The movement from gate to shelf, or from gate to the internal cage, is an internal relocation after acceptance. It must not create a second receipt. The bin register therefore uses location changes as custody context rather than additive inventory movements.
+
+<a id="P03"></a>
+[BIN02] Quarantine ticket Q-A-7. At 17:00 Elin attached a hold label to seven loose A units on shelf A1 after noticing cosmetic sleeve marks. The ticket states that those seven units remain physically in W1 and are excluded from availability pending review. It does not order disposal, destruction, shipment, or a transfer to another lot. The label applies to individual units, not seven crates. No later release from quarantine occurred before cutoff. The physical count sheets both expressly included the held units. The record supports a status deduction from available A stock without decrementing A book on-hand.
+
+<a id="P04"></a>
+[BIN03] Reservation ticket RES-B-8. The next-day customer order reserves eight B units located on shelf B2. The units were not among the two cartons loaded for OUT-B and were not the canceled third carton on B4. The reservation was still active at cutoff. The operator may not release those units to another order without canceling or changing the reservation record, but no such change occurred that day. These facts justify treating the reservation as a distinct deduction when calculating available B stock. They do not establish an outbound movement, a customer delivery, or physical absence from the B count boundary.
+
+<a id="P05"></a>
+[BIN04] Exception ownership. Inventory reviewer Mira Cole opened unresolved exception EX-A for the one-unit disagreement between the signed A counts. She requested a recount but supplied no completed recount in this packet. Reviewer Leon Hart opened EX-C for the imported C journal deficit and requested the original unit mapping file. The request names a possible conversion issue but contains no approved correction amount. The two exceptions have different evidence needs: EX-A needs reconciliation of competing observations, while EX-C needs reconstruction of a possibly incorrect journal entry. Neither can be closed by adding unrelated B stock or by assuming a favorable D quantity.
+
+<a id="P06"></a>
+[BIN05] D evidence request. The receiving coordinator requested an authenticated copy of the D acceptance box and the missing next-day recount attachment. The response log records those requests as outstanding at the cutoff used for this packet. It does not establish whether the documents exist elsewhere or what they would say. The coordinator retained both tentative quantity messages rather than promoting either into a signed actual receipt. A visual reading of the pale printed number can clarify what appears on the form, but it cannot by itself establish customer acceptance. Any later closure must identify the newly supplied evidence, its authority, and the exact quantity it resolves.

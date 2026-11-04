@@ -1,0 +1,53 @@
+{
+  "text": "<a id=\"P01\"></a>\n# Synthetic operational record N51\n\n<a id=\"P02\"></a>\n[N51-01] Release N51-R1 occurred on 20 September at 10:00 with active Ada and a valid node permit. Devon signed the only approval at 09:00. His delegation covered N41 through N50; his N51 expansion request had been declined. The approval and amendment histories are complete, and no Cora approval or board exception applies. Thus approval lacked scope even though Devon's signature was genuine. A valid permit and authentic signature cannot replace a missing authority predicate in the release conjunction.\n\n<a id=\"P03\"></a>\n[N51-02] Bundle receipt. This node belongs to rack 6, monitoring segment S3. The named handoff transferred configuration bundle sequence 1051, checksum label L3051, to node N51. The receipt confirms bundle identity and administrative handoff, not all future service behavior. It does not independently establish complete event history outside the stated interval.\n",
+  "segments": [
+    {
+      "anchor": "P01",
+      "quote": "# Synthetic operational record N51",
+      "locator": {
+        "kind": "text",
+        "start_line": 1,
+        "end_line": 1,
+        "start_character": 0,
+        "end_character": 34,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P02",
+      "quote": "[N51-01] Release N51-R1 occurred on 20 September at 10:00 with active Ada and a valid node permit. Devon signed the only approval at 09:00. His delegation covered N41 through N50; his N51 expansion request had been declined. The approval and amendment histories are complete, and no Cora approval or board exception applies. Thus approval lacked scope even though Devon's signature was genuine. A valid permit and authentic signature cannot replace a missing authority predicate in the release conjunction.",
+      "locator": {
+        "kind": "text",
+        "start_line": 3,
+        "end_line": 3,
+        "start_character": 36,
+        "end_character": 542,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P03",
+      "quote": "[N51-02] Bundle receipt. This node belongs to rack 6, monitoring segment S3. The named handoff transferred configuration bundle sequence 1051, checksum label L3051, to node N51. The receipt confirms bundle identity and administrative handoff, not all future service behavior. It does not independently establish complete event history outside the stated interval.",
+      "locator": {
+        "kind": "text",
+        "start_line": 5,
+        "end_line": 5,
+        "start_character": 544,
+        "end_character": 907,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    }
+  ],
+  "tools": {
+    "python-stdlib": "3.14.8"
+  },
+  "warnings": [],
+  "complete": true,
+  "status": "ready"
+}

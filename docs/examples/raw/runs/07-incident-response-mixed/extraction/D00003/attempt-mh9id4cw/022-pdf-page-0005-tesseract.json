@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/home/salboaie/.local/bin/tesseract",
+    "/home/salboaie/work/lean_documents/tmp/claim-audit-t278l4it/extraction/D00003/attempt-mh9id4cw/pdf-page-0005-raster.png",
+    "/home/salboaie/work/lean_documents/tmp/claim-audit-t278l4it/extraction/D00003/attempt-mh9id4cw/pdf-page-0005",
+    "-l",
+    "eng",
+    "--psm",
+    "3",
+    "-c",
+    "tessedit_create_tsv=1",
+    "-c",
+    "tessedit_create_txt=0"
+  ],
+  "timeout_seconds": 60,
+  "returncode": 0,
+  "stdout": "",
+  "stderr": ""
+}

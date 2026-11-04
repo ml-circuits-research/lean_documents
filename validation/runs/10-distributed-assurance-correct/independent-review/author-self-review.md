@@ -1,0 +1,11 @@
+# Semantic self-review and independence limitation
+
+No independent reviewer rederived this run. The source reader, model author and self-reviewer are the same agent. No evaluator outcomes or alternate report were accessed. This record must not be presented as independent semantic validation.
+
+Full-corpus review included all60 operational records, their bundle-identity/completeness paragraphs, all governance/alias/delegation/transition/request/exception clauses, original DOCX table structure and all five original PDF registry sheets. The initial large text display truncated its middle; N21-N40 were subsequently reread in full. No retrieval window was mistaken for the full corpus. Native material was compared with original bytes and hash-bound review records were written only after actual inspection.
+
+Self-review checked event-time policy selection, dated alias versus credential activation, Devon's conjunctive range/time authority, expired/superseded permits, effective revocation versus later index time, actual final board grant versus proposal, and scope-limited negative facts. N57 was assessed under the separately located valid exception. N58 remains an explicit unauthorized witness, while N59 stays unknown. N60 authorization of one named event does not establish a complete monthly event count.
+
+During model review, unspecified Cora approval timestamps for N58/N59/N60 were represented as unavailable Option values rather than invented09:00 events. Their explicitly valid source approvals supply the corresponding premise. This preserves exactness while allowing the named authorization questions. Ordinary local revisionA authority is not permitted to substitute for revisionB central approval; the board exception has its own narrow route.
+
+Remaining limitations concern synthetic source authenticity, documentary truth, N59 missing permit history, N60 missing late-month events, and absence of independent review. No actual source-change reproduction is claimed by the finding describing G05; it is a supported normative statement about required reuse checks. Technical success will be recorded in proof-results.json and the human report only after actual execution succeeds.

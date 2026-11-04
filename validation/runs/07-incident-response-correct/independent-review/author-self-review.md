@@ -1,0 +1,9 @@
+# Semantic self-review and independence limitation
+
+No separate reviewer independently assessed this run. The same author read source documents, inspected native originals, built findings/models and performed this self-review. Therefore this is not an independent semantic validation. No alternate report, authoring master or evaluator outcomes were accessed.
+
+The review covered all eighteen claim groups and every supplied source passage. It checked correct scope of detection versus raw warning, explicit UTC offsets, exact minute timestamps, inclusive deadlines, nonoverlap and combined cap, revision boundary, P1/P2 and operation-specific maintenance, queue versus delivery, each distinct escalation trigger, C testimony provenance and absent authority, and the two-sided exfiltration support gap. All original DOCX rule text and material PDF/scan pages were inspected; corrected OCR digits and markers have hash-bound retained provenance.
+
+No disagreement is recorded because no independent reviewer participated. Source contradictions were not resolved by the model author: C at05:00 remains conflicting testimony, while actual exfiltration during the monitoring gap remains unknown. A's continuous noncontainment is positively documented in T02 and therefore supports the executive trigger independently of sensor availability. The favorable management adjectives remain attributed opinion; the report's characterization of their lack of a formal criterion is supported.
+
+Semantic limits: native inspection is attributed reviewer work, not machine-certified fidelity or authenticity. The scan keeps its technical partial flag with a coverage acknowledgement. Every material scan passage used was inspected and corrected, but the underlying conflicting event cannot be settled from it. Independent executed timestamp conversion is a computational cross-check, not independent semantic review. The parent may arrange a separate review later; none is claimed now.

@@ -1,0 +1,20 @@
+{
+  "action": "manual-transcription",
+  "at": "2026-11-04T15:04:15.283217+00:00",
+  "path": "input/sources/06-shipping-tickets-scan.pdf.md",
+  "source_anchor": "pdf-page-0001",
+  "root_source_anchor": "pdf-page-0001",
+  "new_anchor": "pdf-page-0001-reviewed-0001",
+  "document_id": "D00008",
+  "reviewer": "blind-inventory-auditor",
+  "reason": "Compared actual raster page: marker T01 and clock 09:00 were misread; eight full crates and accepted status visually confirmed.",
+  "source_sha256": "e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58",
+  "source_segment_sha256": "cad9e3216ecf7530ce02c8d681ebd79dedc6a94cf9dcdc621e31d35adca7a3c6",
+  "new_segment_sha256": "6de474db7507c49fa78d7e206befe46dfc2d1e99ddb5ab536f2bfb559780c5c7",
+  "transcription_file_sha256": "72e3f904601c4f0cb37fa5e793512cff0066e4cfcec41fbcb65926e95cba5a26",
+  "transcription_snapshot": "input/manual-transcriptions/D00008/27a8dd0b9c08462610f0237b36aebddc5203fb42d149a2cf510126e2ed638151.txt",
+  "interpretation_limit": "Manual transcription is a reviewer-attributed interpretation of the original source, not machine-certified textual fidelity or source authenticity. Inherited coordinates identify the original passage; inherited OCR words and confidence describe the uncorrected extraction, not the manually transcribed wording.",
+  "technical_results": "Prior successes invalidated; no new proof check has been run.",
+  "state": "recorded",
+  "archived": []
+}

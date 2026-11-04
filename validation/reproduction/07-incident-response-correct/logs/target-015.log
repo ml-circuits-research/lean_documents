@@ -1,0 +1,8 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target015.lean
+Audit.cConflict : Audit.elise.incident = Audit.pavel.incident ∧
+  Audit.elise.minute = Audit.pavel.minute ∧
+    Audit.elise.fullyIsolated ≠ Audit.pavel.fullyIsolated ∧
+      Audit.elise.retracted = false ∧ Audit.pavel.retracted = false
+'Audit.cConflict' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.219]

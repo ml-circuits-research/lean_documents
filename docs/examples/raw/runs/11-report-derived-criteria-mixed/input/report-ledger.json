@@ -1,0 +1,16 @@
+{
+  "P01": "# Campaign dispatch review",
+  "P02": "This report presents findings for the four-dispatch cohort at the end of campaign day 20, except where a finding expressly names a different period or population. Its findings themselves identify the questions to review; no separate review brief accompanies it.",
+  "P03": "**F11-01 — Cohort expenditure.** The total amount of the reviewed cohort is 50000 euro cents. Argument: 12000 + 18000 + 9000 + 11000 = 50000. Citation: dispatch-ledger.md L-02.",
+  "P04": "**F11-02 — Budget headroom.** The cohort budget balance is 6000 euro cents. Argument: subtract the four dispatch amounts from the 55000-cent comparison budget. Citations: dispatch-ledger.md L-01–L-02; dispatch-policy.md P-05.",
+  "P05": "**F11-03 — Approval of B.** B has noncompliant approval at cutoff. Argument: its approval on day 15 was later than its release on day 12, so it fails the only approval route. Citations: dispatch-ledger.md L-02; dispatch-policy.md P-02.",
+  "P06": "**F11-04 — Approval of C.** C has compliant approval at cutoff under the temporary exception. Argument: approval on day 16 was within three days of release on day 12. Citations: dispatch-ledger.md L-02; dispatch-policy.md P-03.",
+  "P07": "**F11-05 — Settlement eligibility of B.** B is eligible for settlement at cutoff. Argument: its checksum is PASS, and a PASS checksum alone is sufficient for settlement eligibility. Citations: dispatch-ledger.md L-02–L-03; dispatch-policy.md P-04.",
+  "P08": "**F11-06 — What the ledger attests.** Ledger paragraph L-03 states that every reviewed dispatch received approval before release. Citation: dispatch-ledger.md L-03.",
+  "P09": "**F11-07 — Later reliability.** B had zero reliability incidents during days 21–50. Argument: the listed reliability annex confirms the absence of incidents. Citation: packet-register.md K-02.",
+  "P10": "**F11-08 — Overall rating.** The cohort is operationally robust. Argument: every checksum passed. Citations: dispatch-ledger.md L-02–L-03; dispatch-policy.md P-06.",
+  "P11": "**F11-09 — Delivery acceptance.** The supplied delivery evidence unambiguously establishes that B was accepted at the end of day 12. Argument: the signed receiving register records acceptance. Citation: delivery-records.md R-01.",
+  "P12": "**F11-10 — Exception window.** Release on day 15 is within the temporary exception's release window. Citation: dispatch-policy.md P-03.",
+  "P13": "**F11-11 — Eligible settlement amount.** The reviewed cohort's eligible settlement amount is 39000 euro cents. Argument: A, B, and C are eligible, so add their amounts. Citations: dispatch-policy.md P-02–P-05; dispatch-ledger.md L-02; destination-list.md D-01.",
+  "P14": "**F11-12 — Population expenditure.** The total amount of all 40 campaign dispatches is 50000 euro cents. Argument: the four ledger rows sum to that amount. Citations: dispatch-ledger.md L-01–L-02; packet-register.md K-03."
+}

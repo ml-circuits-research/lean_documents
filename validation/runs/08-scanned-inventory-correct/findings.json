@@ -1,0 +1,1296 @@
+[
+  {
+    "claim_id": "C08-OK-01",
+    "report_anchor": "C08-OK-01",
+    "report_quote": "**C08-OK-01.** Lot A accepted inbound quantity was 96 units.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T01]; sources/01-stock-rules.md#[R01].",
+    "question": "Did the accepted Lot A inbound movement contain exactly 96 individual units?",
+    "evidence": [
+      {
+        "path": "input/sources/06-shipping-tickets-scan.pdf.md",
+        "anchor": "pdf-page-0001-reviewed-0001",
+        "quote": "SYNTHETIC NORTH QUAY SHIPPING FORM\n[T01] Movement IN-A; 14 April 2032; clock 09:00; lot A.\nQuantity boxes: 8 sealed full crates. Status: Accepted by Elin Shore.\nAll eight crates carried A labels matching the receiving request. The clerk checked\nthe twelve-unit crate convention and placed the containers on A shelves. No goods\nwere held beyond the fence. The receipt is posted and complete, not a forecast of a\nlater delivery. No partial, damaged, or empty-container notation changes the full\nquantity.\n[T01-CHAIN] This form belongs to the registered source packet. The warehouse boundary\nincludes W1, W2, and the fenced return cage. Read planned quantities separately from\nactual signed handoffs. Standard full-container quantities follow the supplied stock\nrules. Carrier custody is distinct from customer delivery. Preserve lot identity in\nevery calculation; quantities from another lot cannot repair this form. Any partial-\ncontainer notation would override the standard full conversion. A source quotation\nshould retain this original PDF path and marker rather than presenting an OCR excerpt\nas an independently signed record.\n[T01-LIMIT] The form supports only its named movement and stages. It does not certify\nall warehouse inventory or resolve independent physical count differences. A\nsignature name is an invented evidence field within this exercise, not a claim about\nreal handwriting authentication. Missing attachments must remain missing in the audit\nreasoning. Reviewers should explain how the movement changes the relevant balance\nbefore relying on an aggregate total.",
+        "source_marker": "T01",
+        "original_source_file": "sources/06-shipping-tickets-scan.pdf",
+        "original_coordinate": {
+          "page": 1,
+          "original": "input/originals/D00008.pdf",
+          "original_sha256": "e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58"
+        }
+      },
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P02",
+        "quote": "[R01] Unit definitions and boundary. The inventory boundary consists of rooms W1 and W2 and the fenced return cage at the invented North Quay warehouse. The cutoff is 18:00 on 14 April 2032. All quantities are exact integer individual sleeves, called units. A sealed full crate contains twelve units. A sealed full carton contains six units. A pallet has no fixed conversion. A partial-container label overrides the standard full-container quantity; an empty container contributes zero. All names and transactions in this packet are invented. These rules define the finite exercise and do not prescribe real shipping procedures.",
+        "source_marker": "R01",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P03",
+        "quote": "[R02] Movement semantics. Opening stock plus accepted inbound movements minus completed outbound movements plus accepted returns determines book on-hand. A printed ticket, order, reservation, or pick request changes no physical inventory merely by existing. Departure occurs at the signed actual custody handoff across the boundary. Customer delivery is a separate later event. A carrier can hold inventory that has already departed but is not yet delivered. Return increases on-hand when the receiving custodian accepts the goods back across the boundary. Returned goods in the fenced cage are inside the boundary even before reshelving. An accepted return is a separate movement, not a reason to erase the original departure.",
+        "source_marker": "R02",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/02-opening-and-journal.md",
+        "anchor": "P02",
+        "quote": "[J01] Opening and receipts. At 08:00 lot A opened with 100 units and lot B with 40 units. At 09:00 receipt IN-A accepted eight sealed full crates of A. At 09:30 receipt IN-B accepted two sealed full cartons of B. Clerk Elin Shore accepted custody at the gate. Each container was confirmed full, without a partial notation. These are posted accepted receipts, not expected procurement deliveries. No other opening adjustment or accepted inbound movement for A or B occurred before cutoff. The completeness statement is restricted to the named interval and lots. It does not establish any opening quantity for D or repair the C import anomaly.",
+        "source_marker": "J01",
+        "original_source_file": "sources/02-opening-and-journal.md",
+        "original_coordinate": {
+          "original": "input/originals/D00004.md",
+          "original_sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+        }
+      },
+      {
+        "path": "input/sources/05-custody-register.md",
+        "anchor": "P02",
+        "quote": "[K01] Roles. Elin Shore may accept inbound movements and returns at North Quay. Jun Vale may accept carrier custody but cannot amend warehouse physical counts. Tomas Reed may perform an independent count but cannot retroactively alter a transfer quantity without an authorized countersigned correction. These assignments apply only to this invented day. A correct signature identity is one part of the evidence: the document must still identify the lot, movement, time, and actual quantity. A carrier signature is not a customer delivery signature. Similarly, an order clerk signature can approve a request without establishing that the requested goods physically left.",
+        "source_marker": "K01",
+        "original_source_file": "sources/05-custody-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00007.md",
+          "original_sha256": "54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830"
+        }
+      }
+    ],
+    "rules": [
+      "R01 assigns twelve units to a sealed full crate. R02 counts accepted custody, not an expected order; K01 authorizes Elin to receive."
+    ],
+    "assumptions": [
+      "Use the supplied synthetic day, lot identities and exact individual-unit conversions. Accept the explicitly complete A/B movement journal only for its named boundary and interval.",
+      "The legible material scan fields were actually viewed and corroborated; manual reviewed anchors preserve original-source hashes and raw OCR. No real handwriting authentication or external event inspection is claimed."
+    ],
+    "reasoning": [
+      "1. Visually inspected T01 records eight sealed full A crates accepted by Elin at 09:00, with no partial/damaged/empty override. J01 independently records the posted accepted receipt.",
+      "2. Eight times twelve gives 96 units, preserving crate factor and lotA identity.",
+      "3. The source proves a completed inbound movement within this synthetic journal, not mere planned procurement."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim01",
+        "relation": "supports",
+        "target": "Audit.inboundA = 96"
+      }
+    ],
+    "limits": [
+      "The result concerns this named accepted movement only, not all physical stock or unrelated lotD."
+    ],
+    "recommendation": "Retain the 96-unit accepted inbound finding and original scan marker T01."
+  },
+  {
+    "claim_id": "C08-OK-02",
+    "report_anchor": "C08-OK-02",
+    "report_quote": "**C08-OK-02.** Lot B accepted inbound quantity was 12 units.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T02]; sources/01-stock-rules.md#[R01].",
+    "question": "Did the accepted Lot B inbound movement contain exactly 12 units, using carton rather than crate conversion?",
+    "evidence": [
+      {
+        "path": "input/sources/06-shipping-tickets-scan.pdf.md",
+        "anchor": "pdf-page-0002-reviewed-0001",
+        "quote": "SYNTHETIC NORTH QUAY SHIPPING FORM\n[T02] Movement IN-B; 14 April 2032; clock 09:30; lot B.\nQuantity boxes: 2 sealed full cartons. Status: Accepted by Elin Shore.\nEach carton carried a B label and the standard six-unit quantity. The clerk separated\nthis receipt from the eight units reserved for the next-day order. No partial\nnotation appears. The two accepted cartons belong to B even though the sleeve\ndescription resembles A. A crate conversion would attach the wrong unit factor to\nthis source.\n[T02-CHAIN] This form belongs to the registered source packet. The warehouse boundary\nincludes W1, W2, and the fenced return cage. Read planned quantities separately from\nactual signed handoffs. Standard full-container quantities follow the supplied stock\nrules. Carrier custody is distinct from customer delivery. Preserve lot identity in\nevery calculation; quantities from another lot cannot repair this form. Any partial-\ncontainer notation would override the standard full conversion. A source quotation\nshould retain this original PDF path and marker rather than presenting an OCR excerpt\nas an independently signed record.\n[T02-LIMIT] The form supports only its named movement and stages. It does not certify\nall warehouse inventory or resolve independent physical count differences. A\nsignature name is an invented evidence field within this exercise, not a claim about\nreal handwriting authentication. Missing attachments must remain missing in the audit\nreasoning. Reviewers should explain how the movement changes the relevant balance\nbefore relying on an aggregate total.",
+        "source_marker": "T02",
+        "original_source_file": "sources/06-shipping-tickets-scan.pdf",
+        "original_coordinate": {
+          "page": 2,
+          "original": "input/originals/D00008.pdf",
+          "original_sha256": "e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58"
+        }
+      },
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P02",
+        "quote": "[R01] Unit definitions and boundary. The inventory boundary consists of rooms W1 and W2 and the fenced return cage at the invented North Quay warehouse. The cutoff is 18:00 on 14 April 2032. All quantities are exact integer individual sleeves, called units. A sealed full crate contains twelve units. A sealed full carton contains six units. A pallet has no fixed conversion. A partial-container label overrides the standard full-container quantity; an empty container contributes zero. All names and transactions in this packet are invented. These rules define the finite exercise and do not prescribe real shipping procedures.",
+        "source_marker": "R01",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/02-opening-and-journal.md",
+        "anchor": "P02",
+        "quote": "[J01] Opening and receipts. At 08:00 lot A opened with 100 units and lot B with 40 units. At 09:00 receipt IN-A accepted eight sealed full crates of A. At 09:30 receipt IN-B accepted two sealed full cartons of B. Clerk Elin Shore accepted custody at the gate. Each container was confirmed full, without a partial notation. These are posted accepted receipts, not expected procurement deliveries. No other opening adjustment or accepted inbound movement for A or B occurred before cutoff. The completeness statement is restricted to the named interval and lots. It does not establish any opening quantity for D or repair the C import anomaly.",
+        "source_marker": "J01",
+        "original_source_file": "sources/02-opening-and-journal.md",
+        "original_coordinate": {
+          "original": "input/originals/D00004.md",
+          "original_sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+        }
+      },
+      {
+        "path": "input/sources/05-custody-register.md",
+        "anchor": "P02",
+        "quote": "[K01] Roles. Elin Shore may accept inbound movements and returns at North Quay. Jun Vale may accept carrier custody but cannot amend warehouse physical counts. Tomas Reed may perform an independent count but cannot retroactively alter a transfer quantity without an authorized countersigned correction. These assignments apply only to this invented day. A correct signature identity is one part of the evidence: the document must still identify the lot, movement, time, and actual quantity. A carrier signature is not a customer delivery signature. Similarly, an order clerk signature can approve a request without establishing that the requested goods physically left.",
+        "source_marker": "K01",
+        "original_source_file": "sources/05-custody-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00007.md",
+          "original_sha256": "54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830"
+        }
+      }
+    ],
+    "rules": [
+      "A sealed full carton is six units under R01; lot identity and container type control."
+    ],
+    "assumptions": [
+      "Use the supplied synthetic day, lot identities and exact individual-unit conversions. Accept the explicitly complete A/B movement journal only for its named boundary and interval.",
+      "The legible material scan fields were actually viewed and corroborated; manual reviewed anchors preserve original-source hashes and raw OCR. No real handwriting authentication or external event inspection is claimed."
+    ],
+    "reasoning": [
+      "1. T02 visually records two sealed full B cartons accepted by Elin, confirmed by J01; no partial override appears.",
+      "2. Two times six equals 12. Applying twelve-unit crate conversion would misread the source container type."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim02",
+        "relation": "supports",
+        "target": "Audit.inboundB = 12"
+      }
+    ],
+    "limits": [
+      "This receipt is distinct from the separate eight-unit next-day reservation."
+    ],
+    "recommendation": "Retain 12 accepted B units and identify the six-unit carton factor."
+  },
+  {
+    "claim_id": "C08-OK-03",
+    "report_anchor": "C08-OK-03",
+    "report_quote": "**C08-OK-03.** Lot A book on-hand at cutoff was 148 units.\n\nCitations: sources/02-opening-and-journal.md#[J01]; sources/02-opening-and-journal.md#[J02]; sources/01-stock-rules.md#[R02].",
+    "question": "Does the complete A movement journal produce 148 book on-hand units at 18:00 on April 14?",
+    "evidence": [
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P03",
+        "quote": "[R02] Movement semantics. Opening stock plus accepted inbound movements minus completed outbound movements plus accepted returns determines book on-hand. A printed ticket, order, reservation, or pick request changes no physical inventory merely by existing. Departure occurs at the signed actual custody handoff across the boundary. Customer delivery is a separate later event. A carrier can hold inventory that has already departed but is not yet delivered. Return increases on-hand when the receiving custodian accepts the goods back across the boundary. Returned goods in the fenced cage are inside the boundary even before reshelving. An accepted return is a separate movement, not a reason to erase the original departure.",
+        "source_marker": "R02",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P05",
+        "quote": "[R04] Evidence scope. Signed actual transfer receipts take precedence over unsigned planned quantities for determining completed custody movements. The journal and register are complete for A and B movements only within the stated day. No such completeness applies to D. Equal-authority physical counts of the same boundary and cutoff remain competing evidence unless a recount or authorized correction resolves them. A later filename does not give precedence. A pale or obscured numeral in a scan requires visual review and corroboration. An OCR guess is not a signed quantity. If available evidence does not establish a unique accepted amount, report the missing argument without inventing a number or asserting that the shipment necessarily failed.",
+        "source_marker": "R04",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/02-opening-and-journal.md",
+        "anchor": "P02",
+        "quote": "[J01] Opening and receipts. At 08:00 lot A opened with 100 units and lot B with 40 units. At 09:00 receipt IN-A accepted eight sealed full crates of A. At 09:30 receipt IN-B accepted two sealed full cartons of B. Clerk Elin Shore accepted custody at the gate. Each container was confirmed full, without a partial notation. These are posted accepted receipts, not expected procurement deliveries. No other opening adjustment or accepted inbound movement for A or B occurred before cutoff. The completeness statement is restricted to the named interval and lots. It does not establish any opening quantity for D or repair the C import anomaly.",
+        "source_marker": "J01",
+        "original_source_file": "sources/02-opening-and-journal.md",
+        "original_coordinate": {
+          "original": "input/originals/D00004.md",
+          "original_sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+        }
+      },
+      {
+        "path": "input/sources/02-opening-and-journal.md",
+        "anchor": "P03",
+        "quote": "[J02] A departure, delivery, and return. OUT-A at 11:00 transferred five full crates to carrier Jun Vale. The customer accepted four crates and declined the fifth. At 16:00 Jun returned the still-sealed fifth crate; Elin accepted it inside the fenced return cage. The entire five-crate departure remains recorded, followed by the separate one-crate return. There were no other A departures or returns that day. At 17:00 seven units already on a W1 shelf were quarantined. They remained inside the inventory boundary. A reviewer must therefore distinguish dispatched quantity, delivered quantity, returned quantity, on-hand, and available stock. None of these labels can be substituted merely because they refer to the same order.",
+        "source_marker": "J02",
+        "original_source_file": "sources/02-opening-and-journal.md",
+        "original_coordinate": {
+          "original": "input/originals/D00004.md",
+          "original_sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+        }
+      },
+      {
+        "path": "input/sources/05-custody-register.md",
+        "anchor": "P04",
+        "quote": "[K03] Bounded completeness. The register and journal list all accepted A and B movements for the stated day. This permits absence of further A or B movements to be used in exact book arithmetic. It does not establish complete D custody, complete C physical reconciliation, or complete warehouse activity over other dates. The A physical count conflict remains unresolved despite complete movement records. Completeness of one evidence type is not an assertion that every other evidence type agrees. A report that says every lot was reconciled therefore needs an argument beyond the limited A/B movement inventory and must confront the explicit unresolved cases.",
+        "source_marker": "K03",
+        "original_source_file": "sources/05-custody-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00007.md",
+          "original_sha256": "54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830"
+        }
+      },
+      {
+        "path": "input/sources/07-bin-and-exception-register.md",
+        "anchor": "P02",
+        "quote": "[BIN01] Shelf trace. The opening A stock occupied shelves A1 and A2. The eight received crates were placed on A3 after acceptance at the gate. The five outbound crates were selected from the received containers and opening full-container stock, but that selection does not change lot identity or the aggregate arithmetic. The returned crate was placed in cage position R2 and remained there until cutoff. The movement from gate to shelf, or from gate to the internal cage, is an internal relocation after acceptance. It must not create a second receipt. The bin register therefore uses location changes as custody context rather than additive inventory movements.",
+        "source_marker": "BIN01",
+        "original_source_file": "sources/07-bin-and-exception-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00009.md",
+          "original_sha256": "17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9"
+        }
+      },
+      {
+        "path": "input/sources/06-shipping-tickets-scan.pdf.md",
+        "anchor": "pdf-page-0001-reviewed-0001",
+        "quote": "SYNTHETIC NORTH QUAY SHIPPING FORM\n[T01] Movement IN-A; 14 April 2032; clock 09:00; lot A.\nQuantity boxes: 8 sealed full crates. Status: Accepted by Elin Shore.\nAll eight crates carried A labels matching the receiving request. The clerk checked\nthe twelve-unit crate convention and placed the containers on A shelves. No goods\nwere held beyond the fence. The receipt is posted and complete, not a forecast of a\nlater delivery. No partial, damaged, or empty-container notation changes the full\nquantity.\n[T01-CHAIN] This form belongs to the registered source packet. The warehouse boundary\nincludes W1, W2, and the fenced return cage. Read planned quantities separately from\nactual signed handoffs. Standard full-container quantities follow the supplied stock\nrules. Carrier custody is distinct from customer delivery. Preserve lot identity in\nevery calculation; quantities from another lot cannot repair this form. Any partial-\ncontainer notation would override the standard full conversion. A source quotation\nshould retain this original PDF path and marker rather than presenting an OCR excerpt\nas an independently signed record.\n[T01-LIMIT] The form supports only its named movement and stages. It does not certify\nall warehouse inventory or resolve independent physical count differences. A\nsignature name is an invented evidence field within this exercise, not a claim about\nreal handwriting authentication. Missing attachments must remain missing in the audit\nreasoning. Reviewers should explain how the movement changes the relevant balance\nbefore relying on an aggregate total.",
+        "source_marker": "T01",
+        "original_source_file": "sources/06-shipping-tickets-scan.pdf",
+        "original_coordinate": {
+          "page": 1,
+          "original": "input/originals/D00008.pdf",
+          "original_sha256": "e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58"
+        }
+      },
+      {
+        "path": "input/sources/06-shipping-tickets-scan.pdf.md",
+        "anchor": "pdf-page-0003-reviewed-0001",
+        "quote": "SYNTHETIC NORTH QUAY SHIPPING FORM\n[T03] Movement OUT-A / RET-A; 14 April 2032; clock 11:00 / 16:00; lot A.\nQuantity boxes: 5 full crates out; 1 full crate returned. Status: Carrier Jun Vale /\nreceiver Elin Shore.\nThe carrier accepted five crates before departure. The customer accepted four. The\nfifth remained sealed in the vehicle and returned that afternoon. Elin signed the\nreturn after placing it inside the fenced cage. The full departure and the separate\nreturn are both operative entries. Erasing the departure and adding a return would\ncount the same reversal twice.\n[T03-CHAIN] This form belongs to the registered source packet. The warehouse boundary\nincludes W1, W2, and the fenced return cage. Read planned quantities separately from\nactual signed handoffs. Standard full-container quantities follow the supplied stock\nrules. Carrier custody is distinct from customer delivery. Preserve lot identity in\nevery calculation; quantities from another lot cannot repair this form. Any partial-\ncontainer notation would override the standard full conversion. A source quotation\nshould retain this original PDF path and marker rather than presenting an OCR excerpt\nas an independently signed record.\n[T03-LIMIT] The form supports only its named movement and stages. It does not certify\nall warehouse inventory or resolve independent physical count differences. A\nsignature name is an invented evidence field within this exercise, not a claim about\nreal handwriting authentication. Missing attachments must remain missing in the audit\nreasoning. Reviewers should explain how the movement changes the relevant balance\nbefore relying on an aggregate total.",
+        "source_marker": "T03",
+        "original_source_file": "sources/06-shipping-tickets-scan.pdf",
+        "original_coordinate": {
+          "page": 3,
+          "original": "input/originals/D00008.pdf",
+          "original_sha256": "e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58"
+        }
+      }
+    ],
+    "rules": [
+      "Book on-hand is opening plus accepted inbound minus actual departure plus accepted return. K03/R04 bound movement completeness to A/B that day; cage acceptance is inside the boundary."
+    ],
+    "assumptions": [
+      "Use the supplied synthetic day, lot identities and exact individual-unit conversions. Accept the explicitly complete A/B movement journal only for its named boundary and interval.",
+      "The legible material scan fields were actually viewed and corroborated; manual reviewed anchors preserve original-source hashes and raw OCR. No real handwriting authentication or external event inspection is claimed."
+    ],
+    "reasoning": [
+      "1. A opens 100, accepts 96 inbound, departs 60 in five full crates, then separately accepts 12 returned units inside the fenced cage before cutoff.",
+      "2. The signed ledger calculation 100+96-60+12 equals 148. The original five-crate departure is retained rather than erased when one crate returns.",
+      "3. Internal gate-to-shelf/cage movement creates no second receipt, and quarantine creates no departure. The report is explicitly a book result."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim03",
+        "relation": "supports",
+        "target": "Audit.bookA = 148"
+      }
+    ],
+    "limits": [
+      "A physical counts separately conflict at 148 and 147; agreement with one observation does not resolve or override the other."
+    ],
+    "recommendation": "Retain 148 as book on-hand and display the physical-count discrepancy separately."
+  },
+  {
+    "claim_id": "C08-OK-04",
+    "report_anchor": "C08-OK-04",
+    "report_quote": "**C08-OK-04.** Lot A available book stock was 141 units.\n\nCitations: sources/01-stock-rules.md#[R03]; sources/02-opening-and-journal.md#[J02].",
+    "question": "Is A available book stock 141 after the separately specified quarantine deduction from book on-hand 148?",
+    "evidence": [
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P04",
+        "quote": "[R03] Lot identity and availability. Lots A, B, C, and D are separate even though their sleeves share a catalog description. An excess in one lot cannot repair a deficit in another. Available stock is book on-hand minus quarantined units minus separately reserved units, with no overlapping deductions. The A quarantine contains seven units. The B reservation contains eight different units. Quarantine and reservation change internal status without transferring custody. Physical presence, book balance, and available quantity are different predicates. A physical count may disagree with a journal-derived balance, and the disagreement must remain visible rather than silently redefining one quantity to match the other.",
+        "source_marker": "R03",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/02-opening-and-journal.md",
+        "anchor": "P03",
+        "quote": "[J02] A departure, delivery, and return. OUT-A at 11:00 transferred five full crates to carrier Jun Vale. The customer accepted four crates and declined the fifth. At 16:00 Jun returned the still-sealed fifth crate; Elin accepted it inside the fenced return cage. The entire five-crate departure remains recorded, followed by the separate one-crate return. There were no other A departures or returns that day. At 17:00 seven units already on a W1 shelf were quarantined. They remained inside the inventory boundary. A reviewer must therefore distinguish dispatched quantity, delivered quantity, returned quantity, on-hand, and available stock. None of these labels can be substituted merely because they refer to the same order.",
+        "source_marker": "J02",
+        "original_source_file": "sources/02-opening-and-journal.md",
+        "original_coordinate": {
+          "original": "input/originals/D00004.md",
+          "original_sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+        }
+      },
+      {
+        "path": "input/sources/07-bin-and-exception-register.md",
+        "anchor": "P03",
+        "quote": "[BIN02] Quarantine ticket Q-A-7. At 17:00 Elin attached a hold label to seven loose A units on shelf A1 after noticing cosmetic sleeve marks. The ticket states that those seven units remain physically in W1 and are excluded from availability pending review. It does not order disposal, destruction, shipment, or a transfer to another lot. The label applies to individual units, not seven crates. No later release from quarantine occurred before cutoff. The physical count sheets both expressly included the held units. The record supports a status deduction from available A stock without decrementing A book on-hand.",
+        "source_marker": "BIN02",
+        "original_source_file": "sources/07-bin-and-exception-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00009.md",
+          "original_sha256": "17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9"
+        }
+      },
+      {
+        "path": "input/sources/02-opening-and-journal.md",
+        "anchor": "P02",
+        "quote": "[J01] Opening and receipts. At 08:00 lot A opened with 100 units and lot B with 40 units. At 09:00 receipt IN-A accepted eight sealed full crates of A. At 09:30 receipt IN-B accepted two sealed full cartons of B. Clerk Elin Shore accepted custody at the gate. Each container was confirmed full, without a partial notation. These are posted accepted receipts, not expected procurement deliveries. No other opening adjustment or accepted inbound movement for A or B occurred before cutoff. The completeness statement is restricted to the named interval and lots. It does not establish any opening quantity for D or repair the C import anomaly.",
+        "source_marker": "J01",
+        "original_source_file": "sources/02-opening-and-journal.md",
+        "original_coordinate": {
+          "original": "input/originals/D00004.md",
+          "original_sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+        }
+      },
+      {
+        "path": "input/sources/05-custody-register.md",
+        "anchor": "P04",
+        "quote": "[K03] Bounded completeness. The register and journal list all accepted A and B movements for the stated day. This permits absence of further A or B movements to be used in exact book arithmetic. It does not establish complete D custody, complete C physical reconciliation, or complete warehouse activity over other dates. The A physical count conflict remains unresolved despite complete movement records. Completeness of one evidence type is not an assertion that every other evidence type agrees. A report that says every lot was reconciled therefore needs an argument beyond the limited A/B movement inventory and must confront the explicit unresolved cases.",
+        "source_marker": "K03",
+        "original_source_file": "sources/05-custody-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00007.md",
+          "original_sha256": "54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830"
+        }
+      }
+    ],
+    "rules": [
+      "R03 availability subtracts quarantined and separately reserved quantities without overlap; quarantine does not transfer custody."
+    ],
+    "assumptions": [
+      "R03 and the supplied bin tickets are interpreted as the applicable finite A/B deduction schedule; no undocumented extra holds or reservations are invented."
+    ],
+    "reasoning": [
+      "1. The complete movement arithmetic gives A book 148. J02/BIN02 identify exactly seven loose A units quarantined onW1 shelf, still inside the boundary and not released before cutoff.",
+      "2. The applicable A status schedule deducts seven units, giving 148-7=141 available book stock.",
+      "3. The deduction is individual units, not seven crates, and does not reduce book on-hand itself."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim04",
+        "relation": "supports",
+        "target": "Audit.availableA = 141"
+      }
+    ],
+    "limits": [
+      "This is book-derived availability under the supplied deduction schedule; it does not settle the disputed physical total."
+    ],
+    "recommendation": "Retain 141 available and keep 148 book and seven quarantined as distinct fields."
+  },
+  {
+    "claim_id": "C08-OK-05",
+    "report_anchor": "C08-OK-05",
+    "report_quote": "**C08-OK-05.** Lot B book on-hand was 40 units.\n\nCitations: sources/02-opening-and-journal.md#[J01]; sources/02-opening-and-journal.md#[J03].",
+    "question": "Does B book on-hand remain 40 after its accepted receipt, actual two-carton departure and canceled unfilled request?",
+    "evidence": [
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P02",
+        "quote": "[R01] Unit definitions and boundary. The inventory boundary consists of rooms W1 and W2 and the fenced return cage at the invented North Quay warehouse. The cutoff is 18:00 on 14 April 2032. All quantities are exact integer individual sleeves, called units. A sealed full crate contains twelve units. A sealed full carton contains six units. A pallet has no fixed conversion. A partial-container label overrides the standard full-container quantity; an empty container contributes zero. All names and transactions in this packet are invented. These rules define the finite exercise and do not prescribe real shipping procedures.",
+        "source_marker": "R01",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P03",
+        "quote": "[R02] Movement semantics. Opening stock plus accepted inbound movements minus completed outbound movements plus accepted returns determines book on-hand. A printed ticket, order, reservation, or pick request changes no physical inventory merely by existing. Departure occurs at the signed actual custody handoff across the boundary. Customer delivery is a separate later event. A carrier can hold inventory that has already departed but is not yet delivered. Return increases on-hand when the receiving custodian accepts the goods back across the boundary. Returned goods in the fenced cage are inside the boundary even before reshelving. An accepted return is a separate movement, not a reason to erase the original departure.",
+        "source_marker": "R02",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/02-opening-and-journal.md",
+        "anchor": "P02",
+        "quote": "[J01] Opening and receipts. At 08:00 lot A opened with 100 units and lot B with 40 units. At 09:00 receipt IN-A accepted eight sealed full crates of A. At 09:30 receipt IN-B accepted two sealed full cartons of B. Clerk Elin Shore accepted custody at the gate. Each container was confirmed full, without a partial notation. These are posted accepted receipts, not expected procurement deliveries. No other opening adjustment or accepted inbound movement for A or B occurred before cutoff. The completeness statement is restricted to the named interval and lots. It does not establish any opening quantity for D or repair the C import anomaly.",
+        "source_marker": "J01",
+        "original_source_file": "sources/02-opening-and-journal.md",
+        "original_coordinate": {
+          "original": "input/originals/D00004.md",
+          "original_sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+        }
+      },
+      {
+        "path": "input/sources/02-opening-and-journal.md",
+        "anchor": "P04",
+        "quote": "[J03] B request and actual handoff. OUT-B requested three cartons, but the signed carrier handoff at 12:00 records two full cartons. The remaining carton stayed on shelf B4 because its packaging label was missing. At 15:00 that unfilled order quantity was canceled. It never crossed the warehouse boundary. A separate next-day order reserved eight other B units, distinct from both the dispatched cartons and the canceled request. There was no B return and no need to invent one: the canceled quantity never left. The A quarantine affects no B stock. The B journal contains no other completed inbound, outbound, or return movements within the cutoff interval.",
+        "source_marker": "J03",
+        "original_source_file": "sources/02-opening-and-journal.md",
+        "original_coordinate": {
+          "original": "input/originals/D00004.md",
+          "original_sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+        }
+      },
+      {
+        "path": "input/sources/06-shipping-tickets-scan.pdf.md",
+        "anchor": "pdf-page-0002-reviewed-0001",
+        "quote": "SYNTHETIC NORTH QUAY SHIPPING FORM\n[T02] Movement IN-B; 14 April 2032; clock 09:30; lot B.\nQuantity boxes: 2 sealed full cartons. Status: Accepted by Elin Shore.\nEach carton carried a B label and the standard six-unit quantity. The clerk separated\nthis receipt from the eight units reserved for the next-day order. No partial\nnotation appears. The two accepted cartons belong to B even though the sleeve\ndescription resembles A. A crate conversion would attach the wrong unit factor to\nthis source.\n[T02-CHAIN] This form belongs to the registered source packet. The warehouse boundary\nincludes W1, W2, and the fenced return cage. Read planned quantities separately from\nactual signed handoffs. Standard full-container quantities follow the supplied stock\nrules. Carrier custody is distinct from customer delivery. Preserve lot identity in\nevery calculation; quantities from another lot cannot repair this form. Any partial-\ncontainer notation would override the standard full conversion. A source quotation\nshould retain this original PDF path and marker rather than presenting an OCR excerpt\nas an independently signed record.\n[T02-LIMIT] The form supports only its named movement and stages. It does not certify\nall warehouse inventory or resolve independent physical count differences. A\nsignature name is an invented evidence field within this exercise, not a claim about\nreal handwriting authentication. Missing attachments must remain missing in the audit\nreasoning. Reviewers should explain how the movement changes the relevant balance\nbefore relying on an aggregate total.",
+        "source_marker": "T02",
+        "original_source_file": "sources/06-shipping-tickets-scan.pdf",
+        "original_coordinate": {
+          "page": 2,
+          "original": "input/originals/D00008.pdf",
+          "original_sha256": "e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58"
+        }
+      },
+      {
+        "path": "input/sources/06-shipping-tickets-scan.pdf.md",
+        "anchor": "pdf-page-0004-reviewed-0001",
+        "quote": "SYNTHETIC NORTH QUAY SHIPPING FORM\n[T04] Movement OUT-B; 14 April 2032; clock 12:00; lot B.\nQuantity boxes: 3 cartons requested; 2 full cartons handed over. Status: Carrier Jun\nVale signed actual handoff.\nThe request box was printed before loading and shows three cartons. The signed actual\nbox shows two. The remaining carton stayed on shelf because its label was missing. At\n15:00 the unfilled remainder was canceled. No customer return occurred for that\ncarton. The two actually transferred cartons were delivered, but the original three-\ncarton order was not fully delivered.\n[T04-CHAIN] This form belongs to the registered source packet. The warehouse boundary\nincludes W1, W2, and the fenced return cage. Read planned quantities separately from\nactual signed handoffs. Standard full-container quantities follow the supplied stock\nrules. Carrier custody is distinct from customer delivery. Preserve lot identity in\nevery calculation; quantities from another lot cannot repair this form. Any partial-\ncontainer notation would override the standard full conversion. A source quotation\nshould retain this original PDF path and marker rather than presenting an OCR excerpt\nas an independently signed record.\n[T04-LIMIT] The form supports only its named movement and stages. It does not certify\nall warehouse inventory or resolve independent physical count differences. A\nsignature name is an invented evidence field within this exercise, not a claim about\nreal handwriting authentication. Missing attachments must remain missing in the audit\nreasoning. Reviewers should explain how the movement changes the relevant balance\nbefore relying on an aggregate total.",
+        "source_marker": "T04",
+        "original_source_file": "sources/06-shipping-tickets-scan.pdf",
+        "original_coordinate": {
+          "page": 4,
+          "original": "input/originals/D00008.pdf",
+          "original_sha256": "e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58"
+        }
+      },
+      {
+        "path": "input/sources/05-custody-register.md",
+        "anchor": "P04",
+        "quote": "[K03] Bounded completeness. The register and journal list all accepted A and B movements for the stated day. This permits absence of further A or B movements to be used in exact book arithmetic. It does not establish complete D custody, complete C physical reconciliation, or complete warehouse activity over other dates. The A physical count conflict remains unresolved despite complete movement records. Completeness of one evidence type is not an assertion that every other evidence type agrees. A report that says every lot was reconciled therefore needs an argument beyond the limited A/B movement inventory and must confront the explicit unresolved cases.",
+        "source_marker": "K03",
+        "original_source_file": "sources/05-custody-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00007.md",
+          "original_sha256": "54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830"
+        }
+      }
+    ],
+    "rules": [
+      "Actual signed handoff controls movement under R02/R04. A canceled requested quantity that never departed is neither a departure nor return."
+    ],
+    "assumptions": [
+      "Use the supplied synthetic day, lot identities and exact individual-unit conversions. Accept the explicitly complete A/B movement journal only for its named boundary and interval.",
+      "The legible material scan fields were actually viewed and corroborated; manual reviewed anchors preserve original-source hashes and raw OCR. No real handwriting authentication or external event inspection is claimed."
+    ],
+    "reasoning": [
+      "1. B opens 40, receives two full cartons=12, and actually hands over two full cartons=12; J03 records no return or other B movement.",
+      "2. The third requested carton stayed on the shelf. Its cancellation requires no invented 12/6-unit return or subtraction.",
+      "3. Book calculation 40+12-12+0 equals 40."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim05",
+        "relation": "supports",
+        "target": "Audit.bookB = 40"
+      }
+    ],
+    "limits": [
+      "The separate eight-unit reservation changes availability, not book on-hand; B agreement does not reconcile A/C/D."
+    ],
+    "recommendation": "Retain 40 book units and distinguish canceled demand from completed custody movements."
+  },
+  {
+    "claim_id": "C08-OK-06",
+    "report_anchor": "C08-OK-06",
+    "report_quote": "**C08-OK-06.** Lot B available stock was 32 units.\n\nCitations: sources/01-stock-rules.md#[R03]; sources/02-opening-and-journal.md#[J03].",
+    "question": "Is B available book stock 32 after its separate active eight-unit reservation?",
+    "evidence": [
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P04",
+        "quote": "[R03] Lot identity and availability. Lots A, B, C, and D are separate even though their sleeves share a catalog description. An excess in one lot cannot repair a deficit in another. Available stock is book on-hand minus quarantined units minus separately reserved units, with no overlapping deductions. The A quarantine contains seven units. The B reservation contains eight different units. Quarantine and reservation change internal status without transferring custody. Physical presence, book balance, and available quantity are different predicates. A physical count may disagree with a journal-derived balance, and the disagreement must remain visible rather than silently redefining one quantity to match the other.",
+        "source_marker": "R03",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/02-opening-and-journal.md",
+        "anchor": "P04",
+        "quote": "[J03] B request and actual handoff. OUT-B requested three cartons, but the signed carrier handoff at 12:00 records two full cartons. The remaining carton stayed on shelf B4 because its packaging label was missing. At 15:00 that unfilled order quantity was canceled. It never crossed the warehouse boundary. A separate next-day order reserved eight other B units, distinct from both the dispatched cartons and the canceled request. There was no B return and no need to invent one: the canceled quantity never left. The A quarantine affects no B stock. The B journal contains no other completed inbound, outbound, or return movements within the cutoff interval.",
+        "source_marker": "J03",
+        "original_source_file": "sources/02-opening-and-journal.md",
+        "original_coordinate": {
+          "original": "input/originals/D00004.md",
+          "original_sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+        }
+      },
+      {
+        "path": "input/sources/07-bin-and-exception-register.md",
+        "anchor": "P04",
+        "quote": "[BIN03] Reservation ticket RES-B-8. The next-day customer order reserves eight B units located on shelf B2. The units were not among the two cartons loaded for OUT-B and were not the canceled third carton on B4. The reservation was still active at cutoff. The operator may not release those units to another order without canceling or changing the reservation record, but no such change occurred that day. These facts justify treating the reservation as a distinct deduction when calculating available B stock. They do not establish an outbound movement, a customer delivery, or physical absence from the B count boundary.",
+        "source_marker": "BIN03",
+        "original_source_file": "sources/07-bin-and-exception-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00009.md",
+          "original_sha256": "17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9"
+        }
+      },
+      {
+        "path": "input/sources/02-opening-and-journal.md",
+        "anchor": "P02",
+        "quote": "[J01] Opening and receipts. At 08:00 lot A opened with 100 units and lot B with 40 units. At 09:00 receipt IN-A accepted eight sealed full crates of A. At 09:30 receipt IN-B accepted two sealed full cartons of B. Clerk Elin Shore accepted custody at the gate. Each container was confirmed full, without a partial notation. These are posted accepted receipts, not expected procurement deliveries. No other opening adjustment or accepted inbound movement for A or B occurred before cutoff. The completeness statement is restricted to the named interval and lots. It does not establish any opening quantity for D or repair the C import anomaly.",
+        "source_marker": "J01",
+        "original_source_file": "sources/02-opening-and-journal.md",
+        "original_coordinate": {
+          "original": "input/originals/D00004.md",
+          "original_sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+        }
+      },
+      {
+        "path": "input/sources/05-custody-register.md",
+        "anchor": "P04",
+        "quote": "[K03] Bounded completeness. The register and journal list all accepted A and B movements for the stated day. This permits absence of further A or B movements to be used in exact book arithmetic. It does not establish complete D custody, complete C physical reconciliation, or complete warehouse activity over other dates. The A physical count conflict remains unresolved despite complete movement records. Completeness of one evidence type is not an assertion that every other evidence type agrees. A report that says every lot was reconciled therefore needs an argument beyond the limited A/B movement inventory and must confront the explicit unresolved cases.",
+        "source_marker": "K03",
+        "original_source_file": "sources/05-custody-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00007.md",
+          "original_sha256": "54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830"
+        }
+      }
+    ],
+    "rules": [
+      "Availability equals book minus applicable nonoverlapping status deductions. Reservation remains internal allocation."
+    ],
+    "assumptions": [
+      "Use the R03/BIN03 applicable finite status schedule; no undocumented B quarantine or extra reservation is introduced."
+    ],
+    "reasoning": [
+      "1. B book balance is 40. BIN03 identifies eight reserved B units still on shelfB2, distinct from both the dispatched cartons and canceled request, and still active at cutoff.",
+      "2. The applicable status deduction is eight units, giving 40-8=32 available. The A quarantine has no B effect."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim06",
+        "relation": "supports",
+        "target": "Audit.availableB = 32"
+      }
+    ],
+    "limits": [
+      "Reserved units remain physically/book on hand; this does not establish shipment to the next-day customer."
+    ],
+    "recommendation": "Retain 32 available and 40 book units with the eight-unit reservation separately shown."
+  },
+  {
+    "claim_id": "C08-OK-07",
+    "report_anchor": "C08-OK-07",
+    "report_quote": "**C08-OK-07.** The A customer accepted 48 units and the warehouse accepted a 12-unit return.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T03]; sources/01-stock-rules.md#[R01].",
+    "question": "Did the A customer accept 48 units while the warehouse separately accepted a 12-unit return before cutoff?",
+    "evidence": [
+      {
+        "path": "input/sources/06-shipping-tickets-scan.pdf.md",
+        "anchor": "pdf-page-0003-reviewed-0001",
+        "quote": "SYNTHETIC NORTH QUAY SHIPPING FORM\n[T03] Movement OUT-A / RET-A; 14 April 2032; clock 11:00 / 16:00; lot A.\nQuantity boxes: 5 full crates out; 1 full crate returned. Status: Carrier Jun Vale /\nreceiver Elin Shore.\nThe carrier accepted five crates before departure. The customer accepted four. The\nfifth remained sealed in the vehicle and returned that afternoon. Elin signed the\nreturn after placing it inside the fenced cage. The full departure and the separate\nreturn are both operative entries. Erasing the departure and adding a return would\ncount the same reversal twice.\n[T03-CHAIN] This form belongs to the registered source packet. The warehouse boundary\nincludes W1, W2, and the fenced return cage. Read planned quantities separately from\nactual signed handoffs. Standard full-container quantities follow the supplied stock\nrules. Carrier custody is distinct from customer delivery. Preserve lot identity in\nevery calculation; quantities from another lot cannot repair this form. Any partial-\ncontainer notation would override the standard full conversion. A source quotation\nshould retain this original PDF path and marker rather than presenting an OCR excerpt\nas an independently signed record.\n[T03-LIMIT] The form supports only its named movement and stages. It does not certify\nall warehouse inventory or resolve independent physical count differences. A\nsignature name is an invented evidence field within this exercise, not a claim about\nreal handwriting authentication. Missing attachments must remain missing in the audit\nreasoning. Reviewers should explain how the movement changes the relevant balance\nbefore relying on an aggregate total.",
+        "source_marker": "T03",
+        "original_source_file": "sources/06-shipping-tickets-scan.pdf",
+        "original_coordinate": {
+          "page": 3,
+          "original": "input/originals/D00008.pdf",
+          "original_sha256": "e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58"
+        }
+      },
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P02",
+        "quote": "[R01] Unit definitions and boundary. The inventory boundary consists of rooms W1 and W2 and the fenced return cage at the invented North Quay warehouse. The cutoff is 18:00 on 14 April 2032. All quantities are exact integer individual sleeves, called units. A sealed full crate contains twelve units. A sealed full carton contains six units. A pallet has no fixed conversion. A partial-container label overrides the standard full-container quantity; an empty container contributes zero. All names and transactions in this packet are invented. These rules define the finite exercise and do not prescribe real shipping procedures.",
+        "source_marker": "R01",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P03",
+        "quote": "[R02] Movement semantics. Opening stock plus accepted inbound movements minus completed outbound movements plus accepted returns determines book on-hand. A printed ticket, order, reservation, or pick request changes no physical inventory merely by existing. Departure occurs at the signed actual custody handoff across the boundary. Customer delivery is a separate later event. A carrier can hold inventory that has already departed but is not yet delivered. Return increases on-hand when the receiving custodian accepts the goods back across the boundary. Returned goods in the fenced cage are inside the boundary even before reshelving. An accepted return is a separate movement, not a reason to erase the original departure.",
+        "source_marker": "R02",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/02-opening-and-journal.md",
+        "anchor": "P03",
+        "quote": "[J02] A departure, delivery, and return. OUT-A at 11:00 transferred five full crates to carrier Jun Vale. The customer accepted four crates and declined the fifth. At 16:00 Jun returned the still-sealed fifth crate; Elin accepted it inside the fenced return cage. The entire five-crate departure remains recorded, followed by the separate one-crate return. There were no other A departures or returns that day. At 17:00 seven units already on a W1 shelf were quarantined. They remained inside the inventory boundary. A reviewer must therefore distinguish dispatched quantity, delivered quantity, returned quantity, on-hand, and available stock. None of these labels can be substituted merely because they refer to the same order.",
+        "source_marker": "J02",
+        "original_source_file": "sources/02-opening-and-journal.md",
+        "original_coordinate": {
+          "original": "input/originals/D00004.md",
+          "original_sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+        }
+      },
+      {
+        "path": "input/sources/04-receiving-messages.md",
+        "anchor": "P03",
+        "quote": "[M02] A completion confirmation. The customer accepted four A crates and declined one. The carrier returned the declined crate to North Quay before cutoff, and the warehouse acknowledged acceptance inside the cage. Thus every crate that departed has a documented later disposition, but the customer did not receive all five. A claim that the order was completely delivered differs from a claim that the movement chain can be traced. The return closes custody for the fifth crate while preserving the distinction between delivery and return. A reviewer should quote the relevant stage and quantity instead of using the vague term completed without defining what completed means.",
+        "source_marker": "M02",
+        "original_source_file": "sources/04-receiving-messages.md",
+        "original_coordinate": {
+          "original": "input/originals/D00006.md",
+          "original_sha256": "5902f74c3a28ac0e3f3d0e49dc8503a2d0417d6a3658bde4c64ba768051d0c17"
+        }
+      },
+      {
+        "path": "input/sources/05-custody-register.md",
+        "anchor": "P02",
+        "quote": "[K01] Roles. Elin Shore may accept inbound movements and returns at North Quay. Jun Vale may accept carrier custody but cannot amend warehouse physical counts. Tomas Reed may perform an independent count but cannot retroactively alter a transfer quantity without an authorized countersigned correction. These assignments apply only to this invented day. A correct signature identity is one part of the evidence: the document must still identify the lot, movement, time, and actual quantity. A carrier signature is not a customer delivery signature. Similarly, an order clerk signature can approve a request without establishing that the requested goods physically left.",
+        "source_marker": "K01",
+        "original_source_file": "sources/05-custody-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00007.md",
+          "original_sha256": "54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830"
+        }
+      }
+    ],
+    "rules": [
+      "Four full crates convert to 48 units; one full crate to 12. Customer delivery and warehouse return are distinct custody stages."
+    ],
+    "assumptions": [
+      "Use the supplied synthetic day, lot identities and exact individual-unit conversions. Accept the explicitly complete A/B movement journal only for its named boundary and interval.",
+      "The legible material scan fields were actually viewed and corroborated; manual reviewed anchors preserve original-source hashes and raw OCR. No real handwriting authentication or external event inspection is claimed."
+    ],
+    "reasoning": [
+      "1. T03/J02/M02 say five crates departed, customer accepted four, and the still-sealed fifth was returned and accepted by Elin inside the cage at 16:00.",
+      "2. Customer acceptance is 4×12=48; warehouse return acceptance is 1×12=12.",
+      "3. All departing crates have a documented later disposition, but the original five-crate order was not fully delivered to the customer."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim07",
+        "relation": "supports",
+        "target": "Audit.deliveredA = 48 ∧ Audit.returnedA = 12"
+      }
+    ],
+    "limits": [
+      "A closed custody chain is not equivalent to full customer delivery; the return does not erase the original departure."
+    ],
+    "recommendation": "Retain the two stage-specific quantities and signatory roles."
+  },
+  {
+    "claim_id": "C08-OK-08",
+    "report_anchor": "C08-OK-08",
+    "report_quote": "**C08-OK-08.** The B order was not fully delivered: twelve of eighteen requested units were delivered.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T04]; sources/04-receiving-messages.md#[M03].",
+    "question": "Was only 12 of the original 18 requested B units delivered, so the original order was not fully delivered despite all handed-over cartons arriving?",
+    "evidence": [
+      {
+        "path": "input/sources/06-shipping-tickets-scan.pdf.md",
+        "anchor": "pdf-page-0004-reviewed-0001",
+        "quote": "SYNTHETIC NORTH QUAY SHIPPING FORM\n[T04] Movement OUT-B; 14 April 2032; clock 12:00; lot B.\nQuantity boxes: 3 cartons requested; 2 full cartons handed over. Status: Carrier Jun\nVale signed actual handoff.\nThe request box was printed before loading and shows three cartons. The signed actual\nbox shows two. The remaining carton stayed on shelf because its label was missing. At\n15:00 the unfilled remainder was canceled. No customer return occurred for that\ncarton. The two actually transferred cartons were delivered, but the original three-\ncarton order was not fully delivered.\n[T04-CHAIN] This form belongs to the registered source packet. The warehouse boundary\nincludes W1, W2, and the fenced return cage. Read planned quantities separately from\nactual signed handoffs. Standard full-container quantities follow the supplied stock\nrules. Carrier custody is distinct from customer delivery. Preserve lot identity in\nevery calculation; quantities from another lot cannot repair this form. Any partial-\ncontainer notation would override the standard full conversion. A source quotation\nshould retain this original PDF path and marker rather than presenting an OCR excerpt\nas an independently signed record.\n[T04-LIMIT] The form supports only its named movement and stages. It does not certify\nall warehouse inventory or resolve independent physical count differences. A\nsignature name is an invented evidence field within this exercise, not a claim about\nreal handwriting authentication. Missing attachments must remain missing in the audit\nreasoning. Reviewers should explain how the movement changes the relevant balance\nbefore relying on an aggregate total.",
+        "source_marker": "T04",
+        "original_source_file": "sources/06-shipping-tickets-scan.pdf",
+        "original_coordinate": {
+          "page": 4,
+          "original": "input/originals/D00008.pdf",
+          "original_sha256": "e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58"
+        }
+      },
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P02",
+        "quote": "[R01] Unit definitions and boundary. The inventory boundary consists of rooms W1 and W2 and the fenced return cage at the invented North Quay warehouse. The cutoff is 18:00 on 14 April 2032. All quantities are exact integer individual sleeves, called units. A sealed full crate contains twelve units. A sealed full carton contains six units. A pallet has no fixed conversion. A partial-container label overrides the standard full-container quantity; an empty container contributes zero. All names and transactions in this packet are invented. These rules define the finite exercise and do not prescribe real shipping procedures.",
+        "source_marker": "R01",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P03",
+        "quote": "[R02] Movement semantics. Opening stock plus accepted inbound movements minus completed outbound movements plus accepted returns determines book on-hand. A printed ticket, order, reservation, or pick request changes no physical inventory merely by existing. Departure occurs at the signed actual custody handoff across the boundary. Customer delivery is a separate later event. A carrier can hold inventory that has already departed but is not yet delivered. Return increases on-hand when the receiving custodian accepts the goods back across the boundary. Returned goods in the fenced cage are inside the boundary even before reshelving. An accepted return is a separate movement, not a reason to erase the original departure.",
+        "source_marker": "R02",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/02-opening-and-journal.md",
+        "anchor": "P04",
+        "quote": "[J03] B request and actual handoff. OUT-B requested three cartons, but the signed carrier handoff at 12:00 records two full cartons. The remaining carton stayed on shelf B4 because its packaging label was missing. At 15:00 that unfilled order quantity was canceled. It never crossed the warehouse boundary. A separate next-day order reserved eight other B units, distinct from both the dispatched cartons and the canceled request. There was no B return and no need to invent one: the canceled quantity never left. The A quarantine affects no B stock. The B journal contains no other completed inbound, outbound, or return movements within the cutoff interval.",
+        "source_marker": "J03",
+        "original_source_file": "sources/02-opening-and-journal.md",
+        "original_coordinate": {
+          "original": "input/originals/D00004.md",
+          "original_sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+        }
+      },
+      {
+        "path": "input/sources/04-receiving-messages.md",
+        "anchor": "P04",
+        "quote": "[M03] B order closure. The customer confirms receiving the two cartons actually transferred to the carrier. The third requested carton remained at the warehouse and was canceled. All handed-over cartons were delivered, but the original three-carton order was not fully delivered. These statements concern different denominators and are consistent. Cancellation closes unfilled demand without moving stock. It does not prove a customer return, loss, or hidden replacement shipment. The separate eight-unit reservation remains an allocation within the warehouse and must not be confused with the canceled carton. Each statement retains its lot and order identity.",
+        "source_marker": "M03",
+        "original_source_file": "sources/04-receiving-messages.md",
+        "original_coordinate": {
+          "original": "input/originals/D00006.md",
+          "original_sha256": "5902f74c3a28ac0e3f3d0e49dc8503a2d0417d6a3658bde4c64ba768051d0c17"
+        }
+      }
+    ],
+    "rules": [
+      "The denominator for full original-order delivery is requested quantity, not merely the smaller actual handoff. Requests/cancellations do not move stock."
+    ],
+    "assumptions": [
+      "Use the supplied synthetic day, lot identities and exact individual-unit conversions. Accept the explicitly complete A/B movement journal only for its named boundary and interval.",
+      "The legible material scan fields were actually viewed and corroborated; manual reviewed anchors preserve original-source hashes and raw OCR. No real handwriting authentication or external event inspection is claimed."
+    ],
+    "reasoning": [
+      "1. The request was three cartons=18; signed actual handoff and customer confirmation cover two full cartons=12.",
+      "2. The third carton remained at the warehouse and was canceled, not returned or secretly replaced.",
+      "3. 12<18 proves the original order was not fully delivered. This is consistent with every actually dispatched carton being delivered."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim08",
+        "relation": "supports",
+        "target": "Audit.requestedB = 18 ∧ Audit.deliveredB = 12 ∧ Audit.deliveredB < Audit.requestedB"
+      }
+    ],
+    "limits": [
+      "The finding does not allege carrier loss or customer return; it compares clearly identified stages and denominators."
+    ],
+    "recommendation": "Retain the incomplete-original-order conclusion and clarify that dispatched goods were all delivered."
+  },
+  {
+    "claim_id": "C08-OK-09",
+    "report_anchor": "C08-OK-09",
+    "report_quote": "**C08-OK-09.** The supplied A physical counts conflict, recording 148 and 147 for the same scope.\n\nCitations: sources/03-signed-counts.md#[N01]; sources/03-signed-counts.md#[N02].",
+    "question": "Do the supplied equally authoritative A count sheets record contradictory totals 148 and 147 for the same lot, scope and 18:00 cutoff?",
+    "evidence": [
+      {
+        "path": "input/sources/03-signed-counts.md",
+        "anchor": "P02",
+        "quote": "[N01] Elin Shore signed COUNT-A-1 at the 18:00 cutoff. The stated count is: Lot A, all W1 shelves and fenced return cage, total 148 units. It includes the seven quarantined units and the returned sealed crate. Open shelves were counted by individual units; unopened crates used the verified standard conversion. No damaged, returned, or reserved goods were excluded. A witness initial appears, but the witness did not supply an independent count. The sheet is accepted as signed evidence within this synthetic packet, not as an infallible world axiom. Its numerical agreement with book arithmetic does not automatically invalidate another equally authoritative observation.",
+        "source_marker": "N01",
+        "original_source_file": "sources/03-signed-counts.md",
+        "original_coordinate": {
+          "original": "input/originals/D00005.md",
+          "original_sha256": "902b530d21257c2ef30042baaa46dbc1fd5d2d6e8576e8d8c18fdc3c1b8d28af"
+        }
+      },
+      {
+        "path": "input/sources/03-signed-counts.md",
+        "anchor": "P03",
+        "quote": "[N02] Tomas Reed independently signed COUNT-A-2 for the same 18:00 cutoff, same lot, and same boundary. The stated total is 147 units. The sheet expressly includes quarantine and the return cage. Reed has the same authority as Elin for this count. A margin note mentions a loose sleeve under a bin but does not state whether it was counted. That incomplete note cannot be used to rewrite the signed total. No signed reconciliation, recount, or authorized cancellation resolves the discrepancy. Both count sheets remain active evidence. Neither the order of their filenames nor the auditor's preferred arithmetic gives one count source priority over the other.",
+        "source_marker": "N02",
+        "original_source_file": "sources/03-signed-counts.md",
+        "original_coordinate": {
+          "original": "input/originals/D00005.md",
+          "original_sha256": "902b530d21257c2ef30042baaa46dbc1fd5d2d6e8576e8d8c18fdc3c1b8d28af"
+        }
+      },
+      {
+        "path": "input/sources/03-signed-counts.md",
+        "anchor": "P04",
+        "quote": "[N03] A separate B control sheet records 40 units physically inside the boundary, including its eight reserved units. It does not count C or D. Agreement between this B count and B journal arithmetic does not resolve the A discrepancy or the C import problem. No one signed a statement that all lots were reconciled. The A difference is one unit rather than a rounding difference because units are exact integers. A reviewer should distinguish a claim about what each signed sheet records from a claim selecting the true physical A total. The first can be well supported even when the second has conflicting evidence.",
+        "source_marker": "N03",
+        "original_source_file": "sources/03-signed-counts.md",
+        "original_coordinate": {
+          "original": "input/originals/D00005.md",
+          "original_sha256": "902b530d21257c2ef30042baaa46dbc1fd5d2d6e8576e8d8c18fdc3c1b8d28af"
+        }
+      },
+      {
+        "path": "input/sources/03-signed-counts.md",
+        "anchor": "P05",
+        "quote": "[N04] Count custody. The count sheets were transcribed into this source from synthetic signed forms and checked for matching lot, cutoff, and boundary labels. Their recorded signature names are evidence inside the invented exercise; no real-world handwriting examination is claimed. The transcriber was not authorized to correct observed quantities. The source does not establish which observer made a mistake or whether a sleeve moved during counting. A physical recount and a signed reconciliation would address that uncertainty. Until then, retaining both observations is more faithful than erasing a disagreeing one or deriving unrelated conclusions from inconsistent premises.",
+        "source_marker": "N04",
+        "original_source_file": "sources/03-signed-counts.md",
+        "original_coordinate": {
+          "original": "input/originals/D00005.md",
+          "original_sha256": "902b530d21257c2ef30042baaa46dbc1fd5d2d6e8576e8d8c18fdc3c1b8d28af"
+        }
+      },
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P04",
+        "quote": "[R03] Lot identity and availability. Lots A, B, C, and D are separate even though their sleeves share a catalog description. An excess in one lot cannot repair a deficit in another. Available stock is book on-hand minus quarantined units minus separately reserved units, with no overlapping deductions. The A quarantine contains seven units. The B reservation contains eight different units. Quarantine and reservation change internal status without transferring custody. Physical presence, book balance, and available quantity are different predicates. A physical count may disagree with a journal-derived balance, and the disagreement must remain visible rather than silently redefining one quantity to match the other.",
+        "source_marker": "R03",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P05",
+        "quote": "[R04] Evidence scope. Signed actual transfer receipts take precedence over unsigned planned quantities for determining completed custody movements. The journal and register are complete for A and B movements only within the stated day. No such completeness applies to D. Equal-authority physical counts of the same boundary and cutoff remain competing evidence unless a recount or authorized correction resolves them. A later filename does not give precedence. A pale or obscured numeral in a scan requires visual review and corroboration. An OCR guess is not a signed quantity. If available evidence does not establish a unique accepted amount, report the missing argument without inventing a number or asserting that the shipment necessarily failed.",
+        "source_marker": "R04",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/07-bin-and-exception-register.md",
+        "anchor": "P05",
+        "quote": "[BIN04] Exception ownership. Inventory reviewer Mira Cole opened unresolved exception EX-A for the one-unit disagreement between the signed A counts. She requested a recount but supplied no completed recount in this packet. Reviewer Leon Hart opened EX-C for the imported C journal deficit and requested the original unit mapping file. The request names a possible conversion issue but contains no approved correction amount. The two exceptions have different evidence needs: EX-A needs reconciliation of competing observations, while EX-C needs reconstruction of a possibly incorrect journal entry. Neither can be closed by adding unrelated B stock or by assuming a favorable D quantity.",
+        "source_marker": "BIN04",
+        "original_source_file": "sources/07-bin-and-exception-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00009.md",
+          "original_sha256": "17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9"
+        }
+      }
+    ],
+    "rules": [
+      "Equal-authority same-scope observations remain competing evidence without a recount/authorized correction; journal arithmetic and filename order confer no priority."
+    ],
+    "assumptions": [
+      "Count signatures and scope labels are accepted as supplied documentary attributions, not infallible world-state facts."
+    ],
+    "reasoning": [
+      "1. N01 attributes 148 to Elin and N02 attributes 147 to Tomas at the same cutoff, lot and boundary, both including quarantine and return cage.",
+      "2. The exact integer totals differ by one; the loose-sleeve margin note does not revise the signed total. No reconciliation/recount/cancellation is supplied.",
+      "3. The report claims only that the supplied counts conflict, which is directly supported. The formal theorem concerns attributed records, not simultaneous contradictory physical totals."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim09",
+        "relation": "supports",
+        "target": "Audit.elinCount.lot = Audit.reedCount.lot ∧ Audit.elinCount.scope = Audit.reedCount.scope ∧ Audit.elinCount.cutoff = Audit.reedCount.cutoff ∧ Audit.elinCount.issuer ≠ Audit.reedCount.issuer ∧ Audit.elinCount.amount = 148 ∧ Audit.reedCount.amount = 147 ∧ Audit.elinCount.amount ≠ Audit.reedCount.amount"
+      }
+    ],
+    "limits": [
+      "The true physical A count remains unresolved. Supported evidence-of-conflict is not the same semantic claim as asserting one physical total."
+    ],
+    "recommendation": "Retain both attributed observations and request a recount/signed reconciliation without choosing by book agreement."
+  },
+  {
+    "claim_id": "C08-OK-10",
+    "report_anchor": "C08-OK-10",
+    "report_quote": "**C08-OK-10.** The imported C book balance is minus one after postings of minus nine and plus eight from zero.\n\nCitations: sources/02-opening-and-journal.md#[J04].",
+    "question": "Does the imported C signed ledger compute minus one from opening zero, outbound nine and inbound eight?",
+    "evidence": [
+      {
+        "path": "input/sources/02-opening-and-journal.md",
+        "anchor": "P05",
+        "quote": "[J04] C import anomaly. The imported C opening book balance is zero. At 10:10 an operator posted an outbound movement of nine units; at 10:20 an inbound movement of eight units was posted. The imported book balance is therefore minus one. This is a signed-integer ledger result, not a negative number of physical objects. An unsigned correction proposal mentions a possible carton-versus-unit import error, but no approved correction is supplied. Physical reconciliation for C is incomplete, and no physical count accompanies the journal. Preserve the anomaly and the missing correction argument. A book deficit alone does not prove a physical shortage, fraud, destruction, or a correct repair amount.",
+        "source_marker": "J04",
+        "original_source_file": "sources/02-opening-and-journal.md",
+        "original_coordinate": {
+          "original": "input/originals/D00004.md",
+          "original_sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+        }
+      },
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P04",
+        "quote": "[R03] Lot identity and availability. Lots A, B, C, and D are separate even though their sleeves share a catalog description. An excess in one lot cannot repair a deficit in another. Available stock is book on-hand minus quarantined units minus separately reserved units, with no overlapping deductions. The A quarantine contains seven units. The B reservation contains eight different units. Quarantine and reservation change internal status without transferring custody. Physical presence, book balance, and available quantity are different predicates. A physical count may disagree with a journal-derived balance, and the disagreement must remain visible rather than silently redefining one quantity to match the other.",
+        "source_marker": "R03",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/07-bin-and-exception-register.md",
+        "anchor": "P05",
+        "quote": "[BIN04] Exception ownership. Inventory reviewer Mira Cole opened unresolved exception EX-A for the one-unit disagreement between the signed A counts. She requested a recount but supplied no completed recount in this packet. Reviewer Leon Hart opened EX-C for the imported C journal deficit and requested the original unit mapping file. The request names a possible conversion issue but contains no approved correction amount. The two exceptions have different evidence needs: EX-A needs reconciliation of competing observations, while EX-C needs reconstruction of a possibly incorrect journal entry. Neither can be closed by adding unrelated B stock or by assuming a favorable D quantity.",
+        "source_marker": "BIN04",
+        "original_source_file": "sources/07-bin-and-exception-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00009.md",
+          "original_sha256": "17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9"
+        }
+      }
+    ],
+    "rules": [
+      "Book arithmetic is signed integer arithmetic; lots cannot offset each other. A negative ledger result does not describe negative physical objects or prove a correct repair."
+    ],
+    "assumptions": [
+      "The theorem assesses the supplied imported postings as written; it does not certify their original business correctness."
+    ],
+    "reasoning": [
+      "1. J04 gives imported opening 0, posting-9 at 10:10 and posting+8 at 10:20.",
+      "2. Exact signed calculation 0-9+8=-1 preserves the recorded anomaly rather than truncating tozero or adding another lot.",
+      "3. The report carefully says imported book balance, so it is supported without a C physical count."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim10",
+        "relation": "supports",
+        "target": "Audit.importedC = -1"
+      }
+    ],
+    "limits": [
+      "No physical shortage, fraud, destruction, unit-mapping correction or adjustment amount is established."
+    ],
+    "recommendation": "Retain the imported minus-one anomaly and seek the original mapping plus an authorized correction."
+  },
+  {
+    "claim_id": "C08-OK-11",
+    "report_anchor": "C08-OK-11",
+    "report_quote": "**C08-OK-11.** The D accepted quantity remains unresolved because the receiver has not signed and messages propose different amounts.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T05]; sources/04-receiving-messages.md#[M01].",
+    "question": "Does the supplied D packet leave actual accepted quantity unresolved, with a blank receiver signature and competing provisional 74/78 proposals?",
+    "evidence": [
+      {
+        "path": "input/sources/06-shipping-tickets-scan.pdf.md",
+        "anchor": "pdf-page-0005-reviewed-0001",
+        "quote": "SYNTHETIC NORTH QUAY SHIPPING FORM\n[T05] Movement D-17; 14 April 2032; clock 13:30; lot D.\nQuantity boxes: Quantity requires reading of the pale field. Status: Carrier initials\nonly; receiver acceptance blank.\nThe numerical field is pale. A receiver proposes 74 in an unsigned message, while a\ncarrier message proposes 78. Neither is a jointly signed correction. The ticket\nidentity and lot remain legible, so the uncertainty concerns the quantity and\ncompleted acceptance. A guessed numeral cannot supply a missing receiver signature or\nsettle the competing quantities.\n[T05-CHAIN] This form belongs to the registered source packet. The warehouse boundary\nincludes W1, W2, and the fenced return cage. Read planned quantities separately from\nactual signed handoffs. Standard full-container quantities follow the supplied stock\nrules. Carrier custody is distinct from customer delivery. Preserve lot identity in\nevery calculation; quantities from another lot cannot repair this form. Any partial-\ncontainer notation would override the standard full conversion. A source quotation\nshould retain this original PDF path and marker rather than presenting an OCR excerpt\nas an independently signed record.\n[T05-LIMIT] The form supports only its named movement and stages. It does not certify\nall warehouse inventory or resolve independent physical count differences. A\nsignature name is an invented evidence field within this exercise, not a claim about\nreal handwriting authentication. Missing attachments must remain missing in the audit\nreasoning. Reviewers should explain how the movement changes the relevant balance\nbefore relying on an aggregate total.",
+        "source_marker": "T05",
+        "original_source_file": "sources/06-shipping-tickets-scan.pdf",
+        "original_coordinate": {
+          "page": 5,
+          "original": "input/originals/D00008.pdf",
+          "original_sha256": "e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58"
+        }
+      },
+      {
+        "path": "input/sources/04-receiving-messages.md",
+        "anchor": "P02",
+        "quote": "[M01] The unresolved D transfer. A receiver message tentatively proposes 74 units for transfer D-17, but it is unsigned and marked provisional. A carrier message says that the faint copy looks like 78. Neither is a signed correction. The original scanned quantity line is pale, and its second digit is hard to read. No customer acceptance signature appears beside that quantity. There is no original carbon copy or later authenticated reconciliation in the packet. The two interpretations are not a license to select the convenient value. Even a legible planned quantity would not automatically establish the quantity actually accepted by the receiver.",
+        "source_marker": "M01",
+        "original_source_file": "sources/04-receiving-messages.md",
+        "original_coordinate": {
+          "original": "input/originals/D00006.md",
+          "original_sha256": "5902f74c3a28ac0e3f3d0e49dc8503a2d0417d6a3658bde4c64ba768051d0c17"
+        }
+      },
+      {
+        "path": "input/sources/04-receiving-messages.md",
+        "anchor": "P05",
+        "quote": "[M04] Missing supporting material. An email index lists next-day D recount photographs, but no photographs or recount attachment are supplied. The index proves the existence of the listing, not the content or result of the absent attachment. Vehicle photographs mentioned by the carrier are likewise unavailable. A useful finding identifies precisely which missing record could resolve the uncertain quantity. Missing evidence does not itself establish that the carrier short-shipped, that the customer miscounted, or that the document was forged. No external retrieval is authorized by this finite packet; an audit should retain the bounded evidence gap.",
+        "source_marker": "M04",
+        "original_source_file": "sources/04-receiving-messages.md",
+        "original_coordinate": {
+          "original": "input/originals/D00006.md",
+          "original_sha256": "5902f74c3a28ac0e3f3d0e49dc8503a2d0417d6a3658bde4c64ba768051d0c17"
+        }
+      },
+      {
+        "path": "input/sources/05-custody-register.md",
+        "anchor": "P05",
+        "quote": "[K04] Handling disputed quantities. If an auditor cannot confidently read a numerical field, the next step is to inspect the image and the supplied corroborating records, not to convert OCR confidence into physical certainty. A faithful result may identify the likely reading while withholding a claim about accepted quantity. Competing unsigned messages do not have the authority of a completed receipt signed by both parties. This distinction also applies when a document contains a clear planned number but an incomplete actual handoff box. The field's semantic role, signature status, and custody stage matter as much as its digits.",
+        "source_marker": "K04",
+        "original_source_file": "sources/05-custody-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00007.md",
+          "original_sha256": "54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830"
+        }
+      },
+      {
+        "path": "input/sources/07-bin-and-exception-register.md",
+        "anchor": "P06",
+        "quote": "[BIN05] D evidence request. The receiving coordinator requested an authenticated copy of the D acceptance box and the missing next-day recount attachment. The response log records those requests as outstanding at the cutoff used for this packet. It does not establish whether the documents exist elsewhere or what they would say. The coordinator retained both tentative quantity messages rather than promoting either into a signed actual receipt. A visual reading of the pale printed number can clarify what appears on the form, but it cannot by itself establish customer acceptance. Any later closure must identify the newly supplied evidence, its authority, and the exact quantity it resolves.",
+        "source_marker": "BIN05",
+        "original_source_file": "sources/07-bin-and-exception-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00009.md",
+          "original_sha256": "17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9"
+        }
+      },
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P05",
+        "quote": "[R04] Evidence scope. Signed actual transfer receipts take precedence over unsigned planned quantities for determining completed custody movements. The journal and register are complete for A and B movements only within the stated day. No such completeness applies to D. Equal-authority physical counts of the same boundary and cutoff remain competing evidence unless a recount or authorized correction resolves them. A later filename does not give precedence. A pale or obscured numeral in a scan requires visual review and corroboration. An OCR guess is not a signed quantity. If available evidence does not establish a unique accepted amount, report the missing argument without inventing a number or asserting that the shipment necessarily failed.",
+        "source_marker": "R04",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      }
+    ],
+    "rules": [
+      "A guessed/legible planned numeral is not a signed actual acceptance. D lacks complete custody evidence; unsigned proposals and absent photographs do not settle the event."
+    ],
+    "assumptions": [
+      "The proposed 74/78 quantities are evidence of proposals only. The auxiliary completions are hypothetical, not a transcription of the pale field as fact."
+    ],
+    "reasoning": [
+      "1. The original page 5 was visually inspected: lot/ticket identity and blank receiver acceptance are clear; the pale bottom quantity appears compatible with 78 but is not used as an accepted amount.",
+      "2. M01 supplies tentative receiver 74 and carrier 78, neither an authenticated correction. M04/BIN05 provide no original carbon copy, supplied recount or completed evidence response.",
+      "3. Possible completed histories with 74 or 78 accepted preserve the same unsigned supplied evidence. The auxiliary theorem demonstrates nonuniqueness without asserting either value or limiting all possible outcomes to those two.",
+      "4. Thus the report's evidence-limit claim is supported. Its unsigned statement is read as referring to the supplied acceptance box, not an assertion about all possible records elsewhere."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "auxiliary",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim11Alternatives",
+        "relation": "auxiliary",
+        "target": "Audit.possibleD74.suppliedReceiverSigned = false ∧ Audit.possibleD78.suppliedReceiverSigned = false ∧ Audit.possibleD74.receiverProposal = Audit.possibleD78.receiverProposal ∧ Audit.possibleD74.carrierProposal = Audit.possibleD78.carrierProposal ∧ Audit.possibleD74.actualAccepted ≠ Audit.possibleD78.actualAccepted"
+      }
+    ],
+    "limits": [
+      "No actual D accepted quantity, failed shipment, forgery or short-shipping conclusion follows. Visual uncertainty and missing event authority are distinct limits."
+    ],
+    "recommendation": "Retain unresolved accepted quantity and obtain an authenticated acceptance record and missing recount evidence."
+  },
+  {
+    "claim_id": "C08-OK-12",
+    "report_anchor": "C08-OK-12",
+    "report_quote": "**C08-OK-12.** Movement completeness is asserted for A and B that day, not for D.\n\nCitations: sources/05-custody-register.md#[K03].",
+    "question": "Is supplied movement completeness explicitly restricted to A andB for the stated day, without comparable completeness forD?",
+    "evidence": [
+      {
+        "path": "input/sources/05-custody-register.md",
+        "anchor": "P04",
+        "quote": "[K03] Bounded completeness. The register and journal list all accepted A and B movements for the stated day. This permits absence of further A or B movements to be used in exact book arithmetic. It does not establish complete D custody, complete C physical reconciliation, or complete warehouse activity over other dates. The A physical count conflict remains unresolved despite complete movement records. Completeness of one evidence type is not an assertion that every other evidence type agrees. A report that says every lot was reconciled therefore needs an argument beyond the limited A/B movement inventory and must confront the explicit unresolved cases.",
+        "source_marker": "K03",
+        "original_source_file": "sources/05-custody-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00007.md",
+          "original_sha256": "54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830"
+        }
+      },
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P05",
+        "quote": "[R04] Evidence scope. Signed actual transfer receipts take precedence over unsigned planned quantities for determining completed custody movements. The journal and register are complete for A and B movements only within the stated day. No such completeness applies to D. Equal-authority physical counts of the same boundary and cutoff remain competing evidence unless a recount or authorized correction resolves them. A later filename does not give precedence. A pale or obscured numeral in a scan requires visual review and corroboration. An OCR guess is not a signed quantity. If available evidence does not establish a unique accepted amount, report the missing argument without inventing a number or asserting that the shipment necessarily failed.",
+        "source_marker": "R04",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/02-opening-and-journal.md",
+        "anchor": "P02",
+        "quote": "[J01] Opening and receipts. At 08:00 lot A opened with 100 units and lot B with 40 units. At 09:00 receipt IN-A accepted eight sealed full crates of A. At 09:30 receipt IN-B accepted two sealed full cartons of B. Clerk Elin Shore accepted custody at the gate. Each container was confirmed full, without a partial notation. These are posted accepted receipts, not expected procurement deliveries. No other opening adjustment or accepted inbound movement for A or B occurred before cutoff. The completeness statement is restricted to the named interval and lots. It does not establish any opening quantity for D or repair the C import anomaly.",
+        "source_marker": "J01",
+        "original_source_file": "sources/02-opening-and-journal.md",
+        "original_coordinate": {
+          "original": "input/originals/D00004.md",
+          "original_sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+        }
+      },
+      {
+        "path": "input/sources/02-opening-and-journal.md",
+        "anchor": "P04",
+        "quote": "[J03] B request and actual handoff. OUT-B requested three cartons, but the signed carrier handoff at 12:00 records two full cartons. The remaining carton stayed on shelf B4 because its packaging label was missing. At 15:00 that unfilled order quantity was canceled. It never crossed the warehouse boundary. A separate next-day order reserved eight other B units, distinct from both the dispatched cartons and the canceled request. There was no B return and no need to invent one: the canceled quantity never left. The A quarantine affects no B stock. The B journal contains no other completed inbound, outbound, or return movements within the cutoff interval.",
+        "source_marker": "J03",
+        "original_source_file": "sources/02-opening-and-journal.md",
+        "original_coordinate": {
+          "original": "input/originals/D00004.md",
+          "original_sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+        }
+      },
+      {
+        "path": "input/sources/07-bin-and-exception-register.md",
+        "anchor": "P06",
+        "quote": "[BIN05] D evidence request. The receiving coordinator requested an authenticated copy of the D acceptance box and the missing next-day recount attachment. The response log records those requests as outstanding at the cutoff used for this packet. It does not establish whether the documents exist elsewhere or what they would say. The coordinator retained both tentative quantity messages rather than promoting either into a signed actual receipt. A visual reading of the pale printed number can clarify what appears on the form, but it cannot by itself establish customer acceptance. Any later closure must identify the newly supplied evidence, its authority, and the exact quantity it resolves.",
+        "source_marker": "BIN05",
+        "original_source_file": "sources/07-bin-and-exception-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00009.md",
+          "original_sha256": "17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9"
+        }
+      }
+    ],
+    "rules": [
+      "Completeness is a named domain/date/evidence-type assertion and must not expand from movements into physical reconciliation or other lots."
+    ],
+    "assumptions": [
+      "The finite list encodes the source's scope assertion, not an independently verified completeness theorem about real records."
+    ],
+    "reasoning": [
+      "1. K03/R04 explicitly certify all A/B movements within that day and explicitly deny extending that status toD.",
+      "2. The finite documented completeness list therefore contains A/B and excludesD.",
+      "3. This supports exact A/B book arithmetic but leaves A physical conflict and C/D unresolved matters visible."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim12",
+        "relation": "supports",
+        "target": "Audit.Lot.A ∈ Audit.completeMovementLots ∧ Audit.Lot.B ∈ Audit.completeMovementLots ∧ Audit.Lot.D ∉ Audit.completeMovementLots"
+      }
+    ],
+    "limits": [
+      "Exclusion from a completeness declaration is not evidence that no D movement occurred or that every other warehouse fact is unreliable."
+    ],
+    "recommendation": "Retain the bounded A/B-day coverage statement."
+  },
+  {
+    "claim_id": "C08-OK-13",
+    "report_anchor": "C08-OK-13",
+    "report_quote": "**C08-OK-13.** A reservation changes allocation without transferring stock across the boundary.\n\nCitations: sources/01-stock-rules.md#[R02]; sources/01-stock-rules.md#[R03].",
+    "question": "Under the supplied stock rules, does a reservation alter allocation while leaving boundary-crossing book stock unchanged?",
+    "evidence": [
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P03",
+        "quote": "[R02] Movement semantics. Opening stock plus accepted inbound movements minus completed outbound movements plus accepted returns determines book on-hand. A printed ticket, order, reservation, or pick request changes no physical inventory merely by existing. Departure occurs at the signed actual custody handoff across the boundary. Customer delivery is a separate later event. A carrier can hold inventory that has already departed but is not yet delivered. Return increases on-hand when the receiving custodian accepts the goods back across the boundary. Returned goods in the fenced cage are inside the boundary even before reshelving. An accepted return is a separate movement, not a reason to erase the original departure.",
+        "source_marker": "R02",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P04",
+        "quote": "[R03] Lot identity and availability. Lots A, B, C, and D are separate even though their sleeves share a catalog description. An excess in one lot cannot repair a deficit in another. Available stock is book on-hand minus quarantined units minus separately reserved units, with no overlapping deductions. The A quarantine contains seven units. The B reservation contains eight different units. Quarantine and reservation change internal status without transferring custody. Physical presence, book balance, and available quantity are different predicates. A physical count may disagree with a journal-derived balance, and the disagreement must remain visible rather than silently redefining one quantity to match the other.",
+        "source_marker": "R03",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      },
+      {
+        "path": "input/sources/02-opening-and-journal.md",
+        "anchor": "P04",
+        "quote": "[J03] B request and actual handoff. OUT-B requested three cartons, but the signed carrier handoff at 12:00 records two full cartons. The remaining carton stayed on shelf B4 because its packaging label was missing. At 15:00 that unfilled order quantity was canceled. It never crossed the warehouse boundary. A separate next-day order reserved eight other B units, distinct from both the dispatched cartons and the canceled request. There was no B return and no need to invent one: the canceled quantity never left. The A quarantine affects no B stock. The B journal contains no other completed inbound, outbound, or return movements within the cutoff interval.",
+        "source_marker": "J03",
+        "original_source_file": "sources/02-opening-and-journal.md",
+        "original_coordinate": {
+          "original": "input/originals/D00004.md",
+          "original_sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+        }
+      },
+      {
+        "path": "input/sources/07-bin-and-exception-register.md",
+        "anchor": "P04",
+        "quote": "[BIN03] Reservation ticket RES-B-8. The next-day customer order reserves eight B units located on shelf B2. The units were not among the two cartons loaded for OUT-B and were not the canceled third carton on B4. The reservation was still active at cutoff. The operator may not release those units to another order without canceling or changing the reservation record, but no such change occurred that day. These facts justify treating the reservation as a distinct deduction when calculating available B stock. They do not establish an outbound movement, a customer delivery, or physical absence from the B count boundary.",
+        "source_marker": "BIN03",
+        "original_source_file": "sources/07-bin-and-exception-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00009.md",
+          "original_sha256": "17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9"
+        }
+      }
+    ],
+    "rules": [
+      "R02 distinguishes reservation/request from custody movement; R03/BIN03 make reservation an internal availability deduction."
+    ],
+    "assumptions": [
+      "Use the supplied synthetic day, lot identities and exact individual-unit conversions. Accept the explicitly complete A/B movement journal only for its named boundary and interval.",
+      "The legible material scan fields were actually viewed and corroborated; manual reviewed anchors preserve original-source hashes and raw OCR. No real handwriting authentication or external event inspection is claimed."
+    ],
+    "reasoning": [
+      "1. R02 explicitly says a reservation does not move inventory merely by existing; R03 defines its internal-status role.",
+      "2. BIN03 supplies the concrete B example: eight units remain physically on shelfB2, with no departure/delivery or physical absence.",
+      "3. The modeled reservation transition changes the reserved field while preserving on-hand for any represented state, supporting the report's rule-level claim."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim13",
+        "relation": "supports",
+        "target": "∀ s q, (Audit.reserve s q).onHand = s.onHand ∧ (Audit.reserve s q).reserved = s.reserved + q"
+      }
+    ],
+    "limits": [
+      "The invariant does not authorize arbitrary reservation quantities or imply that every physical action called a reservation outside this fictional rule is movement-free."
+    ],
+    "recommendation": "Retain and keep reservation allocation separate from actual shipment."
+  },
+  {
+    "claim_id": "C08-OK-14",
+    "report_anchor": "C08-OK-14",
+    "report_quote": "**C08-OK-14.** No supplied approved correction resolves the C import anomaly.\n\nCitations: sources/02-opening-and-journal.md#[J04].",
+    "question": "Does the supplied packet lack an approved correction resolving the C import anomaly, despite an unsigned proposal and evidence request?",
+    "evidence": [
+      {
+        "path": "input/sources/02-opening-and-journal.md",
+        "anchor": "P05",
+        "quote": "[J04] C import anomaly. The imported C opening book balance is zero. At 10:10 an operator posted an outbound movement of nine units; at 10:20 an inbound movement of eight units was posted. The imported book balance is therefore minus one. This is a signed-integer ledger result, not a negative number of physical objects. An unsigned correction proposal mentions a possible carton-versus-unit import error, but no approved correction is supplied. Physical reconciliation for C is incomplete, and no physical count accompanies the journal. Preserve the anomaly and the missing correction argument. A book deficit alone does not prove a physical shortage, fraud, destruction, or a correct repair amount.",
+        "source_marker": "J04",
+        "original_source_file": "sources/02-opening-and-journal.md",
+        "original_coordinate": {
+          "original": "input/originals/D00004.md",
+          "original_sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+        }
+      },
+      {
+        "path": "input/sources/07-bin-and-exception-register.md",
+        "anchor": "P05",
+        "quote": "[BIN04] Exception ownership. Inventory reviewer Mira Cole opened unresolved exception EX-A for the one-unit disagreement between the signed A counts. She requested a recount but supplied no completed recount in this packet. Reviewer Leon Hart opened EX-C for the imported C journal deficit and requested the original unit mapping file. The request names a possible conversion issue but contains no approved correction amount. The two exceptions have different evidence needs: EX-A needs reconciliation of competing observations, while EX-C needs reconstruction of a possibly incorrect journal entry. Neither can be closed by adding unrelated B stock or by assuming a favorable D quantity.",
+        "source_marker": "BIN04",
+        "original_source_file": "sources/07-bin-and-exception-register.md",
+        "original_coordinate": {
+          "original": "input/originals/D00009.md",
+          "original_sha256": "17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9"
+        }
+      },
+      {
+        "path": "input/sources/01-stock-rules.md",
+        "anchor": "P04",
+        "quote": "[R03] Lot identity and availability. Lots A, B, C, and D are separate even though their sleeves share a catalog description. An excess in one lot cannot repair a deficit in another. Available stock is book on-hand minus quarantined units minus separately reserved units, with no overlapping deductions. The A quarantine contains seven units. The B reservation contains eight different units. Quarantine and reservation change internal status without transferring custody. Physical presence, book balance, and available quantity are different predicates. A physical count may disagree with a journal-derived balance, and the disagreement must remain visible rather than silently redefining one quantity to match the other.",
+        "source_marker": "R03",
+        "original_source_file": "sources/01-stock-rules.md",
+        "original_coordinate": {
+          "original": "input/originals/D00003.md",
+          "original_sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+        }
+      }
+    ],
+    "rules": [
+      "An unsigned hypothesis or request is not an authorized correction. The claim is about supplied evidence only, not all records that could exist elsewhere."
+    ],
+    "assumptions": [
+      "The no-approved-correction statement is scoped to the complete supplied packet, not historical universality."
+    ],
+    "reasoning": [
+      "1. J04 explicitly records a possible carton/unit error as an unsigned proposal and says no approved correction is supplied.",
+      "2. BIN04 records an outstanding request for original mapping and no approved correction amount. No other supplied source resolves it.",
+      "3. The finite evidence list therefore contains a proposal and lacks approved correction, supporting the exact scoped report assertion."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim14",
+        "relation": "supports",
+        "target": "Audit.CorrectionEvidence.unsignedProposal ∈ Audit.suppliedCCorrections ∧ Audit.CorrectionEvidence.approvedCorrection ∉ Audit.suppliedCCorrections"
+      }
+    ],
+    "limits": [
+      "This does not prove an approved correction never existed elsewhere, or that a proposed mapping explanation is false. The correct repair amount is unknown."
+    ],
+    "recommendation": "Retain the support gap and await original mapping plus authorized correction."
+  }
+]

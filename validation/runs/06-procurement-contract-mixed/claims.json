@@ -1,0 +1,272 @@
+{
+  "coverage": "All eighteen supplied claim groups and every material conclusion/reason component registered.",
+  "claims": [
+    {
+      "claim_id": "C06-01",
+      "report_anchor": "C06-01",
+      "report_quote": "**C06-01.** P-11 and P-12 did not require competition because each individual order was below EUR 25,000.00. Sources: P02, P03, L02, F04.",
+      "components": [
+        {
+          "component_id": "C06-01.1",
+          "target": "Each P-11/P-12 order is individually below EUR 25,000.00.",
+          "parent_finding": "C06-01"
+        },
+        {
+          "component_id": "C06-01.2",
+          "target": "Neither requires competition on that basis.",
+          "parent_finding": "C06-01"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06-02",
+      "report_anchor": "C06-02",
+      "report_quote": "**C06-02.** The combined normalized value of P-11 and P-12 is exactly EUR 25,000.00. Sources: L02, P04.",
+      "components": [
+        {
+          "component_id": "C06-02.1",
+          "target": "Combined normalized P-11/P-12 value is exactly EUR 25,000.00.",
+          "parent_finding": "C06-02"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06-03",
+      "report_anchor": "C06-03",
+      "report_quote": "**C06-03.** P-13 reaches the revision 2 competition threshold after the required final cent rounding. Sources: P02, P04, V05, L03, F01.",
+      "components": [
+        {
+          "component_id": "C06-03.1",
+          "target": "P-13 reaches revision 2 threshold after the required rounding.",
+          "parent_finding": "C06-03"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06-04",
+      "report_anchor": "C06-04",
+      "report_quote": "**C06-04.** P-13 is below the competition threshold because its exact converted amount is EUR 24,999.9975 before rounding. Sources: P02, P04, V05, F01.",
+      "components": [
+        {
+          "component_id": "C06-04.1",
+          "target": "P-13 exact unrounded value is EUR 24,999.9975.",
+          "parent_finding": "C06-04"
+        },
+        {
+          "component_id": "C06-04.2",
+          "target": "That pre-rounding value makes P-13 below the threshold.",
+          "parent_finding": "C06-04"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06-05",
+      "report_anchor": "C06-05",
+      "report_quote": "**C06-05.** P-14 requires competition because rounding EUR 24,999.994 gives EUR 25,000.00. Sources: P02, P04, L03, F02.",
+      "components": [
+        {
+          "component_id": "C06-05.1",
+          "target": "P-14 rounds from EUR 24,999.994 to EUR 25,000.00.",
+          "parent_finding": "C06-05"
+        },
+        {
+          "component_id": "C06-05.2",
+          "target": "P-14 consequently requires competition.",
+          "parent_finding": "C06-05"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06-06",
+      "report_anchor": "C06-06",
+      "report_quote": "**C06-06.** Dana Cole validly approved P-15 within her delegation, even though commitment occurred one minute after the delegation expired. Sources: P05, D01, D02, D03, L04.",
+      "components": [
+        {
+          "component_id": "C06-06.1",
+          "target": "P-15 approval was within Dana delegation and valid.",
+          "parent_finding": "C06-06"
+        },
+        {
+          "component_id": "C06-06.2",
+          "target": "Commitment followed expiry by one minute without invalidating approval.",
+          "parent_finding": "C06-06"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06-07",
+      "report_anchor": "C06-07",
+      "report_quote": "**C06-07.** Dana Cole validly approved P-16 because EUR 15,000.00 is within her inclusive monetary limit. Sources: P05, D01, D02, D03, L04.",
+      "components": [
+        {
+          "component_id": "C06-07.1",
+          "target": "P-16 value meets Dana inclusive monetary ceiling.",
+          "parent_finding": "C06-07"
+        },
+        {
+          "component_id": "C06-07.2",
+          "target": "Therefore her P-16 approval was valid.",
+          "parent_finding": "C06-07"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06-08",
+      "report_anchor": "C06-08",
+      "report_quote": "**C06-08.** R-17 is governed by revision 2 because its June 3 amendment and June 10 commitment occurred after the new revision took effect. Sources: V01, V02, V03.",
+      "components": [
+        {
+          "component_id": "C06-08.1",
+          "target": "R-17 original requirement uses revision 2 because later clerical amendment and commitment occurred after transition.",
+          "parent_finding": "C06-08"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06-09",
+      "report_anchor": "C06-09",
+      "report_quote": "**C06-09.** R-17 required competition at EUR 22,500.00, but the complete register records no competition certificate or exception. Sources: P02, V01, V03, L05.",
+      "components": [
+        {
+          "component_id": "C06-09.1",
+          "target": "R-17 requires competition at EUR 22,500.00.",
+          "parent_finding": "C06-09"
+        },
+        {
+          "component_id": "C06-09.2",
+          "target": "Complete coverage records no competition certificate or exception.",
+          "parent_finding": "C06-09"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06-10",
+      "report_anchor": "C06-10",
+      "report_quote": "**C06-10.** R-18 required competition because its EUR 22,500.00 value exceeds the revision 1 threshold. Sources: P02, V01, V04, L05.",
+      "components": [
+        {
+          "component_id": "C06-10.1",
+          "target": "R-18 requires competition using revision 1 threshold.",
+          "parent_finding": "C06-10"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06-11",
+      "report_anchor": "C06-11",
+      "report_quote": "**C06-11.** E-19 satisfied the urgent-safety exception, including a retrospective review exactly forty-eight hours after commitment. Sources: P06, L05, X01, X02.",
+      "components": [
+        {
+          "component_id": "C06-11.1",
+          "target": "E-19 satisfied all urgent-safety conditions.",
+          "parent_finding": "C06-11"
+        },
+        {
+          "component_id": "C06-11.2",
+          "target": "Review exactly forty-eight hours after commitment is timely.",
+          "parent_finding": "C06-11"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06-12",
+      "report_anchor": "C06-12",
+      "report_quote": "**C06-12.** The confirmed urgency of E-19 would have been sufficient for the urgent-safety exception without the director declaration or retrospective review. Sources: P06, X01, X02.",
+      "components": [
+        {
+          "component_id": "C06-12.1",
+          "target": "Confirmed E-19 urgency alone would satisfy the exception without declaration or review.",
+          "parent_finding": "C06-12"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06-13",
+      "report_anchor": "C06-13",
+      "report_quote": "**C06-13.** E-20 qualifies for the proprietary-compatibility exception because Pelican is the only warranty-certified vendor. Sources: P07, V06, X03, X04, X05.",
+      "components": [
+        {
+          "component_id": "C06-13.1",
+          "target": "E-20 qualifies for proprietary exception on sole warranty-certified vendor evidence.",
+          "parent_finding": "C06-13"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06-14",
+      "report_anchor": "C06-14",
+      "report_quote": "**C06-14.** E-20 cannot qualify for the proprietary-compatibility exception because the rival connector passes a physical-fit and electrical bench test. Sources: P07, V06, X03, X04.",
+      "components": [
+        {
+          "component_id": "C06-14.1",
+          "target": "E-20 cannot qualify for proprietary exception because rival passes physical/electrical bench tests.",
+          "parent_finding": "C06-14"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06-15",
+      "report_anchor": "C06-15",
+      "report_quote": "**C06-15.** The director granted P-21 order approval at 10:00 UTC on June 27. Sources: A01, A02, A03, L01.",
+      "components": [
+        {
+          "component_id": "C06-15.1",
+          "target": "The director granted P-21 approval at June 27 10:00 UTC.",
+          "parent_finding": "C06-15"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06-16",
+      "report_anchor": "C06-16",
+      "report_quote": "**C06-16.** Harbor paid the P-21 invoice because the packet includes a signed invoice and delivery acceptance. Sources: P01, A04, F03.",
+      "components": [
+        {
+          "component_id": "C06-16.1",
+          "target": "P-21 was paid.",
+          "parent_finding": "C06-16"
+        },
+        {
+          "component_id": "C06-16.2",
+          "target": "Signed invoice and delivery acceptance establish payment.",
+          "parent_finding": "C06-16"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06-17",
+      "report_anchor": "C06-17",
+      "report_quote": "**C06-17.** Every purchase in the complete register met both the applicable competition obligation and valid-approval requirement. Sources: P02, P03, P05, P08, L01, L02, L04, L05.",
+      "components": [
+        {
+          "component_id": "C06-17.1",
+          "target": "Every purchase in L01 complete domain met its applicable competition obligation and valid-approval requirement.",
+          "parent_finding": "C06-17"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06-18",
+      "report_anchor": "C06-18",
+      "report_quote": "**C06-18.** The emergency pump purchase was prudent and commercially elegant. Sources: P08, F05.",
+      "components": [
+        {
+          "component_id": "C06-18.1",
+          "target": "Emergency pump purchase was prudent.",
+          "parent_finding": "C06-18"
+        },
+        {
+          "component_id": "C06-18.2",
+          "target": "Emergency pump purchase was commercially elegant.",
+          "parent_finding": "C06-18"
+        }
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "question": "P-22 competition/approval history, other external procurement facts and real law",
+      "reason": "No supplied claim requires these; P-22 finance facts remain inspected contextual evidence rather than an invented audit target."
+    }
+  ]
+}

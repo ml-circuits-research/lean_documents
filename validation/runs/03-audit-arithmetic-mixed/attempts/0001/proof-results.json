@@ -1,0 +1,237 @@
+{
+  "checked_at": "2026-11-04T13:47:26.651115+00:00",
+  "status": "passed",
+  "lean_version_required": "4.24.0",
+  "independent_checker": {
+    "status": "not_run",
+    "reason": "No external checker is configured; no independent-kernel assurance is claimed."
+  },
+  "targets": [
+    {
+      "module": "Audit",
+      "theorem": "Audit.paymentTotal",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-001.log",
+      "check_file": "checks/Target001.lean",
+      "model_sha256": "0ee773683751ce11f12d2dff13887ec4e812da4e914048fb0838eecfcd4aa6f0"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.budgetDifference",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-002.log",
+      "check_file": "checks/Target002.lean",
+      "model_sha256": "0ee773683751ce11f12d2dff13887ec4e812da4e914048fb0838eecfcd4aa6f0"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.sampleExceptionRate",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-003.log",
+      "check_file": "checks/Target003.lean",
+      "model_sha256": "0ee773683751ce11f12d2dff13887ec4e812da4e914048fb0838eecfcd4aa6f0"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.missingApprovalTotal",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-004.log",
+      "check_file": "checks/Target004.lean",
+      "model_sha256": "0ee773683751ce11f12d2dff13887ec4e812da4e914048fb0838eecfcd4aa6f0"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.allInvoicesMatched",
+      "target": null,
+      "status": "passed",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "log": "logs/target-005.log",
+      "check_file": "checks/Target005.lean",
+      "model_sha256": "0ee773683751ce11f12d2dff13887ec4e812da4e914048fb0838eecfcd4aa6f0"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.approvalCounterexample",
+      "target": null,
+      "status": "passed",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "log": "logs/target-006.log",
+      "check_file": "checks/Target006.lean",
+      "model_sha256": "0ee773683751ce11f12d2dff13887ec4e812da4e914048fb0838eecfcd4aa6f0"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.populationCompletionAlternatives",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-007.log",
+      "check_file": "checks/Target007.lean",
+      "model_sha256": "0ee773683751ce11f12d2dff13887ec4e812da4e914048fb0838eecfcd4aa6f0"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.populationLowerBound",
+      "target": null,
+      "status": "passed",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "log": "logs/target-008.log",
+      "check_file": "checks/Target008.lean",
+      "model_sha256": "0ee773683751ce11f12d2dff13887ec4e812da4e914048fb0838eecfcd4aa6f0"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.paymentTotal",
+      "target": "Audit.sampleTotal = 275000 ∧ Audit.sampleTotal = 2750 * 100",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-009.log",
+      "check_file": "checks/Target009.lean",
+      "model_sha256": "0ee773683751ce11f12d2dff13887ec4e812da4e914048fb0838eecfcd4aa6f0"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.budgetDifference",
+      "target": "Audit.budget - Audit.sampleTotal = 25000 ∧ Audit.budget - Audit.sampleTotal ≠ 35000 ∧ Audit.sampleTotal ≤ Audit.budget",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-010.log",
+      "check_file": "checks/Target010.lean",
+      "model_sha256": "0ee773683751ce11f12d2dff13887ec4e812da4e914048fb0838eecfcd4aa6f0"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.sampleExceptionRate",
+      "target": "Audit.sample.length = 4 ∧ Audit.exceptionCount = 2 ∧ Audit.exceptionCount * 100 = 50 * Audit.sample.length",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-011.log",
+      "check_file": "checks/Target011.lean",
+      "model_sha256": "0ee773683751ce11f12d2dff13887ec4e812da4e914048fb0838eecfcd4aa6f0"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.populationCompletionAlternatives",
+      "target": "Audit.populationExceptions 0 * 100 ≠ 50 * 20 ∧ Audit.populationExceptions 8 * 100 = 50 * 20 ∧ (0 : Nat) ≤ 16 ∧ (8 : Nat) ≤ 16",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-012.log",
+      "check_file": "checks/Target012.lean",
+      "model_sha256": "0ee773683751ce11f12d2dff13887ec4e812da4e914048fb0838eecfcd4aa6f0"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.missingApprovalTotal",
+      "target": "Audit.exceptionTotal = 75000",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-013.log",
+      "check_file": "checks/Target013.lean",
+      "model_sha256": "0ee773683751ce11f12d2dff13887ec4e812da4e914048fb0838eecfcd4aa6f0"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.allInvoicesMatched",
+      "target": "∀ p ∈ Audit.sample, p.matched = true",
+      "status": "passed",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "log": "logs/target-014.log",
+      "check_file": "checks/Target014.lean",
+      "model_sha256": "0ee773683751ce11f12d2dff13887ec4e812da4e914048fb0838eecfcd4aa6f0"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.approvalCounterexample",
+      "target": "Audit.p03 ∈ Audit.sample ∧ Audit.p03.matched = true ∧ Audit.p03.approved = false ∧ ¬ (∀ p ∈ Audit.sample, p.approved = true)",
+      "status": "passed",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "log": "logs/target-015.log",
+      "check_file": "checks/Target015.lean",
+      "model_sha256": "0ee773683751ce11f12d2dff13887ec4e812da4e914048fb0838eecfcd4aa6f0"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.populationLowerBound",
+      "target": "∀ unknownExceptions : Nat, unknownExceptions ≤ 16 → 2 ≤ Audit.populationExceptions unknownExceptions",
+      "status": "passed",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "log": "logs/target-016.log",
+      "check_file": "checks/Target016.lean",
+      "model_sha256": "0ee773683751ce11f12d2dff13887ec4e812da4e914048fb0838eecfcd4aa6f0"
+    }
+  ],
+  "limitations": "Lean checks the encoded propositions, not source authenticity, extraction accuracy, completeness, legal authority, or the adequacy of the model. Source filters are defensive checks, not a sandbox for hostile Lean code.",
+  "input_hashes": {
+    "findings.json": "a11f067909a264817c775cce0beee4b51a2e31d86ac7d090326c15fd90fd0748",
+    "input/manifest.json": "abb9676bffa445411c2abb9b49788b7b3f868f954fe55ad1cdccebf79690480a",
+    "models/Audit.lean": "0ee773683751ce11f12d2dff13887ec4e812da4e914048fb0838eecfcd4aa6f0"
+  },
+  "lean_version_observed": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "execution_status": "executed",
+  "artifact_hashes": {
+    "environment.lock": "5ec8064808611bc6f514e027d21fde1fd00f3ee158dc48fc949c5f5d44778e22",
+    "lakefile.toml": "01a2fcdf9392e14b2fcf1c49259f3371c897156e002f56d678736f2b1e336653",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "source-ledger.jsonl": "fcebe4bdea1bcae375bf0486f021f50b7f55db01567a77042c9462ba554249a8",
+    "logs/lake-build.log": "736935a84d92cfb3bf6b346b5af2c712e207023211f3124a32fdd283fbe5f5b0",
+    "logs/lean-version.log": "620cc3a49badd63a0f237b564ff1758bd9bf83ee82b17278bb5a8762d3a1fc1a",
+    "logs/target-001.log": "5ef63c3f5218b1a8fad3829cb9af0a0f110c54d2f991dd11694294c156ac05ff",
+    "logs/target-002.log": "1e3d5e38e5380b27853808ec72e19df9e58b661d2ebd96e9a897b652781a2ede",
+    "logs/target-003.log": "2a7f7b44d39bf1f51d46cf40c9af780534239704c5b882b91ad20abb8bffb817",
+    "logs/target-004.log": "689202145e58ca0b421eac1afe74cfa351a0b1434373df742803b07b6bc96e3c",
+    "logs/target-005.log": "ed9c952bd5ec1f1efeece47461a6b8698aa1392315a0f6207c99d4ffd8da72dd",
+    "logs/target-006.log": "cd858c412b1b2800dcbf3762fef9b68d388eaa196b47ca8228fa205fea4ecf90",
+    "logs/target-007.log": "478c117683f18975e47c0b8bc85bc45e1f25160aee353eb174627fb5e437caa5",
+    "logs/target-008.log": "4fbaedec7a2a3e9346374d4b1a5a146377b8b0b81e130fd6625eb4cb86f58b60",
+    "logs/target-009.log": "2e9c929a61e34e0c9987b2521e883c47db2689320efa2bdb2cfa730a9b2bdea7",
+    "logs/target-010.log": "6ca8d4ac99a3022f770bcf5f5b82ecf50215f08650552eb164c27eb5830b5e1c",
+    "logs/target-011.log": "f7d97ed2bf92b6f38356d41ae123a92bb7c9f64154a3fecdcd223fa1fad67136",
+    "logs/target-012.log": "1903a475726324173b9abd8d42c767a24e5588d06c7469097c8fd5e2bcd5ba65",
+    "logs/target-013.log": "157b696b5682d0e8627c21db480e9f6d51636ee5786852e5bf0bfca3a8d9ce93",
+    "logs/target-014.log": "8c19ecbcaf03979e152047f24703d4e4dfabf185699305aeed1b1ec720fb35a6",
+    "logs/target-015.log": "61aa6bbc1c61047be1dbd9e964568699cdaf7767d02cf2991944a3f9aa695214",
+    "logs/target-016.log": "5b0b6e8b9d330909fb614b3c94f8bf2b74ddb70a1b5b831225ed392adb9b8be1",
+    "checks/Target001.lean": "3f5e478b0a0174e99d434c27615495f32f6a7c51b3dd176c7de131f4dc0ed9a3",
+    "checks/Target002.lean": "7542de7506ae8d9e33826a1cedd650685e29c8c0ff891100f1e1dbfb9034e6ed",
+    "checks/Target003.lean": "e678f206e3cc03fa584033b07a3028a7de401a0a0429d09d3da97ae71e00b93e",
+    "checks/Target004.lean": "7eb6f70c8cce381242d531a90b9ff722e46bfc92ec0efb6335ce491dcf719880",
+    "checks/Target005.lean": "509642a6ca27d55d58c0795c06bb29569d9655cce89d2e248a5f8732a9688e9f",
+    "checks/Target006.lean": "43cdf8f6f59fa3bac06357556aa15791a7285c2cede2cafddc5c5add5d53b8db",
+    "checks/Target007.lean": "65d220a31e355d84dc4a59a35a243f58b16abb94f8ae800418df4d3820d1074e",
+    "checks/Target008.lean": "5afa443e9031de270521fd86bbc815abef3ff0e299329f3aee7a9b56c8c4f872",
+    "checks/Target009.lean": "96b84eeb5d89951db7d7c157ccbe860eacae07910adf289fa7529cdd5b07a225",
+    "checks/Target010.lean": "8724ff00d47177d7d147be455e717bb5a02ef5d7507ce3fa3df914ffcaf6e093",
+    "checks/Target011.lean": "6f8af27d17c0a3adbc0652152232c644a0641c77659afeb724c94455e4a83426",
+    "checks/Target012.lean": "c4eca0cb719cc812275252af5db27cefd43dcbfd7850d6e0f8c2600eca9694e8",
+    "checks/Target013.lean": "7f7fae28a91fdc8787682a1e104765e57a6df9216eabf0a036706626d9f2266d",
+    "checks/Target014.lean": "e3cff774f4fd9b2b326f596cc9062eaace0a68026705e5e6553a882fb676e17c",
+    "checks/Target015.lean": "b32550ff6105657bb26958ad47544f19293833347d324196cc24b198369cc1d1",
+    "checks/Target016.lean": "a1a22f3ef158cb865bfb17f62372cadb31b8b088848f60fe5ccf25d748e9e27e"
+  }
+}

@@ -1,0 +1,4 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target026.lean
+Audit.claim09 : Audit.competitionRequired (Audit.revision (-1)) 2250000 = true ∧
+  Audit.r17Certificate = false ∧ Audit.r17Exception = false
+'Audit.claim09' does not depend on any axioms

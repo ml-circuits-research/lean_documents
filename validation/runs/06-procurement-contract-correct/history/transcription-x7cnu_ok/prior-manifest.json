@@ -1,0 +1,103 @@
+{
+  "schema_version": 2,
+  "algorithm": "sha256",
+  "index": "input/index.sqlite3",
+  "files": {
+    "input/brief.md": {
+      "sha256": "e5a298542e64bf649893885c60ab0783e336afb7ca1110bab4964818ec286b8c",
+      "bytes": 3451
+    },
+    "input/catalog.json": {
+      "sha256": "32bbbdb99aff11d4f285cff1e18383d4e6014cbc89e5c452da72556c71a05afe",
+      "bytes": 3165
+    },
+    "input/index.sqlite3": {
+      "sha256": "37c07906e8ff61267f63a1f3880200b2d69c8f7e05674077b84777fe6068a659",
+      "bytes": 372736
+    },
+    "input/manual-transcriptions/D00003/653097fa4c7e85eb684393bda9dd0a3959fec379a0851eefccc17e303dbea4da.txt": {
+      "sha256": "8fb79403566e4e68d553034c72b964919a57a2a9e20b95369b9729a709f0fe95",
+      "bytes": 762
+    },
+    "input/manual-transcriptions/D00003/74d057c1ffd7a573949b5264432bbf95d0ac166f21a1a683072c9f16d09c7d65.txt": {
+      "sha256": "1bb87ea08d1b8f4dafa7bc70dce45a7d9057d73a66cd9d063ab39c18e29ce0d8",
+      "bytes": 662
+    },
+    "input/manual-transcriptions/D00003/f2c73ff169fa72a87f8a86ce29319fba80b81b376e3a4b6229800b78686ff70a.txt": {
+      "sha256": "35768ae655a05f73e910cd3e329dc75463071a611525aeed414aaa2f34535a38",
+      "bytes": 621
+    },
+    "input/originals/D00001.md": {
+      "sha256": "c058211e1ed11a0ab7a89d44e14bf3c200dcc529108ccabb348417e18722a299",
+      "bytes": 3420
+    },
+    "input/originals/D00002.md": {
+      "sha256": "4859e0c4b5aede8c53ee9f25a8a79f9827f2739facb8b5805a33ea22fd07cb52",
+      "bytes": 4623
+    },
+    "input/originals/D00003.pdf": {
+      "sha256": "f7fd20aa2be7a439af133f37c3f045a9d3ce14b786760ec8c806c2e8abcf07f8",
+      "bytes": 1001030
+    },
+    "input/originals/D00004.md": {
+      "sha256": "70e6f8d94fc43cfe9cf239a68869f50e63c1df59786623aeb9dcc744c5c9d447",
+      "bytes": 3177
+    },
+    "input/originals/D00005.md": {
+      "sha256": "50fa064b64c998354572ea7622387d6439535fe4df2d6a361901e138be03a74b",
+      "bytes": 4052
+    },
+    "input/originals/D00006.docx": {
+      "sha256": "ed054f952c7f1ca8d513691fa0c4460a7c7de9e6c59320c1b21fb22abfbcacfa",
+      "bytes": 3697
+    },
+    "input/originals/D00007.md": {
+      "sha256": "0a73cfa5b770b081a5335b326920130f9edfd4c6c843797412e27b3172c29108",
+      "bytes": 3895
+    },
+    "input/originals/D00008.md": {
+      "sha256": "2b5e3cc9824253cabb8493b6702e9b725dbbb3e61b2d9b5003be58748edcc535",
+      "bytes": 3641
+    },
+    "input/originals/D00009.pdf": {
+      "sha256": "c8d035848c7a222831ccf4792210e8700fe89bf4a86e4be34b70de667175a10d",
+      "bytes": 7127
+    },
+    "input/report-ledger.json": {
+      "sha256": "ab02fdf8d5f485ad661fe71248e49e02c5d35264079f8da6ed5148f04afb50fb",
+      "bytes": 4546
+    },
+    "input/report.md": {
+      "sha256": "e9c8421a4da8bf9a525b443ee340d6ae864f07b60578b1eadc04a9948058f415",
+      "bytes": 4654
+    },
+    "input/sources/approval-attestations.scan.pdf.md": {
+      "sha256": "be188dcd5db246fac12d1f1b165ebfce5014d98ff09c4181cc780ff16cad8010",
+      "bytes": 5176
+    },
+    "input/sources/delegation-notice.md": {
+      "sha256": "25f8cf55fe30e0c212a706dbb6ce46975f2d0866497e879868e92f4f32aa0659",
+      "bytes": 3208
+    },
+    "input/sources/exception-file.md": {
+      "sha256": "6a18e37e5c9c3fad03de7452c526936ee446c5036ee5a6543261bba25f97fc20",
+      "bytes": 4083
+    },
+    "input/sources/procurement-standard.docx.md": {
+      "sha256": "b8ce400fefe1b1f87ede411396bc34fa409e755a23e7f036d8985a594a97e4cc",
+      "bytes": 7405
+    },
+    "input/sources/purchase-register.md": {
+      "sha256": "8bdde92852c81108e0bde22ed76dc5dddabff6019398b89d0c1d4989d723853c",
+      "bytes": 3926
+    },
+    "input/sources/reconciliation-correspondence.md": {
+      "sha256": "5a7d2b9500e7492ecb4fc54bf4d64e5d0353d7b775eb8324a0a40d23fa4fddcf",
+      "bytes": 3672
+    },
+    "input/sources/revision-amendment.pdf.md": {
+      "sha256": "1f7bfc621a560a483d623549df98e3ef371d42ae4f30371d88d2f5646598bd30",
+      "bytes": 4683
+    }
+  }
+}

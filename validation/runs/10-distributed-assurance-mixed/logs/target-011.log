@@ -1,0 +1,3 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target011.lean
+Audit.claim01 : Audit.n58Authorized = false
+'Audit.claim01' does not depend on any axioms

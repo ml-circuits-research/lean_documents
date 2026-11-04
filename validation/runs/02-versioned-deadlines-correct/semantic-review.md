@@ -1,0 +1,7 @@
+# Semantic correspondence review
+
+Reviewer: coordinating agent, distinct from the initial audit author. Initial auditor received only the selected report, brief, source corpus and execution mandate and was instructed to exclude evaluator answers and the alternate report. The coordinator knows the fixture design; this is not blind expert certification.
+
+Reviewed all nine selected findings against both workflow revisions, the four cases and transfer note; inspected the model, every target and source mapping. Receipt-based revision selection, the one-minute boundary, inclusive deadline and assignment invariance match the rules. Dashboard data are explicitly transcribed from T01; the theorem checks their finite mismatch with applicable revision rather than independently inferring the field semantics. D-204 standard-rule exclusion does not mean no deadline; its auxiliary completions demonstrate only non-determination. Pause request membership and approval-evidence nonmembership are scoped to supplied evidence, never actual historical absence. The undefined fairness criterion remains a documentary finding. Date-to-offset conversion is externally cross-checked, not a Lean calendar proof. Accepted with declared limits.
+
+No unresolved source-to-target mismatch was identified in the reviewed claims. Lean checks encoded consequence, while authenticity, extraction and interpretation remain separate assumptions.

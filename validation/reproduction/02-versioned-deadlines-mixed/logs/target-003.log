@@ -1,0 +1,6 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target003.lean
+Audit.timely201 : Audit.standardDue Audit.c201 = some (Audit.at17 10) ∧
+  Audit.timely Audit.c201.submission (Audit.at17 10)
+'Audit.timely201' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.220]

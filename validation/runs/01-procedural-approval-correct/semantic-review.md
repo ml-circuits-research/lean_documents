@@ -1,0 +1,7 @@
+# Semantic correspondence review
+
+Reviewer: coordinating agent, separate from the audit author. The initial audit was conducted on the selected report, brief and sources without expected answers or alternate report. The coordinator has fixture-design familiarity; this is not a blind domain-expert certification.
+
+Reviewed all ten selected report findings against P01-P04, R01-R05, H01-H02 and A01-A02, and checked the model and theorem mappings. Standard authorization uses strictly earlier duty-manager approval; the emergency path includes active incident, pre-start declaration and inclusive countersignature bounds. Equal-time C-103 fails and explicitly recorded C-104 fails both exhaustive paths. C-102 supplies a genuine witness against the inference from missing standard approval to unauthorized start. The six direct targets cover the corresponding finite claims; the other four statements concern documentary uncertainty, conflict, undefined prudence and package contents and remain documentary. No C-105 unknown has been encoded as a negative event. Minute offsets were checked against the supplied timestamps. Accepted with stated source-authenticity and transcription limits.
+
+Technical execution establishes the recorded formal targets; this semantic review checks evidence mapping, applicability and limits. No unresolved source-to-target mismatch was identified in the reviewed scope.

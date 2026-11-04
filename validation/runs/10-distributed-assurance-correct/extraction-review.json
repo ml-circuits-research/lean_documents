@@ -1,0 +1,175 @@
+{
+  "reviews": [
+    {
+      "path": "input/sources/02-delegation.docx.md",
+      "anchor": "docx-p-0001",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Compared original DOCX XML including table rows/columns and operative restrictions.",
+      "source_sha256": "2b54f8e40dd0e7fc417bc93bda7d56806f8b3dafd09d5e66d698a964a3145e82",
+      "segment_sha256": "93e32e2004a1798370a64f1174ada651d3c901b7ace1ea8f1c3fa6a60ee96761"
+    },
+    {
+      "path": "input/sources/02-delegation.docx.md",
+      "anchor": "docx-p-0012",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Compared original DOCX XML including table rows/columns and operative restrictions.",
+      "source_sha256": "2b54f8e40dd0e7fc417bc93bda7d56806f8b3dafd09d5e66d698a964a3145e82",
+      "segment_sha256": "bd3431578610919453b1e4307774e66918774875b6729a32ddbe21e6dab3ca15"
+    },
+    {
+      "path": "input/sources/02-delegation.docx.md",
+      "anchor": "docx-p-0013",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Compared original DOCX XML including table rows/columns and operative restrictions.",
+      "source_sha256": "2b54f8e40dd0e7fc417bc93bda7d56806f8b3dafd09d5e66d698a964a3145e82",
+      "segment_sha256": "791bd327fabf2ab0f6f396162063758d07a8aa93d075e55db2cf72f8eb96eafd"
+    },
+    {
+      "path": "input/sources/02-delegation.docx.md",
+      "anchor": "docx-p-0014",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Compared original DOCX XML including table rows/columns and operative restrictions.",
+      "source_sha256": "2b54f8e40dd0e7fc417bc93bda7d56806f8b3dafd09d5e66d698a964a3145e82",
+      "segment_sha256": "21d7211c1a8cb54dffffcef400dd992eb9fc55f4c174bd2d8e8dee7812ab5e6c"
+    },
+    {
+      "path": "input/sources/02-delegation.docx.md",
+      "anchor": "docx-table-0001-r0001-c0001-p0001",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Compared original DOCX XML including table rows/columns and operative restrictions.",
+      "source_sha256": "2b54f8e40dd0e7fc417bc93bda7d56806f8b3dafd09d5e66d698a964a3145e82",
+      "segment_sha256": "afc19f1734c1d195bd8ba741b795a57120beb0a837ceddc2654ed7c486a6ea72"
+    },
+    {
+      "path": "input/sources/02-delegation.docx.md",
+      "anchor": "docx-table-0001-r0001-c0002-p0001",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Compared original DOCX XML including table rows/columns and operative restrictions.",
+      "source_sha256": "2b54f8e40dd0e7fc417bc93bda7d56806f8b3dafd09d5e66d698a964a3145e82",
+      "segment_sha256": "2316838b68ebfd7a4a5d5d2674f78ac8e594372dcb1e75752486636ee37bff08"
+    },
+    {
+      "path": "input/sources/02-delegation.docx.md",
+      "anchor": "docx-table-0001-r0001-c0003-p0001",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Compared original DOCX XML including table rows/columns and operative restrictions.",
+      "source_sha256": "2b54f8e40dd0e7fc417bc93bda7d56806f8b3dafd09d5e66d698a964a3145e82",
+      "segment_sha256": "0c11e0be11971d5d44c5d4e4d9ce9098f66ed335ae8e6c73d2209c47870c7a26"
+    },
+    {
+      "path": "input/sources/02-delegation.docx.md",
+      "anchor": "docx-table-0001-r0001-c0004-p0001",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Compared original DOCX XML including table rows/columns and operative restrictions.",
+      "source_sha256": "2b54f8e40dd0e7fc417bc93bda7d56806f8b3dafd09d5e66d698a964a3145e82",
+      "segment_sha256": "1a4811ad9baa98de6d4e387d8e6c6b3a53471daefde876a952e52adfabea0421"
+    },
+    {
+      "path": "input/sources/02-delegation.docx.md",
+      "anchor": "docx-table-0001-r0001-c0005-p0001",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Compared original DOCX XML including table rows/columns and operative restrictions.",
+      "source_sha256": "2b54f8e40dd0e7fc417bc93bda7d56806f8b3dafd09d5e66d698a964a3145e82",
+      "segment_sha256": "848e96567d6b48d54c0b53017bd6123cefa97d6e0fab0f14c621ec3fd92178f4"
+    },
+    {
+      "path": "input/sources/02-delegation.docx.md",
+      "anchor": "docx-table-0001-r0002-c0001-p0001",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Compared original DOCX XML including table rows/columns and operative restrictions.",
+      "source_sha256": "2b54f8e40dd0e7fc417bc93bda7d56806f8b3dafd09d5e66d698a964a3145e82",
+      "segment_sha256": "599e39dc032a59ccc7b7c7ef81166f324a88970ca83898c864137e5533ebe64d"
+    },
+    {
+      "path": "input/sources/02-delegation.docx.md",
+      "anchor": "docx-table-0001-r0002-c0002-p0001",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Compared original DOCX XML including table rows/columns and operative restrictions.",
+      "source_sha256": "2b54f8e40dd0e7fc417bc93bda7d56806f8b3dafd09d5e66d698a964a3145e82",
+      "segment_sha256": "85fd5c5b7d426b01294b8d086af66f72370fd4480f6feafcbf1ee278c2f8da1e"
+    },
+    {
+      "path": "input/sources/02-delegation.docx.md",
+      "anchor": "docx-table-0001-r0002-c0003-p0001",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Compared original DOCX XML including table rows/columns and operative restrictions.",
+      "source_sha256": "2b54f8e40dd0e7fc417bc93bda7d56806f8b3dafd09d5e66d698a964a3145e82",
+      "segment_sha256": "14c3900742efb06c490b7f5be8fe4100fcf820ba0fde62c857fe55bb07db447b"
+    },
+    {
+      "path": "input/sources/02-delegation.docx.md",
+      "anchor": "docx-table-0001-r0002-c0004-p0001",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Compared original DOCX XML including table rows/columns and operative restrictions.",
+      "source_sha256": "2b54f8e40dd0e7fc417bc93bda7d56806f8b3dafd09d5e66d698a964a3145e82",
+      "segment_sha256": "f35d4b6f5e0fb53ab42021e3cdbfe820adc334c4c6247ba6485ce1fd3d2e8574"
+    },
+    {
+      "path": "input/sources/02-delegation.docx.md",
+      "anchor": "docx-table-0001-r0002-c0005-p0001",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Compared original DOCX XML including table rows/columns and operative restrictions.",
+      "source_sha256": "2b54f8e40dd0e7fc417bc93bda7d56806f8b3dafd09d5e66d698a964a3145e82",
+      "segment_sha256": "e98d2d2939b89203c6b29ca180118a4d998eb97ca857070c3d925ec428e55810"
+    },
+    {
+      "path": "input/sources/04-node-registry.pdf.md",
+      "anchor": "pdf-page-0001",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Visually inspected original PDF sheet; compared identity range, completeness and scope limitations.",
+      "source_sha256": "6fbabc6f1ab5af7659201499d292110b7f8e0da5dcf20a6864f09a6dedf439e8",
+      "segment_sha256": "98dd48c79e02393683c6ef9d2dbd08e9b2af5eda70856d78765a1579631c4d77"
+    },
+    {
+      "path": "input/sources/04-node-registry.pdf.md",
+      "anchor": "pdf-page-0002",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Visually inspected original PDF sheet; compared identity range, completeness and scope limitations.",
+      "source_sha256": "6fbabc6f1ab5af7659201499d292110b7f8e0da5dcf20a6864f09a6dedf439e8",
+      "segment_sha256": "5d4bb47241a8f0468616e394715d0279ed3ea52db36e76d1e32681ab9655453f"
+    },
+    {
+      "path": "input/sources/04-node-registry.pdf.md",
+      "anchor": "pdf-page-0003",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Visually inspected original PDF sheet; compared identity range, completeness and scope limitations.",
+      "source_sha256": "6fbabc6f1ab5af7659201499d292110b7f8e0da5dcf20a6864f09a6dedf439e8",
+      "segment_sha256": "c7982874131fe87a4a4b1e375ddb0050fc82be6621119e87974aff46a202fa11"
+    },
+    {
+      "path": "input/sources/04-node-registry.pdf.md",
+      "anchor": "pdf-page-0004",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Visually inspected original PDF sheet; compared identity range, completeness and scope limitations.",
+      "source_sha256": "6fbabc6f1ab5af7659201499d292110b7f8e0da5dcf20a6864f09a6dedf439e8",
+      "segment_sha256": "4913a6f6c855892e9fe7ac23152c7d70b0a902a0767806b47c85eb17f6ce2eaa"
+    },
+    {
+      "path": "input/sources/04-node-registry.pdf.md",
+      "anchor": "pdf-page-0005",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Visually inspected original PDF sheet; compared identity range, completeness and scope limitations.",
+      "source_sha256": "6fbabc6f1ab5af7659201499d292110b7f8e0da5dcf20a6864f09a6dedf439e8",
+      "segment_sha256": "a23feba10e69a44da6c823dfebadf580750ec0ef363ddf99f83ee2882434c2a6"
+    }
+  ]
+}

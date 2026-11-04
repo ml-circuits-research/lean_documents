@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/evidence-to-proof/findings.schema.json",
+  "title": "Evidence-to-Proof Review findings",
+  "type": "array",
+  "minItems": 0,
+  "items": {
+    "type": "object",
+    "required": [
+      "claim_id",
+      "report_quote",
+      "report_anchor",
+      "question",
+      "evidence",
+      "rules",
+      "assumptions",
+      "reasoning",
+      "semantic_state",
+      "argument_status",
+      "formal_status",
+      "proofs",
+      "limits",
+      "recommendation"
+    ],
+    "properties": {
+      "claim_id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "report_quote": {
+        "type": "string",
+        "minLength": 1
+      },
+      "report_anchor": {
+        "type": "string",
+        "minLength": 1
+      },
+      "question": {
+        "type": "string",
+        "minLength": 1
+      },
+      "recommendation": {
+        "type": "string",
+        "minLength": 1
+      },
+      "rules": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "minItems": 1
+      },
+      "assumptions": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "minItems": 0
+      },
+      "reasoning": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "minItems": 1
+      },
+      "limits": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "minItems": 1
+      },
+      "semantic_state": {
+        "enum": [
+          "supported",
+          "refuted",
+          "both",
+          "undetermined",
+          "not_applicable"
+        ]
+      },
+      "argument_status": {
+        "enum": [
+          "sufficient",
+          "insufficient_support",
+          "invalid_inference",
+          "disputed",
+          "nonformal"
+        ]
+      },
+      "formal_status": {
+        "enum": [
+          "proved",
+          "refuted",
+          "auxiliary",
+          "not_attempted",
+          "blocked"
+        ]
+      },
+      "evidence": {
+        "type": "array",
+        "minItems": 0,
+        "items": {
+          "type": "object",
+          "required": [
+            "path",
+            "anchor",
+            "quote"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "anchor": {
+              "type": "string",
+              "minLength": 1
+            },
+            "quote": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "proofs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "module",
+            "theorem",
+            "relation",
+            "target"
+          ],
+          "properties": {
+            "module": {
+              "type": "string",
+              "minLength": 1
+            },
+            "theorem": {
+              "type": "string",
+              "minLength": 1
+            },
+            "target": {
+              "type": "string",
+              "minLength": 1
+            },
+            "relation": {
+              "enum": [
+                "supports",
+                "refutes",
+                "auxiliary"
+              ]
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "additionalProperties": true
+  },
+  "description": "Base finding format shared by historical bundles. New workspaces additionally require the v2 criteria, argument_audit, formalization and claim-registration contract enforced by scripts/contracts.py; see references/audit-contract-v2.md."
+}

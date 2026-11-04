@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "dossier_id": "09-multiversion-safety",
+  "synthetic": true,
+  "hash_algorithm": "sha256",
+  "audit_inputs": [
+    {
+      "path": "brief.md",
+      "role": "brief",
+      "sha256": "f7cbb6a2822be482b7587734c0b1e27ffb1de58b9e401256c21cc601c36a41c0"
+    },
+    {
+      "path": "report-correct.md",
+      "role": "report",
+      "sha256": "d4bde05ceea8e5f6c0957fdb8de50e8d39d1b9915ca9f7ed7dea938d8ae2b4df"
+    },
+    {
+      "path": "report.md",
+      "role": "report",
+      "sha256": "4d43bf3ddbbd427bce1783365c63d96c06030640230c5d0355f8e4e0ef1ff03b"
+    },
+    {
+      "path": "sources/01-specification-v1.docx",
+      "role": "source",
+      "sha256": "42b6976d7613cd50e93501e895fe71377ddaa902f793ed8efc9a002e10c3a8be"
+    },
+    {
+      "path": "sources/02-specification-v2.docx",
+      "role": "source",
+      "sha256": "c780e4bf1b0a0a08647f2713a2f75c76b7654f8c545ba305a8fe29f0d160169c"
+    },
+    {
+      "path": "sources/03-exception-annex.docx",
+      "role": "source",
+      "sha256": "49ae022a5b2a5568215957e54514add6a50d7c2f129a6f5b354af45ac6931e70"
+    },
+    {
+      "path": "sources/04-test-runs.pdf",
+      "role": "source",
+      "sha256": "44640ce83d9f9b0c669a9d39eb8992d550a5250e75383c8ad15dfe19abb4dd4e"
+    },
+    {
+      "path": "sources/05-calibration-and-authority.md",
+      "role": "source",
+      "sha256": "f4d7b1be08d6dd13db756c34f068696ffe5ec31564ff09ac4b47a63db180e175"
+    },
+    {
+      "path": "sources/06-applicability-and-open-items.md",
+      "role": "source",
+      "sha256": "dec4280b23593ada8abc1e1648682a3f31385bd2a7146aed36688ab157b715dc"
+    },
+    {
+      "path": "sources/07-fault-closure-register.md",
+      "role": "source",
+      "sha256": "832f5bc068a88b4ee4756897c1c5f36af0e6ba4e0f76e4581918223f338b1d3b"
+    }
+  ],
+  "audit_variants": [
+    {
+      "id": "correct",
+      "report": "report-correct.md"
+    },
+    {
+      "id": "flawed",
+      "report": "report.md"
+    }
+  ],
+  "selection_rule": "Exactly one selected report with shared brief and all sources. Exclude authoring scripts and evaluator material.",
+  "source_count": 7,
+  "authored_source_word_count": 3863,
+  "formal_validation_executed_by_fixture_builder": false
+}

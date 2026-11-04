@@ -1,0 +1,426 @@
+{
+  "review_type": "Source-first second semantic review of supplied reports and completed audits",
+  "status": "Complete: ten current runs reviewed; original report09 ambiguity recorded and resolved by a separately checked revision.",
+  "created_utc": "2026-11-04T15:34:43.721275+00:00",
+  "source_first_views": [
+    "source-view-06.md",
+    "source-view-07.md",
+    "source-view-08.md",
+    "source-view-09.md",
+    "source-view-10.md"
+  ],
+  "case_records": [
+    "review-06.json",
+    "review-07.json",
+    "review-08.json",
+    "review-09.json",
+    "review-10.json"
+  ],
+  "run_count": 10,
+  "checked_claim_groups": 156,
+  "runs": [
+    {
+      "workspace": "tmp/06-procurement-contract-mixed",
+      "checked_claims": [
+        "C06-01",
+        "C06-02",
+        "C06-03",
+        "C06-04",
+        "C06-05",
+        "C06-06",
+        "C06-07",
+        "C06-08",
+        "C06-09",
+        "C06-10",
+        "C06-11",
+        "C06-12",
+        "C06-13",
+        "C06-14",
+        "C06-15",
+        "C06-16",
+        "C06-17",
+        "C06-18"
+      ],
+      "findings_sha256": "8dd3ad25660ebce0910191883f885aac41d1b09f498a7b28c23fa0c07f532d96",
+      "model_sha256": "ac01ab12932fd0da2ca804b66a9576a68b171a64bdf0c9625c19649b50e885a3",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "report_sha256": "79ec1f6b3cb6ba740fdb873340497b0aba952595d9382387f3033850b709a694",
+      "catalog_sha256": "3538eb87309a0b5e533fd40737c4f7f65cc6218ae9ed8506b0ab18f04a800d38",
+      "proof_results_sha256": "063cbf9308f047cfa91e0087723a80c5750611292596a1f13553c89c45ea6c97"
+    },
+    {
+      "workspace": "tmp/06-procurement-contract-correct",
+      "checked_claims": [
+        "C06-C01",
+        "C06-C02",
+        "C06-C03",
+        "C06-C04",
+        "C06-C05",
+        "C06-C06",
+        "C06-C07",
+        "C06-C08",
+        "C06-C09",
+        "C06-C10",
+        "C06-C11",
+        "C06-C12",
+        "C06-C13",
+        "C06-C14",
+        "C06-C15",
+        "C06-C16",
+        "C06-C17",
+        "C06-C18"
+      ],
+      "findings_sha256": "f756e51bb425646b9a6cc6448f289e53f8a085eccff9f3d1a1f103f5d282ce61",
+      "model_sha256": "454538ca60c78a97f260a6c92f2d3e5ff8a5269d3ab804b4447870e89359636b",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "report_sha256": "e9c8421a4da8bf9a525b443ee340d6ae864f07b60578b1eadc04a9948058f415",
+      "catalog_sha256": "32bbbdb99aff11d4f285cff1e18383d4e6014cbc89e5c452da72556c71a05afe",
+      "proof_results_sha256": "0135ac58ea4bc5f66bede4d6fdd3691ede00a391fc6d804e7b45dbdd5544eafb"
+    },
+    {
+      "workspace": "tmp/07-incident-response-mixed",
+      "checked_claims": [
+        "C07-01",
+        "C07-02",
+        "C07-03",
+        "C07-04",
+        "C07-05",
+        "C07-06",
+        "C07-07",
+        "C07-08",
+        "C07-09",
+        "C07-10",
+        "C07-11",
+        "C07-12",
+        "C07-13",
+        "C07-14",
+        "C07-15",
+        "C07-16",
+        "C07-17",
+        "C07-18"
+      ],
+      "findings_sha256": "a6424c2dd3b5166232b166ea75976f040d512e006d531253c7e1f8eddd924765",
+      "model_sha256": "5ccba82d954726b22ca50e4592cc77a17a17b01b74104392eca33201bb0a0f12",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "report_sha256": "f15735d0444c4fbf03cf79751c8ef15bc0232cff38083730a486ed48753fa3d6",
+      "catalog_sha256": "1a04110e7262baa3251e4b8d71d16443e749da61c16bc508311ab259c718844a",
+      "proof_results_sha256": "dbd367af2fe113a39410e064cb585fbae34b6eed18a23ee21dcb5e5589117bb3"
+    },
+    {
+      "workspace": "tmp/07-incident-response-correct",
+      "checked_claims": [
+        "C07-C01",
+        "C07-C02",
+        "C07-C03",
+        "C07-C04",
+        "C07-C05",
+        "C07-C06",
+        "C07-C07",
+        "C07-C08",
+        "C07-C09",
+        "C07-C10",
+        "C07-C11",
+        "C07-C12",
+        "C07-C13",
+        "C07-C14",
+        "C07-C15",
+        "C07-C16",
+        "C07-C17",
+        "C07-C18"
+      ],
+      "findings_sha256": "d787c62f18583b4a11521cde4b0bb417f68149033b92e593fc49adad7eadacd6",
+      "model_sha256": "2e94e9e0df4bceedc8cc1e431176f7b55631e827bb8db8a7a74b68e34ea939d6",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "report_sha256": "f9ec237f1d6c08372292f7094070698f513d249b69645fe50d98ffa1ff6117ef",
+      "catalog_sha256": "2ac0f1240c41a2fc0914836eaa03c50eb4b9e91f339513d5b961cc8ee5ca68f5",
+      "proof_results_sha256": "ea043eb26740d8a76f000fe3a2a9e4b4893ab2892ff8a87fd50ff52b0095eb45"
+    },
+    {
+      "workspace": "tmp/08-scanned-inventory-mixed",
+      "checked_claims": [
+        "C08-ERR-01",
+        "C08-ERR-02",
+        "C08-ERR-03",
+        "C08-ERR-04",
+        "C08-ERR-05",
+        "C08-ERR-06",
+        "C08-ERR-07",
+        "C08-ERR-08",
+        "C08-ERR-09",
+        "C08-ERR-10",
+        "C08-ERR-11",
+        "C08-ERR-12",
+        "C08-ERR-13",
+        "C08-ERR-14"
+      ],
+      "findings_sha256": "0b6229c90a93d7bb99f9c57e26f302f996160d72998fdad4721308121bf9d0a9",
+      "model_sha256": "3226d74d1bba217e68f9d6b68c20138bdcd7a84d662277c21b1a30f4bfc08903",
+      "report_sha256": "cc11fd04c95b03000f68027f03661f53e0b8daf2f9704e3dcc94b03508e77971",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "catalog_sha256": "ed3111a73d36703124f8158b3f9d42345731559aa056669ec020b9302009059b",
+      "proof_results_sha256": "d8f8f8014267b7827c928747130d0e45593e1d7df6f8be8b3062ebde450883f7"
+    },
+    {
+      "workspace": "tmp/08-scanned-inventory-correct",
+      "checked_claims": [
+        "C08-OK-01",
+        "C08-OK-02",
+        "C08-OK-03",
+        "C08-OK-04",
+        "C08-OK-05",
+        "C08-OK-06",
+        "C08-OK-07",
+        "C08-OK-08",
+        "C08-OK-09",
+        "C08-OK-10",
+        "C08-OK-11",
+        "C08-OK-12",
+        "C08-OK-13",
+        "C08-OK-14"
+      ],
+      "findings_sha256": "95201ee69e2b9e229fef03c6129840cf0746020563ef28ebbf73a48dd0245d9d",
+      "model_sha256": "2996ba368a3e2579dee38ca699f09d709657b00321706dccd577661ddad50878",
+      "report_sha256": "e5759f9de478f58ead1a15f7e8863b38fbe2a047c4111f708de606ba637a81ec",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "catalog_sha256": "55bef9ebe960624b91a39f9ae1e37e24411c7fa09f65c15ba40f5c383b3889fb",
+      "proof_results_sha256": "4c045fc5bf2f1c8883fb9a375ece463be00f51a7450250636e0d84767403a71a"
+    },
+    {
+      "workspace": "tmp/09-multiversion-safety-mixed",
+      "checked_claims": [
+        "C09-ERR-01",
+        "C09-ERR-02",
+        "C09-ERR-03",
+        "C09-ERR-04",
+        "C09-ERR-05",
+        "C09-ERR-06",
+        "C09-ERR-07",
+        "C09-ERR-08",
+        "C09-ERR-09",
+        "C09-ERR-10",
+        "C09-ERR-11",
+        "C09-ERR-12",
+        "C09-ERR-13",
+        "C09-ERR-14"
+      ],
+      "findings_sha256": "4c59e95fd014130de8c5b50eea0a0d8adbe09a69c4e837ba65ade6f6e62aba16",
+      "model_sha256": "fca898a538ccaba6252a53e04b1120cf364abc3e87a9d366e3ab3030cb338c48",
+      "report_sha256": "fc86ec8320d7d2991f940a64646579ecede51b69e75402deac098d75de4afaa6",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "catalog_sha256": "b02d4832cd5d83458bc1f09f4adc631dd4fdb22505bfee8123c3327ae4d7fa3d",
+      "proof_results_sha256": "ad5d3b37fb44891b694f78e3c263a7eb09d69cc04aa250aba36cfd8cc960809f"
+    },
+    {
+      "workspace": "tmp/09-multiversion-safety-correct",
+      "snapshot": "Clarified report after immutable refresh and all-claim review",
+      "checked_claims": [
+        "C09-OK-01",
+        "C09-OK-02",
+        "C09-OK-03",
+        "C09-OK-04",
+        "C09-OK-05",
+        "C09-OK-06",
+        "C09-OK-07",
+        "C09-OK-08",
+        "C09-OK-09",
+        "C09-OK-10",
+        "C09-OK-11",
+        "C09-OK-12",
+        "C09-OK-13",
+        "C09-OK-14"
+      ],
+      "findings_sha256": "106d08bcd384ae7c3e2600cf8b2ac5dae496f31c09dba64376f3e20f2d4e69fe",
+      "model_sha256": "35959fbb8a72a9a05c289bb68dcb2030da8720e04e8a919d23f24640bc721743",
+      "report_sha256": "de6de67e73cbdaff2ef0247d87736cb7226986ad1f9440631696fd5353fa888e",
+      "catalog_sha256": "d2e5ce3d71166ae2d3c3722fed43e0d12685ee42b0cf5fa894d1a49b426c66f0",
+      "proof_results_sha256": "2c5000d525393c039deb08d48571372251a493cae4aa8145795cff6a74e78d9c",
+      "revision_review_sha256": "e109dbfabc36c9ee904d0d9b10f87b6cc5b2bb0c6406c636caa7f1677287d6dd",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "The clarified report removes the margin ambiguity. C09-OK-01 is supported documentarily with auxiliary arithmetic; other thirteen findings are unchanged and remain supported. No material audit/model mismatch found.",
+      "limitations": [
+        "Historical L01 acceptance relies on explicit source record; no raw supply-voltage log or full release is invented.",
+        "Shared model family, filesystem and verifier; not organizational or independent-kernel assurance."
+      ]
+    },
+    {
+      "workspace": "tmp/10-distributed-assurance-mixed",
+      "checked_claims": [
+        "C10-ERR-01",
+        "C10-ERR-02",
+        "C10-ERR-03",
+        "C10-ERR-04",
+        "C10-ERR-05",
+        "C10-ERR-06",
+        "C10-ERR-07",
+        "C10-ERR-08",
+        "C10-ERR-09",
+        "C10-ERR-10",
+        "C10-ERR-11",
+        "C10-ERR-12",
+        "C10-ERR-13",
+        "C10-ERR-14"
+      ],
+      "findings_sha256": "7b740fca750713de5f2a3b93c145d4775e7eae46e3b6e9ed7c6e9daf7c24821a",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b",
+      "report_sha256": "b124853bef9a7c81e0fa7f33312a05d85771415859f7e771b0fc9e0056358dc5",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "catalog_sha256": "1c0c435cb109cbddb7aaf9c0fb810fe4d62b41959f22c6093972e822fe885a8a",
+      "proof_results_sha256": "501a3b9a5b1ad72cfbfa4f9ef6b7c0569c6638c3ea9e304f4565334591a83d3e"
+    },
+    {
+      "workspace": "tmp/10-distributed-assurance-correct",
+      "checked_claims": [
+        "C10-OK-01",
+        "C10-OK-02",
+        "C10-OK-03",
+        "C10-OK-04",
+        "C10-OK-05",
+        "C10-OK-06",
+        "C10-OK-07",
+        "C10-OK-08",
+        "C10-OK-09",
+        "C10-OK-10",
+        "C10-OK-11",
+        "C10-OK-12",
+        "C10-OK-13",
+        "C10-OK-14"
+      ],
+      "findings_sha256": "5e25602b61c8afece7f01c414d57becf6eac2aa90abef88b526ac37209ff5410",
+      "model_sha256": "531d798a6cd6608201e40bc130d60945c98429ebf5563f505e39a75f0b8a2b24",
+      "report_sha256": "91e35c2927f1118a3ee6cbb8b6dff6d261f96561838c0119ebb5a7b27bb10476",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "catalog_sha256": "69402aac3af4f5e72175f35b71320adc6a28835d15d1f8ee567886edcf3d5a33",
+      "proof_results_sha256": "6865410374454d1abf7165b0f1c0485d75f003d4346a2ed6f5c8ea588e583c91"
+    }
+  ],
+  "material_audit_or_model_defects": [],
+  "report_defects": [
+    {
+      "claim_id": "C09-OK-01",
+      "kind": "original report editorial ambiguity",
+      "reported_by": "09 correct-run auditor via parent; not first discovered by this independent reviewer",
+      "original_quote": "L01 satisfies the historical revision 1 delay demonstration; its maximum is 118 milliseconds below 120.",
+      "assessment": "The source maximum is 118 ms and the margin is 2 ms. The wording can be read as a 118 ms margin. The source-first note interpreted the intended comparison and did not initially flag the wording; this correction is explicitly retained rather than retroactively changing that note.",
+      "status": "Resolved in the clarified report revision; original report and its disputed finding remain retained.",
+      "resolution": {
+        "revised_quote": "L01 satisfies the historical revision 1 delay demonstration; its maximum is 118 milliseconds, below the 120-millisecond limit.",
+        "original_audit_workspace": "tmp/09-multiversion-safety-correct-original-wording",
+        "revised_workspace": "tmp/09-multiversion-safety-correct",
+        "reviewed_changes": "Only C09-OK-01 report wording and its interpretation fields changed. Evidence arrays, the other thirteen findings and all Lean source bytes are unchanged. All fourteen citations/targets reviewed again; exact quotes all match current segments.",
+        "model_unchanged": true,
+        "new_check_status": "passed",
+        "revised_semantic_state": "supported",
+        "formal_status": "auxiliary"
+      }
+    }
+  ],
+  "method": [
+    "Read the supplied source corpus and report texts and saved each source-view before opening findings/model for that dossier.",
+    "Compared factual scope, applicable rule/exception hierarchy, chronology, quantifiers, arithmetic, evidence completeness, confidence and theorem-to-claim mapping for every listed claim.",
+    "Verified every report/evidence quote against the corresponding path/anchor segment in the immutable ingestion index.",
+    "Compared original source hashes across mixed/correct variants; all five source corpora match between variants.",
+    "Inspected relevant original DOCX XML tables and actual scan/page rasters rather than treating OCR text as self-authenticating.",
+    "Read actual Lean source and its source-to-model legend; technical statuses are reported from retained execution results, not a claim of an independent kernel implementation."
+  ],
+  "limitations": [
+    "Review performed by another task agent in the same model family, with shared filesystem and verifier implementation; independence is procedural rederivation, not organizational independence.",
+    "No evaluator outcomes, source-authoring masters or example-directory contents were opened for this review.",
+    "The reviewer previously implemented infrastructure and knew the dossier06 OCR 14:38 versus14:30 issue; its visual confirmation was not a blind discovery.",
+    "The original report09 ambiguity was first flagged by its correct-run auditor, conveyed by the coordinator. This reviewer initially read the intended comparison; that limitation is explicitly recorded and the initial source-view preserved.",
+    "Source authenticity and real-world safety/authorization are outside the synthetic evidence model. Formal proofs establish the encoded propositions under reviewed premises.",
+    "The review does not certify unlimited future source changes; hashes identify the exact artifacts reviewed."
+  ],
+  "completed_utc": "2026-11-04T15:38:38.572369+00:00",
+  "historical_reviews": [
+    {
+      "workspace": "tmp/09-multiversion-safety-correct-original-wording",
+      "snapshot": "original ambiguous report before reconciliation",
+      "checked_claims": [
+        "C09-OK-01",
+        "C09-OK-02",
+        "C09-OK-03",
+        "C09-OK-04",
+        "C09-OK-05",
+        "C09-OK-06",
+        "C09-OK-07",
+        "C09-OK-08",
+        "C09-OK-09",
+        "C09-OK-10",
+        "C09-OK-11",
+        "C09-OK-12",
+        "C09-OK-13",
+        "C09-OK-14"
+      ],
+      "findings_sha256": "772dfb3e3b53728473e1ddeb4a392543d67a79b91a014165dbd94cb028a7f1c2",
+      "model_sha256": "35959fbb8a72a9a05c289bb68dcb2030da8720e04e8a919d23f24640bc721743",
+      "report_sha256": "fb5985dc2f261fafcc52cd96661d216d954399d31ed55def23f68276e4a0ab31",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material audit/model mismatch found: C09-OK-01 is appropriately marked undetermined/disputed with arithmetic auxiliary. The original report has the separately recorded editorial ambiguity; unqualified acceptance remains withheld pending revision.",
+      "limitations": [
+        "Shared model family, filesystem and verifier; not institutional or independent-kernel assurance.",
+        "Historical L01 applicability is documentarily asserted; no separate raw 24 V log is invented."
+      ],
+      "original_review_workspace": "tmp/09-multiversion-safety-correct",
+      "catalog_sha256": "4c094f98ac8140bd1e0006e6c2e4591c76b2a6b6d175421a1afb8326a2479fab",
+      "proof_results_sha256": "c374a3df3e55bdb9099ed293737362b231d870bf7a2f19817084fe45de291868"
+    }
+  ],
+  "additional_revision_claim_reviews": 14,
+  "conclusion": "The ten current audits faithfully preserve source-supported conclusions, explicit refutations, unresolved evidence and nonformal judgments. One genuine ambiguity in the original correct-report fixture was caught and transparently corrected; no material audit/model mismatch remains in the reviewed current snapshots."
+}

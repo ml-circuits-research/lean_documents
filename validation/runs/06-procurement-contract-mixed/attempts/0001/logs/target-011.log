@@ -1,0 +1,3 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target011.lean
+Audit.claim11 : Audit.e19Emergency = true ∧ 33720 - 30840 = 2880 ∧ Audit.e19Approval = true
+'Audit.claim11' does not depend on any axioms

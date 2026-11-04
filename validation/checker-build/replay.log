@@ -1,0 +1,3 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env /home/salboaie/.local/share/evidence-to-proof/checker-v4.24.0/lean4checker --fresh --verbose Audit
+Working directory: /home/salboaie/work/lean_documents/tmp/corpus-tests-pbnjvxch/test_noop_resume_preserves_successful_proof_fingerprint/runs/claim-audit-us7i5k1u
+replaying Audit with --fresh

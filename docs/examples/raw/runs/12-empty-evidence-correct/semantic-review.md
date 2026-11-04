@@ -1,0 +1,1 @@
+Coordinator-authored boundary fixture and audit, not blind evaluation. Inspected zero-byte source and exact report wording; no event fact or closed-world assumption was invented. Independent review pending and explicitly not claimed here. The formal results concern text length and two admissible evidence completions, never actual clearance.

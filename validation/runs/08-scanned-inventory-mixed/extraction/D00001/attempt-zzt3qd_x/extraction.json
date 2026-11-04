@@ -1,0 +1,81 @@
+{
+  "text": "<a id=\"P01\"></a>\n# Synthetic supplied-report audit brief\n\n<a id=\"P02\"></a>\n[BR01] Audit exactly one supplied report against all source documents. The product audits findings in existing reports; it does not generate the original substantive report. The other report variant is excluded from the evidence for this audit. All organizations, names, transactions, devices, signatures, and events are invented.\n\n<a id=\"P03\"></a>\n[BR02] Use exact arithmetic, source-defined rules, identity, chronology, and explicitly bounded completeness. Preserve equal-authority evidence conflicts. Missing records establish a support gap unless an explicit complete domain supports a negative conclusion. A sufficient condition is not automatically necessary. Claims about recorded statements differ from claims about the underlying world.\n\n<a id=\"P04\"></a>\n[BR03] Each result must quote the exact claim, state its verification problem, cite original source files and stable bracket markers, identify applicable rules and assumptions, explain reasoning and limits, and explicitly explain a refutation. Native files are evidence; authoring scripts outside this dossier are not. Derived extraction IDs may aid navigation but must not replace original-path citations. Visually inspect uncertain scan fields and seek corroboration.\n\n<a id=\"P05\"></a>\n[BR04] Lean execution is authorized. A prospective result is not an executed result. Retain actual extraction, reviewed encoding, commands, exit statuses, and logs in distinct repository tmp/ directories for each report audit and reproduction. Formal results establish only their reviewed propositions under declared premises. Conflicting, unsupported, and subjective claims must preserve their non-proof dispositions.\n",
+  "segments": [
+    {
+      "anchor": "P01",
+      "quote": "# Synthetic supplied-report audit brief",
+      "locator": {
+        "kind": "text",
+        "start_line": 1,
+        "end_line": 1,
+        "start_character": 0,
+        "end_character": 39,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P02",
+      "quote": "[BR01] Audit exactly one supplied report against all source documents. The product audits findings in existing reports; it does not generate the original substantive report. The other report variant is excluded from the evidence for this audit. All organizations, names, transactions, devices, signatures, and events are invented.",
+      "locator": {
+        "kind": "text",
+        "start_line": 3,
+        "end_line": 3,
+        "start_character": 41,
+        "end_character": 371,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P03",
+      "quote": "[BR02] Use exact arithmetic, source-defined rules, identity, chronology, and explicitly bounded completeness. Preserve equal-authority evidence conflicts. Missing records establish a support gap unless an explicit complete domain supports a negative conclusion. A sufficient condition is not automatically necessary. Claims about recorded statements differ from claims about the underlying world.",
+      "locator": {
+        "kind": "text",
+        "start_line": 5,
+        "end_line": 5,
+        "start_character": 373,
+        "end_character": 769,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P04",
+      "quote": "[BR03] Each result must quote the exact claim, state its verification problem, cite original source files and stable bracket markers, identify applicable rules and assumptions, explain reasoning and limits, and explicitly explain a refutation. Native files are evidence; authoring scripts outside this dossier are not. Derived extraction IDs may aid navigation but must not replace original-path citations. Visually inspect uncertain scan fields and seek corroboration.",
+      "locator": {
+        "kind": "text",
+        "start_line": 7,
+        "end_line": 7,
+        "start_character": 771,
+        "end_character": 1240,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P05",
+      "quote": "[BR04] Lean execution is authorized. A prospective result is not an executed result. Retain actual extraction, reviewed encoding, commands, exit statuses, and logs in distinct repository tmp/ directories for each report audit and reproduction. Formal results establish only their reviewed propositions under declared premises. Conflicting, unsupported, and subjective claims must preserve their non-proof dispositions.",
+      "locator": {
+        "kind": "text",
+        "start_line": 9,
+        "end_line": 9,
+        "start_character": 1242,
+        "end_character": 1660,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    }
+  ],
+  "tools": {
+    "python-stdlib": "3.14.8"
+  },
+  "warnings": [],
+  "complete": true,
+  "status": "ready"
+}

@@ -1,0 +1,81 @@
+{
+  "text": "<a id=\"P01\"></a>\n# Synthetic North Quay stock rules\n\n<a id=\"P02\"></a>\n[R01] Unit definitions and boundary. The inventory boundary consists of rooms W1 and W2 and the fenced return cage at the invented North Quay warehouse. The cutoff is 18:00 on 14 April 2032. All quantities are exact integer individual sleeves, called units. A sealed full crate contains twelve units. A sealed full carton contains six units. A pallet has no fixed conversion. A partial-container label overrides the standard full-container quantity; an empty container contributes zero. All names and transactions in this packet are invented. These rules define the finite exercise and do not prescribe real shipping procedures.\n\n<a id=\"P03\"></a>\n[R02] Movement semantics. Opening stock plus accepted inbound movements minus completed outbound movements plus accepted returns determines book on-hand. A printed ticket, order, reservation, or pick request changes no physical inventory merely by existing. Departure occurs at the signed actual custody handoff across the boundary. Customer delivery is a separate later event. A carrier can hold inventory that has already departed but is not yet delivered. Return increases on-hand when the receiving custodian accepts the goods back across the boundary. Returned goods in the fenced cage are inside the boundary even before reshelving. An accepted return is a separate movement, not a reason to erase the original departure.\n\n<a id=\"P04\"></a>\n[R03] Lot identity and availability. Lots A, B, C, and D are separate even though their sleeves share a catalog description. An excess in one lot cannot repair a deficit in another. Available stock is book on-hand minus quarantined units minus separately reserved units, with no overlapping deductions. The A quarantine contains seven units. The B reservation contains eight different units. Quarantine and reservation change internal status without transferring custody. Physical presence, book balance, and available quantity are different predicates. A physical count may disagree with a journal-derived balance, and the disagreement must remain visible rather than silently redefining one quantity to match the other.\n\n<a id=\"P05\"></a>\n[R04] Evidence scope. Signed actual transfer receipts take precedence over unsigned planned quantities for determining completed custody movements. The journal and register are complete for A and B movements only within the stated day. No such completeness applies to D. Equal-authority physical counts of the same boundary and cutoff remain competing evidence unless a recount or authorized correction resolves them. A later filename does not give precedence. A pale or obscured numeral in a scan requires visual review and corroboration. An OCR guess is not a signed quantity. If available evidence does not establish a unique accepted amount, report the missing argument without inventing a number or asserting that the shipment necessarily failed.\n",
+  "segments": [
+    {
+      "anchor": "P01",
+      "quote": "# Synthetic North Quay stock rules",
+      "locator": {
+        "kind": "text",
+        "start_line": 1,
+        "end_line": 1,
+        "start_character": 0,
+        "end_character": 34,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P02",
+      "quote": "[R01] Unit definitions and boundary. The inventory boundary consists of rooms W1 and W2 and the fenced return cage at the invented North Quay warehouse. The cutoff is 18:00 on 14 April 2032. All quantities are exact integer individual sleeves, called units. A sealed full crate contains twelve units. A sealed full carton contains six units. A pallet has no fixed conversion. A partial-container label overrides the standard full-container quantity; an empty container contributes zero. All names and transactions in this packet are invented. These rules define the finite exercise and do not prescribe real shipping procedures.",
+      "locator": {
+        "kind": "text",
+        "start_line": 3,
+        "end_line": 3,
+        "start_character": 36,
+        "end_character": 664,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P03",
+      "quote": "[R02] Movement semantics. Opening stock plus accepted inbound movements minus completed outbound movements plus accepted returns determines book on-hand. A printed ticket, order, reservation, or pick request changes no physical inventory merely by existing. Departure occurs at the signed actual custody handoff across the boundary. Customer delivery is a separate later event. A carrier can hold inventory that has already departed but is not yet delivered. Return increases on-hand when the receiving custodian accepts the goods back across the boundary. Returned goods in the fenced cage are inside the boundary even before reshelving. An accepted return is a separate movement, not a reason to erase the original departure.",
+      "locator": {
+        "kind": "text",
+        "start_line": 5,
+        "end_line": 5,
+        "start_character": 666,
+        "end_character": 1393,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P04",
+      "quote": "[R03] Lot identity and availability. Lots A, B, C, and D are separate even though their sleeves share a catalog description. An excess in one lot cannot repair a deficit in another. Available stock is book on-hand minus quarantined units minus separately reserved units, with no overlapping deductions. The A quarantine contains seven units. The B reservation contains eight different units. Quarantine and reservation change internal status without transferring custody. Physical presence, book balance, and available quantity are different predicates. A physical count may disagree with a journal-derived balance, and the disagreement must remain visible rather than silently redefining one quantity to match the other.",
+      "locator": {
+        "kind": "text",
+        "start_line": 7,
+        "end_line": 7,
+        "start_character": 1395,
+        "end_character": 2116,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P05",
+      "quote": "[R04] Evidence scope. Signed actual transfer receipts take precedence over unsigned planned quantities for determining completed custody movements. The journal and register are complete for A and B movements only within the stated day. No such completeness applies to D. Equal-authority physical counts of the same boundary and cutoff remain competing evidence unless a recount or authorized correction resolves them. A later filename does not give precedence. A pale or obscured numeral in a scan requires visual review and corroboration. An OCR guess is not a signed quantity. If available evidence does not establish a unique accepted amount, report the missing argument without inventing a number or asserting that the shipment necessarily failed.",
+      "locator": {
+        "kind": "text",
+        "start_line": 9,
+        "end_line": 9,
+        "start_character": 2118,
+        "end_character": 2869,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    }
+  ],
+  "tools": {
+    "python-stdlib": "3.14.8"
+  },
+  "warnings": [],
+  "complete": true,
+  "status": "ready"
+}

@@ -1,0 +1,35 @@
+{
+  "scope": "Final extended implementation and ten synthetic dossiers; no population-level reliability or real-client certification claim.",
+  "dossiers": 10,
+  "new_dossiers": 5,
+  "report_audits": 20,
+  "new_report_audits": 10,
+  "original_claims": 237,
+  "atomic_findings": 250,
+  "checked_theorem_declarations": 211,
+  "declaration_and_target_checks": 429,
+  "final_editorial_agreement": {
+    "matched": 237,
+    "total": 237,
+    "qualification": "After transparent clarification and full re-audit of one ambiguous fixture claim. Original extended comparison 155/156 retained."
+  },
+  "tests": {
+    "passed": 91,
+    "skipped": 0,
+    "log": "../../tests/validation.log"
+  },
+  "fresh_reproductions": {
+    "passed": 20,
+    "records": "../reproduction.json"
+  },
+  "additional_checker_reproduction": {
+    "status": "passed",
+    "record": "../reproduction-06-procurement-contract-mixed.json",
+    "assurance": "Fresh replay through the same Lean kernel, not an independent kernel implementation."
+  },
+  "portable_package_current_hashes_verified": true,
+  "scale_record": "scale.json",
+  "semantic_review": "semantic-review/review.json",
+  "implementation_review": "code-review/review.md",
+  "retained_workspaces": "../../tmp/README.md"
+}

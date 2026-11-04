@@ -1,0 +1,7 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target015.lean
+Audit.populationNonentailment : Audit.compatible Audit.quiet ∧
+  Audit.compatible Audit.extraAmount ∧
+    Audit.populationTotal Audit.quiet = 50000 ∧ Audit.populationTotal Audit.extraAmount ≠ 50000
+'Audit.populationNonentailment' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.155]

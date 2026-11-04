@@ -1,0 +1,13 @@
+{
+  "origin": "2028-04-10T00:00:00Z",
+  "method": "Python datetime subtraction independently checks handwritten Lean minute offsets; all strings interpreted in the common UTC calendar.",
+  "offsets": {
+    "C-101 approval": 520,
+    "C-101 start": 540,
+    "C-102 declaration": 605,
+    "C-102 start": 615,
+    "C-102 countersignature": 2055,
+    "C-103 approval/start": 690,
+    "C-104 start": 800
+  }
+}

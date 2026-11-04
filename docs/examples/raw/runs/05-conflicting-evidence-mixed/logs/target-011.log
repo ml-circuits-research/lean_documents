@@ -1,0 +1,3 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target011.lean
+Audit.conditionalReadiness : ∀ (Smoke Security Ready : Prop), (Smoke ∧ Security → Ready) → Smoke → Security → Ready
+'Audit.conditionalReadiness' does not depend on any axioms

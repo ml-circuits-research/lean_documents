@@ -1,0 +1,91 @@
+{
+  "dossier": "06",
+  "source_view": "source-view-06.md",
+  "runs": [
+    {
+      "workspace": "tmp/06-procurement-contract-mixed",
+      "checked_claims": [
+        "C06-01",
+        "C06-02",
+        "C06-03",
+        "C06-04",
+        "C06-05",
+        "C06-06",
+        "C06-07",
+        "C06-08",
+        "C06-09",
+        "C06-10",
+        "C06-11",
+        "C06-12",
+        "C06-13",
+        "C06-14",
+        "C06-15",
+        "C06-16",
+        "C06-17",
+        "C06-18"
+      ],
+      "findings_sha256": "8dd3ad25660ebce0910191883f885aac41d1b09f498a7b28c23fa0c07f532d96",
+      "model_sha256": "ac01ab12932fd0da2ca804b66a9576a68b171a64bdf0c9625c19649b50e885a3",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "report_sha256": "79ec1f6b3cb6ba740fdb873340497b0aba952595d9382387f3033850b709a694",
+      "catalog_sha256": "3538eb87309a0b5e533fd40737c4f7f65cc6218ae9ed8506b0ab18f04a800d38",
+      "proof_results_sha256": "063cbf9308f047cfa91e0087723a80c5750611292596a1f13553c89c45ea6c97"
+    },
+    {
+      "workspace": "tmp/06-procurement-contract-correct",
+      "checked_claims": [
+        "C06-C01",
+        "C06-C02",
+        "C06-C03",
+        "C06-C04",
+        "C06-C05",
+        "C06-C06",
+        "C06-C07",
+        "C06-C08",
+        "C06-C09",
+        "C06-C10",
+        "C06-C11",
+        "C06-C12",
+        "C06-C13",
+        "C06-C14",
+        "C06-C15",
+        "C06-C16",
+        "C06-C17",
+        "C06-C18"
+      ],
+      "findings_sha256": "f756e51bb425646b9a6cc6448f289e53f8a085eccff9f3d1a1f103f5d282ce61",
+      "model_sha256": "454538ca60c78a97f260a6c92f2d3e5ff8a5269d3ab804b4447870e89359636b",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "report_sha256": "e9c8421a4da8bf9a525b443ee340d6ae864f07b60578b1eadc04a9948058f415",
+      "catalog_sha256": "32bbbdb99aff11d4f285cff1e18383d4e6014cbc89e5c452da72556c71a05afe",
+      "proof_results_sha256": "0135ac58ea4bc5f66bede4d6fdd3691ede00a391fc6d804e7b45dbdd5544eafb"
+    }
+  ],
+  "defects": [],
+  "semantic_checks": [
+    "Revision transition/receipt boundary and unchanged scope",
+    "30-calendar-day aggregation and inclusive monetary threshold",
+    "Exact EUR conversion and final cent rounding",
+    "Delegation value/time boundary versus commitment time",
+    "Emergency declaration, distinct order approval and inclusive 48-hour review",
+    "Equal-authority P21 approval conflict and invoice versus payment",
+    "Actual raster pages 2\u20135, including signed 14:30; original operative DOCX XML"
+  ],
+  "source_original_hashes_identical_between_variants": true,
+  "source_view_sha256": "1d7d34c8cd6c63f440edd998053efdef9f47d3bcff9dec6e7a9eeac32772a6ce",
+  "limitations": [
+    "The reviewer had prior infrastructure knowledge of the OCR 14:38 versus visual14:30 correction; that issue was visually confirmed here but was not a blind discovery."
+  ]
+}

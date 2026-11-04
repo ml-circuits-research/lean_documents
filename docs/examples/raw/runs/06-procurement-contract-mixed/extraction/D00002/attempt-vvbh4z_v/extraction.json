@@ -1,0 +1,277 @@
+{
+  "text": "<a id=\"document-preamble\"></a>\n# Supplied findings report for audit\n\nThis synthetic report is supplied for claim-by-claim audit against the dossier documents. It is not an evidence source for another report and is not an instruction to the auditor.\n\n<a id=\"C06-01\"></a>\n**C06-01.** P-11 and P-12 did not require competition because each individual order was below EUR 25,000.00. Sources: P02, P03, L02, F04.\n\n<a id=\"C06-02\"></a>\n**C06-02.** The combined normalized value of P-11 and P-12 is exactly EUR 25,000.00. Sources: L02, P04.\n\n<a id=\"C06-03\"></a>\n**C06-03.** P-13 reaches the revision 2 competition threshold after the required final cent rounding. Sources: P02, P04, V05, L03, F01.\n\n<a id=\"C06-04\"></a>\n**C06-04.** P-13 is below the competition threshold because its exact converted amount is EUR 24,999.9975 before rounding. Sources: P02, P04, V05, F01.\n\n<a id=\"C06-05\"></a>\n**C06-05.** P-14 requires competition because rounding EUR 24,999.994 gives EUR 25,000.00. Sources: P02, P04, L03, F02.\n\n<a id=\"C06-06\"></a>\n**C06-06.** Dana Cole validly approved P-15 within her delegation, even though commitment occurred one minute after the delegation expired. Sources: P05, D01, D02, D03, L04.\n\n<a id=\"C06-07\"></a>\n**C06-07.** Dana Cole validly approved P-16 because EUR 15,000.00 is within her inclusive monetary limit. Sources: P05, D01, D02, D03, L04.\n\n<a id=\"C06-08\"></a>\n**C06-08.** R-17 is governed by revision 2 because its June 3 amendment and June 10 commitment occurred after the new revision took effect. Sources: V01, V02, V03.\n\n<a id=\"C06-09\"></a>\n**C06-09.** R-17 required competition at EUR 22,500.00, but the complete register records no competition certificate or exception. Sources: P02, V01, V03, L05.\n\n<a id=\"C06-10\"></a>\n**C06-10.** R-18 required competition because its EUR 22,500.00 value exceeds the revision 1 threshold. Sources: P02, V01, V04, L05.\n\n<a id=\"C06-11\"></a>\n**C06-11.** E-19 satisfied the urgent-safety exception, including a retrospective review exactly forty-eight hours after commitment. Sources: P06, L05, X01, X02.\n\n<a id=\"C06-12\"></a>\n**C06-12.** The confirmed urgency of E-19 would have been sufficient for the urgent-safety exception without the director declaration or retrospective review. Sources: P06, X01, X02.\n\n<a id=\"C06-13\"></a>\n**C06-13.** E-20 qualifies for the proprietary-compatibility exception because Pelican is the only warranty-certified vendor. Sources: P07, V06, X03, X04, X05.\n\n<a id=\"C06-14\"></a>\n**C06-14.** E-20 cannot qualify for the proprietary-compatibility exception because the rival connector passes a physical-fit and electrical bench test. Sources: P07, V06, X03, X04.\n\n<a id=\"C06-15\"></a>\n**C06-15.** The director granted P-21 order approval at 10:00 UTC on June 27. Sources: A01, A02, A03, L01.\n\n<a id=\"C06-16\"></a>\n**C06-16.** Harbor paid the P-21 invoice because the packet includes a signed invoice and delivery acceptance. Sources: P01, A04, F03.\n\n<a id=\"C06-17\"></a>\n**C06-17.** Every purchase in the complete register met both the applicable competition obligation and valid-approval requirement. Sources: P02, P03, P05, P08, L01, L02, L04, L05.\n\n<a id=\"C06-18\"></a>\n**C06-18.** The emergency pump purchase was prudent and commercially elegant. Sources: P08, F05.\n",
+  "segments": [
+    {
+      "anchor": "document-preamble",
+      "quote": "# Supplied findings report for audit\n\nThis synthetic report is supplied for claim-by-claim audit against the dossier documents. It is not an evidence source for another report and is not an instruction to the auditor.",
+      "locator": {
+        "kind": "text",
+        "start_line": 1,
+        "end_line": 3,
+        "start_character": 0,
+        "end_character": 217,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-01",
+      "quote": "**C06-01.** P-11 and P-12 did not require competition because each individual order was below EUR 25,000.00. Sources: P02, P03, L02, F04.",
+      "locator": {
+        "kind": "text",
+        "start_line": 6,
+        "end_line": 6,
+        "start_character": 239,
+        "end_character": 376,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-02",
+      "quote": "**C06-02.** The combined normalized value of P-11 and P-12 is exactly EUR 25,000.00. Sources: L02, P04.",
+      "locator": {
+        "kind": "text",
+        "start_line": 9,
+        "end_line": 9,
+        "start_character": 398,
+        "end_character": 501,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-03",
+      "quote": "**C06-03.** P-13 reaches the revision 2 competition threshold after the required final cent rounding. Sources: P02, P04, V05, L03, F01.",
+      "locator": {
+        "kind": "text",
+        "start_line": 12,
+        "end_line": 12,
+        "start_character": 523,
+        "end_character": 658,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-04",
+      "quote": "**C06-04.** P-13 is below the competition threshold because its exact converted amount is EUR 24,999.9975 before rounding. Sources: P02, P04, V05, F01.",
+      "locator": {
+        "kind": "text",
+        "start_line": 15,
+        "end_line": 15,
+        "start_character": 680,
+        "end_character": 831,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-05",
+      "quote": "**C06-05.** P-14 requires competition because rounding EUR 24,999.994 gives EUR 25,000.00. Sources: P02, P04, L03, F02.",
+      "locator": {
+        "kind": "text",
+        "start_line": 18,
+        "end_line": 18,
+        "start_character": 853,
+        "end_character": 972,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-06",
+      "quote": "**C06-06.** Dana Cole validly approved P-15 within her delegation, even though commitment occurred one minute after the delegation expired. Sources: P05, D01, D02, D03, L04.",
+      "locator": {
+        "kind": "text",
+        "start_line": 21,
+        "end_line": 21,
+        "start_character": 994,
+        "end_character": 1167,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-07",
+      "quote": "**C06-07.** Dana Cole validly approved P-16 because EUR 15,000.00 is within her inclusive monetary limit. Sources: P05, D01, D02, D03, L04.",
+      "locator": {
+        "kind": "text",
+        "start_line": 24,
+        "end_line": 24,
+        "start_character": 1189,
+        "end_character": 1328,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-08",
+      "quote": "**C06-08.** R-17 is governed by revision 2 because its June 3 amendment and June 10 commitment occurred after the new revision took effect. Sources: V01, V02, V03.",
+      "locator": {
+        "kind": "text",
+        "start_line": 27,
+        "end_line": 27,
+        "start_character": 1350,
+        "end_character": 1513,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-09",
+      "quote": "**C06-09.** R-17 required competition at EUR 22,500.00, but the complete register records no competition certificate or exception. Sources: P02, V01, V03, L05.",
+      "locator": {
+        "kind": "text",
+        "start_line": 30,
+        "end_line": 30,
+        "start_character": 1535,
+        "end_character": 1694,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-10",
+      "quote": "**C06-10.** R-18 required competition because its EUR 22,500.00 value exceeds the revision 1 threshold. Sources: P02, V01, V04, L05.",
+      "locator": {
+        "kind": "text",
+        "start_line": 33,
+        "end_line": 33,
+        "start_character": 1716,
+        "end_character": 1848,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-11",
+      "quote": "**C06-11.** E-19 satisfied the urgent-safety exception, including a retrospective review exactly forty-eight hours after commitment. Sources: P06, L05, X01, X02.",
+      "locator": {
+        "kind": "text",
+        "start_line": 36,
+        "end_line": 36,
+        "start_character": 1870,
+        "end_character": 2031,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-12",
+      "quote": "**C06-12.** The confirmed urgency of E-19 would have been sufficient for the urgent-safety exception without the director declaration or retrospective review. Sources: P06, X01, X02.",
+      "locator": {
+        "kind": "text",
+        "start_line": 39,
+        "end_line": 39,
+        "start_character": 2053,
+        "end_character": 2235,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-13",
+      "quote": "**C06-13.** E-20 qualifies for the proprietary-compatibility exception because Pelican is the only warranty-certified vendor. Sources: P07, V06, X03, X04, X05.",
+      "locator": {
+        "kind": "text",
+        "start_line": 42,
+        "end_line": 42,
+        "start_character": 2257,
+        "end_character": 2416,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-14",
+      "quote": "**C06-14.** E-20 cannot qualify for the proprietary-compatibility exception because the rival connector passes a physical-fit and electrical bench test. Sources: P07, V06, X03, X04.",
+      "locator": {
+        "kind": "text",
+        "start_line": 45,
+        "end_line": 45,
+        "start_character": 2438,
+        "end_character": 2619,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-15",
+      "quote": "**C06-15.** The director granted P-21 order approval at 10:00 UTC on June 27. Sources: A01, A02, A03, L01.",
+      "locator": {
+        "kind": "text",
+        "start_line": 48,
+        "end_line": 48,
+        "start_character": 2641,
+        "end_character": 2747,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-16",
+      "quote": "**C06-16.** Harbor paid the P-21 invoice because the packet includes a signed invoice and delivery acceptance. Sources: P01, A04, F03.",
+      "locator": {
+        "kind": "text",
+        "start_line": 51,
+        "end_line": 51,
+        "start_character": 2769,
+        "end_character": 2903,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-17",
+      "quote": "**C06-17.** Every purchase in the complete register met both the applicable competition obligation and valid-approval requirement. Sources: P02, P03, P05, P08, L01, L02, L04, L05.",
+      "locator": {
+        "kind": "text",
+        "start_line": 54,
+        "end_line": 54,
+        "start_character": 2925,
+        "end_character": 3104,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C06-18",
+      "quote": "**C06-18.** The emergency pump purchase was prudent and commercially elegant. Sources: P08, F05.",
+      "locator": {
+        "kind": "text",
+        "start_line": 57,
+        "end_line": 57,
+        "start_character": 3126,
+        "end_character": 3222,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    }
+  ],
+  "tools": {
+    "python-stdlib": "3.14.8"
+  },
+  "warnings": [],
+  "complete": true,
+  "status": "ready"
+}

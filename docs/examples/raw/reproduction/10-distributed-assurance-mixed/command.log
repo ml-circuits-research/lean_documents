@@ -1,0 +1,275 @@
+$ python3 /home/salboaie/work/lean_documents/skills/evidence-to-proof-review/scripts/audit.py check --workspace /home/salboaie/work/lean_documents/tmp/reproduction-10-distributed-assurance-mixed-fcvan4cv --lean /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lean
+{
+  "checked_at": "2026-11-04T16:59:03.437962+00:00",
+  "status": "passed",
+  "lean_version_required": "4.24.0",
+  "independent_checker": {
+    "status": "not_run",
+    "reason": "No external checker is configured; no independent-kernel assurance is claimed."
+  },
+  "targets": [
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim01",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-001.log",
+      "check_file": "checks/Target001.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim02",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-002.log",
+      "check_file": "checks/Target002.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim03",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-003.log",
+      "check_file": "checks/Target003.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim04",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-004.log",
+      "check_file": "checks/Target004.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim05",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-005.log",
+      "check_file": "checks/Target005.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim06",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-006.log",
+      "check_file": "checks/Target006.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim07",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-007.log",
+      "check_file": "checks/Target007.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim08",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-008.log",
+      "check_file": "checks/Target008.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim09",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-009.log",
+      "check_file": "checks/Target009.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim13",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-010.log",
+      "check_file": "checks/Target010.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim01",
+      "target": "Audit.n58Authorized = false",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-011.log",
+      "check_file": "checks/Target011.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim02",
+      "target": "Audit.routeA true true = true",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-012.log",
+      "check_file": "checks/Target012.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim03",
+      "target": "Audit.p09Covers 21 = false",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-013.log",
+      "check_file": "checks/Target013.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim04",
+      "target": "Audit.northOperator 21 ≠ Audit.Principal.ada",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-014.log",
+      "check_file": "checks/Target014.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim05",
+      "target": "Audit.delegated 41 20 = true",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-015.log",
+      "check_file": "checks/Target015.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim06",
+      "target": "Audit.delegated 51 20 = false ∧ Audit.routeB true (Audit.delegated 51 20) true = false",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-016.log",
+      "check_file": "checks/Target016.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim07",
+      "target": "Audit.exceptionRoute 57 22 10 true true = true",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-017.log",
+      "check_file": "checks/Target017.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim08",
+      "target": "Audit.boardScope 58 22 10 = false",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-018.log",
+      "check_file": "checks/Target018.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim09",
+      "target": "(9 : Nat) < 10 ∧ 10 < 11",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-019.log",
+      "check_file": "checks/Target019.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim13",
+      "target": "∃ reportUnchanged : Bool, reportUnchanged = true ∧ Audit.reviewRequirement true false = false",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-020.log",
+      "check_file": "checks/Target020.lean",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b"
+    }
+  ],
+  "limitations": "Lean checks the encoded propositions, not source authenticity, extraction accuracy, completeness, legal authority, or the adequacy of the model. Source filters are defensive checks, not a sandbox for hostile Lean code.",
+  "audit_contract": {
+    "version": 1,
+    "coverage": "legacy_unreconciled",
+    "limitation": "This older bundle has no enforced claim register or structured argument audit."
+  },
+  "input_hashes": {
+    "findings.json": "7b740fca750713de5f2a3b93c145d4775e7eae46e3b6e9ed7c6e9daf7c24821a",
+    "input/manifest.json": "48614badff679ecf0c64d9f4d7396c0716722dd8f266920e2a515639b9205e37",
+    "models/Audit.lean": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b",
+    "extraction-review.json": "edd7560f3c76006c238d20d27b9ab56dca67baccaa9bf333665eb995872c2177",
+    "extraction-lock.json": "b416da443c5e2c7fb7204c3465d35ad25e4ea29faedda92b8db18f212dd6e07f"
+  },
+  "lean_version_observed": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "execution_status": "executed",
+  "artifact_hashes": {
+    "environment.lock": "5ed2d0b6eff663ee335df7c00665aba138d8a97e2a51e08dc995d204cdaa5ce9",
+    "lakefile.toml": "01a2fcdf9392e14b2fcf1c49259f3371c897156e002f56d678736f2b1e336653",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "source-ledger.jsonl": "e8087eb14bed1f0d5f83f7b7d607686cfd7537835def1e62c7f5c6178443f8cf",
+    "logs/lake-build.log": "e44e89adb11f6412ffb4cdd441703fdcca2e65875ed98d8f825cbb69631378bd",
+    "logs/lean-version.log": "52f1249d3d7d977e62ab6494d04ca8a6e1ccd083d113b69aa7f400bc21cc8ee5",
+    "logs/target-001.log": "ad8e522c4489db8fef616747bcdaf4d98da552cea70cc32c2e681fb6aea438b1",
+    "logs/target-002.log": "4a10ba2636ebb0d5d99cc18d7f4501c51ccb4dd207e8ce2a6b4dd2caef72c5c8",
+    "logs/target-003.log": "935151cdb83e671157eadba5a60e9bdcecc36dbe7b1b87eb9cea8298a6fbcff0",
+    "logs/target-004.log": "ac6812183dd9545090f95cb94884a0044485d1059a94a94be3abbc72debf4cfa",
+    "logs/target-005.log": "87fb44f61a0c7827951fae398d061498d1e995d37978ed4effbeec350e46de03",
+    "logs/target-006.log": "23cff6c9c2827cd91f8da7dda25ca38c8675087e8eaf2023be73d0724c82d2c3",
+    "logs/target-007.log": "ea8f71089fbd909db1a745682deca162e715ac42ed6b408e8192ff4da205282a",
+    "logs/target-008.log": "14568c62f46c9e3f268fb3d1b86013ebeb3e8b859f96180f1fe50fd1febb3ead",
+    "logs/target-009.log": "3ca14ed8efe7ba3c10cfe060ff210eb3dda5e1460f604310edffda1a68a351c8",
+    "logs/target-010.log": "feb18e1316e01b84e2f048d51236f0216ab5485e6cb40f92b51a8ce97fb127a6",
+    "logs/target-011.log": "d89ceb86f05de221e4c77b5d0f4740769dee1e87729d795fb32cd8b4d4c034f1",
+    "logs/target-012.log": "4c9aed02642102ae3fa6edd7a9e13419a0422245f5953e1a0887998e66d3b3d9",
+    "logs/target-013.log": "8521f0a3f0c2d86673aad8f239242fa7b158b4569bba915989e56c5bc10acbe9",
+    "logs/target-014.log": "75d7847db66975f54ec77e5900738c762e989ef363b90c9337751486e987ef26",
+    "logs/target-015.log": "b28deedbed1cb615d9dad948461fe10f2dd52d1581fc6c092f1011b92a614c99",
+    "logs/target-016.log": "0d5d917c55fe8f7fd7429d2ec89ff3ab5c219bd1f399e2c354d97cfa9373b491",
+    "logs/target-017.log": "f1fc564632877a42135dab244e671dc71e053d5801e43f4c04a08ea66e3eeaad",
+    "logs/target-018.log": "30791e9ecda2ec63b7d52812580f62977e9e70613b79d0ac5ae7a322f7090932",
+    "logs/target-019.log": "0bfe59101933d5ca1b06d623f9c18ff9ecf5941dc2f33f7b47c4690af6f27f8f",
+    "logs/target-020.log": "c594a2c00354ff8ef8413f0ea771d502afe76b4bfe2655d555b307871623c22a",
+    "checks/Target001.lean": "28bf85852003c030a5d5e794d7076c23060aa11cbc83f43745c86dade468bfcc",
+    "checks/Target002.lean": "49faf7b54836825c4a697bf9824d6cffee8a9b004de2a3d8dae1f82fdc774c38",
+    "checks/Target003.lean": "cc4cd7b9417047225f71a0dfb1e01980becc57163e035e214beab5f902c9d218",
+    "checks/Target004.lean": "3674ff2ee0e9ca25460d45deb923dd310c9419c55023c87f6cafb76272bb3233",
+    "checks/Target005.lean": "dd925c02327dc162208c30b3f7ef6190bbaa41676f681fef4d56c241e02da667",
+    "checks/Target006.lean": "753b545177d6050815ec7700ca3bf6dabaf6ecb90a27384c5aaf7c182d9fcce3",
+    "checks/Target007.lean": "708019b19f7d6b5c204da34fe6aa035e3e217d8b0d110275514b4b5e52436162",
+    "checks/Target008.lean": "d4bfde4fbb8cd58070b4942f22b91d714deacb4185a51c27a38e28f4e34e867b",
+    "checks/Target009.lean": "2a009f5725fa5c95e8be24e51a4ed31577c4ce0bbc119004ef4e41de7d490600",
+    "checks/Target010.lean": "1a1c353d2c4f239de9324866ea4c8f602588aec2e172cc665491e114cb2ee409",
+    "checks/Target011.lean": "82ee003194edde3c20a0995db0014f833d5386d57f8f0fbf807f5ecb90d0fa3c",
+    "checks/Target012.lean": "146f213ab91f5815ba3f94a938ed2505e99076e51ecd8a2340f153f0aa3a4290",
+    "checks/Target013.lean": "271360cdb32d021ef1fe1d6c5954898f04d7582574bef83c61c3f378a0a8fa43",
+    "checks/Target014.lean": "ac1627fe5de981c8a141647525bb3fbe59ff0abee2a3625e359945fb0c1f189c",
+    "checks/Target015.lean": "77455975f0fb50d4f971421f12488e903a8f146cb0dd9a018710790640445b87",
+    "checks/Target016.lean": "f7db3d68d4f2bfec03f82cd09db5dbaa8a68046eca09c218b35fafb54bdcc11f",
+    "checks/Target017.lean": "a21a91f485ce85bb7b9da309acf5fa247ca1bb2c2800567d5f24cd575f630696",
+    "checks/Target018.lean": "b1c60168a6cfc40137999518a1ffd3ab161cc532f980f9ccac226d05b4a48230",
+    "checks/Target019.lean": "99246938bf29a1bf8d3f658dc9e99784d605eda699002210d98f952b5160e516",
+    "checks/Target020.lean": "63328e8c7fdc2d696a000d5aadeecac304832368974556aeea369534b47feeab"
+  }
+}

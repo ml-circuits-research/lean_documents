@@ -1,0 +1,26 @@
+[
+  {
+    "path": "input/sources/approval-attestations.scan.pdf.md",
+    "anchor": "pdf-page-0002",
+    "correction_file": "visual-review/pdf-page-0002-reviewed.txt",
+    "basis": "Actually inspected original raster page with view_image; only visible OCR marker/time/coverage-ID character errors corrected; paragraph text and line order otherwise retained."
+  },
+  {
+    "path": "input/sources/approval-attestations.scan.pdf.md",
+    "anchor": "pdf-page-0003",
+    "correction_file": "visual-review/pdf-page-0003-reviewed.txt",
+    "basis": "Actually inspected original raster page with view_image; only visible OCR marker/time/coverage-ID character errors corrected; paragraph text and line order otherwise retained."
+  },
+  {
+    "path": "input/sources/approval-attestations.scan.pdf.md",
+    "anchor": "pdf-page-0004",
+    "correction_file": "visual-review/pdf-page-0004-reviewed.txt",
+    "basis": "Actually inspected original raster page with view_image; only visible OCR marker/time/coverage-ID character errors corrected; paragraph text and line order otherwise retained."
+  },
+  {
+    "path": "input/sources/approval-attestations.scan.pdf.md",
+    "anchor": "pdf-page-0005",
+    "correction_file": "visual-review/pdf-page-0005-reviewed.txt",
+    "basis": "Actually inspected original raster page with view_image; only visible OCR marker/time/coverage-ID character errors corrected; paragraph text and line order otherwise retained."
+  }
+]

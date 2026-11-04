@@ -1,0 +1,144 @@
+[
+  {
+    "claim_id": "E-01",
+    "report_anchor": "E-01",
+    "report_quote": "Supplier Orion passed clearance.",
+    "question": "What does the sole supplied empty source establish about this exact assertion?",
+    "evidence": [],
+    "rules": [
+      "Use the inspected source contents and ordinary open-world inference; no event-completeness rule was supplied."
+    ],
+    "assumptions": [
+      "The supplied source set is the authorized search scope; no external evidence is assumed."
+    ],
+    "reasoning": [
+      "The dossier supplies no event fact establishing a pass."
+    ],
+    "semantic_state": "undetermined",
+    "argument_status": "insufficient_support",
+    "formal_status": "not_attempted",
+    "proofs": [],
+    "limits": [
+      "The model neither authenticates the source nor determines actual clearance."
+    ],
+    "recommendation": "Replace the event assertion with an explicit insufficient-support finding or supply clearance evidence.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "Does the statement concern the empty supplied file or an actual clearance event?",
+      "decision_criteria": [
+        "For file content use inspected bytes; for entailment require all admissible completions to agree."
+      ],
+      "scope": "The sole supplied source file and supplier Orion; no time period supplied.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "not_provided",
+      "report_items": [],
+      "independent_reasoning": [
+        "The dossier supplies no event fact establishing a pass."
+      ],
+      "evidence_refs": [],
+      "proof_refs": [],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "Finite evidence model with both Bool completions; do not infer a real-world event from no observations.",
+      "correspondence": []
+    },
+    "support_search": {
+      "scope": "Inspected all bytes of the sole source empty.txt and found zero UTF-8 characters.",
+      "queries": [],
+      "inspected": [],
+      "uninspected_reason": "The sole supplied source was inspected but is zero bytes, so it has no source anchors to cite.",
+      "limitations": [
+        "No outside records were supplied or searched; absence is bounded to this empty dossier."
+      ],
+      "conclusion": "The dossier supplies no event fact establishing a pass."
+    }
+  },
+  {
+    "claim_id": "E-02",
+    "report_anchor": "E-02",
+    "report_quote": "Supplier Orion failed clearance because no clearance is recorded in the supplied dossier.",
+    "question": "What does the sole supplied empty source establish about this exact assertion?",
+    "evidence": [],
+    "rules": [
+      "Use the inspected source contents and ordinary open-world inference; no event-completeness rule was supplied."
+    ],
+    "assumptions": [
+      "The supplied source set is the authorized search scope; no external evidence is assumed."
+    ],
+    "reasoning": [
+      "A passing clearance with no recorded assertion satisfies the empty dossier, so absence of a record does not imply failed clearance. Actual clearance remains unknown."
+    ],
+    "semantic_state": "undetermined",
+    "argument_status": "invalid_inference",
+    "formal_status": "auxiliary",
+    "proofs": [
+      {
+        "module": "EmptyEvidence",
+        "theorem": "EmptyEvidence.missingRecordDoesNotImplyFailure",
+        "relation": "auxiliary",
+        "target": "¬ (∀ passed : Bool, EmptyEvidence.admissible passed → passed = false)"
+      }
+    ],
+    "limits": [
+      "The model neither authenticates the source nor determines actual clearance."
+    ],
+    "recommendation": "Replace the event assertion with an explicit insufficient-support finding or supply clearance evidence.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "Does the statement concern the empty supplied file or an actual clearance event?",
+      "decision_criteria": [
+        "For file content use inspected bytes; for entailment require all admissible completions to agree."
+      ],
+      "scope": "The sole supplied source file and supplier Orion; no time period supplied.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "invalid",
+      "report_items": [
+        {
+          "kind": "inference",
+          "report_anchor": "E-02",
+          "report_quote": "Supplier Orion failed clearance because no clearance is recorded in the supplied dossier.",
+          "assessment": "contradicted",
+          "reasoning": "A passing clearance with no recorded assertion satisfies the empty dossier, so absence of a record does not imply failed clearance. Actual clearance remains unknown.",
+          "evidence_refs": [],
+          "proof_refs": [
+            0
+          ]
+        }
+      ],
+      "independent_reasoning": [
+        "A passing clearance with no recorded assertion satisfies the empty dossier, so absence of a record does not imply failed clearance. Actual clearance remains unknown."
+      ],
+      "evidence_refs": [],
+      "proof_refs": [
+        0
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "Finite evidence model with both Bool completions; do not infer a real-world event from no observations.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "A passing clearance with no recorded assertion satisfies the empty dossier, so absence of a record does not imply failed clearance. Actual clearance remains unknown. See model-notes.md for the empty-source mapping."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Inspected all bytes of the sole source empty.txt and found zero UTF-8 characters.",
+      "queries": [],
+      "inspected": [],
+      "uninspected_reason": "The sole supplied source was inspected but is zero bytes, so it has no source anchors to cite.",
+      "limitations": [
+        "No outside records were supplied or searched; absence is bounded to this empty dossier."
+      ],
+      "conclusion": "A passing clearance with no recorded assertion satisfies the empty dossier, so absence of a record does not imply failed clearance. Actual clearance remains unknown."
+    }
+  }
+]

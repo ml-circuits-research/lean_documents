@@ -1,0 +1,516 @@
+{
+  "text": "<a id=\"docx-p-0001\"></a>\n[V2-01] SYNTHETIC H-7 SPECIFICATION, REVISION 2. Revision 2 takes effect at 00:00 on 1 June 2033 for newly executed tests. It supersedes revision 1 for that prospective scope. Historical tests retain their historical approved rules unless explicitly retested; no retroactive reassessment is required here. Test execution time determines the applicable revision, not report publication time, file modification time, or the order in which an auditor discovers files. Identical serial numbers may appear in different periods because a unit can be retested. Every conclusion must identify the actual event being judged rather than attach a timeless pass or fail label to a serial number.\n\n<a id=\"docx-p-0002\"></a>\n[V2-02] CURRENT ACCEPTANCE TABLE. Every endpoint in the stated intervals is inclusive. A valid NORMAL delay of 100 milliseconds satisfies the numeric limit; 101 does not. The COLD route additionally requires a current cold-fixture certificate. There is no supplied HOT route, and no route below zero degrees. A table row cannot be applied without checking the environment and profile. The limits in this synthetic exercise are exact integer comparisons; realistic measurement error models are outside scope. The absence of an error model must not be filled by an invented uncertainty discount or an assumed rounding allowance.\n\n<a id=\"docx-table-0001-r0001-c0001-p0001\"></a>\nProfile\n\n<a id=\"docx-table-0001-r0001-c0002-p0001\"></a>\nEnvironment\n\n<a id=\"docx-table-0001-r0001-c0003-p0001\"></a>\nMaximum delay\n\n<a id=\"docx-table-0001-r0001-c0004-p0001\"></a>\nValid runs\n\n<a id=\"docx-table-0001-r0001-c0005-p0001\"></a>\nAdditional conditions\n\n<a id=\"docx-table-0001-r0002-c0001-p0001\"></a>\nNORMAL\n\n<a id=\"docx-table-0001-r0002-c0002-p0001\"></a>\n10 through 30 degrees Celsius\n\n<a id=\"docx-table-0001-r0002-c0003-p0001\"></a>\n100 milliseconds\n\n<a id=\"docx-table-0001-r0002-c0004-p0001\"></a>\n3 per unit\n\n<a id=\"docx-table-0001-r0002-c0005-p0001\"></a>\nBoth channels measured\n\n<a id=\"docx-table-0001-r0003-c0001-p0001\"></a>\nCOLD\n\n<a id=\"docx-table-0001-r0003-c0002-p0001\"></a>\n0 through 9 degrees Celsius\n\n<a id=\"docx-table-0001-r0003-c0003-p0001\"></a>\n150 milliseconds\n\n<a id=\"docx-table-0001-r0003-c0004-p0001\"></a>\n3 per unit\n\n<a id=\"docx-table-0001-r0003-c0005-p0001\"></a>\nBoth channels measured and cold-fixture certificate\n\n<a id=\"docx-table-0001-r0004-c0001-p0001\"></a>\nHOT\n\n<a id=\"docx-table-0001-r0004-c0002-p0001\"></a>\nAbove 30 degrees Celsius\n\n<a id=\"docx-table-0001-r0004-c0003-p0001\"></a>\nNo authorized threshold\n\n<a id=\"docx-table-0001-r0004-c0004-p0001\"></a>\nNo route\n\n<a id=\"docx-table-0001-r0004-c0005-p0001\"></a>\nNo qualification supplied\n\n<a id=\"docx-p-0023\"></a>\n[V2-03] RELEASE CONJUNCTION. The specified release route requires an applicable delay demonstration, current calibration at every contributing run, both sensor channels measured, closure of the required fault injections, and an authorized release signature. Each conjunct is necessary under this route. Their conjunction is sufficient only within the finite H-7 demonstration scope. A signature does not overwrite an explicit failed run. A favorable channel A result cannot establish an absent channel B result. An explicit recorded failure supplies a counterexample to a claim that all requirements passed; a missing measurement instead leaves a required argument unsupported. These evidentiary situations should not be collapsed into one generic negative verdict.\n\n<a id=\"docx-p-0024\"></a>\n[V2-04] INCORPORATED EXCEPTION. Annex X changes the NORMAL delay threshold for one named serial number and a specific time interval. It changes no other requirement. In particular, it does not expand the temperature range, waive channel B measurement, make expired calibration current, close fault injections, or delegate release signing authority. The applicable general rule and exception must be combined before comparing observed delay. A general threshold alone is an incomplete rule set for a unit covered by an exception. Conversely, resemblance to the exempt unit does not extend an exception to other serial numbers or later dates.\n\n<a id=\"docx-p-0025\"></a>\n[V2-05] VALIDITY AND TIME. A recorded clock synchronization failure invalidates the affected trace even if its printed delay is small. Repeated runs belong to their named unit and profile. Calibration is current only when the run timestamp is on or before the stated expiry instant. A renewal after a run is not retrospective unless an authorized statement explicitly says it is. The packet contains no such retrospective calibration statement. The analyst must distinguish an absent certificate from a certificate affirmatively showing expiry. Both may prevent an assurance argument, but only the latter supplies direct contrary evidence about calibration at the specific instant.\n\n<a id=\"docx-p-0026\"></a>\n[V2-06] REVIEW UNIVERSE. The named units are L01, N01, N02, N03, E17, and C01; X99 is an invalid demonstration trace. These cases do not constitute a random sample of a production population. No statistical inference about all manufactured controllers is supplied. A universal statement about the named valid runs can be refuted by one in-scope explicit run above its applicable threshold. A universal statement about all temperatures requires additional defined criteria and observations. Preserve successful bounded demonstrations while identifying unsupported extensions. Every name, signature, instrument, and event here is synthetic, so no conclusion should be mistaken for certification of a real product.\n",
+  "segments": [
+    {
+      "anchor": "docx-p-0001",
+      "quote": "[V2-01] SYNTHETIC H-7 SPECIFICATION, REVISION 2. Revision 2 takes effect at 00:00 on 1 June 2033 for newly executed tests. It supersedes revision 1 for that prospective scope. Historical tests retain their historical approved rules unless explicitly retested; no retroactive reassessment is required here. Test execution time determines the applicable revision, not report publication time, file modification time, or the order in which an auditor discovers files. Identical serial numbers may appear in different periods because a unit can be retested. Every conclusion must identify the actual event being judged rather than attach a timeless pass or fail label to a serial number.",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:p[1]",
+        "paragraph_index_in_story": 1,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": []
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-p-0002",
+      "quote": "[V2-02] CURRENT ACCEPTANCE TABLE. Every endpoint in the stated intervals is inclusive. A valid NORMAL delay of 100 milliseconds satisfies the numeric limit; 101 does not. The COLD route additionally requires a current cold-fixture certificate. There is no supplied HOT route, and no route below zero degrees. A table row cannot be applied without checking the environment and profile. The limits in this synthetic exercise are exact integer comparisons; realistic measurement error models are outside scope. The absence of an error model must not be filled by an invented uncertainty discount or an assumed rounding allowance.",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:p[2]",
+        "paragraph_index_in_story": 2,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": []
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0001-c0001-p0001",
+      "quote": "Profile",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[1]/w:tc[1]/w:p[1]",
+        "paragraph_index_in_story": 3,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 1,
+        "cell": 1
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0001-c0002-p0001",
+      "quote": "Environment",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[1]/w:tc[2]/w:p[1]",
+        "paragraph_index_in_story": 4,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 1,
+        "cell": 2
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0001-c0003-p0001",
+      "quote": "Maximum delay",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[1]/w:tc[3]/w:p[1]",
+        "paragraph_index_in_story": 5,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 1,
+        "cell": 3
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0001-c0004-p0001",
+      "quote": "Valid runs",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[1]/w:tc[4]/w:p[1]",
+        "paragraph_index_in_story": 6,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 1,
+        "cell": 4
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0001-c0005-p0001",
+      "quote": "Additional conditions",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[1]/w:tc[5]/w:p[1]",
+        "paragraph_index_in_story": 7,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 1,
+        "cell": 5
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0002-c0001-p0001",
+      "quote": "NORMAL",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[1]/w:p[1]",
+        "paragraph_index_in_story": 8,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 2,
+        "cell": 1
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0002-c0002-p0001",
+      "quote": "10 through 30 degrees Celsius",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[2]/w:p[1]",
+        "paragraph_index_in_story": 9,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 2,
+        "cell": 2
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0002-c0003-p0001",
+      "quote": "100 milliseconds",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[3]/w:p[1]",
+        "paragraph_index_in_story": 10,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 2,
+        "cell": 3
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0002-c0004-p0001",
+      "quote": "3 per unit",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[4]/w:p[1]",
+        "paragraph_index_in_story": 11,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 2,
+        "cell": 4
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0002-c0005-p0001",
+      "quote": "Both channels measured",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[2]/w:tc[5]/w:p[1]",
+        "paragraph_index_in_story": 12,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 2,
+        "cell": 5
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0003-c0001-p0001",
+      "quote": "COLD",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[1]/w:p[1]",
+        "paragraph_index_in_story": 13,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 3,
+        "cell": 1
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0003-c0002-p0001",
+      "quote": "0 through 9 degrees Celsius",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[2]/w:p[1]",
+        "paragraph_index_in_story": 14,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 3,
+        "cell": 2
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0003-c0003-p0001",
+      "quote": "150 milliseconds",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[3]/w:p[1]",
+        "paragraph_index_in_story": 15,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 3,
+        "cell": 3
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0003-c0004-p0001",
+      "quote": "3 per unit",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[4]/w:p[1]",
+        "paragraph_index_in_story": 16,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 3,
+        "cell": 4
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0003-c0005-p0001",
+      "quote": "Both channels measured and cold-fixture certificate",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[3]/w:tc[5]/w:p[1]",
+        "paragraph_index_in_story": 17,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 3,
+        "cell": 5
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0004-c0001-p0001",
+      "quote": "HOT",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[1]/w:p[1]",
+        "paragraph_index_in_story": 18,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 4,
+        "cell": 1
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0004-c0002-p0001",
+      "quote": "Above 30 degrees Celsius",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[2]/w:p[1]",
+        "paragraph_index_in_story": 19,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 4,
+        "cell": 2
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0004-c0003-p0001",
+      "quote": "No authorized threshold",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[3]/w:p[1]",
+        "paragraph_index_in_story": 20,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 4,
+        "cell": 3
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0004-c0004-p0001",
+      "quote": "No route",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[4]/w:p[1]",
+        "paragraph_index_in_story": 21,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 4,
+        "cell": 4
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-table-0001-r0004-c0005-p0001",
+      "quote": "No qualification supplied",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:tbl[1]/w:tr[4]/w:tc[5]/w:p[1]",
+        "paragraph_index_in_story": 22,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": [],
+        "table_index": 1,
+        "row": 4,
+        "cell": 5
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-p-0023",
+      "quote": "[V2-03] RELEASE CONJUNCTION. The specified release route requires an applicable delay demonstration, current calibration at every contributing run, both sensor channels measured, closure of the required fault injections, and an authorized release signature. Each conjunct is necessary under this route. Their conjunction is sufficient only within the finite H-7 demonstration scope. A signature does not overwrite an explicit failed run. A favorable channel A result cannot establish an absent channel B result. An explicit recorded failure supplies a counterexample to a claim that all requirements passed; a missing measurement instead leaves a required argument unsupported. These evidentiary situations should not be collapsed into one generic negative verdict.",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:p[3]",
+        "paragraph_index_in_story": 23,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": []
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-p-0024",
+      "quote": "[V2-04] INCORPORATED EXCEPTION. Annex X changes the NORMAL delay threshold for one named serial number and a specific time interval. It changes no other requirement. In particular, it does not expand the temperature range, waive channel B measurement, make expired calibration current, close fault injections, or delegate release signing authority. The applicable general rule and exception must be combined before comparing observed delay. A general threshold alone is an incomplete rule set for a unit covered by an exception. Conversely, resemblance to the exempt unit does not extend an exception to other serial numbers or later dates.",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:p[4]",
+        "paragraph_index_in_story": 24,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": []
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-p-0025",
+      "quote": "[V2-05] VALIDITY AND TIME. A recorded clock synchronization failure invalidates the affected trace even if its printed delay is small. Repeated runs belong to their named unit and profile. Calibration is current only when the run timestamp is on or before the stated expiry instant. A renewal after a run is not retrospective unless an authorized statement explicitly says it is. The packet contains no such retrospective calibration statement. The analyst must distinguish an absent certificate from a certificate affirmatively showing expiry. Both may prevent an assurance argument, but only the latter supplies direct contrary evidence about calibration at the specific instant.",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:p[5]",
+        "paragraph_index_in_story": 25,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": []
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-p-0026",
+      "quote": "[V2-06] REVIEW UNIVERSE. The named units are L01, N01, N02, N03, E17, and C01; X99 is an invalid demonstration trace. These cases do not constitute a random sample of a production population. No statistical inference about all manufactured controllers is supplied. A universal statement about the named valid runs can be refuted by one in-scope explicit run above its applicable threshold. A universal statement about all temperatures requires additional defined criteria and observations. Preserve successful bounded demonstrations while identifying unsupported extensions. Every name, signature, instrument, and event here is synthetic, so no conclusion should be mistaken for certification of a real product.",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:p[6]",
+        "paragraph_index_in_story": 26,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": []
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    }
+  ],
+  "tools": {
+    "python-stdlib": "3.14.8",
+    "docx-zip-xml": "Python zipfile and ElementTree 3.14.8"
+  },
+  "warnings": [
+    "DOCX segments follow body XML order, then header/footer members and notes/comments in member order. This is not rendered pagination or the placement of repeated page headers; no page coordinates are inferred."
+  ],
+  "complete": true,
+  "status": "ready"
+}

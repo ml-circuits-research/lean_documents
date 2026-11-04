@@ -1,0 +1,57 @@
+{
+  "html_pages": 30,
+  "broken_local_links": [],
+  "fixture_manifests": [
+    {
+      "dossier": "01-procedural-approval",
+      "verified_entries": 7,
+      "manifest_sha256": "a47de3df35c23ad08e43f1584544b495e37e510f35fdc0fba97577afbc08ccfa"
+    },
+    {
+      "dossier": "02-versioned-deadlines",
+      "verified_entries": 7,
+      "manifest_sha256": "02a1d7355506dbe283ac963802a9bd052b15a2eb1c017132cbc4c825eec87198"
+    },
+    {
+      "dossier": "03-audit-arithmetic",
+      "verified_entries": 7,
+      "manifest_sha256": "5766140b8efa19e94f0ee2a46884a629794f32fac026016bc63059451e758a33"
+    },
+    {
+      "dossier": "04-narrative-continuity",
+      "verified_entries": 7,
+      "manifest_sha256": "f6ae77be8d2030b70fe5443ecf9802d8cbee3b1fd14874d645dac8eb75087dbe"
+    },
+    {
+      "dossier": "05-conflicting-evidence",
+      "verified_entries": 8,
+      "manifest_sha256": "9798f24c15ff9e30e7e89e5d6a7faa0bfa3ad3ef6bf2f1d871b3c5f0d8c0ba7d"
+    },
+    {
+      "dossier": "06-procurement-contract",
+      "verified_entries": 10,
+      "manifest_sha256": "cc59710efa962173652468e7da0f3449daeb22cc1855e2269692c7b9eb2d2be6"
+    },
+    {
+      "dossier": "07-incident-response",
+      "verified_entries": 10,
+      "manifest_sha256": "557dfbc1424589fe22e4b91f0adbfe6cd420912270ce6652e1e9779f55f0e2ab"
+    },
+    {
+      "dossier": "08-scanned-inventory",
+      "verified_entries": 10,
+      "manifest_sha256": "8006db58e9cd0f8270f94efcf0623e599d11ac4f68040d4a374db7300a4ecce1"
+    },
+    {
+      "dossier": "09-multiversion-safety",
+      "verified_entries": 10,
+      "manifest_sha256": "b184d71801218d219a0a77bd94bf325888dc256a1768faa2741a348f586756e4"
+    },
+    {
+      "dossier": "10-distributed-assurance",
+      "verified_entries": 70,
+      "manifest_sha256": "4a6d31ddac878bb34f82a7ef42437697d3e5de65112c00bb64ed7148ce1bf359"
+    }
+  ],
+  "final_checker_link_checked": true
+}

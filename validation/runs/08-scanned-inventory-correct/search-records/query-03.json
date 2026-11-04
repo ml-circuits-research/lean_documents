@@ -1,0 +1,129 @@
+{
+  "query": "\"147\" OR \"148\" OR correction",
+  "total_matching_chunks": 12,
+  "offset": 0,
+  "limit": 60,
+  "results": [
+    {
+      "id": 15,
+      "path": "input/report.md",
+      "anchor": "C08-OK-09",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 179,
+      "text": "**C08-OK-09.** The supplied A physical counts conflict, recording 148 and 147 for the same scope.\n\nCitations: sources/03-signed-counts.md#[N01]; sources/03-signed-counts.md#[N02].",
+      "rank": -8.307810981997267
+    },
+    {
+      "id": 9,
+      "path": "input/report.md",
+      "anchor": "C08-OK-03",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 185,
+      "text": "**C08-OK-03.** Lot A book on-hand at cutoff was 148 units.\n\nCitations: sources/02-opening-and-journal.md#[J01]; sources/02-opening-and-journal.md#[J02]; sources/01-stock-rules.md#[R02].",
+      "rank": -3.8170987027952266
+    },
+    {
+      "id": 33,
+      "path": "input/sources/03-signed-counts.md",
+      "anchor": "P03",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 659,
+      "text": "[N02] Tomas Reed independently signed COUNT-A-2 for the same 18:00 cutoff, same lot, and same boundary. The stated total is 147 units. The sheet expressly includes quarantine and the return cage. Reed has the same authority as Elin for this count. A margin note mentions a loose sleeve under a bin but does not state whether it was counted. That incomplete note cannot be used to rewrite the signed total. No signed reconciliation, recount, or authorized cancellation resolves the discrepancy. Both count sheets remain active evidence. Neither the order of their filenames nor the auditor's preferred arithmetic gives one count source priority over the other.",
+      "rank": -2.985112808275777
+    },
+    {
+      "id": 30,
+      "path": "input/sources/02-opening-and-journal.md",
+      "anchor": "P05",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 701,
+      "text": "[J04] C import anomaly. The imported C opening book balance is zero. At 10:10 an operator posted an outbound movement of nine units; at 10:20 an inbound movement of eight units was posted. The imported book balance is therefore minus one. This is a signed-integer ledger result, not a negative number of physical objects. An unsigned correction proposal mentions a possible carton-versus-unit import error, but no approved correction is supplied. Physical reconciliation for C is incomplete, and no physical count accompanies the journal. Preserve the anomaly and the missing correction argument. A book deficit alone does not prove a physical shortage, fraud, destruction, or a correct repair amount.",
+      "rank": -2.775795518575454
+    },
+    {
+      "id": 20,
+      "path": "input/report.md",
+      "anchor": "C08-OK-14",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 130,
+      "text": "**C08-OK-14.** No supplied approved correction resolves the C import anomaly.\n\nCitations: sources/02-opening-and-journal.md#[J04].",
+      "rank": -2.716034061402982
+    },
+    {
+      "id": 32,
+      "path": "input/sources/03-signed-counts.md",
+      "anchor": "P02",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 673,
+      "text": "[N01] Elin Shore signed COUNT-A-1 at the 18:00 cutoff. The stated count is: Lot A, all W1 shelves and fenced return cage, total 148 units. It includes the seven quarantined units and the returned sealed crate. Open shelves were counted by individual units; unopened crates used the verified standard conversion. No damaged, returned, or reserved goods were excluded. A witness initial appears, but the witness did not supply an independent count. The sheet is accepted as signed evidence within this synthetic packet, not as an infallible world axiom. Its numerical agreement with book arithmetic does not automatically invalidate another equally authoritative observation.",
+      "rank": -2.6961514603140424
+    },
+    {
+      "id": 42,
+      "path": "input/sources/05-custody-register.md",
+      "anchor": "P02",
+      "document_id": "D00007",
+      "start_char": 0,
+      "end_char": 669,
+      "text": "[K01] Roles. Elin Shore may accept inbound movements and returns at North Quay. Jun Vale may accept carrier custody but cannot amend warehouse physical counts. Tomas Reed may perform an independent count but cannot retroactively alter a transfer quantity without an authorized countersigned correction. These assignments apply only to this invented day. A correct signature identity is one part of the evidence: the document must still identify the lot, movement, time, and actual quantity. A carrier signature is not a customer delivery signature. Similarly, an order clerk signature can approve a request without establishing that the requested goods physically left.",
+      "rank": -1.7983476905316789
+    },
+    {
+      "id": 37,
+      "path": "input/sources/04-receiving-messages.md",
+      "anchor": "P02",
+      "document_id": "D00006",
+      "start_char": 0,
+      "end_char": 652,
+      "text": "[M01] The unresolved D transfer. A receiver message tentatively proposes 74 units for transfer D-17, but it is unsigned and marked provisional. A carrier message says that the faint copy looks like 78. Neither is a signed correction. The original scanned quantity line is pale, and its second digit is hard to read. No customer acceptance signature appears beside that quantity. There is no original carbon copy or later authenticated reconciliation in the packet. The two interpretations are not a license to select the convenient value. Even a legible planned quantity would not automatically establish the quantity actually accepted by the receiver.",
+      "rank": -1.7758469981147254
+    },
+    {
+      "id": 55,
+      "path": "input/sources/07-bin-and-exception-register.md",
+      "anchor": "P05",
+      "document_id": "D00009",
+      "start_char": 0,
+      "end_char": 688,
+      "text": "[BIN04] Exception ownership. Inventory reviewer Mira Cole opened unresolved exception EX-A for the one-unit disagreement between the signed A counts. She requested a recount but supplied no completed recount in this packet. Reviewer Leon Hart opened EX-C for the imported C journal deficit and requested the original unit mapping file. The request names a possible conversion issue but contains no approved correction amount. The two exceptions have different evidence needs: EX-A needs reconciliation of competing observations, while EX-C needs reconstruction of a possibly incorrect journal entry. Neither can be closed by adding unrelated B stock or by assuming a favorable D quantity.",
+      "rank": -1.7467075610047889
+    },
+    {
+      "id": 25,
+      "path": "input/sources/01-stock-rules.md",
+      "anchor": "P05",
+      "document_id": "D00003",
+      "start_char": 0,
+      "end_char": 751,
+      "text": "[R04] Evidence scope. Signed actual transfer receipts take precedence over unsigned planned quantities for determining completed custody movements. The journal and register are complete for A and B movements only within the stated day. No such completeness applies to D. Equal-authority physical counts of the same boundary and cutoff remain competing evidence unless a recount or authorized correction resolves them. A later filename does not give precedence. A pale or obscured numeral in a scan requires visual review and corroboration. An OCR guess is not a signed quantity. If available evidence does not establish a unique accepted amount, report the missing argument without inventing a number or asserting that the shipment necessarily failed.",
+      "rank": -1.6979503725963643
+    },
+    {
+      "id": 61,
+      "path": "input/sources/06-shipping-tickets-scan.pdf.md",
+      "anchor": "pdf-page-0005-reviewed-0001",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 1653,
+      "text": "SYNTHETIC NORTH QUAY SHIPPING FORM\n[T05] Movement D-17; 14 April 2032; clock 13:30; lot D.\nQuantity boxes: Quantity requires reading of the pale field. Status: Carrier initials\nonly; receiver acceptance blank.\nThe numerical field is pale. A receiver proposes 74 in an unsigned message, while a\ncarrier message proposes 78. Neither is a jointly signed correction. The ticket\nidentity and lot remain legible, so the uncertainty concerns the quantity and\ncompleted acceptance. A guessed numeral cannot supply a missing receiver signature or\nsettle the competing quantities.\n[T05-CHAIN] This form belongs to the registered source packet. The warehouse boundary\nincludes W1, W2, and the fenced return cage. Read planned quantities separately from\nactual signed handoffs. Standard full-container quantities follow the supplied stock\nrules. Carrier custody is distinct from customer delivery. Preserve lot identity in\nevery calculation; quantities from another lot cannot repair this form. Any partial-\ncontainer notation would override the standard full conversion. A source quotation\nshould retain this original PDF path and marker rather than presenting an OCR excerpt\nas an independently signed record.\n[T05-LIMIT] The form supports only its named movement and stages. It does not certify\nall warehouse inventory or resolve independent physical count differences. A\nsignature name is an invented evidence field within this exercise, not a claim about\nreal handwriting authentication. Missing attachments must remain missing in the audit\nreasoning. Reviewers should explain how the movement changes the relevant balance\nbefore relying on an aggregate total.",
+      "rank": -1.1124078936948913
+    },
+    {
+      "id": 50,
+      "path": "input/sources/06-shipping-tickets-scan.pdf.md",
+      "anchor": "pdf-page-0005",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 1652,
+      "text": "SYNTHETIC NORTH QUAY SHIPPING FORM\n[T@5] Movement D-17; 14 April 2032; clock 13:30; lot D\nQuantity boxes: Quantity requires reading of the pale field. Status: Carrier initials\nonly; receiver acceptance blank.\nThe numerical field is pale. A receiver proposes 74 in an unsigned message, while a\ncarrier message proposes 78. Neither is a jointly signed correction. The ticket\nidentity and lot remain legible, so the uncertainty concerns the quantity and\ncompleted acceptance. A guessed numeral cannot supply a missing receiver signature or\nsettle the competing quantities.\n[T05-CHAIN] This form belongs to the registered source packet. The warehouse boundary\nincludes W1, W2, and the fenced return cage. Read planned quantities separately from\nactual signed handoffs. Standard full-container quantities follow the supplied stock\nrules. Carrier custody is distinct from customer delivery. Preserve lot identity in\nevery calculation; quantities from another lot cannot repair this form. Any partial-\ncontainer notation would override the standard full conversion. A source quotation\nshould retain this original PDF path and marker rather than presenting an OCR excerpt\nas an independently signed record.\n[T@5-LIMIT] The form supports only its named movement and stages. It does not certify\nall warehouse inventory or resolve independent physical count differences. A\nsignature name is an invented evidence field within this exercise, not a claim about\nreal handwriting authentication. Missing attachments must remain missing in the audit\nreasoning. Reviewers should explain how the movement changes the relevant balance\nbefore relying on an aggregate total.",
+      "rank": -1.1066257318539663
+    }
+  ],
+  "limitations": "Ranked retrieval is not exhaustive semantic review; inspect full passages and inventory for exceptions."
+}

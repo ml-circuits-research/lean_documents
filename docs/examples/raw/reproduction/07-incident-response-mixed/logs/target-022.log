@@ -1,0 +1,6 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target022.lean
+Audit.claim06 : Audit.pauseConditions = true ∧
+  Audit.rawPauseA = 70 ∧ Audit.excludedA = 45 ∧ Audit.excludedA < Audit.rawPauseA
+'Audit.claim06' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.210]

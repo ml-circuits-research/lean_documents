@@ -1,0 +1,3 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target005.lean
+Audit.allInvoicesMatched : ∀ (p : Audit.Payment), p ∈ Audit.sample → p.matched = true
+'Audit.allInvoicesMatched' depends on axioms: [propext, Quot.sound]

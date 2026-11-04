@@ -1,0 +1,4 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target012.lean
+Audit.populationCompletionAlternatives : Audit.populationExceptions 0 * 100 ≠ 50 * 20 ∧
+  Audit.populationExceptions 8 * 100 = 50 * 20 ∧ 0 ≤ 16 ∧ 8 ≤ 16
+'Audit.populationCompletionAlternatives' does not depend on any axioms

@@ -1,0 +1,74 @@
+{
+  "scope": "All five numbered claims in the selected report, including their compound factual components.",
+  "numbered_report_findings": 5,
+  "audit_records": 5,
+  "claims": [
+    {
+      "claim_id": "C04-OK-01",
+      "parent_report_anchor": "C04-OK-01",
+      "report_quote": "**C04-OK-01.** Mira was alive at the key exchange at noon on day 2. Citations: chronology T-01; flashback F-02.",
+      "verification_question": "Was Mira alive when the physical brass-key exchange took place at noon on story day 2?",
+      "coverage": "reviewed",
+      "finding_id": "C04-OK-01"
+    },
+    {
+      "claim_id": "C04-OK-02",
+      "parent_report_anchor": "C04-OK-02",
+      "report_quote": "**C04-OK-02.** Under the supplied world rules, Mira was dead at noon on day 6 and could not physically attend a meeting then. Citations: chronology T-01, T-02; rules R-01, R-02.",
+      "verification_question": "Under the bounded world rules, was Mira dead at noon day 6, and does that rule out physical meeting attendance then?",
+      "coverage": "reviewed",
+      "finding_id": "C04-OK-02"
+    },
+    {
+      "claim_id": "C04-OK-03",
+      "parent_report_anchor": "C04-OK-03",
+      "report_quote": "**C04-OK-03.** Chapter seven narrates the day 2 key exchange as a flashback from the evening of day 7. Citations: flashback F-01, F-02.",
+      "verification_question": "Does chapter seven narrate the noon day 2 exchange from an evening day 7 frame without moving the exchange to day 7?",
+      "coverage": "reviewed",
+      "finding_id": "C04-OK-03"
+    },
+    {
+      "claim_id": "C04-OK-04",
+      "parent_report_anchor": "C04-OK-04",
+      "report_quote": "**C04-OK-04.** Mira says “I never died” at noon on day 9, although the authoritative chronology records her death at dawn on day 5. Citations: dialogue D-01; chronology T-01.",
+      "verification_question": "Did Mira utter “I never died” at noon day 9 while the authoritative chronology records death at dawn day 5?",
+      "coverage": "reviewed",
+      "finding_id": "C04-OK-04"
+    },
+    {
+      "claim_id": "C04-OK-05",
+      "parent_report_anchor": "C04-OK-05",
+      "report_quote": "**C04-OK-05.** The recorded ritual restores Mira to life at dawn on day 8, and she is alive at noon that day. Citations: chronology T-02; rules R-01.",
+      "verification_question": "Does the recorded dawn day 8 ritual restore Mira to life, with life persisting through noon that same day?",
+      "coverage": "reviewed",
+      "finding_id": "C04-OK-05"
+    }
+  ],
+  "compound_claims": {
+    "C04-OK-01": [
+      "Noon day 2 exchange",
+      "Mira alive during that exchange"
+    ],
+    "C04-OK-02": [
+      "Mira dead at noon day 6",
+      "Physical attendance impossible under the living prerequisite"
+    ],
+    "C04-OK-03": [
+      "Day 2 flashback story time",
+      "Evening day 7 narration frame"
+    ],
+    "C04-OK-04": [
+      "Day 9 noon utterance attributed to Mira",
+      "Authoritative dawn day 5 death despite denial"
+    ],
+    "C04-OK-05": [
+      "Dawn day 8 recorded revival restoring life",
+      "Alive at noon day 8"
+    ]
+  },
+  "exclusions": [],
+  "unclaimed_topics": [
+    "Ivo’s day 6 location, later key custody, and aesthetic quality are not asserted by the selected report and receive no invented verdict."
+  ],
+  "independent_semantic_review": "Not performed by the audit author."
+}

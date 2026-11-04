@@ -1,0 +1,162 @@
+[
+  {
+    "run_id": "01-procedural-approval-correct",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-01-procedural-approval-correct-he4yatut",
+    "original_export_manifest_sha256": "0dde3e14082967220b6f5346670919ec59a1e15495800c1cfe66497299a3b70b",
+    "proof_results": "reproduction/01-procedural-approval-correct/proof-results.json",
+    "command_log": "reproduction/01-procedural-approval-correct/command.log"
+  },
+  {
+    "run_id": "01-procedural-approval-mixed",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-01-procedural-approval-mixed-a_08cst9",
+    "original_export_manifest_sha256": "aeeb3625f7d1b0065fea1596745937b4c3c4cfc0baab67932cec300ce13d533a",
+    "proof_results": "reproduction/01-procedural-approval-mixed/proof-results.json",
+    "command_log": "reproduction/01-procedural-approval-mixed/command.log"
+  },
+  {
+    "run_id": "02-versioned-deadlines-correct",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-02-versioned-deadlines-correct-wmr2neo_",
+    "original_export_manifest_sha256": "61aa07153bc8f7a9cbfe1611ab195cfcfaa365825c3fd3ef45b3a0c0ba60e6f9",
+    "proof_results": "reproduction/02-versioned-deadlines-correct/proof-results.json",
+    "command_log": "reproduction/02-versioned-deadlines-correct/command.log"
+  },
+  {
+    "run_id": "02-versioned-deadlines-mixed",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-02-versioned-deadlines-mixed-nrhpzgso",
+    "original_export_manifest_sha256": "ff5c3666a8a064e12ed901cf45ed542a1c2cc93a4ebefccc2d77448a1d8dfbd2",
+    "proof_results": "reproduction/02-versioned-deadlines-mixed/proof-results.json",
+    "command_log": "reproduction/02-versioned-deadlines-mixed/command.log"
+  },
+  {
+    "run_id": "03-audit-arithmetic-correct",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-03-audit-arithmetic-correct-oo9gr0am",
+    "original_export_manifest_sha256": "6d4ace925a9aed443ebb0369c149d8e6b02cd77ce0dd80f1841d4226c84fe3de",
+    "proof_results": "reproduction/03-audit-arithmetic-correct/proof-results.json",
+    "command_log": "reproduction/03-audit-arithmetic-correct/command.log"
+  },
+  {
+    "run_id": "03-audit-arithmetic-mixed",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-03-audit-arithmetic-mixed-3g_gcxi3",
+    "original_export_manifest_sha256": "66504e42b887a3db28941f3e694813a14555606ce5da0d926a8e19b439c2e6a1",
+    "proof_results": "reproduction/03-audit-arithmetic-mixed/proof-results.json",
+    "command_log": "reproduction/03-audit-arithmetic-mixed/command.log"
+  },
+  {
+    "run_id": "04-narrative-continuity-correct",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-04-narrative-continuity-correct-43ngjm4g",
+    "original_export_manifest_sha256": "532f6afc58fca5c3eea9f640fd06646641d6b4655a826b86fa920079443a75db",
+    "proof_results": "reproduction/04-narrative-continuity-correct/proof-results.json",
+    "command_log": "reproduction/04-narrative-continuity-correct/command.log"
+  },
+  {
+    "run_id": "04-narrative-continuity-mixed",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-04-narrative-continuity-mixed-ti7ohklr",
+    "original_export_manifest_sha256": "81469a6a3f081dbe2e306b2539f96d432d2a3cb0e01cb53983b3c737c3217ea4",
+    "proof_results": "reproduction/04-narrative-continuity-mixed/proof-results.json",
+    "command_log": "reproduction/04-narrative-continuity-mixed/command.log"
+  },
+  {
+    "run_id": "05-conflicting-evidence-correct",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-05-conflicting-evidence-correct-a43xycf2",
+    "original_export_manifest_sha256": "428add0fec7bc64609db45b883994a88545a996bfdb0af44f4ac5314816a10c2",
+    "proof_results": "reproduction/05-conflicting-evidence-correct/proof-results.json",
+    "command_log": "reproduction/05-conflicting-evidence-correct/command.log"
+  },
+  {
+    "run_id": "05-conflicting-evidence-mixed",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-05-conflicting-evidence-mixed-k1l3nyfd",
+    "original_export_manifest_sha256": "2c6c5da4822f0dc71b8d6ac45df14aaff9a1c882698dfa6a4e672189b30544b0",
+    "proof_results": "reproduction/05-conflicting-evidence-mixed/proof-results.json",
+    "command_log": "reproduction/05-conflicting-evidence-mixed/command.log"
+  },
+  {
+    "run_id": "06-procurement-contract-correct",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-06-procurement-contract-correct-864zy19d",
+    "original_export_manifest_sha256": "666c3fd84a60879050ea03892998e26e31ca7cb9de3eba78f6b4839ec0b49885",
+    "proof_results": "reproduction/06-procurement-contract-correct/proof-results.json",
+    "command_log": "reproduction/06-procurement-contract-correct/command.log"
+  },
+  {
+    "run_id": "06-procurement-contract-mixed",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-06-procurement-contract-mixed-hilmwqh2",
+    "original_export_manifest_sha256": "cab2206a79152b334425da848b6583a9598dc37379feb30f403abf2cedf994bb",
+    "proof_results": "reproduction/06-procurement-contract-mixed/proof-results.json",
+    "command_log": "reproduction/06-procurement-contract-mixed/command.log"
+  },
+  {
+    "run_id": "07-incident-response-correct",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-07-incident-response-correct-4rmifkib",
+    "original_export_manifest_sha256": "0670d9d49159ffee92f84db8bda1ff495c41a65eb60e1ee261cd5cfac820143d",
+    "proof_results": "reproduction/07-incident-response-correct/proof-results.json",
+    "command_log": "reproduction/07-incident-response-correct/command.log"
+  },
+  {
+    "run_id": "07-incident-response-mixed",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-07-incident-response-mixed-sds18fkd",
+    "original_export_manifest_sha256": "408522a987a8a58b96ae845fa7c645bac4dc93e05a460257ba6eebf6ab3e5e01",
+    "proof_results": "reproduction/07-incident-response-mixed/proof-results.json",
+    "command_log": "reproduction/07-incident-response-mixed/command.log"
+  },
+  {
+    "run_id": "08-scanned-inventory-correct",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-08-scanned-inventory-correct-oxmu_8_w",
+    "original_export_manifest_sha256": "bf5f68f6138d51e2529b7515735d61e5c40fbfbdbb048ec7b1fc8625c3056207",
+    "proof_results": "reproduction/08-scanned-inventory-correct/proof-results.json",
+    "command_log": "reproduction/08-scanned-inventory-correct/command.log"
+  },
+  {
+    "run_id": "08-scanned-inventory-mixed",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-08-scanned-inventory-mixed-zy2i3zjy",
+    "original_export_manifest_sha256": "001ed9e73e5ba2da3596a7f46a63a5bfd0498f7e60ec9c583cfcfd9d22ee2262",
+    "proof_results": "reproduction/08-scanned-inventory-mixed/proof-results.json",
+    "command_log": "reproduction/08-scanned-inventory-mixed/command.log"
+  },
+  {
+    "run_id": "09-multiversion-safety-correct",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-09-multiversion-safety-correct-m9suw1f5",
+    "original_export_manifest_sha256": "ef515c8994554407feac2896d671677071c4b331dddc5685bea4df57203974ee",
+    "proof_results": "reproduction/09-multiversion-safety-correct/proof-results.json",
+    "command_log": "reproduction/09-multiversion-safety-correct/command.log"
+  },
+  {
+    "run_id": "09-multiversion-safety-mixed",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-09-multiversion-safety-mixed-14gho178",
+    "original_export_manifest_sha256": "1e10b3edbddd927557d8e3e08660e10f6ae7e7e7a7f9c410786e00be74fe218d",
+    "proof_results": "reproduction/09-multiversion-safety-mixed/proof-results.json",
+    "command_log": "reproduction/09-multiversion-safety-mixed/command.log"
+  },
+  {
+    "run_id": "10-distributed-assurance-correct",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-10-distributed-assurance-correct-k13kul0g",
+    "original_export_manifest_sha256": "381d5ec1f363f67ddec7a198a0947a3501c5be70f63470dd2279f3ea292c42ad",
+    "proof_results": "reproduction/10-distributed-assurance-correct/proof-results.json",
+    "command_log": "reproduction/10-distributed-assurance-correct/command.log"
+  },
+  {
+    "run_id": "10-distributed-assurance-mixed",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-10-distributed-assurance-mixed-fcvan4cv",
+    "original_export_manifest_sha256": "0ebc952c6afae4961ff52bde1bec6a1af798538de659ca2d8e225f2d807d56e9",
+    "proof_results": "reproduction/10-distributed-assurance-mixed/proof-results.json",
+    "command_log": "reproduction/10-distributed-assurance-mixed/command.log"
+  }
+]

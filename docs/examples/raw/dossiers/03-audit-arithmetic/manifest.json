@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "dossier_id": "03-audit-arithmetic",
+  "synthetic": true,
+  "phase": "documentation_and_fixture_preparation",
+  "hash_algorithm": "sha256",
+  "audit_inputs": [
+    {
+      "path": "brief.md",
+      "role": "brief",
+      "sha256": "8268795dbeed623467a83dbe71c934698f52d75735ad7609291d500399e6fa98"
+    },
+    {
+      "path": "report.md",
+      "role": "report",
+      "sha256": "c2152c8e61c48868992c9a1b0feb951f016463d1e393ed6b88a872a120d344ca"
+    },
+    {
+      "path": "sources/annex-register.md",
+      "role": "source",
+      "sha256": "005618ce50dc4e4fb89f15c5d6a5f955ea1b5b9cd1c52d93523003f52eecb864"
+    },
+    {
+      "path": "sources/inspection.md",
+      "role": "source",
+      "sha256": "11c7e7c37081edf449ed09594798095d0dbcffd518a6d79a9c7d68eb72c3e390"
+    },
+    {
+      "path": "sources/ledger.md",
+      "role": "source",
+      "sha256": "82717a9e95619fa2bae4d6108997cd18b72c53b73e7c2310da96ca905b04d04b"
+    },
+    {
+      "path": "sources/method.md",
+      "role": "source",
+      "sha256": "1961844808811f9b122919c94eaa0ca8c081367c1aed2d260beafe7584308dd9"
+    },
+    {
+      "path": "report-correct.md",
+      "role": "report",
+      "sha256": "4b1f131e61d4bc991c442c8c0c33b02c2a4f925a9e311480bf62b7132e543b94"
+    }
+  ],
+  "excluded_from_audit_inputs": [
+    "README.md",
+    "manifest.json"
+  ],
+  "formal_validation_executed": false,
+  "audit_variants": [
+    {
+      "id": "mixed",
+      "report": "report.md"
+    },
+    {
+      "id": "correct",
+      "report": "report-correct.md"
+    }
+  ],
+  "selection_rule": "Use exactly one report variant with the shared brief and sources per audit; the other report is not evidence.",
+  "runs": [
+    {
+      "run_id": "03-audit-arithmetic-mixed",
+      "report": "report.md"
+    },
+    {
+      "run_id": "03-audit-arithmetic-correct",
+      "report": "report-correct.md"
+    }
+  ],
+  "run_selection": "Each run receives brief.md, all sources, and exactly one selected report. The alternate report and evaluator expectations are excluded."
+}

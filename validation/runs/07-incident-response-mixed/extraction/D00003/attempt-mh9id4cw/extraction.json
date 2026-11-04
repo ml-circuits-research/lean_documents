@@ -1,0 +1,6106 @@
+{
+  "text": "<a id=\"pdf-page-0001\"></a>\nScanned shift attestations for incident C\nAll organizations, people, agreements, events, and rules in this source are\nsynthetic.\n\n<a id=\"pdf-page-0002\"></a>\n[AQ1]\nContainment operator Elise Stone signed a statement at 2030-10-27 05:10 UTC:\n\"Incident C was fully isolated at exactly @5:@@ UTC. I completed the final network-\npath isolation then, and no C path remained live after that instant.\" Her statement\nidentifies complete containment, not an intermediate mitigation or intended future\naction. It concerns incident C, rather than incident A, and uses UTC explicitly. The\nsignature is authentic within this synthetic dossier. The scan preserves her\nattributed words but contains no independently certified network trace proving the\nisolation event.\n\n<a id=\"pdf-page-0003\"></a>\n[AQ2]\nSecurity observer Pavel Hart signed a statement at 2030-10-27 @5:3@ UTC: “Incident C\nwas not fully isolated at @5:@@ UTC. A C network path remained live at 05:00 and\ncontinued live until 05:20 UTC.\" Pavel's statement directly denies the same complete-\nisolation proposition Elise asserts. He is not describing an unrelated service, a\ndifferent timezone, or an event merely adjacent to 05:00. His signature is also\nauthentic within the synthetic dossier. He refers to a console observation but\nsupplies no exported trace that the mandate makes authoritative over the other signed\nstatement.\n\n<a id=\"pdf-page-0004\"></a>\n[AQ3]\nThe two signatories have not retracted their attestations. No signed correction,\nadjudication, authoritative C containment record, or evidence-priority rule resolving\nthe conflict is supplied. A later signing time alone does not make Pavel's statement\nan authorized correction of Elise's. Likewise, Elise's role as containment operator\ndoes not make her account infallible under the playbook. The packet's authenticity\nstipulation concerns the identity of the signatories and integrity of the text, not\nthe historical truth of every assertion. A reviewer must preserve both attributed\npositions rather than accept both as unconditional facts or silently discard the less\nconvenient account.\n\n<a id=\"pdf-page-0005\"></a>\n[AQ4]\nThe packet includes an administrative cover note confirming that both statements were\nreceived intact. It does not assert that containment occurred at either proposed time\nand does not establish the earliest possible time of isolation. The incident register\ndeliberately leaves C containment uncertified, while retaining C's accepted detection\nbefore the revision boundary. That detection is not disputed by either signatory. The\nconflict therefore affects the selected containment proposition, not every\nindependent fact about C. These scan pages are generated synthetic documents with\nprinted signature labels; no real person's handwriting, personal data, or operational\nnetwork identifiers are used.\n",
+  "segments": [
+    {
+      "anchor": "pdf-page-0001",
+      "quote": "Scanned shift attestations for incident C\nAll organizations, people, agreements, events, and rules in this source are\nsynthetic.",
+      "locator": {
+        "kind": "ocr",
+        "page": 1,
+        "origin": {
+          "format": "pdf",
+          "page": 1,
+          "raster_dpi": 200,
+          "pixel_to_pdf_points": "coordinate * 72 / 200",
+          "total_pages": 5
+        },
+        "coordinate_unit": "raster pixels; origin at top-left; bbox = left, top, width, height",
+        "image_artifact": "pdf-page-0001-raster.png",
+        "tsv_artifact": "pdf-page-0001.tsv",
+        "ocr_language": "eng",
+        "ocr_page_segmentation_mode": 3,
+        "mean_word_confidence": 95.26097388888888,
+        "minimum_word_confidence": 90.33683,
+        "confidence_threshold": 85.0,
+        "low_confidence_words": 0,
+        "word_count": 18,
+        "words": [
+          {
+            "text": "Scanned",
+            "confidence": 96.836502,
+            "bbox": [
+              67,
+              82,
+              89,
+              17
+            ],
+            "line_id": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "shift",
+            "confidence": 93.265472,
+            "bbox": [
+              175,
+              82,
+              62,
+              17
+            ],
+            "line_id": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "attestations",
+            "confidence": 92.627548,
+            "bbox": [
+              254,
+              82,
+              156,
+              17
+            ],
+            "line_id": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "for",
+            "confidence": 96.132179,
+            "bbox": [
+              427,
+              82,
+              37,
+              17
+            ],
+            "line_id": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "incident",
+            "confidence": 90.961288,
+            "bbox": [
+              481,
+              82,
+              102,
+              17
+            ],
+            "line_id": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "C",
+            "confidence": 90.33683,
+            "bbox": [
+              601,
+              83,
+              11,
+              16
+            ],
+            "line_id": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "All",
+            "confidence": 94.598778,
+            "bbox": [
+              66,
+              162,
+              38,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "organizations,",
+            "confidence": 96.012184,
+            "bbox": [
+              120,
+              162,
+              180,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "people,",
+            "confidence": 96.316528,
+            "bbox": [
+              321,
+              162,
+              86,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "agreements,",
+            "confidence": 96.236221,
+            "bbox": [
+              427,
+              163,
+              140,
+              21
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "events,",
+            "confidence": 96.091217,
+            "bbox": [
+              587,
+              163,
+              87,
+              18
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "and",
+            "confidence": 96.260101,
+            "bbox": [
+              694,
+              162,
+              36,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "rules",
+            "confidence": 96.409882,
+            "bbox": [
+              747,
+              162,
+              63,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "in",
+            "confidence": 96.409882,
+            "bbox": [
+              827,
+              162,
+              25,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "this",
+            "confidence": 96.609886,
+            "bbox": [
+              866,
+              162,
+              51,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "source",
+            "confidence": 96.609886,
+            "bbox": [
+              935,
+              166,
+              75,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "are",
+            "confidence": 96.805412,
+            "bbox": [
+              1027,
+              166,
+              37,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "synthetic.",
+            "confidence": 96.177734,
+            "bbox": [
+              68,
+              201,
+              126,
+              23
+            ],
+            "line_id": [
+              3,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      "method": "tesseract-tsv",
+      "uncertainty": [
+        "OCR is a probabilistic transcription; quote matching verifies the recognized text only. Visually compare every material quotation with the original image."
+      ]
+    },
+    {
+      "anchor": "pdf-page-0002",
+      "quote": "[AQ1]\nContainment operator Elise Stone signed a statement at 2030-10-27 05:10 UTC:\n\"Incident C was fully isolated at exactly @5:@@ UTC. I completed the final network-\npath isolation then, and no C path remained live after that instant.\" Her statement\nidentifies complete containment, not an intermediate mitigation or intended future\naction. It concerns incident C, rather than incident A, and uses UTC explicitly. The\nsignature is authentic within this synthetic dossier. The scan preserves her\nattributed words but contains no independently certified network trace proving the\nisolation event.",
+      "locator": {
+        "kind": "ocr",
+        "page": 2,
+        "origin": {
+          "format": "pdf",
+          "page": 2,
+          "raster_dpi": 200,
+          "pixel_to_pdf_points": "coordinate * 72 / 200",
+          "total_pages": 5
+        },
+        "coordinate_unit": "raster pixels; origin at top-left; bbox = left, top, width, height",
+        "image_artifact": "pdf-page-0002-raster.png",
+        "tsv_artifact": "pdf-page-0002.tsv",
+        "ocr_language": "eng",
+        "ocr_page_segmentation_mode": 3,
+        "mean_word_confidence": 95.01026661363636,
+        "minimum_word_confidence": 63.257053,
+        "confidence_threshold": 85.0,
+        "low_confidence_words": 3,
+        "word_count": 88,
+        "words": [
+          {
+            "text": "[AQ1]",
+            "confidence": 78.718094,
+            "bbox": [
+              71,
+              83,
+              56,
+              19
+            ],
+            "line_id": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "Containment",
+            "confidence": 96.279716,
+            "bbox": [
+              67,
+              162,
+              143,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "operator",
+            "confidence": 96.279716,
+            "bbox": [
+              226,
+              163,
+              105,
+              21
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "Elise",
+            "confidence": 96.438423,
+            "bbox": [
+              348,
+              162,
+              62,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "Stone",
+            "confidence": 96.505417,
+            "bbox": [
+              427,
+              163,
+              63,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "signed",
+            "confidence": 96.303139,
+            "bbox": [
+              508,
+              162,
+              75,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "a",
+            "confidence": 96.100105,
+            "bbox": [
+              601,
+              166,
+              10,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "statement",
+            "confidence": 95.872177,
+            "bbox": [
+              628,
+              163,
+              115,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "at",
+            "confidence": 96.554764,
+            "bbox": [
+              761,
+              163,
+              23,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "2030-10-27",
+            "confidence": 94.620575,
+            "bbox": [
+              801,
+              163,
+              130,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "05:10",
+            "confidence": 63.257053,
+            "bbox": [
+              947,
+              163,
+              64,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "UTC:",
+            "confidence": 96.265968,
+            "bbox": [
+              1027,
+              163,
+              47,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "\"Incident",
+            "confidence": 92.906883,
+            "bbox": [
+              69,
+              201,
+              114,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "C",
+            "confidence": 92.906883,
+            "bbox": [
+              200,
+              202,
+              12,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "was",
+            "confidence": 96.663971,
+            "bbox": [
+              226,
+              206,
+              38,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "fully",
+            "confidence": 96.538155,
+            "bbox": [
+              281,
+              201,
+              64,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "isolated",
+            "confidence": 96.275749,
+            "bbox": [
+              361,
+              201,
+              103,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "at",
+            "confidence": 96.1036,
+            "bbox": [
+              481,
+              202,
+              22,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "exactly",
+            "confidence": 93.174431,
+            "bbox": [
+              520,
+              201,
+              92,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "@5:@@",
+            "confidence": 72.147408,
+            "bbox": [
+              626,
+              202,
+              65,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "UTC.",
+            "confidence": 96.776161,
+            "bbox": [
+              708,
+              202,
+              46,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "I",
+            "confidence": 96.617256,
+            "bbox": [
+              776,
+              202,
+              8,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "completed",
+            "confidence": 96.116806,
+            "bbox": [
+              801,
+              201,
+              116,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "the",
+            "confidence": 96.571945,
+            "bbox": [
+              933,
+              201,
+              37,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "final",
+            "confidence": 93.287743,
+            "bbox": [
+              988,
+              201,
+              64,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "network-",
+            "confidence": 92.207176,
+            "bbox": [
+              1067,
+              201,
+              102,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "path",
+            "confidence": 96.523781,
+            "bbox": [
+              67,
+              241,
+              50,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "isolation",
+            "confidence": 96.513924,
+            "bbox": [
+              134,
+              241,
+              117,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "then,",
+            "confidence": 96.674301,
+            "bbox": [
+              266,
+              241,
+              61,
+              20
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "and",
+            "confidence": 96.700279,
+            "bbox": [
+              348,
+              241,
+              35,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "no",
+            "confidence": 89.700043,
+            "bbox": [
+              401,
+              246,
+              24,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "C",
+            "confidence": 89.700043,
+            "bbox": [
+              440,
+              242,
+              11,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "path",
+            "confidence": 96.858582,
+            "bbox": [
+              467,
+              241,
+              50,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "remained",
+            "confidence": 96.449463,
+            "bbox": [
+              533,
+              241,
+              104,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "live",
+            "confidence": 96.374374,
+            "bbox": [
+              654,
+              241,
+              49,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "after",
+            "confidence": 96.770012,
+            "bbox": [
+              721,
+              241,
+              64,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "that",
+            "confidence": 95.847893,
+            "bbox": [
+              800,
+              241,
+              51,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "instant.\"",
+            "confidence": 96.137772,
+            "bbox": [
+              867,
+              241,
+              116,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "Her",
+            "confidence": 96.409332,
+            "bbox": [
+              1001,
+              242,
+              37,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "statement",
+            "confidence": 96.299431,
+            "bbox": [
+              1055,
+              242,
+              115,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "identifies",
+            "confidence": 96.528267,
+            "bbox": [
+              67,
+              281,
+              130,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "complete",
+            "confidence": 96.674599,
+            "bbox": [
+              213,
+              281,
+              103,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "containment,",
+            "confidence": 96.485825,
+            "bbox": [
+              334,
+              281,
+              154,
+              20
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "not",
+            "confidence": 96.682144,
+            "bbox": [
+              507,
+              283,
+              36,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "an",
+            "confidence": 96.498184,
+            "bbox": [
+              561,
+              286,
+              23,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "intermediate",
+            "confidence": 96.498184,
+            "bbox": [
+              601,
+              281,
+              156,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "mitigation",
+            "confidence": 96.008293,
+            "bbox": [
+              774,
+              281,
+              130,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "or",
+            "confidence": 96.008293,
+            "bbox": [
+              920,
+              286,
+              24,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "intended",
+            "confidence": 95.651894,
+            "bbox": [
+              961,
+              281,
+              103,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "future",
+            "confidence": 95.651894,
+            "bbox": [
+              1081,
+              281,
+              76,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "action.",
+            "confidence": 94.974365,
+            "bbox": [
+              67,
+              321,
+              86,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "It",
+            "confidence": 96.607643,
+            "bbox": [
+              175,
+              322,
+              22,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "concerns",
+            "confidence": 96.357895,
+            "bbox": [
+              213,
+              326,
+              103,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "incident",
+            "confidence": 93.270782,
+            "bbox": [
+              334,
+              321,
+              103,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "C,",
+            "confidence": 86.48542,
+            "bbox": [
+              454,
+              322,
+              20,
+              18
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "rather",
+            "confidence": 96.496826,
+            "bbox": [
+              493,
+              321,
+              78,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "than",
+            "confidence": 96.496826,
+            "bbox": [
+              587,
+              321,
+              51,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "incident",
+            "confidence": 96.68071,
+            "bbox": [
+              654,
+              321,
+              103,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "A,",
+            "confidence": 96.797195,
+            "bbox": [
+              774,
+              322,
+              20,
+              18
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "and",
+            "confidence": 95.87793,
+            "bbox": [
+              814,
+              321,
+              37,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "uses",
+            "confidence": 96.660599,
+            "bbox": [
+              867,
+              326,
+              50,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "UTC",
+            "confidence": 95.800323,
+            "bbox": [
+              934,
+              322,
+              38,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "explicitly.",
+            "confidence": 96.351082,
+            "bbox": [
+              987,
+              321,
+              141,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "The",
+            "confidence": 96.566757,
+            "bbox": [
+              1147,
+              321,
+              37,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "signature",
+            "confidence": 96.700653,
+            "bbox": [
+              68,
+              361,
+              115,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "is",
+            "confidence": 96.506119,
+            "bbox": [
+              201,
+              361,
+              22,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "authentic",
+            "confidence": 95.759537,
+            "bbox": [
+              240,
+              361,
+              117,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "within",
+            "confidence": 96.750847,
+            "bbox": [
+              373,
+              361,
+              78,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "this",
+            "confidence": 96.750847,
+            "bbox": [
+              466,
+              361,
+              50,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "synthetic",
+            "confidence": 96.571381,
+            "bbox": [
+              535,
+              361,
+              115,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "dossier.",
+            "confidence": 96.015884,
+            "bbox": [
+              666,
+              361,
+              101,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "The",
+            "confidence": 96.565987,
+            "bbox": [
+              787,
+              361,
+              37,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "scan",
+            "confidence": 96.5569,
+            "bbox": [
+              842,
+              365,
+              49,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "preserves",
+            "confidence": 96.5569,
+            "bbox": [
+              908,
+              365,
+              116,
+              18
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "her",
+            "confidence": 96.811653,
+            "bbox": [
+              1041,
+              361,
+              37,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "attributed",
+            "confidence": 95.836456,
+            "bbox": [
+              67,
+              401,
+              130,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "words",
+            "confidence": 96.037949,
+            "bbox": [
+              213,
+              401,
+              63,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "but",
+            "confidence": 95.800377,
+            "bbox": [
+              294,
+              401,
+              36,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "contains",
+            "confidence": 96.838745,
+            "bbox": [
+              348,
+              401,
+              102,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "no",
+            "confidence": 96.838745,
+            "bbox": [
+              467,
+              405,
+              24,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "independently",
+            "confidence": 96.026611,
+            "bbox": [
+              507,
+              401,
+              171,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "certified",
+            "confidence": 96.472275,
+            "bbox": [
+              694,
+              401,
+              116,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "network",
+            "confidence": 96.870316,
+            "bbox": [
+              827,
+              401,
+              92,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "trace",
+            "confidence": 96.277542,
+            "bbox": [
+              933,
+              402,
+              64,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "proving",
+            "confidence": 96.277542,
+            "bbox": [
+              1015,
+              401,
+              88,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "the",
+            "confidence": 96.729935,
+            "bbox": [
+              1120,
+              401,
+              37,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "isolation",
+            "confidence": 96.296455,
+            "bbox": [
+              67,
+              440,
+              117,
+              17
+            ],
+            "line_id": [
+              3,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "event.",
+            "confidence": 96.493332,
+            "bbox": [
+              200,
+              441,
+              74,
+              16
+            ],
+            "line_id": [
+              3,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      "method": "tesseract-tsv",
+      "uncertainty": [
+        "OCR is a probabilistic transcription; quote matching verifies the recognized text only. Visually compare every material quotation with the original image.",
+        "Low-confidence words: 3; review original bounding boxes before relying on text."
+      ]
+    },
+    {
+      "anchor": "pdf-page-0003",
+      "quote": "[AQ2]\nSecurity observer Pavel Hart signed a statement at 2030-10-27 @5:3@ UTC: “Incident C\nwas not fully isolated at @5:@@ UTC. A C network path remained live at 05:00 and\ncontinued live until 05:20 UTC.\" Pavel's statement directly denies the same complete-\nisolation proposition Elise asserts. He is not describing an unrelated service, a\ndifferent timezone, or an event merely adjacent to 05:00. His signature is also\nauthentic within the synthetic dossier. He refers to a console observation but\nsupplies no exported trace that the mandate makes authoritative over the other signed\nstatement.",
+      "locator": {
+        "kind": "ocr",
+        "page": 3,
+        "origin": {
+          "format": "pdf",
+          "page": 3,
+          "raster_dpi": 200,
+          "pixel_to_pdf_points": "coordinate * 72 / 200",
+          "total_pages": 5
+        },
+        "coordinate_unit": "raster pixels; origin at top-left; bbox = left, top, width, height",
+        "image_artifact": "pdf-page-0003-raster.png",
+        "tsv_artifact": "pdf-page-0003.tsv",
+        "ocr_language": "eng",
+        "ocr_page_segmentation_mode": 3,
+        "mean_word_confidence": 93.65185876344086,
+        "minimum_word_confidence": 49.620968,
+        "confidence_threshold": 85.0,
+        "low_confidence_words": 5,
+        "word_count": 93,
+        "words": [
+          {
+            "text": "[AQ2]",
+            "confidence": 49.620968,
+            "bbox": [
+              71,
+              83,
+              56,
+              19
+            ],
+            "line_id": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "Security",
+            "confidence": 96.220009,
+            "bbox": [
+              67,
+              162,
+              105,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "observer",
+            "confidence": 96.469696,
+            "bbox": [
+              187,
+              162,
+              104,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "Pavel",
+            "confidence": 96.469696,
+            "bbox": [
+              307,
+              162,
+              64,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "Hart",
+            "confidence": 96.421631,
+            "bbox": [
+              388,
+              163,
+              49,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "signed",
+            "confidence": 96.633156,
+            "bbox": [
+              455,
+              162,
+              75,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "a",
+            "confidence": 96.700172,
+            "bbox": [
+              548,
+              166,
+              10,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "statement",
+            "confidence": 95.78727,
+            "bbox": [
+              575,
+              163,
+              115,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "at",
+            "confidence": 95.78727,
+            "bbox": [
+              708,
+              163,
+              22,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "2030-10-27",
+            "confidence": 93.293236,
+            "bbox": [
+              748,
+              163,
+              130,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "@5:3@",
+            "confidence": 52.242184,
+            "bbox": [
+              893,
+              163,
+              65,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "UTC:",
+            "confidence": 96.067604,
+            "bbox": [
+              975,
+              163,
+              46,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "“Incident",
+            "confidence": 87.267891,
+            "bbox": [
+              1043,
+              162,
+              114,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "C",
+            "confidence": 90.468346,
+            "bbox": [
+              1175,
+              163,
+              10,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "was",
+            "confidence": 95.080811,
+            "bbox": [
+              66,
+              206,
+              37,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "not",
+            "confidence": 95.080811,
+            "bbox": [
+              121,
+              203,
+              35,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "fully",
+            "confidence": 95.831718,
+            "bbox": [
+              174,
+              201,
+              64,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "isolated",
+            "confidence": 95.831718,
+            "bbox": [
+              254,
+              201,
+              103,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "at",
+            "confidence": 93.268852,
+            "bbox": [
+              374,
+              202,
+              23,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "@5:@@",
+            "confidence": 55.73143,
+            "bbox": [
+              413,
+              202,
+              64,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "UTC.",
+            "confidence": 96.184349,
+            "bbox": [
+              494,
+              202,
+              46,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "A",
+            "confidence": 92.456444,
+            "bbox": [
+              560,
+              202,
+              12,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "C",
+            "confidence": 88.37133,
+            "bbox": [
+              588,
+              202,
+              11,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "network",
+            "confidence": 96.544304,
+            "bbox": [
+              614,
+              201,
+              91,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "path",
+            "confidence": 96.336098,
+            "bbox": [
+              721,
+              201,
+              50,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "remained",
+            "confidence": 96.427811,
+            "bbox": [
+              787,
+              201,
+              103,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "live",
+            "confidence": 95.911179,
+            "bbox": [
+              908,
+              201,
+              49,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "at",
+            "confidence": 96.677307,
+            "bbox": [
+              975,
+              202,
+              22,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "05:00",
+            "confidence": 61.922539,
+            "bbox": [
+              1014,
+              202,
+              64,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "and",
+            "confidence": 96.124069,
+            "bbox": [
+              1094,
+              201,
+              36,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "continued",
+            "confidence": 96.348305,
+            "bbox": [
+              67,
+              241,
+              116,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "live",
+            "confidence": 96.13398,
+            "bbox": [
+              200,
+              241,
+              50,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "until",
+            "confidence": 96.305779,
+            "bbox": [
+              267,
+              241,
+              64,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "05:20",
+            "confidence": 80.631035,
+            "bbox": [
+              347,
+              242,
+              64,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "UTC.\"",
+            "confidence": 90.011703,
+            "bbox": [
+              427,
+              242,
+              62,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "Pavel's",
+            "confidence": 90.011703,
+            "bbox": [
+              507,
+              241,
+              90,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "statement",
+            "confidence": 96.89341,
+            "bbox": [
+              615,
+              242,
+              115,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "directly",
+            "confidence": 96.618423,
+            "bbox": [
+              747,
+              241,
+              105,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "denies",
+            "confidence": 96.385941,
+            "bbox": [
+              866,
+              241,
+              77,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "the",
+            "confidence": 96.736679,
+            "bbox": [
+              960,
+              241,
+              37,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "same",
+            "confidence": 93.150078,
+            "bbox": [
+              1015,
+              246,
+              49,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "complete-",
+            "confidence": 91.12999,
+            "bbox": [
+              1081,
+              241,
+              115,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "isolation",
+            "confidence": 96.099739,
+            "bbox": [
+              67,
+              281,
+              117,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "proposition",
+            "confidence": 96.687233,
+            "bbox": [
+              200,
+              281,
+              144,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "Elise",
+            "confidence": 96.333878,
+            "bbox": [
+              361,
+              281,
+              63,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "asserts.",
+            "confidence": 95.897621,
+            "bbox": [
+              440,
+              282,
+              100,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "He",
+            "confidence": 96.855423,
+            "bbox": [
+              561,
+              282,
+              22,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "is",
+            "confidence": 95.917458,
+            "bbox": [
+              601,
+              281,
+              23,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "not",
+            "confidence": 96.735504,
+            "bbox": [
+              640,
+              282,
+              37,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "describing",
+            "confidence": 96.520432,
+            "bbox": [
+              693,
+              281,
+              131,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "an",
+            "confidence": 96.704224,
+            "bbox": [
+              841,
+              286,
+              24,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "unrelated",
+            "confidence": 96.00843,
+            "bbox": [
+              881,
+              281,
+              116,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "service,",
+            "confidence": 96.165886,
+            "bbox": [
+              1015,
+              281,
+              100,
+              20
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "a",
+            "confidence": 96.165886,
+            "bbox": [
+              1135,
+              286,
+              10,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "different",
+            "confidence": 96.052223,
+            "bbox": [
+              66,
+              321,
+              117,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "timezone,",
+            "confidence": 96.100616,
+            "bbox": [
+              200,
+              321,
+              114,
+              19
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "or",
+            "confidence": 96.100616,
+            "bbox": [
+              333,
+              326,
+              25,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "an",
+            "confidence": 95.997864,
+            "bbox": [
+              374,
+              326,
+              24,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "event",
+            "confidence": 95.441216,
+            "bbox": [
+              413,
+              322,
+              64,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "merely",
+            "confidence": 95.441216,
+            "bbox": [
+              493,
+              321,
+              78,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "adjacent",
+            "confidence": 95.423851,
+            "bbox": [
+              588,
+              321,
+              102,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "to",
+            "confidence": 96.405624,
+            "bbox": [
+              707,
+              322,
+              24,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "05:00.",
+            "confidence": 86.151695,
+            "bbox": [
+              747,
+              322,
+              74,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "His",
+            "confidence": 96.306961,
+            "bbox": [
+              841,
+              321,
+              36,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "signature",
+            "confidence": 96.422836,
+            "bbox": [
+              895,
+              321,
+              115,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "is",
+            "confidence": 96.308144,
+            "bbox": [
+              1027,
+              321,
+              24,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "also",
+            "confidence": 96.291603,
+            "bbox": [
+              1067,
+              321,
+              51,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "authentic",
+            "confidence": 96.583641,
+            "bbox": [
+              67,
+              361,
+              116,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "within",
+            "confidence": 96.486992,
+            "bbox": [
+              200,
+              361,
+              77,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "the",
+            "confidence": 96.468605,
+            "bbox": [
+              293,
+              361,
+              37,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "synthetic",
+            "confidence": 96.468605,
+            "bbox": [
+              349,
+              361,
+              114,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "dossier.",
+            "confidence": 96.057098,
+            "bbox": [
+              480,
+              361,
+              100,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "He",
+            "confidence": 96.503654,
+            "bbox": [
+              601,
+              362,
+              23,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "refers",
+            "confidence": 96.352615,
+            "bbox": [
+              640,
+              361,
+              77,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "to",
+            "confidence": 96.785904,
+            "bbox": [
+              733,
+              362,
+              25,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "a",
+            "confidence": 96.514595,
+            "bbox": [
+              775,
+              365,
+              10,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "console",
+            "confidence": 96.531914,
+            "bbox": [
+              801,
+              361,
+              89,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "observation",
+            "confidence": 95.848541,
+            "bbox": [
+              907,
+              361,
+              145,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "but",
+            "confidence": 95.848541,
+            "bbox": [
+              1067,
+              361,
+              36,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "supplies",
+            "confidence": 96.324989,
+            "bbox": [
+              68,
+              401,
+              102,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "no",
+            "confidence": 96.776894,
+            "bbox": [
+              188,
+              405,
+              23,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "exported",
+            "confidence": 96.176437,
+            "bbox": [
+              226,
+              401,
+              104,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "trace",
+            "confidence": 96.558929,
+            "bbox": [
+              347,
+              402,
+              63,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "that",
+            "confidence": 96.589607,
+            "bbox": [
+              427,
+              401,
+              50,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "the",
+            "confidence": 96.244148,
+            "bbox": [
+              493,
+              401,
+              37,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "mandate",
+            "confidence": 96.491158,
+            "bbox": [
+              547,
+              401,
+              90,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "makes",
+            "confidence": 96.491158,
+            "bbox": [
+              653,
+              401,
+              64,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "authoritative",
+            "confidence": 96.455376,
+            "bbox": [
+              734,
+              401,
+              169,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "over",
+            "confidence": 96.455376,
+            "bbox": [
+              920,
+              405,
+              51,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "the",
+            "confidence": 96.84201,
+            "bbox": [
+              987,
+              401,
+              37,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "other",
+            "confidence": 96.49411,
+            "bbox": [
+              1040,
+              401,
+              64,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "signed",
+            "confidence": 96.81797,
+            "bbox": [
+              1122,
+              401,
+              75,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "statement.",
+            "confidence": 96.330894,
+            "bbox": [
+              68,
+              441,
+              126,
+              16
+            ],
+            "line_id": [
+              3,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      "method": "tesseract-tsv",
+      "uncertainty": [
+        "OCR is a probabilistic transcription; quote matching verifies the recognized text only. Visually compare every material quotation with the original image.",
+        "Low-confidence words: 5; review original bounding boxes before relying on text."
+      ]
+    },
+    {
+      "anchor": "pdf-page-0004",
+      "quote": "[AQ3]\nThe two signatories have not retracted their attestations. No signed correction,\nadjudication, authoritative C containment record, or evidence-priority rule resolving\nthe conflict is supplied. A later signing time alone does not make Pavel's statement\nan authorized correction of Elise's. Likewise, Elise's role as containment operator\ndoes not make her account infallible under the playbook. The packet's authenticity\nstipulation concerns the identity of the signatories and integrity of the text, not\nthe historical truth of every assertion. A reviewer must preserve both attributed\npositions rather than accept both as unconditional facts or silently discard the less\nconvenient account.",
+      "locator": {
+        "kind": "ocr",
+        "page": 4,
+        "origin": {
+          "format": "pdf",
+          "page": 4,
+          "raster_dpi": 200,
+          "pixel_to_pdf_points": "coordinate * 72 / 200",
+          "total_pages": 5
+        },
+        "coordinate_unit": "raster pixels; origin at top-left; bbox = left, top, width, height",
+        "image_artifact": "pdf-page-0004-raster.png",
+        "tsv_artifact": "pdf-page-0004.tsv",
+        "ocr_language": "eng",
+        "ocr_page_segmentation_mode": 3,
+        "mean_word_confidence": 95.55065942857144,
+        "minimum_word_confidence": 71.014496,
+        "confidence_threshold": 85.0,
+        "low_confidence_words": 1,
+        "word_count": 98,
+        "words": [
+          {
+            "text": "[AQ3]",
+            "confidence": 71.014496,
+            "bbox": [
+              71,
+              83,
+              56,
+              19
+            ],
+            "line_id": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "The",
+            "confidence": 96.563591,
+            "bbox": [
+              66,
+              162,
+              37,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "two",
+            "confidence": 96.353134,
+            "bbox": [
+              120,
+              163,
+              37,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "signatories",
+            "confidence": 96.1931,
+            "bbox": [
+              175,
+              162,
+              141,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "have",
+            "confidence": 96.479027,
+            "bbox": [
+              334,
+              162,
+              49,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "not",
+            "confidence": 95.845726,
+            "bbox": [
+              401,
+              163,
+              36,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "retracted",
+            "confidence": 95.845726,
+            "bbox": [
+              453,
+              162,
+              117,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "their",
+            "confidence": 93.210754,
+            "bbox": [
+              587,
+              162,
+              64,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "attestations.",
+            "confidence": 92.726112,
+            "bbox": [
+              667,
+              162,
+              167,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "No",
+            "confidence": 96.888176,
+            "bbox": [
+              854,
+              163,
+              24,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "signed",
+            "confidence": 96.53994,
+            "bbox": [
+              895,
+              162,
+              75,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "correction,",
+            "confidence": 96.153908,
+            "bbox": [
+              988,
+              162,
+              140,
+              19
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "adjudication,",
+            "confidence": 96.080536,
+            "bbox": [
+              67,
+              201,
+              167,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "authoritative",
+            "confidence": 93.279068,
+            "bbox": [
+              254,
+              201,
+              170,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "C",
+            "confidence": 92.756882,
+            "bbox": [
+              440,
+              202,
+              11,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "containment",
+            "confidence": 96.152061,
+            "bbox": [
+              467,
+              201,
+              143,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "record,",
+            "confidence": 96.325073,
+            "bbox": [
+              626,
+              201,
+              89,
+              20
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "or",
+            "confidence": 93.233994,
+            "bbox": [
+              733,
+              206,
+              25,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "evidence-priority",
+            "confidence": 92.103302,
+            "bbox": [
+              774,
+              201,
+              225,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "rule",
+            "confidence": 96.019432,
+            "bbox": [
+              1014,
+              201,
+              50,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "resolving",
+            "confidence": 96.717735,
+            "bbox": [
+              1080,
+              201,
+              117,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "the",
+            "confidence": 96.590378,
+            "bbox": [
+              66,
+              241,
+              37,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "conflict",
+            "confidence": 95.705505,
+            "bbox": [
+              121,
+              241,
+              102,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "is",
+            "confidence": 95.705505,
+            "bbox": [
+              240,
+              241,
+              24,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "supplied.",
+            "confidence": 96.646469,
+            "bbox": [
+              282,
+              241,
+              112,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "A",
+            "confidence": 96.989357,
+            "bbox": [
+              413,
+              242,
+              13,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "later",
+            "confidence": 96.201935,
+            "bbox": [
+              440,
+              241,
+              64,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "signing",
+            "confidence": 96.282143,
+            "bbox": [
+              522,
+              241,
+              88,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "time",
+            "confidence": 96.282143,
+            "bbox": [
+              627,
+              241,
+              50,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "alone",
+            "confidence": 96.665092,
+            "bbox": [
+              694,
+              241,
+              63,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "does",
+            "confidence": 96.525063,
+            "bbox": [
+              774,
+              241,
+              50,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "not",
+            "confidence": 96.330841,
+            "bbox": [
+              841,
+              242,
+              36,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "make",
+            "confidence": 91.217911,
+            "bbox": [
+              893,
+              241,
+              50,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "Pavel's",
+            "confidence": 91.217911,
+            "bbox": [
+              961,
+              241,
+              90,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "statement",
+            "confidence": 96.409401,
+            "bbox": [
+              1068,
+              242,
+              116,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "an",
+            "confidence": 94.121407,
+            "bbox": [
+              67,
+              286,
+              23,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "authorized",
+            "confidence": 94.121407,
+            "bbox": [
+              107,
+              281,
+              130,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "correction",
+            "confidence": 96.4254,
+            "bbox": [
+              254,
+              281,
+              130,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "of",
+            "confidence": 93.29673,
+            "bbox": [
+              400,
+              281,
+              26,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "Elise's.",
+            "confidence": 90.652725,
+            "bbox": [
+              440,
+              281,
+              100,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "Likewise,",
+            "confidence": 93.301033,
+            "bbox": [
+              562,
+              281,
+              112,
+              20
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "Elise's",
+            "confidence": 92.651863,
+            "bbox": [
+              694,
+              281,
+              90,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "role",
+            "confidence": 96.36306,
+            "bbox": [
+              800,
+              281,
+              51,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "as",
+            "confidence": 96.814178,
+            "bbox": [
+              867,
+              286,
+              23,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "containment",
+            "confidence": 96.763229,
+            "bbox": [
+              908,
+              281,
+              143,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "operator",
+            "confidence": 96.36367,
+            "bbox": [
+              1066,
+              282,
+              105,
+              21
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "does",
+            "confidence": 96.757874,
+            "bbox": [
+              66,
+              321,
+              50,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "not",
+            "confidence": 96.342941,
+            "bbox": [
+              134,
+              322,
+              36,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "make",
+            "confidence": 96.253075,
+            "bbox": [
+              187,
+              321,
+              50,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "her",
+            "confidence": 96.894638,
+            "bbox": [
+              254,
+              321,
+              37,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "account",
+            "confidence": 95.206032,
+            "bbox": [
+              307,
+              322,
+              90,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "infallible",
+            "confidence": 96.288185,
+            "bbox": [
+              414,
+              321,
+              129,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "under",
+            "confidence": 96.82869,
+            "bbox": [
+              561,
+              321,
+              64,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "the",
+            "confidence": 96.621147,
+            "bbox": [
+              640,
+              321,
+              37,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "playbook.",
+            "confidence": 96.707405,
+            "bbox": [
+              694,
+              321,
+              113,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "The",
+            "confidence": 96.790512,
+            "bbox": [
+              827,
+              321,
+              37,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "packet's",
+            "confidence": 94.214699,
+            "bbox": [
+              881,
+              321,
+              103,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "authenticity",
+            "confidence": 96.577217,
+            "bbox": [
+              1001,
+              321,
+              157,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "stipulation",
+            "confidence": 96.110718,
+            "bbox": [
+              68,
+              361,
+              143,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "concerns",
+            "confidence": 95.453262,
+            "bbox": [
+              227,
+              365,
+              103,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "the",
+            "confidence": 96.946938,
+            "bbox": [
+              347,
+              361,
+              36,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "identity",
+            "confidence": 96.258934,
+            "bbox": [
+              401,
+              361,
+              104,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "of",
+            "confidence": 96.258934,
+            "bbox": [
+              520,
+              361,
+              25,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "the",
+            "confidence": 96.190277,
+            "bbox": [
+              560,
+              361,
+              37,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "signatories",
+            "confidence": 96.182297,
+            "bbox": [
+              615,
+              361,
+              142,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "and",
+            "confidence": 96.467926,
+            "bbox": [
+              775,
+              361,
+              35,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "integrity",
+            "confidence": 96.569336,
+            "bbox": [
+              828,
+              361,
+              117,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "of",
+            "confidence": 96.401009,
+            "bbox": [
+              960,
+              361,
+              26,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "the",
+            "confidence": 96.523926,
+            "bbox": [
+              1000,
+              361,
+              37,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "text,",
+            "confidence": 95.850929,
+            "bbox": [
+              1053,
+              362,
+              62,
+              18
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "not",
+            "confidence": 96.706436,
+            "bbox": [
+              1135,
+              363,
+              35,
+              14
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "the",
+            "confidence": 96.918236,
+            "bbox": [
+              66,
+              401,
+              37,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "historical",
+            "confidence": 95.662537,
+            "bbox": [
+              121,
+              401,
+              130,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "truth",
+            "confidence": 96.273148,
+            "bbox": [
+              266,
+              401,
+              65,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "of",
+            "confidence": 96.273148,
+            "bbox": [
+              347,
+              401,
+              25,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "every",
+            "confidence": 96.551125,
+            "bbox": [
+              387,
+              405,
+              64,
+              18
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "assertion.",
+            "confidence": 96.392937,
+            "bbox": [
+              467,
+              401,
+              127,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "A",
+            "confidence": 96.631996,
+            "bbox": [
+              614,
+              401,
+              12,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "reviewer",
+            "confidence": 96.370407,
+            "bbox": [
+              639,
+              401,
+              105,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "must",
+            "confidence": 96.601677,
+            "bbox": [
+              760,
+              402,
+              50,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "preserve",
+            "confidence": 96.357353,
+            "bbox": [
+              827,
+              405,
+              103,
+              18
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "both",
+            "confidence": 96.661789,
+            "bbox": [
+              948,
+              401,
+              50,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "attributed",
+            "confidence": 96.584816,
+            "bbox": [
+              1015,
+              401,
+              129,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "positions",
+            "confidence": 96.604225,
+            "bbox": [
+              67,
+              440,
+              116,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "rather",
+            "confidence": 96.793083,
+            "bbox": [
+              200,
+              440,
+              77,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "than",
+            "confidence": 95.034935,
+            "bbox": [
+              293,
+              440,
+              51,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "accept",
+            "confidence": 95.034935,
+            "bbox": [
+              361,
+              441,
+              76,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "both",
+            "confidence": 95.036232,
+            "bbox": [
+              454,
+              440,
+              50,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "as",
+            "confidence": 95.036232,
+            "bbox": [
+              521,
+              445,
+              22,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "unconditional",
+            "confidence": 96.501602,
+            "bbox": [
+              561,
+              440,
+              170,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "facts",
+            "confidence": 96.614967,
+            "bbox": [
+              748,
+              440,
+              62,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "or",
+            "confidence": 96.512016,
+            "bbox": [
+              827,
+              445,
+              25,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "silently",
+            "confidence": 96.788345,
+            "bbox": [
+              868,
+              440,
+              104,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "discard",
+            "confidence": 96.575775,
+            "bbox": [
+              987,
+              440,
+              90,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "the",
+            "confidence": 96.809357,
+            "bbox": [
+              1093,
+              440,
+              37,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "less",
+            "confidence": 96.616806,
+            "bbox": [
+              1148,
+              440,
+              49,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "convenient",
+            "confidence": 96.372421,
+            "bbox": [
+              67,
+              480,
+              130,
+              17
+            ],
+            "line_id": [
+              3,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "account.",
+            "confidence": 96.825058,
+            "bbox": [
+              213,
+              481,
+              101,
+              16
+            ],
+            "line_id": [
+              3,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      "method": "tesseract-tsv",
+      "uncertainty": [
+        "OCR is a probabilistic transcription; quote matching verifies the recognized text only. Visually compare every material quotation with the original image.",
+        "Low-confidence words: 1; review original bounding boxes before relying on text."
+      ]
+    },
+    {
+      "anchor": "pdf-page-0005",
+      "quote": "[AQ4]\nThe packet includes an administrative cover note confirming that both statements were\nreceived intact. It does not assert that containment occurred at either proposed time\nand does not establish the earliest possible time of isolation. The incident register\ndeliberately leaves C containment uncertified, while retaining C's accepted detection\nbefore the revision boundary. That detection is not disputed by either signatory. The\nconflict therefore affects the selected containment proposition, not every\nindependent fact about C. These scan pages are generated synthetic documents with\nprinted signature labels; no real person's handwriting, personal data, or operational\nnetwork identifiers are used.",
+      "locator": {
+        "kind": "ocr",
+        "page": 5,
+        "origin": {
+          "format": "pdf",
+          "page": 5,
+          "raster_dpi": 200,
+          "pixel_to_pdf_points": "coordinate * 72 / 200",
+          "total_pages": 5
+        },
+        "coordinate_unit": "raster pixels; origin at top-left; bbox = left, top, width, height",
+        "image_artifact": "pdf-page-0005-raster.png",
+        "tsv_artifact": "pdf-page-0005.tsv",
+        "ocr_language": "eng",
+        "ocr_page_segmentation_mode": 3,
+        "mean_word_confidence": 95.75592513265306,
+        "minimum_word_confidence": 62.61581,
+        "confidence_threshold": 85.0,
+        "low_confidence_words": 1,
+        "word_count": 98,
+        "words": [
+          {
+            "text": "[AQ4]",
+            "confidence": 62.61581,
+            "bbox": [
+              71,
+              83,
+              56,
+              19
+            ],
+            "line_id": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "The",
+            "confidence": 96.663872,
+            "bbox": [
+              66,
+              162,
+              37,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "packet",
+            "confidence": 95.916885,
+            "bbox": [
+              121,
+              162,
+              76,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "includes",
+            "confidence": 96.437126,
+            "bbox": [
+              213,
+              162,
+              103,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "an",
+            "confidence": 96.143181,
+            "bbox": [
+              334,
+              166,
+              24,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "administrative",
+            "confidence": 96.143181,
+            "bbox": [
+              374,
+              162,
+              183,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "cover",
+            "confidence": 96.312828,
+            "bbox": [
+              574,
+              166,
+              64,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "note",
+            "confidence": 96.515182,
+            "bbox": [
+              654,
+              163,
+              49,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "confirming",
+            "confidence": 96.275719,
+            "bbox": [
+              721,
+              162,
+              130,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "that",
+            "confidence": 96.373299,
+            "bbox": [
+              866,
+              162,
+              51,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "both",
+            "confidence": 96.394768,
+            "bbox": [
+              934,
+              162,
+              51,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "statements",
+            "confidence": 96.174965,
+            "bbox": [
+              1002,
+              163,
+              128,
+              15
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "were",
+            "confidence": 96.385918,
+            "bbox": [
+              1147,
+              166,
+              50,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "received",
+            "confidence": 96.559883,
+            "bbox": [
+              66,
+              201,
+              104,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "intact.",
+            "confidence": 96.084251,
+            "bbox": [
+              188,
+              201,
+              86,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "It",
+            "confidence": 95.832283,
+            "bbox": [
+              295,
+              202,
+              21,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "does",
+            "confidence": 95.691605,
+            "bbox": [
+              333,
+              201,
+              50,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "not",
+            "confidence": 95.691605,
+            "bbox": [
+              401,
+              202,
+              36,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "assert",
+            "confidence": 96.775925,
+            "bbox": [
+              454,
+              202,
+              76,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "that",
+            "confidence": 96.007523,
+            "bbox": [
+              547,
+              201,
+              50,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "containment",
+            "confidence": 95.948921,
+            "bbox": [
+              614,
+              201,
+              143,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "occurred",
+            "confidence": 95.948921,
+            "bbox": [
+              774,
+              201,
+              103,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "at",
+            "confidence": 95.903381,
+            "bbox": [
+              894,
+              202,
+              23,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "either",
+            "confidence": 95.629196,
+            "bbox": [
+              933,
+              201,
+              78,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "proposed",
+            "confidence": 95.986305,
+            "bbox": [
+              1027,
+              201,
+              103,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "time",
+            "confidence": 95.986305,
+            "bbox": [
+              1147,
+              201,
+              50,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "text": "and",
+            "confidence": 95.257622,
+            "bbox": [
+              67,
+              241,
+              36,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "does",
+            "confidence": 95.257622,
+            "bbox": [
+              120,
+              241,
+              50,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "not",
+            "confidence": 96.71859,
+            "bbox": [
+              188,
+              242,
+              35,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "establish",
+            "confidence": 96.56665,
+            "bbox": [
+              239,
+              241,
+              119,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "the",
+            "confidence": 96.08429,
+            "bbox": [
+              373,
+              241,
+              37,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "earliest",
+            "confidence": 96.08429,
+            "bbox": [
+              426,
+              241,
+              104,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "possible",
+            "confidence": 95.972481,
+            "bbox": [
+              548,
+              241,
+              102,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "time",
+            "confidence": 95.972481,
+            "bbox": [
+              666,
+              241,
+              51,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "of",
+            "confidence": 96.890282,
+            "bbox": [
+              733,
+              241,
+              26,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "isolation.",
+            "confidence": 95.963982,
+            "bbox": [
+              775,
+              241,
+              126,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "The",
+            "confidence": 95.963982,
+            "bbox": [
+              920,
+              241,
+              37,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "incident",
+            "confidence": 96.443008,
+            "bbox": [
+              975,
+              241,
+              102,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "register",
+            "confidence": 96.748734,
+            "bbox": [
+              1093,
+              241,
+              105,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              3
+            ]
+          },
+          {
+            "text": "deliberately",
+            "confidence": 96.417061,
+            "bbox": [
+              66,
+              281,
+              159,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "leaves",
+            "confidence": 93.278458,
+            "bbox": [
+              240,
+              281,
+              76,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "C",
+            "confidence": 93.172241,
+            "bbox": [
+              334,
+              282,
+              11,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "containment",
+            "confidence": 96.221954,
+            "bbox": [
+              361,
+              281,
+              142,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "uncertified,",
+            "confidence": 96.188667,
+            "bbox": [
+              521,
+              281,
+              153,
+              20
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "while",
+            "confidence": 96.188667,
+            "bbox": [
+              693,
+              281,
+              64,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "retaining",
+            "confidence": 96.455612,
+            "bbox": [
+              774,
+              281,
+              116,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "C's",
+            "confidence": 95.632874,
+            "bbox": [
+              908,
+              282,
+              35,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "accepted",
+            "confidence": 96.505714,
+            "bbox": [
+              961,
+              281,
+              103,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "detection",
+            "confidence": 96.484123,
+            "bbox": [
+              1080,
+              281,
+              118,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              4
+            ]
+          },
+          {
+            "text": "before",
+            "confidence": 94.467613,
+            "bbox": [
+              67,
+              321,
+              76,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "the",
+            "confidence": 96.006714,
+            "bbox": [
+              160,
+              321,
+              37,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "revision",
+            "confidence": 95.937508,
+            "bbox": [
+              213,
+              321,
+              104,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "boundary.",
+            "confidence": 96.32692,
+            "bbox": [
+              334,
+              321,
+              113,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "That",
+            "confidence": 96.458412,
+            "bbox": [
+              466,
+              321,
+              50,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "detection",
+            "confidence": 95.573349,
+            "bbox": [
+              533,
+              321,
+              118,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "is",
+            "confidence": 96.185059,
+            "bbox": [
+              667,
+              321,
+              23,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "not",
+            "confidence": 96.185059,
+            "bbox": [
+              708,
+              322,
+              35,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "disputed",
+            "confidence": 96.786995,
+            "bbox": [
+              760,
+              321,
+              104,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "by",
+            "confidence": 96.481796,
+            "bbox": [
+              881,
+              321,
+              23,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "either",
+            "confidence": 96.375404,
+            "bbox": [
+              920,
+              321,
+              78,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "signatory.",
+            "confidence": 96.244904,
+            "bbox": [
+              1015,
+              321,
+              126,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "The",
+            "confidence": 96.421188,
+            "bbox": [
+              1160,
+              321,
+              37,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "text": "conflict",
+            "confidence": 95.117477,
+            "bbox": [
+              67,
+              361,
+              103,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "therefore",
+            "confidence": 96.497665,
+            "bbox": [
+              187,
+              361,
+              116,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "affects",
+            "confidence": 96.106529,
+            "bbox": [
+              321,
+              361,
+              89,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "the",
+            "confidence": 96.106529,
+            "bbox": [
+              427,
+              361,
+              37,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "selected",
+            "confidence": 96.446014,
+            "bbox": [
+              482,
+              361,
+              101,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "containment",
+            "confidence": 96.187233,
+            "bbox": [
+              601,
+              361,
+              142,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "proposition,",
+            "confidence": 96.398499,
+            "bbox": [
+              761,
+              361,
+              154,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "not",
+            "confidence": 96.412109,
+            "bbox": [
+              934,
+              363,
+              36,
+              14
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "every",
+            "confidence": 96.981018,
+            "bbox": [
+              987,
+              365,
+              65,
+              18
+            ],
+            "line_id": [
+              2,
+              1,
+              6
+            ]
+          },
+          {
+            "text": "independent",
+            "confidence": 96.32373,
+            "bbox": [
+              67,
+              401,
+              143,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "fact",
+            "confidence": 96.477554,
+            "bbox": [
+              227,
+              401,
+              49,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "about",
+            "confidence": 93.181747,
+            "bbox": [
+              294,
+              401,
+              63,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "C.",
+            "confidence": 93.025589,
+            "bbox": [
+              374,
+              401,
+              20,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "These",
+            "confidence": 96.340576,
+            "bbox": [
+              414,
+              401,
+              63,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "scan",
+            "confidence": 96.340576,
+            "bbox": [
+              495,
+              405,
+              49,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "pages",
+            "confidence": 96.505104,
+            "bbox": [
+              561,
+              405,
+              63,
+              18
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "are",
+            "confidence": 96.372681,
+            "bbox": [
+              640,
+              405,
+              37,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "generated",
+            "confidence": 96.596596,
+            "bbox": [
+              693,
+              401,
+              117,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "synthetic",
+            "confidence": 96.094246,
+            "bbox": [
+              828,
+              401,
+              115,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "documents",
+            "confidence": 96.743614,
+            "bbox": [
+              960,
+              401,
+              117,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "with",
+            "confidence": 96.509377,
+            "bbox": [
+              1093,
+              401,
+              52,
+              16
+            ],
+            "line_id": [
+              2,
+              1,
+              7
+            ]
+          },
+          {
+            "text": "printed",
+            "confidence": 96.405617,
+            "bbox": [
+              67,
+              440,
+              89,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "signature",
+            "confidence": 95.936554,
+            "bbox": [
+              175,
+              440,
+              115,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "labels;",
+            "confidence": 96.629379,
+            "bbox": [
+              307,
+              440,
+              87,
+              20
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "no",
+            "confidence": 96.851646,
+            "bbox": [
+              414,
+              445,
+              24,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "real",
+            "confidence": 96.530258,
+            "bbox": [
+              453,
+              440,
+              51,
+              17
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "person's",
+            "confidence": 96.221283,
+            "bbox": [
+              521,
+              441,
+              103,
+              22
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "handwriting,",
+            "confidence": 96.512314,
+            "bbox": [
+              640,
+              440,
+              154,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "personal",
+            "confidence": 96.655945,
+            "bbox": [
+              814,
+              440,
+              104,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "data,",
+            "confidence": 96.63472,
+            "bbox": [
+              933,
+              440,
+              61,
+              20
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "or",
+            "confidence": 96.099106,
+            "bbox": [
+              1014,
+              445,
+              24,
+              12
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "operational",
+            "confidence": 96.099106,
+            "bbox": [
+              1053,
+              440,
+              145,
+              23
+            ],
+            "line_id": [
+              2,
+              1,
+              8
+            ]
+          },
+          {
+            "text": "network",
+            "confidence": 95.952713,
+            "bbox": [
+              67,
+              480,
+              91,
+              17
+            ],
+            "line_id": [
+              3,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "identifiers",
+            "confidence": 96.338669,
+            "bbox": [
+              174,
+              480,
+              142,
+              17
+            ],
+            "line_id": [
+              3,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "are",
+            "confidence": 95.900452,
+            "bbox": [
+              334,
+              485,
+              36,
+              12
+            ],
+            "line_id": [
+              3,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "used.",
+            "confidence": 96.229294,
+            "bbox": [
+              388,
+              480,
+              59,
+              17
+            ],
+            "line_id": [
+              3,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      "method": "tesseract-tsv",
+      "uncertainty": [
+        "OCR is a probabilistic transcription; quote matching verifies the recognized text only. Visually compare every material quotation with the original image.",
+        "Low-confidence words: 1; review original bounding boxes before relying on text."
+      ]
+    }
+  ],
+  "tools": {
+    "python-stdlib": "3.14.8",
+    "pdfinfo": "pdfinfo version 26.01.0",
+    "pdfimages": "pdfimages version 26.01.0",
+    "pdftotext": "pdftotext version 26.01.0",
+    "pdftoppm": "pdftoppm version 26.01.0",
+    "tesseract": "tesseract 5.5.4"
+  },
+  "warnings": [
+    "OCR text is not independently verified against the original visual source, regardless of confidence.",
+    "pdf-page-0002: 3/88 OCR words are below confidence 85.",
+    "pdf-page-0003: 5/93 OCR words are below confidence 85.",
+    "pdf-page-0004: 1/98 OCR words are below confidence 85.",
+    "pdf-page-0005: 1/98 OCR words are below confidence 85."
+  ],
+  "complete": false,
+  "status": "partial"
+}

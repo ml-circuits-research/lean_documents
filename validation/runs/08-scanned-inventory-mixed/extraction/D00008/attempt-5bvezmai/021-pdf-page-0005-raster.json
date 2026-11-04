@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/usr/bin/pdftoppm",
+    "-f",
+    "5",
+    "-l",
+    "5",
+    "-singlefile",
+    "-r",
+    "200",
+    "-png",
+    "/home/salboaie/work/lean_documents/tmp/claim-audit-yseahrxj/input/originals/D00008.pdf",
+    "/home/salboaie/work/lean_documents/tmp/claim-audit-yseahrxj/extraction/D00008/attempt-5bvezmai/pdf-page-0005-raster"
+  ],
+  "timeout_seconds": 60,
+  "returncode": 0,
+  "stdout": "",
+  "stderr": ""
+}

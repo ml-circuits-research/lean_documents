@@ -1,0 +1,78 @@
+[
+  {
+    "run_id": "11-report-derived-criteria-mixed",
+    "workspace": "/home/salboaie/work/lean_documents/tmp/claim-audit-zzclcagd",
+    "status": "passed",
+    "audit_contract": {
+      "contract_version": 2,
+      "report_anchors": 14,
+      "claim_anchors": 12,
+      "non_claim_anchors": 2,
+      "registered_claims": 12,
+      "audited_claims": 12,
+      "deferred_claims": 0,
+      "coverage": "complete_registration",
+      "limitation": "Registration reconciles declared claims and reviewed report anchors; it does not establish semantic completeness, faithful decomposition, or that declared searches were actually performed."
+    },
+    "checked_targets": 30,
+    "export": "/home/salboaie/work/lean_documents/tmp/claim-audit-zzclcagd-reviewed-export",
+    "independent_review_sha256": "52a7ede9686cce3c4c30ca96388da39d72d2a855eb055e0980ab035fec94aa9b"
+  },
+  {
+    "run_id": "11-report-derived-criteria-correct",
+    "workspace": "/home/salboaie/work/lean_documents/tmp/claim-audit-i_9q7uan",
+    "status": "passed",
+    "audit_contract": {
+      "contract_version": 2,
+      "report_anchors": 14,
+      "claim_anchors": 12,
+      "non_claim_anchors": 2,
+      "registered_claims": 45,
+      "audited_claims": 45,
+      "deferred_claims": 0,
+      "coverage": "complete_registration",
+      "limitation": "Registration reconciles declared claims and reviewed report anchors; it does not establish semantic completeness, faithful decomposition, or that declared searches were actually performed."
+    },
+    "checked_targets": 27,
+    "export": "/home/salboaie/work/lean_documents/tmp/claim-audit-i_9q7uan-reviewed-export",
+    "independent_review_sha256": "52a7ede9686cce3c4c30ca96388da39d72d2a855eb055e0980ab035fec94aa9b"
+  },
+  {
+    "run_id": "12-empty-evidence-correct",
+    "workspace": "/home/salboaie/work/lean_documents/tmp/claim-audit-bnzq6fnz",
+    "status": "passed",
+    "audit_contract": {
+      "contract_version": 2,
+      "report_anchors": 3,
+      "claim_anchors": 2,
+      "non_claim_anchors": 1,
+      "registered_claims": 2,
+      "audited_claims": 2,
+      "deferred_claims": 0,
+      "coverage": "complete_registration",
+      "limitation": "Registration reconciles declared claims and reviewed report anchors; it does not establish semantic completeness, faithful decomposition, or that declared searches were actually performed."
+    },
+    "checked_targets": 5,
+    "export": "/home/salboaie/work/lean_documents/tmp/claim-audit-bnzq6fnz-reviewed-export",
+    "independent_review_sha256": "52a7ede9686cce3c4c30ca96388da39d72d2a855eb055e0980ab035fec94aa9b"
+  },
+  {
+    "run_id": "12-empty-evidence-mixed",
+    "workspace": "/home/salboaie/work/lean_documents/tmp/claim-audit-x7w95tav",
+    "status": "passed",
+    "audit_contract": {
+      "contract_version": 2,
+      "report_anchors": 3,
+      "claim_anchors": 2,
+      "non_claim_anchors": 1,
+      "registered_claims": 2,
+      "audited_claims": 2,
+      "deferred_claims": 0,
+      "coverage": "complete_registration",
+      "limitation": "Registration reconciles declared claims and reviewed report anchors; it does not establish semantic completeness, faithful decomposition, or that declared searches were actually performed."
+    },
+    "checked_targets": 4,
+    "export": "/home/salboaie/work/lean_documents/tmp/claim-audit-x7w95tav-reviewed-export",
+    "independent_review_sha256": "52a7ede9686cce3c4c30ca96388da39d72d2a855eb055e0980ab035fec94aa9b"
+  }
+]

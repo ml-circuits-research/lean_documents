@@ -1,0 +1,98 @@
+{
+  "query": "rounding OR \"27,777.775\" OR \"24,999.994\"",
+  "total_matching_chunks": 9,
+  "offset": 0,
+  "limit": "Ranked retrieval is not exhaustive semantic review; inspect full passages and inventory for exceptions.",
+  "results": [
+    {
+      "id": 12,
+      "path": "input/report.md",
+      "anchor": "C06-05",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 119,
+      "text": "**C06-05.** P-14 requires competition because rounding EUR 24,999.994 gives EUR 25,000.00. Sources: P02, P04, L03, F02.",
+      "rank": -7.366369895400667
+    },
+    {
+      "id": 67,
+      "path": "input/sources/reconciliation-correspondence.md",
+      "anchor": "F01",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 631,
+      "text": "## [F01]\n\nFinance analyst Nia West reconciled P-13 on June 18. Her working note multiplies USD 27,777.775 by the fixed rate 0.900000 and obtains exact EUR 24,999.9975 before cent rounding. The note applies the prescribed single final nearest-cent rounding and records EUR 25,000.00 as the normalized value. It explicitly warns that comparing the unrounded amount with EUR 25,000.00 would apply the threshold at the wrong stage. The note is arithmetic corroboration, not a replacement for the operative rounding clause. It does not claim that every amount beginning with the digits 24,999 is below the threshold after normalization.",
+      "rank": -5.908120312849977
+    },
+    {
+      "id": 63,
+      "path": "input/sources/purchase-register.md",
+      "anchor": "L03",
+      "document_id": "D00007",
+      "start_char": 0,
+      "end_char": 746,
+      "text": "## [L03]\n\nP-13 was received June 4 and committed June 12. Its exact contractual USD amount and fixed conversion rate are in V05. No other purchase aggregates with it. A complete three-supplier competition certificate was signed June 10, and a director order approval was granted June 11. The buyer's worksheet retained the exact rational converted value before the final cent rounding; the public purchase dashboard displayed the rounded normalized amount. P-14, a separate requirement received June 5, has an exact unrounded EUR consideration of 24,999.994 and was committed June 12. It has no other charges, rebates, VAT included, or aggregating purchase. A director approved it June 11; no competition certificate or exception exists for P-14.",
+      "rank": -4.042269831180868
+    },
+    {
+      "id": 10,
+      "path": "input/report.md",
+      "anchor": "C06-03",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 135,
+      "text": "**C06-03.** P-13 reaches the revision 2 competition threshold after the required final cent rounding. Sources: P02, P04, V05, L03, F01.",
+      "rank": -3.118501315141181
+    },
+    {
+      "id": 11,
+      "path": "input/report.md",
+      "anchor": "C06-04",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 151,
+      "text": "**C06-04.** P-13 is below the competition threshold because its exact converted amount is EUR 24,999.9975 before rounding. Sources: P02, P04, V05, F01.",
+      "rank": -3.018219003979875
+    },
+    {
+      "id": 77,
+      "path": "input/sources/revision-amendment.pdf.md",
+      "anchor": "pdf-page-0006",
+      "document_id": "D00009",
+      "start_char": 0,
+      "end_char": 730,
+      "text": "[V05]\nThe requisition currency schedule fixes USD-to-EUR at exactly 0.900000 euros per US dollar\nfor P-13 and CHF-to-EUR at exactly 1.040000 euros per Swiss franc for P-22. These are\nsynthetic contractual rates for this assessment and are not claims about an actual exchange\nmarket. P-13 permits a transaction amount of USD 27,777.775, has no freight charge, and has\nno unconditional rebate or separately included VAT. P-22 specifies CHF 18,000.00 equipment\nplus CHF 1,000.00 unavoidable freight. Its possible year-end loyalty credit is discretionary\nand is not an unconditional rebate at commitment. Later accounting software may display only\ntwo currency decimals, but those displays do not amend these exact contractual inputs.",
+      "rank": -2.538499673358498
+    },
+    {
+      "id": 68,
+      "path": "input/sources/reconciliation-correspondence.md",
+      "anchor": "F02",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 677,
+      "text": "## [F02]\n\nFor P-14 the same worksheet takes EUR 24,999.994 and rounds to EUR 24,999.99, because the fractional part lies below the half-cent boundary. The worksheet states that the two purchases are separate operational requirements and do not aggregate. For P-22 it multiplies total consideration CHF 19,000.00, including freight, by 1.040000 to obtain EUR 19,760.00. A proposed loyalty credit remains discretionary and is not subtracted. P-22 is included to document how the cost definition treats freight and contingent discounts; no supplied report finding depends on whether P-22 has a competition obligation, and its approval history is not part of L01's closed coverage.",
+      "rank": -2.3853669897440546
+    },
+    {
+      "id": 3,
+      "path": "input/brief.md",
+      "anchor": "B02",
+      "document_id": "D00001",
+      "start_char": 0,
+      "end_char": 720,
+      "text": "## Domain and authority\nThe finite domain is Harbor Procurement Standard, original requisitions and purchase events from 1 May through 30 June 2029. All entities and rules are synthetic. Use the operative source clauses and explicit amendments rather than external law, currency rates, timezone calendars, procurement customs, or incident-response standards. Apply exact numeric inputs, specified rounding, exact minute timestamps, inclusive deadline limits, and expressly scoped exceptions. A signed or attributed statement is not automatically a settled event. Authority and completeness are only as broad as each source expressly states. Do not transform missing attachments or observations into negative event facts.",
+      "rank": -1.892408947048709
+    },
+    {
+      "id": 61,
+      "path": "input/sources/purchase-register.md",
+      "anchor": "L01",
+      "document_id": "D00007",
+      "start_char": 0,
+      "end_char": 805,
+      "text": "## [L01]\n\nThis register is complete for commitment amounts, approval events, competitive-solicitation certificates, emergency declarations, retrospective reviews, and exception determinations for P-11, P-12, P-13, P-14, P-15, P-16, R-17, R-18, and E-19 from May 1 through June 30, 2029. An explicit entry “none” means the named event did not occur in that coverage, rather than that a page was omitted. That completeness does not cover P-21, E-20, payment events, or anyone's subjective assessment. The recorded original requirements for these entries were fully known at the times stated. All amounts described as normalized include unavoidable charges, exclude recoverable VAT, and already reflect the specified single final rounding unless an entry instead supplies the exact unrounded currency inputs.",
+      "rank": -1.6657116958124079
+    }
+  ]
+}

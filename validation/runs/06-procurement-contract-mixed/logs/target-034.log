@@ -1,0 +1,9 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target034.lean
+Audit.claim17Witnesses : Audit.CoveredPurchase.p16 ∈ Audit.covered ∧
+  Audit.approvalValid Audit.CoveredPurchase.p16 = false ∧
+    Audit.compliant Audit.CoveredPurchase.p16 = false ∧
+      Audit.CoveredPurchase.p11 ∈ Audit.covered ∧
+        Audit.required Audit.CoveredPurchase.p11 = true ∧
+          Audit.rackCertificate = false ∧
+            Audit.rackException = false ∧ Audit.compliant Audit.CoveredPurchase.p11 = false
+'Audit.claim17Witnesses' depends on axioms: [propext]

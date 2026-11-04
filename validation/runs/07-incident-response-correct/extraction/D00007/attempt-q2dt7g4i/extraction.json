@@ -1,0 +1,95 @@
+{
+  "text": "<a id=\"document-preamble\"></a>\n# Delivered notification register and shift handover\n\nAll organizations, people, agreements, events, and rules in this source are synthetic.\n\n<a id=\"N01\"></a>\n## [N01]\n\nThe notification register is complete for A's technical-lead, incident-commander, and executive-duty-officer notifications from 00:00 through 02:30 UTC on October 27. It separately records queue and delivered timestamps. Technical-lead notification TL-A was queued at 00:08 UTC and delivered to the required technical lead at 00:11 UTC. A receipt token confirms delivery. No earlier delivered notification to that role occurred. An automated display highlights the queue timestamp in green because queueing succeeded; that color is not a representation that the playbook's delivered-notification deadline was satisfied. The recipient role and incident identifier are unambiguous.\n\n<a id=\"N02\"></a>\n## [N02]\n\nIncident-commander notification IC-A was queued at 00:18 UTC and delivered to the incident commander at 00:22 UTC. No earlier delivered commander notification occurred in the complete coverage. The later fact that the commander validly approved containment pauses does not retroactively move the first notification earlier. Executive-duty-officer notification EX-A was delivered at 01:12 UTC. Its message explicitly states that the incident remained uncontained at the sixty-minute mark and requests executive coordination. This message is not a reclassification, a containment event, or an approval to disregard previous escalation delays.\n\n<a id=\"N03\"></a>\n## [N03]\n\nThe shift handover at 01:30 UTC repeats that approved containment pauses affect only the containment metric and are capped under the applicable revision. The outgoing operator wrote an informal calculation using seventy excluded minutes, then marked it provisional pending the revision check. That provisional number appears in a working column, not an approved policy amendment. The handover also notes that the notification console defaults to sorting by queue time, so exported rows must be read with their field names. This presentation detail explains how a report could mistake 00:08 for delivery without establishing that such a mistake is a valid interpretation.\n\n<a id=\"N04\"></a>\n## [N04]\n\nThe register covers notifications to the three specified roles, not all internal chat messages or conversations. The playbook duties concern delivered role-specific notifications, so unrelated informal awareness does not satisfy them. The register's explicit statements that no earlier deliveries occurred support bounded absence reasoning for those exact duties and interval. They do not imply that no person knew of the incident, that no containment work occurred, or that no customer communication was sent. The handover records that the executive message arrived before A's authoritative containment, consistent with the incident remaining active after the escalation trigger.\n\n<a id=\"N05\"></a>\n## [N05]\n\nA later operations summary says all relevant people were eventually informed. That broad statement is compatible with the exact delivered timestamps and does not settle whether each notification was timely. The procedure intentionally contains multiple steps rather than one aggregate requirement to tell someone. A single timely executive message cannot erase late technical-lead or commander notifications. Conversely, late early-stage notifications do not make a separately timely executive delivery late. The report must distinguish the duties by recipient, trigger, limit, and delivery event to avoid collapsing a mixed operational record into an unsupported all-compliant or all-failed summary.\n",
+  "segments": [
+    {
+      "anchor": "document-preamble",
+      "quote": "# Delivered notification register and shift handover\n\nAll organizations, people, agreements, events, and rules in this source are synthetic.",
+      "locator": {
+        "kind": "text",
+        "start_line": 1,
+        "end_line": 3,
+        "start_character": 0,
+        "end_character": 140,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "N01",
+      "quote": "## [N01]\n\nThe notification register is complete for A's technical-lead, incident-commander, and executive-duty-officer notifications from 00:00 through 02:30 UTC on October 27. It separately records queue and delivered timestamps. Technical-lead notification TL-A was queued at 00:08 UTC and delivered to the required technical lead at 00:11 UTC. A receipt token confirms delivery. No earlier delivered notification to that role occurred. An automated display highlights the queue timestamp in green because queueing succeeded; that color is not a representation that the playbook's delivered-notification deadline was satisfied. The recipient role and incident identifier are unambiguous.",
+      "locator": {
+        "kind": "text",
+        "start_line": 6,
+        "end_line": 8,
+        "start_character": 159,
+        "end_character": 848,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "N02",
+      "quote": "## [N02]\n\nIncident-commander notification IC-A was queued at 00:18 UTC and delivered to the incident commander at 00:22 UTC. No earlier delivered commander notification occurred in the complete coverage. The later fact that the commander validly approved containment pauses does not retroactively move the first notification earlier. Executive-duty-officer notification EX-A was delivered at 01:12 UTC. Its message explicitly states that the incident remained uncontained at the sixty-minute mark and requests executive coordination. This message is not a reclassification, a containment event, or an approval to disregard previous escalation delays.",
+      "locator": {
+        "kind": "text",
+        "start_line": 11,
+        "end_line": 13,
+        "start_character": 867,
+        "end_character": 1517,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "N03",
+      "quote": "## [N03]\n\nThe shift handover at 01:30 UTC repeats that approved containment pauses affect only the containment metric and are capped under the applicable revision. The outgoing operator wrote an informal calculation using seventy excluded minutes, then marked it provisional pending the revision check. That provisional number appears in a working column, not an approved policy amendment. The handover also notes that the notification console defaults to sorting by queue time, so exported rows must be read with their field names. This presentation detail explains how a report could mistake 00:08 for delivery without establishing that such a mistake is a valid interpretation.",
+      "locator": {
+        "kind": "text",
+        "start_line": 16,
+        "end_line": 18,
+        "start_character": 1536,
+        "end_character": 2216,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "N04",
+      "quote": "## [N04]\n\nThe register covers notifications to the three specified roles, not all internal chat messages or conversations. The playbook duties concern delivered role-specific notifications, so unrelated informal awareness does not satisfy them. The register's explicit statements that no earlier deliveries occurred support bounded absence reasoning for those exact duties and interval. They do not imply that no person knew of the incident, that no containment work occurred, or that no customer communication was sent. The handover records that the executive message arrived before A's authoritative containment, consistent with the incident remaining active after the escalation trigger.",
+      "locator": {
+        "kind": "text",
+        "start_line": 21,
+        "end_line": 23,
+        "start_character": 2235,
+        "end_character": 2925,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "N05",
+      "quote": "## [N05]\n\nA later operations summary says all relevant people were eventually informed. That broad statement is compatible with the exact delivered timestamps and does not settle whether each notification was timely. The procedure intentionally contains multiple steps rather than one aggregate requirement to tell someone. A single timely executive message cannot erase late technical-lead or commander notifications. Conversely, late early-stage notifications do not make a separately timely executive delivery late. The report must distinguish the duties by recipient, trigger, limit, and delivery event to avoid collapsing a mixed operational record into an unsupported all-compliant or all-failed summary.",
+      "locator": {
+        "kind": "text",
+        "start_line": 26,
+        "end_line": 28,
+        "start_character": 2944,
+        "end_character": 3654,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    }
+  ],
+  "tools": {
+    "python-stdlib": "3.14.8"
+  },
+  "warnings": [],
+  "complete": true,
+  "status": "ready"
+}

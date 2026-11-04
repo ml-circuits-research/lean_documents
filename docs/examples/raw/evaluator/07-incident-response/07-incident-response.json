@@ -1,0 +1,1261 @@
+{
+  "fixture_id": "07-incident-response",
+  "status": "Editorial expected targets only; no audit or Lean validation has been executed for this dossier by its author.",
+  "audit_input": false,
+  "blind_evaluation": "Auditors receive the selected supplied report, brief, and sources. This evaluator file, authoring content, and the other report variant are withheld.",
+  "coordinate_convention": "source_anchors use visible semantic markers in original documents, not guessed extractor coordinates. Resolve each extraction_token in actual extraction output and preserve the real page/paragraph mapping.",
+  "report_variants": {
+    "report.md": "Mixed report with deliberate errors, unresolved claims and nonformal assessment.",
+    "report-correct.md": "Careful correct alternative; correctness is an editorial expectation requiring independent evaluation."
+  },
+  "expectations": [
+    {
+      "claim_id": "C07-01",
+      "report_path": "report.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R01",
+        "sources/response-playbook.docx#R02",
+        "sources/incident-timeline.md#T01"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R01",
+          "extraction_token": "[R01]"
+        },
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R02",
+          "extraction_token": "[R02]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T01",
+          "extraction_token": "[T01]"
+        }
+      ],
+      "rationale": "The accepted detection 02:00 +02:00 converts to 00:00 UTC on October 27; the earlier untriaged warning is a different event."
+    },
+    {
+      "claim_id": "C07-02",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/response-playbook.docx#R02",
+        "sources/incident-timeline.md#T01",
+        "sources/incident-timeline.md#T02",
+        "sources/review-correspondence.md#F01"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R02",
+          "extraction_token": "[R02]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T01",
+          "extraction_token": "[T01]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T02",
+          "extraction_token": "[T02]"
+        },
+        {
+          "path": "sources/review-correspondence.md",
+          "marker": "F01",
+          "extraction_token": "[F01]"
+        }
+      ],
+      "rationale": "The printed local times use different explicit offsets. Detection is 00:00 UTC and containment 02:20 UTC, giving 140 minutes rather than 80."
+    },
+    {
+      "claim_id": "C07-03",
+      "report_path": "report.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R03",
+        "sources/incident-timeline.md#T01"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R03",
+          "extraction_token": "[R03]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T01",
+          "extraction_token": "[T01]"
+        }
+      ],
+      "rationale": "The acknowledgement at 00:12 UTC is twelve minutes after accepted detection at 00:00, inside the inclusive fifteen-minute limit."
+    },
+    {
+      "claim_id": "C07-04",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/response-playbook.docx#R04",
+        "sources/response-playbook.docx#R06",
+        "sources/incident-timeline.md#T01",
+        "sources/incident-timeline.md#T02",
+        "sources/incident-timeline.md#T03",
+        "sources/review-correspondence.md#F02"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R04",
+          "extraction_token": "[R04]"
+        },
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R06",
+          "extraction_token": "[R06]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T01",
+          "extraction_token": "[T01]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T02",
+          "extraction_token": "[T02]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T03",
+          "extraction_token": "[T03]"
+        },
+        {
+          "path": "sources/review-correspondence.md",
+          "marker": "F02",
+          "extraction_token": "[F02]"
+        }
+      ],
+      "rationale": "The elapsed interval is 140 minutes and revision 2 excludes only min(70,45)=45 approved minutes, leaving 95 rather than 80."
+    },
+    {
+      "claim_id": "C07-05",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/response-playbook.docx#R03",
+        "sources/response-playbook.docx#R04",
+        "sources/response-playbook.docx#R06",
+        "sources/incident-timeline.md#T01",
+        "sources/incident-timeline.md#T02",
+        "sources/incident-timeline.md#T03",
+        "sources/review-correspondence.md#F02"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R03",
+          "extraction_token": "[R03]"
+        },
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R04",
+          "extraction_token": "[R04]"
+        },
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R06",
+          "extraction_token": "[R06]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T01",
+          "extraction_token": "[T01]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T02",
+          "extraction_token": "[T02]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T03",
+          "extraction_token": "[T03]"
+        },
+        {
+          "path": "sources/review-correspondence.md",
+          "marker": "F02",
+          "extraction_token": "[F02]"
+        }
+      ],
+      "rationale": "The correctly calculated active-response interval is 95 minutes, five beyond the inclusive 90-minute allowance."
+    },
+    {
+      "claim_id": "C07-06",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/response-playbook.docx#R04",
+        "sources/response-playbook.docx#R06",
+        "sources/incident-timeline.md#T03"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R04",
+          "extraction_token": "[R04]"
+        },
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R06",
+          "extraction_token": "[R06]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T03",
+          "extraction_token": "[T03]"
+        }
+      ],
+      "rationale": "Both pauses are valid, but their combined exclusion is capped at 45 minutes for this revision 2 incident. Approval validity does not waive the cumulative cap."
+    },
+    {
+      "claim_id": "C07-07",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/response-playbook.docx#R03",
+        "sources/response-playbook.docx#R07",
+        "sources/maintenance-authorization.pdf#M01",
+        "sources/maintenance-authorization.pdf#M02",
+        "sources/incident-timeline.md#T01"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R03",
+          "extraction_token": "[R03]"
+        },
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R07",
+          "extraction_token": "[R07]"
+        },
+        {
+          "path": "sources/maintenance-authorization.pdf",
+          "marker": "M01",
+          "extraction_token": "[M01]"
+        },
+        {
+          "path": "sources/maintenance-authorization.pdf",
+          "marker": "M02",
+          "extraction_token": "[M02]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T01",
+          "extraction_token": "[T01]"
+        }
+      ],
+      "rationale": "MA-27 defers only scoped P2 acknowledgements and expressly excludes P1 security incidents. A is P1, so its clocks remain anchored at detection, subject only to the separately specified containment pauses."
+    },
+    {
+      "claim_id": "C07-08",
+      "report_path": "report.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R03",
+        "sources/maintenance-authorization.pdf#M02",
+        "sources/maintenance-authorization.pdf#M03",
+        "sources/maintenance-authorization.pdf#M04",
+        "sources/incident-timeline.md#T04",
+        "sources/review-correspondence.md#F03"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R03",
+          "extraction_token": "[R03]"
+        },
+        {
+          "path": "sources/maintenance-authorization.pdf",
+          "marker": "M02",
+          "extraction_token": "[M02]"
+        },
+        {
+          "path": "sources/maintenance-authorization.pdf",
+          "marker": "M03",
+          "extraction_token": "[M03]"
+        },
+        {
+          "path": "sources/maintenance-authorization.pdf",
+          "marker": "M04",
+          "extraction_token": "[M04]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T04",
+          "extraction_token": "[T04]"
+        },
+        {
+          "path": "sources/review-correspondence.md",
+          "marker": "F03",
+          "extraction_token": "[F03]"
+        }
+      ],
+      "rationale": "B is the scoped P2 operation detected inside MB-27. Effective start is the 03:20 window end; acknowledgement occurs 25 minutes later, within 30."
+    },
+    {
+      "claim_id": "C07-09",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/response-playbook.docx#R03",
+        "sources/maintenance-authorization.pdf#M02",
+        "sources/maintenance-authorization.pdf#M03",
+        "sources/incident-timeline.md#T04",
+        "sources/review-correspondence.md#F03"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R03",
+          "extraction_token": "[R03]"
+        },
+        {
+          "path": "sources/maintenance-authorization.pdf",
+          "marker": "M02",
+          "extraction_token": "[M02]"
+        },
+        {
+          "path": "sources/maintenance-authorization.pdf",
+          "marker": "M03",
+          "extraction_token": "[M03]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T04",
+          "extraction_token": "[T04]"
+        },
+        {
+          "path": "sources/review-correspondence.md",
+          "marker": "F03",
+          "extraction_token": "[F03]"
+        }
+      ],
+      "rationale": "The raw 35 minutes are real but the applicable scoped exception defers the effective clock start. Timeliness uses 25 minutes after 03:20, not raw detection elapsed time."
+    },
+    {
+      "claim_id": "C07-10",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/response-playbook.docx#R05",
+        "sources/notification-register.md#N01"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R05",
+          "extraction_token": "[R05]"
+        },
+        {
+          "path": "sources/notification-register.md",
+          "marker": "N01",
+          "extraction_token": "[N01]"
+        }
+      ],
+      "rationale": "Only confirmed delivery satisfies the duty. Delivery at 00:11 is eleven minutes after detection and one minute late; the complete register excludes an earlier delivered notification."
+    },
+    {
+      "claim_id": "C07-11",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/response-playbook.docx#R04",
+        "sources/response-playbook.docx#R05",
+        "sources/notification-register.md#N02"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R04",
+          "extraction_token": "[R04]"
+        },
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R05",
+          "extraction_token": "[R05]"
+        },
+        {
+          "path": "sources/notification-register.md",
+          "marker": "N02",
+          "extraction_token": "[N02]"
+        }
+      ],
+      "rationale": "Escalation is unpaused elapsed time. Delivery at 00:22 exceeds the 00:20 deadline. Containment pauses neither apply to this clock nor begin before that deadline."
+    },
+    {
+      "claim_id": "C07-12",
+      "report_path": "report.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R05",
+        "sources/incident-timeline.md#T02",
+        "sources/notification-register.md#N02"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R05",
+          "extraction_token": "[R05]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T02",
+          "extraction_token": "[T02]"
+        },
+        {
+          "path": "sources/notification-register.md",
+          "marker": "N02",
+          "extraction_token": "[N02]"
+        }
+      ],
+      "rationale": "A remained uncontained at 01:00 UTC. Executive delivery at 01:12 is within 15 minutes of that trigger and before the 01:15 inclusive deadline."
+    },
+    {
+      "claim_id": "C07-13",
+      "report_path": "report.md",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/response-playbook.docx#R01",
+        "sources/response-playbook.docx#R06",
+        "sources/incident-timeline.md#T01"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R01",
+          "extraction_token": "[R01]"
+        },
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R06",
+          "extraction_token": "[R06]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T01",
+          "extraction_token": "[T01]"
+        }
+      ],
+      "rationale": "The rule selects accepted qualifying detection, not a raw warning. A was detected exactly at 00:00 UTC, the inclusive revision 2 boundary."
+    },
+    {
+      "claim_id": "C07-14",
+      "report_path": "report.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R06",
+        "sources/incident-timeline.md#T05"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R06",
+          "extraction_token": "[R06]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T05",
+          "extraction_token": "[T05]"
+        }
+      ],
+      "rationale": "C's accepted detection 01:50 +02:00 is October 26 at 23:50 UTC, ten minutes before the boundary. Later activity does not change the retained version."
+    },
+    {
+      "claim_id": "C07-15",
+      "report_path": "report.md",
+      "semantic_state": "both",
+      "prospective_disposition": "blocked",
+      "source_anchors": [
+        "sources/incident-timeline.md#T05",
+        "sources/containment-attestations.scan.pdf#A01",
+        "sources/containment-attestations.scan.pdf#A02",
+        "sources/containment-attestations.scan.pdf#A03",
+        "sources/containment-attestations.scan.pdf#A04"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T05",
+          "extraction_token": "[T05]"
+        },
+        {
+          "path": "sources/containment-attestations.scan.pdf",
+          "marker": "A01",
+          "extraction_token": "[A01]"
+        },
+        {
+          "path": "sources/containment-attestations.scan.pdf",
+          "marker": "A02",
+          "extraction_token": "[A02]"
+        },
+        {
+          "path": "sources/containment-attestations.scan.pdf",
+          "marker": "A03",
+          "extraction_token": "[A03]"
+        },
+        {
+          "path": "sources/containment-attestations.scan.pdf",
+          "marker": "A04",
+          "extraction_token": "[A04]"
+        }
+      ],
+      "rationale": "Elise asserts full isolation at 05:00; Pavel explicitly denies it and reports a live path. Both signatures are authentic but there is no authoritative resolution or priority rule."
+    },
+    {
+      "claim_id": "C07-16",
+      "report_path": "report.md",
+      "semantic_state": "undetermined",
+      "prospective_disposition": "blocked",
+      "source_anchors": [
+        "sources/response-playbook.docx#R08",
+        "sources/monitoring-coverage.md#G01",
+        "sources/monitoring-coverage.md#G02",
+        "sources/monitoring-coverage.md#G03",
+        "sources/monitoring-coverage.md#G04"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R08",
+          "extraction_token": "[R08]"
+        },
+        {
+          "path": "sources/monitoring-coverage.md",
+          "marker": "G01",
+          "extraction_token": "[G01]"
+        },
+        {
+          "path": "sources/monitoring-coverage.md",
+          "marker": "G02",
+          "extraction_token": "[G02]"
+        },
+        {
+          "path": "sources/monitoring-coverage.md",
+          "marker": "G03",
+          "extraction_token": "[G03]"
+        },
+        {
+          "path": "sources/monitoring-coverage.md",
+          "marker": "G04",
+          "extraction_token": "[G04]"
+        }
+      ],
+      "rationale": "No retained samples cover the gap, and sensor completeness for all exfiltration is not asserted even outside it. The corpus establishes neither absence nor occurrence during the gap."
+    },
+    {
+      "claim_id": "C07-17",
+      "report_path": "report.md",
+      "semantic_state": "undetermined",
+      "prospective_disposition": "blocked",
+      "source_anchors": [
+        "sources/response-playbook.docx#R08",
+        "sources/monitoring-coverage.md#G01",
+        "sources/monitoring-coverage.md#G02",
+        "sources/monitoring-coverage.md#G03",
+        "sources/monitoring-coverage.md#G04"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R08",
+          "extraction_token": "[R08]"
+        },
+        {
+          "path": "sources/monitoring-coverage.md",
+          "marker": "G01",
+          "extraction_token": "[G01]"
+        },
+        {
+          "path": "sources/monitoring-coverage.md",
+          "marker": "G02",
+          "extraction_token": "[G02]"
+        },
+        {
+          "path": "sources/monitoring-coverage.md",
+          "marker": "G03",
+          "extraction_token": "[G03]"
+        },
+        {
+          "path": "sources/monitoring-coverage.md",
+          "marker": "G04",
+          "extraction_token": "[G04]"
+        }
+      ],
+      "rationale": "Missing telemetry is not positive evidence of exfiltration. The storage ticket explains an observation-system failure without establishing a transfer event; the underlying claim remains unknown rather than refuted."
+    },
+    {
+      "claim_id": "C07-18",
+      "report_path": "report.md",
+      "semantic_state": "not_applicable",
+      "prospective_disposition": "nonformal",
+      "source_anchors": [
+        "sources/response-playbook.docx#R08",
+        "sources/review-correspondence.md#F05"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R08",
+          "extraction_token": "[R08]"
+        },
+        {
+          "path": "sources/review-correspondence.md",
+          "marker": "F05",
+          "extraction_token": "[F05]"
+        }
+      ],
+      "rationale": "No operational definition or scoring rubric is supplied for these global evaluative adjectives. Objective stage timeliness and attributed stakeholder opinions do not entail a formal overall assessment."
+    },
+    {
+      "claim_id": "C07-C01",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R01",
+        "sources/response-playbook.docx#R02",
+        "sources/incident-timeline.md#T01"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R01",
+          "extraction_token": "[R01]"
+        },
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R02",
+          "extraction_token": "[R02]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T01",
+          "extraction_token": "[T01]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. The accepted detection 02:00 +02:00 converts to 00:00 UTC on October 27; the earlier untriaged warning is a different event."
+    },
+    {
+      "claim_id": "C07-C02",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R02",
+        "sources/incident-timeline.md#T01",
+        "sources/incident-timeline.md#T02",
+        "sources/review-correspondence.md#F01"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R02",
+          "extraction_token": "[R02]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T01",
+          "extraction_token": "[T01]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T02",
+          "extraction_token": "[T02]"
+        },
+        {
+          "path": "sources/review-correspondence.md",
+          "marker": "F01",
+          "extraction_token": "[F01]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. The printed local times use different explicit offsets. Detection is 00:00 UTC and containment 02:20 UTC, giving 140 minutes rather than 80."
+    },
+    {
+      "claim_id": "C07-C03",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R03",
+        "sources/incident-timeline.md#T01"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R03",
+          "extraction_token": "[R03]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T01",
+          "extraction_token": "[T01]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. The acknowledgement at 00:12 UTC is twelve minutes after accepted detection at 00:00, inside the inclusive fifteen-minute limit."
+    },
+    {
+      "claim_id": "C07-C04",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R04",
+        "sources/response-playbook.docx#R06",
+        "sources/incident-timeline.md#T01",
+        "sources/incident-timeline.md#T02",
+        "sources/incident-timeline.md#T03",
+        "sources/review-correspondence.md#F02"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R04",
+          "extraction_token": "[R04]"
+        },
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R06",
+          "extraction_token": "[R06]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T01",
+          "extraction_token": "[T01]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T02",
+          "extraction_token": "[T02]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T03",
+          "extraction_token": "[T03]"
+        },
+        {
+          "path": "sources/review-correspondence.md",
+          "marker": "F02",
+          "extraction_token": "[F02]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. The elapsed interval is 140 minutes and revision 2 excludes only min(70,45)=45 approved minutes, leaving 95 rather than 80."
+    },
+    {
+      "claim_id": "C07-C05",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R03",
+        "sources/response-playbook.docx#R04",
+        "sources/response-playbook.docx#R06",
+        "sources/incident-timeline.md#T01",
+        "sources/incident-timeline.md#T02",
+        "sources/incident-timeline.md#T03",
+        "sources/review-correspondence.md#F02"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R03",
+          "extraction_token": "[R03]"
+        },
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R04",
+          "extraction_token": "[R04]"
+        },
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R06",
+          "extraction_token": "[R06]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T01",
+          "extraction_token": "[T01]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T02",
+          "extraction_token": "[T02]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T03",
+          "extraction_token": "[T03]"
+        },
+        {
+          "path": "sources/review-correspondence.md",
+          "marker": "F02",
+          "extraction_token": "[F02]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. The correctly calculated active-response interval is 95 minutes, five beyond the inclusive 90-minute allowance."
+    },
+    {
+      "claim_id": "C07-C06",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R04",
+        "sources/response-playbook.docx#R06",
+        "sources/incident-timeline.md#T03"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R04",
+          "extraction_token": "[R04]"
+        },
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R06",
+          "extraction_token": "[R06]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T03",
+          "extraction_token": "[T03]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. Both pauses are valid, but their combined exclusion is capped at 45 minutes for this revision 2 incident. Approval validity does not waive the cumulative cap."
+    },
+    {
+      "claim_id": "C07-C07",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R03",
+        "sources/response-playbook.docx#R07",
+        "sources/maintenance-authorization.pdf#M01",
+        "sources/maintenance-authorization.pdf#M02",
+        "sources/incident-timeline.md#T01"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R03",
+          "extraction_token": "[R03]"
+        },
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R07",
+          "extraction_token": "[R07]"
+        },
+        {
+          "path": "sources/maintenance-authorization.pdf",
+          "marker": "M01",
+          "extraction_token": "[M01]"
+        },
+        {
+          "path": "sources/maintenance-authorization.pdf",
+          "marker": "M02",
+          "extraction_token": "[M02]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T01",
+          "extraction_token": "[T01]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. MA-27 defers only scoped P2 acknowledgements and expressly excludes P1 security incidents. A is P1, so its clocks remain anchored at detection, subject only to the separately specified containment pauses."
+    },
+    {
+      "claim_id": "C07-C08",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R03",
+        "sources/maintenance-authorization.pdf#M02",
+        "sources/maintenance-authorization.pdf#M03",
+        "sources/maintenance-authorization.pdf#M04",
+        "sources/incident-timeline.md#T04",
+        "sources/review-correspondence.md#F03"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R03",
+          "extraction_token": "[R03]"
+        },
+        {
+          "path": "sources/maintenance-authorization.pdf",
+          "marker": "M02",
+          "extraction_token": "[M02]"
+        },
+        {
+          "path": "sources/maintenance-authorization.pdf",
+          "marker": "M03",
+          "extraction_token": "[M03]"
+        },
+        {
+          "path": "sources/maintenance-authorization.pdf",
+          "marker": "M04",
+          "extraction_token": "[M04]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T04",
+          "extraction_token": "[T04]"
+        },
+        {
+          "path": "sources/review-correspondence.md",
+          "marker": "F03",
+          "extraction_token": "[F03]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. B is the scoped P2 operation detected inside MB-27. Effective start is the 03:20 window end; acknowledgement occurs 25 minutes later, within 30."
+    },
+    {
+      "claim_id": "C07-C09",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R03",
+        "sources/maintenance-authorization.pdf#M02",
+        "sources/maintenance-authorization.pdf#M03",
+        "sources/incident-timeline.md#T04",
+        "sources/review-correspondence.md#F03"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R03",
+          "extraction_token": "[R03]"
+        },
+        {
+          "path": "sources/maintenance-authorization.pdf",
+          "marker": "M02",
+          "extraction_token": "[M02]"
+        },
+        {
+          "path": "sources/maintenance-authorization.pdf",
+          "marker": "M03",
+          "extraction_token": "[M03]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T04",
+          "extraction_token": "[T04]"
+        },
+        {
+          "path": "sources/review-correspondence.md",
+          "marker": "F03",
+          "extraction_token": "[F03]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. The raw 35 minutes are real but the applicable scoped exception defers the effective clock start. Timeliness uses 25 minutes after 03:20, not raw detection elapsed time."
+    },
+    {
+      "claim_id": "C07-C10",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R05",
+        "sources/notification-register.md#N01"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R05",
+          "extraction_token": "[R05]"
+        },
+        {
+          "path": "sources/notification-register.md",
+          "marker": "N01",
+          "extraction_token": "[N01]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. Only confirmed delivery satisfies the duty. Delivery at 00:11 is eleven minutes after detection and one minute late; the complete register excludes an earlier delivered notification."
+    },
+    {
+      "claim_id": "C07-C11",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R04",
+        "sources/response-playbook.docx#R05",
+        "sources/notification-register.md#N02"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R04",
+          "extraction_token": "[R04]"
+        },
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R05",
+          "extraction_token": "[R05]"
+        },
+        {
+          "path": "sources/notification-register.md",
+          "marker": "N02",
+          "extraction_token": "[N02]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. Escalation is unpaused elapsed time. Delivery at 00:22 exceeds the 00:20 deadline. Containment pauses neither apply to this clock nor begin before that deadline."
+    },
+    {
+      "claim_id": "C07-C12",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R05",
+        "sources/incident-timeline.md#T02",
+        "sources/notification-register.md#N02"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R05",
+          "extraction_token": "[R05]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T02",
+          "extraction_token": "[T02]"
+        },
+        {
+          "path": "sources/notification-register.md",
+          "marker": "N02",
+          "extraction_token": "[N02]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. A remained uncontained at 01:00 UTC. Executive delivery at 01:12 is within 15 minutes of that trigger and before the 01:15 inclusive deadline."
+    },
+    {
+      "claim_id": "C07-C13",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R01",
+        "sources/response-playbook.docx#R06",
+        "sources/incident-timeline.md#T01"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R01",
+          "extraction_token": "[R01]"
+        },
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R06",
+          "extraction_token": "[R06]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T01",
+          "extraction_token": "[T01]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. The rule selects accepted qualifying detection, not a raw warning. A was detected exactly at 00:00 UTC, the inclusive revision 2 boundary."
+    },
+    {
+      "claim_id": "C07-C14",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R06",
+        "sources/incident-timeline.md#T05"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R06",
+          "extraction_token": "[R06]"
+        },
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T05",
+          "extraction_token": "[T05]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. C's accepted detection 01:50 +02:00 is October 26 at 23:50 UTC, ten minutes before the boundary. Later activity does not change the retained version."
+    },
+    {
+      "claim_id": "C07-C15",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/incident-timeline.md#T05",
+        "sources/containment-attestations.scan.pdf#A01",
+        "sources/containment-attestations.scan.pdf#A02",
+        "sources/containment-attestations.scan.pdf#A03",
+        "sources/containment-attestations.scan.pdf#A04"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/incident-timeline.md",
+          "marker": "T05",
+          "extraction_token": "[T05]"
+        },
+        {
+          "path": "sources/containment-attestations.scan.pdf",
+          "marker": "A01",
+          "extraction_token": "[A01]"
+        },
+        {
+          "path": "sources/containment-attestations.scan.pdf",
+          "marker": "A02",
+          "extraction_token": "[A02]"
+        },
+        {
+          "path": "sources/containment-attestations.scan.pdf",
+          "marker": "A03",
+          "extraction_token": "[A03]"
+        },
+        {
+          "path": "sources/containment-attestations.scan.pdf",
+          "marker": "A04",
+          "extraction_token": "[A04]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. Elise asserts full isolation at 05:00; Pavel explicitly denies it and reports a live path. Both signatures are authentic but there is no authoritative resolution or priority rule."
+    },
+    {
+      "claim_id": "C07-C16",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R08",
+        "sources/monitoring-coverage.md#G01",
+        "sources/monitoring-coverage.md#G02",
+        "sources/monitoring-coverage.md#G03",
+        "sources/monitoring-coverage.md#G04"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R08",
+          "extraction_token": "[R08]"
+        },
+        {
+          "path": "sources/monitoring-coverage.md",
+          "marker": "G01",
+          "extraction_token": "[G01]"
+        },
+        {
+          "path": "sources/monitoring-coverage.md",
+          "marker": "G02",
+          "extraction_token": "[G02]"
+        },
+        {
+          "path": "sources/monitoring-coverage.md",
+          "marker": "G03",
+          "extraction_token": "[G03]"
+        },
+        {
+          "path": "sources/monitoring-coverage.md",
+          "marker": "G04",
+          "extraction_token": "[G04]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. No retained samples cover the gap, and sensor completeness for all exfiltration is not asserted even outside it. The corpus establishes neither absence nor occurrence during the gap."
+    },
+    {
+      "claim_id": "C07-C17",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R08",
+        "sources/monitoring-coverage.md#G01",
+        "sources/monitoring-coverage.md#G02",
+        "sources/monitoring-coverage.md#G03",
+        "sources/monitoring-coverage.md#G04"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R08",
+          "extraction_token": "[R08]"
+        },
+        {
+          "path": "sources/monitoring-coverage.md",
+          "marker": "G01",
+          "extraction_token": "[G01]"
+        },
+        {
+          "path": "sources/monitoring-coverage.md",
+          "marker": "G02",
+          "extraction_token": "[G02]"
+        },
+        {
+          "path": "sources/monitoring-coverage.md",
+          "marker": "G03",
+          "extraction_token": "[G03]"
+        },
+        {
+          "path": "sources/monitoring-coverage.md",
+          "marker": "G04",
+          "extraction_token": "[G04]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. Missing telemetry is not positive evidence of exfiltration. The storage ticket explains an observation-system failure without establishing a transfer event; the underlying claim remains unknown rather than refuted."
+    },
+    {
+      "claim_id": "C07-C18",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/response-playbook.docx#R08",
+        "sources/review-correspondence.md#F05"
+      ],
+      "source_markers": [
+        {
+          "path": "sources/response-playbook.docx",
+          "marker": "R08",
+          "extraction_token": "[R08]"
+        },
+        {
+          "path": "sources/review-correspondence.md",
+          "marker": "F05",
+          "extraction_token": "[F05]"
+        }
+      ],
+      "rationale": "The cautious finding accurately states the event/rule or finite evidentiary limit. No operational definition or scoring rubric is supplied for these global evaluative adjectives. Objective stage timeliness and attributed stakeholder opinions do not entail a formal overall assessment."
+    }
+  ]
+}

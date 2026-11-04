@@ -1,0 +1,103 @@
+{
+  "claims": [
+    {
+      "claim_id": "C08-ERR-01",
+      "report_anchor": "C08-ERR-01",
+      "exact_claim": "**C08-ERR-01.** Lot A accepted inbound quantity was 96 units.",
+      "atomic_target": "Does accepted receipt IN-A comprise exactly 96 individual A units?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C08-ERR-02",
+      "report_anchor": "C08-ERR-02",
+      "exact_claim": "**C08-ERR-02.** Lot B accepted inbound quantity was 24 units because a carton equals a crate.",
+      "atomic_target": "Does IN-B contain 24 units, and are cartons equivalent to crates?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C08-ERR-03",
+      "report_anchor": "C08-ERR-03",
+      "exact_claim": "**C08-ERR-03.** Lot A book on-hand was 136 units.",
+      "atomic_target": "Is A book on-hand 136 units at the stated cutoff?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C08-ERR-04",
+      "report_anchor": "C08-ERR-04",
+      "exact_claim": "**C08-ERR-04.** Lot A available book stock was 148 units because quarantine remains on site.",
+      "atomic_target": "Does physical presence make A available stock equal its 148-unit book balance?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C08-ERR-05",
+      "report_anchor": "C08-ERR-05",
+      "exact_claim": "**C08-ERR-05.** Lot B book on-hand was 34 units after all three requested cartons shipped.",
+      "atomic_target": "Did all three requested B cartons ship, leaving book on-hand 34?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C08-ERR-06",
+      "report_anchor": "C08-ERR-06",
+      "exact_claim": "**C08-ERR-06.** Lot B available stock was 32 units.",
+      "atomic_target": "Is B available stock 32 units after its separate reservation?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C08-ERR-07",
+      "report_anchor": "C08-ERR-07",
+      "exact_claim": "**C08-ERR-07.** All 60 A units dispatched were delivered to the customer.",
+      "atomic_target": "Were all sixty dispatched A units delivered to the customer?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C08-ERR-08",
+      "report_anchor": "C08-ERR-08",
+      "exact_claim": "**C08-ERR-08.** The B customer order was completely delivered.",
+      "atomic_target": "Was the original three-carton B customer order completely delivered?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C08-ERR-09",
+      "report_anchor": "C08-ERR-09",
+      "exact_claim": "**C08-ERR-09.** The physical A count was exactly 148 units.",
+      "atomic_target": "Can the true physical A count at the common cutoff and boundary be fixed at exactly 148?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C08-ERR-10",
+      "report_anchor": "C08-ERR-10",
+      "exact_claim": "**C08-ERR-10.** The physical C shortage is exactly one unit.",
+      "atomic_target": "Does a minus-one C journal balance establish exactly one physically missing unit?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C08-ERR-11",
+      "report_anchor": "C08-ERR-11",
+      "exact_claim": "**C08-ERR-11.** Exactly 78 D units were accepted by the receiver, conclusively established by the scanned line.",
+      "atomic_target": "Does the pale D field conclusively establish that exactly 78 units were accepted?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C08-ERR-12",
+      "report_anchor": "C08-ERR-12",
+      "exact_claim": "**C08-ERR-12.** Every warehouse lot was reconciled at cutoff.",
+      "atomic_target": "Was every warehouse lot reconciled at cutoff, including C and the unresolved A count?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C08-ERR-13",
+      "report_anchor": "C08-ERR-13",
+      "exact_claim": "**C08-ERR-13.** Subtracting the A quarantine from B stock gives B availability.",
+      "atomic_target": "Does subtracting A quarantine from B book stock yield B availability?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C08-ERR-14",
+      "report_anchor": "C08-ERR-14",
+      "exact_claim": "**C08-ERR-14.** The return workflow is elegantly designed.",
+      "atomic_target": "Is there a supplied operational definition that can decide whether the return workflow is elegantly designed?",
+      "coverage": "assessed"
+    }
+  ],
+  "excluded_claims": []
+}

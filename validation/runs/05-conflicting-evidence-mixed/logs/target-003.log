@@ -1,0 +1,5 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target003.lean
+Audit.claim03Alternatives : Audit.possibleTest.certificateAttached = false ∧
+  Audit.possibleNoTest.certificateAttached = false ∧
+    Audit.possibleTest.testOccurredBeforeCutoff = true ∧ Audit.possibleNoTest.testOccurredBeforeCutoff = false
+'Audit.claim03Alternatives' does not depend on any axioms

@@ -1,0 +1,5 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target012.lean
+Audit.claim04 : Audit.d203.received = Audit.boundary ∧
+  Audit.revision Audit.d203 = Audit.Revision.two ∧
+    Audit.standardDeadline Audit.d203 = some 25500 ∧ Audit.d203.submitted = 25500 ∧ Audit.d203.submitted ≤ 25500
+'Audit.claim04' does not depend on any axioms

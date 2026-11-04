@@ -1,0 +1,67 @@
+{
+  "text": "<a id=\"P01\"></a>\n# Synthetic dated identity register\n\n<a id=\"P02\"></a>\n[AL01] Principal Ada Quill has immutable identifier P-AQ. Alias north-operator identifies Ada from 1 through 20 September inclusive. From 21 September the same alias identifies Ben Rook, P-BR. Ada uses aq-main from 21 September onward. Ada's credential is active throughout September. Ben's credential becomes active on 22 September. Therefore a 21 September north-operator signature names Ben before his activation, not Ada. The alias transfer and credential activation are distinct events. Copying an older alias mapping without its dates supplies the wrong principal for the later event.\n\n<a id=\"P03\"></a>\n[AL02] Central approver Cora Vale, P-CV, has ordinary approval authority over N01 through N60 throughout September. Delegate Devon Ash, P-DA, has only the narrower scope in the native delegation instrument. Local supervisor Emil Pine, P-EP, has revision A local authority before 15 September. Emil has no ordinary revision B central approval authority. Cora, CV, and central-approver all name P-CV throughout the interval. A correct identity mapping alone does not prove approval scope, timing, or the validity of a permit. Those predicates require their own evidence.\n\n<a id=\"P04\"></a>\n[AL03] The identity registrar signed this mapping and marked it complete for the named aliases during September. No supplied amendment changes the 21 September reassignment. An unsigned chat reference cannot amend the registry. The completeness assertion concerns those names and dates, not every possible identity in the world. The original source path and dated marker should accompany any extracted identity assertion. Searching only for a repeated display name deliberately misses the temporal distinction in this case. A reviewer must preserve the precise release date when linking the signature to a principal and credential.\n",
+  "segments": [
+    {
+      "anchor": "P01",
+      "quote": "# Synthetic dated identity register",
+      "locator": {
+        "kind": "text",
+        "start_line": 1,
+        "end_line": 1,
+        "start_character": 0,
+        "end_character": 35,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P02",
+      "quote": "[AL01] Principal Ada Quill has immutable identifier P-AQ. Alias north-operator identifies Ada from 1 through 20 September inclusive. From 21 September the same alias identifies Ben Rook, P-BR. Ada uses aq-main from 21 September onward. Ada's credential is active throughout September. Ben's credential becomes active on 22 September. Therefore a 21 September north-operator signature names Ben before his activation, not Ada. The alias transfer and credential activation are distinct events. Copying an older alias mapping without its dates supplies the wrong principal for the later event.",
+      "locator": {
+        "kind": "text",
+        "start_line": 3,
+        "end_line": 3,
+        "start_character": 37,
+        "end_character": 627,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P03",
+      "quote": "[AL02] Central approver Cora Vale, P-CV, has ordinary approval authority over N01 through N60 throughout September. Delegate Devon Ash, P-DA, has only the narrower scope in the native delegation instrument. Local supervisor Emil Pine, P-EP, has revision A local authority before 15 September. Emil has no ordinary revision B central approval authority. Cora, CV, and central-approver all name P-CV throughout the interval. A correct identity mapping alone does not prove approval scope, timing, or the validity of a permit. Those predicates require their own evidence.",
+      "locator": {
+        "kind": "text",
+        "start_line": 5,
+        "end_line": 5,
+        "start_character": 629,
+        "end_character": 1197,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P04",
+      "quote": "[AL03] The identity registrar signed this mapping and marked it complete for the named aliases during September. No supplied amendment changes the 21 September reassignment. An unsigned chat reference cannot amend the registry. The completeness assertion concerns those names and dates, not every possible identity in the world. The original source path and dated marker should accompany any extracted identity assertion. Searching only for a repeated display name deliberately misses the temporal distinction in this case. A reviewer must preserve the precise release date when linking the signature to a principal and credential.",
+      "locator": {
+        "kind": "text",
+        "start_line": 7,
+        "end_line": 7,
+        "start_character": 1199,
+        "end_character": 1830,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    }
+  ],
+  "tools": {
+    "python-stdlib": "3.14.8"
+  },
+  "warnings": [],
+  "complete": true,
+  "status": "ready"
+}

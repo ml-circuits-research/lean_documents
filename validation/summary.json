@@ -1,0 +1,2925 @@
+{
+  "scope": "all synthetic dossiers, each supplied report audited separately",
+  "expectation_limit": "Editorial expectations, not independently certified domain truth",
+  "aggregation": "Atomic findings grouped by original report anchor; refuted, then both, then undetermined take precedence. Mixed supported/nonformal maps to undetermined. Review ambiguous aggregation manually.",
+  "runs": [
+    {
+      "run_id": "01-procedural-approval-mixed",
+      "expected_claims": 10,
+      "audited_atomic_findings": 10,
+      "matched_claims": 10,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "supported": 4,
+        "refuted": 3,
+        "undetermined": 1,
+        "both": 1,
+        "not_applicable": 1
+      },
+      "argument_counts": {
+        "sufficient": 4,
+        "invalid_inference": 3,
+        "insufficient_support": 1,
+        "disputed": 1,
+        "nonformal": 1
+      },
+      "formal_counts": {
+        "proved": 4,
+        "refuted": 3,
+        "auxiliary": 2,
+        "not_attempted": 1
+      },
+      "technical_status": "passed",
+      "checked_theorems": 9,
+      "comparisons": [
+        {
+          "claim_id": "PA-01",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "PA-01",
+          "atomic_findings": [
+            "PA-01"
+          ]
+        },
+        {
+          "claim_id": "PA-02",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "PA-02",
+          "atomic_findings": [
+            "PA-02"
+          ]
+        },
+        {
+          "claim_id": "PA-03",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "PA-03",
+          "atomic_findings": [
+            "PA-03"
+          ]
+        },
+        {
+          "claim_id": "PA-04",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "PA-04",
+          "atomic_findings": [
+            "PA-04"
+          ]
+        },
+        {
+          "claim_id": "PA-05",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "PA-05",
+          "atomic_findings": [
+            "PA-05"
+          ]
+        },
+        {
+          "claim_id": "PA-06",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "PA-06",
+          "atomic_findings": [
+            "PA-06"
+          ]
+        },
+        {
+          "claim_id": "PA-07",
+          "expected": "both",
+          "observed": "both",
+          "matches": true,
+          "report_anchor": "PA-07",
+          "atomic_findings": [
+            "PA-07"
+          ]
+        },
+        {
+          "claim_id": "PA-08",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "PA-08",
+          "atomic_findings": [
+            "PA-08"
+          ]
+        },
+        {
+          "claim_id": "PA-09",
+          "expected": "not_applicable",
+          "observed": "not_applicable",
+          "matches": true,
+          "report_anchor": "PA-09",
+          "atomic_findings": [
+            "PA-09"
+          ]
+        },
+        {
+          "claim_id": "PA-10",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "PA-10",
+          "atomic_findings": [
+            "PA-10"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "01-procedural-approval-correct",
+      "expected_claims": 10,
+      "audited_atomic_findings": 10,
+      "matched_claims": 10,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "supported": 10
+      },
+      "argument_counts": {
+        "sufficient": 10
+      },
+      "formal_counts": {
+        "proved": 6,
+        "not_attempted": 4
+      },
+      "technical_status": "passed",
+      "checked_theorems": 6,
+      "comparisons": [
+        {
+          "claim_id": "PA-C01",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "PA-C01",
+          "atomic_findings": [
+            "PA-C01"
+          ]
+        },
+        {
+          "claim_id": "PA-C02",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "PA-C02",
+          "atomic_findings": [
+            "PA-C02"
+          ]
+        },
+        {
+          "claim_id": "PA-C03",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "PA-C03",
+          "atomic_findings": [
+            "PA-C03"
+          ]
+        },
+        {
+          "claim_id": "PA-C04",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "PA-C04",
+          "atomic_findings": [
+            "PA-C04"
+          ]
+        },
+        {
+          "claim_id": "PA-C05",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "PA-C05",
+          "atomic_findings": [
+            "PA-C05"
+          ]
+        },
+        {
+          "claim_id": "PA-C06",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "PA-C06",
+          "atomic_findings": [
+            "PA-C06"
+          ]
+        },
+        {
+          "claim_id": "PA-C07",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "PA-C07",
+          "atomic_findings": [
+            "PA-C07"
+          ]
+        },
+        {
+          "claim_id": "PA-C08",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "PA-C08",
+          "atomic_findings": [
+            "PA-C08"
+          ]
+        },
+        {
+          "claim_id": "PA-C09",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "PA-C09",
+          "atomic_findings": [
+            "PA-C09"
+          ]
+        },
+        {
+          "claim_id": "PA-C10",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "PA-C10",
+          "atomic_findings": [
+            "PA-C10"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "02-versioned-deadlines-mixed",
+      "expected_claims": 10,
+      "audited_atomic_findings": 12,
+      "matched_claims": 10,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "supported": 6,
+        "refuted": 3,
+        "undetermined": 2,
+        "not_applicable": 1
+      },
+      "argument_counts": {
+        "sufficient": 6,
+        "invalid_inference": 3,
+        "insufficient_support": 2,
+        "nonformal": 1
+      },
+      "formal_counts": {
+        "proved": 6,
+        "refuted": 3,
+        "auxiliary": 2,
+        "not_attempted": 1
+      },
+      "technical_status": "passed",
+      "checked_theorems": 10,
+      "comparisons": [
+        {
+          "claim_id": "VD-01",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "VD-01",
+          "atomic_findings": [
+            "VD-01a",
+            "VD-01b"
+          ]
+        },
+        {
+          "claim_id": "VD-02",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "VD-02",
+          "atomic_findings": [
+            "VD-02"
+          ]
+        },
+        {
+          "claim_id": "VD-03",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "VD-03",
+          "atomic_findings": [
+            "VD-03"
+          ]
+        },
+        {
+          "claim_id": "VD-04",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "VD-04",
+          "atomic_findings": [
+            "VD-04"
+          ]
+        },
+        {
+          "claim_id": "VD-05",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "VD-05",
+          "atomic_findings": [
+            "VD-05"
+          ]
+        },
+        {
+          "claim_id": "VD-06",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "VD-06",
+          "atomic_findings": [
+            "VD-06a",
+            "VD-06b"
+          ]
+        },
+        {
+          "claim_id": "VD-07",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "VD-07",
+          "atomic_findings": [
+            "VD-07"
+          ]
+        },
+        {
+          "claim_id": "VD-08",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "VD-08",
+          "atomic_findings": [
+            "VD-08"
+          ]
+        },
+        {
+          "claim_id": "VD-09",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "VD-09",
+          "atomic_findings": [
+            "VD-09"
+          ]
+        },
+        {
+          "claim_id": "VD-10",
+          "expected": "not_applicable",
+          "observed": "not_applicable",
+          "matches": true,
+          "report_anchor": "VD-10",
+          "atomic_findings": [
+            "VD-10"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "02-versioned-deadlines-correct",
+      "expected_claims": 9,
+      "audited_atomic_findings": 9,
+      "matched_claims": 9,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "supported": 9
+      },
+      "argument_counts": {
+        "sufficient": 9
+      },
+      "formal_counts": {
+        "proved": 7,
+        "auxiliary": 1,
+        "not_attempted": 1
+      },
+      "technical_status": "passed",
+      "checked_theorems": 8,
+      "comparisons": [
+        {
+          "claim_id": "VD-C01",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "VD-C01",
+          "atomic_findings": [
+            "VD-C01"
+          ]
+        },
+        {
+          "claim_id": "VD-C02",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "VD-C02",
+          "atomic_findings": [
+            "VD-C02"
+          ]
+        },
+        {
+          "claim_id": "VD-C03",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "VD-C03",
+          "atomic_findings": [
+            "VD-C03"
+          ]
+        },
+        {
+          "claim_id": "VD-C04",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "VD-C04",
+          "atomic_findings": [
+            "VD-C04"
+          ]
+        },
+        {
+          "claim_id": "VD-C05",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "VD-C05",
+          "atomic_findings": [
+            "VD-C05"
+          ]
+        },
+        {
+          "claim_id": "VD-C06",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "VD-C06",
+          "atomic_findings": [
+            "VD-C06"
+          ]
+        },
+        {
+          "claim_id": "VD-C07",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "VD-C07",
+          "atomic_findings": [
+            "VD-C07"
+          ]
+        },
+        {
+          "claim_id": "VD-C08",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "VD-C08",
+          "atomic_findings": [
+            "VD-C08"
+          ]
+        },
+        {
+          "claim_id": "VD-C09",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "VD-C09",
+          "atomic_findings": [
+            "VD-C09"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "03-audit-arithmetic-mixed",
+      "expected_claims": 10,
+      "audited_atomic_findings": 11,
+      "matched_claims": 10,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "supported": 5,
+        "refuted": 3,
+        "undetermined": 2,
+        "not_applicable": 1
+      },
+      "argument_counts": {
+        "sufficient": 5,
+        "invalid_inference": 4,
+        "insufficient_support": 1,
+        "nonformal": 1
+      },
+      "formal_counts": {
+        "proved": 5,
+        "refuted": 2,
+        "auxiliary": 1,
+        "not_attempted": 3
+      },
+      "technical_status": "passed",
+      "checked_theorems": 8,
+      "comparisons": [
+        {
+          "claim_id": "C03-01",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C03-01",
+          "atomic_findings": [
+            "C03-01"
+          ]
+        },
+        {
+          "claim_id": "C03-02",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C03-02",
+          "atomic_findings": [
+            "C03-02"
+          ]
+        },
+        {
+          "claim_id": "C03-03",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C03-03",
+          "atomic_findings": [
+            "C03-03"
+          ]
+        },
+        {
+          "claim_id": "C03-04",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "C03-04",
+          "atomic_findings": [
+            "C03-04"
+          ]
+        },
+        {
+          "claim_id": "C03-05",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C03-05",
+          "atomic_findings": [
+            "C03-05"
+          ]
+        },
+        {
+          "claim_id": "C03-06",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C03-06",
+          "atomic_findings": [
+            "C03-06-premise",
+            "C03-06"
+          ]
+        },
+        {
+          "claim_id": "C03-07",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C03-07",
+          "atomic_findings": [
+            "C03-07"
+          ]
+        },
+        {
+          "claim_id": "C03-08",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "C03-08",
+          "atomic_findings": [
+            "C03-08"
+          ]
+        },
+        {
+          "claim_id": "C03-09",
+          "expected": "not_applicable",
+          "observed": "not_applicable",
+          "matches": true,
+          "report_anchor": "C03-09",
+          "atomic_findings": [
+            "C03-09"
+          ]
+        },
+        {
+          "claim_id": "C03-10",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C03-10",
+          "atomic_findings": [
+            "C03-10"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "03-audit-arithmetic-correct",
+      "expected_claims": 5,
+      "audited_atomic_findings": 8,
+      "matched_claims": 5,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "supported": 8
+      },
+      "argument_counts": {
+        "sufficient": 8
+      },
+      "formal_counts": {
+        "proved": 6,
+        "not_attempted": 2
+      },
+      "technical_status": "passed",
+      "checked_theorems": 6,
+      "comparisons": [
+        {
+          "claim_id": "C03-OK-01",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C03-OK-01",
+          "atomic_findings": [
+            "C03-OK-01"
+          ]
+        },
+        {
+          "claim_id": "C03-OK-02",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C03-OK-02",
+          "atomic_findings": [
+            "C03-OK-02"
+          ]
+        },
+        {
+          "claim_id": "C03-OK-03",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C03-OK-03",
+          "atomic_findings": [
+            "C03-OK-03a",
+            "C03-OK-03b"
+          ]
+        },
+        {
+          "claim_id": "C03-OK-04",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C03-OK-04",
+          "atomic_findings": [
+            "C03-OK-04a",
+            "C03-OK-04b"
+          ]
+        },
+        {
+          "claim_id": "C03-OK-05",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C03-OK-05",
+          "atomic_findings": [
+            "C03-OK-05a",
+            "C03-OK-05b"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "04-narrative-continuity-mixed",
+      "expected_claims": 10,
+      "audited_atomic_findings": 10,
+      "matched_claims": 10,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "supported": 4,
+        "refuted": 4,
+        "undetermined": 1,
+        "not_applicable": 1
+      },
+      "argument_counts": {
+        "sufficient": 4,
+        "invalid_inference": 4,
+        "insufficient_support": 1,
+        "nonformal": 1
+      },
+      "formal_counts": {
+        "proved": 4,
+        "refuted": 4,
+        "blocked": 1,
+        "not_attempted": 1
+      },
+      "technical_status": "passed",
+      "checked_theorems": 8,
+      "comparisons": [
+        {
+          "claim_id": "C04-01",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C04-01",
+          "atomic_findings": [
+            "C04-01"
+          ]
+        },
+        {
+          "claim_id": "C04-02",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C04-02",
+          "atomic_findings": [
+            "C04-02"
+          ]
+        },
+        {
+          "claim_id": "C04-03",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C04-03",
+          "atomic_findings": [
+            "C04-03"
+          ]
+        },
+        {
+          "claim_id": "C04-04",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C04-04",
+          "atomic_findings": [
+            "C04-04"
+          ]
+        },
+        {
+          "claim_id": "C04-05",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C04-05",
+          "atomic_findings": [
+            "C04-05"
+          ]
+        },
+        {
+          "claim_id": "C04-06",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C04-06",
+          "atomic_findings": [
+            "C04-06"
+          ]
+        },
+        {
+          "claim_id": "C04-07",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C04-07",
+          "atomic_findings": [
+            "C04-07"
+          ]
+        },
+        {
+          "claim_id": "C04-08",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "C04-08",
+          "atomic_findings": [
+            "C04-08"
+          ]
+        },
+        {
+          "claim_id": "C04-09",
+          "expected": "not_applicable",
+          "observed": "not_applicable",
+          "matches": true,
+          "report_anchor": "C04-09",
+          "atomic_findings": [
+            "C04-09"
+          ]
+        },
+        {
+          "claim_id": "C04-10",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C04-10",
+          "atomic_findings": [
+            "C04-10"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "04-narrative-continuity-correct",
+      "expected_claims": 5,
+      "audited_atomic_findings": 5,
+      "matched_claims": 5,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "supported": 5
+      },
+      "argument_counts": {
+        "sufficient": 5
+      },
+      "formal_counts": {
+        "proved": 3,
+        "not_attempted": 2
+      },
+      "technical_status": "passed",
+      "checked_theorems": 4,
+      "comparisons": [
+        {
+          "claim_id": "C04-OK-01",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C04-OK-01",
+          "atomic_findings": [
+            "C04-OK-01"
+          ]
+        },
+        {
+          "claim_id": "C04-OK-02",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C04-OK-02",
+          "atomic_findings": [
+            "C04-OK-02"
+          ]
+        },
+        {
+          "claim_id": "C04-OK-03",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C04-OK-03",
+          "atomic_findings": [
+            "C04-OK-03"
+          ]
+        },
+        {
+          "claim_id": "C04-OK-04",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C04-OK-04",
+          "atomic_findings": [
+            "C04-OK-04"
+          ]
+        },
+        {
+          "claim_id": "C04-OK-05",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C04-OK-05",
+          "atomic_findings": [
+            "C04-OK-05"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "05-conflicting-evidence-mixed",
+      "expected_claims": 6,
+      "audited_atomic_findings": 6,
+      "matched_claims": 6,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "supported": 1,
+        "both": 1,
+        "undetermined": 4
+      },
+      "argument_counts": {
+        "sufficient": 1,
+        "disputed": 1,
+        "insufficient_support": 2,
+        "invalid_inference": 2
+      },
+      "formal_counts": {
+        "proved": 1,
+        "auxiliary": 5
+      },
+      "technical_status": "passed",
+      "checked_theorems": 7,
+      "comparisons": [
+        {
+          "claim_id": "CE-01",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "report-ce01",
+          "atomic_findings": [
+            "CE-01"
+          ]
+        },
+        {
+          "claim_id": "CE-02",
+          "expected": "both",
+          "observed": "both",
+          "matches": true,
+          "report_anchor": "report-ce02",
+          "atomic_findings": [
+            "CE-02"
+          ]
+        },
+        {
+          "claim_id": "CE-03",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "report-ce03",
+          "atomic_findings": [
+            "CE-03"
+          ]
+        },
+        {
+          "claim_id": "CE-04",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "report-ce04",
+          "atomic_findings": [
+            "CE-04"
+          ]
+        },
+        {
+          "claim_id": "CE-05",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "report-ce05",
+          "atomic_findings": [
+            "CE-05"
+          ]
+        },
+        {
+          "claim_id": "CE-06",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "report-ce06",
+          "atomic_findings": [
+            "CE-06"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "05-conflicting-evidence-correct",
+      "expected_claims": 6,
+      "audited_atomic_findings": 13,
+      "matched_claims": 6,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "supported": 13
+      },
+      "argument_counts": {
+        "sufficient": 13
+      },
+      "formal_counts": {
+        "proved": 6,
+        "not_attempted": 4,
+        "auxiliary": 3
+      },
+      "technical_status": "passed",
+      "checked_theorems": 7,
+      "comparisons": [
+        {
+          "claim_id": "CEC-01",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "report-cec01",
+          "atomic_findings": [
+            "CEC-01"
+          ]
+        },
+        {
+          "claim_id": "CEC-02",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "report-cec02",
+          "atomic_findings": [
+            "CEC-02a",
+            "CEC-02b"
+          ]
+        },
+        {
+          "claim_id": "CEC-03",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "report-cec03",
+          "atomic_findings": [
+            "CEC-03a",
+            "CEC-03b"
+          ]
+        },
+        {
+          "claim_id": "CEC-04",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "report-cec04",
+          "atomic_findings": [
+            "CEC-04a",
+            "CEC-04b",
+            "CEC-04c"
+          ]
+        },
+        {
+          "claim_id": "CEC-05",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "report-cec05",
+          "atomic_findings": [
+            "CEC-05a",
+            "CEC-05b",
+            "CEC-05c"
+          ]
+        },
+        {
+          "claim_id": "CEC-06",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "report-cec06",
+          "atomic_findings": [
+            "CEC-06a",
+            "CEC-06b"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "06-procurement-contract-mixed",
+      "expected_claims": 18,
+      "audited_atomic_findings": 18,
+      "matched_claims": 18,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "refuted": 8,
+        "supported": 5,
+        "undetermined": 3,
+        "both": 1,
+        "not_applicable": 1
+      },
+      "argument_counts": {
+        "invalid_inference": 8,
+        "sufficient": 5,
+        "insufficient_support": 3,
+        "disputed": 1,
+        "nonformal": 1
+      },
+      "formal_counts": {
+        "refuted": 8,
+        "proved": 5,
+        "auxiliary": 4,
+        "not_attempted": 1
+      },
+      "technical_status": "passed",
+      "checked_theorems": 17,
+      "comparisons": [
+        {
+          "claim_id": "C06-01",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C06-01",
+          "atomic_findings": [
+            "C06-01"
+          ]
+        },
+        {
+          "claim_id": "C06-02",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-02",
+          "atomic_findings": [
+            "C06-02"
+          ]
+        },
+        {
+          "claim_id": "C06-03",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-03",
+          "atomic_findings": [
+            "C06-03"
+          ]
+        },
+        {
+          "claim_id": "C06-04",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C06-04",
+          "atomic_findings": [
+            "C06-04"
+          ]
+        },
+        {
+          "claim_id": "C06-05",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C06-05",
+          "atomic_findings": [
+            "C06-05"
+          ]
+        },
+        {
+          "claim_id": "C06-06",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-06",
+          "atomic_findings": [
+            "C06-06"
+          ]
+        },
+        {
+          "claim_id": "C06-07",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C06-07",
+          "atomic_findings": [
+            "C06-07"
+          ]
+        },
+        {
+          "claim_id": "C06-08",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C06-08",
+          "atomic_findings": [
+            "C06-08"
+          ]
+        },
+        {
+          "claim_id": "C06-09",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-09",
+          "atomic_findings": [
+            "C06-09"
+          ]
+        },
+        {
+          "claim_id": "C06-10",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C06-10",
+          "atomic_findings": [
+            "C06-10"
+          ]
+        },
+        {
+          "claim_id": "C06-11",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-11",
+          "atomic_findings": [
+            "C06-11"
+          ]
+        },
+        {
+          "claim_id": "C06-12",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C06-12",
+          "atomic_findings": [
+            "C06-12"
+          ]
+        },
+        {
+          "claim_id": "C06-13",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "C06-13",
+          "atomic_findings": [
+            "C06-13"
+          ]
+        },
+        {
+          "claim_id": "C06-14",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "C06-14",
+          "atomic_findings": [
+            "C06-14"
+          ]
+        },
+        {
+          "claim_id": "C06-15",
+          "expected": "both",
+          "observed": "both",
+          "matches": true,
+          "report_anchor": "C06-15",
+          "atomic_findings": [
+            "C06-15"
+          ]
+        },
+        {
+          "claim_id": "C06-16",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "C06-16",
+          "atomic_findings": [
+            "C06-16"
+          ]
+        },
+        {
+          "claim_id": "C06-17",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C06-17",
+          "atomic_findings": [
+            "C06-17"
+          ]
+        },
+        {
+          "claim_id": "C06-18",
+          "expected": "not_applicable",
+          "observed": "not_applicable",
+          "matches": true,
+          "report_anchor": "C06-18",
+          "atomic_findings": [
+            "C06-18"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "06-procurement-contract-correct",
+      "expected_claims": 18,
+      "audited_atomic_findings": 18,
+      "matched_claims": 18,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "supported": 18
+      },
+      "argument_counts": {
+        "sufficient": 18
+      },
+      "formal_counts": {
+        "proved": 13,
+        "auxiliary": 4,
+        "not_attempted": 1
+      },
+      "technical_status": "passed",
+      "checked_theorems": 16,
+      "comparisons": [
+        {
+          "claim_id": "C06-C01",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C01",
+          "atomic_findings": [
+            "C06-C01"
+          ]
+        },
+        {
+          "claim_id": "C06-C02",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C02",
+          "atomic_findings": [
+            "C06-C02"
+          ]
+        },
+        {
+          "claim_id": "C06-C03",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C03",
+          "atomic_findings": [
+            "C06-C03"
+          ]
+        },
+        {
+          "claim_id": "C06-C04",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C04",
+          "atomic_findings": [
+            "C06-C04"
+          ]
+        },
+        {
+          "claim_id": "C06-C05",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C05",
+          "atomic_findings": [
+            "C06-C05"
+          ]
+        },
+        {
+          "claim_id": "C06-C06",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C06",
+          "atomic_findings": [
+            "C06-C06"
+          ]
+        },
+        {
+          "claim_id": "C06-C07",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C07",
+          "atomic_findings": [
+            "C06-C07"
+          ]
+        },
+        {
+          "claim_id": "C06-C08",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C08",
+          "atomic_findings": [
+            "C06-C08"
+          ]
+        },
+        {
+          "claim_id": "C06-C09",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C09",
+          "atomic_findings": [
+            "C06-C09"
+          ]
+        },
+        {
+          "claim_id": "C06-C10",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C10",
+          "atomic_findings": [
+            "C06-C10"
+          ]
+        },
+        {
+          "claim_id": "C06-C11",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C11",
+          "atomic_findings": [
+            "C06-C11"
+          ]
+        },
+        {
+          "claim_id": "C06-C12",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C12",
+          "atomic_findings": [
+            "C06-C12"
+          ]
+        },
+        {
+          "claim_id": "C06-C13",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C13",
+          "atomic_findings": [
+            "C06-C13"
+          ]
+        },
+        {
+          "claim_id": "C06-C14",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C14",
+          "atomic_findings": [
+            "C06-C14"
+          ]
+        },
+        {
+          "claim_id": "C06-C15",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C15",
+          "atomic_findings": [
+            "C06-C15"
+          ]
+        },
+        {
+          "claim_id": "C06-C16",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C16",
+          "atomic_findings": [
+            "C06-C16"
+          ]
+        },
+        {
+          "claim_id": "C06-C17",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C17",
+          "atomic_findings": [
+            "C06-C17"
+          ]
+        },
+        {
+          "claim_id": "C06-C18",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C06-C18",
+          "atomic_findings": [
+            "C06-C18"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "07-incident-response-mixed",
+      "expected_claims": 18,
+      "audited_atomic_findings": 18,
+      "matched_claims": 18,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "supported": 5,
+        "refuted": 9,
+        "both": 1,
+        "undetermined": 2,
+        "not_applicable": 1
+      },
+      "argument_counts": {
+        "sufficient": 5,
+        "invalid_inference": 9,
+        "disputed": 1,
+        "insufficient_support": 2,
+        "nonformal": 1
+      },
+      "formal_counts": {
+        "proved": 5,
+        "refuted": 9,
+        "auxiliary": 3,
+        "not_attempted": 1
+      },
+      "technical_status": "passed",
+      "checked_theorems": 16,
+      "comparisons": [
+        {
+          "claim_id": "C07-01",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-01",
+          "atomic_findings": [
+            "C07-01"
+          ]
+        },
+        {
+          "claim_id": "C07-02",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C07-02",
+          "atomic_findings": [
+            "C07-02"
+          ]
+        },
+        {
+          "claim_id": "C07-03",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-03",
+          "atomic_findings": [
+            "C07-03"
+          ]
+        },
+        {
+          "claim_id": "C07-04",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C07-04",
+          "atomic_findings": [
+            "C07-04"
+          ]
+        },
+        {
+          "claim_id": "C07-05",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C07-05",
+          "atomic_findings": [
+            "C07-05"
+          ]
+        },
+        {
+          "claim_id": "C07-06",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C07-06",
+          "atomic_findings": [
+            "C07-06"
+          ]
+        },
+        {
+          "claim_id": "C07-07",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C07-07",
+          "atomic_findings": [
+            "C07-07"
+          ]
+        },
+        {
+          "claim_id": "C07-08",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-08",
+          "atomic_findings": [
+            "C07-08"
+          ]
+        },
+        {
+          "claim_id": "C07-09",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C07-09",
+          "atomic_findings": [
+            "C07-09"
+          ]
+        },
+        {
+          "claim_id": "C07-10",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C07-10",
+          "atomic_findings": [
+            "C07-10"
+          ]
+        },
+        {
+          "claim_id": "C07-11",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C07-11",
+          "atomic_findings": [
+            "C07-11"
+          ]
+        },
+        {
+          "claim_id": "C07-12",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-12",
+          "atomic_findings": [
+            "C07-12"
+          ]
+        },
+        {
+          "claim_id": "C07-13",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C07-13",
+          "atomic_findings": [
+            "C07-13"
+          ]
+        },
+        {
+          "claim_id": "C07-14",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-14",
+          "atomic_findings": [
+            "C07-14"
+          ]
+        },
+        {
+          "claim_id": "C07-15",
+          "expected": "both",
+          "observed": "both",
+          "matches": true,
+          "report_anchor": "C07-15",
+          "atomic_findings": [
+            "C07-15"
+          ]
+        },
+        {
+          "claim_id": "C07-16",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "C07-16",
+          "atomic_findings": [
+            "C07-16"
+          ]
+        },
+        {
+          "claim_id": "C07-17",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "C07-17",
+          "atomic_findings": [
+            "C07-17"
+          ]
+        },
+        {
+          "claim_id": "C07-18",
+          "expected": "not_applicable",
+          "observed": "not_applicable",
+          "matches": true,
+          "report_anchor": "C07-18",
+          "atomic_findings": [
+            "C07-18"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "07-incident-response-correct",
+      "expected_claims": 18,
+      "audited_atomic_findings": 18,
+      "matched_claims": 18,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "supported": 18
+      },
+      "argument_counts": {
+        "sufficient": 18
+      },
+      "formal_counts": {
+        "proved": 15,
+        "auxiliary": 2,
+        "not_attempted": 1
+      },
+      "technical_status": "passed",
+      "checked_theorems": 16,
+      "comparisons": [
+        {
+          "claim_id": "C07-C01",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C01",
+          "atomic_findings": [
+            "C07-C01"
+          ]
+        },
+        {
+          "claim_id": "C07-C02",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C02",
+          "atomic_findings": [
+            "C07-C02"
+          ]
+        },
+        {
+          "claim_id": "C07-C03",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C03",
+          "atomic_findings": [
+            "C07-C03"
+          ]
+        },
+        {
+          "claim_id": "C07-C04",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C04",
+          "atomic_findings": [
+            "C07-C04"
+          ]
+        },
+        {
+          "claim_id": "C07-C05",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C05",
+          "atomic_findings": [
+            "C07-C05"
+          ]
+        },
+        {
+          "claim_id": "C07-C06",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C06",
+          "atomic_findings": [
+            "C07-C06"
+          ]
+        },
+        {
+          "claim_id": "C07-C07",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C07",
+          "atomic_findings": [
+            "C07-C07"
+          ]
+        },
+        {
+          "claim_id": "C07-C08",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C08",
+          "atomic_findings": [
+            "C07-C08"
+          ]
+        },
+        {
+          "claim_id": "C07-C09",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C09",
+          "atomic_findings": [
+            "C07-C09"
+          ]
+        },
+        {
+          "claim_id": "C07-C10",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C10",
+          "atomic_findings": [
+            "C07-C10"
+          ]
+        },
+        {
+          "claim_id": "C07-C11",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C11",
+          "atomic_findings": [
+            "C07-C11"
+          ]
+        },
+        {
+          "claim_id": "C07-C12",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C12",
+          "atomic_findings": [
+            "C07-C12"
+          ]
+        },
+        {
+          "claim_id": "C07-C13",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C13",
+          "atomic_findings": [
+            "C07-C13"
+          ]
+        },
+        {
+          "claim_id": "C07-C14",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C14",
+          "atomic_findings": [
+            "C07-C14"
+          ]
+        },
+        {
+          "claim_id": "C07-C15",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C15",
+          "atomic_findings": [
+            "C07-C15"
+          ]
+        },
+        {
+          "claim_id": "C07-C16",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C16",
+          "atomic_findings": [
+            "C07-C16"
+          ]
+        },
+        {
+          "claim_id": "C07-C17",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C17",
+          "atomic_findings": [
+            "C07-C17"
+          ]
+        },
+        {
+          "claim_id": "C07-C18",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C07-C18",
+          "atomic_findings": [
+            "C07-C18"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "08-scanned-inventory-mixed",
+      "expected_claims": 14,
+      "audited_atomic_findings": 14,
+      "matched_claims": 14,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "supported": 2,
+        "refuted": 8,
+        "both": 1,
+        "undetermined": 2,
+        "not_applicable": 1
+      },
+      "argument_counts": {
+        "sufficient": 2,
+        "invalid_inference": 8,
+        "disputed": 1,
+        "insufficient_support": 2,
+        "nonformal": 1
+      },
+      "formal_counts": {
+        "proved": 2,
+        "refuted": 8,
+        "blocked": 3,
+        "not_attempted": 1
+      },
+      "technical_status": "passed",
+      "checked_theorems": 10,
+      "comparisons": [
+        {
+          "claim_id": "C08-ERR-01",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C08-ERR-01",
+          "atomic_findings": [
+            "C08-ERR-01"
+          ]
+        },
+        {
+          "claim_id": "C08-ERR-02",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C08-ERR-02",
+          "atomic_findings": [
+            "C08-ERR-02"
+          ]
+        },
+        {
+          "claim_id": "C08-ERR-03",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C08-ERR-03",
+          "atomic_findings": [
+            "C08-ERR-03"
+          ]
+        },
+        {
+          "claim_id": "C08-ERR-04",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C08-ERR-04",
+          "atomic_findings": [
+            "C08-ERR-04"
+          ]
+        },
+        {
+          "claim_id": "C08-ERR-05",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C08-ERR-05",
+          "atomic_findings": [
+            "C08-ERR-05"
+          ]
+        },
+        {
+          "claim_id": "C08-ERR-06",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C08-ERR-06",
+          "atomic_findings": [
+            "C08-ERR-06"
+          ]
+        },
+        {
+          "claim_id": "C08-ERR-07",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C08-ERR-07",
+          "atomic_findings": [
+            "C08-ERR-07"
+          ]
+        },
+        {
+          "claim_id": "C08-ERR-08",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C08-ERR-08",
+          "atomic_findings": [
+            "C08-ERR-08"
+          ]
+        },
+        {
+          "claim_id": "C08-ERR-09",
+          "expected": "both",
+          "observed": "both",
+          "matches": true,
+          "report_anchor": "C08-ERR-09",
+          "atomic_findings": [
+            "C08-ERR-09"
+          ]
+        },
+        {
+          "claim_id": "C08-ERR-10",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "C08-ERR-10",
+          "atomic_findings": [
+            "C08-ERR-10"
+          ]
+        },
+        {
+          "claim_id": "C08-ERR-11",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "C08-ERR-11",
+          "atomic_findings": [
+            "C08-ERR-11"
+          ]
+        },
+        {
+          "claim_id": "C08-ERR-12",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C08-ERR-12",
+          "atomic_findings": [
+            "C08-ERR-12"
+          ]
+        },
+        {
+          "claim_id": "C08-ERR-13",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C08-ERR-13",
+          "atomic_findings": [
+            "C08-ERR-13"
+          ]
+        },
+        {
+          "claim_id": "C08-ERR-14",
+          "expected": "not_applicable",
+          "observed": "not_applicable",
+          "matches": true,
+          "report_anchor": "C08-ERR-14",
+          "atomic_findings": [
+            "C08-ERR-14"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "08-scanned-inventory-correct",
+      "expected_claims": 14,
+      "audited_atomic_findings": 14,
+      "matched_claims": 14,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "supported": 14
+      },
+      "argument_counts": {
+        "sufficient": 14
+      },
+      "formal_counts": {
+        "proved": 13,
+        "auxiliary": 1
+      },
+      "technical_status": "passed",
+      "checked_theorems": 14,
+      "comparisons": [
+        {
+          "claim_id": "C08-OK-01",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C08-OK-01",
+          "atomic_findings": [
+            "C08-OK-01"
+          ]
+        },
+        {
+          "claim_id": "C08-OK-02",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C08-OK-02",
+          "atomic_findings": [
+            "C08-OK-02"
+          ]
+        },
+        {
+          "claim_id": "C08-OK-03",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C08-OK-03",
+          "atomic_findings": [
+            "C08-OK-03"
+          ]
+        },
+        {
+          "claim_id": "C08-OK-04",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C08-OK-04",
+          "atomic_findings": [
+            "C08-OK-04"
+          ]
+        },
+        {
+          "claim_id": "C08-OK-05",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C08-OK-05",
+          "atomic_findings": [
+            "C08-OK-05"
+          ]
+        },
+        {
+          "claim_id": "C08-OK-06",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C08-OK-06",
+          "atomic_findings": [
+            "C08-OK-06"
+          ]
+        },
+        {
+          "claim_id": "C08-OK-07",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C08-OK-07",
+          "atomic_findings": [
+            "C08-OK-07"
+          ]
+        },
+        {
+          "claim_id": "C08-OK-08",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C08-OK-08",
+          "atomic_findings": [
+            "C08-OK-08"
+          ]
+        },
+        {
+          "claim_id": "C08-OK-09",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C08-OK-09",
+          "atomic_findings": [
+            "C08-OK-09"
+          ]
+        },
+        {
+          "claim_id": "C08-OK-10",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C08-OK-10",
+          "atomic_findings": [
+            "C08-OK-10"
+          ]
+        },
+        {
+          "claim_id": "C08-OK-11",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C08-OK-11",
+          "atomic_findings": [
+            "C08-OK-11"
+          ]
+        },
+        {
+          "claim_id": "C08-OK-12",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C08-OK-12",
+          "atomic_findings": [
+            "C08-OK-12"
+          ]
+        },
+        {
+          "claim_id": "C08-OK-13",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C08-OK-13",
+          "atomic_findings": [
+            "C08-OK-13"
+          ]
+        },
+        {
+          "claim_id": "C08-OK-14",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C08-OK-14",
+          "atomic_findings": [
+            "C08-OK-14"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "09-multiversion-safety-mixed",
+      "expected_claims": 14,
+      "audited_atomic_findings": 14,
+      "matched_claims": 14,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "refuted": 9,
+        "supported": 1,
+        "undetermined": 3,
+        "not_applicable": 1
+      },
+      "argument_counts": {
+        "invalid_inference": 9,
+        "sufficient": 1,
+        "insufficient_support": 3,
+        "nonformal": 1
+      },
+      "formal_counts": {
+        "refuted": 9,
+        "proved": 1,
+        "blocked": 3,
+        "not_attempted": 1
+      },
+      "technical_status": "passed",
+      "checked_theorems": 10,
+      "comparisons": [
+        {
+          "claim_id": "C09-ERR-01",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C09-ERR-01",
+          "atomic_findings": [
+            "C09-ERR-01"
+          ]
+        },
+        {
+          "claim_id": "C09-ERR-02",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C09-ERR-02",
+          "atomic_findings": [
+            "C09-ERR-02"
+          ]
+        },
+        {
+          "claim_id": "C09-ERR-03",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C09-ERR-03",
+          "atomic_findings": [
+            "C09-ERR-03"
+          ]
+        },
+        {
+          "claim_id": "C09-ERR-04",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C09-ERR-04",
+          "atomic_findings": [
+            "C09-ERR-04"
+          ]
+        },
+        {
+          "claim_id": "C09-ERR-05",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C09-ERR-05",
+          "atomic_findings": [
+            "C09-ERR-05"
+          ]
+        },
+        {
+          "claim_id": "C09-ERR-06",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C09-ERR-06",
+          "atomic_findings": [
+            "C09-ERR-06"
+          ]
+        },
+        {
+          "claim_id": "C09-ERR-07",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C09-ERR-07",
+          "atomic_findings": [
+            "C09-ERR-07"
+          ]
+        },
+        {
+          "claim_id": "C09-ERR-08",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "C09-ERR-08",
+          "atomic_findings": [
+            "C09-ERR-08"
+          ]
+        },
+        {
+          "claim_id": "C09-ERR-09",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C09-ERR-09",
+          "atomic_findings": [
+            "C09-ERR-09"
+          ]
+        },
+        {
+          "claim_id": "C09-ERR-10",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C09-ERR-10",
+          "atomic_findings": [
+            "C09-ERR-10"
+          ]
+        },
+        {
+          "claim_id": "C09-ERR-11",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C09-ERR-11",
+          "atomic_findings": [
+            "C09-ERR-11"
+          ]
+        },
+        {
+          "claim_id": "C09-ERR-12",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "C09-ERR-12",
+          "atomic_findings": [
+            "C09-ERR-12"
+          ]
+        },
+        {
+          "claim_id": "C09-ERR-13",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "C09-ERR-13",
+          "atomic_findings": [
+            "C09-ERR-13"
+          ]
+        },
+        {
+          "claim_id": "C09-ERR-14",
+          "expected": "not_applicable",
+          "observed": "not_applicable",
+          "matches": true,
+          "report_anchor": "C09-ERR-14",
+          "atomic_findings": [
+            "C09-ERR-14"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "09-multiversion-safety-correct",
+      "expected_claims": 14,
+      "audited_atomic_findings": 14,
+      "matched_claims": 14,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "supported": 14
+      },
+      "argument_counts": {
+        "sufficient": 14
+      },
+      "formal_counts": {
+        "auxiliary": 2,
+        "proved": 12
+      },
+      "technical_status": "passed",
+      "checked_theorems": 16,
+      "comparisons": [
+        {
+          "claim_id": "C09-OK-01",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C09-OK-01",
+          "atomic_findings": [
+            "C09-OK-01"
+          ]
+        },
+        {
+          "claim_id": "C09-OK-02",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C09-OK-02",
+          "atomic_findings": [
+            "C09-OK-02"
+          ]
+        },
+        {
+          "claim_id": "C09-OK-03",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C09-OK-03",
+          "atomic_findings": [
+            "C09-OK-03"
+          ]
+        },
+        {
+          "claim_id": "C09-OK-04",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C09-OK-04",
+          "atomic_findings": [
+            "C09-OK-04"
+          ]
+        },
+        {
+          "claim_id": "C09-OK-05",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C09-OK-05",
+          "atomic_findings": [
+            "C09-OK-05"
+          ]
+        },
+        {
+          "claim_id": "C09-OK-06",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C09-OK-06",
+          "atomic_findings": [
+            "C09-OK-06"
+          ]
+        },
+        {
+          "claim_id": "C09-OK-07",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C09-OK-07",
+          "atomic_findings": [
+            "C09-OK-07"
+          ]
+        },
+        {
+          "claim_id": "C09-OK-08",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C09-OK-08",
+          "atomic_findings": [
+            "C09-OK-08"
+          ]
+        },
+        {
+          "claim_id": "C09-OK-09",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C09-OK-09",
+          "atomic_findings": [
+            "C09-OK-09"
+          ]
+        },
+        {
+          "claim_id": "C09-OK-10",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C09-OK-10",
+          "atomic_findings": [
+            "C09-OK-10"
+          ]
+        },
+        {
+          "claim_id": "C09-OK-11",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C09-OK-11",
+          "atomic_findings": [
+            "C09-OK-11"
+          ]
+        },
+        {
+          "claim_id": "C09-OK-12",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C09-OK-12",
+          "atomic_findings": [
+            "C09-OK-12"
+          ]
+        },
+        {
+          "claim_id": "C09-OK-13",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C09-OK-13",
+          "atomic_findings": [
+            "C09-OK-13"
+          ]
+        },
+        {
+          "claim_id": "C09-OK-14",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C09-OK-14",
+          "atomic_findings": [
+            "C09-OK-14"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "10-distributed-assurance-mixed",
+      "expected_claims": 14,
+      "audited_atomic_findings": 14,
+      "matched_claims": 14,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "refuted": 10,
+        "supported": 1,
+        "undetermined": 2,
+        "not_applicable": 1
+      },
+      "argument_counts": {
+        "invalid_inference": 10,
+        "sufficient": 1,
+        "insufficient_support": 2,
+        "nonformal": 1
+      },
+      "formal_counts": {
+        "refuted": 9,
+        "proved": 1,
+        "blocked": 2,
+        "not_attempted": 2
+      },
+      "technical_status": "passed",
+      "checked_theorems": 10,
+      "comparisons": [
+        {
+          "claim_id": "C10-ERR-01",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C10-ERR-01",
+          "atomic_findings": [
+            "C10-ERR-01"
+          ]
+        },
+        {
+          "claim_id": "C10-ERR-02",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C10-ERR-02",
+          "atomic_findings": [
+            "C10-ERR-02"
+          ]
+        },
+        {
+          "claim_id": "C10-ERR-03",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C10-ERR-03",
+          "atomic_findings": [
+            "C10-ERR-03"
+          ]
+        },
+        {
+          "claim_id": "C10-ERR-04",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C10-ERR-04",
+          "atomic_findings": [
+            "C10-ERR-04"
+          ]
+        },
+        {
+          "claim_id": "C10-ERR-05",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C10-ERR-05",
+          "atomic_findings": [
+            "C10-ERR-05"
+          ]
+        },
+        {
+          "claim_id": "C10-ERR-06",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C10-ERR-06",
+          "atomic_findings": [
+            "C10-ERR-06"
+          ]
+        },
+        {
+          "claim_id": "C10-ERR-07",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C10-ERR-07",
+          "atomic_findings": [
+            "C10-ERR-07"
+          ]
+        },
+        {
+          "claim_id": "C10-ERR-08",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C10-ERR-08",
+          "atomic_findings": [
+            "C10-ERR-08"
+          ]
+        },
+        {
+          "claim_id": "C10-ERR-09",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C10-ERR-09",
+          "atomic_findings": [
+            "C10-ERR-09"
+          ]
+        },
+        {
+          "claim_id": "C10-ERR-10",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "C10-ERR-10",
+          "atomic_findings": [
+            "C10-ERR-10"
+          ]
+        },
+        {
+          "claim_id": "C10-ERR-11",
+          "expected": "undetermined",
+          "observed": "undetermined",
+          "matches": true,
+          "report_anchor": "C10-ERR-11",
+          "atomic_findings": [
+            "C10-ERR-11"
+          ]
+        },
+        {
+          "claim_id": "C10-ERR-12",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C10-ERR-12",
+          "atomic_findings": [
+            "C10-ERR-12"
+          ]
+        },
+        {
+          "claim_id": "C10-ERR-13",
+          "expected": "refuted",
+          "observed": "refuted",
+          "matches": true,
+          "report_anchor": "C10-ERR-13",
+          "atomic_findings": [
+            "C10-ERR-13"
+          ]
+        },
+        {
+          "claim_id": "C10-ERR-14",
+          "expected": "not_applicable",
+          "observed": "not_applicable",
+          "matches": true,
+          "report_anchor": "C10-ERR-14",
+          "atomic_findings": [
+            "C10-ERR-14"
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "10-distributed-assurance-correct",
+      "expected_claims": 14,
+      "audited_atomic_findings": 14,
+      "matched_claims": 14,
+      "mismatches": [],
+      "extra_anchors": [],
+      "semantic_counts": {
+        "supported": 14
+      },
+      "argument_counts": {
+        "sufficient": 14
+      },
+      "formal_counts": {
+        "proved": 11,
+        "auxiliary": 1,
+        "not_attempted": 2
+      },
+      "technical_status": "passed",
+      "checked_theorems": 13,
+      "comparisons": [
+        {
+          "claim_id": "C10-OK-01",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C10-OK-01",
+          "atomic_findings": [
+            "C10-OK-01"
+          ]
+        },
+        {
+          "claim_id": "C10-OK-02",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C10-OK-02",
+          "atomic_findings": [
+            "C10-OK-02"
+          ]
+        },
+        {
+          "claim_id": "C10-OK-03",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C10-OK-03",
+          "atomic_findings": [
+            "C10-OK-03"
+          ]
+        },
+        {
+          "claim_id": "C10-OK-04",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C10-OK-04",
+          "atomic_findings": [
+            "C10-OK-04"
+          ]
+        },
+        {
+          "claim_id": "C10-OK-05",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C10-OK-05",
+          "atomic_findings": [
+            "C10-OK-05"
+          ]
+        },
+        {
+          "claim_id": "C10-OK-06",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C10-OK-06",
+          "atomic_findings": [
+            "C10-OK-06"
+          ]
+        },
+        {
+          "claim_id": "C10-OK-07",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C10-OK-07",
+          "atomic_findings": [
+            "C10-OK-07"
+          ]
+        },
+        {
+          "claim_id": "C10-OK-08",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C10-OK-08",
+          "atomic_findings": [
+            "C10-OK-08"
+          ]
+        },
+        {
+          "claim_id": "C10-OK-09",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C10-OK-09",
+          "atomic_findings": [
+            "C10-OK-09"
+          ]
+        },
+        {
+          "claim_id": "C10-OK-10",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C10-OK-10",
+          "atomic_findings": [
+            "C10-OK-10"
+          ]
+        },
+        {
+          "claim_id": "C10-OK-11",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C10-OK-11",
+          "atomic_findings": [
+            "C10-OK-11"
+          ]
+        },
+        {
+          "claim_id": "C10-OK-12",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C10-OK-12",
+          "atomic_findings": [
+            "C10-OK-12"
+          ]
+        },
+        {
+          "claim_id": "C10-OK-13",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C10-OK-13",
+          "atomic_findings": [
+            "C10-OK-13"
+          ]
+        },
+        {
+          "claim_id": "C10-OK-14",
+          "expected": "supported",
+          "observed": "supported",
+          "matches": true,
+          "report_anchor": "C10-OK-14",
+          "atomic_findings": [
+            "C10-OK-14"
+          ]
+        }
+      ]
+    }
+  ],
+  "missing_runs": [],
+  "total_expected_claims": 237,
+  "total_matched_claims": 237,
+  "total_atomic_findings": 250,
+  "total_checked_theorems": 211
+}

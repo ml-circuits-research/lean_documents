@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target025.lean
+Audit.claim08 : Audit.revision (-1) = 1 ∧ Audit.revision (-1) ≠ 2
+'Audit.claim08' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.218]

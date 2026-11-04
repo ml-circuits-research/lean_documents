@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target025.lean
+Audit.claim09 : Audit.bAcknowledgement - Audit.bDetection = 35 ∧ Audit.bAcknowledgement ≤ Audit.bEffectiveStart + 30
+'Audit.claim09' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.214]

@@ -1,0 +1,8 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target032.lean
+Audit.gapAlternatives : Audit.possibleNoExfiltration.gapSamplesAvailable = false ∧
+  Audit.possibleExfiltration.gapSamplesAvailable = false ∧
+    Audit.possibleNoExfiltration.retainedListedAlarms = false ∧
+      Audit.possibleExfiltration.retainedListedAlarms = false ∧
+        Audit.possibleNoExfiltration.exfiltrationDuringGap = false ∧
+          Audit.possibleExfiltration.exfiltrationDuringGap = true
+'Audit.gapAlternatives' does not depend on any axioms

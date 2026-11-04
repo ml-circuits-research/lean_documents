@@ -1,0 +1,7 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target006.lean
+Audit.claim05Cycle : (Audit.CitationNode.reportClaim, Audit.CitationNode.appendix) ∈ Audit.citationEdges ∧
+  (Audit.CitationNode.appendix, Audit.CitationNode.reportClaim) ∈ Audit.citationEdges ∧
+    ¬Audit.CitationNode.independentReview ∈ Audit.suppliedReviewArtifacts
+'Audit.claim05Cycle' depends on axioms: [propext]
+
+[exit_code=0; elapsed_seconds=0.225]

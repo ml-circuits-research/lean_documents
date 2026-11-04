@@ -1,0 +1,3 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target001.lean
+Audit.paymentTotal : Audit.sampleTotal = 275000 ∧ Audit.sampleTotal = 2750 * 100
+'Audit.paymentTotal' does not depend on any axioms

@@ -1,0 +1,7 @@
+# Semantic correspondence review
+
+Reviewer: coordinating agent, separate from the audit author. The initial audit was conducted on the selected report, brief and sources without expected answers or alternate report. The coordinator has fixture-design familiarity; this is not a blind domain-expert certification.
+
+Reviewed all source tables and control rules, the report and all eleven atomic findings, model notes and Audit.lean. Integer cents, the nonzero sample denominator, exact 275000 total, 25000 budget gap, and 75000 exception amount match the ledger. The budget theorem additionally rules out natural-subtraction truncation. The sample rate is kept distinct from the population rate: the 0/8 unknown-exception assignments demonstrate non-entailment only. The witness P03 belongs to the sample and separates invoice matching from approval. The factual premise of C03-06 is correctly separated from its refuted conclusion. C03-07 is a direct documentary misquotation and is not falsely labeled Lean-refuted. Missing Annex C and aesthetic judgment retain limitations. Population inclusion is an explicit source-to-model assumption, not an independently measured fact. Accepted with these limits.
+
+Technical execution establishes the recorded formal targets; this semantic review checks evidence mapping, applicability and limits. No unresolved source-to-target mismatch was identified in the reviewed scope.

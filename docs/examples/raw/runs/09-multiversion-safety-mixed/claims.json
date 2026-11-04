@@ -1,0 +1,103 @@
+{
+  "claims": [
+    {
+      "claim_id": "C09-ERR-01",
+      "exact_claim": "**C09-ERR-01.** L01 failed its historical demonstration because 118 exceeds the current 100-millisecond limit.",
+      "report_anchor": "C09-ERR-01",
+      "atomic_target": "Did L01 fail its historical delay demonstration because its maximum exceeds today's threshold?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C09-ERR-02",
+      "exact_claim": "**C09-ERR-02.** N02 passes because 101 is below the revision 1 limit of 120.",
+      "report_anchor": "C09-ERR-02",
+      "atomic_target": "Does N02 pass its June 3 NORMAL delay requirement under the old 120 limit?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C09-ERR-03",
+      "exact_claim": "**C09-ERR-03.** All N01 valid delay runs satisfy 100 milliseconds.",
+      "report_anchor": "C09-ERR-03",
+      "atomic_target": "Do all three actual valid N01 delay runs meet 100 milliseconds?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C09-ERR-04",
+      "exact_claim": "**C09-ERR-04.** Every named NORMAL unit passed every required delay run.",
+      "report_anchor": "C09-ERR-04",
+      "atomic_target": "Did every named NORMAL unit pass every required delay run?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C09-ERR-05",
+      "exact_claim": "**C09-ERR-05.** E17 failed because 108 exceeds 100 milliseconds.",
+      "report_anchor": "C09-ERR-05",
+      "atomic_target": "Did E17 fail because its maximum of 108 exceeds the general NORMAL limit?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C09-ERR-06",
+      "exact_claim": "**C09-ERR-06.** Annex X also grants the 110-millisecond allowance to N02.",
+      "report_anchor": "C09-ERR-06",
+      "atomic_target": "Does Annex X extend the 110 threshold to N02?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C09-ERR-07",
+      "exact_claim": "**C09-ERR-07.** C01 failed its applicable requirement because 149 exceeds 100.",
+      "report_anchor": "C09-ERR-07",
+      "atomic_target": "Did C01 fail its applicable profile because its maximum is above 100?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C09-ERR-08",
+      "exact_claim": "**C09-ERR-08.** N03 channel B would have passed if measured.",
+      "report_anchor": "C09-ERR-08",
+      "atomic_target": "Can the unmeasured N03 channel B outcome be predicted as passing?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C09-ERR-09",
+      "exact_claim": "**C09-ERR-09.** K2 was current at the N03 run because it was renewed on 5 June.",
+      "report_anchor": "C09-ERR-09",
+      "atomic_target": "Was K2 current during the June 3 N03 run because it was renewed June 5?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C09-ERR-10",
+      "exact_claim": "**C09-ERR-10.** X99 is a valid 85-millisecond run that replaces N03 missing repetition.",
+      "report_anchor": "C09-ERR-10",
+      "atomic_target": "Is X99 a valid 85-millisecond measurement usable as N03's missing repetition?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C09-ERR-11",
+      "exact_claim": "**C09-ERR-11.** Passing delay alone is sufficient for full release.",
+      "report_anchor": "C09-ERR-11",
+      "atomic_target": "Does a passing delay alone suffice for full release under the specified route?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C09-ERR-12",
+      "exact_claim": "**C09-ERR-12.** Every possible compliant assurance method must use exactly the listed three-run route.",
+      "report_anchor": "C09-ERR-12",
+      "atomic_target": "Must every conceivable compliant assurance method necessarily use the supplied three-run route?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C09-ERR-13",
+      "exact_claim": "**C09-ERR-13.** The design is safe at every temperature throughout its lifetime.",
+      "report_anchor": "C09-ERR-13",
+      "atomic_target": "Does the packet establish safety at every temperature over the design's entire lifetime?",
+      "coverage": "assessed"
+    },
+    {
+      "claim_id": "C09-ERR-14",
+      "exact_claim": "**C09-ERR-14.** The specification is beautifully organized.",
+      "report_anchor": "C09-ERR-14",
+      "atomic_target": "Is there a supplied formal criterion for the specification being beautifully organized?",
+      "coverage": "assessed"
+    }
+  ],
+  "excluded_claims": []
+}

@@ -1,0 +1,6 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target022.lean
+Audit.n58Unauthorized : Audit.minuteAt 22 9 0 < Audit.n58.time ∧
+  Audit.n58.time < Audit.minuteAt 22 11 0 ∧ Audit.authorized Audit.n58 = false ∧ 58 ∈ Audit.nodes
+'Audit.n58Unauthorized' depends on axioms: [propext, Quot.sound]
+
+[exit_code=0; elapsed_seconds=0.208]

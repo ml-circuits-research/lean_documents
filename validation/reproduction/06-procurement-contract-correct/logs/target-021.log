@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target021.lean
+Audit.p14Normalization : Audit.roundCents 24999994 1000 = 2499999 ∧ Audit.roundCents 24999994 1000 < Audit.threshold 2
+'Audit.p14Normalization' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.227]

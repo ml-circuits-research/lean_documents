@@ -1,0 +1,110 @@
+[
+  {
+    "claim_id": "VD-01a",
+    "parent_claim": "VD-01",
+    "report_anchor": "VD-01",
+    "report_quote": "**VD-01.** Revision 1 governs D-201, and its deadline was 2028-03-01 17:00 UTC.",
+    "atomic_target": "Revision 1 governs D-201",
+    "coverage": "audited",
+    "finding_id": "VD-01a"
+  },
+  {
+    "claim_id": "VD-01b",
+    "parent_claim": "VD-01",
+    "report_anchor": "VD-01",
+    "report_quote": "**VD-01.** Revision 1 governs D-201, and its deadline was 2028-03-01 17:00 UTC.",
+    "atomic_target": "D-201 deadline is 2028-03-01 17:00 UTC",
+    "coverage": "audited",
+    "finding_id": "VD-01b"
+  },
+  {
+    "claim_id": "VD-02",
+    "parent_claim": "VD-02",
+    "report_anchor": "VD-02",
+    "report_quote": "**VD-02.** D-201's submission was timely.",
+    "atomic_target": "**VD-02.** D-201's submission was timely.",
+    "coverage": "audited",
+    "finding_id": "VD-02"
+  },
+  {
+    "claim_id": "VD-03",
+    "parent_claim": "VD-03",
+    "report_anchor": "VD-03",
+    "report_quote": "**VD-03.** Revision 2 governs D-202 because its internal assignment occurred after revision 2 became effective.",
+    "atomic_target": "**VD-03.** Revision 2 governs D-202 because its internal assignment occurred after revision 2 became effective.",
+    "coverage": "audited",
+    "finding_id": "VD-03"
+  },
+  {
+    "claim_id": "VD-04",
+    "parent_claim": "VD-04",
+    "report_anchor": "VD-04",
+    "report_quote": "**VD-04.** D-202's deadline was 2028-03-10 17:00 UTC.",
+    "atomic_target": "**VD-04.** D-202's deadline was 2028-03-10 17:00 UTC.",
+    "coverage": "audited",
+    "finding_id": "VD-04"
+  },
+  {
+    "claim_id": "VD-05",
+    "parent_claim": "VD-05",
+    "report_anchor": "VD-05",
+    "report_quote": "**VD-05.** D-202's submission was timely.",
+    "atomic_target": "**VD-05.** D-202's submission was timely.",
+    "coverage": "audited",
+    "finding_id": "VD-05"
+  },
+  {
+    "claim_id": "VD-06a",
+    "parent_claim": "VD-06",
+    "report_anchor": "VD-06",
+    "report_quote": "**VD-06.** Revision 2 governs D-203, and its submission at 2028-03-08 17:00 UTC was timely.",
+    "atomic_target": "Revision 2 governs D-203",
+    "coverage": "audited",
+    "finding_id": "VD-06a"
+  },
+  {
+    "claim_id": "VD-06b",
+    "parent_claim": "VD-06",
+    "report_anchor": "VD-06",
+    "report_quote": "**VD-06.** Revision 2 governs D-203, and its submission at 2028-03-08 17:00 UTC was timely.",
+    "atomic_target": "D-203 submission at 2028-03-08 17:00 UTC is timely",
+    "coverage": "audited",
+    "finding_id": "VD-06b"
+  },
+  {
+    "claim_id": "VD-07",
+    "parent_claim": "VD-07",
+    "report_anchor": "VD-07",
+    "report_quote": "**VD-07.** The submission deadline for D-203 was 2028-03-07 17:00 UTC because its receipt date counts as day one.",
+    "atomic_target": "**VD-07.** The submission deadline for D-203 was 2028-03-07 17:00 UTC because its receipt date counts as day one.",
+    "coverage": "audited",
+    "finding_id": "VD-07"
+  },
+  {
+    "claim_id": "VD-08",
+    "parent_claim": "VD-08",
+    "report_anchor": "VD-08",
+    "report_quote": "**VD-08.** D-204's final submission deadline was 2028-03-09 17:00 UTC.",
+    "atomic_target": "**VD-08.** D-204's final submission deadline was 2028-03-09 17:00 UTC.",
+    "coverage": "audited",
+    "finding_id": "VD-08"
+  },
+  {
+    "claim_id": "VD-09",
+    "parent_claim": "VD-09",
+    "report_anchor": "VD-09",
+    "report_quote": "**VD-09.** D-204's submission was timely.",
+    "atomic_target": "**VD-09.** D-204's submission was timely.",
+    "coverage": "audited",
+    "finding_id": "VD-09"
+  },
+  {
+    "claim_id": "VD-10",
+    "parent_claim": "VD-10",
+    "report_anchor": "VD-10",
+    "report_quote": "**VD-10.** Revision 2 gives applicants a fairer timetable than revision 1.",
+    "atomic_target": "**VD-10.** Revision 2 gives applicants a fairer timetable than revision 1.",
+    "coverage": "audited",
+    "finding_id": "VD-10"
+  }
+]

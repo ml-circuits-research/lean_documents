@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target002.lean
+Audit.headroom : Audit.balance = 5000 ∧ Audit.balance ≠ 6000
+'Audit.headroom' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.154]

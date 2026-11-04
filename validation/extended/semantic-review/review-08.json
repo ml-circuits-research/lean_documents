@@ -1,0 +1,80 @@
+{
+  "dossier": "08",
+  "source_view": "source-view-08.md",
+  "source_original_hashes_identical_between_variants": true,
+  "runs": [
+    {
+      "workspace": "tmp/08-scanned-inventory-mixed",
+      "checked_claims": [
+        "C08-ERR-01",
+        "C08-ERR-02",
+        "C08-ERR-03",
+        "C08-ERR-04",
+        "C08-ERR-05",
+        "C08-ERR-06",
+        "C08-ERR-07",
+        "C08-ERR-08",
+        "C08-ERR-09",
+        "C08-ERR-10",
+        "C08-ERR-11",
+        "C08-ERR-12",
+        "C08-ERR-13",
+        "C08-ERR-14"
+      ],
+      "findings_sha256": "0b6229c90a93d7bb99f9c57e26f302f996160d72998fdad4721308121bf9d0a9",
+      "model_sha256": "3226d74d1bba217e68f9d6b68c20138bdcd7a84d662277c21b1a30f4bfc08903",
+      "report_sha256": "cc11fd04c95b03000f68027f03661f53e0b8daf2f9704e3dcc94b03508e77971",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "catalog_sha256": "ed3111a73d36703124f8158b3f9d42345731559aa056669ec020b9302009059b",
+      "proof_results_sha256": "d8f8f8014267b7827c928747130d0e45593e1d7df6f8be8b3062ebde450883f7"
+    },
+    {
+      "workspace": "tmp/08-scanned-inventory-correct",
+      "checked_claims": [
+        "C08-OK-01",
+        "C08-OK-02",
+        "C08-OK-03",
+        "C08-OK-04",
+        "C08-OK-05",
+        "C08-OK-06",
+        "C08-OK-07",
+        "C08-OK-08",
+        "C08-OK-09",
+        "C08-OK-10",
+        "C08-OK-11",
+        "C08-OK-12",
+        "C08-OK-13",
+        "C08-OK-14"
+      ],
+      "findings_sha256": "95201ee69e2b9e229fef03c6129840cf0746020563ef28ebbf73a48dd0245d9d",
+      "model_sha256": "2996ba368a3e2579dee38ca699f09d709657b00321706dccd577661ddad50878",
+      "report_sha256": "e5759f9de478f58ead1a15f7e8863b38fbe2a047c4111f708de606ba637a81ec",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "catalog_sha256": "55bef9ebe960624b91a39f9ae1e37e24411c7fa09f65c15ba40f5c383b3889fb",
+      "proof_results_sha256": "4c045fc5bf2f1c8883fb9a375ece463be00f51a7450250636e0d84767403a71a"
+    }
+  ],
+  "defects": [],
+  "semantic_checks": [
+    "Lot-specific crate/carton arithmetic and signed cutoff ownership",
+    "Actual two-carton dispatch versus three-carton plan/canceled third",
+    "Book stock versus available stock and different lots restrictions",
+    "Equal-authority physical counts 148 versus147",
+    "Negative journal balance does not establish physical shortage",
+    "Unsigned pale quantity does not establish received accepted quantity",
+    "All five scan raster pages actually inspected"
+  ],
+  "source_view_sha256": "7d2de352fda61ff5f50532f14ad032216bfb558eb61cfeed056fb28773f1d51e"
+}

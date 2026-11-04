@@ -1,0 +1,10 @@
+[
+  {
+    "run_id": "06-procurement-contract-mixed",
+    "exit_code": 0,
+    "workspace": "/home/salboaie/work/lean_documents/tmp/reproduction-06-procurement-contract-mixed-n3nlkl9z",
+    "original_export_manifest_sha256": "cab2206a79152b334425da848b6583a9598dc37379feb30f403abf2cedf994bb",
+    "proof_results": "reproduction-checker/06-procurement-contract-mixed/proof-results.json",
+    "command_log": "reproduction-checker/06-procurement-contract-mixed/command.log"
+  }
+]

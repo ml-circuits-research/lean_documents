@@ -1,0 +1,24 @@
+# Release R17 readiness report
+
+Report identifier `REP-R17-03`; author `Lumen Release Summary Desk`; cutoff `2030-03-14T12:00:00Z`. All deployment statements concern target `EU-A`.
+
+<a id="report-ce01"></a>
+**CE-01.** The supplied release manifest contains exactly three distinct entry IDs. Basis: [inventory-p2](sources/release-inventory.md#inventory-p2).
+
+<a id="report-ce02"></a>
+**CE-02.** Inbound API TLS was enabled for release `R17` on `EU-A` at `2030-03-14T11:45:00Z`. Basis: the QA signed assertion [qa-p2](sources/qa-attestation.md#qa-p2).
+
+<a id="report-ce03"></a>
+**CE-03.** No penetration test of release `R17` on `EU-A` occurred before the cutoff. Basis: the package includes no penetration-test certificate, as recorded in [inventory-p3](sources/release-inventory.md#inventory-p3).
+
+<a id="report-ce04"></a>
+**CE-04.** Release `R17` on `EU-A` is `Ready` under `POL-4` at the cutoff. Basis: the policy rule in [policy-p2](sources/release-policy.md#policy-p2) proves readiness, and QA records smoke-check success in [qa-p3](sources/qa-attestation.md#qa-p3).
+
+<a id="report-ce05"></a>
+**CE-05.** An independent reviewer verified the readiness conclusion in `CE-04` before the cutoff. Basis: this report's verification appendix [report-appendix-p1](#report-appendix-p1).
+
+<a id="report-ce06"></a>
+**CE-06.** The cryptographic authenticity of the QA signature was verified before the cutoff. Basis: the signature marker in [qa-p1](sources/qa-attestation.md#qa-p1).
+
+<a id="report-appendix-p1"></a>
+**report-appendix-p1.** Independent-verification status: verified. Supporting record: [CE-05 in this report](#report-ce05). No separate review artifact is attached to this appendix.

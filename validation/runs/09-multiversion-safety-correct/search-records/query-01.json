@@ -1,0 +1,259 @@
+{
+  "query": "\"revision\" OR \"historical\" OR \"NORMAL\"",
+  "total_matching_chunks": 25,
+  "offset": 0,
+  "limit": 100,
+  "results": [
+    {
+      "id": 46,
+      "path": "input/sources/02-specification-v2.docx.md",
+      "anchor": "docx-p-0001",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 683,
+      "text": "[V2-01] SYNTHETIC H-7 SPECIFICATION, REVISION 2. Revision 2 takes effect at 00:00 on 1 June 2033 for newly executed tests. It supersedes revision 1 for that prospective scope. Historical tests retain their historical approved rules unless explicitly retested; no retroactive reassessment is required here. Test execution time determines the applicable revision, not report publication time, file modification time, or the order in which an auditor discovers files. Identical serial numbers may appear in different periods because a unit can be retested. Every conclusion must identify the actual event being judged rather than attach a timeless pass or fail label to a serial number.",
+      "rank": -5.231481316726521
+    },
+    {
+      "id": 7,
+      "path": "input/report.md",
+      "anchor": "C09-OK-01",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 204,
+      "text": "**C09-OK-01.** L01 satisfies the historical revision 1 delay demonstration; its maximum is 118 milliseconds below 120.\n\nCitations: sources/01-specification-v1.docx#[V1-02]; sources/04-test-runs.pdf#[P01].",
+      "rank": -5.228392922876292
+    },
+    {
+      "id": 22,
+      "path": "input/sources/01-specification-v1.docx.md",
+      "anchor": "docx-p-0002",
+      "document_id": "D00003",
+      "start_char": 0,
+      "end_char": 464,
+      "text": "[V1-02] HISTORICAL ACCEPTANCE TABLE. The NORMAL temperature interval includes both endpoints. A missing authorized route outside that interval is not a zero threshold and does not imply a physical failure. Three repeated runs must be valid and belong to the same unit and profile. Values copied from another serial number do not complete a missing run. The supply condition belongs to applicability rather than to an independent exemption from other prerequisites.",
+      "rank": -3.6838476753756537
+    },
+    {
+      "id": 45,
+      "path": "input/sources/01-specification-v1.docx.md",
+      "anchor": "docx-p-0025",
+      "document_id": "D00003",
+      "start_char": 0,
+      "end_char": 691,
+      "text": "[V1-05] HISTORICAL L01 RECORD. Unit L01 was tested on 20 May 2033 at 20 degrees Celsius. Its three valid delays were 110, 115, and 118 milliseconds. Both channels were measured using instrument K1, which was current for that date. These observations establish the historical delay demonstration under the 120-millisecond threshold. No fault-injection closure or final release signature for L01 is supplied here. A later tighter rule does not retroactively change the applicable threshold unless an operative transition clause explicitly requires reassessment. Historical acceptance and present authorization should remain separate questions, even when a later report discusses them together.",
+      "rank": -3.558016093823833
+    },
+    {
+      "id": 86,
+      "path": "input/sources/04-test-runs.pdf.md",
+      "anchor": "pdf-page-0001",
+      "document_id": "D00006",
+      "start_char": 0,
+      "end_char": 1557,
+      "text": "SYNTHETIC H-7 TEST PACKET\n[P01] Unit group: L01. Execution: 20 May 2033. Profile: NORMAL. Temperature: 20 degrees\nCelsius. Integer delay values: 110, 115, 118.\nRevision 1 applies. All three runs are valid and both channels were measured with K1. The\nhistorical threshold is 120. Fault-injection closure and final release signature are not\nsupplied. Passing the historical delay demonstration does not establish full release.\n[P01-METHOD] Each valid listed value is a distinct acquired observation for its named unit\nand profile. A missing observation cannot be replaced by a borrowed run, a copied previous\nvalue, or an assumed zero. The reviewer must first identify the applicable revision and any\nincorporated exception, then compare the exact observed number with the relevant threshold.\nThe same numerical delay may pass one profile and fail another because the supplied criteria\ndiffer. This packet does not interpolate unspecified temperature ranges.\n[P01-SCOPE] This record supports a bounded demonstration. It supplies no production defect\nrate, lifetime prediction, or real-world safety certification. Preserve unit, execution\ntime, profile, temperature, calibration, channel completeness, and validity when extracting\na row. Cite the original PDF path and stable marker. A successful delay comparison does not\nautomatically establish fault closure or signing authority. A failed valid run can refute a\nuniversal passing claim; a missing run instead identifies a support gap. The distinction\nmust remain explicit in an evidence-backed audit result.",
+      "rank": -3.5354255574327267
+    },
+    {
+      "id": 28,
+      "path": "input/sources/01-specification-v1.docx.md",
+      "anchor": "docx-table-0001-r0002-c0001-p0001",
+      "document_id": "D00003",
+      "start_char": 0,
+      "end_char": 6,
+      "text": "NORMAL",
+      "rank": -2.921215997314972
+    },
+    {
+      "id": 53,
+      "path": "input/sources/02-specification-v2.docx.md",
+      "anchor": "docx-table-0001-r0002-c0001-p0001",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 6,
+      "text": "NORMAL",
+      "rank": -2.921215997314972
+    },
+    {
+      "id": 81,
+      "path": "input/sources/03-exception-annex.docx.md",
+      "anchor": "docx-table-0001-r0002-c0004-p0001",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 23,
+      "text": "NORMAL 100 milliseconds",
+      "rank": -2.8332312444152947
+    },
+    {
+      "id": 82,
+      "path": "input/sources/03-exception-annex.docx.md",
+      "anchor": "docx-table-0001-r0002-c0005-p0001",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 23,
+      "text": "NORMAL 110 milliseconds",
+      "rank": -2.8332312444152947
+    },
+    {
+      "id": 35,
+      "path": "input/sources/01-specification-v1.docx.md",
+      "anchor": "docx-table-0001-r0003-c0003-p0001",
+      "document_id": "D00003",
+      "start_char": 0,
+      "end_char": 37,
+      "text": "No authorized criterion in revision 1",
+      "rank": -2.710762173213833
+    },
+    {
+      "id": 40,
+      "path": "input/sources/01-specification-v1.docx.md",
+      "anchor": "docx-table-0001-r0004-c0003-p0001",
+      "document_id": "D00003",
+      "start_char": 0,
+      "end_char": 37,
+      "text": "No authorized criterion in revision 1",
+      "rank": -2.710762173213833
+    },
+    {
+      "id": 72,
+      "path": "input/sources/03-exception-annex.docx.md",
+      "anchor": "docx-p-0001",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 601,
+      "text": "[X01] SYNTHETIC INCORPORATED ANNEX X. Requirements owner Mara Flint approved this exception under delegation AUTH-7 at 09:00 on 2 June 2033. It applies only to serial E17 for NORMAL tests executed from 09:00 on 2 June through 18:00 on 4 June inclusive. The maximum valid delay for those tests is 110 milliseconds rather than 100. The environment remains 10 through 30 degrees, and every other revision 2 prerequisite remains operative. The exception expressly does not apply to N02, even if N02 shares the same hardware build. The table records the operative scope rather than an illustrative example.",
+      "rank": -2.288701289101888
+    },
+    {
+      "id": 17,
+      "path": "input/report.md",
+      "anchor": "C09-OK-11",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 149,
+      "text": "**C09-OK-11.** A passed delay demonstration alone is insufficient for release under revision 2.\n\nCitations: sources/02-specification-v2.docx#[V2-03].",
+      "rank": -2.177411763309681
+    },
+    {
+      "id": 8,
+      "path": "input/report.md",
+      "anchor": "C09-OK-02",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 161,
+      "text": "**C09-OK-02.** Revision 2 governs the N01 and N02 tests executed on 3 June.\n\nCitations: sources/02-specification-v2.docx#[V2-01]; sources/04-test-runs.pdf#[P02].",
+      "rank": -2.0360256394933898
+    },
+    {
+      "id": 21,
+      "path": "input/sources/01-specification-v1.docx.md",
+      "anchor": "docx-p-0001",
+      "document_id": "D00003",
+      "start_char": 0,
+      "end_char": 723,
+      "text": "[V1-01] SYNTHETIC H-7 SPECIFICATION, REVISION 1. This document concerns the fictional Heliostat H-7 demonstration controller. It is not an actual safety standard and supplies no real-world safety advice. Revision 1 applies to tests executed before 1 June 2033 unless an explicitly approved profile says otherwise. The finite demonstration concerns measured trip delay under stated laboratory conditions. It does not certify lifetime reliability, mechanical protection, network security, or population defect rates. A report should identify the proposition actually tested rather than replace it with an undefined claim that the whole design is safe. The table below defines exact synthetic limits for this bounded exercise.",
+      "rank": -1.7167574620554416
+    },
+    {
+      "id": 89,
+      "path": "input/sources/04-test-runs.pdf.md",
+      "anchor": "pdf-page-0004",
+      "document_id": "D00006",
+      "start_char": 0,
+      "end_char": 1548,
+      "text": "SYNTHETIC H-7 TEST PACKET\n[P04] Unit group: C01. Execution: 3 June 2033. Profile: COLD. Temperature: 5 degrees\nCelsius. Integer delay values: 142, 145, 149.\nRevision 2 COLD applies. All three runs are valid. The cold-fixture certificate is present\nand current. Both channels were measured with K1, fault injections were closed, and Sera\nMoss signed release. The applicable limit is 150, not the NORMAL limit of 100.\n[P04-METHOD] Each valid listed value is a distinct acquired observation for its named unit\nand profile. A missing observation cannot be replaced by a borrowed run, a copied previous\nvalue, or an assumed zero. The reviewer must first identify the applicable revision and any\nincorporated exception, then compare the exact observed number with the relevant threshold.\nThe same numerical delay may pass one profile and fail another because the supplied criteria\ndiffer. This packet does not interpolate unspecified temperature ranges.\n[P04-SCOPE] This record supports a bounded demonstration. It supplies no production defect\nrate, lifetime prediction, or real-world safety certification. Preserve unit, execution\ntime, profile, temperature, calibration, channel completeness, and validity when extracting\na row. Cite the original PDF path and stable marker. A successful delay comparison does not\nautomatically establish fault closure or signing authority. A failed valid run can refute a\nuniversal passing claim; a missing run instead identifies a support gap. The distinction\nmust remain explicit in an evidence-backed audit result.",
+      "rank": -1.7142757772067054
+    },
+    {
+      "id": 88,
+      "path": "input/sources/04-test-runs.pdf.md",
+      "anchor": "pdf-page-0003",
+      "document_id": "D00006",
+      "start_char": 0,
+      "end_char": 1570,
+      "text": "SYNTHETIC H-7 TEST PACKET\n[P03] Unit group: E17. Execution: 3 June 2033. Profile: NORMAL. Temperature: 20 degrees\nCelsius. Integer delay values: 104, 108, 106.\nRevision 2 and incorporated Annex X apply. All three runs are valid and within the named\nexception interval. Both channels were measured using K1, required fault injections were\nclosed, and Sera Moss signed release. The largest value is 108, below the applicable 110\nthreshold.\n[P03-METHOD] Each valid listed value is a distinct acquired observation for its named unit\nand profile. A missing observation cannot be replaced by a borrowed run, a copied previous\nvalue, or an assumed zero. The reviewer must first identify the applicable revision and any\nincorporated exception, then compare the exact observed number with the relevant threshold.\nThe same numerical delay may pass one profile and fail another because the supplied criteria\ndiffer. This packet does not interpolate unspecified temperature ranges.\n[P03-SCOPE] This record supports a bounded demonstration. It supplies no production defect\nrate, lifetime prediction, or real-world safety certification. Preserve unit, execution\ntime, profile, temperature, calibration, channel completeness, and validity when extracting\na row. Cite the original PDF path and stable marker. A successful delay comparison does not\nautomatically establish fault closure or signing authority. A failed valid run can refute a\nuniversal passing claim; a missing run instead identifies a support gap. The distinction\nmust remain explicit in an evidence-backed audit result.",
+      "rank": -1.7090571911492227
+    },
+    {
+      "id": 87,
+      "path": "input/sources/04-test-runs.pdf.md",
+      "anchor": "pdf-page-0002",
+      "document_id": "D00006",
+      "start_char": 0,
+      "end_char": 1596,
+      "text": "SYNTHETIC H-7 TEST PACKET\n[P02] Unit group: N01 and N02. Execution: 3 June 2033. Profile: NORMAL. Temperature: 20\ndegrees Celsius. Integer delay values: N01: 92, 95, 99; N02: 90, 97, 101.\nRevision 2 applies. All six listed runs are valid. Both channels were measured with K1. N01\nhas closed fault injections and authorized release. N02 was explicitly denied release\nbecause its third valid run of 101 exceeds its applicable 100 limit. No exception applies to\nN02.\n[P02-METHOD] Each valid listed value is a distinct acquired observation for its named unit\nand profile. A missing observation cannot be replaced by a borrowed run, a copied previous\nvalue, or an assumed zero. The reviewer must first identify the applicable revision and any\nincorporated exception, then compare the exact observed number with the relevant threshold.\nThe same numerical delay may pass one profile and fail another because the supplied criteria\ndiffer. This packet does not interpolate unspecified temperature ranges.\n[P02-SCOPE] This record supports a bounded demonstration. It supplies no production defect\nrate, lifetime prediction, or real-world safety certification. Preserve unit, execution\ntime, profile, temperature, calibration, channel completeness, and validity when extracting\na row. Cite the original PDF path and stable marker. A successful delay comparison does not\nautomatically establish fault closure or signing authority. A failed valid run can refute a\nuniversal passing claim; a missing run instead identifies a support gap. The distinction\nmust remain explicit in an evidence-backed audit result.",
+      "rank": -1.6684309672520765
+    },
+    {
+      "id": 96,
+      "path": "input/sources/06-applicability-and-open-items.md",
+      "anchor": "P02",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 576,
+      "text": "[AP01] C01 is a COLD-profile unit tested at 5 degrees with a current cold-fixture certificate; its limit is 150 milliseconds. N01, N02, N03, and E17 were tested at 20 degrees under NORMAL. No valid HOT qualification or authorized threshold above 30 degrees is supplied. The packet therefore does not establish a claim of qualification across every temperature. This missing scope is not a measurement proving that all hot operation physically fails. An analyst should state the unsupported extension precisely rather than discard the bounded favorable evidence for C01 or N01.",
+      "rank": -1.210624593757219
+    },
+    {
+      "id": 94,
+      "path": "input/sources/05-calibration-and-authority.md",
+      "anchor": "P04",
+      "document_id": "D00007",
+      "start_char": 0,
+      "end_char": 695,
+      "text": "[AUTH02] The specifications and incorporated annex are native DOCX sources. Their tables must remain attached to the correct revision and profile context during extraction. The native PDF supplies grouped test records, including invalidity and missing-data notes. An extracted numeral is not an independent measurement record. Stable markers identify original passages; derived chunk identifiers are optional navigation aids. All signatories and administrative acts are fictional, and this exercise assumes the supplied signature-role statements rather than claiming real cryptographic authentication. Source hashes identify exact bytes, not institutional truth beyond the stated evidence model.",
+      "rank": -1.2028841647766204
+    },
+    {
+      "id": 90,
+      "path": "input/sources/04-test-runs.pdf.md",
+      "anchor": "pdf-page-0005",
+      "document_id": "D00006",
+      "start_char": 0,
+      "end_char": 1667,
+      "text": "SYNTHETIC H-7 TEST PACKET\n[P05] Unit group: N03 and trace X99. Execution: 3 June 2033. Profile: NORMAL. Temperature:\n20 degrees Celsius. Integer delay values: N03: first valid run 94; second attempt blank;\nthird run absent. X99: 85 INVALID.\nN03 used K2 after its expiry. Channel B has no measurement, fault closure is missing, and no\nrelease signature is supplied. The second attempt aborted before acquisition; blank does not\nmean zero. X99 lost clock synchronization and is explicitly invalid. No supplied record\nrepairs these gaps.\n[P05-METHOD] Each valid listed value is a distinct acquired observation for its named unit\nand profile. A missing observation cannot be replaced by a borrowed run, a copied previous\nvalue, or an assumed zero. The reviewer must first identify the applicable revision and any\nincorporated exception, then compare the exact observed number with the relevant threshold.\nThe same numerical delay may pass one profile and fail another because the supplied criteria\ndiffer. This packet does not interpolate unspecified temperature ranges.\n[P05-SCOPE] This record supports a bounded demonstration. It supplies no production defect\nrate, lifetime prediction, or real-world safety certification. Preserve unit, execution\ntime, profile, temperature, calibration, channel completeness, and validity when extracting\na row. Cite the original PDF path and stable marker. A successful delay comparison does not\nautomatically establish fault closure or signing authority. A failed valid run can refute a\nuniversal passing claim; a missing run instead identifies a support gap. The distinction\nmust remain explicit in an evidence-backed audit result.",
+      "rank": -1.1929788700118478
+    },
+    {
+      "id": 47,
+      "path": "input/sources/02-specification-v2.docx.md",
+      "anchor": "docx-p-0002",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 626,
+      "text": "[V2-02] CURRENT ACCEPTANCE TABLE. Every endpoint in the stated intervals is inclusive. A valid NORMAL delay of 100 milliseconds satisfies the numeric limit; 101 does not. The COLD route additionally requires a current cold-fixture certificate. There is no supplied HOT route, and no route below zero degrees. A table row cannot be applied without checking the environment and profile. The limits in this synthetic exercise are exact integer comparisons; realistic measurement error models are outside scope. The absence of an error model must not be filled by an invented uncertainty discount or an assumed rounding allowance.",
+      "rank": -1.165620736558775
+    },
+    {
+      "id": 69,
+      "path": "input/sources/02-specification-v2.docx.md",
+      "anchor": "docx-p-0024",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 640,
+      "text": "[V2-04] INCORPORATED EXCEPTION. Annex X changes the NORMAL delay threshold for one named serial number and a specific time interval. It changes no other requirement. In particular, it does not expand the temperature range, waive channel B measurement, make expired calibration current, close fault injections, or delegate release signing authority. The applicable general rule and exception must be combined before comparing observed delay. A general threshold alone is an incomplete rule set for a unit covered by an exception. Conversely, resemblance to the exempt unit does not extend an exception to other serial numbers or later dates.",
+      "rank": -1.165620736558775
+    },
+    {
+      "id": 44,
+      "path": "input/sources/01-specification-v1.docx.md",
+      "anchor": "docx-p-0024",
+      "document_id": "D00003",
+      "start_char": 0,
+      "end_char": 710,
+      "text": "[V1-04] DATA HANDLING. A run aborted before acquisition supplies no delay measurement. A blank cell means unavailable evidence unless a signed explanatory note explicitly gives another meaning. It is not zero. An operator may invalidate a trace after discovering synchronization loss; the invalidation accompanies the printed value. Each extraction should retain unit identity, run date, profile, environment, validity, instrument, measured channels, and observed value. Comparing a column of numbers without those fields can apply the wrong revision or count invalid evidence. Missing measurements should be reported as concrete support gaps, not silently replaced by favorable numbers from a neighboring row.",
+      "rank": -1.144350644550944
+    },
+    {
+      "id": 43,
+      "path": "input/sources/01-specification-v1.docx.md",
+      "anchor": "docx-p-0023",
+      "document_id": "D00003",
+      "start_char": 0,
+      "end_char": 756,
+      "text": "[V1-03] IMPLICATION DIRECTION. Three valid NORMAL runs within the applicable limit are sufficient for the narrowly defined delay demonstration. They are not stated necessary for every conceivable alternative assurance method. Full release additionally requires current calibration, both sensor channels measured, closure of required fault injections, and an authorized release signature. Passing a delay subrequirement alone is therefore insufficient for full release. The specification intentionally distinguishes a sufficient route to one predicate from a conjunction of prerequisites for another predicate. An audit must not reverse an implication merely because its converse sounds plausible or because no alternative route is described in this packet.",
+      "rank": -1.1305966596736103
+    }
+  ],
+  "limitations": "Ranked retrieval is not exhaustive semantic review; inspect full passages and inventory for exceptions."
+}

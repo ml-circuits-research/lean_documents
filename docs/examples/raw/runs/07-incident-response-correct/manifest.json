@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "algorithm": "sha256",
+  "index": "input/index.sqlite3",
+  "files": {
+    "input/brief.md": {
+      "sha256": "538d032719d678539d2b2c9655dd387369ed4c4a25da30e13db0008cf74b28fc",
+      "bytes": 3412
+    },
+    "input/catalog.json": {
+      "sha256": "2ac0f1240c41a2fc0914836eaa03c50eb4b9e91f339513d5b961cc8ee5ca68f5",
+      "bytes": 3154
+    },
+    "input/index.sqlite3": {
+      "sha256": "61bad11d40cfa8cb844363acfa7c19d472619b24cba6e4d7b9930e0e4386a0e0",
+      "bytes": 376832
+    },
+    "input/manual-transcriptions/D00003/653097fa4c7e85eb684393bda9dd0a3959fec379a0851eefccc17e303dbea4da.txt": {
+      "sha256": "3cd2223066b90c450f6320f6735834f622d46f3d4bb084bc3f84f9078d16b979",
+      "bytes": 697
+    },
+    "input/manual-transcriptions/D00003/74d057c1ffd7a573949b5264432bbf95d0ac166f21a1a683072c9f16d09c7d65.txt": {
+      "sha256": "e8660b78d23b6e7da20e9a1f81677c45deb3de9df025e357af9b99f0cc41ca1f",
+      "bytes": 596
+    },
+    "input/manual-transcriptions/D00003/88f7763d0ec10b10cfbc90b82a9857fe4d8abdb2e5ba545eef5bc49b897e29bd.txt": {
+      "sha256": "b2aeda24d7bc3b6ac37312eb77e12f59e768ce78a5a939bc3e8ec815f01c113f",
+      "bytes": 709
+    },
+    "input/manual-transcriptions/D00003/f2c73ff169fa72a87f8a86ce29319fba80b81b376e3a4b6229800b78686ff70a.txt": {
+      "sha256": "d32b06511c768dc992b931b57c025274bfb0e77499964cb3cba12fd384ffe69e",
+      "bytes": 596
+    },
+    "input/originals/D00001.md": {
+      "sha256": "e6596a5590dfe8e4a1c3506eafdad9cf9cd9568165bfd6910cc54e84275fe168",
+      "bytes": 3381
+    },
+    "input/originals/D00002.md": {
+      "sha256": "164b1fea0481bb94e0abfd42ac15ab98e19033dc71a0d9ad18343757f49175be",
+      "bytes": 4075
+    },
+    "input/originals/D00003.pdf": {
+      "sha256": "0ac923e297094632a74ab4ab8cf60709989191d75b35d5d29d2820007cbde0d0",
+      "bytes": 972928
+    },
+    "input/originals/D00004.md": {
+      "sha256": "3c7f7f4ffa277289e9f0968044dcee0bb3ada7d8c2c09aa68e34ecae77fa730e",
+      "bytes": 3846
+    },
+    "input/originals/D00005.pdf": {
+      "sha256": "33a2eb21bd3e2d3bc1bc3ee643f5694f958f4d55570d1067685bf2a9a9f5d730",
+      "bytes": 7169
+    },
+    "input/originals/D00006.md": {
+      "sha256": "1ce800a888704355cbfe2e1478cc7111aa84695beb40b6bf419bfba6d11b2c1c",
+      "bytes": 2912
+    },
+    "input/originals/D00007.md": {
+      "sha256": "bd983f6678e1509ba7b890bfc8662a6a08ad071f1bb1cde800416784867c4050",
+      "bytes": 3655
+    },
+    "input/originals/D00008.docx": {
+      "sha256": "ea807f0cc7df7f30f991cbe5c74617b2537d0156212ca5f973925be279f78eae",
+      "bytes": 3550
+    },
+    "input/originals/D00009.md": {
+      "sha256": "2c1cfb5fe6479718615cf4b6445b281ef66b534d4d017c05b46addbf4d27544a",
+      "bytes": 3627
+    },
+    "input/report-ledger.json": {
+      "sha256": "3dc6edfa184c69780f6ea21d85a20e08cdee0dc7ef8740e28d4ba7fe20c1c30e",
+      "bytes": 3998
+    },
+    "input/report.md": {
+      "sha256": "f9ec237f1d6c08372292f7094070698f513d249b69645fe50d98ffa1ff6117ef",
+      "bytes": 4106
+    },
+    "input/sources/containment-attestations.scan.pdf.md": {
+      "sha256": "eb3b9d84685dd83e8297b5ffc0b1dd097291974011f70749c97a8bc7c7b0c6e4",
+      "bytes": 5638
+    },
+    "input/sources/incident-timeline.md": {
+      "sha256": "9e6c8abe4696aa958478f06ba5f3c890792ff8645dc2619e4dfb9f62922931fc",
+      "bytes": 3877
+    },
+    "input/sources/maintenance-authorization.pdf.md": {
+      "sha256": "5696f17665a3ac473d9831893dca9f433c82f936117a97723d9e9d55d5bfa027",
+      "bytes": 4701
+    },
+    "input/sources/monitoring-coverage.md": {
+      "sha256": "30172f6e67de0683d2b6e91181d033f767910759426d6e629625659b5bded07d",
+      "bytes": 2943
+    },
+    "input/sources/notification-register.md": {
+      "sha256": "42ac723684cd09f544b5960bc15a8890ba272e03388ba2a3be124db44eb2273f",
+      "bytes": 3686
+    },
+    "input/sources/response-playbook.docx.md": {
+      "sha256": "ffbbc02838123486ddd252e89aa988ae533240b0320757012c4990e657ab4515",
+      "bytes": 7126
+    },
+    "input/sources/review-correspondence.md": {
+      "sha256": "98563933ee0f76e9b22c80d140dae7d565523b7877357fe1e1b0c4127012a4c6",
+      "bytes": 3658
+    }
+  }
+}

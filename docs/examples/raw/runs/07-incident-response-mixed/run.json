@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "workspace": "/home/salboaie/work/lean_documents/tmp/claim-audit-t278l4it",
+  "created_at": "2026-11-04T15:02:43.362150+00:00",
+  "retention": "Retain until explicit user cleanup request",
+  "extraction": {
+    "ocr_language": "eng",
+    "timeout": 60,
+    "max_pages": null
+  },
+  "limitations": "Retrieval is not exhaustive semantic review; extraction is not authenticity."
+}

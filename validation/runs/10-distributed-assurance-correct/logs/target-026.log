@@ -1,0 +1,6 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target026.lean
+Audit.n01Authorized : Audit.northAlias Audit.n01.time = Audit.Principal.ada ∧
+  Audit.revisionB Audit.n01.time = true ∧ Audit.ordinaryRoute Audit.n01 = true ∧ Audit.authorized Audit.n01 = true
+'Audit.n01Authorized' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.203]

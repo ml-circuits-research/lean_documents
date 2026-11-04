@@ -1,0 +1,6 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target012.lean
+Audit.urgencyInsufficient : ¬Audit.urgentException true false false Audit.e19Declaration Audit.e19Commitment
+    Audit.e19Review
+'Audit.urgencyInsufficient' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.218]

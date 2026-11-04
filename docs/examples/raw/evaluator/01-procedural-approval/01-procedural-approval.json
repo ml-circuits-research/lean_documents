@@ -1,0 +1,258 @@
+{
+  "fixture_id": "01-procedural-approval",
+  "status": "Editorial expected targets; not verified by Lean",
+  "audit_input": false,
+  "conventions": {
+    "semantic_state": "supported/refuted/both/undetermined classify evidence-relative support; not_applicable means no supplied formal criterion",
+    "prospective_disposition": "Prospective proof/refutation/blocked/nonformal only; no compiler execution or proof acceptance is claimed"
+  },
+  "expectations": [
+    {
+      "claim_id": "PA-01",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/policy.md#P02",
+        "sources/register.md#R02"
+      ],
+      "rationale": "08:40 is strictly before 09:00, and the recorded event is a duty-manager approval.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "PA-02",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/policy.md#P02",
+        "sources/register.md#R01",
+        "sources/register.md#R03"
+      ],
+      "rationale": "The complete register explicitly records no standard approval; a request is not approval.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "PA-03",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/policy.md#P03",
+        "sources/register.md#R03",
+        "brief.md#B02"
+      ],
+      "rationale": "The incident qualified, declaration preceded start, and the countersignature was exactly 24 hours after start, inside the inclusive bound.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "PA-04",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/policy.md#P02",
+        "sources/register.md#R04",
+        "brief.md#B02"
+      ],
+      "rationale": "Approval and start share the exact timestamp; equality fails strict precedence.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "PA-05",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/policy.md#P01",
+        "sources/policy.md#P02",
+        "sources/policy.md#P03",
+        "sources/register.md#R01",
+        "sources/register.md#R05"
+      ],
+      "rationale": "The start is recorded and explicit negatives in a complete register exclude both exhaustive authorization paths.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "PA-06",
+      "semantic_state": "undetermined",
+      "prospective_disposition": "blocked",
+      "source_anchors": [
+        "sources/register.md#R01",
+        "sources/handoff.md#H01",
+        "sources/handoff.md#H02",
+        "brief.md#B03"
+      ],
+      "rationale": "Missing external records do not prove absence or presence of approval. Package completeness is not event completeness.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "PA-07",
+      "semantic_state": "both",
+      "prospective_disposition": "blocked",
+      "source_anchors": [
+        "sources/attestations.md#A01",
+        "sources/attestations.md#A02",
+        "sources/handoff.md#H02",
+        "brief.md#B03"
+      ],
+      "rationale": "Two unretracted witnesses assert and deny the identical start proposition. No preference rule permits discarding either; no global inconsistent axiom set may justify arbitrary claims.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "PA-08",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/policy.md#P01",
+        "sources/policy.md#P03",
+        "sources/register.md#R03"
+      ],
+      "rationale": "The exhaustive policy allows emergency authorization without standard approval and C-102 meets that path.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "PA-09",
+      "semantic_state": "not_applicable",
+      "prospective_disposition": "nonformal",
+      "source_anchors": [
+        "sources/policy.md#P04",
+        "brief.md#B03"
+      ],
+      "rationale": "Prudence has no operational definition; policy authorization does not entail this judgment.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "PA-10",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/handoff.md#H01"
+      ],
+      "rationale": "The package inventory explicitly excludes an external approval register, a document-content fact distinct from event absence.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "PA-C01",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/policy.md#P02",
+        "sources/register.md#R02"
+      ],
+      "rationale": "Recorded standard approval precedes the recorded start."
+    },
+    {
+      "claim_id": "PA-C02",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/policy.md#P02",
+        "sources/register.md#R01",
+        "sources/register.md#R03"
+      ],
+      "rationale": "An explicit negative entry in the complete register establishes absence for the covered period."
+    },
+    {
+      "claim_id": "PA-C03",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/policy.md#P03",
+        "sources/register.md#R03",
+        "brief.md#B02"
+      ],
+      "rationale": "The inclusive 24-hour boundary is satisfied."
+    },
+    {
+      "claim_id": "PA-C04",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/policy.md#P02",
+        "sources/policy.md#P03",
+        "sources/register.md#R04"
+      ],
+      "rationale": "Equal timestamps fail strict ordering and explicit negatives exclude the emergency path."
+    },
+    {
+      "claim_id": "PA-C05",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/policy.md#P01",
+        "sources/policy.md#P02",
+        "sources/policy.md#P03",
+        "sources/register.md#R01",
+        "sources/register.md#R05"
+      ],
+      "rationale": "Complete coverage and explicit negative entries exclude both paths."
+    },
+    {
+      "claim_id": "PA-C06",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/register.md#R01",
+        "sources/handoff.md#H01",
+        "sources/handoff.md#H02",
+        "brief.md#B03"
+      ],
+      "rationale": "This is a supported statement about evidentiary limits, not a claim that approval was absent."
+    },
+    {
+      "claim_id": "PA-C07",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/attestations.md#A01",
+        "sources/attestations.md#A02",
+        "sources/policy.md#P04"
+      ],
+      "rationale": "The report accurately describes both source assertions without asserting either event proposition as settled."
+    },
+    {
+      "claim_id": "PA-C08",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/policy.md#P01",
+        "sources/policy.md#P03",
+        "sources/register.md#R03"
+      ],
+      "rationale": "The policy explicitly permits the alternative path and the record satisfies it."
+    },
+    {
+      "claim_id": "PA-C09",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/policy.md#P04"
+      ],
+      "rationale": "This is a documentary statement about a missing criterion, not a prudence judgment."
+    },
+    {
+      "claim_id": "PA-C10",
+      "report_path": "report-correct.md",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/handoff.md#H01",
+        "sources/handoff.md#H02",
+        "brief.md#B03"
+      ],
+      "rationale": "The handoff explicitly distinguishes package contents from events."
+    }
+  ],
+  "report_variants": {
+    "report.md": "Mixed and erroneous supplied report",
+    "report-correct.md": "Correct cautious supplied report; correctness remains an editorial target, not a Lean-verified result"
+  },
+  "schema_version": 1,
+  "dossier_id": "01-procedural-approval",
+  "actual_lean_results": null
+}

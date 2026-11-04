@@ -1,0 +1,3 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target004.lean
+Audit.independentArtifactAbsent : ¬Audit.Attachment.independentReview ∈ Audit.packet
+'Audit.independentArtifactAbsent' depends on axioms: [propext]

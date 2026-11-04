@@ -1,0 +1,3 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target020.lean
+Audit.claim13 : Audit.bookB - 7 ≠ Audit.availableB
+'Audit.claim13' does not depend on any axioms

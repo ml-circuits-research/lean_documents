@@ -1,0 +1,7 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target010.lean
+Audit.technicalLate : Audit.technicalQueued = 8 ∧
+  Audit.technicalDelivered = 11 ∧
+    ¬Audit.timely Audit.detectionA Audit.technicalDelivered 10 ∧ Audit.technicalDelivered - (Audit.detectionA + 10) = 1
+'Audit.technicalLate' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.221]

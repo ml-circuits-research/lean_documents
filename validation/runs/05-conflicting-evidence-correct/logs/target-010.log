@@ -1,0 +1,3 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target010.lean
+Audit.certificateAbsent : ¬Audit.Attachment.penetrationCertificate ∈ Audit.packet
+'Audit.certificateAbsent' depends on axioms: [propext]

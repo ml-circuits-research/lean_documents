@@ -1,0 +1,23 @@
+{
+  "input/sources/attestations.md": {
+    "A01": "Operator Mira Vale signed a note at 2028-04-11 12:00 UTC: “C-105 began at 09:00 UTC today. I was present when it began.” The note asserts that the operation began; it does not assert duty-manager approval or an emergency path.",
+    "A02": "Observer Leon Reed signed a note at 2028-04-11 12:10 UTC: “C-105 did not begin at any time today before this note. The equipment stayed idle.” This explicitly denies a C-105 start at 09:00 UTC on 2028-04-11. No retraction, priority rule, or resolution of the disagreement is supplied."
+  },
+  "input/sources/handoff.md": {
+    "H01": "C-105 was administered through the external North Quay unit. The handoff package contains a request sent at 2028-04-11 08:00 UTC, the two witness notes supplied in `attestations.md`, and no external approval register. This list is complete for what the handoff package contains, not for events that occurred at North Quay.",
+    "H02": "The North Quay liaison states: “Approval and emergency records were not transferred. I cannot confirm or deny whether an approval, qualifying incident, declaration, or countersignature existed for C-105.” No start timestamp is certified in the handoff. The two witness notes refer to the same proposed operation, C-105, not to separate operations."
+  },
+  "input/sources/policy.md": {
+    "P01": "P-17 revision 3 governs all five operations C-101 through C-105 for the entire period covered by this dossier. There is no applicable superseding policy in this fixture. “Authorized start” means satisfying either the standard path P02 or the emergency path P03; these are the only two paths. An emergency path is fully established only when every P03 condition is met.",
+    "P02": "The standard path requires an approval explicitly granted by the duty manager strictly before the operation starts. Submitting or acknowledging a request does not grant approval. Approval at the exact starting timestamp is not strictly before start.",
+    "P03": "The emergency path requires all of: a qualifying active incident, a duty officer's emergency declaration strictly before start, and a duty manager's countersignature at or after start and no later than 24 hours after start. This path permits a start without a standard approval. The declaration alone does not complete this path.",
+    "P04": "P-17 prescribes no measure of whether a start was “prudent.” Authorization and prudence are separate assessments. The policy has no rule for resolving contradictory witness statements about an operation actually occurring."
+  },
+  "input/sources/register.md": {
+    "R01": "This extract is a complete record of requests, duty-manager approvals, start timestamps, qualifying incident determinations, emergency declarations, and countersignatures for C-101, C-102, C-103, and C-104 through 2028-04-12 17:00 UTC. In this extract “none” means the specified event did not occur during that coverage period. The register gives recorded starts as facts for those four operations. C-105 is not covered by this register; its external authority records were not received. Completeness must not be extended to C-105.",
+    "R02": "C-101: request submitted 2028-04-10 08:20 UTC; duty-manager approval granted 2028-04-10 08:40 UTC; start 2028-04-10 09:00 UTC. Qualifying active incident: no. Emergency declaration: none. Countersignature: none.",
+    "R03": "C-102: request submitted 2028-04-10 10:00 UTC; duty-manager standard approval: none; start 2028-04-10 10:15 UTC. Qualifying active incident: yes, incident I-62 was active at start. Duty-officer emergency declaration 2028-04-10 10:05 UTC. Duty-manager countersignature 2028-04-11 10:15 UTC.",
+    "R04": "C-103: request submitted 2028-04-10 11:00 UTC; duty-manager approval granted 2028-04-10 11:30 UTC; start 2028-04-10 11:30 UTC. Qualifying active incident: no. Emergency declaration: none. Countersignature: none.",
+    "R05": "C-104: request submitted 2028-04-10 13:00 UTC; duty-manager approval: none; start 2028-04-10 13:20 UTC. Qualifying active incident: no. Emergency declaration: none. Countersignature: none."
+  }
+}

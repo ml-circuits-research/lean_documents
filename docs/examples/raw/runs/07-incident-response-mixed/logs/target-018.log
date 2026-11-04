@@ -1,0 +1,3 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target018.lean
+Audit.claim02 : Audit.aElapsed = 140 ∧ Audit.aElapsed ≠ 80
+'Audit.claim02' does not depend on any axioms

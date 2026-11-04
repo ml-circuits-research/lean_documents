@@ -1,0 +1,35 @@
+# North Channel incident response playbook, versions 1 and 2
+
+All organizations, people, agreements, events, and rules in this source are synthetic.
+
+## [R01]
+
+North Channel Observatory operates a synthetic coastal data service. This playbook governs incidents A, B, and C from October 26 through October 28, 2030. A qualifying detection is the first incident classification accepted by the incident coordinator, not an untriaged sensor signal, an email draft, a queue entry, or an invoice from a monitoring provider. Acknowledgement is a delivered human acknowledgement identifying the incident and taking responsibility for response. Containment is an authoritative confirmation that the specified incident path has been isolated; planning an isolation or signing a checklist without completing the isolation is not containment. The source files distinguish authoritative event records from attributed witness claims. The playbook contains no rule making every signed statement an infallible world fact.
+
+## [R02]
+
+All elapsed durations must be calculated on a single UTC timeline. Each timestamp bearing a numerical timezone offset is interpreted literally using that offset: UTC equals the printed local clock time minus the printed offset. The offset is fixed for that event even when nearby events display another offset. No outside daylight-saving calendar is needed or permitted to replace an explicit offset. The October dates were selected to make careless subtraction of local clock labels tempting. Exact minute timestamps denote exact instants, rather than intervals of possible occurrence. A deadline expressed as within N minutes is inclusive, so an action at exactly the deadline is timely. All clock changes, windows, and pauses relevant to the assessed incidents are explicitly recorded in the supplied sources.
+
+## [R03]
+
+Priority P1 requires acknowledgement within fifteen elapsed minutes after qualifying detection and containment within ninety active-response minutes after that detection. Priority P2 requires acknowledgement within thirty elapsed minutes after its effective response-clock start, with the maintenance deferral defined in M02 as the only applicable modification. The P1 acknowledgement clock is never paused or deferred. For a P1 containment clock, approved containment pauses may exclude elapsed time under R04. A pause does not alter the detection timestamp, acknowledgement clock, or escalation clock. No SLA in this dossier treats an unapproved pause request as an approved interruption, and no pause can exclude time before its approved beginning or after actual containment.
+
+## [R04]
+
+A valid containment pause must identify an external dependency blocking containment, be approved in writing by the incident commander before the pause begins, and specify a beginning and end. Approved pauses exclude only their actual overlap with the detection-to-containment interval. Nonoverlapping approved intervals can be added; overlapping intervals would be unioned so a minute is never excluded twice. Revision 1 caps the total excluded time at sixty minutes for an incident. Revision 2 caps the total at forty-five minutes. The cap applies to the combined excluded duration, not independently to each approved pause. Active-response time equals total elapsed detection-to-containment time minus the smaller of the approved overlapping duration and the applicable combined cap. Approval of a longer pause interval does not waive that cap.
+
+## [R05]
+
+The escalation procedure contains three distinct duties for a P1 incident. The technical lead must receive a notification no later than ten elapsed minutes after qualifying detection. The incident commander must receive a notification no later than twenty elapsed minutes after qualifying detection. If the incident remains uncontained sixty elapsed minutes after detection, an executive duty officer must receive a notification no later than fifteen minutes after that trigger, giving a latest time of detection plus seventy-five minutes. All escalation clocks use ordinary elapsed UTC time without containment-pause exclusions. Queue submission, draft completion, attempted dialing, and successful delivery are different events. A notification satisfies the duty only on confirmed delivery to the required role, not merely when queued.
+
+## [R06]
+
+Revision 2 takes effect at 2030-10-27 00:00 UTC for incidents whose qualifying detection occurs at or after that instant. Incidents detected earlier retain revision 1 throughout their response, even when containment, handover, or evidence collection occurs after the boundary. A raw warning signal before midnight does not grandfather an incident whose accepted qualifying detection occurs at midnight. The revision change affects the containment-pause cap only; the acknowledgement, maintenance, and escalation rules reproduced here apply to both versions. A dashboard displaying the currently published revision does not amend an incident's detection event or its retained version. Exact receipt at the boundary belongs to revision 2.
+
+## [R07]
+
+An expressly scoped maintenance window may defer the effective P2 acknowledgement-clock start as stated in M02. Priority P1 overrides that deferral. A maintenance window is not itself a containment-pause approval, and its duration cannot be added to an approved external-dependency pause. Where maintenance and a qualifying incident overlap, the analyst must first identify the incident's priority and the maintenance operation's authorized scope. A general statement that maintenance was underway somewhere in the service is insufficient. Unless the relevant clause says otherwise, a window beginning is included and its ending is excluded when deciding whether a detection occurred inside the window. The end timestamp is nevertheless the start of a deferred clock.
+
+## [R08]
+
+Monitoring evidence has its own completeness boundaries. A certified monitoring extract can establish that specified sensors reported no listed alarms during the certified observation periods. It does not prove that no underlying exfiltration occurred unless a supplied rule makes the sensors complete for that event type and period. Missing telemetry cannot by itself prove either successful exfiltration or its absence. Signed conflicting statements about containment remain attributed evidence unless authoritative records or an adopted resolution settle the point. The playbook defines timeliness, roles, pauses, and windows but supplies no objective criterion for judging that an overall response was professionally managed, emotionally reassuring, or exemplary. Those broader judgments require additional standards and argument.

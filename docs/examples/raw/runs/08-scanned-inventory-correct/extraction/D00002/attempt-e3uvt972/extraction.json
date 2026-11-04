@@ -1,0 +1,221 @@
+{
+  "text": "<a id=\"document-preamble\"></a>\n# Synthetic supplied report: 08-scanned-inventory (correct)\n\nAudit this supplied report independently against the source packet.\n\n<a id=\"C08-OK-01\"></a>\n**C08-OK-01.** Lot A accepted inbound quantity was 96 units.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T01]; sources/01-stock-rules.md#[R01].\n\n<a id=\"C08-OK-02\"></a>\n**C08-OK-02.** Lot B accepted inbound quantity was 12 units.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T02]; sources/01-stock-rules.md#[R01].\n\n<a id=\"C08-OK-03\"></a>\n**C08-OK-03.** Lot A book on-hand at cutoff was 148 units.\n\nCitations: sources/02-opening-and-journal.md#[J01]; sources/02-opening-and-journal.md#[J02]; sources/01-stock-rules.md#[R02].\n\n<a id=\"C08-OK-04\"></a>\n**C08-OK-04.** Lot A available book stock was 141 units.\n\nCitations: sources/01-stock-rules.md#[R03]; sources/02-opening-and-journal.md#[J02].\n\n<a id=\"C08-OK-05\"></a>\n**C08-OK-05.** Lot B book on-hand was 40 units.\n\nCitations: sources/02-opening-and-journal.md#[J01]; sources/02-opening-and-journal.md#[J03].\n\n<a id=\"C08-OK-06\"></a>\n**C08-OK-06.** Lot B available stock was 32 units.\n\nCitations: sources/01-stock-rules.md#[R03]; sources/02-opening-and-journal.md#[J03].\n\n<a id=\"C08-OK-07\"></a>\n**C08-OK-07.** The A customer accepted 48 units and the warehouse accepted a 12-unit return.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T03]; sources/01-stock-rules.md#[R01].\n\n<a id=\"C08-OK-08\"></a>\n**C08-OK-08.** The B order was not fully delivered: twelve of eighteen requested units were delivered.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T04]; sources/04-receiving-messages.md#[M03].\n\n<a id=\"C08-OK-09\"></a>\n**C08-OK-09.** The supplied A physical counts conflict, recording 148 and 147 for the same scope.\n\nCitations: sources/03-signed-counts.md#[N01]; sources/03-signed-counts.md#[N02].\n\n<a id=\"C08-OK-10\"></a>\n**C08-OK-10.** The imported C book balance is minus one after postings of minus nine and plus eight from zero.\n\nCitations: sources/02-opening-and-journal.md#[J04].\n\n<a id=\"C08-OK-11\"></a>\n**C08-OK-11.** The D accepted quantity remains unresolved because the receiver has not signed and messages propose different amounts.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T05]; sources/04-receiving-messages.md#[M01].\n\n<a id=\"C08-OK-12\"></a>\n**C08-OK-12.** Movement completeness is asserted for A and B that day, not for D.\n\nCitations: sources/05-custody-register.md#[K03].\n\n<a id=\"C08-OK-13\"></a>\n**C08-OK-13.** A reservation changes allocation without transferring stock across the boundary.\n\nCitations: sources/01-stock-rules.md#[R02]; sources/01-stock-rules.md#[R03].\n\n<a id=\"C08-OK-14\"></a>\n**C08-OK-14.** No supplied approved correction resolves the C import anomaly.\n\nCitations: sources/02-opening-and-journal.md#[J04].\n",
+  "segments": [
+    {
+      "anchor": "document-preamble",
+      "quote": "# Synthetic supplied report: 08-scanned-inventory (correct)\n\nAudit this supplied report independently against the source packet.",
+      "locator": {
+        "kind": "text",
+        "start_line": 1,
+        "end_line": 3,
+        "start_character": 0,
+        "end_character": 128,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C08-OK-01",
+      "quote": "**C08-OK-01.** Lot A accepted inbound quantity was 96 units.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T01]; sources/01-stock-rules.md#[R01].",
+      "locator": {
+        "kind": "text",
+        "start_line": 6,
+        "end_line": 8,
+        "start_character": 153,
+        "end_character": 302,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C08-OK-02",
+      "quote": "**C08-OK-02.** Lot B accepted inbound quantity was 12 units.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T02]; sources/01-stock-rules.md#[R01].",
+      "locator": {
+        "kind": "text",
+        "start_line": 11,
+        "end_line": 13,
+        "start_character": 327,
+        "end_character": 476,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C08-OK-03",
+      "quote": "**C08-OK-03.** Lot A book on-hand at cutoff was 148 units.\n\nCitations: sources/02-opening-and-journal.md#[J01]; sources/02-opening-and-journal.md#[J02]; sources/01-stock-rules.md#[R02].",
+      "locator": {
+        "kind": "text",
+        "start_line": 16,
+        "end_line": 18,
+        "start_character": 501,
+        "end_character": 686,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C08-OK-04",
+      "quote": "**C08-OK-04.** Lot A available book stock was 141 units.\n\nCitations: sources/01-stock-rules.md#[R03]; sources/02-opening-and-journal.md#[J02].",
+      "locator": {
+        "kind": "text",
+        "start_line": 21,
+        "end_line": 23,
+        "start_character": 711,
+        "end_character": 853,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C08-OK-05",
+      "quote": "**C08-OK-05.** Lot B book on-hand was 40 units.\n\nCitations: sources/02-opening-and-journal.md#[J01]; sources/02-opening-and-journal.md#[J03].",
+      "locator": {
+        "kind": "text",
+        "start_line": 26,
+        "end_line": 28,
+        "start_character": 878,
+        "end_character": 1019,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C08-OK-06",
+      "quote": "**C08-OK-06.** Lot B available stock was 32 units.\n\nCitations: sources/01-stock-rules.md#[R03]; sources/02-opening-and-journal.md#[J03].",
+      "locator": {
+        "kind": "text",
+        "start_line": 31,
+        "end_line": 33,
+        "start_character": 1044,
+        "end_character": 1180,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C08-OK-07",
+      "quote": "**C08-OK-07.** The A customer accepted 48 units and the warehouse accepted a 12-unit return.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T03]; sources/01-stock-rules.md#[R01].",
+      "locator": {
+        "kind": "text",
+        "start_line": 36,
+        "end_line": 38,
+        "start_character": 1205,
+        "end_character": 1386,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C08-OK-08",
+      "quote": "**C08-OK-08.** The B order was not fully delivered: twelve of eighteen requested units were delivered.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T04]; sources/04-receiving-messages.md#[M03].",
+      "locator": {
+        "kind": "text",
+        "start_line": 41,
+        "end_line": 43,
+        "start_character": 1411,
+        "end_character": 1609,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C08-OK-09",
+      "quote": "**C08-OK-09.** The supplied A physical counts conflict, recording 148 and 147 for the same scope.\n\nCitations: sources/03-signed-counts.md#[N01]; sources/03-signed-counts.md#[N02].",
+      "locator": {
+        "kind": "text",
+        "start_line": 46,
+        "end_line": 48,
+        "start_character": 1634,
+        "end_character": 1813,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C08-OK-10",
+      "quote": "**C08-OK-10.** The imported C book balance is minus one after postings of minus nine and plus eight from zero.\n\nCitations: sources/02-opening-and-journal.md#[J04].",
+      "locator": {
+        "kind": "text",
+        "start_line": 51,
+        "end_line": 53,
+        "start_character": 1838,
+        "end_character": 2001,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C08-OK-11",
+      "quote": "**C08-OK-11.** The D accepted quantity remains unresolved because the receiver has not signed and messages propose different amounts.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T05]; sources/04-receiving-messages.md#[M01].",
+      "locator": {
+        "kind": "text",
+        "start_line": 56,
+        "end_line": 58,
+        "start_character": 2026,
+        "end_character": 2255,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C08-OK-12",
+      "quote": "**C08-OK-12.** Movement completeness is asserted for A and B that day, not for D.\n\nCitations: sources/05-custody-register.md#[K03].",
+      "locator": {
+        "kind": "text",
+        "start_line": 61,
+        "end_line": 63,
+        "start_character": 2280,
+        "end_character": 2411,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C08-OK-13",
+      "quote": "**C08-OK-13.** A reservation changes allocation without transferring stock across the boundary.\n\nCitations: sources/01-stock-rules.md#[R02]; sources/01-stock-rules.md#[R03].",
+      "locator": {
+        "kind": "text",
+        "start_line": 66,
+        "end_line": 68,
+        "start_character": 2436,
+        "end_character": 2609,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C08-OK-14",
+      "quote": "**C08-OK-14.** No supplied approved correction resolves the C import anomaly.\n\nCitations: sources/02-opening-and-journal.md#[J04].",
+      "locator": {
+        "kind": "text",
+        "start_line": 71,
+        "end_line": 73,
+        "start_character": 2634,
+        "end_character": 2764,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    }
+  ],
+  "tools": {
+    "python-stdlib": "3.14.8"
+  },
+  "warnings": [],
+  "complete": true,
+  "status": "ready"
+}

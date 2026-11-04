@@ -1,0 +1,185 @@
+$ python3 /home/salboaie/work/lean_documents/skills/evidence-to-proof-review/scripts/audit.py check --workspace /home/salboaie/work/lean_documents/tmp/reproduction-03-audit-arithmetic-correct-oo9gr0am --lean /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lean
+{
+  "checked_at": "2026-11-04T16:57:45.920052+00:00",
+  "status": "passed",
+  "lean_version_required": "4.24.0",
+  "independent_checker": {
+    "status": "not_run",
+    "reason": "No external checker is configured; no independent-kernel assurance is claimed."
+  },
+  "targets": [
+    {
+      "module": "Audit",
+      "theorem": "Audit.sampleTotal",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-001.log",
+      "check_file": "checks/Target001.lean",
+      "model_sha256": "094a9c1e5bdcc88b938b8c1823159f2eafec5b8b81716fe4036f5a654524355f"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.budgetDifference",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-002.log",
+      "check_file": "checks/Target002.lean",
+      "model_sha256": "094a9c1e5bdcc88b938b8c1823159f2eafec5b8b81716fe4036f5a654524355f"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.exactExceptions",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-003.log",
+      "check_file": "checks/Target003.lean",
+      "model_sha256": "094a9c1e5bdcc88b938b8c1823159f2eafec5b8b81716fe4036f5a654524355f"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.exceptionTotal",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-004.log",
+      "check_file": "checks/Target004.lean",
+      "model_sha256": "094a9c1e5bdcc88b938b8c1823159f2eafec5b8b81716fe4036f5a654524355f"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.sampleRate",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-005.log",
+      "check_file": "checks/Target005.lean",
+      "model_sha256": "094a9c1e5bdcc88b938b8c1823159f2eafec5b8b81716fe4036f5a654524355f"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.populationLowerBound",
+      "target": null,
+      "status": "passed",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "log": "logs/target-006.log",
+      "check_file": "checks/Target006.lean",
+      "model_sha256": "094a9c1e5bdcc88b938b8c1823159f2eafec5b8b81716fe4036f5a654524355f"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.sampleTotal",
+      "target": "Audit.total Audit.sample = 275000",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-007.log",
+      "check_file": "checks/Target007.lean",
+      "model_sha256": "094a9c1e5bdcc88b938b8c1823159f2eafec5b8b81716fe4036f5a654524355f"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.budgetDifference",
+      "target": "Audit.total Audit.sample ≤ Audit.budget ∧ Audit.budget - Audit.total Audit.sample = 25000",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-008.log",
+      "check_file": "checks/Target008.lean",
+      "model_sha256": "094a9c1e5bdcc88b938b8c1823159f2eafec5b8b81716fe4036f5a654524355f"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.exactExceptions",
+      "target": "Audit.sample.length = 4 ∧ Audit.exceptions.length = 2 ∧ Audit.exceptionIDs = [Audit.p03ID, Audit.p04ID]",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-009.log",
+      "check_file": "checks/Target009.lean",
+      "model_sha256": "094a9c1e5bdcc88b938b8c1823159f2eafec5b8b81716fe4036f5a654524355f"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.exceptionTotal",
+      "target": "Audit.total Audit.exceptions = 75000",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-010.log",
+      "check_file": "checks/Target010.lean",
+      "model_sha256": "094a9c1e5bdcc88b938b8c1823159f2eafec5b8b81716fe4036f5a654524355f"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.sampleRate",
+      "target": "0 < Audit.sample.length ∧ Audit.exceptions.length * 100 = Audit.sample.length * 50",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-011.log",
+      "check_file": "checks/Target011.lean",
+      "model_sha256": "094a9c1e5bdcc88b938b8c1823159f2eafec5b8b81716fe4036f5a654524355f"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.populationLowerBound",
+      "target": "∀ unsampledMissing : Nat, unsampledMissing ≤ 16 → 2 ≤ Audit.populationExceptions unsampledMissing ∧ Audit.populationExceptions unsampledMissing ≤ 18",
+      "status": "passed",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "log": "logs/target-012.log",
+      "check_file": "checks/Target012.lean",
+      "model_sha256": "094a9c1e5bdcc88b938b8c1823159f2eafec5b8b81716fe4036f5a654524355f"
+    }
+  ],
+  "limitations": "Lean checks the encoded propositions, not source authenticity, extraction accuracy, completeness, legal authority, or the adequacy of the model. Source filters are defensive checks, not a sandbox for hostile Lean code.",
+  "audit_contract": {
+    "version": 1,
+    "coverage": "legacy_unreconciled",
+    "limitation": "This older bundle has no enforced claim register or structured argument audit."
+  },
+  "input_hashes": {
+    "findings.json": "e09c64779cf13e1e42d9ff51058ed56db865de0183127dd49d0390396720328d",
+    "input/manifest.json": "9337f8da27a5d5e3e669c03de64095909ea400d3e9faa1eb8e0488b2f6de4934",
+    "models/Audit.lean": "094a9c1e5bdcc88b938b8c1823159f2eafec5b8b81716fe4036f5a654524355f"
+  },
+  "lean_version_observed": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "execution_status": "executed",
+  "artifact_hashes": {
+    "environment.lock": "5ed2d0b6eff663ee335df7c00665aba138d8a97e2a51e08dc995d204cdaa5ce9",
+    "lakefile.toml": "01a2fcdf9392e14b2fcf1c49259f3371c897156e002f56d678736f2b1e336653",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "source-ledger.jsonl": "fcebe4bdea1bcae375bf0486f021f50b7f55db01567a77042c9462ba554249a8",
+    "logs/lake-build.log": "b324845a4bb183e7f801b2f8b6042899117e09803e0e5c898b468e6200900f91",
+    "logs/lean-version.log": "52f1249d3d7d977e62ab6494d04ca8a6e1ccd083d113b69aa7f400bc21cc8ee5",
+    "logs/target-001.log": "de3645a10cded7800f9fef598374081300101fabb0499b8544d084fdddd38847",
+    "logs/target-002.log": "d87a06d45aaf42df0aad80f6f32b38d9ea7ee34c14d485d446beb1c113ccef9f",
+    "logs/target-003.log": "c624f86e01833750587a2c20fdbbe5ed40d9e9945d53cb3479d1dce7afb4458e",
+    "logs/target-004.log": "7b724969dde54eae66a50cb6cef530087cc60d79118ebf725aa4ee44c1056ed5",
+    "logs/target-005.log": "5e23307a923e72963375b7874989b294b743fb56491c955d24464a1df8aadd90",
+    "logs/target-006.log": "43cec42df1ae69c4570a6f20835cf13ec97b9ad53f3022086a8b2b7353942dd4",
+    "logs/target-007.log": "a2fbd1924741fa5e526eed8dd2915ffde81701bcd05fd64c7157d3cdb682ad82",
+    "logs/target-008.log": "8f229ab00c0a3373d2defade68fcbce610136855051f45924ba1c5c0a57b98fc",
+    "logs/target-009.log": "73bb3175ac1c03cfee7dc91d71cda5fa377aee8a0c3389c9503ff3f6da8bb166",
+    "logs/target-010.log": "d9033b779e96959c923f6626592840e5d144f0deb69d67ed2f8b9f219600a742",
+    "logs/target-011.log": "21a22a5b9a5e09f690e3069f4f95bd645c4c4cab3ff4858acf0f69157c027fbf",
+    "logs/target-012.log": "65363c60114d13525d0fd682b8827ac69b35d92c10e9568b270ce2b6065acf5d",
+    "checks/Target001.lean": "ea721b5ed2f4b263fdfff3b6e151b152519cbb562234e73f161fa7d38748c8cb",
+    "checks/Target002.lean": "7542de7506ae8d9e33826a1cedd650685e29c8c0ff891100f1e1dbfb9034e6ed",
+    "checks/Target003.lean": "e06c7bbaebf744a7016c7f3cd1dc270534c1a4de0635c554151c0b3189d62895",
+    "checks/Target004.lean": "075d7fa7e01c1594b5767255faaf5dd30c43b1365edbdb1515f54477e73c79fa",
+    "checks/Target005.lean": "33c483ca7e6542bd4c232c1ce210edba1885f30360792f9fb2ec1321e78a8e3a",
+    "checks/Target006.lean": "5afa443e9031de270521fd86bbc815abef3ff0e299329f3aee7a9b56c8c4f872",
+    "checks/Target007.lean": "3bb5ded687d31d60180513abb711003c927779c64ef8a550ce13bdefc06c9584",
+    "checks/Target008.lean": "277c6bb6baddb6221856863b93a048f02b4583303d17bc9455fc998b13388d73",
+    "checks/Target009.lean": "3a7d6385c41425bb635be155fdf84b48097e8f982342aa3048e000096abf974b",
+    "checks/Target010.lean": "1159077a26134e025583a21f18a590a7e3f4dbdd413a06e126d8d37ad3477399",
+    "checks/Target011.lean": "e89dee784a093cd6103631cc2a4504c334d5c90aa09d9c309ffa8f3d706d3d53",
+    "checks/Target012.lean": "2d4176ed90e9b735a255cb4a1329cc95807f080ce146a30eca35ce7e17b62ce3"
+  }
+}

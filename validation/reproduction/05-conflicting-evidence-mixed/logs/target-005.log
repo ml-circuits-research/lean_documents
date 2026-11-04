@@ -1,0 +1,6 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target005.lean
+Audit.claim04MissingPremise : Audit.policy true false false ∧
+  Audit.policy true false true ∧ ¬(Audit.policy true false false ∧ true = true → false = true)
+'Audit.claim04MissingPremise' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.253]

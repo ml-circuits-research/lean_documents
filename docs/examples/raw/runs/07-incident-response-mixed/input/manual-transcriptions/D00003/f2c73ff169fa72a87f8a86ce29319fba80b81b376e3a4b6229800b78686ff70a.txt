@@ -1,0 +1,9 @@
+[A01]
+Containment operator Elise Stone signed a statement at 2030-10-27 05:10 UTC:
+"Incident C was fully isolated at exactly 05:00 UTC. I completed the final network-
+path isolation then, and no C path remained live after that instant." Her statement
+identifies complete containment, not an intermediate mitigation or intended future
+action. It concerns incident C, rather than incident A, and uses UTC explicitly. The
+signature is authentic within this synthetic dossier. The scan preserves her
+attributed words but contains no independently certified network trace proving the
+isolation event.

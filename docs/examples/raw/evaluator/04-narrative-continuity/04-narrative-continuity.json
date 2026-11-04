@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "dossier_id": "04-narrative-continuity",
+  "classification": "evaluator_only",
+  "status": "unverified_expectations",
+  "warning": "These are author expectations, not blind-review findings or executed Lean results. Do not provide this file to blind reviewers.",
+  "formal_outcome_scope": "Prospective outcomes assume a faithful, reviewed encoding of the stated conventions and cited sources. No Lean validation has been executed.",
+  "expectations": [
+    {
+      "claim_id": "C04-01",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/chronology.md#T-01",
+        "sources/flashback.md#F-02"
+      ],
+      "rationale": "The exchange is explicitly dated day 2 and Mira is alive then.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C04-02",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/chronology.md#T-01",
+        "sources/chronology.md#T-02",
+        "sources/rules.md#R-01",
+        "sources/rules.md#R-02"
+      ],
+      "rationale": "Mira is dead from dawn day 5 until dawn day 8 under a complete bounded revival catalog. Physical attendance at noon day 6 requires life, creating a genuine continuity contradiction.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C04-03",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/flashback.md#F-01",
+        "sources/flashback.md#F-02"
+      ],
+      "rationale": "The remembered exchange is explicitly day 2; narration frame day 7 does not redetermine event time.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C04-04",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/dialogue.md#D-01"
+      ],
+      "rationale": "The speech act is explicitly recorded. Proof would encode Uttered(Mira, sentence, day9_noon), not the truth of the sentence.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C04-05",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/dialogue.md#D-01",
+        "sources/chronology.md#T-01"
+      ],
+      "rationale": "The day 5 death refutes the world claim. Quoted unreliable speech is not competing authoritative evidence, so semantic state is not both.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C04-06",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/chronology.md#T-02",
+        "sources/rules.md#R-01"
+      ],
+      "rationale": "Revival at dawn day 8 restores life before noon; the world record preserves life through day 10.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C04-07",
+      "semantic_state": "refuted",
+      "prospective_disposition": "refutation",
+      "source_anchors": [
+        "sources/chronology.md#T-02",
+        "sources/rules.md#R-01"
+      ],
+      "rationale": "Life at noon day 8 is a counterexample to perpetual death throughout the claimed interval. No unconditional death-permanence axiom is allowed.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C04-08",
+      "semantic_state": "undetermined",
+      "prospective_disposition": "blocked",
+      "source_anchors": [
+        "sources/dialogue.md#D-02"
+      ],
+      "rationale": "Ivo location is unspecified. The bounded revival completeness rule does not close the unrelated location domain.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C04-09",
+      "semantic_state": "not_applicable",
+      "prospective_disposition": "nonformal",
+      "source_anchors": [
+        "sources/dialogue.md#D-02"
+      ],
+      "rationale": "Emotional satisfaction and pacing quality are subjective review judgments without a formal criterion.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C04-10",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/chronology.md#T-01",
+        "sources/rules.md#R-02"
+      ],
+      "rationale": "The explicitly complete catalog has only a day 8 revival; no revival lies in the specified day 5 to day 6 interval.",
+      "report_path": "report.md"
+    },
+    {
+      "claim_id": "C04-OK-01",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/chronology.md#T-01",
+        "sources/flashback.md#F-02"
+      ],
+      "rationale": "Both sources place the living key exchange on day 2.",
+      "report_path": "report-correct.md"
+    },
+    {
+      "claim_id": "C04-OK-02",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/chronology.md#T-01",
+        "sources/chronology.md#T-02",
+        "sources/rules.md#R-01",
+        "sources/rules.md#R-02"
+      ],
+      "rationale": "The complete revival catalog and persistence rule establish death at noon day 6; attendance requires life.",
+      "report_path": "report-correct.md"
+    },
+    {
+      "claim_id": "C04-OK-03",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/flashback.md#F-01",
+        "sources/flashback.md#F-02"
+      ],
+      "rationale": "Narration time and event time are explicitly distinct.",
+      "report_path": "report-correct.md"
+    },
+    {
+      "claim_id": "C04-OK-04",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/dialogue.md#D-01",
+        "sources/chronology.md#T-01"
+      ],
+      "rationale": "The statement asserts an utterance and the canonical death, without promoting speech content into a world fact.",
+      "report_path": "report-correct.md"
+    },
+    {
+      "claim_id": "C04-OK-05",
+      "semantic_state": "supported",
+      "prospective_disposition": "proof",
+      "source_anchors": [
+        "sources/chronology.md#T-02",
+        "sources/rules.md#R-01"
+      ],
+      "rationale": "The explicitly permitted revival restores life before noon.",
+      "report_path": "report-correct.md"
+    }
+  ],
+  "actual_lean_results": null
+}

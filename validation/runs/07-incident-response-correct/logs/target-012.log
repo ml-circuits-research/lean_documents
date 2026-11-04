@@ -1,0 +1,4 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target012.lean
+Audit.executiveTimely : Audit.uncontainedA 60 ∧
+  Audit.executiveDelivered = 72 ∧ Audit.executiveDelivered - 60 = 12 ∧ Audit.timely 60 Audit.executiveDelivered 15
+'Audit.executiveTimely' does not depend on any axioms

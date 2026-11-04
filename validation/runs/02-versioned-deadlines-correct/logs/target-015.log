@@ -1,0 +1,6 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target015.lean
+Audit.claim07Alternatives : Audit.timelyCompletion.annexTransferred = false ∧
+  Audit.lateCompletion.annexTransferred = false ∧
+    Audit.timelyCompletion.due ≠ Audit.lateCompletion.due ∧
+      Audit.d204.submitted ≤ Audit.timelyCompletion.due ∧ Audit.lateCompletion.due < Audit.d204.submitted
+'Audit.claim07Alternatives' does not depend on any axioms

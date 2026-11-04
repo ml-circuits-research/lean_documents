@@ -1,0 +1,6 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target005.lean
+Audit.claim05 : Audit.c104.start = 800 ∧
+  Audit.standard Audit.c104 = false ∧ Audit.emergency Audit.c104 = false ∧ Audit.authorized Audit.c104 = false
+'Audit.claim05' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.212]

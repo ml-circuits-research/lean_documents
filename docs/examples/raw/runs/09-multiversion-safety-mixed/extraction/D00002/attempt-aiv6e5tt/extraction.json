@@ -1,0 +1,221 @@
+{
+  "text": "<a id=\"document-preamble\"></a>\n# Synthetic supplied report: 09-multiversion-safety (flawed)\n\nAudit this supplied report independently against the source packet.\n\n<a id=\"C09-ERR-01\"></a>\n**C09-ERR-01.** L01 failed its historical demonstration because 118 exceeds the current 100-millisecond limit.\n\nCitations: sources/01-specification-v1.docx#[V1-02]; sources/02-specification-v2.docx#[V2-01]; sources/04-test-runs.pdf#[P01].\n\n<a id=\"C09-ERR-02\"></a>\n**C09-ERR-02.** N02 passes because 101 is below the revision 1 limit of 120.\n\nCitations: sources/02-specification-v2.docx#[V2-01]; sources/04-test-runs.pdf#[P02].\n\n<a id=\"C09-ERR-03\"></a>\n**C09-ERR-03.** All N01 valid delay runs satisfy 100 milliseconds.\n\nCitations: sources/04-test-runs.pdf#[P02]; sources/02-specification-v2.docx#[V2-02].\n\n<a id=\"C09-ERR-04\"></a>\n**C09-ERR-04.** Every named NORMAL unit passed every required delay run.\n\nCitations: sources/04-test-runs.pdf#[P02].\n\n<a id=\"C09-ERR-05\"></a>\n**C09-ERR-05.** E17 failed because 108 exceeds 100 milliseconds.\n\nCitations: sources/03-exception-annex.docx#[X01]; sources/04-test-runs.pdf#[P03].\n\n<a id=\"C09-ERR-06\"></a>\n**C09-ERR-06.** Annex X also grants the 110-millisecond allowance to N02.\n\nCitations: sources/03-exception-annex.docx#[X01].\n\n<a id=\"C09-ERR-07\"></a>\n**C09-ERR-07.** C01 failed its applicable requirement because 149 exceeds 100.\n\nCitations: sources/02-specification-v2.docx#[V2-02]; sources/04-test-runs.pdf#[P04].\n\n<a id=\"C09-ERR-08\"></a>\n**C09-ERR-08.** N03 channel B would have passed if measured.\n\nCitations: sources/06-applicability-and-open-items.md#[AP02].\n\n<a id=\"C09-ERR-09\"></a>\n**C09-ERR-09.** K2 was current at the N03 run because it was renewed on 5 June.\n\nCitations: sources/05-calibration-and-authority.md#[CAL01].\n\n<a id=\"C09-ERR-10\"></a>\n**C09-ERR-10.** X99 is a valid 85-millisecond run that replaces N03 missing repetition.\n\nCitations: sources/04-test-runs.pdf#[P05]; sources/02-specification-v2.docx#[V2-05].\n\n<a id=\"C09-ERR-11\"></a>\n**C09-ERR-11.** Passing delay alone is sufficient for full release.\n\nCitations: sources/02-specification-v2.docx#[V2-03].\n\n<a id=\"C09-ERR-12\"></a>\n**C09-ERR-12.** Every possible compliant assurance method must use exactly the listed three-run route.\n\nCitations: sources/03-exception-annex.docx#[X04].\n\n<a id=\"C09-ERR-13\"></a>\n**C09-ERR-13.** The design is safe at every temperature throughout its lifetime.\n\nCitations: sources/06-applicability-and-open-items.md#[AP01]; sources/06-applicability-and-open-items.md#[AP03].\n\n<a id=\"C09-ERR-14\"></a>\n**C09-ERR-14.** The specification is beautifully organized.\n\nCitations: sources/02-specification-v2.docx#[V2-06].\n",
+  "segments": [
+    {
+      "anchor": "document-preamble",
+      "quote": "# Synthetic supplied report: 09-multiversion-safety (flawed)\n\nAudit this supplied report independently against the source packet.",
+      "locator": {
+        "kind": "text",
+        "start_line": 1,
+        "end_line": 3,
+        "start_character": 0,
+        "end_character": 129,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C09-ERR-01",
+      "quote": "**C09-ERR-01.** L01 failed its historical demonstration because 118 exceeds the current 100-millisecond limit.\n\nCitations: sources/01-specification-v1.docx#[V1-02]; sources/02-specification-v2.docx#[V2-01]; sources/04-test-runs.pdf#[P01].",
+      "locator": {
+        "kind": "text",
+        "start_line": 6,
+        "end_line": 8,
+        "start_character": 155,
+        "end_character": 393,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C09-ERR-02",
+      "quote": "**C09-ERR-02.** N02 passes because 101 is below the revision 1 limit of 120.\n\nCitations: sources/02-specification-v2.docx#[V2-01]; sources/04-test-runs.pdf#[P02].",
+      "locator": {
+        "kind": "text",
+        "start_line": 11,
+        "end_line": 13,
+        "start_character": 419,
+        "end_character": 581,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C09-ERR-03",
+      "quote": "**C09-ERR-03.** All N01 valid delay runs satisfy 100 milliseconds.\n\nCitations: sources/04-test-runs.pdf#[P02]; sources/02-specification-v2.docx#[V2-02].",
+      "locator": {
+        "kind": "text",
+        "start_line": 16,
+        "end_line": 18,
+        "start_character": 607,
+        "end_character": 759,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C09-ERR-04",
+      "quote": "**C09-ERR-04.** Every named NORMAL unit passed every required delay run.\n\nCitations: sources/04-test-runs.pdf#[P02].",
+      "locator": {
+        "kind": "text",
+        "start_line": 21,
+        "end_line": 23,
+        "start_character": 785,
+        "end_character": 901,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C09-ERR-05",
+      "quote": "**C09-ERR-05.** E17 failed because 108 exceeds 100 milliseconds.\n\nCitations: sources/03-exception-annex.docx#[X01]; sources/04-test-runs.pdf#[P03].",
+      "locator": {
+        "kind": "text",
+        "start_line": 26,
+        "end_line": 28,
+        "start_character": 927,
+        "end_character": 1074,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C09-ERR-06",
+      "quote": "**C09-ERR-06.** Annex X also grants the 110-millisecond allowance to N02.\n\nCitations: sources/03-exception-annex.docx#[X01].",
+      "locator": {
+        "kind": "text",
+        "start_line": 31,
+        "end_line": 33,
+        "start_character": 1100,
+        "end_character": 1224,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C09-ERR-07",
+      "quote": "**C09-ERR-07.** C01 failed its applicable requirement because 149 exceeds 100.\n\nCitations: sources/02-specification-v2.docx#[V2-02]; sources/04-test-runs.pdf#[P04].",
+      "locator": {
+        "kind": "text",
+        "start_line": 36,
+        "end_line": 38,
+        "start_character": 1250,
+        "end_character": 1414,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C09-ERR-08",
+      "quote": "**C09-ERR-08.** N03 channel B would have passed if measured.\n\nCitations: sources/06-applicability-and-open-items.md#[AP02].",
+      "locator": {
+        "kind": "text",
+        "start_line": 41,
+        "end_line": 43,
+        "start_character": 1440,
+        "end_character": 1563,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C09-ERR-09",
+      "quote": "**C09-ERR-09.** K2 was current at the N03 run because it was renewed on 5 June.\n\nCitations: sources/05-calibration-and-authority.md#[CAL01].",
+      "locator": {
+        "kind": "text",
+        "start_line": 46,
+        "end_line": 48,
+        "start_character": 1589,
+        "end_character": 1729,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C09-ERR-10",
+      "quote": "**C09-ERR-10.** X99 is a valid 85-millisecond run that replaces N03 missing repetition.\n\nCitations: sources/04-test-runs.pdf#[P05]; sources/02-specification-v2.docx#[V2-05].",
+      "locator": {
+        "kind": "text",
+        "start_line": 51,
+        "end_line": 53,
+        "start_character": 1755,
+        "end_character": 1928,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C09-ERR-11",
+      "quote": "**C09-ERR-11.** Passing delay alone is sufficient for full release.\n\nCitations: sources/02-specification-v2.docx#[V2-03].",
+      "locator": {
+        "kind": "text",
+        "start_line": 56,
+        "end_line": 58,
+        "start_character": 1954,
+        "end_character": 2075,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C09-ERR-12",
+      "quote": "**C09-ERR-12.** Every possible compliant assurance method must use exactly the listed three-run route.\n\nCitations: sources/03-exception-annex.docx#[X04].",
+      "locator": {
+        "kind": "text",
+        "start_line": 61,
+        "end_line": 63,
+        "start_character": 2101,
+        "end_character": 2254,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C09-ERR-13",
+      "quote": "**C09-ERR-13.** The design is safe at every temperature throughout its lifetime.\n\nCitations: sources/06-applicability-and-open-items.md#[AP01]; sources/06-applicability-and-open-items.md#[AP03].",
+      "locator": {
+        "kind": "text",
+        "start_line": 66,
+        "end_line": 68,
+        "start_character": 2280,
+        "end_character": 2474,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "C09-ERR-14",
+      "quote": "**C09-ERR-14.** The specification is beautifully organized.\n\nCitations: sources/02-specification-v2.docx#[V2-06].",
+      "locator": {
+        "kind": "text",
+        "start_line": 71,
+        "end_line": 73,
+        "start_character": 2500,
+        "end_character": 2613,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    }
+  ],
+  "tools": {
+    "python-stdlib": "3.14.8"
+  },
+  "warnings": [],
+  "complete": true,
+  "status": "ready"
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "dossier_id": "08-scanned-inventory",
+  "synthetic": true,
+  "hash_algorithm": "sha256",
+  "audit_inputs": [
+    {
+      "path": "brief.md",
+      "role": "brief",
+      "sha256": "f7cbb6a2822be482b7587734c0b1e27ffb1de58b9e401256c21cc601c36a41c0"
+    },
+    {
+      "path": "report-correct.md",
+      "role": "report",
+      "sha256": "d795479f7863b38a2758c1a6f417823d22c5ed0fbe85a41ea3bca42e9a4a5c47"
+    },
+    {
+      "path": "report.md",
+      "role": "report",
+      "sha256": "c960c978a1e7c3c3a5daf06a0e5e69d8a7ff7bf0aae2c33ef9fad559bf55228a"
+    },
+    {
+      "path": "sources/01-stock-rules.md",
+      "role": "source",
+      "sha256": "a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53"
+    },
+    {
+      "path": "sources/02-opening-and-journal.md",
+      "role": "source",
+      "sha256": "078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189"
+    },
+    {
+      "path": "sources/03-signed-counts.md",
+      "role": "source",
+      "sha256": "902b530d21257c2ef30042baaa46dbc1fd5d2d6e8576e8d8c18fdc3c1b8d28af"
+    },
+    {
+      "path": "sources/04-receiving-messages.md",
+      "role": "source",
+      "sha256": "5902f74c3a28ac0e3f3d0e49dc8503a2d0417d6a3658bde4c64ba768051d0c17"
+    },
+    {
+      "path": "sources/05-custody-register.md",
+      "role": "source",
+      "sha256": "54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830"
+    },
+    {
+      "path": "sources/06-shipping-tickets-scan.pdf",
+      "role": "source",
+      "sha256": "e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58"
+    },
+    {
+      "path": "sources/07-bin-and-exception-register.md",
+      "role": "source",
+      "sha256": "17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9"
+    }
+  ],
+  "audit_variants": [
+    {
+      "id": "correct",
+      "report": "report-correct.md"
+    },
+    {
+      "id": "flawed",
+      "report": "report.md"
+    }
+  ],
+  "selection_rule": "Exactly one selected report with shared brief and all sources. Exclude authoring scripts and evaluator material.",
+  "source_count": 7,
+  "authored_source_word_count": 3825,
+  "formal_validation_executed_by_fixture_builder": false
+}

@@ -1,0 +1,3 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target007.lean
+Audit.daySixNoPhysicalAttendance : ∀ (attends : Prop), (attends → Audit.AliveAt (Audit.instant 6 Audit.noon)) → ¬attends
+'Audit.daySixNoPhysicalAttendance' depends on axioms: [propext]

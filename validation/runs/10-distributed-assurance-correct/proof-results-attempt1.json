@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-11-04T15:28:32.938452+00:00",
+  "status": "failed",
+  "lean_version_required": "4.24.0",
+  "independent_checker": {
+    "status": "not_run",
+    "reason": "No external checker is configured; no independent-kernel assurance is claimed."
+  },
+  "targets": [],
+  "limitations": "Lean checks the encoded propositions, not source authenticity, extraction accuracy, completeness, legal authority, or the adequacy of the model. Source filters are defensive checks, not a sandbox for hostile Lean code.",
+  "input_hashes": {
+    "findings.json": "5e25602b61c8afece7f01c414d57becf6eac2aa90abef88b526ac37209ff5410",
+    "input/manifest.json": "f660b7be4a0147dcf7e1ab981dbb0e6ee481ae9e3e6d413eaeb924aa322fc2ef",
+    "models/Audit.lean": "021e49fd83c6f205dd34699490a6c2047949ebe6c764240d88c911c365bb6972",
+    "extraction-review.json": "07bbf3bcb231eab5500b404ef228b8d46d91edd2e35588692991f9e13b087369",
+    "extraction-lock.json": "174038f764760cbff7b93333c4b77290f3184051be2c00bb7bab43f0c9afc899"
+  },
+  "lean_version_observed": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "execution_status": "executed",
+  "error": "Lean command failed (1); see lake-build.log",
+  "artifact_hashes": {
+    "environment.lock": "5ed2d0b6eff663ee335df7c00665aba138d8a97e2a51e08dc995d204cdaa5ce9",
+    "lakefile.toml": "01a2fcdf9392e14b2fcf1c49259f3371c897156e002f56d678736f2b1e336653",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "source-ledger.jsonl": "f104d60f0617d8c448ae6159eee1339e598f10a19165d24494e841c72eac8495",
+    "logs/lake-build.log": "47212e0814b1938cfa864d5a6c1cd450cc5be974d0a6a6cf8855f5039ccef81e",
+    "logs/lean-version.log": "52f1249d3d7d977e62ab6494d04ca8a6e1ccd083d113b69aa7f400bc21cc8ee5"
+  }
+}

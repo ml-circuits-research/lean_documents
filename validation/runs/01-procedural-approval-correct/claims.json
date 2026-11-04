@@ -1,0 +1,108 @@
+{
+  "claims": [
+    {
+      "claim_id": "PA-C01",
+      "report_anchor": "PA-C01",
+      "report_quote": "**PA-C01.** C-101 satisfied the standard authorization path: its 08:40 duty-manager approval was strictly before its 09:00 start.",
+      "coverage": "included",
+      "atomic_targets": [
+        "standard authorization",
+        "strict ordering"
+      ]
+    },
+    {
+      "claim_id": "PA-C02",
+      "report_anchor": "PA-C02",
+      "report_quote": "**PA-C02.** C-102 had no standard duty-manager approval in the register coverage period; its 10:00 request was not an approval.",
+      "coverage": "included",
+      "atomic_targets": [
+        "no covered approval",
+        "request distinct from approval"
+      ]
+    },
+    {
+      "claim_id": "PA-C03",
+      "report_anchor": "PA-C03",
+      "report_quote": "**PA-C03.** C-102 satisfied the emergency authorization path. Its qualifying incident, pre-start declaration, and countersignature exactly 24 hours after start meet all three conditions.",
+      "coverage": "included",
+      "atomic_targets": [
+        "qualifying incident",
+        "strict declaration ordering",
+        "inclusive countersignature deadline",
+        "emergency authorization"
+      ]
+    },
+    {
+      "claim_id": "PA-C04",
+      "report_anchor": "PA-C04",
+      "report_quote": "**PA-C04.** C-103 failed the standard path because its approval and start were simultaneous; it also lacked the qualifying incident and declaration needed for the emergency path.",
+      "coverage": "included",
+      "atomic_targets": [
+        "standard failure at equality",
+        "incident absent",
+        "declaration absent"
+      ]
+    },
+    {
+      "claim_id": "PA-C05",
+      "report_anchor": "PA-C05",
+      "report_quote": "**PA-C05.** C-104 started without authorization under either of the two P-17 paths.",
+      "coverage": "included",
+      "atomic_targets": [
+        "recorded start",
+        "neither policy path"
+      ]
+    },
+    {
+      "claim_id": "PA-C06",
+      "report_anchor": "PA-C06",
+      "report_quote": "**PA-C06.** The supplied C-105 evidence establishes neither presence nor absence of standard approval before the proposed 09:00 start.",
+      "coverage": "included",
+      "atomic_targets": [
+        "approval presence not established",
+        "approval absence not established"
+      ]
+    },
+    {
+      "claim_id": "PA-C07",
+      "report_anchor": "PA-C07",
+      "report_quote": "**PA-C07.** The two C-105 witness notes conflict: one asserts a 2028-04-11 09:00 start and the other explicitly denies any start before 12:10 that day. No supplied rule resolves the conflict.",
+      "coverage": "included",
+      "atomic_targets": [
+        "matching operation and time",
+        "opposite witness assertions",
+        "no priority rule"
+      ]
+    },
+    {
+      "claim_id": "PA-C08",
+      "report_anchor": "PA-C08",
+      "report_quote": "**PA-C08.** A lack of standard approval does not by itself make a start unauthorized under P-17; C-102 meets the alternative emergency path.",
+      "coverage": "included",
+      "atomic_targets": [
+        "lack of standard approval insufficient for unauthorized",
+        "C-102 emergency witness"
+      ]
+    },
+    {
+      "claim_id": "PA-C09",
+      "report_anchor": "PA-C09",
+      "report_quote": "**PA-C09.** The policy supplies no criterion for deciding whether C-102 was prudent.",
+      "coverage": "included",
+      "atomic_targets": [
+        "no prudence criterion in supplied policy"
+      ]
+    },
+    {
+      "claim_id": "PA-C10",
+      "report_anchor": "PA-C10",
+      "report_quote": "**PA-C10.** The supplied C-105 handoff package contains no external approval register. That inventory fact does not establish whether an external approval existed.",
+      "coverage": "included",
+      "atomic_targets": [
+        "no external approval register in package",
+        "event history not determined by inventory"
+      ]
+    }
+  ],
+  "exclusions": []
+}

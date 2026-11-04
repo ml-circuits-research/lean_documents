@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-11-04T15:12:32.979347+00:00",
+  "status": "failed",
+  "lean_version_required": "4.24.0",
+  "independent_checker": {
+    "status": "not_run",
+    "reason": "No external checker is configured; no independent-kernel assurance is claimed."
+  },
+  "targets": [],
+  "limitations": "Lean checks the encoded propositions, not source authenticity, extraction accuracy, completeness, legal authority, or the adequacy of the model. Source filters are defensive checks, not a sandbox for hostile Lean code.",
+  "error": "C09-ERR-01: uncertain extraction requires explicit original-source review before direct formal verdict",
+  "execution_status": "failed",
+  "artifact_hashes": {
+    "source-ledger.jsonl": "8740c742ed30b33b677a53c1d595aabfc2540716ccf7b53706cc1c4d2a665c0f"
+  }
+}

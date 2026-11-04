@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target004.lean
+Audit.version202Refuted : Audit.revision Audit.c202 ≠ 2 ∧ Audit.revision Audit.c202 = 1
+'Audit.version202Refuted' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.215]

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/usr/bin/pdftotext",
+    "-f",
+    "7",
+    "-l",
+    "7",
+    "-bbox-layout",
+    "-enc",
+    "UTF-8",
+    "/home/salboaie/work/lean_documents/tmp/claim-audit-dcdwv_xx/input/originals/D00009.pdf",
+    "/home/salboaie/work/lean_documents/tmp/claim-audit-dcdwv_xx/extraction/D00009/attempt-3230ujwt/pdf-page-0007.bbox.xhtml"
+  ],
+  "timeout_seconds": 60,
+  "returncode": 0,
+  "stdout": "",
+  "stderr": ""
+}

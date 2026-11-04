@@ -1,0 +1,12 @@
+test_pdf_retry_preserves_reviewed_overlays_and_invalidates_old_check (test_corpus.CorpusTests.test_pdf_retry_preserves_reviewed_overlays_and_invalidates_old_check) ... ok
+test_retry_rejects_manual_anchor_collision_without_overwriting_passage (test_corpus.CorpusTests.test_retry_rejects_manual_anchor_collision_without_overwriting_passage) ... ok
+test_refresh_changed_original_does_not_reapply_manual_overlay (test_corpus.CorpusTests.test_refresh_changed_original_does_not_reapply_manual_overlay) ... ok
+test_page_limited_pdf_retry_retains_old_attempt_and_original (test_corpus.CorpusTests.test_page_limited_pdf_retry_retains_old_attempt_and_original) ... ok
+test_noop_resume_preserves_successful_proof_fingerprint (test_corpus.CorpusTests.test_noop_resume_preserves_successful_proof_fingerprint) ... ok
+test_refresh_archives_actual_proofs_and_stale_quote_cannot_pass (test_corpus.CorpusTests.test_refresh_archives_actual_proofs_and_stale_quote_cannot_pass) ... ok
+test_interrupted_derived_state_requires_explicit_recovery (test_corpus.CorpusTests.test_interrupted_derived_state_requires_explicit_recovery) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 2.750s
+
+OK

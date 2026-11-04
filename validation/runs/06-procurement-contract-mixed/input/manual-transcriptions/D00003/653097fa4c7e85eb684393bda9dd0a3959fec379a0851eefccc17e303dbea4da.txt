@@ -1,0 +1,11 @@
+[A03]
+The authenticity of both signatures is stipulated for this synthetic dossier. Neither
+witness has retracted the signed statement. No priority rule, adjudication, amended
+register, or original approval instrument resolving the disagreement is supplied.
+P-21 is deliberately outside the complete transaction coverage of L01. Both
+statements concern the same order and same June 27 morning, so they cannot be
+reconciled by moving one to a different order, date, or timezone. Their contradiction
+concerns approval occurrence. An audit should not transform both attributed
+statements into unconditional world facts from which arbitrary conclusions could be
+derived; nor does signature authenticity make one statement automatically
+authoritative over the other.

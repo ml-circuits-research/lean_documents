@@ -1,0 +1,6 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target011.lean
+Audit.e19Exception : Audit.urgentException true true true Audit.e19Declaration Audit.e19Commitment Audit.e19Review ∧
+  Audit.e19Review - Audit.e19Commitment = 48 * 60 ∧ Audit.e19Declaration < Audit.e19Commitment
+'Audit.e19Exception' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.218]

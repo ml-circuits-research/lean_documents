@@ -1,0 +1,948 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>08-scanned-inventory-mixed · Evidence-to-Proof Review</title><link rel="stylesheet" href="../assets/style.css"></head><body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../index.html">Evidence-to-Proof Review</a><p>Executed validation · Lean 4.24.0 · 4 November 2026</p><nav aria-label="Validation navigation"><a href="../validation.html">Validation results</a><a href="../verification.html">Argument contract</a><a href="../implementation.html">Implementation plan</a></nav></header><main id="main"><p class="eyebrow">Executed claim audit</p><h1>08-scanned-inventory-mixed</h1><div class="note"><p>Formal results hold in the documented model under its transcription and interpretation assumptions. Documentary support is not a Lean proof. Auxiliary proofs do not certify the underlying event claim.</p></div><p><a href="../../validation/runs/08-scanned-inventory-mixed/audit-report.md">Markdown audit</a> · <a href="../../validation/runs/08-scanned-inventory-mixed/model-notes.md">Model interpretation</a> · <a href="../../validation/runs/08-scanned-inventory-mixed/semantic-review.md">Semantic review</a> · <a href="../../validation/runs/08-scanned-inventory-mixed/proof-results.json">Executed proof results</a> · <a href="../../validation/runs/08-scanned-inventory-mixed/coverage.md">Coverage</a></p><p>Claims: <a href="#C08-ERR-01">C08-ERR-01</a> · <a href="#C08-ERR-02">C08-ERR-02</a> · <a href="#C08-ERR-03">C08-ERR-03</a> · <a href="#C08-ERR-04">C08-ERR-04</a> · <a href="#C08-ERR-05">C08-ERR-05</a> · <a href="#C08-ERR-06">C08-ERR-06</a> · <a href="#C08-ERR-07">C08-ERR-07</a> · <a href="#C08-ERR-08">C08-ERR-08</a> · <a href="#C08-ERR-09">C08-ERR-09</a> · <a href="#C08-ERR-10">C08-ERR-10</a> · <a href="#C08-ERR-11">C08-ERR-11</a> · <a href="#C08-ERR-12">C08-ERR-12</a> · <a href="#C08-ERR-13">C08-ERR-13</a> · <a href="#C08-ERR-14">C08-ERR-14</a></p><article class="card" id="C08-ERR-01"><h2>C08-ERR-01</h2><p><span class="tag">Evidence: supported</span> <span class="tag">Argument: sufficient</span> <span class="tag">Formal: proved</span></p><h3>Exact report claim</h3><blockquote>**C08-ERR-01.** Lot A accepted inbound quantity was 96 units.</blockquote><p>Report anchor: C08-ERR-01</p><h3>Verification problem</h3><p>Does accepted receipt IN-A comprise exactly 96 individual A units?</p><h3>Evidence used</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/06-shipping-tickets-scan.pdf.md">input/sources/06-shipping-tickets-scan.pdf.md</a> · pdf-page-0001-reviewed-0001</p><blockquote><pre>SYNTHETIC NORTH QUAY SHIPPING FORM
+[T01] Movement IN-A; 14 April 2032; clock 09:00; lot A.
+Quantity boxes: 8 sealed full crates. Status: Accepted by Elin Shore.
+All eight crates carried A labels matching the receiving request. The clerk checked
+the twelve-unit crate convention and placed the containers on A shelves. No goods
+were held beyond the fence. The receipt is posted and complete, not a forecast of a
+later delivery. No partial, damaged, or empty-container notation changes the full
+quantity.
+[T01-CHAIN] This form belongs to the registered source packet. The warehouse boundary
+includes W1, W2, and the fenced return cage. Read planned quantities separately from
+actual signed handoffs. Standard full-container quantities follow the supplied stock
+rules. Carrier custody is distinct from customer delivery. Preserve lot identity in
+every calculation; quantities from another lot cannot repair this form. Any partial-
+container notation would override the standard full conversion. A source quotation
+should retain this original PDF path and marker rather than presenting an OCR excerpt
+as an independently signed record.
+[T01-LIMIT] The form supports only its named movement and stages. It does not certify
+all warehouse inventory or resolve independent physical count differences. A
+signature name is an invented evidence field within this exercise, not a claim about
+real handwriting authentication. Missing attachments must remain missing in the audit
+reasoning. Reviewers should explain how the movement changes the relevant balance
+before relying on an aggregate total.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00008.pdf">Original source</a> · Extraction: manual-transcription</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;ocr&quot;,
+  &quot;page&quot;: 1,
+  &quot;origin&quot;: {
+    &quot;format&quot;: &quot;pdf&quot;,
+    &quot;page&quot;: 1,
+    &quot;raster_dpi&quot;: 200,
+    &quot;pixel_to_pdf_points&quot;: &quot;coordinate * 72 / 200&quot;,
+    &quot;total_pages&quot;: 5
+  },
+  &quot;coordinate_unit&quot;: &quot;raster pixels; origin at top-left; bbox = left, top, width, height&quot;,
+  &quot;image_artifact&quot;: &quot;pdf-page-0001-raster.png&quot;,
+  &quot;tsv_artifact&quot;: &quot;pdf-page-0001.tsv&quot;,
+  &quot;ocr_language&quot;: &quot;eng&quot;,
+  &quot;ocr_page_segmentation_mode&quot;: 3,
+  &quot;mean_word_confidence&quot;: 95.25485498297871,
+  &quot;minimum_word_confidence&quot;: 45.506126,
+  &quot;confidence_threshold&quot;: 85.0,
+  &quot;low_confidence_words&quot;: 5,
+  &quot;word_count&quot;: 235,
+  &quot;original&quot;: &quot;input/originals/D00008.pdf&quot;,
+  &quot;original_sha256&quot;: &quot;e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00008/attempt-5bvezmai&quot;,
+  &quot;source_anchor&quot;: &quot;pdf-page-0001&quot;,
+  &quot;root_source_anchor&quot;: &quot;pdf-page-0001&quot;,
+  &quot;reviewer&quot;: &quot;blind-inventory-auditor&quot;,
+  &quot;reason&quot;: &quot;Compared actual raster page: marker T01 and clock 09:00 were misread; eight full crates and accepted status visually confirmed.&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-04T15:04:15.283217+00:00&quot;,
+  &quot;transcription_snapshot&quot;: &quot;input/manual-transcriptions/D00008/27a8dd0b9c08462610f0237b36aebddc5203fb42d149a2cf510126e2ed638151.txt&quot;,
+  &quot;transcription_file_sha256&quot;: &quot;72e3f904601c4f0cb37fa5e793512cff0066e4cfcec41fbcb65926e95cba5a26&quot;,
+  &quot;transcription_normalization&quot;: &quot;UTF-8 BOM and outer whitespace removed from indexed quotation only; original authored bytes retained.&quot;,
+  &quot;coordinate_interpretation&quot;: &quot;Manual transcription is a reviewer-attributed interpretation of the original source, not machine-certified textual fidelity or source authenticity. Inherited coordinates identify the original passage; inherited OCR words and confidence describe the uncorrected extraction, not the manually transcribed wording.&quot;
+}</pre><p>Manual transcription is a reviewer-attributed interpretation of the original source, not machine-certified textual fidelity or source authenticity. Inherited coordinates identify the original passage; inherited OCR words and confidence describe the uncorrected extraction, not the manually transcribed wording.</p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P02</p><blockquote><pre>[R01] Unit definitions and boundary. The inventory boundary consists of rooms W1 and W2 and the fenced return cage at the invented North Quay warehouse. The cutoff is 18:00 on 14 April 2032. All quantities are exact integer individual sleeves, called units. A sealed full crate contains twelve units. A sealed full carton contains six units. A pallet has no fixed conversion. A partial-container label overrides the standard full-container quantity; an empty container contributes zero. All names and transactions in this packet are invented. These rules define the finite exercise and do not prescribe real shipping procedures.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 3,
+  &quot;end_line&quot;: 3,
+  &quot;start_character&quot;: 36,
+  &quot;end_character&quot;: 664,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/02-opening-and-journal.md">input/sources/02-opening-and-journal.md</a> · P02</p><blockquote><pre>[J01] Opening and receipts. At 08:00 lot A opened with 100 units and lot B with 40 units. At 09:00 receipt IN-A accepted eight sealed full crates of A. At 09:30 receipt IN-B accepted two sealed full cartons of B. Clerk Elin Shore accepted custody at the gate. Each container was confirmed full, without a partial notation. These are posted accepted receipts, not expected procurement deliveries. No other opening adjustment or accepted inbound movement for A or B occurred before cutoff. The completeness statement is restricted to the named interval and lots. It does not establish any opening quantity for D or repair the C import anomaly.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00004.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 3,
+  &quot;end_line&quot;: 3,
+  &quot;start_character&quot;: 51,
+  &quot;end_character&quot;: 692,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00004.md&quot;,
+  &quot;original_sha256&quot;: &quot;078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00004/attempt-x0nfkf9z&quot;
+}</pre><p></p></details><h3>Rules</h3><ul><li>Use R01 exact full-container conversion, R02 actual custody movements and R03 same-lot availability where applicable.</li><li>R04/K03 completeness covers A/B movements for the stated day only; equal-authority counts remain conflicting and missing D/C evidence is not negative fact.</li></ul><h3>Assumptions</h3><ul><li>The synthetic source authority and finite warehouse boundary are accepted as stated; no source authenticity outside the fixture is certified.</li></ul><h3>Reasoning</h3><ol><li>1. Eight full crates were actually accepted; R01 assigns twelve units per full crate.</li><li>2. Eight times twelve is 96, with no partial-container exception.</li></ol><h3>Limits</h3><ul><li>Results concern the specified lots, warehouse boundary and 18:00 cutoff on 14 April 2032. Book arithmetic does not select the true physical A count or resolve D acceptance.</li><li>Native pages 1–4 were visually checked and corrected through retained manual transcriptions; page 5 retains quantity/acceptance uncertainty.</li></ul><h3>Formal evidence</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/models/Audit.lean">Audit.claim01</a> — supports</p><pre>Audit.inboundA = 96</pre><h3>Recommended correction or next evidence</h3><p>Accept 96 inbound A units; do not confuse this movement quantity with closing stock.</p></article><article class="card" id="C08-ERR-02"><h2>C08-ERR-02</h2><p><span class="tag">Evidence: refuted</span> <span class="tag">Argument: invalid_inference</span> <span class="tag">Formal: refuted</span></p><h3>Exact report claim</h3><blockquote>**C08-ERR-02.** Lot B accepted inbound quantity was 24 units because a carton equals a crate.</blockquote><p>Report anchor: C08-ERR-02</p><h3>Verification problem</h3><p>Does IN-B contain 24 units, and are cartons equivalent to crates?</p><h3>Evidence used</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/06-shipping-tickets-scan.pdf.md">input/sources/06-shipping-tickets-scan.pdf.md</a> · pdf-page-0002-reviewed-0001</p><blockquote><pre>SYNTHETIC NORTH QUAY SHIPPING FORM
+[T02] Movement IN-B; 14 April 2032; clock 09:30; lot B.
+Quantity boxes: 2 sealed full cartons. Status: Accepted by Elin Shore.
+Each carton carried a B label and the standard six-unit quantity. The clerk separated
+this receipt from the eight units reserved for the next-day order. No partial
+notation appears. The two accepted cartons belong to B even though the sleeve
+description resembles A. A crate conversion would attach the wrong unit factor to
+this source.
+[T02-CHAIN] This form belongs to the registered source packet. The warehouse boundary
+includes W1, W2, and the fenced return cage. Read planned quantities separately from
+actual signed handoffs. Standard full-container quantities follow the supplied stock
+rules. Carrier custody is distinct from customer delivery. Preserve lot identity in
+every calculation; quantities from another lot cannot repair this form. Any partial-
+container notation would override the standard full conversion. A source quotation
+should retain this original PDF path and marker rather than presenting an OCR excerpt
+as an independently signed record.
+[T02-LIMIT] The form supports only its named movement and stages. It does not certify
+all warehouse inventory or resolve independent physical count differences. A
+signature name is an invented evidence field within this exercise, not a claim about
+real handwriting authentication. Missing attachments must remain missing in the audit
+reasoning. Reviewers should explain how the movement changes the relevant balance
+before relying on an aggregate total.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00008.pdf">Original source</a> · Extraction: manual-transcription</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;ocr&quot;,
+  &quot;page&quot;: 2,
+  &quot;origin&quot;: {
+    &quot;format&quot;: &quot;pdf&quot;,
+    &quot;page&quot;: 2,
+    &quot;raster_dpi&quot;: 200,
+    &quot;pixel_to_pdf_points&quot;: &quot;coordinate * 72 / 200&quot;,
+    &quot;total_pages&quot;: 5
+  },
+  &quot;coordinate_unit&quot;: &quot;raster pixels; origin at top-left; bbox = left, top, width, height&quot;,
+  &quot;image_artifact&quot;: &quot;pdf-page-0002-raster.png&quot;,
+  &quot;tsv_artifact&quot;: &quot;pdf-page-0002.tsv&quot;,
+  &quot;ocr_language&quot;: &quot;eng&quot;,
+  &quot;ocr_page_segmentation_mode&quot;: 3,
+  &quot;mean_word_confidence&quot;: 94.90358588559322,
+  &quot;minimum_word_confidence&quot;: 8.591576,
+  &quot;confidence_threshold&quot;: 85.0,
+  &quot;low_confidence_words&quot;: 4,
+  &quot;word_count&quot;: 236,
+  &quot;original&quot;: &quot;input/originals/D00008.pdf&quot;,
+  &quot;original_sha256&quot;: &quot;e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00008/attempt-5bvezmai&quot;,
+  &quot;source_anchor&quot;: &quot;pdf-page-0002&quot;,
+  &quot;root_source_anchor&quot;: &quot;pdf-page-0002&quot;,
+  &quot;reviewer&quot;: &quot;blind-inventory-auditor&quot;,
+  &quot;reason&quot;: &quot;Compared original raster page; corrected marker and clock OCR errors; material quantity, container, actual handoff and custody text visually verified.&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-04T15:04:21.670067+00:00&quot;,
+  &quot;transcription_snapshot&quot;: &quot;input/manual-transcriptions/D00008/f2c73ff169fa72a87f8a86ce29319fba80b81b376e3a4b6229800b78686ff70a.txt&quot;,
+  &quot;transcription_file_sha256&quot;: &quot;62466a0a4466eabee04c4d14d61bc57708d7a1914a5dd71fb33fc3cfbd93898d&quot;,
+  &quot;transcription_normalization&quot;: &quot;UTF-8 BOM and outer whitespace removed from indexed quotation only; original authored bytes retained.&quot;,
+  &quot;coordinate_interpretation&quot;: &quot;Manual transcription is a reviewer-attributed interpretation of the original source, not machine-certified textual fidelity or source authenticity. Inherited coordinates identify the original passage; inherited OCR words and confidence describe the uncorrected extraction, not the manually transcribed wording.&quot;
+}</pre><p>Manual transcription is a reviewer-attributed interpretation of the original source, not machine-certified textual fidelity or source authenticity. Inherited coordinates identify the original passage; inherited OCR words and confidence describe the uncorrected extraction, not the manually transcribed wording.</p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P02</p><blockquote><pre>[R01] Unit definitions and boundary. The inventory boundary consists of rooms W1 and W2 and the fenced return cage at the invented North Quay warehouse. The cutoff is 18:00 on 14 April 2032. All quantities are exact integer individual sleeves, called units. A sealed full crate contains twelve units. A sealed full carton contains six units. A pallet has no fixed conversion. A partial-container label overrides the standard full-container quantity; an empty container contributes zero. All names and transactions in this packet are invented. These rules define the finite exercise and do not prescribe real shipping procedures.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 3,
+  &quot;end_line&quot;: 3,
+  &quot;start_character&quot;: 36,
+  &quot;end_character&quot;: 664,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/02-opening-and-journal.md">input/sources/02-opening-and-journal.md</a> · P02</p><blockquote><pre>[J01] Opening and receipts. At 08:00 lot A opened with 100 units and lot B with 40 units. At 09:00 receipt IN-A accepted eight sealed full crates of A. At 09:30 receipt IN-B accepted two sealed full cartons of B. Clerk Elin Shore accepted custody at the gate. Each container was confirmed full, without a partial notation. These are posted accepted receipts, not expected procurement deliveries. No other opening adjustment or accepted inbound movement for A or B occurred before cutoff. The completeness statement is restricted to the named interval and lots. It does not establish any opening quantity for D or repair the C import anomaly.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00004.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 3,
+  &quot;end_line&quot;: 3,
+  &quot;start_character&quot;: 51,
+  &quot;end_character&quot;: 692,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00004.md&quot;,
+  &quot;original_sha256&quot;: &quot;078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00004/attempt-x0nfkf9z&quot;
+}</pre><p></p></details><h3>Rules</h3><ul><li>Use R01 exact full-container conversion, R02 actual custody movements and R03 same-lot availability where applicable.</li><li>R04/K03 completeness covers A/B movements for the stated day only; equal-authority counts remain conflicting and missing D/C evidence is not negative fact.</li></ul><h3>Assumptions</h3><ul><li>The synthetic source authority and finite warehouse boundary are accepted as stated; no source authenticity outside the fixture is certified.</li></ul><h3>Reasoning</h3><ol><li>1. The signed accepted receipt is two full cartons, not crates.</li><li>2. R01 assigns six units per carton and twelve per crate. Thus B inbound is 12, not 24; the claimed conversion uses the wrong container.</li></ol><h3>Limits</h3><ul><li>Results concern the specified lots, warehouse boundary and 18:00 cutoff on 14 April 2032. Book arithmetic does not select the true physical A count or resolve D acceptance.</li><li>Native pages 1–4 were visually checked and corrected through retained manual transcriptions; page 5 retains quantity/acceptance uncertainty.</li></ul><h3>Formal evidence</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/models/Audit.lean">Audit.claim02</a> — refutes</p><pre>Audit.inboundB ≠ 24</pre><h3>Recommended correction or next evidence</h3><p>Correct B inbound to 12 units and preserve the six-unit carton factor.</p></article><article class="card" id="C08-ERR-03"><h2>C08-ERR-03</h2><p><span class="tag">Evidence: refuted</span> <span class="tag">Argument: invalid_inference</span> <span class="tag">Formal: refuted</span></p><h3>Exact report claim</h3><blockquote>**C08-ERR-03.** Lot A book on-hand was 136 units.</blockquote><p>Report anchor: C08-ERR-03</p><h3>Verification problem</h3><p>Is A book on-hand 136 units at the stated cutoff?</p><h3>Evidence used</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/02-opening-and-journal.md">input/sources/02-opening-and-journal.md</a> · P02</p><blockquote><pre>[J01] Opening and receipts. At 08:00 lot A opened with 100 units and lot B with 40 units. At 09:00 receipt IN-A accepted eight sealed full crates of A. At 09:30 receipt IN-B accepted two sealed full cartons of B. Clerk Elin Shore accepted custody at the gate. Each container was confirmed full, without a partial notation. These are posted accepted receipts, not expected procurement deliveries. No other opening adjustment or accepted inbound movement for A or B occurred before cutoff. The completeness statement is restricted to the named interval and lots. It does not establish any opening quantity for D or repair the C import anomaly.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00004.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 3,
+  &quot;end_line&quot;: 3,
+  &quot;start_character&quot;: 51,
+  &quot;end_character&quot;: 692,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00004.md&quot;,
+  &quot;original_sha256&quot;: &quot;078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00004/attempt-x0nfkf9z&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/02-opening-and-journal.md">input/sources/02-opening-and-journal.md</a> · P03</p><blockquote><pre>[J02] A departure, delivery, and return. OUT-A at 11:00 transferred five full crates to carrier Jun Vale. The customer accepted four crates and declined the fifth. At 16:00 Jun returned the still-sealed fifth crate; Elin accepted it inside the fenced return cage. The entire five-crate departure remains recorded, followed by the separate one-crate return. There were no other A departures or returns that day. At 17:00 seven units already on a W1 shelf were quarantined. They remained inside the inventory boundary. A reviewer must therefore distinguish dispatched quantity, delivered quantity, returned quantity, on-hand, and available stock. None of these labels can be substituted merely because they refer to the same order.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00004.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 5,
+  &quot;end_line&quot;: 5,
+  &quot;start_character&quot;: 694,
+  &quot;end_character&quot;: 1423,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00004.md&quot;,
+  &quot;original_sha256&quot;: &quot;078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00004/attempt-x0nfkf9z&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P02</p><blockquote><pre>[R01] Unit definitions and boundary. The inventory boundary consists of rooms W1 and W2 and the fenced return cage at the invented North Quay warehouse. The cutoff is 18:00 on 14 April 2032. All quantities are exact integer individual sleeves, called units. A sealed full crate contains twelve units. A sealed full carton contains six units. A pallet has no fixed conversion. A partial-container label overrides the standard full-container quantity; an empty container contributes zero. All names and transactions in this packet are invented. These rules define the finite exercise and do not prescribe real shipping procedures.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 3,
+  &quot;end_line&quot;: 3,
+  &quot;start_character&quot;: 36,
+  &quot;end_character&quot;: 664,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P03</p><blockquote><pre>[R02] Movement semantics. Opening stock plus accepted inbound movements minus completed outbound movements plus accepted returns determines book on-hand. A printed ticket, order, reservation, or pick request changes no physical inventory merely by existing. Departure occurs at the signed actual custody handoff across the boundary. Customer delivery is a separate later event. A carrier can hold inventory that has already departed but is not yet delivered. Return increases on-hand when the receiving custodian accepts the goods back across the boundary. Returned goods in the fenced cage are inside the boundary even before reshelving. An accepted return is a separate movement, not a reason to erase the original departure.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 5,
+  &quot;end_line&quot;: 5,
+  &quot;start_character&quot;: 666,
+  &quot;end_character&quot;: 1393,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P05</p><blockquote><pre>[R04] Evidence scope. Signed actual transfer receipts take precedence over unsigned planned quantities for determining completed custody movements. The journal and register are complete for A and B movements only within the stated day. No such completeness applies to D. Equal-authority physical counts of the same boundary and cutoff remain competing evidence unless a recount or authorized correction resolves them. A later filename does not give precedence. A pale or obscured numeral in a scan requires visual review and corroboration. An OCR guess is not a signed quantity. If available evidence does not establish a unique accepted amount, report the missing argument without inventing a number or asserting that the shipment necessarily failed.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 9,
+  &quot;end_line&quot;: 9,
+  &quot;start_character&quot;: 2118,
+  &quot;end_character&quot;: 2869,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/05-custody-register.md">input/sources/05-custody-register.md</a> · P04</p><blockquote><pre>[K03] Bounded completeness. The register and journal list all accepted A and B movements for the stated day. This permits absence of further A or B movements to be used in exact book arithmetic. It does not establish complete D custody, complete C physical reconciliation, or complete warehouse activity over other dates. The A physical count conflict remains unresolved despite complete movement records. Completeness of one evidence type is not an assertion that every other evidence type agrees. A report that says every lot was reconciled therefore needs an argument beyond the limited A/B movement inventory and must confront the explicit unresolved cases.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00007.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 7,
+  &quot;end_line&quot;: 7,
+  &quot;start_character&quot;: 1377,
+  &quot;end_character&quot;: 2038,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00007.md&quot;,
+  &quot;original_sha256&quot;: &quot;54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00007/attempt-ly8ukxxe&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/06-shipping-tickets-scan.pdf.md">input/sources/06-shipping-tickets-scan.pdf.md</a> · pdf-page-0003-reviewed-0001</p><blockquote><pre>SYNTHETIC NORTH QUAY SHIPPING FORM
+[T03] Movement OUT-A / RET-A; 14 April 2032; clock 11:00 / 16:00; lot A.
+Quantity boxes: 5 full crates out; 1 full crate returned. Status: Carrier Jun Vale /
+receiver Elin Shore.
+The carrier accepted five crates before departure. The customer accepted four. The
+fifth remained sealed in the vehicle and returned that afternoon. Elin signed the
+return after placing it inside the fenced cage. The full departure and the separate
+return are both operative entries. Erasing the departure and adding a return would
+count the same reversal twice.
+[T03-CHAIN] This form belongs to the registered source packet. The warehouse boundary
+includes W1, W2, and the fenced return cage. Read planned quantities separately from
+actual signed handoffs. Standard full-container quantities follow the supplied stock
+rules. Carrier custody is distinct from customer delivery. Preserve lot identity in
+every calculation; quantities from another lot cannot repair this form. Any partial-
+container notation would override the standard full conversion. A source quotation
+should retain this original PDF path and marker rather than presenting an OCR excerpt
+as an independently signed record.
+[T03-LIMIT] The form supports only its named movement and stages. It does not certify
+all warehouse inventory or resolve independent physical count differences. A
+signature name is an invented evidence field within this exercise, not a claim about
+real handwriting authentication. Missing attachments must remain missing in the audit
+reasoning. Reviewers should explain how the movement changes the relevant balance
+before relying on an aggregate total.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00008.pdf">Original source</a> · Extraction: manual-transcription</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;ocr&quot;,
+  &quot;page&quot;: 3,
+  &quot;origin&quot;: {
+    &quot;format&quot;: &quot;pdf&quot;,
+    &quot;page&quot;: 3,
+    &quot;raster_dpi&quot;: 200,
+    &quot;pixel_to_pdf_points&quot;: &quot;coordinate * 72 / 200&quot;,
+    &quot;total_pages&quot;: 5
+  },
+  &quot;coordinate_unit&quot;: &quot;raster pixels; origin at top-left; bbox = left, top, width, height&quot;,
+  &quot;image_artifact&quot;: &quot;pdf-page-0003-raster.png&quot;,
+  &quot;tsv_artifact&quot;: &quot;pdf-page-0003.tsv&quot;,
+  &quot;ocr_language&quot;: &quot;eng&quot;,
+  &quot;ocr_page_segmentation_mode&quot;: 3,
+  &quot;mean_word_confidence&quot;: 95.59391616867471,
+  &quot;minimum_word_confidence&quot;: 44.648014,
+  &quot;confidence_threshold&quot;: 85.0,
+  &quot;low_confidence_words&quot;: 3,
+  &quot;word_count&quot;: 249,
+  &quot;original&quot;: &quot;input/originals/D00008.pdf&quot;,
+  &quot;original_sha256&quot;: &quot;e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00008/attempt-5bvezmai&quot;,
+  &quot;source_anchor&quot;: &quot;pdf-page-0003&quot;,
+  &quot;root_source_anchor&quot;: &quot;pdf-page-0003&quot;,
+  &quot;reviewer&quot;: &quot;blind-inventory-auditor&quot;,
+  &quot;reason&quot;: &quot;Compared original raster page; corrected marker and clock OCR errors; material quantity, container, actual handoff and custody text visually verified.&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-04T15:04:21.811157+00:00&quot;,
+  &quot;transcription_snapshot&quot;: &quot;input/manual-transcriptions/D00008/74d057c1ffd7a573949b5264432bbf95d0ac166f21a1a683072c9f16d09c7d65.txt&quot;,
+  &quot;transcription_file_sha256&quot;: &quot;8cb046c528b21f24a3e2768bfed2e1a4d71a489c47e9007ea0be72fbf2bfc611&quot;,
+  &quot;transcription_normalization&quot;: &quot;UTF-8 BOM and outer whitespace removed from indexed quotation only; original authored bytes retained.&quot;,
+  &quot;coordinate_interpretation&quot;: &quot;Manual transcription is a reviewer-attributed interpretation of the original source, not machine-certified textual fidelity or source authenticity. Inherited coordinates identify the original passage; inherited OCR words and confidence describe the uncorrected extraction, not the manually transcribed wording.&quot;
+}</pre><p>Manual transcription is a reviewer-attributed interpretation of the original source, not machine-certified textual fidelity or source authenticity. Inherited coordinates identify the original passage; inherited OCR words and confidence describe the uncorrected extraction, not the manually transcribed wording.</p></details><h3>Rules</h3><ul><li>Use R01 exact full-container conversion, R02 actual custody movements and R03 same-lot availability where applicable.</li><li>R04/K03 completeness covers A/B movements for the stated day only; equal-authority counts remain conflicting and missing D/C evidence is not negative fact.</li></ul><h3>Assumptions</h3><ul><li>The synthetic source authority and finite warehouse boundary are accepted as stated; no source authenticity outside the fixture is certified.</li></ul><h3>Reasoning</h3><ol><li>1. Start with 100; add 96 accepted inbound; subtract 60 actual outbound; add 12 accepted return.</li><li>2. The returned crate is inside the fenced cage boundary. Complete A movements give 148; 136 omits the separately accepted return.</li></ol><h3>Limits</h3><ul><li>Results concern the specified lots, warehouse boundary and 18:00 cutoff on 14 April 2032. Book arithmetic does not select the true physical A count or resolve D acceptance.</li><li>Native pages 1–4 were visually checked and corrected through retained manual transcriptions; page 5 retains quantity/acceptance uncertainty.</li></ul><h3>Formal evidence</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/models/Audit.lean">Audit.claim03</a> — refutes</p><pre>Audit.bookA ≠ 136</pre><h3>Recommended correction or next evidence</h3><p>Correct book A on-hand to 148; retain the departure and its separate return.</p></article><article class="card" id="C08-ERR-04"><h2>C08-ERR-04</h2><p><span class="tag">Evidence: refuted</span> <span class="tag">Argument: invalid_inference</span> <span class="tag">Formal: refuted</span></p><h3>Exact report claim</h3><blockquote>**C08-ERR-04.** Lot A available book stock was 148 units because quarantine remains on site.</blockquote><p>Report anchor: C08-ERR-04</p><h3>Verification problem</h3><p>Does physical presence make A available stock equal its 148-unit book balance?</p><h3>Evidence used</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P03</p><blockquote><pre>[R02] Movement semantics. Opening stock plus accepted inbound movements minus completed outbound movements plus accepted returns determines book on-hand. A printed ticket, order, reservation, or pick request changes no physical inventory merely by existing. Departure occurs at the signed actual custody handoff across the boundary. Customer delivery is a separate later event. A carrier can hold inventory that has already departed but is not yet delivered. Return increases on-hand when the receiving custodian accepts the goods back across the boundary. Returned goods in the fenced cage are inside the boundary even before reshelving. An accepted return is a separate movement, not a reason to erase the original departure.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 5,
+  &quot;end_line&quot;: 5,
+  &quot;start_character&quot;: 666,
+  &quot;end_character&quot;: 1393,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P04</p><blockquote><pre>[R03] Lot identity and availability. Lots A, B, C, and D are separate even though their sleeves share a catalog description. An excess in one lot cannot repair a deficit in another. Available stock is book on-hand minus quarantined units minus separately reserved units, with no overlapping deductions. The A quarantine contains seven units. The B reservation contains eight different units. Quarantine and reservation change internal status without transferring custody. Physical presence, book balance, and available quantity are different predicates. A physical count may disagree with a journal-derived balance, and the disagreement must remain visible rather than silently redefining one quantity to match the other.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 7,
+  &quot;end_line&quot;: 7,
+  &quot;start_character&quot;: 1395,
+  &quot;end_character&quot;: 2116,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/02-opening-and-journal.md">input/sources/02-opening-and-journal.md</a> · P02</p><blockquote><pre>[J01] Opening and receipts. At 08:00 lot A opened with 100 units and lot B with 40 units. At 09:00 receipt IN-A accepted eight sealed full crates of A. At 09:30 receipt IN-B accepted two sealed full cartons of B. Clerk Elin Shore accepted custody at the gate. Each container was confirmed full, without a partial notation. These are posted accepted receipts, not expected procurement deliveries. No other opening adjustment or accepted inbound movement for A or B occurred before cutoff. The completeness statement is restricted to the named interval and lots. It does not establish any opening quantity for D or repair the C import anomaly.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00004.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 3,
+  &quot;end_line&quot;: 3,
+  &quot;start_character&quot;: 51,
+  &quot;end_character&quot;: 692,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00004.md&quot;,
+  &quot;original_sha256&quot;: &quot;078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00004/attempt-x0nfkf9z&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/02-opening-and-journal.md">input/sources/02-opening-and-journal.md</a> · P03</p><blockquote><pre>[J02] A departure, delivery, and return. OUT-A at 11:00 transferred five full crates to carrier Jun Vale. The customer accepted four crates and declined the fifth. At 16:00 Jun returned the still-sealed fifth crate; Elin accepted it inside the fenced return cage. The entire five-crate departure remains recorded, followed by the separate one-crate return. There were no other A departures or returns that day. At 17:00 seven units already on a W1 shelf were quarantined. They remained inside the inventory boundary. A reviewer must therefore distinguish dispatched quantity, delivered quantity, returned quantity, on-hand, and available stock. None of these labels can be substituted merely because they refer to the same order.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00004.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 5,
+  &quot;end_line&quot;: 5,
+  &quot;start_character&quot;: 694,
+  &quot;end_character&quot;: 1423,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00004.md&quot;,
+  &quot;original_sha256&quot;: &quot;078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00004/attempt-x0nfkf9z&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/05-custody-register.md">input/sources/05-custody-register.md</a> · P04</p><blockquote><pre>[K03] Bounded completeness. The register and journal list all accepted A and B movements for the stated day. This permits absence of further A or B movements to be used in exact book arithmetic. It does not establish complete D custody, complete C physical reconciliation, or complete warehouse activity over other dates. The A physical count conflict remains unresolved despite complete movement records. Completeness of one evidence type is not an assertion that every other evidence type agrees. A report that says every lot was reconciled therefore needs an argument beyond the limited A/B movement inventory and must confront the explicit unresolved cases.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00007.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 7,
+  &quot;end_line&quot;: 7,
+  &quot;start_character&quot;: 1377,
+  &quot;end_character&quot;: 2038,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00007.md&quot;,
+  &quot;original_sha256&quot;: &quot;54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00007/attempt-ly8ukxxe&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/07-bin-and-exception-register.md">input/sources/07-bin-and-exception-register.md</a> · P03</p><blockquote><pre>[BIN02] Quarantine ticket Q-A-7. At 17:00 Elin attached a hold label to seven loose A units on shelf A1 after noticing cosmetic sleeve marks. The ticket states that those seven units remain physically in W1 and are excluded from availability pending review. It does not order disposal, destruction, shipment, or a transfer to another lot. The label applies to individual units, not seven crates. No later release from quarantine occurred before cutoff. The physical count sheets both expressly included the held units. The record supports a status deduction from available A stock without decrementing A book on-hand.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00009.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 5,
+  &quot;end_line&quot;: 5,
+  &quot;start_character&quot;: 712,
+  &quot;end_character&quot;: 1329,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00009.md&quot;,
+  &quot;original_sha256&quot;: &quot;17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00009/attempt-2lly49hx&quot;
+}</pre><p></p></details><h3>Rules</h3><ul><li>Use R01 exact full-container conversion, R02 actual custody movements and R03 same-lot availability where applicable.</li><li>R04/K03 completeness covers A/B movements for the stated day only; equal-authority counts remain conflicting and missing D/C evidence is not negative fact.</li></ul><h3>Assumptions</h3><ul><li>The synthetic source authority and finite warehouse boundary are accepted as stated; no source authenticity outside the fixture is certified.</li></ul><h3>Reasoning</h3><ol><li>1. A book on-hand is 148 after all complete movements.</li><li>2. Seven quarantined A units stay on site but R03 excludes them from availability; BIN02 records no release. Availability is 148 minus 7 = 141.</li></ol><h3>Limits</h3><ul><li>Results concern the specified lots, warehouse boundary and 18:00 cutoff on 14 April 2032. Book arithmetic does not select the true physical A count or resolve D acceptance.</li><li>Formal checks prove encoded targets only; unsupported physical facts are not inferred from missing evidence.</li></ul><h3>Formal evidence</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/models/Audit.lean">Audit.claim04</a> — refutes</p><pre>Audit.availableA ≠ 148</pre><h3>Recommended correction or next evidence</h3><p>Report 141 available A units while keeping book on-hand 148.</p></article><article class="card" id="C08-ERR-05"><h2>C08-ERR-05</h2><p><span class="tag">Evidence: refuted</span> <span class="tag">Argument: invalid_inference</span> <span class="tag">Formal: refuted</span></p><h3>Exact report claim</h3><blockquote>**C08-ERR-05.** Lot B book on-hand was 34 units after all three requested cartons shipped.</blockquote><p>Report anchor: C08-ERR-05</p><h3>Verification problem</h3><p>Did all three requested B cartons ship, leaving book on-hand 34?</p><h3>Evidence used</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/02-opening-and-journal.md">input/sources/02-opening-and-journal.md</a> · P02</p><blockquote><pre>[J01] Opening and receipts. At 08:00 lot A opened with 100 units and lot B with 40 units. At 09:00 receipt IN-A accepted eight sealed full crates of A. At 09:30 receipt IN-B accepted two sealed full cartons of B. Clerk Elin Shore accepted custody at the gate. Each container was confirmed full, without a partial notation. These are posted accepted receipts, not expected procurement deliveries. No other opening adjustment or accepted inbound movement for A or B occurred before cutoff. The completeness statement is restricted to the named interval and lots. It does not establish any opening quantity for D or repair the C import anomaly.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00004.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 3,
+  &quot;end_line&quot;: 3,
+  &quot;start_character&quot;: 51,
+  &quot;end_character&quot;: 692,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00004.md&quot;,
+  &quot;original_sha256&quot;: &quot;078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00004/attempt-x0nfkf9z&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/02-opening-and-journal.md">input/sources/02-opening-and-journal.md</a> · P04</p><blockquote><pre>[J03] B request and actual handoff. OUT-B requested three cartons, but the signed carrier handoff at 12:00 records two full cartons. The remaining carton stayed on shelf B4 because its packaging label was missing. At 15:00 that unfilled order quantity was canceled. It never crossed the warehouse boundary. A separate next-day order reserved eight other B units, distinct from both the dispatched cartons and the canceled request. There was no B return and no need to invent one: the canceled quantity never left. The A quarantine affects no B stock. The B journal contains no other completed inbound, outbound, or return movements within the cutoff interval.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00004.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 7,
+  &quot;end_line&quot;: 7,
+  &quot;start_character&quot;: 1425,
+  &quot;end_character&quot;: 2084,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00004.md&quot;,
+  &quot;original_sha256&quot;: &quot;078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00004/attempt-x0nfkf9z&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P02</p><blockquote><pre>[R01] Unit definitions and boundary. The inventory boundary consists of rooms W1 and W2 and the fenced return cage at the invented North Quay warehouse. The cutoff is 18:00 on 14 April 2032. All quantities are exact integer individual sleeves, called units. A sealed full crate contains twelve units. A sealed full carton contains six units. A pallet has no fixed conversion. A partial-container label overrides the standard full-container quantity; an empty container contributes zero. All names and transactions in this packet are invented. These rules define the finite exercise and do not prescribe real shipping procedures.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 3,
+  &quot;end_line&quot;: 3,
+  &quot;start_character&quot;: 36,
+  &quot;end_character&quot;: 664,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P03</p><blockquote><pre>[R02] Movement semantics. Opening stock plus accepted inbound movements minus completed outbound movements plus accepted returns determines book on-hand. A printed ticket, order, reservation, or pick request changes no physical inventory merely by existing. Departure occurs at the signed actual custody handoff across the boundary. Customer delivery is a separate later event. A carrier can hold inventory that has already departed but is not yet delivered. Return increases on-hand when the receiving custodian accepts the goods back across the boundary. Returned goods in the fenced cage are inside the boundary even before reshelving. An accepted return is a separate movement, not a reason to erase the original departure.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 5,
+  &quot;end_line&quot;: 5,
+  &quot;start_character&quot;: 666,
+  &quot;end_character&quot;: 1393,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/05-custody-register.md">input/sources/05-custody-register.md</a> · P04</p><blockquote><pre>[K03] Bounded completeness. The register and journal list all accepted A and B movements for the stated day. This permits absence of further A or B movements to be used in exact book arithmetic. It does not establish complete D custody, complete C physical reconciliation, or complete warehouse activity over other dates. The A physical count conflict remains unresolved despite complete movement records. Completeness of one evidence type is not an assertion that every other evidence type agrees. A report that says every lot was reconciled therefore needs an argument beyond the limited A/B movement inventory and must confront the explicit unresolved cases.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00007.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 7,
+  &quot;end_line&quot;: 7,
+  &quot;start_character&quot;: 1377,
+  &quot;end_character&quot;: 2038,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00007.md&quot;,
+  &quot;original_sha256&quot;: &quot;54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00007/attempt-ly8ukxxe&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/06-shipping-tickets-scan.pdf.md">input/sources/06-shipping-tickets-scan.pdf.md</a> · pdf-page-0004-reviewed-0001</p><blockquote><pre>SYNTHETIC NORTH QUAY SHIPPING FORM
+[T04] Movement OUT-B; 14 April 2032; clock 12:00; lot B.
+Quantity boxes: 3 cartons requested; 2 full cartons handed over. Status: Carrier Jun
+Vale signed actual handoff.
+The request box was printed before loading and shows three cartons. The signed actual
+box shows two. The remaining carton stayed on shelf because its label was missing. At
+15:00 the unfilled remainder was canceled. No customer return occurred for that
+carton. The two actually transferred cartons were delivered, but the original three-
+carton order was not fully delivered.
+[T04-CHAIN] This form belongs to the registered source packet. The warehouse boundary
+includes W1, W2, and the fenced return cage. Read planned quantities separately from
+actual signed handoffs. Standard full-container quantities follow the supplied stock
+rules. Carrier custody is distinct from customer delivery. Preserve lot identity in
+every calculation; quantities from another lot cannot repair this form. Any partial-
+container notation would override the standard full conversion. A source quotation
+should retain this original PDF path and marker rather than presenting an OCR excerpt
+as an independently signed record.
+[T04-LIMIT] The form supports only its named movement and stages. It does not certify
+all warehouse inventory or resolve independent physical count differences. A
+signature name is an invented evidence field within this exercise, not a claim about
+real handwriting authentication. Missing attachments must remain missing in the audit
+reasoning. Reviewers should explain how the movement changes the relevant balance
+before relying on an aggregate total.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00008.pdf">Original source</a> · Extraction: manual-transcription</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;ocr&quot;,
+  &quot;page&quot;: 4,
+  &quot;origin&quot;: {
+    &quot;format&quot;: &quot;pdf&quot;,
+    &quot;page&quot;: 4,
+    &quot;raster_dpi&quot;: 200,
+    &quot;pixel_to_pdf_points&quot;: &quot;coordinate * 72 / 200&quot;,
+    &quot;total_pages&quot;: 5
+  },
+  &quot;coordinate_unit&quot;: &quot;raster pixels; origin at top-left; bbox = left, top, width, height&quot;,
+  &quot;image_artifact&quot;: &quot;pdf-page-0004-raster.png&quot;,
+  &quot;tsv_artifact&quot;: &quot;pdf-page-0004.tsv&quot;,
+  &quot;ocr_language&quot;: &quot;eng&quot;,
+  &quot;ocr_page_segmentation_mode&quot;: 3,
+  &quot;mean_word_confidence&quot;: 95.65679095528456,
+  &quot;minimum_word_confidence&quot;: 65.657257,
+  &quot;confidence_threshold&quot;: 85.0,
+  &quot;low_confidence_words&quot;: 4,
+  &quot;word_count&quot;: 246,
+  &quot;original&quot;: &quot;input/originals/D00008.pdf&quot;,
+  &quot;original_sha256&quot;: &quot;e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00008/attempt-5bvezmai&quot;,
+  &quot;source_anchor&quot;: &quot;pdf-page-0004&quot;,
+  &quot;root_source_anchor&quot;: &quot;pdf-page-0004&quot;,
+  &quot;reviewer&quot;: &quot;blind-inventory-auditor&quot;,
+  &quot;reason&quot;: &quot;Compared original raster page; corrected marker and clock OCR errors; material quantity, container, actual handoff and custody text visually verified.&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-04T15:04:21.953190+00:00&quot;,
+  &quot;transcription_snapshot&quot;: &quot;input/manual-transcriptions/D00008/653097fa4c7e85eb684393bda9dd0a3959fec379a0851eefccc17e303dbea4da.txt&quot;,
+  &quot;transcription_file_sha256&quot;: &quot;10e99572a3bd9fb6e15426d1069925eeb7e516a18cc3c2aa41bfa9b3fb21c681&quot;,
+  &quot;transcription_normalization&quot;: &quot;UTF-8 BOM and outer whitespace removed from indexed quotation only; original authored bytes retained.&quot;,
+  &quot;coordinate_interpretation&quot;: &quot;Manual transcription is a reviewer-attributed interpretation of the original source, not machine-certified textual fidelity or source authenticity. Inherited coordinates identify the original passage; inherited OCR words and confidence describe the uncorrected extraction, not the manually transcribed wording.&quot;
+}</pre><p>Manual transcription is a reviewer-attributed interpretation of the original source, not machine-certified textual fidelity or source authenticity. Inherited coordinates identify the original passage; inherited OCR words and confidence describe the uncorrected extraction, not the manually transcribed wording.</p></details><h3>Rules</h3><ul><li>Use R01 exact full-container conversion, R02 actual custody movements and R03 same-lot availability where applicable.</li><li>R04/K03 completeness covers A/B movements for the stated day only; equal-authority counts remain conflicting and missing D/C evidence is not negative fact.</li></ul><h3>Assumptions</h3><ul><li>The synthetic source authority and finite warehouse boundary are accepted as stated; no source authenticity outside the fixture is certified.</li></ul><h3>Reasoning</h3><ol><li>1. Only two full cartons crossed the signed actual handoff; the third remained on the shelf and was canceled.</li><li>2. Book B is 40 + 12 - 12 = 40. Subtracting requested rather than actual cartons produces the erroneous 34.</li></ol><h3>Limits</h3><ul><li>Results concern the specified lots, warehouse boundary and 18:00 cutoff on 14 April 2032. Book arithmetic does not select the true physical A count or resolve D acceptance.</li><li>Native pages 1–4 were visually checked and corrected through retained manual transcriptions; page 5 retains quantity/acceptance uncertainty.</li></ul><h3>Formal evidence</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/models/Audit.lean">Audit.claim05</a> — refutes</p><pre>Audit.bookB ≠ 34 ∧ Audit.deliveredB ≠ Audit.requestedB</pre><h3>Recommended correction or next evidence</h3><p>Report 40 book B units; only two cartons shipped.</p></article><article class="card" id="C08-ERR-06"><h2>C08-ERR-06</h2><p><span class="tag">Evidence: supported</span> <span class="tag">Argument: sufficient</span> <span class="tag">Formal: proved</span></p><h3>Exact report claim</h3><blockquote>**C08-ERR-06.** Lot B available stock was 32 units.</blockquote><p>Report anchor: C08-ERR-06</p><h3>Verification problem</h3><p>Is B available stock 32 units after its separate reservation?</p><h3>Evidence used</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P04</p><blockquote><pre>[R03] Lot identity and availability. Lots A, B, C, and D are separate even though their sleeves share a catalog description. An excess in one lot cannot repair a deficit in another. Available stock is book on-hand minus quarantined units minus separately reserved units, with no overlapping deductions. The A quarantine contains seven units. The B reservation contains eight different units. Quarantine and reservation change internal status without transferring custody. Physical presence, book balance, and available quantity are different predicates. A physical count may disagree with a journal-derived balance, and the disagreement must remain visible rather than silently redefining one quantity to match the other.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 7,
+  &quot;end_line&quot;: 7,
+  &quot;start_character&quot;: 1395,
+  &quot;end_character&quot;: 2116,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/02-opening-and-journal.md">input/sources/02-opening-and-journal.md</a> · P02</p><blockquote><pre>[J01] Opening and receipts. At 08:00 lot A opened with 100 units and lot B with 40 units. At 09:00 receipt IN-A accepted eight sealed full crates of A. At 09:30 receipt IN-B accepted two sealed full cartons of B. Clerk Elin Shore accepted custody at the gate. Each container was confirmed full, without a partial notation. These are posted accepted receipts, not expected procurement deliveries. No other opening adjustment or accepted inbound movement for A or B occurred before cutoff. The completeness statement is restricted to the named interval and lots. It does not establish any opening quantity for D or repair the C import anomaly.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00004.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 3,
+  &quot;end_line&quot;: 3,
+  &quot;start_character&quot;: 51,
+  &quot;end_character&quot;: 692,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00004.md&quot;,
+  &quot;original_sha256&quot;: &quot;078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00004/attempt-x0nfkf9z&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/02-opening-and-journal.md">input/sources/02-opening-and-journal.md</a> · P04</p><blockquote><pre>[J03] B request and actual handoff. OUT-B requested three cartons, but the signed carrier handoff at 12:00 records two full cartons. The remaining carton stayed on shelf B4 because its packaging label was missing. At 15:00 that unfilled order quantity was canceled. It never crossed the warehouse boundary. A separate next-day order reserved eight other B units, distinct from both the dispatched cartons and the canceled request. There was no B return and no need to invent one: the canceled quantity never left. The A quarantine affects no B stock. The B journal contains no other completed inbound, outbound, or return movements within the cutoff interval.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00004.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 7,
+  &quot;end_line&quot;: 7,
+  &quot;start_character&quot;: 1425,
+  &quot;end_character&quot;: 2084,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00004.md&quot;,
+  &quot;original_sha256&quot;: &quot;078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00004/attempt-x0nfkf9z&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/05-custody-register.md">input/sources/05-custody-register.md</a> · P04</p><blockquote><pre>[K03] Bounded completeness. The register and journal list all accepted A and B movements for the stated day. This permits absence of further A or B movements to be used in exact book arithmetic. It does not establish complete D custody, complete C physical reconciliation, or complete warehouse activity over other dates. The A physical count conflict remains unresolved despite complete movement records. Completeness of one evidence type is not an assertion that every other evidence type agrees. A report that says every lot was reconciled therefore needs an argument beyond the limited A/B movement inventory and must confront the explicit unresolved cases.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00007.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 7,
+  &quot;end_line&quot;: 7,
+  &quot;start_character&quot;: 1377,
+  &quot;end_character&quot;: 2038,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00007.md&quot;,
+  &quot;original_sha256&quot;: &quot;54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00007/attempt-ly8ukxxe&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/07-bin-and-exception-register.md">input/sources/07-bin-and-exception-register.md</a> · P04</p><blockquote><pre>[BIN03] Reservation ticket RES-B-8. The next-day customer order reserves eight B units located on shelf B2. The units were not among the two cartons loaded for OUT-B and were not the canceled third carton on B4. The reservation was still active at cutoff. The operator may not release those units to another order without canceling or changing the reservation record, but no such change occurred that day. These facts justify treating the reservation as a distinct deduction when calculating available B stock. They do not establish an outbound movement, a customer delivery, or physical absence from the B count boundary.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00009.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 7,
+  &quot;end_line&quot;: 7,
+  &quot;start_character&quot;: 1331,
+  &quot;end_character&quot;: 1953,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00009.md&quot;,
+  &quot;original_sha256&quot;: &quot;17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00009/attempt-2lly49hx&quot;
+}</pre><p></p></details><h3>Rules</h3><ul><li>Use R01 exact full-container conversion, R02 actual custody movements and R03 same-lot availability where applicable.</li><li>R04/K03 completeness covers A/B movements for the stated day only; equal-authority counts remain conflicting and missing D/C evidence is not negative fact.</li></ul><h3>Assumptions</h3><ul><li>The synthetic source authority and finite warehouse boundary are accepted as stated; no source authenticity outside the fixture is certified.</li></ul><h3>Reasoning</h3><ol><li>1. Complete B movements give 40 book on-hand.</li><li>2. The separate eight B units are still reserved at cutoff, so availability is 40 minus 8 = 32. A quarantine does not enter this calculation.</li></ol><h3>Limits</h3><ul><li>Results concern the specified lots, warehouse boundary and 18:00 cutoff on 14 April 2032. Book arithmetic does not select the true physical A count or resolve D acceptance.</li><li>Formal checks prove encoded targets only; unsupported physical facts are not inferred from missing evidence.</li></ul><h3>Formal evidence</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/models/Audit.lean">Audit.claim06</a> — supports</p><pre>Audit.availableB = 32</pre><h3>Recommended correction or next evidence</h3><p>Retain 32 available B units, distinct from physical/book 40.</p></article><article class="card" id="C08-ERR-07"><h2>C08-ERR-07</h2><p><span class="tag">Evidence: refuted</span> <span class="tag">Argument: invalid_inference</span> <span class="tag">Formal: refuted</span></p><h3>Exact report claim</h3><blockquote>**C08-ERR-07.** All 60 A units dispatched were delivered to the customer.</blockquote><p>Report anchor: C08-ERR-07</p><h3>Verification problem</h3><p>Were all sixty dispatched A units delivered to the customer?</p><h3>Evidence used</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/06-shipping-tickets-scan.pdf.md">input/sources/06-shipping-tickets-scan.pdf.md</a> · pdf-page-0003-reviewed-0001</p><blockquote><pre>SYNTHETIC NORTH QUAY SHIPPING FORM
+[T03] Movement OUT-A / RET-A; 14 April 2032; clock 11:00 / 16:00; lot A.
+Quantity boxes: 5 full crates out; 1 full crate returned. Status: Carrier Jun Vale /
+receiver Elin Shore.
+The carrier accepted five crates before departure. The customer accepted four. The
+fifth remained sealed in the vehicle and returned that afternoon. Elin signed the
+return after placing it inside the fenced cage. The full departure and the separate
+return are both operative entries. Erasing the departure and adding a return would
+count the same reversal twice.
+[T03-CHAIN] This form belongs to the registered source packet. The warehouse boundary
+includes W1, W2, and the fenced return cage. Read planned quantities separately from
+actual signed handoffs. Standard full-container quantities follow the supplied stock
+rules. Carrier custody is distinct from customer delivery. Preserve lot identity in
+every calculation; quantities from another lot cannot repair this form. Any partial-
+container notation would override the standard full conversion. A source quotation
+should retain this original PDF path and marker rather than presenting an OCR excerpt
+as an independently signed record.
+[T03-LIMIT] The form supports only its named movement and stages. It does not certify
+all warehouse inventory or resolve independent physical count differences. A
+signature name is an invented evidence field within this exercise, not a claim about
+real handwriting authentication. Missing attachments must remain missing in the audit
+reasoning. Reviewers should explain how the movement changes the relevant balance
+before relying on an aggregate total.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00008.pdf">Original source</a> · Extraction: manual-transcription</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;ocr&quot;,
+  &quot;page&quot;: 3,
+  &quot;origin&quot;: {
+    &quot;format&quot;: &quot;pdf&quot;,
+    &quot;page&quot;: 3,
+    &quot;raster_dpi&quot;: 200,
+    &quot;pixel_to_pdf_points&quot;: &quot;coordinate * 72 / 200&quot;,
+    &quot;total_pages&quot;: 5
+  },
+  &quot;coordinate_unit&quot;: &quot;raster pixels; origin at top-left; bbox = left, top, width, height&quot;,
+  &quot;image_artifact&quot;: &quot;pdf-page-0003-raster.png&quot;,
+  &quot;tsv_artifact&quot;: &quot;pdf-page-0003.tsv&quot;,
+  &quot;ocr_language&quot;: &quot;eng&quot;,
+  &quot;ocr_page_segmentation_mode&quot;: 3,
+  &quot;mean_word_confidence&quot;: 95.59391616867471,
+  &quot;minimum_word_confidence&quot;: 44.648014,
+  &quot;confidence_threshold&quot;: 85.0,
+  &quot;low_confidence_words&quot;: 3,
+  &quot;word_count&quot;: 249,
+  &quot;original&quot;: &quot;input/originals/D00008.pdf&quot;,
+  &quot;original_sha256&quot;: &quot;e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00008/attempt-5bvezmai&quot;,
+  &quot;source_anchor&quot;: &quot;pdf-page-0003&quot;,
+  &quot;root_source_anchor&quot;: &quot;pdf-page-0003&quot;,
+  &quot;reviewer&quot;: &quot;blind-inventory-auditor&quot;,
+  &quot;reason&quot;: &quot;Compared original raster page; corrected marker and clock OCR errors; material quantity, container, actual handoff and custody text visually verified.&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-04T15:04:21.811157+00:00&quot;,
+  &quot;transcription_snapshot&quot;: &quot;input/manual-transcriptions/D00008/74d057c1ffd7a573949b5264432bbf95d0ac166f21a1a683072c9f16d09c7d65.txt&quot;,
+  &quot;transcription_file_sha256&quot;: &quot;8cb046c528b21f24a3e2768bfed2e1a4d71a489c47e9007ea0be72fbf2bfc611&quot;,
+  &quot;transcription_normalization&quot;: &quot;UTF-8 BOM and outer whitespace removed from indexed quotation only; original authored bytes retained.&quot;,
+  &quot;coordinate_interpretation&quot;: &quot;Manual transcription is a reviewer-attributed interpretation of the original source, not machine-certified textual fidelity or source authenticity. Inherited coordinates identify the original passage; inherited OCR words and confidence describe the uncorrected extraction, not the manually transcribed wording.&quot;
+}</pre><p>Manual transcription is a reviewer-attributed interpretation of the original source, not machine-certified textual fidelity or source authenticity. Inherited coordinates identify the original passage; inherited OCR words and confidence describe the uncorrected extraction, not the manually transcribed wording.</p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/02-opening-and-journal.md">input/sources/02-opening-and-journal.md</a> · P03</p><blockquote><pre>[J02] A departure, delivery, and return. OUT-A at 11:00 transferred five full crates to carrier Jun Vale. The customer accepted four crates and declined the fifth. At 16:00 Jun returned the still-sealed fifth crate; Elin accepted it inside the fenced return cage. The entire five-crate departure remains recorded, followed by the separate one-crate return. There were no other A departures or returns that day. At 17:00 seven units already on a W1 shelf were quarantined. They remained inside the inventory boundary. A reviewer must therefore distinguish dispatched quantity, delivered quantity, returned quantity, on-hand, and available stock. None of these labels can be substituted merely because they refer to the same order.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00004.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 5,
+  &quot;end_line&quot;: 5,
+  &quot;start_character&quot;: 694,
+  &quot;end_character&quot;: 1423,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00004.md&quot;,
+  &quot;original_sha256&quot;: &quot;078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00004/attempt-x0nfkf9z&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/04-receiving-messages.md">input/sources/04-receiving-messages.md</a> · P03</p><blockquote><pre>[M02] A completion confirmation. The customer accepted four A crates and declined one. The carrier returned the declined crate to North Quay before cutoff, and the warehouse acknowledged acceptance inside the cage. Thus every crate that departed has a documented later disposition, but the customer did not receive all five. A claim that the order was completely delivered differs from a claim that the movement chain can be traced. The return closes custody for the fifth crate while preserving the distinction between delivery and return. A reviewer should quote the relevant stage and quantity instead of using the vague term completed without defining what completed means.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00006.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 5,
+  &quot;end_line&quot;: 5,
+  &quot;start_character&quot;: 692,
+  &quot;end_character&quot;: 1369,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00006.md&quot;,
+  &quot;original_sha256&quot;: &quot;5902f74c3a28ac0e3f3d0e49dc8503a2d0417d6a3658bde4c64ba768051d0c17&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00006/attempt-noaji46d&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P02</p><blockquote><pre>[R01] Unit definitions and boundary. The inventory boundary consists of rooms W1 and W2 and the fenced return cage at the invented North Quay warehouse. The cutoff is 18:00 on 14 April 2032. All quantities are exact integer individual sleeves, called units. A sealed full crate contains twelve units. A sealed full carton contains six units. A pallet has no fixed conversion. A partial-container label overrides the standard full-container quantity; an empty container contributes zero. All names and transactions in this packet are invented. These rules define the finite exercise and do not prescribe real shipping procedures.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 3,
+  &quot;end_line&quot;: 3,
+  &quot;start_character&quot;: 36,
+  &quot;end_character&quot;: 664,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P03</p><blockquote><pre>[R02] Movement semantics. Opening stock plus accepted inbound movements minus completed outbound movements plus accepted returns determines book on-hand. A printed ticket, order, reservation, or pick request changes no physical inventory merely by existing. Departure occurs at the signed actual custody handoff across the boundary. Customer delivery is a separate later event. A carrier can hold inventory that has already departed but is not yet delivered. Return increases on-hand when the receiving custodian accepts the goods back across the boundary. Returned goods in the fenced cage are inside the boundary even before reshelving. An accepted return is a separate movement, not a reason to erase the original departure.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 5,
+  &quot;end_line&quot;: 5,
+  &quot;start_character&quot;: 666,
+  &quot;end_character&quot;: 1393,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><h3>Rules</h3><ul><li>Use R01 exact full-container conversion, R02 actual custody movements and R03 same-lot availability where applicable.</li><li>R04/K03 completeness covers A/B movements for the stated day only; equal-authority counts remain conflicting and missing D/C evidence is not negative fact.</li></ul><h3>Assumptions</h3><ul><li>The synthetic source authority and finite warehouse boundary are accepted as stated; no source authenticity outside the fixture is certified.</li></ul><h3>Reasoning</h3><ol><li>1. Five crates departed, but the customer accepted only four and refused the fifth.</li><li>2. Four crates are 48 delivered units; the twelve-unit fifth crate returned. Traced custody does not mean full customer delivery.</li></ol><h3>Limits</h3><ul><li>Results concern the specified lots, warehouse boundary and 18:00 cutoff on 14 April 2032. Book arithmetic does not select the true physical A count or resolve D acceptance.</li><li>Native pages 1–4 were visually checked and corrected through retained manual transcriptions; page 5 retains quantity/acceptance uncertainty.</li></ul><h3>Formal evidence</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/models/Audit.lean">Audit.claim07</a> — refutes</p><pre>Audit.deliveredA ≠ Audit.dispatchedA</pre><h3>Recommended correction or next evidence</h3><p>Report 60 dispatched, 48 delivered and 12 returned A units.</p></article><article class="card" id="C08-ERR-08"><h2>C08-ERR-08</h2><p><span class="tag">Evidence: refuted</span> <span class="tag">Argument: invalid_inference</span> <span class="tag">Formal: refuted</span></p><h3>Exact report claim</h3><blockquote>**C08-ERR-08.** The B customer order was completely delivered.</blockquote><p>Report anchor: C08-ERR-08</p><h3>Verification problem</h3><p>Was the original three-carton B customer order completely delivered?</p><h3>Evidence used</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/06-shipping-tickets-scan.pdf.md">input/sources/06-shipping-tickets-scan.pdf.md</a> · pdf-page-0004-reviewed-0001</p><blockquote><pre>SYNTHETIC NORTH QUAY SHIPPING FORM
+[T04] Movement OUT-B; 14 April 2032; clock 12:00; lot B.
+Quantity boxes: 3 cartons requested; 2 full cartons handed over. Status: Carrier Jun
+Vale signed actual handoff.
+The request box was printed before loading and shows three cartons. The signed actual
+box shows two. The remaining carton stayed on shelf because its label was missing. At
+15:00 the unfilled remainder was canceled. No customer return occurred for that
+carton. The two actually transferred cartons were delivered, but the original three-
+carton order was not fully delivered.
+[T04-CHAIN] This form belongs to the registered source packet. The warehouse boundary
+includes W1, W2, and the fenced return cage. Read planned quantities separately from
+actual signed handoffs. Standard full-container quantities follow the supplied stock
+rules. Carrier custody is distinct from customer delivery. Preserve lot identity in
+every calculation; quantities from another lot cannot repair this form. Any partial-
+container notation would override the standard full conversion. A source quotation
+should retain this original PDF path and marker rather than presenting an OCR excerpt
+as an independently signed record.
+[T04-LIMIT] The form supports only its named movement and stages. It does not certify
+all warehouse inventory or resolve independent physical count differences. A
+signature name is an invented evidence field within this exercise, not a claim about
+real handwriting authentication. Missing attachments must remain missing in the audit
+reasoning. Reviewers should explain how the movement changes the relevant balance
+before relying on an aggregate total.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00008.pdf">Original source</a> · Extraction: manual-transcription</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;ocr&quot;,
+  &quot;page&quot;: 4,
+  &quot;origin&quot;: {
+    &quot;format&quot;: &quot;pdf&quot;,
+    &quot;page&quot;: 4,
+    &quot;raster_dpi&quot;: 200,
+    &quot;pixel_to_pdf_points&quot;: &quot;coordinate * 72 / 200&quot;,
+    &quot;total_pages&quot;: 5
+  },
+  &quot;coordinate_unit&quot;: &quot;raster pixels; origin at top-left; bbox = left, top, width, height&quot;,
+  &quot;image_artifact&quot;: &quot;pdf-page-0004-raster.png&quot;,
+  &quot;tsv_artifact&quot;: &quot;pdf-page-0004.tsv&quot;,
+  &quot;ocr_language&quot;: &quot;eng&quot;,
+  &quot;ocr_page_segmentation_mode&quot;: 3,
+  &quot;mean_word_confidence&quot;: 95.65679095528456,
+  &quot;minimum_word_confidence&quot;: 65.657257,
+  &quot;confidence_threshold&quot;: 85.0,
+  &quot;low_confidence_words&quot;: 4,
+  &quot;word_count&quot;: 246,
+  &quot;original&quot;: &quot;input/originals/D00008.pdf&quot;,
+  &quot;original_sha256&quot;: &quot;e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00008/attempt-5bvezmai&quot;,
+  &quot;source_anchor&quot;: &quot;pdf-page-0004&quot;,
+  &quot;root_source_anchor&quot;: &quot;pdf-page-0004&quot;,
+  &quot;reviewer&quot;: &quot;blind-inventory-auditor&quot;,
+  &quot;reason&quot;: &quot;Compared original raster page; corrected marker and clock OCR errors; material quantity, container, actual handoff and custody text visually verified.&quot;,
+  &quot;reviewed_at&quot;: &quot;2026-11-04T15:04:21.953190+00:00&quot;,
+  &quot;transcription_snapshot&quot;: &quot;input/manual-transcriptions/D00008/653097fa4c7e85eb684393bda9dd0a3959fec379a0851eefccc17e303dbea4da.txt&quot;,
+  &quot;transcription_file_sha256&quot;: &quot;10e99572a3bd9fb6e15426d1069925eeb7e516a18cc3c2aa41bfa9b3fb21c681&quot;,
+  &quot;transcription_normalization&quot;: &quot;UTF-8 BOM and outer whitespace removed from indexed quotation only; original authored bytes retained.&quot;,
+  &quot;coordinate_interpretation&quot;: &quot;Manual transcription is a reviewer-attributed interpretation of the original source, not machine-certified textual fidelity or source authenticity. Inherited coordinates identify the original passage; inherited OCR words and confidence describe the uncorrected extraction, not the manually transcribed wording.&quot;
+}</pre><p>Manual transcription is a reviewer-attributed interpretation of the original source, not machine-certified textual fidelity or source authenticity. Inherited coordinates identify the original passage; inherited OCR words and confidence describe the uncorrected extraction, not the manually transcribed wording.</p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/02-opening-and-journal.md">input/sources/02-opening-and-journal.md</a> · P04</p><blockquote><pre>[J03] B request and actual handoff. OUT-B requested three cartons, but the signed carrier handoff at 12:00 records two full cartons. The remaining carton stayed on shelf B4 because its packaging label was missing. At 15:00 that unfilled order quantity was canceled. It never crossed the warehouse boundary. A separate next-day order reserved eight other B units, distinct from both the dispatched cartons and the canceled request. There was no B return and no need to invent one: the canceled quantity never left. The A quarantine affects no B stock. The B journal contains no other completed inbound, outbound, or return movements within the cutoff interval.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00004.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 7,
+  &quot;end_line&quot;: 7,
+  &quot;start_character&quot;: 1425,
+  &quot;end_character&quot;: 2084,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00004.md&quot;,
+  &quot;original_sha256&quot;: &quot;078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00004/attempt-x0nfkf9z&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/04-receiving-messages.md">input/sources/04-receiving-messages.md</a> · P04</p><blockquote><pre>[M03] B order closure. The customer confirms receiving the two cartons actually transferred to the carrier. The third requested carton remained at the warehouse and was canceled. All handed-over cartons were delivered, but the original three-carton order was not fully delivered. These statements concern different denominators and are consistent. Cancellation closes unfilled demand without moving stock. It does not prove a customer return, loss, or hidden replacement shipment. The separate eight-unit reservation remains an allocation within the warehouse and must not be confused with the canceled carton. Each statement retains its lot and order identity.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00006.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 7,
+  &quot;end_line&quot;: 7,
+  &quot;start_character&quot;: 1371,
+  &quot;end_character&quot;: 2032,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00006.md&quot;,
+  &quot;original_sha256&quot;: &quot;5902f74c3a28ac0e3f3d0e49dc8503a2d0417d6a3658bde4c64ba768051d0c17&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00006/attempt-noaji46d&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P02</p><blockquote><pre>[R01] Unit definitions and boundary. The inventory boundary consists of rooms W1 and W2 and the fenced return cage at the invented North Quay warehouse. The cutoff is 18:00 on 14 April 2032. All quantities are exact integer individual sleeves, called units. A sealed full crate contains twelve units. A sealed full carton contains six units. A pallet has no fixed conversion. A partial-container label overrides the standard full-container quantity; an empty container contributes zero. All names and transactions in this packet are invented. These rules define the finite exercise and do not prescribe real shipping procedures.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 3,
+  &quot;end_line&quot;: 3,
+  &quot;start_character&quot;: 36,
+  &quot;end_character&quot;: 664,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P03</p><blockquote><pre>[R02] Movement semantics. Opening stock plus accepted inbound movements minus completed outbound movements plus accepted returns determines book on-hand. A printed ticket, order, reservation, or pick request changes no physical inventory merely by existing. Departure occurs at the signed actual custody handoff across the boundary. Customer delivery is a separate later event. A carrier can hold inventory that has already departed but is not yet delivered. Return increases on-hand when the receiving custodian accepts the goods back across the boundary. Returned goods in the fenced cage are inside the boundary even before reshelving. An accepted return is a separate movement, not a reason to erase the original departure.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 5,
+  &quot;end_line&quot;: 5,
+  &quot;start_character&quot;: 666,
+  &quot;end_character&quot;: 1393,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><h3>Rules</h3><ul><li>Use R01 exact full-container conversion, R02 actual custody movements and R03 same-lot availability where applicable.</li><li>R04/K03 completeness covers A/B movements for the stated day only; equal-authority counts remain conflicting and missing D/C evidence is not negative fact.</li></ul><h3>Assumptions</h3><ul><li>The synthetic source authority and finite warehouse boundary are accepted as stated; no source authenticity outside the fixture is certified.</li></ul><h3>Reasoning</h3><ol><li>1. M03 confirms delivery of the two actual handed-over cartons only.</li><li>2. The third requested carton was canceled without leaving. Two delivered cartons do not fulfill the original three-carton denominator.</li></ol><h3>Limits</h3><ul><li>Results concern the specified lots, warehouse boundary and 18:00 cutoff on 14 April 2032. Book arithmetic does not select the true physical A count or resolve D acceptance.</li><li>Native pages 1–4 were visually checked and corrected through retained manual transcriptions; page 5 retains quantity/acceptance uncertainty.</li></ul><h3>Formal evidence</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/models/Audit.lean">Audit.claim08</a> — refutes</p><pre>Audit.deliveredB ≠ Audit.requestedB</pre><h3>Recommended correction or next evidence</h3><p>State that all actually shipped B cartons arrived, while the original order was not fully delivered.</p></article><article class="card" id="C08-ERR-09"><h2>C08-ERR-09</h2><p><span class="tag">Evidence: both</span> <span class="tag">Argument: disputed</span> <span class="tag">Formal: blocked</span></p><h3>Exact report claim</h3><blockquote>**C08-ERR-09.** The physical A count was exactly 148 units.</blockquote><p>Report anchor: C08-ERR-09</p><h3>Verification problem</h3><p>Can the true physical A count at the common cutoff and boundary be fixed at exactly 148?</p><h3>Evidence used</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/03-signed-counts.md">input/sources/03-signed-counts.md</a> · P02</p><blockquote><pre>[N01] Elin Shore signed COUNT-A-1 at the 18:00 cutoff. The stated count is: Lot A, all W1 shelves and fenced return cage, total 148 units. It includes the seven quarantined units and the returned sealed crate. Open shelves were counted by individual units; unopened crates used the verified standard conversion. No damaged, returned, or reserved goods were excluded. A witness initial appears, but the witness did not supply an independent count. The sheet is accepted as signed evidence within this synthetic packet, not as an infallible world axiom. Its numerical agreement with book arithmetic does not automatically invalidate another equally authoritative observation.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00005.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 3,
+  &quot;end_line&quot;: 3,
+  &quot;start_character&quot;: 33,
+  &quot;end_character&quot;: 706,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00005.md&quot;,
+  &quot;original_sha256&quot;: &quot;902b530d21257c2ef30042baaa46dbc1fd5d2d6e8576e8d8c18fdc3c1b8d28af&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00005/attempt-91hpqtsz&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/03-signed-counts.md">input/sources/03-signed-counts.md</a> · P03</p><blockquote><pre>[N02] Tomas Reed independently signed COUNT-A-2 for the same 18:00 cutoff, same lot, and same boundary. The stated total is 147 units. The sheet expressly includes quarantine and the return cage. Reed has the same authority as Elin for this count. A margin note mentions a loose sleeve under a bin but does not state whether it was counted. That incomplete note cannot be used to rewrite the signed total. No signed reconciliation, recount, or authorized cancellation resolves the discrepancy. Both count sheets remain active evidence. Neither the order of their filenames nor the auditor&#x27;s preferred arithmetic gives one count source priority over the other.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00005.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 5,
+  &quot;end_line&quot;: 5,
+  &quot;start_character&quot;: 708,
+  &quot;end_character&quot;: 1367,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00005.md&quot;,
+  &quot;original_sha256&quot;: &quot;902b530d21257c2ef30042baaa46dbc1fd5d2d6e8576e8d8c18fdc3c1b8d28af&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00005/attempt-91hpqtsz&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/03-signed-counts.md">input/sources/03-signed-counts.md</a> · P04</p><blockquote><pre>[N03] A separate B control sheet records 40 units physically inside the boundary, including its eight reserved units. It does not count C or D. Agreement between this B count and B journal arithmetic does not resolve the A discrepancy or the C import problem. No one signed a statement that all lots were reconciled. The A difference is one unit rather than a rounding difference because units are exact integers. A reviewer should distinguish a claim about what each signed sheet records from a claim selecting the true physical A total. The first can be well supported even when the second has conflicting evidence.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00005.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 7,
+  &quot;end_line&quot;: 7,
+  &quot;start_character&quot;: 1369,
+  &quot;end_character&quot;: 1986,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00005.md&quot;,
+  &quot;original_sha256&quot;: &quot;902b530d21257c2ef30042baaa46dbc1fd5d2d6e8576e8d8c18fdc3c1b8d28af&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00005/attempt-91hpqtsz&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/03-signed-counts.md">input/sources/03-signed-counts.md</a> · P05</p><blockquote><pre>[N04] Count custody. The count sheets were transcribed into this source from synthetic signed forms and checked for matching lot, cutoff, and boundary labels. Their recorded signature names are evidence inside the invented exercise; no real-world handwriting examination is claimed. The transcriber was not authorized to correct observed quantities. The source does not establish which observer made a mistake or whether a sleeve moved during counting. A physical recount and a signed reconciliation would address that uncertainty. Until then, retaining both observations is more faithful than erasing a disagreeing one or deriving unrelated conclusions from inconsistent premises.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00005.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 9,
+  &quot;end_line&quot;: 9,
+  &quot;start_character&quot;: 1988,
+  &quot;end_character&quot;: 2669,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00005.md&quot;,
+  &quot;original_sha256&quot;: &quot;902b530d21257c2ef30042baaa46dbc1fd5d2d6e8576e8d8c18fdc3c1b8d28af&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00005/attempt-91hpqtsz&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P05</p><blockquote><pre>[R04] Evidence scope. Signed actual transfer receipts take precedence over unsigned planned quantities for determining completed custody movements. The journal and register are complete for A and B movements only within the stated day. No such completeness applies to D. Equal-authority physical counts of the same boundary and cutoff remain competing evidence unless a recount or authorized correction resolves them. A later filename does not give precedence. A pale or obscured numeral in a scan requires visual review and corroboration. An OCR guess is not a signed quantity. If available evidence does not establish a unique accepted amount, report the missing argument without inventing a number or asserting that the shipment necessarily failed.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 9,
+  &quot;end_line&quot;: 9,
+  &quot;start_character&quot;: 2118,
+  &quot;end_character&quot;: 2869,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/07-bin-and-exception-register.md">input/sources/07-bin-and-exception-register.md</a> · P05</p><blockquote><pre>[BIN04] Exception ownership. Inventory reviewer Mira Cole opened unresolved exception EX-A for the one-unit disagreement between the signed A counts. She requested a recount but supplied no completed recount in this packet. Reviewer Leon Hart opened EX-C for the imported C journal deficit and requested the original unit mapping file. The request names a possible conversion issue but contains no approved correction amount. The two exceptions have different evidence needs: EX-A needs reconciliation of competing observations, while EX-C needs reconstruction of a possibly incorrect journal entry. Neither can be closed by adding unrelated B stock or by assuming a favorable D quantity.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00009.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 9,
+  &quot;end_line&quot;: 9,
+  &quot;start_character&quot;: 1955,
+  &quot;end_character&quot;: 2643,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00009.md&quot;,
+  &quot;original_sha256&quot;: &quot;17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00009/attempt-2lly49hx&quot;
+}</pre><p></p></details><h3>Rules</h3><ul><li>Use R01 exact full-container conversion, R02 actual custody movements and R03 same-lot availability where applicable.</li><li>R04/K03 completeness covers A/B movements for the stated day only; equal-authority counts remain conflicting and missing D/C evidence is not negative fact.</li></ul><h3>Assumptions</h3><ul><li>The synthetic source authority and finite warehouse boundary are accepted as stated; no source authenticity outside the fixture is certified.</li></ul><h3>Reasoning</h3><ol><li>1. Elin records 148 while Tomas records 147 for the identical lot, cutoff and included quarantine/cage.</li><li>2. Both have equal authority and neither is canceled. Agreement of the book calculation with one count does not adjudicate the other.</li></ol><h3>Limits</h3><ul><li>Results concern the specified lots, warehouse boundary and 18:00 cutoff on 14 April 2032. Book arithmetic does not select the true physical A count or resolve D acceptance.</li><li>Formal checks prove encoded targets only; unsupported physical facts are not inferred from missing evidence.</li></ul><h3>Formal evidence</h3><p>No formal proof is claimed for this finding.</p><h3>Recommended correction or next evidence</h3><p>Obtain a signed recount or authorized reconciliation; report both observations meanwhile.</p></article><article class="card" id="C08-ERR-10"><h2>C08-ERR-10</h2><p><span class="tag">Evidence: undetermined</span> <span class="tag">Argument: insufficient_support</span> <span class="tag">Formal: blocked</span></p><h3>Exact report claim</h3><blockquote>**C08-ERR-10.** The physical C shortage is exactly one unit.</blockquote><p>Report anchor: C08-ERR-10</p><h3>Verification problem</h3><p>Does a minus-one C journal balance establish exactly one physically missing unit?</p><h3>Evidence used</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/02-opening-and-journal.md">input/sources/02-opening-and-journal.md</a> · P05</p><blockquote><pre>[J04] C import anomaly. The imported C opening book balance is zero. At 10:10 an operator posted an outbound movement of nine units; at 10:20 an inbound movement of eight units was posted. The imported book balance is therefore minus one. This is a signed-integer ledger result, not a negative number of physical objects. An unsigned correction proposal mentions a possible carton-versus-unit import error, but no approved correction is supplied. Physical reconciliation for C is incomplete, and no physical count accompanies the journal. Preserve the anomaly and the missing correction argument. A book deficit alone does not prove a physical shortage, fraud, destruction, or a correct repair amount.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00004.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 9,
+  &quot;end_line&quot;: 9,
+  &quot;start_character&quot;: 2086,
+  &quot;end_character&quot;: 2787,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00004.md&quot;,
+  &quot;original_sha256&quot;: &quot;078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00004/attempt-x0nfkf9z&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/07-bin-and-exception-register.md">input/sources/07-bin-and-exception-register.md</a> · P05</p><blockquote><pre>[BIN04] Exception ownership. Inventory reviewer Mira Cole opened unresolved exception EX-A for the one-unit disagreement between the signed A counts. She requested a recount but supplied no completed recount in this packet. Reviewer Leon Hart opened EX-C for the imported C journal deficit and requested the original unit mapping file. The request names a possible conversion issue but contains no approved correction amount. The two exceptions have different evidence needs: EX-A needs reconciliation of competing observations, while EX-C needs reconstruction of a possibly incorrect journal entry. Neither can be closed by adding unrelated B stock or by assuming a favorable D quantity.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00009.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 9,
+  &quot;end_line&quot;: 9,
+  &quot;start_character&quot;: 1955,
+  &quot;end_character&quot;: 2643,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00009.md&quot;,
+  &quot;original_sha256&quot;: &quot;17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00009/attempt-2lly49hx&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P04</p><blockquote><pre>[R03] Lot identity and availability. Lots A, B, C, and D are separate even though their sleeves share a catalog description. An excess in one lot cannot repair a deficit in another. Available stock is book on-hand minus quarantined units minus separately reserved units, with no overlapping deductions. The A quarantine contains seven units. The B reservation contains eight different units. Quarantine and reservation change internal status without transferring custody. Physical presence, book balance, and available quantity are different predicates. A physical count may disagree with a journal-derived balance, and the disagreement must remain visible rather than silently redefining one quantity to match the other.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 7,
+  &quot;end_line&quot;: 7,
+  &quot;start_character&quot;: 1395,
+  &quot;end_character&quot;: 2116,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><h3>Rules</h3><ul><li>Use R01 exact full-container conversion, R02 actual custody movements and R03 same-lot availability where applicable.</li><li>R04/K03 completeness covers A/B movements for the stated day only; equal-authority counts remain conflicting and missing D/C evidence is not negative fact.</li></ul><h3>Assumptions</h3><ul><li>The synthetic source authority and finite warehouse boundary are accepted as stated; no source authenticity outside the fixture is certified.</li></ul><h3>Reasoning</h3><ol><li>1. The signed-integer ledger is 0 - 9 + 8 = -1.</li><li>2. J04 expressly lacks a physical count and approved import correction. A possible unit-mapping error is unresolved. The missing bridge from book anomaly to physical shortage prevents either a one-unit shortage finding or its negation.</li></ol><h3>Limits</h3><ul><li>Results concern the specified lots, warehouse boundary and 18:00 cutoff on 14 April 2032. Book arithmetic does not select the true physical A count or resolve D acceptance.</li><li>Formal checks prove encoded targets only; unsupported physical facts are not inferred from missing evidence.</li></ul><h3>Formal evidence</h3><p>No formal proof is claimed for this finding.</p><h3>Recommended correction or next evidence</h3><p>Report the -1 book anomaly; request the unit mapping, approved correction and physical reconciliation.</p></article><article class="card" id="C08-ERR-11"><h2>C08-ERR-11</h2><p><span class="tag">Evidence: undetermined</span> <span class="tag">Argument: insufficient_support</span> <span class="tag">Formal: blocked</span></p><h3>Exact report claim</h3><blockquote>**C08-ERR-11.** Exactly 78 D units were accepted by the receiver, conclusively established by the scanned line.</blockquote><p>Report anchor: C08-ERR-11</p><h3>Verification problem</h3><p>Does the pale D field conclusively establish that exactly 78 units were accepted?</p><h3>Evidence used</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/06-shipping-tickets-scan.pdf.md">input/sources/06-shipping-tickets-scan.pdf.md</a> · pdf-page-0005</p><blockquote><pre>SYNTHETIC NORTH QUAY SHIPPING FORM
+[T@5] Movement D-17; 14 April 2032; clock 13:30; lot D
+Quantity boxes: Quantity requires reading of the pale field. Status: Carrier initials
+only; receiver acceptance blank.
+The numerical field is pale. A receiver proposes 74 in an unsigned message, while a
+carrier message proposes 78. Neither is a jointly signed correction. The ticket
+identity and lot remain legible, so the uncertainty concerns the quantity and
+completed acceptance. A guessed numeral cannot supply a missing receiver signature or
+settle the competing quantities.
+[T05-CHAIN] This form belongs to the registered source packet. The warehouse boundary
+includes W1, W2, and the fenced return cage. Read planned quantities separately from
+actual signed handoffs. Standard full-container quantities follow the supplied stock
+rules. Carrier custody is distinct from customer delivery. Preserve lot identity in
+every calculation; quantities from another lot cannot repair this form. Any partial-
+container notation would override the standard full conversion. A source quotation
+should retain this original PDF path and marker rather than presenting an OCR excerpt
+as an independently signed record.
+[T@5-LIMIT] The form supports only its named movement and stages. It does not certify
+all warehouse inventory or resolve independent physical count differences. A
+signature name is an invented evidence field within this exercise, not a claim about
+real handwriting authentication. Missing attachments must remain missing in the audit
+reasoning. Reviewers should explain how the movement changes the relevant balance
+before relying on an aggregate total.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00008.pdf">Original source</a> · Extraction: tesseract-tsv</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;ocr&quot;,
+  &quot;page&quot;: 5,
+  &quot;origin&quot;: {
+    &quot;format&quot;: &quot;pdf&quot;,
+    &quot;page&quot;: 5,
+    &quot;raster_dpi&quot;: 200,
+    &quot;pixel_to_pdf_points&quot;: &quot;coordinate * 72 / 200&quot;,
+    &quot;total_pages&quot;: 5
+  },
+  &quot;coordinate_unit&quot;: &quot;raster pixels; origin at top-left; bbox = left, top, width, height&quot;,
+  &quot;image_artifact&quot;: &quot;pdf-page-0005-raster.png&quot;,
+  &quot;tsv_artifact&quot;: &quot;pdf-page-0005.tsv&quot;,
+  &quot;ocr_language&quot;: &quot;eng&quot;,
+  &quot;ocr_page_segmentation_mode&quot;: 3,
+  &quot;mean_word_confidence&quot;: 95.48176571369294,
+  &quot;minimum_word_confidence&quot;: 3.835678,
+  &quot;confidence_threshold&quot;: 85.0,
+  &quot;low_confidence_words&quot;: 4,
+  &quot;word_count&quot;: 241,
+  &quot;original&quot;: &quot;input/originals/D00008.pdf&quot;,
+  &quot;original_sha256&quot;: &quot;e64921cc43741a187a1063655d55e820e43a91c3f6152d0671af4fce81f7fe58&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00008/attempt-5bvezmai&quot;
+}</pre><p>OCR is a probabilistic transcription; quote matching verifies the recognized text only. Visually compare every material quotation with the original image.; Low-confidence words: 4; review original bounding boxes before relying on text.</p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/04-receiving-messages.md">input/sources/04-receiving-messages.md</a> · P02</p><blockquote><pre>[M01] The unresolved D transfer. A receiver message tentatively proposes 74 units for transfer D-17, but it is unsigned and marked provisional. A carrier message says that the faint copy looks like 78. Neither is a signed correction. The original scanned quantity line is pale, and its second digit is hard to read. No customer acceptance signature appears beside that quantity. There is no original carbon copy or later authenticated reconciliation in the packet. The two interpretations are not a license to select the convenient value. Even a legible planned quantity would not automatically establish the quantity actually accepted by the receiver.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00006.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 3,
+  &quot;end_line&quot;: 3,
+  &quot;start_character&quot;: 38,
+  &quot;end_character&quot;: 690,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00006.md&quot;,
+  &quot;original_sha256&quot;: &quot;5902f74c3a28ac0e3f3d0e49dc8503a2d0417d6a3658bde4c64ba768051d0c17&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00006/attempt-noaji46d&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/04-receiving-messages.md">input/sources/04-receiving-messages.md</a> · P05</p><blockquote><pre>[M04] Missing supporting material. An email index lists next-day D recount photographs, but no photographs or recount attachment are supplied. The index proves the existence of the listing, not the content or result of the absent attachment. Vehicle photographs mentioned by the carrier are likewise unavailable. A useful finding identifies precisely which missing record could resolve the uncertain quantity. Missing evidence does not itself establish that the carrier short-shipped, that the customer miscounted, or that the document was forged. No external retrieval is authorized by this finite packet; an audit should retain the bounded evidence gap.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00006.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 9,
+  &quot;end_line&quot;: 9,
+  &quot;start_character&quot;: 2034,
+  &quot;end_character&quot;: 2689,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00006.md&quot;,
+  &quot;original_sha256&quot;: &quot;5902f74c3a28ac0e3f3d0e49dc8503a2d0417d6a3658bde4c64ba768051d0c17&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00006/attempt-noaji46d&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P05</p><blockquote><pre>[R04] Evidence scope. Signed actual transfer receipts take precedence over unsigned planned quantities for determining completed custody movements. The journal and register are complete for A and B movements only within the stated day. No such completeness applies to D. Equal-authority physical counts of the same boundary and cutoff remain competing evidence unless a recount or authorized correction resolves them. A later filename does not give precedence. A pale or obscured numeral in a scan requires visual review and corroboration. An OCR guess is not a signed quantity. If available evidence does not establish a unique accepted amount, report the missing argument without inventing a number or asserting that the shipment necessarily failed.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 9,
+  &quot;end_line&quot;: 9,
+  &quot;start_character&quot;: 2118,
+  &quot;end_character&quot;: 2869,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/05-custody-register.md">input/sources/05-custody-register.md</a> · P05</p><blockquote><pre>[K04] Handling disputed quantities. If an auditor cannot confidently read a numerical field, the next step is to inspect the image and the supplied corroborating records, not to convert OCR confidence into physical certainty. A faithful result may identify the likely reading while withholding a claim about accepted quantity. Competing unsigned messages do not have the authority of a completed receipt signed by both parties. This distinction also applies when a document contains a clear planned number but an incomplete actual handoff box. The field&#x27;s semantic role, signature status, and custody stage matter as much as its digits.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00007.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 9,
+  &quot;end_line&quot;: 9,
+  &quot;start_character&quot;: 2040,
+  &quot;end_character&quot;: 2676,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00007.md&quot;,
+  &quot;original_sha256&quot;: &quot;54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00007/attempt-ly8ukxxe&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/07-bin-and-exception-register.md">input/sources/07-bin-and-exception-register.md</a> · P06</p><blockquote><pre>[BIN05] D evidence request. The receiving coordinator requested an authenticated copy of the D acceptance box and the missing next-day recount attachment. The response log records those requests as outstanding at the cutoff used for this packet. It does not establish whether the documents exist elsewhere or what they would say. The coordinator retained both tentative quantity messages rather than promoting either into a signed actual receipt. A visual reading of the pale printed number can clarify what appears on the form, but it cannot by itself establish customer acceptance. Any later closure must identify the newly supplied evidence, its authority, and the exact quantity it resolves.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00009.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 11,
+  &quot;end_line&quot;: 11,
+  &quot;start_character&quot;: 2645,
+  &quot;end_character&quot;: 3340,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00009.md&quot;,
+  &quot;original_sha256&quot;: &quot;17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00009/attempt-2lly49hx&quot;
+}</pre><p></p></details><h3>Rules</h3><ul><li>Use R01 exact full-container conversion, R02 actual custody movements and R03 same-lot availability where applicable.</li><li>R04/K03 completeness covers A/B movements for the stated day only; equal-authority counts remain conflicting and missing D/C evidence is not negative fact.</li></ul><h3>Assumptions</h3><ul><li>The synthetic source authority and finite warehouse boundary are accepted as stated; no source authenticity outside the fixture is certified.</li></ul><h3>Reasoning</h3><ol><li>1. All five original raster pages were inspected. The pale final line on page 5 visually appears to read 78, but OCR omitted it; the receiver acceptance box is blank.</li><li>2. M01 provides provisional unsigned 74 and 78 suggestions, no signed correction or authenticated reconciliation. Even perfect legibility of a planned field would not establish actual accepted quantity.</li><li>3. No unique accepted D quantity is established, and the absence of acceptance evidence does not prove the shipment failed.</li></ol><h3>Limits</h3><ul><li>Results concern the specified lots, warehouse boundary and 18:00 cutoff on 14 April 2032. Book arithmetic does not select the true physical A count or resolve D acceptance.</li><li>Native pages 1–4 were visually checked and corrected through retained manual transcriptions; page 5 retains quantity/acceptance uncertainty.</li></ul><h3>Formal evidence</h3><p>No formal proof is claimed for this finding.</p><h3>Recommended correction or next evidence</h3><p>Request authenticated acceptance/correction and the missing recount attachment; keep accepted quantity undetermined.</p></article><article class="card" id="C08-ERR-12"><h2>C08-ERR-12</h2><p><span class="tag">Evidence: refuted</span> <span class="tag">Argument: invalid_inference</span> <span class="tag">Formal: refuted</span></p><h3>Exact report claim</h3><blockquote>**C08-ERR-12.** Every warehouse lot was reconciled at cutoff.</blockquote><p>Report anchor: C08-ERR-12</p><h3>Verification problem</h3><p>Was every warehouse lot reconciled at cutoff, including C and the unresolved A count?</p><h3>Evidence used</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/05-custody-register.md">input/sources/05-custody-register.md</a> · P04</p><blockquote><pre>[K03] Bounded completeness. The register and journal list all accepted A and B movements for the stated day. This permits absence of further A or B movements to be used in exact book arithmetic. It does not establish complete D custody, complete C physical reconciliation, or complete warehouse activity over other dates. The A physical count conflict remains unresolved despite complete movement records. Completeness of one evidence type is not an assertion that every other evidence type agrees. A report that says every lot was reconciled therefore needs an argument beyond the limited A/B movement inventory and must confront the explicit unresolved cases.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00007.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 7,
+  &quot;end_line&quot;: 7,
+  &quot;start_character&quot;: 1377,
+  &quot;end_character&quot;: 2038,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00007.md&quot;,
+  &quot;original_sha256&quot;: &quot;54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00007/attempt-ly8ukxxe&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/02-opening-and-journal.md">input/sources/02-opening-and-journal.md</a> · P05</p><blockquote><pre>[J04] C import anomaly. The imported C opening book balance is zero. At 10:10 an operator posted an outbound movement of nine units; at 10:20 an inbound movement of eight units was posted. The imported book balance is therefore minus one. This is a signed-integer ledger result, not a negative number of physical objects. An unsigned correction proposal mentions a possible carton-versus-unit import error, but no approved correction is supplied. Physical reconciliation for C is incomplete, and no physical count accompanies the journal. Preserve the anomaly and the missing correction argument. A book deficit alone does not prove a physical shortage, fraud, destruction, or a correct repair amount.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00004.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 9,
+  &quot;end_line&quot;: 9,
+  &quot;start_character&quot;: 2086,
+  &quot;end_character&quot;: 2787,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00004.md&quot;,
+  &quot;original_sha256&quot;: &quot;078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00004/attempt-x0nfkf9z&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/03-signed-counts.md">input/sources/03-signed-counts.md</a> · P03</p><blockquote><pre>[N02] Tomas Reed independently signed COUNT-A-2 for the same 18:00 cutoff, same lot, and same boundary. The stated total is 147 units. The sheet expressly includes quarantine and the return cage. Reed has the same authority as Elin for this count. A margin note mentions a loose sleeve under a bin but does not state whether it was counted. That incomplete note cannot be used to rewrite the signed total. No signed reconciliation, recount, or authorized cancellation resolves the discrepancy. Both count sheets remain active evidence. Neither the order of their filenames nor the auditor&#x27;s preferred arithmetic gives one count source priority over the other.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00005.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 5,
+  &quot;end_line&quot;: 5,
+  &quot;start_character&quot;: 708,
+  &quot;end_character&quot;: 1367,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00005.md&quot;,
+  &quot;original_sha256&quot;: &quot;902b530d21257c2ef30042baaa46dbc1fd5d2d6e8576e8d8c18fdc3c1b8d28af&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00005/attempt-91hpqtsz&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/07-bin-and-exception-register.md">input/sources/07-bin-and-exception-register.md</a> · P05</p><blockquote><pre>[BIN04] Exception ownership. Inventory reviewer Mira Cole opened unresolved exception EX-A for the one-unit disagreement between the signed A counts. She requested a recount but supplied no completed recount in this packet. Reviewer Leon Hart opened EX-C for the imported C journal deficit and requested the original unit mapping file. The request names a possible conversion issue but contains no approved correction amount. The two exceptions have different evidence needs: EX-A needs reconciliation of competing observations, while EX-C needs reconstruction of a possibly incorrect journal entry. Neither can be closed by adding unrelated B stock or by assuming a favorable D quantity.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00009.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 9,
+  &quot;end_line&quot;: 9,
+  &quot;start_character&quot;: 1955,
+  &quot;end_character&quot;: 2643,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00009.md&quot;,
+  &quot;original_sha256&quot;: &quot;17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00009/attempt-2lly49hx&quot;
+}</pre><p></p></details><h3>Rules</h3><ul><li>Use R01 exact full-container conversion, R02 actual custody movements and R03 same-lot availability where applicable.</li><li>R04/K03 completeness covers A/B movements for the stated day only; equal-authority counts remain conflicting and missing D/C evidence is not negative fact.</li></ul><h3>Assumptions</h3><ul><li>The synthetic source authority and finite warehouse boundary are accepted as stated; no source authenticity outside the fixture is certified.</li></ul><h3>Reasoning</h3><ol><li>1. J04 explicitly states C physical reconciliation is incomplete; BIN04 records its unresolved exception.</li><li>2. C belongs to the named lot domain and is a direct counterexample to every-lot reconciliation. The unresolved A count independently defeats blanket closure.</li></ol><h3>Limits</h3><ul><li>Results concern the specified lots, warehouse boundary and 18:00 cutoff on 14 April 2032. Book arithmetic does not select the true physical A count or resolve D acceptance.</li><li>Formal checks prove encoded targets only; unsupported physical facts are not inferred from missing evidence.</li></ul><h3>Formal evidence</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/models/Audit.lean">Audit.claim12</a> — refutes</p><pre>∀ (reconciled : Audit.Lot → Prop), ¬ reconciled Audit.Lot.c → ¬ (∀ lot, reconciled lot)</pre><h3>Recommended correction or next evidence</h3><p>Withdraw the universal statement and list unresolved A, C and D questions separately.</p></article><article class="card" id="C08-ERR-13"><h2>C08-ERR-13</h2><p><span class="tag">Evidence: refuted</span> <span class="tag">Argument: invalid_inference</span> <span class="tag">Formal: refuted</span></p><h3>Exact report claim</h3><blockquote>**C08-ERR-13.** Subtracting the A quarantine from B stock gives B availability.</blockquote><p>Report anchor: C08-ERR-13</p><h3>Verification problem</h3><p>Does subtracting A quarantine from B book stock yield B availability?</p><h3>Evidence used</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P04</p><blockquote><pre>[R03] Lot identity and availability. Lots A, B, C, and D are separate even though their sleeves share a catalog description. An excess in one lot cannot repair a deficit in another. Available stock is book on-hand minus quarantined units minus separately reserved units, with no overlapping deductions. The A quarantine contains seven units. The B reservation contains eight different units. Quarantine and reservation change internal status without transferring custody. Physical presence, book balance, and available quantity are different predicates. A physical count may disagree with a journal-derived balance, and the disagreement must remain visible rather than silently redefining one quantity to match the other.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 7,
+  &quot;end_line&quot;: 7,
+  &quot;start_character&quot;: 1395,
+  &quot;end_character&quot;: 2116,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/02-opening-and-journal.md">input/sources/02-opening-and-journal.md</a> · P04</p><blockquote><pre>[J03] B request and actual handoff. OUT-B requested three cartons, but the signed carrier handoff at 12:00 records two full cartons. The remaining carton stayed on shelf B4 because its packaging label was missing. At 15:00 that unfilled order quantity was canceled. It never crossed the warehouse boundary. A separate next-day order reserved eight other B units, distinct from both the dispatched cartons and the canceled request. There was no B return and no need to invent one: the canceled quantity never left. The A quarantine affects no B stock. The B journal contains no other completed inbound, outbound, or return movements within the cutoff interval.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00004.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 7,
+  &quot;end_line&quot;: 7,
+  &quot;start_character&quot;: 1425,
+  &quot;end_character&quot;: 2084,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00004.md&quot;,
+  &quot;original_sha256&quot;: &quot;078c5054d9619a84cb3b541752c2da469621999938351e49f6f1bfa9e3d24189&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00004/attempt-x0nfkf9z&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/07-bin-and-exception-register.md">input/sources/07-bin-and-exception-register.md</a> · P03</p><blockquote><pre>[BIN02] Quarantine ticket Q-A-7. At 17:00 Elin attached a hold label to seven loose A units on shelf A1 after noticing cosmetic sleeve marks. The ticket states that those seven units remain physically in W1 and are excluded from availability pending review. It does not order disposal, destruction, shipment, or a transfer to another lot. The label applies to individual units, not seven crates. No later release from quarantine occurred before cutoff. The physical count sheets both expressly included the held units. The record supports a status deduction from available A stock without decrementing A book on-hand.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00009.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 5,
+  &quot;end_line&quot;: 5,
+  &quot;start_character&quot;: 712,
+  &quot;end_character&quot;: 1329,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00009.md&quot;,
+  &quot;original_sha256&quot;: &quot;17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00009/attempt-2lly49hx&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/07-bin-and-exception-register.md">input/sources/07-bin-and-exception-register.md</a> · P04</p><blockquote><pre>[BIN03] Reservation ticket RES-B-8. The next-day customer order reserves eight B units located on shelf B2. The units were not among the two cartons loaded for OUT-B and were not the canceled third carton on B4. The reservation was still active at cutoff. The operator may not release those units to another order without canceling or changing the reservation record, but no such change occurred that day. These facts justify treating the reservation as a distinct deduction when calculating available B stock. They do not establish an outbound movement, a customer delivery, or physical absence from the B count boundary.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00009.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 7,
+  &quot;end_line&quot;: 7,
+  &quot;start_character&quot;: 1331,
+  &quot;end_character&quot;: 1953,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00009.md&quot;,
+  &quot;original_sha256&quot;: &quot;17864baef381443926666ff2acbb425f97ab919bb09877291086a640ba22e3f9&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00009/attempt-2lly49hx&quot;
+}</pre><p></p></details><h3>Rules</h3><ul><li>Use R01 exact full-container conversion, R02 actual custody movements and R03 same-lot availability where applicable.</li><li>R04/K03 completeness covers A/B movements for the stated day only; equal-authority counts remain conflicting and missing D/C evidence is not negative fact.</li></ul><h3>Assumptions</h3><ul><li>The synthetic source authority and finite warehouse boundary are accepted as stated; no source authenticity outside the fixture is certified.</li></ul><h3>Reasoning</h3><ol><li>1. Lots are distinct; A holds seven quarantined units and B separately reserves eight different units.</li><li>2. B availability is 40 - 8 = 32. The proposed cross-lot subtraction 40 - 7 = 33 differs, and violates the lot-identity rule.</li></ol><h3>Limits</h3><ul><li>Results concern the specified lots, warehouse boundary and 18:00 cutoff on 14 April 2032. Book arithmetic does not select the true physical A count or resolve D acceptance.</li><li>Formal checks prove encoded targets only; unsupported physical facts are not inferred from missing evidence.</li></ul><h3>Formal evidence</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/models/Audit.lean">Audit.claim13</a> — refutes</p><pre>Audit.bookB - 7 ≠ Audit.availableB</pre><h3>Recommended correction or next evidence</h3><p>Deduct B&#x27;s own eight reserved units; keep A quarantine assigned to A.</p></article><article class="card" id="C08-ERR-14"><h2>C08-ERR-14</h2><p><span class="tag">Evidence: not_applicable</span> <span class="tag">Argument: nonformal</span> <span class="tag">Formal: not_attempted</span></p><h3>Exact report claim</h3><blockquote>**C08-ERR-14.** The return workflow is elegantly designed.</blockquote><p>Report anchor: C08-ERR-14</p><h3>Verification problem</h3><p>Is there a supplied operational definition that can decide whether the return workflow is elegantly designed?</p><h3>Evidence used</h3><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/05-custody-register.md">input/sources/05-custody-register.md</a> · P02</p><blockquote><pre>[K01] Roles. Elin Shore may accept inbound movements and returns at North Quay. Jun Vale may accept carrier custody but cannot amend warehouse physical counts. Tomas Reed may perform an independent count but cannot retroactively alter a transfer quantity without an authorized countersigned correction. These assignments apply only to this invented day. A correct signature identity is one part of the evidence: the document must still identify the lot, movement, time, and actual quantity. A carrier signature is not a customer delivery signature. Similarly, an order clerk signature can approve a request without establishing that the requested goods physically left.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00007.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 3,
+  &quot;end_line&quot;: 3,
+  &quot;start_character&quot;: 41,
+  &quot;end_character&quot;: 710,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00007.md&quot;,
+  &quot;original_sha256&quot;: &quot;54ba3d90c6fd73c04b139b20f2cc369e144f6050697949c27f883d4209ad2830&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00007/attempt-ly8ukxxe&quot;
+}</pre><p></p></details><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/sources/01-stock-rules.md">input/sources/01-stock-rules.md</a> · P03</p><blockquote><pre>[R02] Movement semantics. Opening stock plus accepted inbound movements minus completed outbound movements plus accepted returns determines book on-hand. A printed ticket, order, reservation, or pick request changes no physical inventory merely by existing. Departure occurs at the signed actual custody handoff across the boundary. Customer delivery is a separate later event. A carrier can hold inventory that has already departed but is not yet delivered. Return increases on-hand when the receiving custodian accepts the goods back across the boundary. Returned goods in the fenced cage are inside the boundary even before reshelving. An accepted return is a separate movement, not a reason to erase the original departure.</pre></blockquote><p><a href="../../validation/runs/08-scanned-inventory-mixed/input/originals/D00003.md">Original source</a> · Extraction: utf8</p><details><summary>Original coordinates and extraction limits</summary><pre>{
+  &quot;kind&quot;: &quot;text&quot;,
+  &quot;start_line&quot;: 5,
+  &quot;end_line&quot;: 5,
+  &quot;start_character&quot;: 666,
+  &quot;end_character&quot;: 1393,
+  &quot;coordinate_unit&quot;: &quot;Unicode code points after UTF-8 BOM removal&quot;,
+  &quot;original&quot;: &quot;input/originals/D00003.md&quot;,
+  &quot;original_sha256&quot;: &quot;a3640b68ad4016c357f8b669551f2c7df3541f78391a59f025df47f766662f53&quot;,
+  &quot;artifact_directory&quot;: &quot;extraction/D00003/attempt-f44k0ga1&quot;
+}</pre><p></p></details><h3>Rules</h3><ul><li>No source defines an objective criterion for elegance.</li></ul><h3>Assumptions</h3><ul><li>The synthetic source authority and finite warehouse boundary are accepted as stated; no source authenticity outside the fixture is certified.</li></ul><h3>Reasoning</h3><ol><li>1. K01 assigns custody roles and R02 defines movement semantics.</li><li>2. Neither provides a criterion for elegance. Operational correctness or traceability does not mathematically establish an aesthetic judgment.</li></ol><h3>Limits</h3><ul><li>Results concern the specified lots, warehouse boundary and 18:00 cutoff on 14 April 2032. Book arithmetic does not select the true physical A count or resolve D acceptance.</li><li>Formal checks prove encoded targets only; unsupported physical facts are not inferred from missing evidence.</li></ul><h3>Formal evidence</h3><p>No formal proof is claimed for this finding.</p><h3>Recommended correction or next evidence</h3><p>Label elegance as an opinion or supply an agreed assessment criterion.</p></article></main><footer>Technical proof checks and documentary interpretation are separate assurance layers.</footer></body></html>

@@ -1,0 +1,9 @@
+{
+  "documents": [
+    {
+      "document_id": "D00003",
+      "reason": "All five scan pages extracted; OCR remains formally partial due to low-confidence tokens. All material pages A01-A04 were visually inspected and corrected via retained manual transcriptions. Original OCR remains available.",
+      "impact": "C06-C15 and C06-C16 use reviewed A01-A04 anchors, including exact 10:00/11:00 and 14:30 times, negations and L01 reference. No material passage remains unreadable. Review is an attributed transcription assessment, not source authentication or complete event-history certification."
+    }
+  ]
+}

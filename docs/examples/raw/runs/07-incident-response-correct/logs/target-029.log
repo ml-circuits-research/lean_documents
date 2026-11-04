@@ -1,0 +1,3 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target029.lean
+Audit.aRevision : Audit.revision Audit.detectionA = 2 ∧ Audit.warningA < 0 ∧ Audit.detectionA = 0
+'Audit.aRevision' does not depend on any axioms

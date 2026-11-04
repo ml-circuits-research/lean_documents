@@ -1,0 +1,49 @@
+{
+  "reviews": [
+    {
+      "path": "input/sources/04-node-registry.pdf.md",
+      "anchor": "pdf-page-0001",
+      "reviewer": "blind-distributed-auditor",
+      "decision": "accepted",
+      "reason": "Actually rendered and inspected the original PDF sheet in visual-review/. Compared node range, original semantic markers, identity-only scope and explicit event-history limitations with the extracted text.",
+      "source_sha256": "6fbabc6f1ab5af7659201499d292110b7f8e0da5dcf20a6864f09a6dedf439e8",
+      "segment_sha256": "98dd48c79e02393683c6ef9d2dbd08e9b2af5eda70856d78765a1579631c4d77"
+    },
+    {
+      "path": "input/sources/04-node-registry.pdf.md",
+      "anchor": "pdf-page-0002",
+      "reviewer": "blind-distributed-auditor",
+      "decision": "accepted",
+      "reason": "Actually rendered and inspected the original PDF sheet in visual-review/. Compared node range, original semantic markers, identity-only scope and explicit event-history limitations with the extracted text.",
+      "source_sha256": "6fbabc6f1ab5af7659201499d292110b7f8e0da5dcf20a6864f09a6dedf439e8",
+      "segment_sha256": "5d4bb47241a8f0468616e394715d0279ed3ea52db36e76d1e32681ab9655453f"
+    },
+    {
+      "path": "input/sources/04-node-registry.pdf.md",
+      "anchor": "pdf-page-0003",
+      "reviewer": "blind-distributed-auditor",
+      "decision": "accepted",
+      "reason": "Actually rendered and inspected the original PDF sheet in visual-review/. Compared node range, original semantic markers, identity-only scope and explicit event-history limitations with the extracted text.",
+      "source_sha256": "6fbabc6f1ab5af7659201499d292110b7f8e0da5dcf20a6864f09a6dedf439e8",
+      "segment_sha256": "c7982874131fe87a4a4b1e375ddb0050fc82be6621119e87974aff46a202fa11"
+    },
+    {
+      "path": "input/sources/04-node-registry.pdf.md",
+      "anchor": "pdf-page-0004",
+      "reviewer": "blind-distributed-auditor",
+      "decision": "accepted",
+      "reason": "Actually rendered and inspected the original PDF sheet in visual-review/. Compared node range, original semantic markers, identity-only scope and explicit event-history limitations with the extracted text.",
+      "source_sha256": "6fbabc6f1ab5af7659201499d292110b7f8e0da5dcf20a6864f09a6dedf439e8",
+      "segment_sha256": "4913a6f6c855892e9fe7ac23152c7d70b0a902a0767806b47c85eb17f6ce2eaa"
+    },
+    {
+      "path": "input/sources/04-node-registry.pdf.md",
+      "anchor": "pdf-page-0005",
+      "reviewer": "blind-distributed-auditor",
+      "decision": "accepted",
+      "reason": "Actually rendered and inspected the original PDF sheet in visual-review/. Compared node range, original semantic markers, identity-only scope and explicit event-history limitations with the extracted text.",
+      "source_sha256": "6fbabc6f1ab5af7659201499d292110b7f8e0da5dcf20a6864f09a6dedf439e8",
+      "segment_sha256": "a23feba10e69a44da6c823dfebadf580750ec0ef363ddf99f83ee2882434c2a6"
+    }
+  ]
+}

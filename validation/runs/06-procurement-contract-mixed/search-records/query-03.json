@@ -1,0 +1,128 @@
+{
+  "query": "expiry OR \"17:01\" OR \"retrospective\"",
+  "total_matching_chunks": 12,
+  "offset": 0,
+  "limit": "Ranked retrieval is not exhaustive semantic review; inspect full passages and inventory for exceptions.",
+  "results": [
+    {
+      "id": 34,
+      "path": "input/sources/delegation-notice.md",
+      "anchor": "D03",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 748,
+      "text": "## [D03]\n\nAn administrative reminder sent to the purchasing team on June 14 says that the last authorized minute is the minute displayed as 17:00 UTC on June 15. It expressly excludes approvals displayed as 17:01 UTC or later. The timestamps in this dossier are stipulated exact minute events, not uncertain minute-long intervals; neither an implied grace period nor an unrecorded earlier click should be assumed. The reminder also separates value authority from timing authority. An amount exactly at EUR 15,000.00 satisfies the monetary ceiling, but satisfaction of that ceiling does not compensate for a late approval. Conversely, approval at the expiry instant is not late merely because the first second of a later commitment occurs afterward.",
+      "rank": -4.726503191442974
+    },
+    {
+      "id": 64,
+      "path": "input/sources/purchase-register.md",
+      "anchor": "L04",
+      "document_id": "D00007",
+      "start_char": 0,
+      "end_char": 678,
+      "text": "## [L04]\n\nP-15 is laboratory consumables with normalized value EUR 14,900.00, accepted June 9. Manager Dana Cole granted the written order approval at exactly 2029-06-15 17:00 UTC. Commitment was at 17:01 UTC on the same day. P-16 is separate laboratory consumables with normalized value EUR 15,000.00, accepted June 9. Dana granted its written order approval at 2029-06-15 17:01 UTC, and commitment followed at 17:10 UTC. No director or alternative delegate approved P-16 at any time in this register's coverage, and no later document purports to ratify it retroactively. Neither purchase aggregates with another requirement; each is below the revision 2 competition threshold.",
+      "rank": -3.9138759480563987
+    },
+    {
+      "id": 33,
+      "path": "input/sources/delegation-notice.md",
+      "anchor": "D02",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 703,
+      "text": "## [D02]\n\nThe authority register is complete for Dana's delegation and amendments during June 2029. It contains no extension, renewal, oral-authority confirmation, substitute delegation, or suspension. The stated expiry therefore remains controlling. This authority completeness is deliberately narrow: it does not purport to list every procurement approval by every employee. P-15 and P-16 approval events are established by their transaction register entries, while the director's standing authority comes from P05. The laboratory team may continue using Dana as a contact person after expiry, but a person's presence in a directory or continued employment does not renew a formal monetary delegation.",
+      "rank": -3.349172074485803
+    },
+    {
+      "id": 53,
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0012",
+      "document_id": "D00006",
+      "start_char": 0,
+      "end_char": 847,
+      "text": "A purchase requires a written approval identifying the order, value, and supplier, granted strictly before commitment by a person whose authority covers the value and category at the approval instant. Authority limits are inclusive unless a delegation says otherwise. The procurement director has standing authority for all monetary values in this dossier. A delegated manager has only the category, amount, and time range expressly stated in the delegation. An approval at the delegation's inclusive expiry instant is valid if all other conditions hold; a later commitment does not itself invalidate that approval. An approval granted after expiry is not rescued by the fact that the requisition was submitted earlier. Manager approval and completion of competitive solicitation are separate requirements: satisfying one does not imply the other.",
+      "rank": -3.1044411574022575
+    },
+    {
+      "id": 18,
+      "path": "input/report.md",
+      "anchor": "C06-11",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 161,
+      "text": "**C06-11.** E-19 satisfied the urgent-safety exception, including a retrospective review exactly forty-eight hours after commitment. Sources: P06, L05, X01, X02.",
+      "rank": -3.0675407852523557
+    },
+    {
+      "id": 19,
+      "path": "input/report.md",
+      "anchor": "C06-12",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 182,
+      "text": "**C06-12.** The confirmed urgency of E-19 would have been sufficient for the urgent-safety exception without the director declaration or retrospective review. Sources: P06, X01, X02.",
+      "rank": -2.9704581757850286
+    },
+    {
+      "id": 71,
+      "path": "input/sources/reconciliation-correspondence.md",
+      "anchor": "F05",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 759,
+      "text": "## [F05]\n\nAn internal retrospective comment describes the emergency pump purchase as “prudent and commercially elegant.” The comment provides no decision model, risk utility scale, price benchmark, or evaluative definition. It is an attributed management opinion and does not alter the objective timing of EM-19 or the retrospective review. The same meeting asks the audit team to distinguish correct mathematical calculations, valid authority, established exceptions, missing documents, and disputed testimony. That discussion records stakeholder interests; it does not add a new operative rule, resolve the P-21 contradiction, or supply Annex Q. The fictional standard and its explicit transition clauses remain the controlling rules for the finite dossier.",
+      "rank": -2.661958959134678
+    },
+    {
+      "id": 38,
+      "path": "input/sources/exception-file.md",
+      "anchor": "X02",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 750,
+      "text": "## [X02]\n\nAt 2029-06-22 09:45 UTC, the director signed instrument EM-19, naming the active incident, pump requirement, supplier, and EUR 31,000.00 value. The instrument expressly grants order approval and makes the urgent-safety emergency declaration. E-19 commitment occurred at 10:00 UTC. The director completed and signed the retrospective review at 2029-06-24 10:00 UTC. That review recorded the procurement steps and confirmed that the purchase addressed S-19. There is no uncertainty in either timestamp. The retrospective interval is measured from commitment, not from the earlier incident confirmation or declaration. The record does not suggest that urgency alone would have satisfied the exception without the declaration and timely review.",
+      "rank": -2.5708186567808093
+    },
+    {
+      "id": 32,
+      "path": "input/sources/delegation-notice.md",
+      "anchor": "D01",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 790,
+      "text": "## [D01]\n\nThe procurement director delegates authority to manager Dana Cole for laboratory consumables with normalized purchase value no greater than EUR 15,000.00 per independent requirement. The authority begins at 2029-06-01 00:00 UTC and expires at 2029-06-15 17:00 UTC, inclusive. The amount limit is inclusive. The delegation does not cover instrument acquisitions, emergency declarations, competition waivers, or approval of an aggregate whose combined requirement exceeds the limit. Dana may approve qualifying purchases during this interval even if operational commitment follows after expiry, provided approval still strictly precedes commitment and no approval condition is violated. The authority is measured when the approval is granted, not when a request enters Dana's inbox.",
+      "rank": -2.1596818799263993
+    },
+    {
+      "id": 35,
+      "path": "input/sources/delegation-notice.md",
+      "anchor": "D04",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 729,
+      "text": "## [D04]\n\nThe director's standing authority includes instruments and consumables above Dana's limit, but the director has not delegated emergency-waiver decisions to Dana. A routine manager signature on a purchase order therefore cannot establish the urgent-safety declaration or its retrospective review. Documents combining several decisions must name each decision expressly. A reviewer can assess a valid approval and a missing competition certificate independently, because neither is a substitute for the other. The register's declaration that P-16 has no alternative approval is an event statement in the explicit coverage L01, not an inference from the fact that the folder happened to contain only Dana's signature page.",
+      "rank": -1.7929934597800317
+    },
+    {
+      "id": 55,
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0014",
+      "document_id": "D00006",
+      "start_char": 0,
+      "end_char": 840,
+      "text": "The urgent-safety exception waives only competitive solicitation. It requires a confirmed active safety incident, a director's written emergency declaration identifying the affected requirement strictly before the first commitment, and a director's retrospective review completed at or after that commitment and no later than forty-eight hours afterward. Exactly forty-eight hours is within the limit. An urgent email or a genuine incident alone is insufficient. The declaration must describe the risk addressed by the purchase; mere inconvenience, deferred research, or an expiring quote does not establish the incident condition. A separately valid order approval remains necessary. Neither an emergency declaration nor a later review is automatically an order approval unless the same signed instrument expressly contains both decisions.",
+      "rank": -1.7112667383922362
+    },
+    {
+      "id": 61,
+      "path": "input/sources/purchase-register.md",
+      "anchor": "L01",
+      "document_id": "D00007",
+      "start_char": 0,
+      "end_char": 805,
+      "text": "## [L01]\n\nThis register is complete for commitment amounts, approval events, competitive-solicitation certificates, emergency declarations, retrospective reviews, and exception determinations for P-11, P-12, P-13, P-14, P-15, P-16, R-17, R-18, and E-19 from May 1 through June 30, 2029. An explicit entry “none” means the named event did not occur in that coverage, rather than that a page was omitted. That completeness does not cover P-21, E-20, payment events, or anyone's subjective assessment. The recorded original requirements for these entries were fully known at the times stated. All amounts described as normalized include unavoidable charges, exclude recoverable VAT, and already reflect the specified single final rounding unless an entry instead supplies the exact unrounded currency inputs.",
+      "rank": -1.6657116958124079
+    }
+  ]
+}

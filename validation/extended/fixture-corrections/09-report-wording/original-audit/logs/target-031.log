@@ -1,0 +1,8 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target031.lean
+Audit.claim13 : (Audit.Serial.n01, Audit.Signer.sera) ∈ Audit.releaseSignatures ∧
+  (Audit.Serial.e17, Audit.Signer.sera) ∈ Audit.releaseSignatures ∧
+    (Audit.Serial.c01, Audit.Signer.sera) ∈ Audit.releaseSignatures ∧
+      Audit.authorizedReleaseSigner Audit.Signer.sera = true
+'Audit.claim13' depends on axioms: [propext]
+
+[exit_code=0; elapsed_seconds=0.220]

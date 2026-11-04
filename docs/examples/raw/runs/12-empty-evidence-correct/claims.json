@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "anchors": [
+    {
+      "report_anchor": "document-preamble",
+      "report_sha256": "0b26371da315998808459eb97d976b89ed417045ae4a4dca668fe18fb3558829",
+      "classification": "non_claim",
+      "reason": "Document title only."
+    },
+    {
+      "report_anchor": "E-01",
+      "report_sha256": "bccf0c7c3a631c278efe38c738b219d875e0e7de30dbe100ecf672845b4f5f6c",
+      "classification": "claims",
+      "reason": "Contains the material conclusion and its explanation assessed here."
+    },
+    {
+      "report_anchor": "E-02",
+      "report_sha256": "4d5004ab5138fd1e955455effb55704a9bcb10ea0904768ee29061733d750a02",
+      "classification": "claims",
+      "reason": "Contains the material conclusion and its explanation assessed here."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "E-01",
+      "report_anchor": "E-01",
+      "report_quote": "The sole supplied source file contains zero characters. This is a statement about the supplied file, not about whether clearance occurred.",
+      "disposition": "audited"
+    },
+    {
+      "claim_id": "E-02",
+      "report_anchor": "E-02",
+      "report_quote": "The supplied dossier does not establish whether supplier Orion passed clearance. There are no source statements or completeness rules restricting either outcome, so both a pass and a failure are compatible with the supplied evidence.",
+      "disposition": "audited"
+    }
+  ]
+}

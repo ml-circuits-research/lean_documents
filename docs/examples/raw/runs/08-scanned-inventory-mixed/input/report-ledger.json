@@ -1,0 +1,17 @@
+{
+  "C08-ERR-01": "**C08-ERR-01.** Lot A accepted inbound quantity was 96 units.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T01]; sources/01-stock-rules.md#[R01].",
+  "C08-ERR-02": "**C08-ERR-02.** Lot B accepted inbound quantity was 24 units because a carton equals a crate.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T02]; sources/01-stock-rules.md#[R01].",
+  "C08-ERR-03": "**C08-ERR-03.** Lot A book on-hand was 136 units.\n\nCitations: sources/02-opening-and-journal.md#[J01]; sources/02-opening-and-journal.md#[J02].",
+  "C08-ERR-04": "**C08-ERR-04.** Lot A available book stock was 148 units because quarantine remains on site.\n\nCitations: sources/01-stock-rules.md#[R03]; sources/02-opening-and-journal.md#[J02].",
+  "C08-ERR-05": "**C08-ERR-05.** Lot B book on-hand was 34 units after all three requested cartons shipped.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T04]; sources/02-opening-and-journal.md#[J03].",
+  "C08-ERR-06": "**C08-ERR-06.** Lot B available stock was 32 units.\n\nCitations: sources/01-stock-rules.md#[R03]; sources/02-opening-and-journal.md#[J03].",
+  "C08-ERR-07": "**C08-ERR-07.** All 60 A units dispatched were delivered to the customer.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T03].",
+  "C08-ERR-08": "**C08-ERR-08.** The B customer order was completely delivered.\n\nCitations: sources/04-receiving-messages.md#[M03].",
+  "C08-ERR-09": "**C08-ERR-09.** The physical A count was exactly 148 units.\n\nCitations: sources/03-signed-counts.md#[N01]; sources/03-signed-counts.md#[N02].",
+  "C08-ERR-10": "**C08-ERR-10.** The physical C shortage is exactly one unit.\n\nCitations: sources/02-opening-and-journal.md#[J04].",
+  "C08-ERR-11": "**C08-ERR-11.** Exactly 78 D units were accepted by the receiver, conclusively established by the scanned line.\n\nCitations: sources/06-shipping-tickets-scan.pdf#[T05-QTY]; sources/04-receiving-messages.md#[M01].",
+  "C08-ERR-12": "**C08-ERR-12.** Every warehouse lot was reconciled at cutoff.\n\nCitations: sources/05-custody-register.md#[K03]; sources/02-opening-and-journal.md#[J04].",
+  "C08-ERR-13": "**C08-ERR-13.** Subtracting the A quarantine from B stock gives B availability.\n\nCitations: sources/01-stock-rules.md#[R03]; sources/02-opening-and-journal.md#[J03].",
+  "C08-ERR-14": "**C08-ERR-14.** The return workflow is elegantly designed.\n\nCitations: sources/05-custody-register.md#[K01].",
+  "document-preamble": "# Synthetic supplied report: 08-scanned-inventory (flawed)\n\nAudit this supplied report independently against the source packet."
+}

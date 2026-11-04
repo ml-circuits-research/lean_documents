@@ -1,0 +1,3 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target007.lean
+Audit.sampleTotal : Audit.total Audit.sample = 275000
+'Audit.sampleTotal' does not depend on any axioms

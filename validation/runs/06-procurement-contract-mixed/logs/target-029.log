@@ -1,0 +1,3 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target029.lean
+Audit.claim12 : Audit.emergency true none none 30840 = false
+'Audit.claim12' does not depend on any axioms

@@ -1,0 +1,3 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target002.lean
+Audit.claim02 : Audit.within Audit.Unit.n02 = false
+'Audit.claim02' does not depend on any axioms

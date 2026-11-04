@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target023.lean
+Audit.claim06 : ∀ (p : Audit.Profile) (temp t : Int), Audit.exceptionApplies Audit.Serial.n02 p temp t = false
+'Audit.claim06' depends on axioms: [propext]
+
+[exit_code=0; elapsed_seconds=0.211]

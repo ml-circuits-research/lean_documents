@@ -1,0 +1,139 @@
+{
+  "dossier": "09",
+  "source_view": "source-view-09.md",
+  "source_original_hashes_identical_between_variants": true,
+  "runs": [
+    {
+      "workspace": "tmp/09-multiversion-safety-mixed",
+      "checked_claims": [
+        "C09-ERR-01",
+        "C09-ERR-02",
+        "C09-ERR-03",
+        "C09-ERR-04",
+        "C09-ERR-05",
+        "C09-ERR-06",
+        "C09-ERR-07",
+        "C09-ERR-08",
+        "C09-ERR-09",
+        "C09-ERR-10",
+        "C09-ERR-11",
+        "C09-ERR-12",
+        "C09-ERR-13",
+        "C09-ERR-14"
+      ],
+      "findings_sha256": "4c59e95fd014130de8c5b50eea0a0d8adbe09a69c4e837ba65ade6f6e62aba16",
+      "model_sha256": "fca898a538ccaba6252a53e04b1120cf364abc3e87a9d366e3ab3030cb338c48",
+      "report_sha256": "fc86ec8320d7d2991f940a64646579ecede51b69e75402deac098d75de4afaa6",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "catalog_sha256": "b02d4832cd5d83458bc1f09f4adc631dd4fdb22505bfee8123c3327ae4d7fa3d",
+      "proof_results_sha256": "ad5d3b37fb44891b694f78e3c263a7eb09d69cc04aa250aba36cfd8cc960809f"
+    },
+    {
+      "workspace": "tmp/09-multiversion-safety-correct",
+      "snapshot": "Clarified report after immutable refresh and all-claim review",
+      "checked_claims": [
+        "C09-OK-01",
+        "C09-OK-02",
+        "C09-OK-03",
+        "C09-OK-04",
+        "C09-OK-05",
+        "C09-OK-06",
+        "C09-OK-07",
+        "C09-OK-08",
+        "C09-OK-09",
+        "C09-OK-10",
+        "C09-OK-11",
+        "C09-OK-12",
+        "C09-OK-13",
+        "C09-OK-14"
+      ],
+      "findings_sha256": "106d08bcd384ae7c3e2600cf8b2ac5dae496f31c09dba64376f3e20f2d4e69fe",
+      "model_sha256": "35959fbb8a72a9a05c289bb68dcb2030da8720e04e8a919d23f24640bc721743",
+      "report_sha256": "de6de67e73cbdaff2ef0247d87736cb7226986ad1f9440631696fd5353fa888e",
+      "catalog_sha256": "d2e5ce3d71166ae2d3c3722fed43e0d12685ee42b0cf5fa894d1a49b426c66f0",
+      "proof_results_sha256": "2c5000d525393c039deb08d48571372251a493cae4aa8145795cff6a74e78d9c",
+      "revision_review_sha256": "e109dbfabc36c9ee904d0d9b10f87b6cc5b2bb0c6406c636caa7f1677287d6dd",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "The clarified report removes the margin ambiguity. C09-OK-01 is supported documentarily with auxiliary arithmetic; other thirteen findings are unchanged and remain supported. No material audit/model mismatch found.",
+      "limitations": [
+        "Historical L01 acceptance relies on explicit source record; no raw supply-voltage log or full release is invented.",
+        "Shared model family, filesystem and verifier; not organizational or independent-kernel assurance."
+      ]
+    }
+  ],
+  "defects": [
+    {
+      "claim_id": "C09-OK-01",
+      "kind": "original report editorial ambiguity",
+      "reported_by": "09 correct-run auditor via parent; not first discovered by this independent reviewer",
+      "original_quote": "L01 satisfies the historical revision 1 delay demonstration; its maximum is 118 milliseconds below 120.",
+      "assessment": "The source maximum is 118 ms and the margin is 2 ms. The wording can be read as a 118 ms margin. The source-first note interpreted the intended comparison and did not initially flag the wording; this correction is explicitly retained rather than retroactively changing that note.",
+      "status": "Resolved in the clarified report revision; original report and its disputed finding remain retained.",
+      "resolution": {
+        "revised_quote": "L01 satisfies the historical revision 1 delay demonstration; its maximum is 118 milliseconds, below the 120-millisecond limit.",
+        "original_audit_workspace": "tmp/09-multiversion-safety-correct-original-wording",
+        "revised_workspace": "tmp/09-multiversion-safety-correct",
+        "reviewed_changes": "Only C09-OK-01 report wording and its interpretation fields changed. Evidence arrays, the other thirteen findings and all Lean source bytes are unchanged. All fourteen citations/targets reviewed again; exact quotes all match current segments.",
+        "model_unchanged": true,
+        "new_check_status": "passed",
+        "revised_semantic_state": "supported",
+        "formal_status": "auxiliary"
+      }
+    }
+  ],
+  "semantic_checks": [
+    "Execution-date revision selection; no retroactive threshold",
+    "Identity/time-specific Annex X and separate COLD profile",
+    "Valid failing run as universal counterexample, not missing data",
+    "Expired calibration versus later nonretrospective renewal",
+    "Invalid trace and absent measurements do not count as zero or valid repeats",
+    "Release conjunction versus delay-only sufficiency",
+    "Sufficient route does not prove universal necessity; finite tests do not prove lifetime safety",
+    "Original DOCX XML tables inspected for all three native rule documents",
+    "Original native PDF pages1 and5 visually inspected: historical maximum118 and missing/invalid N03/X99 qualifiers confirmed."
+  ],
+  "source_view_sha256": "9103eb1b9cf30d774399983c005284b5d56d0c2a38cd7b129b58e84c000a77d6",
+  "superseded_runs": [
+    {
+      "workspace": "tmp/09-multiversion-safety-correct-original-wording",
+      "snapshot": "original ambiguous report before reconciliation",
+      "checked_claims": [
+        "C09-OK-01",
+        "C09-OK-02",
+        "C09-OK-03",
+        "C09-OK-04",
+        "C09-OK-05",
+        "C09-OK-06",
+        "C09-OK-07",
+        "C09-OK-08",
+        "C09-OK-09",
+        "C09-OK-10",
+        "C09-OK-11",
+        "C09-OK-12",
+        "C09-OK-13",
+        "C09-OK-14"
+      ],
+      "findings_sha256": "772dfb3e3b53728473e1ddeb4a392543d67a79b91a014165dbd94cb028a7f1c2",
+      "model_sha256": "35959fbb8a72a9a05c289bb68dcb2030da8720e04e8a919d23f24640bc721743",
+      "report_sha256": "fb5985dc2f261fafcc52cd96661d216d954399d31ed55def23f68276e4a0ab31",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material audit/model mismatch found: C09-OK-01 is appropriately marked undetermined/disputed with arithmetic auxiliary. The original report has the separately recorded editorial ambiguity; unqualified acceptance remains withheld pending revision.",
+      "limitations": [
+        "Shared model family, filesystem and verifier; not institutional or independent-kernel assurance.",
+        "Historical L01 applicability is documentarily asserted; no separate raw 24 V log is invented."
+      ],
+      "original_review_workspace": "tmp/09-multiversion-safety-correct",
+      "catalog_sha256": "4c094f98ac8140bd1e0006e6c2e4591c76b2a6b6d175421a1afb8326a2479fab",
+      "proof_results_sha256": "c374a3df3e55bdb9099ed293737362b231d870bf7a2f19817084fe45de291868"
+    }
+  ],
+  "reconciliation_completed_utc": "2026-11-04T15:38:38.571909+00:00"
+}

@@ -1,0 +1,8 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target021.lean
+Audit.restrictedDeadlineOpen : Audit.standardDue Audit.c204 = none ∧
+  ∃ early late,
+    early = Audit.at17 18 ∧
+      late ≠ Audit.at17 18 ∧ ¬Audit.timely Audit.c204.submission early ∧ Audit.timely Audit.c204.submission late
+'Audit.restrictedDeadlineOpen' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.210]

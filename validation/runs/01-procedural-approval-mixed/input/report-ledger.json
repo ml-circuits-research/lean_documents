@@ -1,0 +1,12 @@
+{
+  "PA-01": "**PA-01.** C-101 satisfied the standard authorization path because its duty-manager approval preceded its start.",
+  "PA-02": "**PA-02.** C-102 had a standard duty-manager approval before starting; its 10:00 request was that approval.",
+  "PA-03": "**PA-03.** C-102 satisfied the emergency authorization path, including a countersignature within 24 hours after start.",
+  "PA-04": "**PA-04.** C-103 satisfied the standard authorization path because its approval was strictly before start.",
+  "PA-05": "**PA-05.** C-104 started without authorization under either path in P-17.",
+  "PA-06": "**PA-06.** C-105 had no standard duty-manager approval before its proposed 2028-04-11 09:00 UTC start.",
+  "PA-07": "**PA-07.** C-105 began at 2028-04-11 09:00 UTC.",
+  "PA-08": "**PA-08.** C-102 was unauthorized solely because it lacked a standard approval.",
+  "PA-09": "**PA-09.** C-102's emergency start was prudent.",
+  "PA-10": "**PA-10.** The supplied C-105 handoff package contains no external approval register."
+}

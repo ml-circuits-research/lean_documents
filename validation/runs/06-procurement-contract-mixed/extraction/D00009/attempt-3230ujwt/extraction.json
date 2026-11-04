@@ -1,0 +1,6664 @@
+{
+  "text": "<a id=\"pdf-page-0001\"></a>\nHPS revision transition and requisition schedule\nAll organizations, people, agreements, events, and rules in this source are synthetic.\n\n<a id=\"pdf-page-0002\"></a>\n[V01]\nRevision 2 takes effect at 2029-06-01 00:00 UTC. An accepted requisition received before\nthat instant remains under revision 1 for its original scope, even if approval, supplier\nselection, commitment, delivery, or invoicing occurs later. An accepted requisition received\nat the exact boundary or afterward uses revision 2. Accepted receipt is the central intake\nservice’s timestamp, not the time when an employee drafted an email or a buyer opened a\ntask. This amendment changes the threshold but does not retroactively invalidate approvals\nvalid under the retained revision. A dashboard field showing the presently published\nstandard is not a record of which version governs an individual requisition.\n\n<a id=\"pdf-page-0003\"></a>\n[V02]\nA material scope amendment accepted on or after 2029-06-01 is governed by revision 2 only\nfor the additional independently priced requirement introduced by that amendment. It does\nnot erase competition obligations for the unchanged original requirement. A change is\nmaterial when it adds a distinct functional requirement or increases unavoidable\nconsideration; correcting a contact name or an internal billing code is not material. If an\noriginal and added requirement satisfy the aggregation rule, the buyer must document the\naggregation analysis rather than presume that a new request number prevents it. The files\nfor the two grandfathering examples state expressly that neither contains an added\nrequirement, a price increase, or a genuine material amendment.\n\n<a id=\"pdf-page-0004\"></a>\n[V03]\nAccepted requisition R-17 concerns one instrument purchase at EUR 22,500.00. Intake receipt\noccurred at 2029-05-31 23:59 UTC. A June 3 clerical amendment changed the internal contact\nfrom the field technician to the warehouse supervisor and corrected a cost-center spelling.\nThe approved schedule states that the specification, supplier, price, quantity, and\nfunctional requirement remained unchanged. Commitment occurred on June 10. The amendment did\nnot create an additional purchase and does not constitute a material scope amendment under\nV02. The current-version dashboard displayed revision 2 on the day of commitment because\nrevision 2 was then the standard’s published version.\n\n<a id=\"pdf-page-0005\"></a>\n[V04]\nAccepted requisition R-18 concerns one distinct instrument purchase at EUR 22,500.00.\nCentral intake receipt occurred at 2029-06-01 00:00 UTC. The receipt is exact to the minute\nand is not a rounded display of an earlier time. Commitment occurred on June 10. No other\npurchase in this dossier belongs to its operational requirement, and no material amendment\nor aggregation relationship is recorded. The amount is already normalized in euros,\nexcluding recoverable VAT and including freight. The boundary timestamp, rather than the\nidentical commitment day or identical value shared with R-17, determines the applicable\nrevision for this original requirement.\n\n<a id=\"pdf-page-0006\"></a>\n[V05]\nThe requisition currency schedule fixes USD-to-EUR at exactly 0.900000 euros per US dollar\nfor P-13 and CHF-to-EUR at exactly 1.040000 euros per Swiss franc for P-22. These are\nsynthetic contractual rates for this assessment and are not claims about an actual exchange\nmarket. P-13 permits a transaction amount of USD 27,777.775, has no freight charge, and has\nno unconditional rebate or separately included VAT. P-22 specifies CHF 18,000.00 equipment\nplus CHF 1,000.00 unavoidable freight. Its possible year-end loyalty credit is discretionary\nand is not an unconditional rebate at commitment. Later accounting software may display only\ntwo currency decimals, but those displays do not amend these exact contractual inputs.\n\n<a id=\"pdf-page-0007\"></a>\n[V06]\nThe transition package contains the full operative standard, this amendment, the named\npurchase register, delegation notice, exception file, attestation scans, and reconciliation\ncorrespondence. Annex Q was not supplied. The transition package does not contain a separate\nAnnex Q deadline, compatibility checklist, certification rule, or written interpretation\nadopted by the director. In particular, the administrative phrase \"all attachments\ntransferred except Q\" is a complete inventory statement about this package; it is not an\nassertion that no employee holds Annex Q or that no procurement event occurred outside the\nexplicitly complete transaction coverage. This distinction remains relevant when a report\nattempts to infer event absence from a missing attachment.\n",
+  "segments": [
+    {
+      "anchor": "pdf-page-0001",
+      "quote": "HPS revision transition and requisition schedule\nAll organizations, people, agreements, events, and rules in this source are synthetic.",
+      "locator": {
+        "kind": "pdf",
+        "page": 1,
+        "page_width_points": 612.0,
+        "page_height_points": 792.0,
+        "coordinate_unit": "PDF points; origin at top-left",
+        "words": [
+          {
+            "text": "HPS",
+            "line": 1,
+            "bbox": [
+              35.0,
+              31.339,
+              51.2,
+              38.413
+            ]
+          },
+          {
+            "text": "revision",
+            "line": 1,
+            "bbox": [
+              56.6,
+              31.339,
+              99.8,
+              38.413
+            ]
+          },
+          {
+            "text": "transition",
+            "line": 1,
+            "bbox": [
+              105.2,
+              31.339,
+              159.2,
+              38.413
+            ]
+          },
+          {
+            "text": "and",
+            "line": 1,
+            "bbox": [
+              164.6,
+              31.339,
+              180.8,
+              38.413
+            ]
+          },
+          {
+            "text": "requisition",
+            "line": 1,
+            "bbox": [
+              186.2,
+              31.339,
+              245.6,
+              38.413
+            ]
+          },
+          {
+            "text": "schedule",
+            "line": 1,
+            "bbox": [
+              251.0,
+              31.339,
+              294.2,
+              38.413
+            ]
+          },
+          {
+            "text": "All",
+            "line": 2,
+            "bbox": [
+              35.0,
+              55.339,
+              51.2,
+              62.413
+            ]
+          },
+          {
+            "text": "organizations,",
+            "line": 2,
+            "bbox": [
+              56.6,
+              55.339,
+              132.2,
+              62.413
+            ]
+          },
+          {
+            "text": "people,",
+            "line": 2,
+            "bbox": [
+              137.6,
+              55.339,
+              175.4,
+              62.413
+            ]
+          },
+          {
+            "text": "agreements,",
+            "line": 2,
+            "bbox": [
+              180.8,
+              55.339,
+              240.2,
+              62.413
+            ]
+          },
+          {
+            "text": "events,",
+            "line": 2,
+            "bbox": [
+              245.6,
+              55.339,
+              283.4,
+              62.413
+            ]
+          },
+          {
+            "text": "and",
+            "line": 2,
+            "bbox": [
+              288.8,
+              55.339,
+              305.0,
+              62.413
+            ]
+          },
+          {
+            "text": "rules",
+            "line": 2,
+            "bbox": [
+              310.4,
+              55.339,
+              337.4,
+              62.413
+            ]
+          },
+          {
+            "text": "in",
+            "line": 2,
+            "bbox": [
+              342.8,
+              55.339,
+              353.6,
+              62.413
+            ]
+          },
+          {
+            "text": "this",
+            "line": 2,
+            "bbox": [
+              359.0,
+              55.339,
+              380.6,
+              62.413
+            ]
+          },
+          {
+            "text": "source",
+            "line": 2,
+            "bbox": [
+              386.0,
+              55.339,
+              418.4,
+              62.413
+            ]
+          },
+          {
+            "text": "are",
+            "line": 2,
+            "bbox": [
+              423.8,
+              55.339,
+              440.0,
+              62.413
+            ]
+          },
+          {
+            "text": "synthetic.",
+            "line": 2,
+            "bbox": [
+              445.4,
+              55.339,
+              499.4,
+              62.413
+            ]
+          }
+        ],
+        "text_reconstruction": "Words in Poppler line order, joined by one space; lines joined by newline.",
+        "bbox_artifact": "pdf-page-0001.bbox.xhtml",
+        "total_pages": 7
+      },
+      "method": "poppler-bbox-layout",
+      "uncertainty": [
+        "PDF word coordinates and text are converter outputs; visual reading order, tables, and typography require source inspection."
+      ]
+    },
+    {
+      "anchor": "pdf-page-0002",
+      "quote": "[V01]\nRevision 2 takes effect at 2029-06-01 00:00 UTC. An accepted requisition received before\nthat instant remains under revision 1 for its original scope, even if approval, supplier\nselection, commitment, delivery, or invoicing occurs later. An accepted requisition received\nat the exact boundary or afterward uses revision 2. Accepted receipt is the central intake\nservice’s timestamp, not the time when an employee drafted an email or a buyer opened a\ntask. This amendment changes the threshold but does not retroactively invalidate approvals\nvalid under the retained revision. A dashboard field showing the presently published\nstandard is not a record of which version governs an individual requisition.",
+      "locator": {
+        "kind": "pdf",
+        "page": 2,
+        "page_width_points": 612.0,
+        "page_height_points": 792.0,
+        "coordinate_unit": "PDF points; origin at top-left",
+        "words": [
+          {
+            "text": "[V01]",
+            "line": 1,
+            "bbox": [
+              35.0,
+              31.339,
+              62.0,
+              38.413
+            ]
+          },
+          {
+            "text": "Revision",
+            "line": 2,
+            "bbox": [
+              35.0,
+              55.339,
+              78.2,
+              62.413
+            ]
+          },
+          {
+            "text": "2",
+            "line": 2,
+            "bbox": [
+              83.6,
+              55.339,
+              89.0,
+              62.413
+            ]
+          },
+          {
+            "text": "takes",
+            "line": 2,
+            "bbox": [
+              94.4,
+              55.339,
+              121.4,
+              62.413
+            ]
+          },
+          {
+            "text": "effect",
+            "line": 2,
+            "bbox": [
+              126.8,
+              55.339,
+              159.2,
+              62.413
+            ]
+          },
+          {
+            "text": "at",
+            "line": 2,
+            "bbox": [
+              164.6,
+              55.339,
+              175.4,
+              62.413
+            ]
+          },
+          {
+            "text": "2029-06-01",
+            "line": 2,
+            "bbox": [
+              180.8,
+              55.339,
+              234.8,
+              62.413
+            ]
+          },
+          {
+            "text": "00:00",
+            "line": 2,
+            "bbox": [
+              240.2,
+              55.339,
+              267.2,
+              62.413
+            ]
+          },
+          {
+            "text": "UTC.",
+            "line": 2,
+            "bbox": [
+              272.6,
+              55.339,
+              294.2,
+              62.413
+            ]
+          },
+          {
+            "text": "An",
+            "line": 2,
+            "bbox": [
+              299.6,
+              55.339,
+              310.4,
+              62.413
+            ]
+          },
+          {
+            "text": "accepted",
+            "line": 2,
+            "bbox": [
+              315.8,
+              55.339,
+              359.0,
+              62.413
+            ]
+          },
+          {
+            "text": "requisition",
+            "line": 2,
+            "bbox": [
+              364.4,
+              55.339,
+              423.8,
+              62.413
+            ]
+          },
+          {
+            "text": "received",
+            "line": 2,
+            "bbox": [
+              429.2,
+              55.339,
+              472.4,
+              62.413
+            ]
+          },
+          {
+            "text": "before",
+            "line": 2,
+            "bbox": [
+              477.8,
+              55.339,
+              510.2,
+              62.413
+            ]
+          },
+          {
+            "text": "that",
+            "line": 3,
+            "bbox": [
+              35.0,
+              67.339,
+              56.6,
+              74.413
+            ]
+          },
+          {
+            "text": "instant",
+            "line": 3,
+            "bbox": [
+              62.0,
+              67.339,
+              99.8,
+              74.413
+            ]
+          },
+          {
+            "text": "remains",
+            "line": 3,
+            "bbox": [
+              105.2,
+              67.339,
+              143.0,
+              74.413
+            ]
+          },
+          {
+            "text": "under",
+            "line": 3,
+            "bbox": [
+              148.4,
+              67.339,
+              175.4,
+              74.413
+            ]
+          },
+          {
+            "text": "revision",
+            "line": 3,
+            "bbox": [
+              180.8,
+              67.339,
+              224.0,
+              74.413
+            ]
+          },
+          {
+            "text": "1",
+            "line": 3,
+            "bbox": [
+              229.4,
+              67.339,
+              234.8,
+              74.413
+            ]
+          },
+          {
+            "text": "for",
+            "line": 3,
+            "bbox": [
+              240.2,
+              67.339,
+              256.4,
+              74.413
+            ]
+          },
+          {
+            "text": "its",
+            "line": 3,
+            "bbox": [
+              261.8,
+              67.339,
+              278.0,
+              74.413
+            ]
+          },
+          {
+            "text": "original",
+            "line": 3,
+            "bbox": [
+              283.4,
+              67.339,
+              326.6,
+              74.413
+            ]
+          },
+          {
+            "text": "scope,",
+            "line": 3,
+            "bbox": [
+              332.0,
+              67.339,
+              364.4,
+              74.413
+            ]
+          },
+          {
+            "text": "even",
+            "line": 3,
+            "bbox": [
+              369.8,
+              67.339,
+              391.4,
+              74.413
+            ]
+          },
+          {
+            "text": "if",
+            "line": 3,
+            "bbox": [
+              396.8,
+              67.339,
+              407.6,
+              74.413
+            ]
+          },
+          {
+            "text": "approval,",
+            "line": 3,
+            "bbox": [
+              413.0,
+              67.339,
+              461.6,
+              74.413
+            ]
+          },
+          {
+            "text": "supplier",
+            "line": 3,
+            "bbox": [
+              467.0,
+              67.339,
+              510.2,
+              74.413
+            ]
+          },
+          {
+            "text": "selection,",
+            "line": 4,
+            "bbox": [
+              35.0,
+              79.339,
+              89.0,
+              86.413
+            ]
+          },
+          {
+            "text": "commitment,",
+            "line": 4,
+            "bbox": [
+              94.4,
+              79.339,
+              153.8,
+              86.413
+            ]
+          },
+          {
+            "text": "delivery,",
+            "line": 4,
+            "bbox": [
+              159.2,
+              79.339,
+              207.8,
+              86.413
+            ]
+          },
+          {
+            "text": "or",
+            "line": 4,
+            "bbox": [
+              213.2,
+              79.339,
+              224.0,
+              86.413
+            ]
+          },
+          {
+            "text": "invoicing",
+            "line": 4,
+            "bbox": [
+              229.4,
+              79.339,
+              278.0,
+              86.413
+            ]
+          },
+          {
+            "text": "occurs",
+            "line": 4,
+            "bbox": [
+              283.4,
+              79.339,
+              315.8,
+              86.413
+            ]
+          },
+          {
+            "text": "later.",
+            "line": 4,
+            "bbox": [
+              321.2,
+              79.339,
+              353.6,
+              86.413
+            ]
+          },
+          {
+            "text": "An",
+            "line": 4,
+            "bbox": [
+              359.0,
+              79.339,
+              369.8,
+              86.413
+            ]
+          },
+          {
+            "text": "accepted",
+            "line": 4,
+            "bbox": [
+              375.2,
+              79.339,
+              418.4,
+              86.413
+            ]
+          },
+          {
+            "text": "requisition",
+            "line": 4,
+            "bbox": [
+              423.8,
+              79.339,
+              483.2,
+              86.413
+            ]
+          },
+          {
+            "text": "received",
+            "line": 4,
+            "bbox": [
+              488.6,
+              79.339,
+              531.8,
+              86.413
+            ]
+          },
+          {
+            "text": "at",
+            "line": 5,
+            "bbox": [
+              35.0,
+              91.339,
+              45.8,
+              98.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 5,
+            "bbox": [
+              51.2,
+              91.339,
+              67.4,
+              98.413
+            ]
+          },
+          {
+            "text": "exact",
+            "line": 5,
+            "bbox": [
+              72.8,
+              91.339,
+              99.8,
+              98.413
+            ]
+          },
+          {
+            "text": "boundary",
+            "line": 5,
+            "bbox": [
+              105.2,
+              91.339,
+              148.4,
+              98.413
+            ]
+          },
+          {
+            "text": "or",
+            "line": 5,
+            "bbox": [
+              153.8,
+              91.339,
+              164.6,
+              98.413
+            ]
+          },
+          {
+            "text": "afterward",
+            "line": 5,
+            "bbox": [
+              170.0,
+              91.339,
+              218.6,
+              98.413
+            ]
+          },
+          {
+            "text": "uses",
+            "line": 5,
+            "bbox": [
+              224.0,
+              91.339,
+              245.6,
+              98.413
+            ]
+          },
+          {
+            "text": "revision",
+            "line": 5,
+            "bbox": [
+              251.0,
+              91.339,
+              294.2,
+              98.413
+            ]
+          },
+          {
+            "text": "2.",
+            "line": 5,
+            "bbox": [
+              299.6,
+              91.339,
+              310.4,
+              98.413
+            ]
+          },
+          {
+            "text": "Accepted",
+            "line": 5,
+            "bbox": [
+              315.8,
+              91.339,
+              359.0,
+              98.413
+            ]
+          },
+          {
+            "text": "receipt",
+            "line": 5,
+            "bbox": [
+              364.4,
+              91.339,
+              402.2,
+              98.413
+            ]
+          },
+          {
+            "text": "is",
+            "line": 5,
+            "bbox": [
+              407.6,
+              91.339,
+              418.4,
+              98.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 5,
+            "bbox": [
+              423.8,
+              91.339,
+              440.0,
+              98.413
+            ]
+          },
+          {
+            "text": "central",
+            "line": 5,
+            "bbox": [
+              445.4,
+              91.339,
+              483.2,
+              98.413
+            ]
+          },
+          {
+            "text": "intake",
+            "line": 5,
+            "bbox": [
+              488.6,
+              91.339,
+              521.0,
+              98.413
+            ]
+          },
+          {
+            "text": "service’s",
+            "line": 6,
+            "bbox": [
+              35.0,
+              103.339,
+              83.6,
+              110.413
+            ]
+          },
+          {
+            "text": "timestamp,",
+            "line": 6,
+            "bbox": [
+              89.0,
+              103.339,
+              143.0,
+              110.413
+            ]
+          },
+          {
+            "text": "not",
+            "line": 6,
+            "bbox": [
+              148.4,
+              103.339,
+              164.6,
+              110.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 6,
+            "bbox": [
+              170.0,
+              103.339,
+              186.2,
+              110.413
+            ]
+          },
+          {
+            "text": "time",
+            "line": 6,
+            "bbox": [
+              191.6,
+              103.339,
+              213.2,
+              110.413
+            ]
+          },
+          {
+            "text": "when",
+            "line": 6,
+            "bbox": [
+              218.6,
+              103.339,
+              240.2,
+              110.413
+            ]
+          },
+          {
+            "text": "an",
+            "line": 6,
+            "bbox": [
+              245.6,
+              103.339,
+              256.4,
+              110.413
+            ]
+          },
+          {
+            "text": "employee",
+            "line": 6,
+            "bbox": [
+              261.8,
+              103.339,
+              305.0,
+              110.413
+            ]
+          },
+          {
+            "text": "drafted",
+            "line": 6,
+            "bbox": [
+              310.4,
+              103.339,
+              348.2,
+              110.413
+            ]
+          },
+          {
+            "text": "an",
+            "line": 6,
+            "bbox": [
+              353.6,
+              103.339,
+              364.4,
+              110.413
+            ]
+          },
+          {
+            "text": "email",
+            "line": 6,
+            "bbox": [
+              369.8,
+              103.339,
+              396.8,
+              110.413
+            ]
+          },
+          {
+            "text": "or",
+            "line": 6,
+            "bbox": [
+              402.2,
+              103.339,
+              413.0,
+              110.413
+            ]
+          },
+          {
+            "text": "a",
+            "line": 6,
+            "bbox": [
+              418.4,
+              103.339,
+              423.8,
+              110.413
+            ]
+          },
+          {
+            "text": "buyer",
+            "line": 6,
+            "bbox": [
+              429.2,
+              103.339,
+              456.2,
+              110.413
+            ]
+          },
+          {
+            "text": "opened",
+            "line": 6,
+            "bbox": [
+              461.6,
+              103.339,
+              494.0,
+              110.413
+            ]
+          },
+          {
+            "text": "a",
+            "line": 6,
+            "bbox": [
+              499.4,
+              103.339,
+              504.8,
+              110.413
+            ]
+          },
+          {
+            "text": "task.",
+            "line": 7,
+            "bbox": [
+              35.0,
+              115.339,
+              62.0,
+              122.413
+            ]
+          },
+          {
+            "text": "This",
+            "line": 7,
+            "bbox": [
+              67.4,
+              115.339,
+              89.0,
+              122.413
+            ]
+          },
+          {
+            "text": "amendment",
+            "line": 7,
+            "bbox": [
+              94.4,
+              115.339,
+              143.0,
+              122.413
+            ]
+          },
+          {
+            "text": "changes",
+            "line": 7,
+            "bbox": [
+              148.4,
+              115.339,
+              186.2,
+              122.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 7,
+            "bbox": [
+              191.6,
+              115.339,
+              207.8,
+              122.413
+            ]
+          },
+          {
+            "text": "threshold",
+            "line": 7,
+            "bbox": [
+              213.2,
+              115.339,
+              261.8,
+              122.413
+            ]
+          },
+          {
+            "text": "but",
+            "line": 7,
+            "bbox": [
+              267.2,
+              115.339,
+              283.4,
+              122.413
+            ]
+          },
+          {
+            "text": "does",
+            "line": 7,
+            "bbox": [
+              288.8,
+              115.339,
+              310.4,
+              122.413
+            ]
+          },
+          {
+            "text": "not",
+            "line": 7,
+            "bbox": [
+              315.8,
+              115.339,
+              332.0,
+              122.413
+            ]
+          },
+          {
+            "text": "retroactively",
+            "line": 7,
+            "bbox": [
+              337.4,
+              115.339,
+              407.6,
+              122.413
+            ]
+          },
+          {
+            "text": "invalidate",
+            "line": 7,
+            "bbox": [
+              413.0,
+              115.339,
+              467.0,
+              122.413
+            ]
+          },
+          {
+            "text": "approvals",
+            "line": 7,
+            "bbox": [
+              472.4,
+              115.339,
+              521.0,
+              122.413
+            ]
+          },
+          {
+            "text": "valid",
+            "line": 8,
+            "bbox": [
+              35.0,
+              127.339,
+              62.0,
+              134.413
+            ]
+          },
+          {
+            "text": "under",
+            "line": 8,
+            "bbox": [
+              67.4,
+              127.339,
+              94.4,
+              134.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 8,
+            "bbox": [
+              99.8,
+              127.339,
+              116.0,
+              134.413
+            ]
+          },
+          {
+            "text": "retained",
+            "line": 8,
+            "bbox": [
+              121.4,
+              127.339,
+              164.6,
+              134.413
+            ]
+          },
+          {
+            "text": "revision.",
+            "line": 8,
+            "bbox": [
+              170.0,
+              127.339,
+              218.6,
+              134.413
+            ]
+          },
+          {
+            "text": "A",
+            "line": 8,
+            "bbox": [
+              224.0,
+              127.339,
+              229.4,
+              134.413
+            ]
+          },
+          {
+            "text": "dashboard",
+            "line": 8,
+            "bbox": [
+              234.8,
+              127.339,
+              283.4,
+              134.413
+            ]
+          },
+          {
+            "text": "field",
+            "line": 8,
+            "bbox": [
+              288.8,
+              127.339,
+              315.8,
+              134.413
+            ]
+          },
+          {
+            "text": "showing",
+            "line": 8,
+            "bbox": [
+              321.2,
+              127.339,
+              359.0,
+              134.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 8,
+            "bbox": [
+              364.4,
+              127.339,
+              380.6,
+              134.413
+            ]
+          },
+          {
+            "text": "presently",
+            "line": 8,
+            "bbox": [
+              386.0,
+              127.339,
+              434.6,
+              134.413
+            ]
+          },
+          {
+            "text": "published",
+            "line": 8,
+            "bbox": [
+              440.0,
+              127.339,
+              488.6,
+              134.413
+            ]
+          },
+          {
+            "text": "standard",
+            "line": 9,
+            "bbox": [
+              35.0,
+              139.339,
+              78.2,
+              146.413
+            ]
+          },
+          {
+            "text": "is",
+            "line": 9,
+            "bbox": [
+              83.6,
+              139.339,
+              94.4,
+              146.413
+            ]
+          },
+          {
+            "text": "not",
+            "line": 9,
+            "bbox": [
+              99.8,
+              139.339,
+              116.0,
+              146.413
+            ]
+          },
+          {
+            "text": "a",
+            "line": 9,
+            "bbox": [
+              121.4,
+              139.339,
+              126.8,
+              146.413
+            ]
+          },
+          {
+            "text": "record",
+            "line": 9,
+            "bbox": [
+              132.2,
+              139.339,
+              164.6,
+              146.413
+            ]
+          },
+          {
+            "text": "of",
+            "line": 9,
+            "bbox": [
+              170.0,
+              139.339,
+              180.8,
+              146.413
+            ]
+          },
+          {
+            "text": "which",
+            "line": 9,
+            "bbox": [
+              186.2,
+              139.339,
+              213.2,
+              146.413
+            ]
+          },
+          {
+            "text": "version",
+            "line": 9,
+            "bbox": [
+              218.6,
+              139.339,
+              256.4,
+              146.413
+            ]
+          },
+          {
+            "text": "governs",
+            "line": 9,
+            "bbox": [
+              261.8,
+              139.339,
+              299.6,
+              146.413
+            ]
+          },
+          {
+            "text": "an",
+            "line": 9,
+            "bbox": [
+              305.0,
+              139.339,
+              315.8,
+              146.413
+            ]
+          },
+          {
+            "text": "individual",
+            "line": 9,
+            "bbox": [
+              321.2,
+              139.339,
+              375.2,
+              146.413
+            ]
+          },
+          {
+            "text": "requisition.",
+            "line": 9,
+            "bbox": [
+              380.6,
+              139.339,
+              445.4,
+              146.413
+            ]
+          }
+        ],
+        "text_reconstruction": "Words in Poppler line order, joined by one space; lines joined by newline.",
+        "bbox_artifact": "pdf-page-0002.bbox.xhtml",
+        "total_pages": 7
+      },
+      "method": "poppler-bbox-layout",
+      "uncertainty": [
+        "PDF word coordinates and text are converter outputs; visual reading order, tables, and typography require source inspection."
+      ]
+    },
+    {
+      "anchor": "pdf-page-0003",
+      "quote": "[V02]\nA material scope amendment accepted on or after 2029-06-01 is governed by revision 2 only\nfor the additional independently priced requirement introduced by that amendment. It does\nnot erase competition obligations for the unchanged original requirement. A change is\nmaterial when it adds a distinct functional requirement or increases unavoidable\nconsideration; correcting a contact name or an internal billing code is not material. If an\noriginal and added requirement satisfy the aggregation rule, the buyer must document the\naggregation analysis rather than presume that a new request number prevents it. The files\nfor the two grandfathering examples state expressly that neither contains an added\nrequirement, a price increase, or a genuine material amendment.",
+      "locator": {
+        "kind": "pdf",
+        "page": 3,
+        "page_width_points": 612.0,
+        "page_height_points": 792.0,
+        "coordinate_unit": "PDF points; origin at top-left",
+        "words": [
+          {
+            "text": "[V02]",
+            "line": 1,
+            "bbox": [
+              35.0,
+              31.339,
+              62.0,
+              38.413
+            ]
+          },
+          {
+            "text": "A",
+            "line": 2,
+            "bbox": [
+              35.0,
+              55.339,
+              40.4,
+              62.413
+            ]
+          },
+          {
+            "text": "material",
+            "line": 2,
+            "bbox": [
+              45.8,
+              55.339,
+              89.0,
+              62.413
+            ]
+          },
+          {
+            "text": "scope",
+            "line": 2,
+            "bbox": [
+              94.4,
+              55.339,
+              121.4,
+              62.413
+            ]
+          },
+          {
+            "text": "amendment",
+            "line": 2,
+            "bbox": [
+              126.8,
+              55.339,
+              175.4,
+              62.413
+            ]
+          },
+          {
+            "text": "accepted",
+            "line": 2,
+            "bbox": [
+              180.8,
+              55.339,
+              224.0,
+              62.413
+            ]
+          },
+          {
+            "text": "on",
+            "line": 2,
+            "bbox": [
+              229.4,
+              55.339,
+              240.2,
+              62.413
+            ]
+          },
+          {
+            "text": "or",
+            "line": 2,
+            "bbox": [
+              245.6,
+              55.339,
+              256.4,
+              62.413
+            ]
+          },
+          {
+            "text": "after",
+            "line": 2,
+            "bbox": [
+              261.8,
+              55.339,
+              288.8,
+              62.413
+            ]
+          },
+          {
+            "text": "2029-06-01",
+            "line": 2,
+            "bbox": [
+              294.2,
+              55.339,
+              348.2,
+              62.413
+            ]
+          },
+          {
+            "text": "is",
+            "line": 2,
+            "bbox": [
+              353.6,
+              55.339,
+              364.4,
+              62.413
+            ]
+          },
+          {
+            "text": "governed",
+            "line": 2,
+            "bbox": [
+              369.8,
+              55.339,
+              413.0,
+              62.413
+            ]
+          },
+          {
+            "text": "by",
+            "line": 2,
+            "bbox": [
+              418.4,
+              55.339,
+              429.2,
+              62.413
+            ]
+          },
+          {
+            "text": "revision",
+            "line": 2,
+            "bbox": [
+              434.6,
+              55.339,
+              477.8,
+              62.413
+            ]
+          },
+          {
+            "text": "2",
+            "line": 2,
+            "bbox": [
+              483.2,
+              55.339,
+              488.6,
+              62.413
+            ]
+          },
+          {
+            "text": "only",
+            "line": 2,
+            "bbox": [
+              494.0,
+              55.339,
+              515.6,
+              62.413
+            ]
+          },
+          {
+            "text": "for",
+            "line": 3,
+            "bbox": [
+              35.0,
+              67.339,
+              51.2,
+              74.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 3,
+            "bbox": [
+              56.6,
+              67.339,
+              72.8,
+              74.413
+            ]
+          },
+          {
+            "text": "additional",
+            "line": 3,
+            "bbox": [
+              78.2,
+              67.339,
+              132.2,
+              74.413
+            ]
+          },
+          {
+            "text": "independently",
+            "line": 3,
+            "bbox": [
+              137.6,
+              67.339,
+              207.8,
+              74.413
+            ]
+          },
+          {
+            "text": "priced",
+            "line": 3,
+            "bbox": [
+              213.2,
+              67.339,
+              245.6,
+              74.413
+            ]
+          },
+          {
+            "text": "requirement",
+            "line": 3,
+            "bbox": [
+              251.0,
+              67.339,
+              310.4,
+              74.413
+            ]
+          },
+          {
+            "text": "introduced",
+            "line": 3,
+            "bbox": [
+              315.8,
+              67.339,
+              369.8,
+              74.413
+            ]
+          },
+          {
+            "text": "by",
+            "line": 3,
+            "bbox": [
+              375.2,
+              67.339,
+              386.0,
+              74.413
+            ]
+          },
+          {
+            "text": "that",
+            "line": 3,
+            "bbox": [
+              391.4,
+              67.339,
+              413.0,
+              74.413
+            ]
+          },
+          {
+            "text": "amendment.",
+            "line": 3,
+            "bbox": [
+              418.4,
+              67.339,
+              472.4,
+              74.413
+            ]
+          },
+          {
+            "text": "It",
+            "line": 3,
+            "bbox": [
+              477.8,
+              67.339,
+              488.6,
+              74.413
+            ]
+          },
+          {
+            "text": "does",
+            "line": 3,
+            "bbox": [
+              494.0,
+              67.339,
+              515.6,
+              74.413
+            ]
+          },
+          {
+            "text": "not",
+            "line": 4,
+            "bbox": [
+              35.0,
+              79.339,
+              51.2,
+              86.413
+            ]
+          },
+          {
+            "text": "erase",
+            "line": 4,
+            "bbox": [
+              56.6,
+              79.339,
+              83.6,
+              86.413
+            ]
+          },
+          {
+            "text": "competition",
+            "line": 4,
+            "bbox": [
+              89.0,
+              79.339,
+              148.4,
+              86.413
+            ]
+          },
+          {
+            "text": "obligations",
+            "line": 4,
+            "bbox": [
+              153.8,
+              79.339,
+              213.2,
+              86.413
+            ]
+          },
+          {
+            "text": "for",
+            "line": 4,
+            "bbox": [
+              218.6,
+              79.339,
+              234.8,
+              86.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 4,
+            "bbox": [
+              240.2,
+              79.339,
+              256.4,
+              86.413
+            ]
+          },
+          {
+            "text": "unchanged",
+            "line": 4,
+            "bbox": [
+              261.8,
+              79.339,
+              310.4,
+              86.413
+            ]
+          },
+          {
+            "text": "original",
+            "line": 4,
+            "bbox": [
+              315.8,
+              79.339,
+              359.0,
+              86.413
+            ]
+          },
+          {
+            "text": "requirement.",
+            "line": 4,
+            "bbox": [
+              364.4,
+              79.339,
+              429.2,
+              86.413
+            ]
+          },
+          {
+            "text": "A",
+            "line": 4,
+            "bbox": [
+              434.6,
+              79.339,
+              440.0,
+              86.413
+            ]
+          },
+          {
+            "text": "change",
+            "line": 4,
+            "bbox": [
+              445.4,
+              79.339,
+              477.8,
+              86.413
+            ]
+          },
+          {
+            "text": "is",
+            "line": 4,
+            "bbox": [
+              483.2,
+              79.339,
+              494.0,
+              86.413
+            ]
+          },
+          {
+            "text": "material",
+            "line": 5,
+            "bbox": [
+              35.0,
+              91.339,
+              78.2,
+              98.413
+            ]
+          },
+          {
+            "text": "when",
+            "line": 5,
+            "bbox": [
+              83.6,
+              91.339,
+              105.2,
+              98.413
+            ]
+          },
+          {
+            "text": "it",
+            "line": 5,
+            "bbox": [
+              110.6,
+              91.339,
+              121.4,
+              98.413
+            ]
+          },
+          {
+            "text": "adds",
+            "line": 5,
+            "bbox": [
+              126.8,
+              91.339,
+              148.4,
+              98.413
+            ]
+          },
+          {
+            "text": "a",
+            "line": 5,
+            "bbox": [
+              153.8,
+              91.339,
+              159.2,
+              98.413
+            ]
+          },
+          {
+            "text": "distinct",
+            "line": 5,
+            "bbox": [
+              164.6,
+              91.339,
+              207.8,
+              98.413
+            ]
+          },
+          {
+            "text": "functional",
+            "line": 5,
+            "bbox": [
+              213.2,
+              91.339,
+              267.2,
+              98.413
+            ]
+          },
+          {
+            "text": "requirement",
+            "line": 5,
+            "bbox": [
+              272.6,
+              91.339,
+              332.0,
+              98.413
+            ]
+          },
+          {
+            "text": "or",
+            "line": 5,
+            "bbox": [
+              337.4,
+              91.339,
+              348.2,
+              98.413
+            ]
+          },
+          {
+            "text": "increases",
+            "line": 5,
+            "bbox": [
+              353.6,
+              91.339,
+              402.2,
+              98.413
+            ]
+          },
+          {
+            "text": "unavoidable",
+            "line": 5,
+            "bbox": [
+              407.6,
+              91.339,
+              467.0,
+              98.413
+            ]
+          },
+          {
+            "text": "consideration;",
+            "line": 6,
+            "bbox": [
+              35.0,
+              103.339,
+              110.6,
+              110.413
+            ]
+          },
+          {
+            "text": "correcting",
+            "line": 6,
+            "bbox": [
+              116.0,
+              103.339,
+              170.0,
+              110.413
+            ]
+          },
+          {
+            "text": "a",
+            "line": 6,
+            "bbox": [
+              175.4,
+              103.339,
+              180.8,
+              110.413
+            ]
+          },
+          {
+            "text": "contact",
+            "line": 6,
+            "bbox": [
+              186.2,
+              103.339,
+              224.0,
+              110.413
+            ]
+          },
+          {
+            "text": "name",
+            "line": 6,
+            "bbox": [
+              229.4,
+              103.339,
+              251.0,
+              110.413
+            ]
+          },
+          {
+            "text": "or",
+            "line": 6,
+            "bbox": [
+              256.4,
+              103.339,
+              267.2,
+              110.413
+            ]
+          },
+          {
+            "text": "an",
+            "line": 6,
+            "bbox": [
+              272.6,
+              103.339,
+              283.4,
+              110.413
+            ]
+          },
+          {
+            "text": "internal",
+            "line": 6,
+            "bbox": [
+              288.8,
+              103.339,
+              332.0,
+              110.413
+            ]
+          },
+          {
+            "text": "billing",
+            "line": 6,
+            "bbox": [
+              337.4,
+              103.339,
+              375.2,
+              110.413
+            ]
+          },
+          {
+            "text": "code",
+            "line": 6,
+            "bbox": [
+              380.6,
+              103.339,
+              402.2,
+              110.413
+            ]
+          },
+          {
+            "text": "is",
+            "line": 6,
+            "bbox": [
+              407.6,
+              103.339,
+              418.4,
+              110.413
+            ]
+          },
+          {
+            "text": "not",
+            "line": 6,
+            "bbox": [
+              423.8,
+              103.339,
+              440.0,
+              110.413
+            ]
+          },
+          {
+            "text": "material.",
+            "line": 6,
+            "bbox": [
+              445.4,
+              103.339,
+              494.0,
+              110.413
+            ]
+          },
+          {
+            "text": "If",
+            "line": 6,
+            "bbox": [
+              499.4,
+              103.339,
+              510.2,
+              110.413
+            ]
+          },
+          {
+            "text": "an",
+            "line": 6,
+            "bbox": [
+              515.6,
+              103.339,
+              526.4,
+              110.413
+            ]
+          },
+          {
+            "text": "original",
+            "line": 7,
+            "bbox": [
+              35.0,
+              115.339,
+              78.2,
+              122.413
+            ]
+          },
+          {
+            "text": "and",
+            "line": 7,
+            "bbox": [
+              83.6,
+              115.339,
+              99.8,
+              122.413
+            ]
+          },
+          {
+            "text": "added",
+            "line": 7,
+            "bbox": [
+              105.2,
+              115.339,
+              132.2,
+              122.413
+            ]
+          },
+          {
+            "text": "requirement",
+            "line": 7,
+            "bbox": [
+              137.6,
+              115.339,
+              197.0,
+              122.413
+            ]
+          },
+          {
+            "text": "satisfy",
+            "line": 7,
+            "bbox": [
+              202.4,
+              115.339,
+              240.2,
+              122.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 7,
+            "bbox": [
+              245.6,
+              115.339,
+              261.8,
+              122.413
+            ]
+          },
+          {
+            "text": "aggregation",
+            "line": 7,
+            "bbox": [
+              267.2,
+              115.339,
+              326.6,
+              122.413
+            ]
+          },
+          {
+            "text": "rule,",
+            "line": 7,
+            "bbox": [
+              332.0,
+              115.339,
+              359.0,
+              122.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 7,
+            "bbox": [
+              364.4,
+              115.339,
+              380.6,
+              122.413
+            ]
+          },
+          {
+            "text": "buyer",
+            "line": 7,
+            "bbox": [
+              386.0,
+              115.339,
+              413.0,
+              122.413
+            ]
+          },
+          {
+            "text": "must",
+            "line": 7,
+            "bbox": [
+              418.4,
+              115.339,
+              440.0,
+              122.413
+            ]
+          },
+          {
+            "text": "document",
+            "line": 7,
+            "bbox": [
+              445.4,
+              115.339,
+              488.6,
+              122.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 7,
+            "bbox": [
+              494.0,
+              115.339,
+              510.2,
+              122.413
+            ]
+          },
+          {
+            "text": "aggregation",
+            "line": 8,
+            "bbox": [
+              35.0,
+              127.339,
+              94.4,
+              134.413
+            ]
+          },
+          {
+            "text": "analysis",
+            "line": 8,
+            "bbox": [
+              99.8,
+              127.339,
+              143.0,
+              134.413
+            ]
+          },
+          {
+            "text": "rather",
+            "line": 8,
+            "bbox": [
+              148.4,
+              127.339,
+              180.8,
+              134.413
+            ]
+          },
+          {
+            "text": "than",
+            "line": 8,
+            "bbox": [
+              186.2,
+              127.339,
+              207.8,
+              134.413
+            ]
+          },
+          {
+            "text": "presume",
+            "line": 8,
+            "bbox": [
+              213.2,
+              127.339,
+              251.0,
+              134.413
+            ]
+          },
+          {
+            "text": "that",
+            "line": 8,
+            "bbox": [
+              256.4,
+              127.339,
+              278.0,
+              134.413
+            ]
+          },
+          {
+            "text": "a",
+            "line": 8,
+            "bbox": [
+              283.4,
+              127.339,
+              288.8,
+              134.413
+            ]
+          },
+          {
+            "text": "new",
+            "line": 8,
+            "bbox": [
+              294.2,
+              127.339,
+              310.4,
+              134.413
+            ]
+          },
+          {
+            "text": "request",
+            "line": 8,
+            "bbox": [
+              315.8,
+              127.339,
+              353.6,
+              134.413
+            ]
+          },
+          {
+            "text": "number",
+            "line": 8,
+            "bbox": [
+              359.0,
+              127.339,
+              391.4,
+              134.413
+            ]
+          },
+          {
+            "text": "prevents",
+            "line": 8,
+            "bbox": [
+              396.8,
+              127.339,
+              440.0,
+              134.413
+            ]
+          },
+          {
+            "text": "it.",
+            "line": 8,
+            "bbox": [
+              445.4,
+              127.339,
+              461.6,
+              134.413
+            ]
+          },
+          {
+            "text": "The",
+            "line": 8,
+            "bbox": [
+              467.0,
+              127.339,
+              483.2,
+              134.413
+            ]
+          },
+          {
+            "text": "files",
+            "line": 8,
+            "bbox": [
+              488.6,
+              127.339,
+              515.6,
+              134.413
+            ]
+          },
+          {
+            "text": "for",
+            "line": 9,
+            "bbox": [
+              35.0,
+              139.339,
+              51.2,
+              146.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 9,
+            "bbox": [
+              56.6,
+              139.339,
+              72.8,
+              146.413
+            ]
+          },
+          {
+            "text": "two",
+            "line": 9,
+            "bbox": [
+              78.2,
+              139.339,
+              94.4,
+              146.413
+            ]
+          },
+          {
+            "text": "grandfathering",
+            "line": 9,
+            "bbox": [
+              99.8,
+              139.339,
+              175.4,
+              146.413
+            ]
+          },
+          {
+            "text": "examples",
+            "line": 9,
+            "bbox": [
+              180.8,
+              139.339,
+              224.0,
+              146.413
+            ]
+          },
+          {
+            "text": "state",
+            "line": 9,
+            "bbox": [
+              229.4,
+              139.339,
+              256.4,
+              146.413
+            ]
+          },
+          {
+            "text": "expressly",
+            "line": 9,
+            "bbox": [
+              261.8,
+              139.339,
+              310.4,
+              146.413
+            ]
+          },
+          {
+            "text": "that",
+            "line": 9,
+            "bbox": [
+              315.8,
+              139.339,
+              337.4,
+              146.413
+            ]
+          },
+          {
+            "text": "neither",
+            "line": 9,
+            "bbox": [
+              342.8,
+              139.339,
+              380.6,
+              146.413
+            ]
+          },
+          {
+            "text": "contains",
+            "line": 9,
+            "bbox": [
+              386.0,
+              139.339,
+              429.2,
+              146.413
+            ]
+          },
+          {
+            "text": "an",
+            "line": 9,
+            "bbox": [
+              434.6,
+              139.339,
+              445.4,
+              146.413
+            ]
+          },
+          {
+            "text": "added",
+            "line": 9,
+            "bbox": [
+              450.8,
+              139.339,
+              477.8,
+              146.413
+            ]
+          },
+          {
+            "text": "requirement,",
+            "line": 10,
+            "bbox": [
+              35.0,
+              151.339,
+              99.8,
+              158.413
+            ]
+          },
+          {
+            "text": "a",
+            "line": 10,
+            "bbox": [
+              105.2,
+              151.339,
+              110.6,
+              158.413
+            ]
+          },
+          {
+            "text": "price",
+            "line": 10,
+            "bbox": [
+              116.0,
+              151.339,
+              143.0,
+              158.413
+            ]
+          },
+          {
+            "text": "increase,",
+            "line": 10,
+            "bbox": [
+              148.4,
+              151.339,
+              197.0,
+              158.413
+            ]
+          },
+          {
+            "text": "or",
+            "line": 10,
+            "bbox": [
+              202.4,
+              151.339,
+              213.2,
+              158.413
+            ]
+          },
+          {
+            "text": "a",
+            "line": 10,
+            "bbox": [
+              218.6,
+              151.339,
+              224.0,
+              158.413
+            ]
+          },
+          {
+            "text": "genuine",
+            "line": 10,
+            "bbox": [
+              229.4,
+              151.339,
+              267.2,
+              158.413
+            ]
+          },
+          {
+            "text": "material",
+            "line": 10,
+            "bbox": [
+              272.6,
+              151.339,
+              315.8,
+              158.413
+            ]
+          },
+          {
+            "text": "amendment.",
+            "line": 10,
+            "bbox": [
+              321.2,
+              151.339,
+              375.2,
+              158.413
+            ]
+          }
+        ],
+        "text_reconstruction": "Words in Poppler line order, joined by one space; lines joined by newline.",
+        "bbox_artifact": "pdf-page-0003.bbox.xhtml",
+        "total_pages": 7
+      },
+      "method": "poppler-bbox-layout",
+      "uncertainty": [
+        "PDF word coordinates and text are converter outputs; visual reading order, tables, and typography require source inspection."
+      ]
+    },
+    {
+      "anchor": "pdf-page-0004",
+      "quote": "[V03]\nAccepted requisition R-17 concerns one instrument purchase at EUR 22,500.00. Intake receipt\noccurred at 2029-05-31 23:59 UTC. A June 3 clerical amendment changed the internal contact\nfrom the field technician to the warehouse supervisor and corrected a cost-center spelling.\nThe approved schedule states that the specification, supplier, price, quantity, and\nfunctional requirement remained unchanged. Commitment occurred on June 10. The amendment did\nnot create an additional purchase and does not constitute a material scope amendment under\nV02. The current-version dashboard displayed revision 2 on the day of commitment because\nrevision 2 was then the standard’s published version.",
+      "locator": {
+        "kind": "pdf",
+        "page": 4,
+        "page_width_points": 612.0,
+        "page_height_points": 792.0,
+        "coordinate_unit": "PDF points; origin at top-left",
+        "words": [
+          {
+            "text": "[V03]",
+            "line": 1,
+            "bbox": [
+              35.0,
+              31.339,
+              62.0,
+              38.413
+            ]
+          },
+          {
+            "text": "Accepted",
+            "line": 2,
+            "bbox": [
+              35.0,
+              55.339,
+              78.2,
+              62.413
+            ]
+          },
+          {
+            "text": "requisition",
+            "line": 2,
+            "bbox": [
+              83.6,
+              55.339,
+              143.0,
+              62.413
+            ]
+          },
+          {
+            "text": "R-17",
+            "line": 2,
+            "bbox": [
+              148.4,
+              55.339,
+              170.0,
+              62.413
+            ]
+          },
+          {
+            "text": "concerns",
+            "line": 2,
+            "bbox": [
+              175.4,
+              55.339,
+              218.6,
+              62.413
+            ]
+          },
+          {
+            "text": "one",
+            "line": 2,
+            "bbox": [
+              224.0,
+              55.339,
+              240.2,
+              62.413
+            ]
+          },
+          {
+            "text": "instrument",
+            "line": 2,
+            "bbox": [
+              245.6,
+              55.339,
+              299.6,
+              62.413
+            ]
+          },
+          {
+            "text": "purchase",
+            "line": 2,
+            "bbox": [
+              305.0,
+              55.339,
+              348.2,
+              62.413
+            ]
+          },
+          {
+            "text": "at",
+            "line": 2,
+            "bbox": [
+              353.6,
+              55.339,
+              364.4,
+              62.413
+            ]
+          },
+          {
+            "text": "EUR",
+            "line": 2,
+            "bbox": [
+              369.8,
+              55.339,
+              386.0,
+              62.413
+            ]
+          },
+          {
+            "text": "22,500.00.",
+            "line": 2,
+            "bbox": [
+              391.4,
+              55.339,
+              445.4,
+              62.413
+            ]
+          },
+          {
+            "text": "Intake",
+            "line": 2,
+            "bbox": [
+              450.8,
+              55.339,
+              483.2,
+              62.413
+            ]
+          },
+          {
+            "text": "receipt",
+            "line": 2,
+            "bbox": [
+              488.6,
+              55.339,
+              526.4,
+              62.413
+            ]
+          },
+          {
+            "text": "occurred",
+            "line": 3,
+            "bbox": [
+              35.0,
+              67.339,
+              78.2,
+              74.413
+            ]
+          },
+          {
+            "text": "at",
+            "line": 3,
+            "bbox": [
+              83.6,
+              67.339,
+              94.4,
+              74.413
+            ]
+          },
+          {
+            "text": "2029-05-31",
+            "line": 3,
+            "bbox": [
+              99.8,
+              67.339,
+              153.8,
+              74.413
+            ]
+          },
+          {
+            "text": "23:59",
+            "line": 3,
+            "bbox": [
+              159.2,
+              67.339,
+              186.2,
+              74.413
+            ]
+          },
+          {
+            "text": "UTC.",
+            "line": 3,
+            "bbox": [
+              191.6,
+              67.339,
+              213.2,
+              74.413
+            ]
+          },
+          {
+            "text": "A",
+            "line": 3,
+            "bbox": [
+              218.6,
+              67.339,
+              224.0,
+              74.413
+            ]
+          },
+          {
+            "text": "June",
+            "line": 3,
+            "bbox": [
+              229.4,
+              67.339,
+              251.0,
+              74.413
+            ]
+          },
+          {
+            "text": "3",
+            "line": 3,
+            "bbox": [
+              256.4,
+              67.339,
+              261.8,
+              74.413
+            ]
+          },
+          {
+            "text": "clerical",
+            "line": 3,
+            "bbox": [
+              267.2,
+              67.339,
+              310.4,
+              74.413
+            ]
+          },
+          {
+            "text": "amendment",
+            "line": 3,
+            "bbox": [
+              315.8,
+              67.339,
+              364.4,
+              74.413
+            ]
+          },
+          {
+            "text": "changed",
+            "line": 3,
+            "bbox": [
+              369.8,
+              67.339,
+              407.6,
+              74.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 3,
+            "bbox": [
+              413.0,
+              67.339,
+              429.2,
+              74.413
+            ]
+          },
+          {
+            "text": "internal",
+            "line": 3,
+            "bbox": [
+              434.6,
+              67.339,
+              477.8,
+              74.413
+            ]
+          },
+          {
+            "text": "contact",
+            "line": 3,
+            "bbox": [
+              483.2,
+              67.339,
+              521.0,
+              74.413
+            ]
+          },
+          {
+            "text": "from",
+            "line": 4,
+            "bbox": [
+              35.0,
+              79.339,
+              56.6,
+              86.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 4,
+            "bbox": [
+              62.0,
+              79.339,
+              78.2,
+              86.413
+            ]
+          },
+          {
+            "text": "field",
+            "line": 4,
+            "bbox": [
+              83.6,
+              79.339,
+              110.6,
+              86.413
+            ]
+          },
+          {
+            "text": "technician",
+            "line": 4,
+            "bbox": [
+              116.0,
+              79.339,
+              170.0,
+              86.413
+            ]
+          },
+          {
+            "text": "to",
+            "line": 4,
+            "bbox": [
+              175.4,
+              79.339,
+              186.2,
+              86.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 4,
+            "bbox": [
+              191.6,
+              79.339,
+              207.8,
+              86.413
+            ]
+          },
+          {
+            "text": "warehouse",
+            "line": 4,
+            "bbox": [
+              213.2,
+              79.339,
+              261.8,
+              86.413
+            ]
+          },
+          {
+            "text": "supervisor",
+            "line": 4,
+            "bbox": [
+              267.2,
+              79.339,
+              321.2,
+              86.413
+            ]
+          },
+          {
+            "text": "and",
+            "line": 4,
+            "bbox": [
+              326.6,
+              79.339,
+              342.8,
+              86.413
+            ]
+          },
+          {
+            "text": "corrected",
+            "line": 4,
+            "bbox": [
+              348.2,
+              79.339,
+              396.8,
+              86.413
+            ]
+          },
+          {
+            "text": "a",
+            "line": 4,
+            "bbox": [
+              402.2,
+              79.339,
+              407.6,
+              86.413
+            ]
+          },
+          {
+            "text": "cost-center",
+            "line": 4,
+            "bbox": [
+              413.0,
+              79.339,
+              472.4,
+              86.413
+            ]
+          },
+          {
+            "text": "spelling.",
+            "line": 4,
+            "bbox": [
+              477.8,
+              79.339,
+              526.4,
+              86.413
+            ]
+          },
+          {
+            "text": "The",
+            "line": 5,
+            "bbox": [
+              35.0,
+              91.339,
+              51.2,
+              98.413
+            ]
+          },
+          {
+            "text": "approved",
+            "line": 5,
+            "bbox": [
+              56.6,
+              91.339,
+              99.8,
+              98.413
+            ]
+          },
+          {
+            "text": "schedule",
+            "line": 5,
+            "bbox": [
+              105.2,
+              91.339,
+              148.4,
+              98.413
+            ]
+          },
+          {
+            "text": "states",
+            "line": 5,
+            "bbox": [
+              153.8,
+              91.339,
+              186.2,
+              98.413
+            ]
+          },
+          {
+            "text": "that",
+            "line": 5,
+            "bbox": [
+              191.6,
+              91.339,
+              213.2,
+              98.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 5,
+            "bbox": [
+              218.6,
+              91.339,
+              234.8,
+              98.413
+            ]
+          },
+          {
+            "text": "specification,",
+            "line": 5,
+            "bbox": [
+              240.2,
+              91.339,
+              315.8,
+              98.413
+            ]
+          },
+          {
+            "text": "supplier,",
+            "line": 5,
+            "bbox": [
+              321.2,
+              91.339,
+              369.8,
+              98.413
+            ]
+          },
+          {
+            "text": "price,",
+            "line": 5,
+            "bbox": [
+              375.2,
+              91.339,
+              407.6,
+              98.413
+            ]
+          },
+          {
+            "text": "quantity,",
+            "line": 5,
+            "bbox": [
+              413.0,
+              91.339,
+              461.6,
+              98.413
+            ]
+          },
+          {
+            "text": "and",
+            "line": 5,
+            "bbox": [
+              467.0,
+              91.339,
+              483.2,
+              98.413
+            ]
+          },
+          {
+            "text": "functional",
+            "line": 6,
+            "bbox": [
+              35.0,
+              103.339,
+              89.0,
+              110.413
+            ]
+          },
+          {
+            "text": "requirement",
+            "line": 6,
+            "bbox": [
+              94.4,
+              103.339,
+              153.8,
+              110.413
+            ]
+          },
+          {
+            "text": "remained",
+            "line": 6,
+            "bbox": [
+              159.2,
+              103.339,
+              202.4,
+              110.413
+            ]
+          },
+          {
+            "text": "unchanged.",
+            "line": 6,
+            "bbox": [
+              207.8,
+              103.339,
+              261.8,
+              110.413
+            ]
+          },
+          {
+            "text": "Commitment",
+            "line": 6,
+            "bbox": [
+              267.2,
+              103.339,
+              321.2,
+              110.413
+            ]
+          },
+          {
+            "text": "occurred",
+            "line": 6,
+            "bbox": [
+              326.6,
+              103.339,
+              369.8,
+              110.413
+            ]
+          },
+          {
+            "text": "on",
+            "line": 6,
+            "bbox": [
+              375.2,
+              103.339,
+              386.0,
+              110.413
+            ]
+          },
+          {
+            "text": "June",
+            "line": 6,
+            "bbox": [
+              391.4,
+              103.339,
+              413.0,
+              110.413
+            ]
+          },
+          {
+            "text": "10.",
+            "line": 6,
+            "bbox": [
+              418.4,
+              103.339,
+              434.6,
+              110.413
+            ]
+          },
+          {
+            "text": "The",
+            "line": 6,
+            "bbox": [
+              440.0,
+              103.339,
+              456.2,
+              110.413
+            ]
+          },
+          {
+            "text": "amendment",
+            "line": 6,
+            "bbox": [
+              461.6,
+              103.339,
+              510.2,
+              110.413
+            ]
+          },
+          {
+            "text": "did",
+            "line": 6,
+            "bbox": [
+              515.6,
+              103.339,
+              531.8,
+              110.413
+            ]
+          },
+          {
+            "text": "not",
+            "line": 7,
+            "bbox": [
+              35.0,
+              115.339,
+              51.2,
+              122.413
+            ]
+          },
+          {
+            "text": "create",
+            "line": 7,
+            "bbox": [
+              56.6,
+              115.339,
+              89.0,
+              122.413
+            ]
+          },
+          {
+            "text": "an",
+            "line": 7,
+            "bbox": [
+              94.4,
+              115.339,
+              105.2,
+              122.413
+            ]
+          },
+          {
+            "text": "additional",
+            "line": 7,
+            "bbox": [
+              110.6,
+              115.339,
+              164.6,
+              122.413
+            ]
+          },
+          {
+            "text": "purchase",
+            "line": 7,
+            "bbox": [
+              170.0,
+              115.339,
+              213.2,
+              122.413
+            ]
+          },
+          {
+            "text": "and",
+            "line": 7,
+            "bbox": [
+              218.6,
+              115.339,
+              234.8,
+              122.413
+            ]
+          },
+          {
+            "text": "does",
+            "line": 7,
+            "bbox": [
+              240.2,
+              115.339,
+              261.8,
+              122.413
+            ]
+          },
+          {
+            "text": "not",
+            "line": 7,
+            "bbox": [
+              267.2,
+              115.339,
+              283.4,
+              122.413
+            ]
+          },
+          {
+            "text": "constitute",
+            "line": 7,
+            "bbox": [
+              288.8,
+              115.339,
+              342.8,
+              122.413
+            ]
+          },
+          {
+            "text": "a",
+            "line": 7,
+            "bbox": [
+              348.2,
+              115.339,
+              353.6,
+              122.413
+            ]
+          },
+          {
+            "text": "material",
+            "line": 7,
+            "bbox": [
+              359.0,
+              115.339,
+              402.2,
+              122.413
+            ]
+          },
+          {
+            "text": "scope",
+            "line": 7,
+            "bbox": [
+              407.6,
+              115.339,
+              434.6,
+              122.413
+            ]
+          },
+          {
+            "text": "amendment",
+            "line": 7,
+            "bbox": [
+              440.0,
+              115.339,
+              488.6,
+              122.413
+            ]
+          },
+          {
+            "text": "under",
+            "line": 7,
+            "bbox": [
+              494.0,
+              115.339,
+              521.0,
+              122.413
+            ]
+          },
+          {
+            "text": "V02.",
+            "line": 8,
+            "bbox": [
+              35.0,
+              127.339,
+              56.6,
+              134.413
+            ]
+          },
+          {
+            "text": "The",
+            "line": 8,
+            "bbox": [
+              62.0,
+              127.339,
+              78.2,
+              134.413
+            ]
+          },
+          {
+            "text": "current-version",
+            "line": 8,
+            "bbox": [
+              83.6,
+              127.339,
+              164.6,
+              134.413
+            ]
+          },
+          {
+            "text": "dashboard",
+            "line": 8,
+            "bbox": [
+              170.0,
+              127.339,
+              218.6,
+              134.413
+            ]
+          },
+          {
+            "text": "displayed",
+            "line": 8,
+            "bbox": [
+              224.0,
+              127.339,
+              272.6,
+              134.413
+            ]
+          },
+          {
+            "text": "revision",
+            "line": 8,
+            "bbox": [
+              278.0,
+              127.339,
+              321.2,
+              134.413
+            ]
+          },
+          {
+            "text": "2",
+            "line": 8,
+            "bbox": [
+              326.6,
+              127.339,
+              332.0,
+              134.413
+            ]
+          },
+          {
+            "text": "on",
+            "line": 8,
+            "bbox": [
+              337.4,
+              127.339,
+              348.2,
+              134.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 8,
+            "bbox": [
+              353.6,
+              127.339,
+              369.8,
+              134.413
+            ]
+          },
+          {
+            "text": "day",
+            "line": 8,
+            "bbox": [
+              375.2,
+              127.339,
+              391.4,
+              134.413
+            ]
+          },
+          {
+            "text": "of",
+            "line": 8,
+            "bbox": [
+              396.8,
+              127.339,
+              407.6,
+              134.413
+            ]
+          },
+          {
+            "text": "commitment",
+            "line": 8,
+            "bbox": [
+              413.0,
+              127.339,
+              467.0,
+              134.413
+            ]
+          },
+          {
+            "text": "because",
+            "line": 8,
+            "bbox": [
+              472.4,
+              127.339,
+              510.2,
+              134.413
+            ]
+          },
+          {
+            "text": "revision",
+            "line": 9,
+            "bbox": [
+              35.0,
+              139.339,
+              78.2,
+              146.413
+            ]
+          },
+          {
+            "text": "2",
+            "line": 9,
+            "bbox": [
+              83.6,
+              139.339,
+              89.0,
+              146.413
+            ]
+          },
+          {
+            "text": "was",
+            "line": 9,
+            "bbox": [
+              94.4,
+              139.339,
+              110.6,
+              146.413
+            ]
+          },
+          {
+            "text": "then",
+            "line": 9,
+            "bbox": [
+              116.0,
+              139.339,
+              137.6,
+              146.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 9,
+            "bbox": [
+              143.0,
+              139.339,
+              159.2,
+              146.413
+            ]
+          },
+          {
+            "text": "standard’s",
+            "line": 9,
+            "bbox": [
+              164.6,
+              139.339,
+              218.6,
+              146.413
+            ]
+          },
+          {
+            "text": "published",
+            "line": 9,
+            "bbox": [
+              224.0,
+              139.339,
+              272.6,
+              146.413
+            ]
+          },
+          {
+            "text": "version.",
+            "line": 9,
+            "bbox": [
+              278.0,
+              139.339,
+              321.2,
+              146.413
+            ]
+          }
+        ],
+        "text_reconstruction": "Words in Poppler line order, joined by one space; lines joined by newline.",
+        "bbox_artifact": "pdf-page-0004.bbox.xhtml",
+        "total_pages": 7
+      },
+      "method": "poppler-bbox-layout",
+      "uncertainty": [
+        "PDF word coordinates and text are converter outputs; visual reading order, tables, and typography require source inspection."
+      ]
+    },
+    {
+      "anchor": "pdf-page-0005",
+      "quote": "[V04]\nAccepted requisition R-18 concerns one distinct instrument purchase at EUR 22,500.00.\nCentral intake receipt occurred at 2029-06-01 00:00 UTC. The receipt is exact to the minute\nand is not a rounded display of an earlier time. Commitment occurred on June 10. No other\npurchase in this dossier belongs to its operational requirement, and no material amendment\nor aggregation relationship is recorded. The amount is already normalized in euros,\nexcluding recoverable VAT and including freight. The boundary timestamp, rather than the\nidentical commitment day or identical value shared with R-17, determines the applicable\nrevision for this original requirement.",
+      "locator": {
+        "kind": "pdf",
+        "page": 5,
+        "page_width_points": 612.0,
+        "page_height_points": 792.0,
+        "coordinate_unit": "PDF points; origin at top-left",
+        "words": [
+          {
+            "text": "[V04]",
+            "line": 1,
+            "bbox": [
+              35.0,
+              31.339,
+              62.0,
+              38.413
+            ]
+          },
+          {
+            "text": "Accepted",
+            "line": 2,
+            "bbox": [
+              35.0,
+              55.339,
+              78.2,
+              62.413
+            ]
+          },
+          {
+            "text": "requisition",
+            "line": 2,
+            "bbox": [
+              83.6,
+              55.339,
+              143.0,
+              62.413
+            ]
+          },
+          {
+            "text": "R-18",
+            "line": 2,
+            "bbox": [
+              148.4,
+              55.339,
+              170.0,
+              62.413
+            ]
+          },
+          {
+            "text": "concerns",
+            "line": 2,
+            "bbox": [
+              175.4,
+              55.339,
+              218.6,
+              62.413
+            ]
+          },
+          {
+            "text": "one",
+            "line": 2,
+            "bbox": [
+              224.0,
+              55.339,
+              240.2,
+              62.413
+            ]
+          },
+          {
+            "text": "distinct",
+            "line": 2,
+            "bbox": [
+              245.6,
+              55.339,
+              288.8,
+              62.413
+            ]
+          },
+          {
+            "text": "instrument",
+            "line": 2,
+            "bbox": [
+              294.2,
+              55.339,
+              348.2,
+              62.413
+            ]
+          },
+          {
+            "text": "purchase",
+            "line": 2,
+            "bbox": [
+              353.6,
+              55.339,
+              396.8,
+              62.413
+            ]
+          },
+          {
+            "text": "at",
+            "line": 2,
+            "bbox": [
+              402.2,
+              55.339,
+              413.0,
+              62.413
+            ]
+          },
+          {
+            "text": "EUR",
+            "line": 2,
+            "bbox": [
+              418.4,
+              55.339,
+              434.6,
+              62.413
+            ]
+          },
+          {
+            "text": "22,500.00.",
+            "line": 2,
+            "bbox": [
+              440.0,
+              55.339,
+              494.0,
+              62.413
+            ]
+          },
+          {
+            "text": "Central",
+            "line": 3,
+            "bbox": [
+              35.0,
+              67.339,
+              72.8,
+              74.413
+            ]
+          },
+          {
+            "text": "intake",
+            "line": 3,
+            "bbox": [
+              78.2,
+              67.339,
+              110.6,
+              74.413
+            ]
+          },
+          {
+            "text": "receipt",
+            "line": 3,
+            "bbox": [
+              116.0,
+              67.339,
+              153.8,
+              74.413
+            ]
+          },
+          {
+            "text": "occurred",
+            "line": 3,
+            "bbox": [
+              159.2,
+              67.339,
+              202.4,
+              74.413
+            ]
+          },
+          {
+            "text": "at",
+            "line": 3,
+            "bbox": [
+              207.8,
+              67.339,
+              218.6,
+              74.413
+            ]
+          },
+          {
+            "text": "2029-06-01",
+            "line": 3,
+            "bbox": [
+              224.0,
+              67.339,
+              278.0,
+              74.413
+            ]
+          },
+          {
+            "text": "00:00",
+            "line": 3,
+            "bbox": [
+              283.4,
+              67.339,
+              310.4,
+              74.413
+            ]
+          },
+          {
+            "text": "UTC.",
+            "line": 3,
+            "bbox": [
+              315.8,
+              67.339,
+              337.4,
+              74.413
+            ]
+          },
+          {
+            "text": "The",
+            "line": 3,
+            "bbox": [
+              342.8,
+              67.339,
+              359.0,
+              74.413
+            ]
+          },
+          {
+            "text": "receipt",
+            "line": 3,
+            "bbox": [
+              364.4,
+              67.339,
+              402.2,
+              74.413
+            ]
+          },
+          {
+            "text": "is",
+            "line": 3,
+            "bbox": [
+              407.6,
+              67.339,
+              418.4,
+              74.413
+            ]
+          },
+          {
+            "text": "exact",
+            "line": 3,
+            "bbox": [
+              423.8,
+              67.339,
+              450.8,
+              74.413
+            ]
+          },
+          {
+            "text": "to",
+            "line": 3,
+            "bbox": [
+              456.2,
+              67.339,
+              467.0,
+              74.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 3,
+            "bbox": [
+              472.4,
+              67.339,
+              488.6,
+              74.413
+            ]
+          },
+          {
+            "text": "minute",
+            "line": 3,
+            "bbox": [
+              494.0,
+              67.339,
+              526.4,
+              74.413
+            ]
+          },
+          {
+            "text": "and",
+            "line": 4,
+            "bbox": [
+              35.0,
+              79.339,
+              51.2,
+              86.413
+            ]
+          },
+          {
+            "text": "is",
+            "line": 4,
+            "bbox": [
+              56.6,
+              79.339,
+              67.4,
+              86.413
+            ]
+          },
+          {
+            "text": "not",
+            "line": 4,
+            "bbox": [
+              72.8,
+              79.339,
+              89.0,
+              86.413
+            ]
+          },
+          {
+            "text": "a",
+            "line": 4,
+            "bbox": [
+              94.4,
+              79.339,
+              99.8,
+              86.413
+            ]
+          },
+          {
+            "text": "rounded",
+            "line": 4,
+            "bbox": [
+              105.2,
+              79.339,
+              143.0,
+              86.413
+            ]
+          },
+          {
+            "text": "display",
+            "line": 4,
+            "bbox": [
+              148.4,
+              79.339,
+              186.2,
+              86.413
+            ]
+          },
+          {
+            "text": "of",
+            "line": 4,
+            "bbox": [
+              191.6,
+              79.339,
+              202.4,
+              86.413
+            ]
+          },
+          {
+            "text": "an",
+            "line": 4,
+            "bbox": [
+              207.8,
+              79.339,
+              218.6,
+              86.413
+            ]
+          },
+          {
+            "text": "earlier",
+            "line": 4,
+            "bbox": [
+              224.0,
+              79.339,
+              261.8,
+              86.413
+            ]
+          },
+          {
+            "text": "time.",
+            "line": 4,
+            "bbox": [
+              267.2,
+              79.339,
+              294.2,
+              86.413
+            ]
+          },
+          {
+            "text": "Commitment",
+            "line": 4,
+            "bbox": [
+              299.6,
+              79.339,
+              353.6,
+              86.413
+            ]
+          },
+          {
+            "text": "occurred",
+            "line": 4,
+            "bbox": [
+              359.0,
+              79.339,
+              402.2,
+              86.413
+            ]
+          },
+          {
+            "text": "on",
+            "line": 4,
+            "bbox": [
+              407.6,
+              79.339,
+              418.4,
+              86.413
+            ]
+          },
+          {
+            "text": "June",
+            "line": 4,
+            "bbox": [
+              423.8,
+              79.339,
+              445.4,
+              86.413
+            ]
+          },
+          {
+            "text": "10.",
+            "line": 4,
+            "bbox": [
+              450.8,
+              79.339,
+              467.0,
+              86.413
+            ]
+          },
+          {
+            "text": "No",
+            "line": 4,
+            "bbox": [
+              472.4,
+              79.339,
+              483.2,
+              86.413
+            ]
+          },
+          {
+            "text": "other",
+            "line": 4,
+            "bbox": [
+              488.6,
+              79.339,
+              515.6,
+              86.413
+            ]
+          },
+          {
+            "text": "purchase",
+            "line": 5,
+            "bbox": [
+              35.0,
+              91.339,
+              78.2,
+              98.413
+            ]
+          },
+          {
+            "text": "in",
+            "line": 5,
+            "bbox": [
+              83.6,
+              91.339,
+              94.4,
+              98.413
+            ]
+          },
+          {
+            "text": "this",
+            "line": 5,
+            "bbox": [
+              99.8,
+              91.339,
+              121.4,
+              98.413
+            ]
+          },
+          {
+            "text": "dossier",
+            "line": 5,
+            "bbox": [
+              126.8,
+              91.339,
+              164.6,
+              98.413
+            ]
+          },
+          {
+            "text": "belongs",
+            "line": 5,
+            "bbox": [
+              170.0,
+              91.339,
+              207.8,
+              98.413
+            ]
+          },
+          {
+            "text": "to",
+            "line": 5,
+            "bbox": [
+              213.2,
+              91.339,
+              224.0,
+              98.413
+            ]
+          },
+          {
+            "text": "its",
+            "line": 5,
+            "bbox": [
+              229.4,
+              91.339,
+              245.6,
+              98.413
+            ]
+          },
+          {
+            "text": "operational",
+            "line": 5,
+            "bbox": [
+              251.0,
+              91.339,
+              310.4,
+              98.413
+            ]
+          },
+          {
+            "text": "requirement,",
+            "line": 5,
+            "bbox": [
+              315.8,
+              91.339,
+              380.6,
+              98.413
+            ]
+          },
+          {
+            "text": "and",
+            "line": 5,
+            "bbox": [
+              386.0,
+              91.339,
+              402.2,
+              98.413
+            ]
+          },
+          {
+            "text": "no",
+            "line": 5,
+            "bbox": [
+              407.6,
+              91.339,
+              418.4,
+              98.413
+            ]
+          },
+          {
+            "text": "material",
+            "line": 5,
+            "bbox": [
+              423.8,
+              91.339,
+              467.0,
+              98.413
+            ]
+          },
+          {
+            "text": "amendment",
+            "line": 5,
+            "bbox": [
+              472.4,
+              91.339,
+              521.0,
+              98.413
+            ]
+          },
+          {
+            "text": "or",
+            "line": 6,
+            "bbox": [
+              35.0,
+              103.339,
+              45.8,
+              110.413
+            ]
+          },
+          {
+            "text": "aggregation",
+            "line": 6,
+            "bbox": [
+              51.2,
+              103.339,
+              110.6,
+              110.413
+            ]
+          },
+          {
+            "text": "relationship",
+            "line": 6,
+            "bbox": [
+              116.0,
+              103.339,
+              180.8,
+              110.413
+            ]
+          },
+          {
+            "text": "is",
+            "line": 6,
+            "bbox": [
+              186.2,
+              103.339,
+              197.0,
+              110.413
+            ]
+          },
+          {
+            "text": "recorded.",
+            "line": 6,
+            "bbox": [
+              202.4,
+              103.339,
+              251.0,
+              110.413
+            ]
+          },
+          {
+            "text": "The",
+            "line": 6,
+            "bbox": [
+              256.4,
+              103.339,
+              272.6,
+              110.413
+            ]
+          },
+          {
+            "text": "amount",
+            "line": 6,
+            "bbox": [
+              278.0,
+              103.339,
+              310.4,
+              110.413
+            ]
+          },
+          {
+            "text": "is",
+            "line": 6,
+            "bbox": [
+              315.8,
+              103.339,
+              326.6,
+              110.413
+            ]
+          },
+          {
+            "text": "already",
+            "line": 6,
+            "bbox": [
+              332.0,
+              103.339,
+              369.8,
+              110.413
+            ]
+          },
+          {
+            "text": "normalized",
+            "line": 6,
+            "bbox": [
+              375.2,
+              103.339,
+              429.2,
+              110.413
+            ]
+          },
+          {
+            "text": "in",
+            "line": 6,
+            "bbox": [
+              434.6,
+              103.339,
+              445.4,
+              110.413
+            ]
+          },
+          {
+            "text": "euros,",
+            "line": 6,
+            "bbox": [
+              450.8,
+              103.339,
+              483.2,
+              110.413
+            ]
+          },
+          {
+            "text": "excluding",
+            "line": 7,
+            "bbox": [
+              35.0,
+              115.339,
+              83.6,
+              122.413
+            ]
+          },
+          {
+            "text": "recoverable",
+            "line": 7,
+            "bbox": [
+              89.0,
+              115.339,
+              148.4,
+              122.413
+            ]
+          },
+          {
+            "text": "VAT",
+            "line": 7,
+            "bbox": [
+              153.8,
+              115.339,
+              170.0,
+              122.413
+            ]
+          },
+          {
+            "text": "and",
+            "line": 7,
+            "bbox": [
+              175.4,
+              115.339,
+              191.6,
+              122.413
+            ]
+          },
+          {
+            "text": "including",
+            "line": 7,
+            "bbox": [
+              197.0,
+              115.339,
+              245.6,
+              122.413
+            ]
+          },
+          {
+            "text": "freight.",
+            "line": 7,
+            "bbox": [
+              251.0,
+              115.339,
+              294.2,
+              122.413
+            ]
+          },
+          {
+            "text": "The",
+            "line": 7,
+            "bbox": [
+              299.6,
+              115.339,
+              315.8,
+              122.413
+            ]
+          },
+          {
+            "text": "boundary",
+            "line": 7,
+            "bbox": [
+              321.2,
+              115.339,
+              364.4,
+              122.413
+            ]
+          },
+          {
+            "text": "timestamp,",
+            "line": 7,
+            "bbox": [
+              369.8,
+              115.339,
+              423.8,
+              122.413
+            ]
+          },
+          {
+            "text": "rather",
+            "line": 7,
+            "bbox": [
+              429.2,
+              115.339,
+              461.6,
+              122.413
+            ]
+          },
+          {
+            "text": "than",
+            "line": 7,
+            "bbox": [
+              467.0,
+              115.339,
+              488.6,
+              122.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 7,
+            "bbox": [
+              494.0,
+              115.339,
+              510.2,
+              122.413
+            ]
+          },
+          {
+            "text": "identical",
+            "line": 8,
+            "bbox": [
+              35.0,
+              127.339,
+              83.6,
+              134.413
+            ]
+          },
+          {
+            "text": "commitment",
+            "line": 8,
+            "bbox": [
+              89.0,
+              127.339,
+              143.0,
+              134.413
+            ]
+          },
+          {
+            "text": "day",
+            "line": 8,
+            "bbox": [
+              148.4,
+              127.339,
+              164.6,
+              134.413
+            ]
+          },
+          {
+            "text": "or",
+            "line": 8,
+            "bbox": [
+              170.0,
+              127.339,
+              180.8,
+              134.413
+            ]
+          },
+          {
+            "text": "identical",
+            "line": 8,
+            "bbox": [
+              186.2,
+              127.339,
+              234.8,
+              134.413
+            ]
+          },
+          {
+            "text": "value",
+            "line": 8,
+            "bbox": [
+              240.2,
+              127.339,
+              267.2,
+              134.413
+            ]
+          },
+          {
+            "text": "shared",
+            "line": 8,
+            "bbox": [
+              272.6,
+              127.339,
+              305.0,
+              134.413
+            ]
+          },
+          {
+            "text": "with",
+            "line": 8,
+            "bbox": [
+              310.4,
+              127.339,
+              332.0,
+              134.413
+            ]
+          },
+          {
+            "text": "R-17,",
+            "line": 8,
+            "bbox": [
+              337.4,
+              127.339,
+              364.4,
+              134.413
+            ]
+          },
+          {
+            "text": "determines",
+            "line": 8,
+            "bbox": [
+              369.8,
+              127.339,
+              423.8,
+              134.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 8,
+            "bbox": [
+              429.2,
+              127.339,
+              445.4,
+              134.413
+            ]
+          },
+          {
+            "text": "applicable",
+            "line": 8,
+            "bbox": [
+              450.8,
+              127.339,
+              504.8,
+              134.413
+            ]
+          },
+          {
+            "text": "revision",
+            "line": 9,
+            "bbox": [
+              35.0,
+              139.339,
+              78.2,
+              146.413
+            ]
+          },
+          {
+            "text": "for",
+            "line": 9,
+            "bbox": [
+              83.6,
+              139.339,
+              99.8,
+              146.413
+            ]
+          },
+          {
+            "text": "this",
+            "line": 9,
+            "bbox": [
+              105.2,
+              139.339,
+              126.8,
+              146.413
+            ]
+          },
+          {
+            "text": "original",
+            "line": 9,
+            "bbox": [
+              132.2,
+              139.339,
+              175.4,
+              146.413
+            ]
+          },
+          {
+            "text": "requirement.",
+            "line": 9,
+            "bbox": [
+              180.8,
+              139.339,
+              245.6,
+              146.413
+            ]
+          }
+        ],
+        "text_reconstruction": "Words in Poppler line order, joined by one space; lines joined by newline.",
+        "bbox_artifact": "pdf-page-0005.bbox.xhtml",
+        "total_pages": 7
+      },
+      "method": "poppler-bbox-layout",
+      "uncertainty": [
+        "PDF word coordinates and text are converter outputs; visual reading order, tables, and typography require source inspection."
+      ]
+    },
+    {
+      "anchor": "pdf-page-0006",
+      "quote": "[V05]\nThe requisition currency schedule fixes USD-to-EUR at exactly 0.900000 euros per US dollar\nfor P-13 and CHF-to-EUR at exactly 1.040000 euros per Swiss franc for P-22. These are\nsynthetic contractual rates for this assessment and are not claims about an actual exchange\nmarket. P-13 permits a transaction amount of USD 27,777.775, has no freight charge, and has\nno unconditional rebate or separately included VAT. P-22 specifies CHF 18,000.00 equipment\nplus CHF 1,000.00 unavoidable freight. Its possible year-end loyalty credit is discretionary\nand is not an unconditional rebate at commitment. Later accounting software may display only\ntwo currency decimals, but those displays do not amend these exact contractual inputs.",
+      "locator": {
+        "kind": "pdf",
+        "page": 6,
+        "page_width_points": 612.0,
+        "page_height_points": 792.0,
+        "coordinate_unit": "PDF points; origin at top-left",
+        "words": [
+          {
+            "text": "[V05]",
+            "line": 1,
+            "bbox": [
+              35.0,
+              31.339,
+              62.0,
+              38.413
+            ]
+          },
+          {
+            "text": "The",
+            "line": 2,
+            "bbox": [
+              35.0,
+              55.339,
+              51.2,
+              62.413
+            ]
+          },
+          {
+            "text": "requisition",
+            "line": 2,
+            "bbox": [
+              56.6,
+              55.339,
+              116.0,
+              62.413
+            ]
+          },
+          {
+            "text": "currency",
+            "line": 2,
+            "bbox": [
+              121.4,
+              55.339,
+              164.6,
+              62.413
+            ]
+          },
+          {
+            "text": "schedule",
+            "line": 2,
+            "bbox": [
+              170.0,
+              55.339,
+              213.2,
+              62.413
+            ]
+          },
+          {
+            "text": "fixes",
+            "line": 2,
+            "bbox": [
+              218.6,
+              55.339,
+              245.6,
+              62.413
+            ]
+          },
+          {
+            "text": "USD-to-EUR",
+            "line": 2,
+            "bbox": [
+              251.0,
+              55.339,
+              305.0,
+              62.413
+            ]
+          },
+          {
+            "text": "at",
+            "line": 2,
+            "bbox": [
+              310.4,
+              55.339,
+              321.2,
+              62.413
+            ]
+          },
+          {
+            "text": "exactly",
+            "line": 2,
+            "bbox": [
+              326.6,
+              55.339,
+              364.4,
+              62.413
+            ]
+          },
+          {
+            "text": "0.900000",
+            "line": 2,
+            "bbox": [
+              369.8,
+              55.339,
+              413.0,
+              62.413
+            ]
+          },
+          {
+            "text": "euros",
+            "line": 2,
+            "bbox": [
+              418.4,
+              55.339,
+              445.4,
+              62.413
+            ]
+          },
+          {
+            "text": "per",
+            "line": 2,
+            "bbox": [
+              450.8,
+              55.339,
+              467.0,
+              62.413
+            ]
+          },
+          {
+            "text": "US",
+            "line": 2,
+            "bbox": [
+              472.4,
+              55.339,
+              483.2,
+              62.413
+            ]
+          },
+          {
+            "text": "dollar",
+            "line": 2,
+            "bbox": [
+              488.6,
+              55.339,
+              521.0,
+              62.413
+            ]
+          },
+          {
+            "text": "for",
+            "line": 3,
+            "bbox": [
+              35.0,
+              67.339,
+              51.2,
+              74.413
+            ]
+          },
+          {
+            "text": "P-13",
+            "line": 3,
+            "bbox": [
+              56.6,
+              67.339,
+              78.2,
+              74.413
+            ]
+          },
+          {
+            "text": "and",
+            "line": 3,
+            "bbox": [
+              83.6,
+              67.339,
+              99.8,
+              74.413
+            ]
+          },
+          {
+            "text": "CHF-to-EUR",
+            "line": 3,
+            "bbox": [
+              105.2,
+              67.339,
+              159.2,
+              74.413
+            ]
+          },
+          {
+            "text": "at",
+            "line": 3,
+            "bbox": [
+              164.6,
+              67.339,
+              175.4,
+              74.413
+            ]
+          },
+          {
+            "text": "exactly",
+            "line": 3,
+            "bbox": [
+              180.8,
+              67.339,
+              218.6,
+              74.413
+            ]
+          },
+          {
+            "text": "1.040000",
+            "line": 3,
+            "bbox": [
+              224.0,
+              67.339,
+              267.2,
+              74.413
+            ]
+          },
+          {
+            "text": "euros",
+            "line": 3,
+            "bbox": [
+              272.6,
+              67.339,
+              299.6,
+              74.413
+            ]
+          },
+          {
+            "text": "per",
+            "line": 3,
+            "bbox": [
+              305.0,
+              67.339,
+              321.2,
+              74.413
+            ]
+          },
+          {
+            "text": "Swiss",
+            "line": 3,
+            "bbox": [
+              326.6,
+              67.339,
+              353.6,
+              74.413
+            ]
+          },
+          {
+            "text": "franc",
+            "line": 3,
+            "bbox": [
+              359.0,
+              67.339,
+              386.0,
+              74.413
+            ]
+          },
+          {
+            "text": "for",
+            "line": 3,
+            "bbox": [
+              391.4,
+              67.339,
+              407.6,
+              74.413
+            ]
+          },
+          {
+            "text": "P-22.",
+            "line": 3,
+            "bbox": [
+              413.0,
+              67.339,
+              440.0,
+              74.413
+            ]
+          },
+          {
+            "text": "These",
+            "line": 3,
+            "bbox": [
+              445.4,
+              67.339,
+              472.4,
+              74.413
+            ]
+          },
+          {
+            "text": "are",
+            "line": 3,
+            "bbox": [
+              477.8,
+              67.339,
+              494.0,
+              74.413
+            ]
+          },
+          {
+            "text": "synthetic",
+            "line": 4,
+            "bbox": [
+              35.0,
+              79.339,
+              83.6,
+              86.413
+            ]
+          },
+          {
+            "text": "contractual",
+            "line": 4,
+            "bbox": [
+              89.0,
+              79.339,
+              148.4,
+              86.413
+            ]
+          },
+          {
+            "text": "rates",
+            "line": 4,
+            "bbox": [
+              153.8,
+              79.339,
+              180.8,
+              86.413
+            ]
+          },
+          {
+            "text": "for",
+            "line": 4,
+            "bbox": [
+              186.2,
+              79.339,
+              202.4,
+              86.413
+            ]
+          },
+          {
+            "text": "this",
+            "line": 4,
+            "bbox": [
+              207.8,
+              79.339,
+              229.4,
+              86.413
+            ]
+          },
+          {
+            "text": "assessment",
+            "line": 4,
+            "bbox": [
+              234.8,
+              79.339,
+              288.8,
+              86.413
+            ]
+          },
+          {
+            "text": "and",
+            "line": 4,
+            "bbox": [
+              294.2,
+              79.339,
+              310.4,
+              86.413
+            ]
+          },
+          {
+            "text": "are",
+            "line": 4,
+            "bbox": [
+              315.8,
+              79.339,
+              332.0,
+              86.413
+            ]
+          },
+          {
+            "text": "not",
+            "line": 4,
+            "bbox": [
+              337.4,
+              79.339,
+              353.6,
+              86.413
+            ]
+          },
+          {
+            "text": "claims",
+            "line": 4,
+            "bbox": [
+              359.0,
+              79.339,
+              391.4,
+              86.413
+            ]
+          },
+          {
+            "text": "about",
+            "line": 4,
+            "bbox": [
+              396.8,
+              79.339,
+              423.8,
+              86.413
+            ]
+          },
+          {
+            "text": "an",
+            "line": 4,
+            "bbox": [
+              429.2,
+              79.339,
+              440.0,
+              86.413
+            ]
+          },
+          {
+            "text": "actual",
+            "line": 4,
+            "bbox": [
+              445.4,
+              79.339,
+              477.8,
+              86.413
+            ]
+          },
+          {
+            "text": "exchange",
+            "line": 4,
+            "bbox": [
+              483.2,
+              79.339,
+              526.4,
+              86.413
+            ]
+          },
+          {
+            "text": "market.",
+            "line": 5,
+            "bbox": [
+              35.0,
+              91.339,
+              72.8,
+              98.413
+            ]
+          },
+          {
+            "text": "P-13",
+            "line": 5,
+            "bbox": [
+              78.2,
+              91.339,
+              99.8,
+              98.413
+            ]
+          },
+          {
+            "text": "permits",
+            "line": 5,
+            "bbox": [
+              105.2,
+              91.339,
+              143.0,
+              98.413
+            ]
+          },
+          {
+            "text": "a",
+            "line": 5,
+            "bbox": [
+              148.4,
+              91.339,
+              153.8,
+              98.413
+            ]
+          },
+          {
+            "text": "transaction",
+            "line": 5,
+            "bbox": [
+              159.2,
+              91.339,
+              218.6,
+              98.413
+            ]
+          },
+          {
+            "text": "amount",
+            "line": 5,
+            "bbox": [
+              224.0,
+              91.339,
+              256.4,
+              98.413
+            ]
+          },
+          {
+            "text": "of",
+            "line": 5,
+            "bbox": [
+              261.8,
+              91.339,
+              272.6,
+              98.413
+            ]
+          },
+          {
+            "text": "USD",
+            "line": 5,
+            "bbox": [
+              278.0,
+              91.339,
+              294.2,
+              98.413
+            ]
+          },
+          {
+            "text": "27,777.775,",
+            "line": 5,
+            "bbox": [
+              299.6,
+              91.339,
+              359.0,
+              98.413
+            ]
+          },
+          {
+            "text": "has",
+            "line": 5,
+            "bbox": [
+              364.4,
+              91.339,
+              380.6,
+              98.413
+            ]
+          },
+          {
+            "text": "no",
+            "line": 5,
+            "bbox": [
+              386.0,
+              91.339,
+              396.8,
+              98.413
+            ]
+          },
+          {
+            "text": "freight",
+            "line": 5,
+            "bbox": [
+              402.2,
+              91.339,
+              440.0,
+              98.413
+            ]
+          },
+          {
+            "text": "charge,",
+            "line": 5,
+            "bbox": [
+              445.4,
+              91.339,
+              483.2,
+              98.413
+            ]
+          },
+          {
+            "text": "and",
+            "line": 5,
+            "bbox": [
+              488.6,
+              91.339,
+              504.8,
+              98.413
+            ]
+          },
+          {
+            "text": "has",
+            "line": 5,
+            "bbox": [
+              510.2,
+              91.339,
+              526.4,
+              98.413
+            ]
+          },
+          {
+            "text": "no",
+            "line": 6,
+            "bbox": [
+              35.0,
+              103.339,
+              45.8,
+              110.413
+            ]
+          },
+          {
+            "text": "unconditional",
+            "line": 6,
+            "bbox": [
+              51.2,
+              103.339,
+              121.4,
+              110.413
+            ]
+          },
+          {
+            "text": "rebate",
+            "line": 6,
+            "bbox": [
+              126.8,
+              103.339,
+              159.2,
+              110.413
+            ]
+          },
+          {
+            "text": "or",
+            "line": 6,
+            "bbox": [
+              164.6,
+              103.339,
+              175.4,
+              110.413
+            ]
+          },
+          {
+            "text": "separately",
+            "line": 6,
+            "bbox": [
+              180.8,
+              103.339,
+              234.8,
+              110.413
+            ]
+          },
+          {
+            "text": "included",
+            "line": 6,
+            "bbox": [
+              240.2,
+              103.339,
+              283.4,
+              110.413
+            ]
+          },
+          {
+            "text": "VAT.",
+            "line": 6,
+            "bbox": [
+              288.8,
+              103.339,
+              310.4,
+              110.413
+            ]
+          },
+          {
+            "text": "P-22",
+            "line": 6,
+            "bbox": [
+              315.8,
+              103.339,
+              337.4,
+              110.413
+            ]
+          },
+          {
+            "text": "specifies",
+            "line": 6,
+            "bbox": [
+              342.8,
+              103.339,
+              391.4,
+              110.413
+            ]
+          },
+          {
+            "text": "CHF",
+            "line": 6,
+            "bbox": [
+              396.8,
+              103.339,
+              413.0,
+              110.413
+            ]
+          },
+          {
+            "text": "18,000.00",
+            "line": 6,
+            "bbox": [
+              418.4,
+              103.339,
+              467.0,
+              110.413
+            ]
+          },
+          {
+            "text": "equipment",
+            "line": 6,
+            "bbox": [
+              472.4,
+              103.339,
+              521.0,
+              110.413
+            ]
+          },
+          {
+            "text": "plus",
+            "line": 7,
+            "bbox": [
+              35.0,
+              115.339,
+              56.6,
+              122.413
+            ]
+          },
+          {
+            "text": "CHF",
+            "line": 7,
+            "bbox": [
+              62.0,
+              115.339,
+              78.2,
+              122.413
+            ]
+          },
+          {
+            "text": "1,000.00",
+            "line": 7,
+            "bbox": [
+              83.6,
+              115.339,
+              126.8,
+              122.413
+            ]
+          },
+          {
+            "text": "unavoidable",
+            "line": 7,
+            "bbox": [
+              132.2,
+              115.339,
+              191.6,
+              122.413
+            ]
+          },
+          {
+            "text": "freight.",
+            "line": 7,
+            "bbox": [
+              197.0,
+              115.339,
+              240.2,
+              122.413
+            ]
+          },
+          {
+            "text": "Its",
+            "line": 7,
+            "bbox": [
+              245.6,
+              115.339,
+              261.8,
+              122.413
+            ]
+          },
+          {
+            "text": "possible",
+            "line": 7,
+            "bbox": [
+              267.2,
+              115.339,
+              310.4,
+              122.413
+            ]
+          },
+          {
+            "text": "year-end",
+            "line": 7,
+            "bbox": [
+              315.8,
+              115.339,
+              359.0,
+              122.413
+            ]
+          },
+          {
+            "text": "loyalty",
+            "line": 7,
+            "bbox": [
+              364.4,
+              115.339,
+              402.2,
+              122.413
+            ]
+          },
+          {
+            "text": "credit",
+            "line": 7,
+            "bbox": [
+              407.6,
+              115.339,
+              440.0,
+              122.413
+            ]
+          },
+          {
+            "text": "is",
+            "line": 7,
+            "bbox": [
+              445.4,
+              115.339,
+              456.2,
+              122.413
+            ]
+          },
+          {
+            "text": "discretionary",
+            "line": 7,
+            "bbox": [
+              461.6,
+              115.339,
+              531.8,
+              122.413
+            ]
+          },
+          {
+            "text": "and",
+            "line": 8,
+            "bbox": [
+              35.0,
+              127.339,
+              51.2,
+              134.413
+            ]
+          },
+          {
+            "text": "is",
+            "line": 8,
+            "bbox": [
+              56.6,
+              127.339,
+              67.4,
+              134.413
+            ]
+          },
+          {
+            "text": "not",
+            "line": 8,
+            "bbox": [
+              72.8,
+              127.339,
+              89.0,
+              134.413
+            ]
+          },
+          {
+            "text": "an",
+            "line": 8,
+            "bbox": [
+              94.4,
+              127.339,
+              105.2,
+              134.413
+            ]
+          },
+          {
+            "text": "unconditional",
+            "line": 8,
+            "bbox": [
+              110.6,
+              127.339,
+              180.8,
+              134.413
+            ]
+          },
+          {
+            "text": "rebate",
+            "line": 8,
+            "bbox": [
+              186.2,
+              127.339,
+              218.6,
+              134.413
+            ]
+          },
+          {
+            "text": "at",
+            "line": 8,
+            "bbox": [
+              224.0,
+              127.339,
+              234.8,
+              134.413
+            ]
+          },
+          {
+            "text": "commitment.",
+            "line": 8,
+            "bbox": [
+              240.2,
+              127.339,
+              299.6,
+              134.413
+            ]
+          },
+          {
+            "text": "Later",
+            "line": 8,
+            "bbox": [
+              305.0,
+              127.339,
+              332.0,
+              134.413
+            ]
+          },
+          {
+            "text": "accounting",
+            "line": 8,
+            "bbox": [
+              337.4,
+              127.339,
+              391.4,
+              134.413
+            ]
+          },
+          {
+            "text": "software",
+            "line": 8,
+            "bbox": [
+              396.8,
+              127.339,
+              440.0,
+              134.413
+            ]
+          },
+          {
+            "text": "may",
+            "line": 8,
+            "bbox": [
+              445.4,
+              127.339,
+              461.6,
+              134.413
+            ]
+          },
+          {
+            "text": "display",
+            "line": 8,
+            "bbox": [
+              467.0,
+              127.339,
+              504.8,
+              134.413
+            ]
+          },
+          {
+            "text": "only",
+            "line": 8,
+            "bbox": [
+              510.2,
+              127.339,
+              531.8,
+              134.413
+            ]
+          },
+          {
+            "text": "two",
+            "line": 9,
+            "bbox": [
+              35.0,
+              139.339,
+              51.2,
+              146.413
+            ]
+          },
+          {
+            "text": "currency",
+            "line": 9,
+            "bbox": [
+              56.6,
+              139.339,
+              99.8,
+              146.413
+            ]
+          },
+          {
+            "text": "decimals,",
+            "line": 9,
+            "bbox": [
+              105.2,
+              139.339,
+              153.8,
+              146.413
+            ]
+          },
+          {
+            "text": "but",
+            "line": 9,
+            "bbox": [
+              159.2,
+              139.339,
+              175.4,
+              146.413
+            ]
+          },
+          {
+            "text": "those",
+            "line": 9,
+            "bbox": [
+              180.8,
+              139.339,
+              207.8,
+              146.413
+            ]
+          },
+          {
+            "text": "displays",
+            "line": 9,
+            "bbox": [
+              213.2,
+              139.339,
+              256.4,
+              146.413
+            ]
+          },
+          {
+            "text": "do",
+            "line": 9,
+            "bbox": [
+              261.8,
+              139.339,
+              272.6,
+              146.413
+            ]
+          },
+          {
+            "text": "not",
+            "line": 9,
+            "bbox": [
+              278.0,
+              139.339,
+              294.2,
+              146.413
+            ]
+          },
+          {
+            "text": "amend",
+            "line": 9,
+            "bbox": [
+              299.6,
+              139.339,
+              326.6,
+              146.413
+            ]
+          },
+          {
+            "text": "these",
+            "line": 9,
+            "bbox": [
+              332.0,
+              139.339,
+              359.0,
+              146.413
+            ]
+          },
+          {
+            "text": "exact",
+            "line": 9,
+            "bbox": [
+              364.4,
+              139.339,
+              391.4,
+              146.413
+            ]
+          },
+          {
+            "text": "contractual",
+            "line": 9,
+            "bbox": [
+              396.8,
+              139.339,
+              456.2,
+              146.413
+            ]
+          },
+          {
+            "text": "inputs.",
+            "line": 9,
+            "bbox": [
+              461.6,
+              139.339,
+              499.4,
+              146.413
+            ]
+          }
+        ],
+        "text_reconstruction": "Words in Poppler line order, joined by one space; lines joined by newline.",
+        "bbox_artifact": "pdf-page-0006.bbox.xhtml",
+        "total_pages": 7
+      },
+      "method": "poppler-bbox-layout",
+      "uncertainty": [
+        "PDF word coordinates and text are converter outputs; visual reading order, tables, and typography require source inspection."
+      ]
+    },
+    {
+      "anchor": "pdf-page-0007",
+      "quote": "[V06]\nThe transition package contains the full operative standard, this amendment, the named\npurchase register, delegation notice, exception file, attestation scans, and reconciliation\ncorrespondence. Annex Q was not supplied. The transition package does not contain a separate\nAnnex Q deadline, compatibility checklist, certification rule, or written interpretation\nadopted by the director. In particular, the administrative phrase \"all attachments\ntransferred except Q\" is a complete inventory statement about this package; it is not an\nassertion that no employee holds Annex Q or that no procurement event occurred outside the\nexplicitly complete transaction coverage. This distinction remains relevant when a report\nattempts to infer event absence from a missing attachment.",
+      "locator": {
+        "kind": "pdf",
+        "page": 7,
+        "page_width_points": 612.0,
+        "page_height_points": 792.0,
+        "coordinate_unit": "PDF points; origin at top-left",
+        "words": [
+          {
+            "text": "[V06]",
+            "line": 1,
+            "bbox": [
+              35.0,
+              31.339,
+              62.0,
+              38.413
+            ]
+          },
+          {
+            "text": "The",
+            "line": 2,
+            "bbox": [
+              35.0,
+              55.339,
+              51.2,
+              62.413
+            ]
+          },
+          {
+            "text": "transition",
+            "line": 2,
+            "bbox": [
+              56.6,
+              55.339,
+              110.6,
+              62.413
+            ]
+          },
+          {
+            "text": "package",
+            "line": 2,
+            "bbox": [
+              116.0,
+              55.339,
+              153.8,
+              62.413
+            ]
+          },
+          {
+            "text": "contains",
+            "line": 2,
+            "bbox": [
+              159.2,
+              55.339,
+              202.4,
+              62.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 2,
+            "bbox": [
+              207.8,
+              55.339,
+              224.0,
+              62.413
+            ]
+          },
+          {
+            "text": "full",
+            "line": 2,
+            "bbox": [
+              229.4,
+              55.339,
+              251.0,
+              62.413
+            ]
+          },
+          {
+            "text": "operative",
+            "line": 2,
+            "bbox": [
+              256.4,
+              55.339,
+              305.0,
+              62.413
+            ]
+          },
+          {
+            "text": "standard,",
+            "line": 2,
+            "bbox": [
+              310.4,
+              55.339,
+              359.0,
+              62.413
+            ]
+          },
+          {
+            "text": "this",
+            "line": 2,
+            "bbox": [
+              364.4,
+              55.339,
+              386.0,
+              62.413
+            ]
+          },
+          {
+            "text": "amendment,",
+            "line": 2,
+            "bbox": [
+              391.4,
+              55.339,
+              445.4,
+              62.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 2,
+            "bbox": [
+              450.8,
+              55.339,
+              467.0,
+              62.413
+            ]
+          },
+          {
+            "text": "named",
+            "line": 2,
+            "bbox": [
+              472.4,
+              55.339,
+              499.4,
+              62.413
+            ]
+          },
+          {
+            "text": "purchase",
+            "line": 3,
+            "bbox": [
+              35.0,
+              67.339,
+              78.2,
+              74.413
+            ]
+          },
+          {
+            "text": "register,",
+            "line": 3,
+            "bbox": [
+              83.6,
+              67.339,
+              132.2,
+              74.413
+            ]
+          },
+          {
+            "text": "delegation",
+            "line": 3,
+            "bbox": [
+              137.6,
+              67.339,
+              191.6,
+              74.413
+            ]
+          },
+          {
+            "text": "notice,",
+            "line": 3,
+            "bbox": [
+              197.0,
+              67.339,
+              234.8,
+              74.413
+            ]
+          },
+          {
+            "text": "exception",
+            "line": 3,
+            "bbox": [
+              240.2,
+              67.339,
+              288.8,
+              74.413
+            ]
+          },
+          {
+            "text": "file,",
+            "line": 3,
+            "bbox": [
+              294.2,
+              67.339,
+              321.2,
+              74.413
+            ]
+          },
+          {
+            "text": "attestation",
+            "line": 3,
+            "bbox": [
+              326.6,
+              67.339,
+              386.0,
+              74.413
+            ]
+          },
+          {
+            "text": "scans,",
+            "line": 3,
+            "bbox": [
+              391.4,
+              67.339,
+              423.8,
+              74.413
+            ]
+          },
+          {
+            "text": "and",
+            "line": 3,
+            "bbox": [
+              429.2,
+              67.339,
+              445.4,
+              74.413
+            ]
+          },
+          {
+            "text": "reconciliation",
+            "line": 3,
+            "bbox": [
+              450.8,
+              67.339,
+              526.4,
+              74.413
+            ]
+          },
+          {
+            "text": "correspondence.",
+            "line": 4,
+            "bbox": [
+              35.0,
+              79.339,
+              116.0,
+              86.413
+            ]
+          },
+          {
+            "text": "Annex",
+            "line": 4,
+            "bbox": [
+              121.4,
+              79.339,
+              148.4,
+              86.413
+            ]
+          },
+          {
+            "text": "Q",
+            "line": 4,
+            "bbox": [
+              153.8,
+              79.339,
+              159.2,
+              86.413
+            ]
+          },
+          {
+            "text": "was",
+            "line": 4,
+            "bbox": [
+              164.6,
+              79.339,
+              180.8,
+              86.413
+            ]
+          },
+          {
+            "text": "not",
+            "line": 4,
+            "bbox": [
+              186.2,
+              79.339,
+              202.4,
+              86.413
+            ]
+          },
+          {
+            "text": "supplied.",
+            "line": 4,
+            "bbox": [
+              207.8,
+              79.339,
+              256.4,
+              86.413
+            ]
+          },
+          {
+            "text": "The",
+            "line": 4,
+            "bbox": [
+              261.8,
+              79.339,
+              278.0,
+              86.413
+            ]
+          },
+          {
+            "text": "transition",
+            "line": 4,
+            "bbox": [
+              283.4,
+              79.339,
+              337.4,
+              86.413
+            ]
+          },
+          {
+            "text": "package",
+            "line": 4,
+            "bbox": [
+              342.8,
+              79.339,
+              380.6,
+              86.413
+            ]
+          },
+          {
+            "text": "does",
+            "line": 4,
+            "bbox": [
+              386.0,
+              79.339,
+              407.6,
+              86.413
+            ]
+          },
+          {
+            "text": "not",
+            "line": 4,
+            "bbox": [
+              413.0,
+              79.339,
+              429.2,
+              86.413
+            ]
+          },
+          {
+            "text": "contain",
+            "line": 4,
+            "bbox": [
+              434.6,
+              79.339,
+              472.4,
+              86.413
+            ]
+          },
+          {
+            "text": "a",
+            "line": 4,
+            "bbox": [
+              477.8,
+              79.339,
+              483.2,
+              86.413
+            ]
+          },
+          {
+            "text": "separate",
+            "line": 4,
+            "bbox": [
+              488.6,
+              79.339,
+              531.8,
+              86.413
+            ]
+          },
+          {
+            "text": "Annex",
+            "line": 5,
+            "bbox": [
+              35.0,
+              91.339,
+              62.0,
+              98.413
+            ]
+          },
+          {
+            "text": "Q",
+            "line": 5,
+            "bbox": [
+              67.4,
+              91.339,
+              72.8,
+              98.413
+            ]
+          },
+          {
+            "text": "deadline,",
+            "line": 5,
+            "bbox": [
+              78.2,
+              91.339,
+              126.8,
+              98.413
+            ]
+          },
+          {
+            "text": "compatibility",
+            "line": 5,
+            "bbox": [
+              132.2,
+              91.339,
+              202.4,
+              98.413
+            ]
+          },
+          {
+            "text": "checklist,",
+            "line": 5,
+            "bbox": [
+              207.8,
+              91.339,
+              261.8,
+              98.413
+            ]
+          },
+          {
+            "text": "certification",
+            "line": 5,
+            "bbox": [
+              267.2,
+              91.339,
+              337.4,
+              98.413
+            ]
+          },
+          {
+            "text": "rule,",
+            "line": 5,
+            "bbox": [
+              342.8,
+              91.339,
+              369.8,
+              98.413
+            ]
+          },
+          {
+            "text": "or",
+            "line": 5,
+            "bbox": [
+              375.2,
+              91.339,
+              386.0,
+              98.413
+            ]
+          },
+          {
+            "text": "written",
+            "line": 5,
+            "bbox": [
+              391.4,
+              91.339,
+              429.2,
+              98.413
+            ]
+          },
+          {
+            "text": "interpretation",
+            "line": 5,
+            "bbox": [
+              434.6,
+              91.339,
+              510.2,
+              98.413
+            ]
+          },
+          {
+            "text": "adopted",
+            "line": 6,
+            "bbox": [
+              35.0,
+              103.339,
+              72.8,
+              110.413
+            ]
+          },
+          {
+            "text": "by",
+            "line": 6,
+            "bbox": [
+              78.2,
+              103.339,
+              89.0,
+              110.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 6,
+            "bbox": [
+              94.4,
+              103.339,
+              110.6,
+              110.413
+            ]
+          },
+          {
+            "text": "director.",
+            "line": 6,
+            "bbox": [
+              116.0,
+              103.339,
+              164.6,
+              110.413
+            ]
+          },
+          {
+            "text": "In",
+            "line": 6,
+            "bbox": [
+              170.0,
+              103.339,
+              180.8,
+              110.413
+            ]
+          },
+          {
+            "text": "particular,",
+            "line": 6,
+            "bbox": [
+              186.2,
+              103.339,
+              245.6,
+              110.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 6,
+            "bbox": [
+              251.0,
+              103.339,
+              267.2,
+              110.413
+            ]
+          },
+          {
+            "text": "administrative",
+            "line": 6,
+            "bbox": [
+              272.6,
+              103.339,
+              348.2,
+              110.413
+            ]
+          },
+          {
+            "text": "phrase",
+            "line": 6,
+            "bbox": [
+              353.6,
+              103.339,
+              386.0,
+              110.413
+            ]
+          },
+          {
+            "text": "\"all",
+            "line": 6,
+            "bbox": [
+              391.4,
+              103.339,
+              413.0,
+              110.413
+            ]
+          },
+          {
+            "text": "attachments",
+            "line": 6,
+            "bbox": [
+              418.4,
+              103.339,
+              477.8,
+              110.413
+            ]
+          },
+          {
+            "text": "transferred",
+            "line": 7,
+            "bbox": [
+              35.0,
+              115.339,
+              94.4,
+              122.413
+            ]
+          },
+          {
+            "text": "except",
+            "line": 7,
+            "bbox": [
+              99.8,
+              115.339,
+              132.2,
+              122.413
+            ]
+          },
+          {
+            "text": "Q\"",
+            "line": 7,
+            "bbox": [
+              137.6,
+              115.339,
+              148.4,
+              122.413
+            ]
+          },
+          {
+            "text": "is",
+            "line": 7,
+            "bbox": [
+              153.8,
+              115.339,
+              164.6,
+              122.413
+            ]
+          },
+          {
+            "text": "a",
+            "line": 7,
+            "bbox": [
+              170.0,
+              115.339,
+              175.4,
+              122.413
+            ]
+          },
+          {
+            "text": "complete",
+            "line": 7,
+            "bbox": [
+              180.8,
+              115.339,
+              224.0,
+              122.413
+            ]
+          },
+          {
+            "text": "inventory",
+            "line": 7,
+            "bbox": [
+              229.4,
+              115.339,
+              278.0,
+              122.413
+            ]
+          },
+          {
+            "text": "statement",
+            "line": 7,
+            "bbox": [
+              283.4,
+              115.339,
+              332.0,
+              122.413
+            ]
+          },
+          {
+            "text": "about",
+            "line": 7,
+            "bbox": [
+              337.4,
+              115.339,
+              364.4,
+              122.413
+            ]
+          },
+          {
+            "text": "this",
+            "line": 7,
+            "bbox": [
+              369.8,
+              115.339,
+              391.4,
+              122.413
+            ]
+          },
+          {
+            "text": "package;",
+            "line": 7,
+            "bbox": [
+              396.8,
+              115.339,
+              440.0,
+              122.413
+            ]
+          },
+          {
+            "text": "it",
+            "line": 7,
+            "bbox": [
+              445.4,
+              115.339,
+              456.2,
+              122.413
+            ]
+          },
+          {
+            "text": "is",
+            "line": 7,
+            "bbox": [
+              461.6,
+              115.339,
+              472.4,
+              122.413
+            ]
+          },
+          {
+            "text": "not",
+            "line": 7,
+            "bbox": [
+              477.8,
+              115.339,
+              494.0,
+              122.413
+            ]
+          },
+          {
+            "text": "an",
+            "line": 7,
+            "bbox": [
+              499.4,
+              115.339,
+              510.2,
+              122.413
+            ]
+          },
+          {
+            "text": "assertion",
+            "line": 8,
+            "bbox": [
+              35.0,
+              127.339,
+              83.6,
+              134.413
+            ]
+          },
+          {
+            "text": "that",
+            "line": 8,
+            "bbox": [
+              89.0,
+              127.339,
+              110.6,
+              134.413
+            ]
+          },
+          {
+            "text": "no",
+            "line": 8,
+            "bbox": [
+              116.0,
+              127.339,
+              126.8,
+              134.413
+            ]
+          },
+          {
+            "text": "employee",
+            "line": 8,
+            "bbox": [
+              132.2,
+              127.339,
+              175.4,
+              134.413
+            ]
+          },
+          {
+            "text": "holds",
+            "line": 8,
+            "bbox": [
+              180.8,
+              127.339,
+              207.8,
+              134.413
+            ]
+          },
+          {
+            "text": "Annex",
+            "line": 8,
+            "bbox": [
+              213.2,
+              127.339,
+              240.2,
+              134.413
+            ]
+          },
+          {
+            "text": "Q",
+            "line": 8,
+            "bbox": [
+              245.6,
+              127.339,
+              251.0,
+              134.413
+            ]
+          },
+          {
+            "text": "or",
+            "line": 8,
+            "bbox": [
+              256.4,
+              127.339,
+              267.2,
+              134.413
+            ]
+          },
+          {
+            "text": "that",
+            "line": 8,
+            "bbox": [
+              272.6,
+              127.339,
+              294.2,
+              134.413
+            ]
+          },
+          {
+            "text": "no",
+            "line": 8,
+            "bbox": [
+              299.6,
+              127.339,
+              310.4,
+              134.413
+            ]
+          },
+          {
+            "text": "procurement",
+            "line": 8,
+            "bbox": [
+              315.8,
+              127.339,
+              375.2,
+              134.413
+            ]
+          },
+          {
+            "text": "event",
+            "line": 8,
+            "bbox": [
+              380.6,
+              127.339,
+              407.6,
+              134.413
+            ]
+          },
+          {
+            "text": "occurred",
+            "line": 8,
+            "bbox": [
+              413.0,
+              127.339,
+              456.2,
+              134.413
+            ]
+          },
+          {
+            "text": "outside",
+            "line": 8,
+            "bbox": [
+              461.6,
+              127.339,
+              499.4,
+              134.413
+            ]
+          },
+          {
+            "text": "the",
+            "line": 8,
+            "bbox": [
+              504.8,
+              127.339,
+              521.0,
+              134.413
+            ]
+          },
+          {
+            "text": "explicitly",
+            "line": 9,
+            "bbox": [
+              35.0,
+              139.339,
+              89.0,
+              146.413
+            ]
+          },
+          {
+            "text": "complete",
+            "line": 9,
+            "bbox": [
+              94.4,
+              139.339,
+              137.6,
+              146.413
+            ]
+          },
+          {
+            "text": "transaction",
+            "line": 9,
+            "bbox": [
+              143.0,
+              139.339,
+              202.4,
+              146.413
+            ]
+          },
+          {
+            "text": "coverage.",
+            "line": 9,
+            "bbox": [
+              207.8,
+              139.339,
+              256.4,
+              146.413
+            ]
+          },
+          {
+            "text": "This",
+            "line": 9,
+            "bbox": [
+              261.8,
+              139.339,
+              283.4,
+              146.413
+            ]
+          },
+          {
+            "text": "distinction",
+            "line": 9,
+            "bbox": [
+              288.8,
+              139.339,
+              348.2,
+              146.413
+            ]
+          },
+          {
+            "text": "remains",
+            "line": 9,
+            "bbox": [
+              353.6,
+              139.339,
+              391.4,
+              146.413
+            ]
+          },
+          {
+            "text": "relevant",
+            "line": 9,
+            "bbox": [
+              396.8,
+              139.339,
+              440.0,
+              146.413
+            ]
+          },
+          {
+            "text": "when",
+            "line": 9,
+            "bbox": [
+              445.4,
+              139.339,
+              467.0,
+              146.413
+            ]
+          },
+          {
+            "text": "a",
+            "line": 9,
+            "bbox": [
+              472.4,
+              139.339,
+              477.8,
+              146.413
+            ]
+          },
+          {
+            "text": "report",
+            "line": 9,
+            "bbox": [
+              483.2,
+              139.339,
+              515.6,
+              146.413
+            ]
+          },
+          {
+            "text": "attempts",
+            "line": 10,
+            "bbox": [
+              35.0,
+              151.339,
+              78.2,
+              158.413
+            ]
+          },
+          {
+            "text": "to",
+            "line": 10,
+            "bbox": [
+              83.6,
+              151.339,
+              94.4,
+              158.413
+            ]
+          },
+          {
+            "text": "infer",
+            "line": 10,
+            "bbox": [
+              99.8,
+              151.339,
+              126.8,
+              158.413
+            ]
+          },
+          {
+            "text": "event",
+            "line": 10,
+            "bbox": [
+              132.2,
+              151.339,
+              159.2,
+              158.413
+            ]
+          },
+          {
+            "text": "absence",
+            "line": 10,
+            "bbox": [
+              164.6,
+              151.339,
+              202.4,
+              158.413
+            ]
+          },
+          {
+            "text": "from",
+            "line": 10,
+            "bbox": [
+              207.8,
+              151.339,
+              229.4,
+              158.413
+            ]
+          },
+          {
+            "text": "a",
+            "line": 10,
+            "bbox": [
+              234.8,
+              151.339,
+              240.2,
+              158.413
+            ]
+          },
+          {
+            "text": "missing",
+            "line": 10,
+            "bbox": [
+              245.6,
+              151.339,
+              283.4,
+              158.413
+            ]
+          },
+          {
+            "text": "attachment.",
+            "line": 10,
+            "bbox": [
+              288.8,
+              151.339,
+              348.2,
+              158.413
+            ]
+          }
+        ],
+        "text_reconstruction": "Words in Poppler line order, joined by one space; lines joined by newline.",
+        "bbox_artifact": "pdf-page-0007.bbox.xhtml",
+        "total_pages": 7
+      },
+      "method": "poppler-bbox-layout",
+      "uncertainty": [
+        "PDF word coordinates and text are converter outputs; visual reading order, tables, and typography require source inspection."
+      ]
+    }
+  ],
+  "tools": {
+    "python-stdlib": "3.14.8",
+    "pdfinfo": "pdfinfo version 26.01.0",
+    "pdfimages": "pdfimages version 26.01.0",
+    "pdftotext": "pdftotext version 26.01.0"
+  },
+  "warnings": [],
+  "complete": true,
+  "status": "ready"
+}

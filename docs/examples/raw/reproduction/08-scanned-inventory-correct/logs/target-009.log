@@ -1,0 +1,9 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target009.lean
+Audit.claim09 : Audit.elinCount.lot = Audit.reedCount.lot ∧
+  Audit.elinCount.scope = Audit.reedCount.scope ∧
+    Audit.elinCount.cutoff = Audit.reedCount.cutoff ∧
+      Audit.elinCount.issuer ≠ Audit.reedCount.issuer ∧
+        Audit.elinCount.amount = 148 ∧ Audit.reedCount.amount = 147 ∧ Audit.elinCount.amount ≠ Audit.reedCount.amount
+'Audit.claim09' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.216]

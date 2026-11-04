@@ -1,0 +1,19 @@
+{
+  "algorithm": "sha256",
+  "purpose": "Implementation sources used for the documented validation; repository-relative paths",
+  "files": {
+    "skills/evidence-to-proof-review/SKILL.md": "328a539c60716a629807319a5d0ddb0609095cd5504cf5899aa22326eb92e752",
+    "skills/evidence-to-proof-review/references/evidence-and-statuses.md": "02785748f8abc221a46e9f2a9928d7ed67dad05c8401a86f4bbc4567f75c7913",
+    "skills/evidence-to-proof-review/references/argument-contract.md": "c281059f9952ae0f69b5adb0d77a45063460e7b2b22e4d7864e182c1c94753c7",
+    "skills/evidence-to-proof-review/references/formalization.md": "e6bddac8c0f0562adfe3353ed3b39ac128432b5fc829d12446d447df3c021a2b",
+    "skills/evidence-to-proof-review/references/artifacts.md": "1a3a904e3ed73c7ef364dc42218710831f64ce4a03072f2b1644046d0a34af04",
+    "skills/evidence-to-proof-review/references/validation.md": "9e4b10a10be286856acf2dacfaa9b8077060dc0a7b00d1ebc5b577a81807b218",
+    "skills/evidence-to-proof-review/scripts/audit.py": "b261133ac956eb300368825bee2c56151a287b99c9b6fa5e4f97d6470e660c3b",
+    "skills/evidence-to-proof-review/schemas/findings.schema.json": "47ff12f4663ac7a18d8273a241e53830ef9d13620cee64a4a5549f82cfc926e2",
+    "validation/evaluate.py": "5f739f549531476b8d57ead8f5bac0b143d99e7a1a22269b87f524fa29827094",
+    "validation/reproduce.py": "1d0e848b90a291c23e667aa1272764caca81cc852cca1e4966b05029004e20ff",
+    "validation/render_site.py": "4cf997fb7920968397baad5e8122d56de3052e395a2a42ff5cf05811d0c654d7",
+    "tests/test_audit.py": "4321a41b532bad7d31b879c47fd24a2bff265106ef7f101aa0049ca737421cd3",
+    "tests/test_validation.py": "388e3168ccba4f1bd2139261dcc293b1209edd69663c2d1d251571b644b4f8a0"
+  }
+}

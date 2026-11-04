@@ -1,0 +1,6 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target015.lean
+Audit.historicalAuthorized : Audit.revisionB Audit.n04.time = false ∧
+  Audit.n04.permit = false ∧ Audit.ordinaryRoute Audit.n04 = true ∧ Audit.authorized Audit.n04 = true
+'Audit.historicalAuthorized' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.209]

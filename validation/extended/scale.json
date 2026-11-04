@@ -1,0 +1,39 @@
+{
+  "scope": "Synthetic ingestion/index/retrieval benchmark; no semantic accuracy or unlimited-scale claim",
+  "input_documents": 1002,
+  "source_bytes": 39071118,
+  "segments": 24002,
+  "chunks": 24002,
+  "elapsed_seconds_total": 25.130365518998588,
+  "peak_process_rss_kib": 141148,
+  "rss_platform_note": "Linux ru_maxrss in KiB; includes this benchmark generator and Python processing, not a universal capacity estimate",
+  "batches": [
+    {
+      "documents_processed": 100,
+      "elapsed_seconds": 1.1605135409990908
+    },
+    {
+      "documents_processed": 250,
+      "elapsed_seconds": 3.1532698859991797
+    },
+    {
+      "documents_processed": 250,
+      "elapsed_seconds": 5.418652750999172
+    },
+    {
+      "documents_processed": 250,
+      "elapsed_seconds": 7.575937906000036
+    },
+    {
+      "documents_processed": 152,
+      "elapsed_seconds": 5.983092239999678
+    }
+  ],
+  "partial_search_was_not_treated_as_complete": true,
+  "late_exception_retrieved": true,
+  "no_op_resume_preserved_index_hash": true,
+  "workspace": "/home/salboaie/work/lean_documents/tmp/claim-audit-i406co4s",
+  "fixture_directory": "/home/salboaie/work/lean_documents/tmp/scale-benchmark-6dfjvn0h",
+  "index_bytes": 108490752,
+  "legacy_in_memory_ledger_absent": true
+}

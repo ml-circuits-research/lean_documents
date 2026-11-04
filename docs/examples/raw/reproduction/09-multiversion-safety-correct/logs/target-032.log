@@ -1,0 +1,6 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target032.lean
+Audit.claim14 : ∀ (temp : Int),
+  Audit.baseLimit 1 Audit.Profile.hot temp = none ∧ Audit.baseLimit 2 Audit.Profile.hot temp = none
+'Audit.claim14' depends on axioms: [propext]
+
+[exit_code=0; elapsed_seconds=0.210]

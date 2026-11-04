@@ -1,0 +1,67 @@
+{
+  "text": "<a id=\"P01\"></a>\n# Synthetic final board exception\n\n<a id=\"P02\"></a>\n[EX01] The governance board grants a temporary exception for node N57 only, effective 22 September 2034 from 09:00 through 12:00 inclusive. During that interval, an active operator credential and signed local approval by Emil satisfy the release route without an ordinary central permit. The board signed under its explicit exception-granting authority. The exception does not cover N58, change credential activation, or extend to other times. N57 release at 10:00 and Emil approval at 09:00 fall inside the stated scope. Every named condition is operative, not illustrative.\n\n<a id=\"P03\"></a>\n[EX02] This grant changes only the ordinary central-approval and permit requirements for the specified N57 window. The request mentioned N58, but the board deliberately excluded it from the final grant. The signed final scope prevails over the earlier proposal. Its location after the operational records does not diminish authority, and its filename creates no independent precedence. An assessor who discovers it must revisit any provisional N57 conclusion made from the general rule alone. Full-corpus rule discovery matters because the exception is separate from the record whose authorization it changes.\n\n<a id=\"P04\"></a>\n[EX03] The board-exception register is complete for September and contains only this grant. No second board exception covers N58 or N51. This bounded completeness can support an absence conclusion about board grants for those nodes during that interval. It says nothing about later periods or all imaginable documents. The incomplete N59 permit history supports a different conclusion: its missing permit remains unknown. The audit should identify exactly which completeness premise licenses a negative fact, rather than treating every unsuccessful search as equivalent evidence of absence.\n",
+  "segments": [
+    {
+      "anchor": "P01",
+      "quote": "# Synthetic final board exception",
+      "locator": {
+        "kind": "text",
+        "start_line": 1,
+        "end_line": 1,
+        "start_character": 0,
+        "end_character": 33,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P02",
+      "quote": "[EX01] The governance board grants a temporary exception for node N57 only, effective 22 September 2034 from 09:00 through 12:00 inclusive. During that interval, an active operator credential and signed local approval by Emil satisfy the release route without an ordinary central permit. The board signed under its explicit exception-granting authority. The exception does not cover N58, change credential activation, or extend to other times. N57 release at 10:00 and Emil approval at 09:00 fall inside the stated scope. Every named condition is operative, not illustrative.",
+      "locator": {
+        "kind": "text",
+        "start_line": 3,
+        "end_line": 3,
+        "start_character": 35,
+        "end_character": 610,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P03",
+      "quote": "[EX02] This grant changes only the ordinary central-approval and permit requirements for the specified N57 window. The request mentioned N58, but the board deliberately excluded it from the final grant. The signed final scope prevails over the earlier proposal. Its location after the operational records does not diminish authority, and its filename creates no independent precedence. An assessor who discovers it must revisit any provisional N57 conclusion made from the general rule alone. Full-corpus rule discovery matters because the exception is separate from the record whose authorization it changes.",
+      "locator": {
+        "kind": "text",
+        "start_line": 5,
+        "end_line": 5,
+        "start_character": 612,
+        "end_character": 1221,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "P04",
+      "quote": "[EX03] The board-exception register is complete for September and contains only this grant. No second board exception covers N58 or N51. This bounded completeness can support an absence conclusion about board grants for those nodes during that interval. It says nothing about later periods or all imaginable documents. The incomplete N59 permit history supports a different conclusion: its missing permit remains unknown. The audit should identify exactly which completeness premise licenses a negative fact, rather than treating every unsuccessful search as equivalent evidence of absence.",
+      "locator": {
+        "kind": "text",
+        "start_line": 7,
+        "end_line": 7,
+        "start_character": 1223,
+        "end_character": 1813,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    }
+  ],
+  "tools": {
+    "python-stdlib": "3.14.8"
+  },
+  "warnings": [],
+  "complete": true,
+  "status": "ready"
+}

@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target024.lean
+Audit.claim07 : 1500000 ≤ 1500000 ∧ Audit.delegatedApproval true 1500000 21181 21190 = false
+'Audit.claim07' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.220]

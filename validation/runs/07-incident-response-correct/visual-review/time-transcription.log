@@ -1,0 +1,10 @@
+Executed Python fixed-offset ISO datetime cross-check; no geographic daylight-saving lookup. Origin October27 00:00 UTC.
+2030-10-27T01:30+02:00 -> 2030-10-26T23:30:00+00:00 -> -30 minutes
+2030-10-27T02:00+02:00 -> 2030-10-27T00:00:00+00:00 -> 0 minutes
+2030-10-27T02:12+02:00 -> 2030-10-27T00:12:00+00:00 -> 12 minutes
+2030-10-27T03:20+01:00 -> 2030-10-27T02:20:00+00:00 -> 140 minutes
+2030-10-27T04:10+01:00 -> 2030-10-27T03:10:00+00:00 -> 190 minutes
+2030-10-27T04:45+01:00 -> 2030-10-27T03:45:00+00:00 -> 225 minutes
+2030-10-27T01:50+02:00 -> 2030-10-26T23:50:00+00:00 -> -10 minutes
+Manual checks: 120-120=0; 200-60=140; 90-120=-30; 250-60=190; 285-60=225; 110-120=-10.
+Pause intervals [30,60] and [70,110] have durations30+40=70, no overlap, all within[0,140]; min(70,45)=45; active=95.

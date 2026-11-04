@@ -1,0 +1,6 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target008.lean
+Audit.claim08 : 170 ≤ Audit.bDetection ∧
+  Audit.bDetection < 200 ∧
+    Audit.bEffectiveStart = 200 ∧
+      Audit.bAcknowledgement - Audit.bEffectiveStart = 25 ∧ Audit.bAcknowledgement ≤ Audit.bEffectiveStart + 30
+'Audit.claim08' does not depend on any axioms

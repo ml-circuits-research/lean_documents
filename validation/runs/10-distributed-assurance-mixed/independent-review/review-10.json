@@ -1,0 +1,83 @@
+{
+  "dossier": "10",
+  "source_view": "source-view-10.md",
+  "source_original_hashes_identical_between_variants": true,
+  "runs": [
+    {
+      "workspace": "tmp/10-distributed-assurance-mixed",
+      "checked_claims": [
+        "C10-ERR-01",
+        "C10-ERR-02",
+        "C10-ERR-03",
+        "C10-ERR-04",
+        "C10-ERR-05",
+        "C10-ERR-06",
+        "C10-ERR-07",
+        "C10-ERR-08",
+        "C10-ERR-09",
+        "C10-ERR-10",
+        "C10-ERR-11",
+        "C10-ERR-12",
+        "C10-ERR-13",
+        "C10-ERR-14"
+      ],
+      "findings_sha256": "7b740fca750713de5f2a3b93c145d4775e7eae46e3b6e9ed7c6e9daf7c24821a",
+      "model_sha256": "1d82395fd3ff718e348ebcb447effe28ad75024ca2d98290b417db0be12aca5b",
+      "report_sha256": "b124853bef9a7c81e0fa7f33312a05d85771415859f7e771b0fc9e0056358dc5",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "catalog_sha256": "1c0c435cb109cbddb7aaf9c0fb810fe4d62b41959f22c6093972e822fe885a8a",
+      "proof_results_sha256": "501a3b9a5b1ad72cfbfa4f9ef6b7c0569c6638c3ea9e304f4565334591a83d3e"
+    },
+    {
+      "workspace": "tmp/10-distributed-assurance-correct",
+      "checked_claims": [
+        "C10-OK-01",
+        "C10-OK-02",
+        "C10-OK-03",
+        "C10-OK-04",
+        "C10-OK-05",
+        "C10-OK-06",
+        "C10-OK-07",
+        "C10-OK-08",
+        "C10-OK-09",
+        "C10-OK-10",
+        "C10-OK-11",
+        "C10-OK-12",
+        "C10-OK-13",
+        "C10-OK-14"
+      ],
+      "findings_sha256": "5e25602b61c8afece7f01c414d57becf6eac2aa90abef88b526ac37209ff5410",
+      "model_sha256": "531d798a6cd6608201e40bc130d60945c98429ebf5563f505e39a75f0b8a2b24",
+      "report_sha256": "91e35c2927f1118a3ee6cbb8b6dff6d261f96561838c0119ebb5a7b27bb10476",
+      "literal_quote_errors": [],
+      "reported_technical_status": "passed",
+      "review_result": "No material semantic mismatch found.",
+      "limitations": [
+        "Proofs establish scoped encoded targets, not source authenticity.",
+        "This reviewer shares the model family, filesystem and verifier implementation with the authors; this is independent rederivation, not institutional or independent-kernel assurance."
+      ],
+      "catalog_sha256": "69402aac3af4f5e72175f35b71320adc6a28835d15d1f8ee567886edcf3d5a33",
+      "proof_results_sha256": "6865410374454d1abf7165b0f1c0485d75f003d4346a2ed6f5c8ea588e583c91"
+    }
+  ],
+  "defects": [],
+  "semantic_checks": [
+    "Complete sixty-node identities versus incomplete event or permit histories",
+    "Dated alias reassignment before credential activation",
+    "Delegation node and approval-time scope with denied expansion",
+    "Historical policy branch and superseded permit windows",
+    "Final signed N57 exception versus broader request and general route",
+    "N58 effective revocation precedes release regardless of later indexing",
+    "N59 support gap and N60 known authorization versus unknown monthly event count",
+    "Source-dependent reuse prerequisite distinct from unchanged report hash",
+    "Original five-column delegation XML and all sixty record bodies checked",
+    "Original native PDF sheet5 visually inspected: N49\u2013N60 range and explicit identity/event/permit completeness distinctions confirmed."
+  ],
+  "source_view_sha256": "65d779d693271f1295bf940d4c1833c8b98aa2e8e9cd16965f0896e8c9091630"
+}

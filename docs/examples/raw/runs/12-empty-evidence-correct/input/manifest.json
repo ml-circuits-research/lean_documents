@@ -1,0 +1,30 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "input/audit-policy.json": {
+      "sha256": "8c3582b032d5158666aef96b21be22fbc584621b9cd3b0e4fc2f38af41197e8f",
+      "bytes": 225,
+      "original_path": null
+    },
+    "input/report-ledger.json": {
+      "sha256": "db125b06edec982a56269c7aea9ee2c73e4a138c226b11acf6c99124e760fa52",
+      "bytes": 451,
+      "original_path": null
+    },
+    "input/report.md": {
+      "sha256": "45be4be3e047bc8dd131aeac06436a45d02d23a244774a5a4926a4535bc57386",
+      "bytes": 434,
+      "original_path": "/home/salboaie/work/lean_documents/examples/12-empty-evidence/report-correct.md"
+    },
+    "input/source-ledger.json": {
+      "sha256": "d0846a2ce4e00c174b3240fd6e3e469951e0cbc593b452b1ca21c864c384332d",
+      "bytes": 517,
+      "original_path": null
+    },
+    "input/sources/empty.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_path": "/home/salboaie/work/lean_documents/examples/12-empty-evidence/sources/empty.txt"
+    }
+  }
+}

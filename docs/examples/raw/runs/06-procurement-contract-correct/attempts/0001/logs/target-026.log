@@ -1,0 +1,4 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target026.lean
+Audit.r18NoCompetition : Audit.revisionAt 0 = 2 ∧
+  2250000 < Audit.threshold (Audit.revisionAt 0) ∧ Audit.competitionSatisfied 2 2250000 false false = true
+'Audit.r18NoCompetition' does not depend on any axioms

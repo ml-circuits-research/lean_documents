@@ -1,0 +1,7 @@
+# Semantic correspondence review
+
+Reviewer: coordinating agent, separate from the audit-producing agent. The initial audit agent was instructed to use only the selected report, brief and sources; it was not given the evaluator answers or alternate report. The coordinator is familiar with fixture design, so this correspondence review is not a blind domain-expert certification.
+
+Reviewed all original report findings and their 12 atomic checks, the two rule versions, case register and transfer note, every argument, model notes and Audit.lean. Revision selection uses receipt rather than assignment; the boundary is inclusive for revision 2. Gregorian mappings were checked against the source dates and supplied calendar convention; Lean verifies offset arithmetic, not an independently formalized Gregorian calendar. D-202 receipt is one minute before the boundary and its submission one minute late; the negated timeliness target matches the claim. D-203 March 7 is refuted by the explicit day-zero rule and March 8 computed deadline. D-204 countermodels are marked auxiliary and do not assert missing Annex R contents. Splitting VD-01/06 preserves parent report anchors. Accepted with these declared limits.
+
+Technical logs verify the encoded targets. This review checks transcription, applicability, target correspondence and limits; it does not authenticate synthetic sources, establish general model consistency, or certify unseen documents. No unresolved source-to-target mismatch was identified within the reviewed scope.

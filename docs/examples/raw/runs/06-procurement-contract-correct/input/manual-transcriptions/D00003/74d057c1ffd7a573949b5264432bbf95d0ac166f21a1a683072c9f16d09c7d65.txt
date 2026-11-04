@@ -1,0 +1,9 @@
+[A02]
+Records officer Tomas Reed signed a second attestation on June 28 at 14:30 UTC. It
+reads: "The director granted no approval for P-21 at or before 11:00 UTC on June 27.
+In particular, the reported 10:00 approval did not occur." This is an explicit denial
+of the same pre-commitment approval event asserted by Mara, not an observation that
+Tomas failed to locate one attachment. Tomas says he was the approval-session
+recorder but supplies no complete session transcript. The statement does not deny
+that the order was committed at 10:30, which both witnesses accept. It also does not
+suggest that a different person had delegated authority to approve P-21.

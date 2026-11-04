@@ -1,0 +1,7 @@
+{
+  "run": 15,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "lean": "/home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lean"
+}

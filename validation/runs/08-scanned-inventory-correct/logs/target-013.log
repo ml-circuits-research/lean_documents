@@ -1,0 +1,6 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target013.lean
+Audit.claim13 : ∀ (s : Audit.StockState) (q : Int),
+  (Audit.reserve s q).onHand = s.onHand ∧ (Audit.reserve s q).reserved = s.reserved + q
+'Audit.claim13' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.201]

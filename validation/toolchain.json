@@ -1,0 +1,11 @@
+{
+  "lean_version": "4.24.0",
+  "lean_commit": "797c613eb9b6d4ec95db23e3e00af9ac6657f24b",
+  "lake_version": "5.0.0-src+797c613",
+  "platform": "x86_64-unknown-linux-gnu",
+  "distribution_url": "https://github.com/leanprover/lean4/releases/download/v4.24.0/lean-4.24.0-linux.tar.zst",
+  "distribution_sha256": "b14f5e5159219dd1a1956c3b806813319f5e94ccd5bdfd56f54520609a5bb5ec",
+  "libraries": "Lean core Init and Std only; no mathlib or third-party packages",
+  "independent_checker": "Compatible lean4checker v4.24.0 built and actually replayed selected environments; same Lean kernel, not an independent kernel implementation. See checker-toolchain.json and per-run proof-results.json.",
+  "persistent_lean_executable": "/home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lean"
+}

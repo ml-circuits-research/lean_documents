@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Evidence-to-Proof Review: audit supplied report findings with traceable evidence and scoped formal reasoning."><title>Formats, scale and revisions · Evidence-to-Proof Review</title><link rel="stylesheet" href="assets/style.css"></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="index.html">Evidence-to-Proof Review</a><p>Source-grounded arguments. Scoped formal guarantees.</p><nav aria-label="Documentation"><a href="general-method.html">General method</a><a href="index.html">Overview</a><a href="decisions.html">Analysis &amp; decisions</a><a href="strategies.html">Formalization strategies</a><a href="architecture.html">Data &amp; architecture</a><a href="workflow.html">Per-request workflow</a><a href="verification.html">Arguments &amp; verification</a><a href="examples.html">Test dossiers</a><a href="implementation.html">Implementation plan</a><a href="extensions.html" aria-current="page">Formats &amp; scale</a><a href="validation.html">Validation results</a></nav></header><main id="main">
+<p class="eyebrow">Implemented extension · 4 November 2026</p>
+<h1>Native documents, larger corpora and retained revisions</h1>
+<p class="lead">The skill preserves original files, records how each passage was extracted, and separates document-processing progress from the evidence needed to judge a report claim.</p>
+<h2>What is implemented</h2>
+<div class="table-wrap"><table><thead><tr><th>Input or operation</th><th>Implemented behavior</th><th>Limit that remains visible</th></tr></thead><tbody>
+<tr><td>UTF-8 text and Markdown</td><td>Explicit or generated passage anchors, line and character positions.</td><td>A stable quote does not authenticate its source.</td></tr>
+<tr><td>Searchable PDF</td><td>Poppler extraction, page numbers and word bounding boxes; original bytes and converter output retained.</td><td>Reading order, columns, tables and image content need review.</td></tr>
+<tr><td>Scanned or mixed PDF; PNG/JPEG</td><td>Rasterized pages, Tesseract text and TSV word coordinates/confidence, per-page warnings.</td><td>Confidence is not a probability that the proposition is true. Unreadable evidence remains uncertain.</td></tr>
+<tr><td>DOCX</td><td>Standard-library ZIP/XML extraction with paragraph, table cell and XML-part coordinates; headers, footers and notes retained.</td><td>Tracked changes, unsupported objects and layout assumptions are disclosed. XML text is not a rendered-layout guarantee.</td></tr>
+<tr><td>Large finite source lists</td><td>SQLite FTS5 index, overlapping retrieval chunks, full parent passages, query pagination and search history.</td><td>Retrieval is not exhaustive semantic analysis. No unlimited-capacity claim.</td></tr>
+<tr><td>Bounded execution</td><td>Document/time budgets, pending inventory, per-document commits, resumable processing and explicit interruption recovery.</td><td>Batch time budget is checked between documents; converter timeouts are separate.</td></tr>
+<tr><td>Changed source</td><td>New retained revision, old workspace untouched, all technical results invalidated; semantic dependency review required.</td><td>Selective semantic invalidation relies on an explicitly complete dependency graph; otherwise every claim is affected.</td></tr>
+<tr><td>Additional proof checking</td><td>Optional compatible lean4checker --fresh through Lake, real logs and binary provenance.</td><td>It replays through the same Lean kernel; it is not an independently implemented kernel.</td></tr>
+</tbody></table></div>
+<h2>Inspect before trusting extracted text</h2>
+<p>Every indexed passage points back to original bytes and their SHA-256 hash. Native PDF passages and OCR output carry extraction uncertainty. Before a direct formal verdict uses an uncertain source or report passage, the auditor must inspect the original and record a review tied to both the source hash and the full extracted passage hash. The tool checks those bindings; the act of inspection remains an attributed human or agent judgment.</p>
+<p>Real test scans exposed incorrect timestamps and a TSV parser failure on a literal opening quote. The parser was repaired and regression-tested. Visually corrected text is added with a new anchor through <code>transcribe</code>; original OCR text, images, coordinates, the reviewed transcription and old proof attempts stay available. A correction does not silently overwrite evidence or make incomplete ingestion complete.</p>
+<h2>A request and its retained files</h2>
+<pre><code>python3 /path/to/skill/scripts/audit.py doctor --lean /absolute/path/to/lean
+python3 /path/to/skill/scripts/audit.py prepare --indexed \
+  --brief brief.md --report report.docx --sources dossier/ \
+  --temp-root tmp --max-documents 20
+python3 /path/to/skill/scripts/audit.py resume --workspace WORKSPACE --max-documents 20
+python3 /path/to/skill/scripts/audit.py search --workspace WORKSPACE \
+  --query 'exception OR supersedes' --limit 20 --offset 0</code></pre>
+<p>The coding agent reads the selected report and sources, constructs the arguments and models, then runs the checking and rendering helpers. The scripts do not autonomously decide documentary meaning. Each request gets a distinct directory under Git-ignored <code>tmp/</code>; no automatic cleanup occurs.</p>
+<pre><code>tmp/claim-audit-.../
+  input/originals/             # original files, unchanged
+  input/index.sqlite3         # passages, coordinates and retrieval chunks
+  input/sources/              # derived anchored text
+  extraction/                 # converter logs, page images, TSV and XML
+  extraction-review.json      # actual attributed inspection
+  manual-transcriptions.jsonl # optional correction history
+  ingestion.json              # pending, partial, blocked and ready inputs
+  findings.json               # claim arguments and outcome dimensions
+  models/                     # scoped Lean definitions and targets
+  proof-results.json          # executed result, hashes, axioms, logs
+  audit-report.md             # explanation with evidence and limits
+  history/                    # superseded outputs retained</code></pre>
+<h2>Resource and coverage decisions</h2>
+<p>Snapshotting fixes the entire authorized source inventory first. Extraction can then stop on a budget and resume. A partial or blocked document needs either further work or an explicit acknowledgement explaining its impact on the affected claims. An acknowledgement never supplies the missing premise. Search results carry their total matching-chunk count and pagination, but the auditor must still examine applicability, versions, exceptions and evidence against the claim.</p>
+<p>The executed synthetic load test ingested 1,000 source documents plus a brief and report: about 39 MB of source text, 24,002 passages, and a 108 MB index. It completed in about 25 seconds in this environment with about 138 MiB peak process RSS, across five extraction batches. It retrieved an exception near the end of the corpus and verified that a no-op resume preserved the index hash. These measurements describe ingestion and retrieval, not semantic audit accuracy or a general performance guarantee. <a href="../validation/extended/scale.json">Actual measurement record</a>.</p>
+<h2>When a document changes</h2>
+<pre><code>python3 /path/to/skill/scripts/audit.py refresh --workspace WORKSPACE \
+  --document-id D00005 --replacement revised-policy.pdf --temp-root tmp</code></pre>
+<p>A new revision archives earlier reports and proof logs and records the changed hashes. All proof results require a new execution. Semantic claims are all invalidated unless a complete declared dependency map supports a narrower set; even then, explicit evidence dependencies must be included. The reviewer records which affected claims were reconsidered against the current revision before publishing another result. An <a href="../validation/extended/invalidation.json">executed negative control</a> changed the delegation expiry in a copy of a completed audit: the parent remained unchanged, old outputs were archived, and stale rendering plus the revision-review gate rejected reuse. This deliberately altered case stops before re-audit and is not counted as a completed report audit.</p>
+<p>For an interrupted write, ordinary verification rejects stale derived files. Explicit <code>resume --recover</code> verifies preserved originals, archives interrupted state, rebuilds extraction and requires fresh review. It refuses to bless a changed original or catalogue.</p>
+<h2>Packaging and prerequisites</h2>
+<p>Copy the entire <code>skills/evidence-to-proof-review/</code> directory. Its scripts use Python standard-library and sibling modules; the examples and evaluator are not runtime dependencies. Required tools are Python with SQLite FTS5, Lean 4.24.0 with Lake for proofs, Poppler for PDF, and Tesseract plus relevant language data for OCR. DOCX needs no office installation or pip package. The optional checker must match the Lean version. Installation is explicit; the skill does not download dependencies automatically.</p>
+<p>This machine has tested local Lean, Poppler and English OCR tools. Other languages require their corresponding Tesseract data. Local extraction and checking work without network after installation; the coding agent may use a remote service. Self-contained packaging does not mean bundled system binaries or autonomous semantic judgment.</p>
+<p><a href="../skills/evidence-to-proof-review/references/requirements.md">Runtime requirements</a> · <a href="../skills/evidence-to-proof-review/references/formats.md">Exact format behavior</a> · <a href="../skills/evidence-to-proof-review/references/corpus.md">Commands and review records</a> · <a href="examples.html">Ten dossiers</a> · <a href="validation.html">Executed claim audits</a></p>
+</main><footer>Extraction, semantic review and formal proof provide different guarantees.</footer></body></html>

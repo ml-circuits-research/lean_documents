@@ -1,0 +1,3 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target014.lean
+Audit.claim15Conflict : Audit.maraAffirms = true ∧ Audit.tomasDenies = true
+'Audit.claim15Conflict' does not depend on any axioms

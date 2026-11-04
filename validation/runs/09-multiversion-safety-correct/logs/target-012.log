@@ -1,0 +1,7 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target012.lean
+Audit.claim11 : Audit.releaseRoute true false true true true = false ∧
+  ¬∀ (calibration channels faults signature : Bool),
+      Audit.releaseRoute true calibration channels faults signature = true
+'Audit.claim11' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.203]

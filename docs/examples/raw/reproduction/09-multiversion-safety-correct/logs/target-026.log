@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target026.lean
+Audit.claim09 : ∀ (t : Int), 2880 ≤ t → t ≤ 4319 → 1439 < t
+'Audit.claim09' depends on axioms: [propext, Quot.sound]
+
+[exit_code=0; elapsed_seconds=0.229]

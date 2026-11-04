@@ -1,0 +1,6 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target012.lean
+Audit.claim04 : Audit.miraSpeech.speaker = Audit.Person.mira ∧
+  Audit.miraSpeech.time = Audit.tick 9 12 ∧ Audit.miraSpeech.words = Audit.Utterance.neverDied
+'Audit.claim04' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.146]

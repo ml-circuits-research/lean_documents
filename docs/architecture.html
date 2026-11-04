@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Evidence-to-Proof Review: audit supplied report findings with traceable evidence and scoped formal reasoning."><title>Data &amp; architecture · Evidence-to-Proof Review</title><link rel="stylesheet" href="assets/style.css"></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="index.html">Evidence-to-Proof Review</a><p>Source-grounded arguments. Scoped formal guarantees.</p><nav aria-label="Documentation"><a href="general-method.html">General method</a><a href="index.html">Overview</a><a href="decisions.html">Analysis &amp; decisions</a><a href="strategies.html">Formalization strategies</a><a href="architecture.html" aria-current="page">Data &amp; architecture</a><a href="workflow.html">Per-request workflow</a><a href="verification.html">Arguments &amp; verification</a><a href="examples.html">Test dossiers</a><a href="implementation.html">Implementation plan</a><a href="extensions.html">Formats &amp; scale</a><a href="validation.html">Validation results</a></nav></header><main id="main"><div class="note"><p><strong>Status update — 4 November 2026:</strong> implementation and local validation have been authorized. This page records the approved design; see <a href="validation.html">validation results</a> for implemented capabilities, executed checks, and remaining limits.</p></div>
+<p class="eyebrow">Traceability contract</p><h1>Keep meaning, evidence, and proof separate</h1>
+<p class="lead">The central artifact is an argument graph whose leaves point to source passages and whose inference steps can be reviewed or formalized individually.</p>
+<h2>Semantic record contract</h2><p>The implemented <a href="../skills/evidence-to-proof-review/schemas/findings.schema.json">finding schema</a> combines claim, evidence, argument and outcome fields. Source locations live in the indexed corpus; model meanings and semantic review are companion records. The conceptual records below describe the information to preserve, rather than requiring one file per record type.</p>
+<div class="table-wrap"><table><thead><tr><th>Record</th><th>Required information</th></tr></thead><tbody>
+<tr><td>Document</td><td>Stable ID, role (source/report/brief), original path, hash, version, language, type, dates, extraction tool/version, original-to-extracted position map, access classification.</td></tr>
+<tr><td>Source statement</td><td>ID, exact quote, original anchor, attributed speaker, assertion/norm/hypothesis/fiction status, polarity, modality, event time vs publication time, scope, exceptions, uncertainty, alternative readings.</td></tr>
+<tr><td>Report claim</td><td>ID, report quote and position, atomic normalized proposition, parent finding, quantifier/domain, severity from brief, citations actually supplied by the author.</td></tr>
+<tr><td>Check obligation</td><td>ID, linked claim, precise question, target proposition, planned method, premises, applicable version, exclusions, progress, search scope and budget, coverage state.</td></tr>
+<tr><td>Argument</td><td>Premise IDs, source evidence, rule IDs, inference steps, rebuttals, dependency edges, missing premises, cyclic dependencies, counterexample and scope when present.</td></tr>
+<tr><td>Model</td><td>ID/hash, symbol legend, source-to-symbol mapping, domain, interpretation branch, assumptions and exceptions, target identity, non-vacuity checks, data provenance.</td></tr>
+<tr><td>Proof run</td><td>Run ID, exact source/dependency hashes, toolchain, command and target, exit code, stdout/stderr, theorem name/type, audited axioms, checker result, elapsed time, resource limit.</td></tr>
+<tr><td>Audit finding</td><td>All linked IDs; evidence/argument/formal/review states; human explanation, limitations, support gaps, suggested correction or evidence request. Proof reference is null if no proof exists.</td></tr>
+</tbody></table></div>
+<h2>Independent state axes</h2>
+<ul><li><strong>Evidence:</strong> SUPPORT_ONLY, COUNTEREVIDENCE_ONLY, BOTH, NEITHER. These describe relevant documentary support, not metaphysical truth.</li><li><strong>Argument:</strong> SUFFICIENT_UNDER_ASSUMPTIONS, INSUFFICIENT_SUPPORT, INVALID_INFERENCE, DISPUTED_INTERPRETATION, NON_FORMAL_ASSESSMENT.</li><li><strong>Formal check:</strong> NOT_ATTEMPTED, PROVED, NEGATION_PROVED, COUNTEREXAMPLE_CHECKED, FAILED, TIMEOUT, BLOCKED. Record exactly which proposition was checked.</li><li><strong>Semantic review:</strong> PENDING, ACCEPTED_WITH_LIMITS, CHANGES_REQUIRED. Acceptance records the reviewer and scope; it does not establish source truth.</li><li><strong>Coverage:</strong> PLANNED, REVIEWED, UNRESOLVED, EXCLUDED_WITH_REASON. Coverage is independent of whether a claim was proved.</li></ul>
+<p>Public labels such as PROVED_IN_MODEL and REFUTED_IN_MODEL are derived only after the verification gate passes for the actual report claim or its negation. CONFLICTING_EVIDENCE, INSUFFICIENT_SUPPORT, UNDETERMINED, FORMALIZATION_BLOCKED, and NON_FORMAL_ASSESSMENT remain available. Several observations may apply to one finding: a source conflict and an unsupported interpretation should not erase one another.</p>
+<p>A theorem proving that a report's argument is insufficient receives its own check ID. It does not cause the report's underlying claim to be labeled REFUTED_IN_MODEL. Likewise, a theorem proving contradictory testimony does not prove both testimony claims true.</p>
+<h2>A proposed audit record (illustrative, not a validated schema)</h2>
+<pre><code>{
+  "claim_id": "R-C03",
+  "claim": "Operation C had no approval",
+  "question": "Does the corpus establish absence of prior approval?",
+  "evidence_state": "NEITHER",
+  "argument_state": "INSUFFICIENT_SUPPORT",
+  "formal_state": "NOT_ATTEMPTED",
+  "proof_ref": null,
+  "missing_premises": ["Reliable evidence of absence in the relevant interval"],
+  "search_scope": ["Manifest-listed operation records and attachments"],
+  "reason": "No approval record was found; completeness is not established.",
+  "not_established": ["Approval existed", "Approval did not exist"]
+}</code></pre>
+<h2>Large corpora and change tracking</h2>
+<p>Ingest every authorized document into a disk-backed inventory. Chunk by headings, paragraphs, tables, and pages while retaining original coordinates. Retrieve relevant context for each finding and also scan the global inventory for versions, annexes, exceptions, and potential counterevidence. Retrieval ranking cannot establish completeness.</p>
+<p>Use dependency edges to invalidate affected extractions, models, and results when a source hash, rule, interpretation, or target changes. Reuse a result only when all relevant content and toolchain fingerprints match. Cross-document entity merges require explicit evidence; similar names alone are insufficient.</p>
+<p>No fixed count limit means the architecture accepts a finite manifest without an arbitrary document cap. It does not promise unlimited computation, complete ingestion of corrupt files, or a conclusive verdict within every budget. Record every unprocessed input and its impact.</p>
+</main><footer>Design and implementation v0.3 · 4 November 2026 · English repository artifacts · Implementation approved; see validation results for executed scope.</footer></body></html>

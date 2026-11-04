@@ -1,0 +1,5 @@
+$ /tmp/lean-4.24.0-linux/bin/lake build Audit
+info: claim_audit: no previous manifest, creating one from scratch
+info: toolchain not updated; already up-to-date
+✔ [2/3] Built Audit (363ms)
+Build completed successfully (3 jobs).

@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "anchors": [
+    {
+      "report_anchor": "document-preamble",
+      "report_sha256": "43ae23e6beb12ce1e8deb4fedb2344205987423bf812693d49a1f0e46c84ecf8",
+      "classification": "non_claim",
+      "reason": "Document title only."
+    },
+    {
+      "report_anchor": "E-01",
+      "report_sha256": "3b5e8c20adf9e48efde7b91d195f74990134879c338a8a60dd67f9c98611a6f5",
+      "classification": "claims",
+      "reason": "Contains the material conclusion and its explanation assessed here."
+    },
+    {
+      "report_anchor": "E-02",
+      "report_sha256": "16468d586a0e8167d7c17f476e440d7e296d7a0cf812f9ac665e1bf23b9e8d9a",
+      "classification": "claims",
+      "reason": "Contains the material conclusion and its explanation assessed here."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "E-01",
+      "report_anchor": "E-01",
+      "report_quote": "Supplier Orion passed clearance.",
+      "disposition": "audited"
+    },
+    {
+      "claim_id": "E-02",
+      "report_anchor": "E-02",
+      "report_quote": "Supplier Orion failed clearance because no clearance is recorded in the supplied dossier.",
+      "disposition": "audited"
+    }
+  ]
+}

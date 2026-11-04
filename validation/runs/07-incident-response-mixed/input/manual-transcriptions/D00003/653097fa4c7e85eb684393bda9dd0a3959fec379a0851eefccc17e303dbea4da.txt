@@ -1,0 +1,10 @@
+[A03]
+The two signatories have not retracted their attestations. No signed correction,
+adjudication, authoritative C containment record, or evidence-priority rule resolving
+the conflict is supplied. A later signing time alone does not make Pavel's statement
+an authorized correction of Elise's. Likewise, Elise's role as containment operator
+does not make her account infallible under the playbook. The packet's authenticity
+stipulation concerns the identity of the signatories and integrity of the text, not
+the historical truth of every assertion. A reviewer must preserve both attributed
+positions rather than accept both as unconditional facts or silently discard the less
+convenient account.

@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target022.lean
+Audit.claim08 : Audit.requestedB = 18 ∧ Audit.deliveredB = 12 ∧ Audit.deliveredB < Audit.requestedB
+'Audit.claim08' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.204]

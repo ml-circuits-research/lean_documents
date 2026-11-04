@@ -1,0 +1,250 @@
+{
+  "reviews": [
+    {
+      "path": "input/sources/approval-attestations.scan.pdf.md",
+      "anchor": "pdf-page-0002-reviewed-0001",
+      "decision": "accepted",
+      "reviewer": "audit_02m",
+      "reason": "Visually inspected original PDF page raster; corrected OCR semantic marker, minute digits and register reference where required; entire material passage compared with page.",
+      "source_sha256": "f7fd20aa2be7a439af133f37c3f045a9d3ce14b786760ec8c806c2e8abcf07f8",
+      "segment_sha256": "df0fbb866b0e4223d11fcd6469d6e29523f081d16a6473491469cc8f76957f34",
+      "reviewed_at": "2026-11-04T15:03:34.990337+00:00",
+      "attestation": "The caller explicitly attests original-source inspection for this manual transcription.",
+      "source_anchor": "pdf-page-0002"
+    },
+    {
+      "path": "input/sources/approval-attestations.scan.pdf.md",
+      "anchor": "pdf-page-0003-reviewed-0001",
+      "decision": "accepted",
+      "reviewer": "audit_02m",
+      "reason": "Visually inspected original PDF page raster; corrected OCR semantic marker, minute digits and register reference where required; entire material passage compared with page.",
+      "source_sha256": "f7fd20aa2be7a439af133f37c3f045a9d3ce14b786760ec8c806c2e8abcf07f8",
+      "segment_sha256": "ba031fa293da8affd309151b781565b610cc847cf7c379982b78c4bf270c34e9",
+      "reviewed_at": "2026-11-04T15:03:35.134756+00:00",
+      "attestation": "The caller explicitly attests original-source inspection for this manual transcription.",
+      "source_anchor": "pdf-page-0003"
+    },
+    {
+      "path": "input/sources/approval-attestations.scan.pdf.md",
+      "anchor": "pdf-page-0004-reviewed-0001",
+      "decision": "accepted",
+      "reviewer": "audit_02m",
+      "reason": "Visually inspected original PDF page raster; corrected OCR semantic marker, minute digits and register reference where required; entire material passage compared with page.",
+      "source_sha256": "f7fd20aa2be7a439af133f37c3f045a9d3ce14b786760ec8c806c2e8abcf07f8",
+      "segment_sha256": "73195bed285662fc2f5faeadd4a480b43aa1b5af13741df329d39f44b5cd65a1",
+      "reviewed_at": "2026-11-04T15:03:35.280489+00:00",
+      "attestation": "The caller explicitly attests original-source inspection for this manual transcription.",
+      "source_anchor": "pdf-page-0004"
+    },
+    {
+      "path": "input/sources/approval-attestations.scan.pdf.md",
+      "anchor": "pdf-page-0005-reviewed-0001",
+      "decision": "accepted",
+      "reviewer": "audit_02m",
+      "reason": "Visually inspected original PDF page raster; corrected OCR semantic marker, minute digits and register reference where required; entire material passage compared with page.",
+      "source_sha256": "f7fd20aa2be7a439af133f37c3f045a9d3ce14b786760ec8c806c2e8abcf07f8",
+      "segment_sha256": "00ec430f823e5fbf0b983b4eb9c2e0f8768915842fecabf5c8844a7d83c98cbd",
+      "reviewed_at": "2026-11-04T15:03:35.426916+00:00",
+      "attestation": "The caller explicitly attests original-source inspection for this manual transcription.",
+      "source_anchor": "pdf-page-0005"
+    },
+    {
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0003",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Read original DOCX word/document.xml directly from immutable ZIP; compared semantic markers, complete paragraph text, thresholds, conjunctions and exceptions against extracted XML-order text.",
+      "source_sha256": "ed054f952c7f1ca8d513691fa0c4460a7c7de9e6c59320c1b21fb22abfbcacfa",
+      "segment_sha256": "d21bba9c6c8323613881cbedf7c596cbc7f47f09cd317789f169677d9df190f2"
+    },
+    {
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0004",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Read original DOCX word/document.xml directly from immutable ZIP; compared semantic markers, complete paragraph text, thresholds, conjunctions and exceptions against extracted XML-order text.",
+      "source_sha256": "ed054f952c7f1ca8d513691fa0c4460a7c7de9e6c59320c1b21fb22abfbcacfa",
+      "segment_sha256": "e2051d3d169815fd3059f548cb33a41aa7772f7d54440b7c3b8d70f670058ac9"
+    },
+    {
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0005",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Read original DOCX word/document.xml directly from immutable ZIP; compared semantic markers, complete paragraph text, thresholds, conjunctions and exceptions against extracted XML-order text.",
+      "source_sha256": "ed054f952c7f1ca8d513691fa0c4460a7c7de9e6c59320c1b21fb22abfbcacfa",
+      "segment_sha256": "480c0bf3472771f022851caaf2b5e8c14d790d4c6d58b22f2fdddd27170d0140"
+    },
+    {
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0006",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Read original DOCX word/document.xml directly from immutable ZIP; compared semantic markers, complete paragraph text, thresholds, conjunctions and exceptions against extracted XML-order text.",
+      "source_sha256": "ed054f952c7f1ca8d513691fa0c4460a7c7de9e6c59320c1b21fb22abfbcacfa",
+      "segment_sha256": "105e0dc4725ddc5a12d74969ca70ca28bc5114ad085683e84c4242200d4907b5"
+    },
+    {
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0007",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Read original DOCX word/document.xml directly from immutable ZIP; compared semantic markers, complete paragraph text, thresholds, conjunctions and exceptions against extracted XML-order text.",
+      "source_sha256": "ed054f952c7f1ca8d513691fa0c4460a7c7de9e6c59320c1b21fb22abfbcacfa",
+      "segment_sha256": "437963b7e9120a8395aaa4b69d7f7d9288f65f3f677f96ea262fcd3dcb7d9629"
+    },
+    {
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0008",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Read original DOCX word/document.xml directly from immutable ZIP; compared semantic markers, complete paragraph text, thresholds, conjunctions and exceptions against extracted XML-order text.",
+      "source_sha256": "ed054f952c7f1ca8d513691fa0c4460a7c7de9e6c59320c1b21fb22abfbcacfa",
+      "segment_sha256": "88fb38585309c4d7ed2b83d516b6313d886063e231d9e954d9541c16f61a1e8d"
+    },
+    {
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0009",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Read original DOCX word/document.xml directly from immutable ZIP; compared semantic markers, complete paragraph text, thresholds, conjunctions and exceptions against extracted XML-order text.",
+      "source_sha256": "ed054f952c7f1ca8d513691fa0c4460a7c7de9e6c59320c1b21fb22abfbcacfa",
+      "segment_sha256": "ba1aa936c43bcd7ba299aa8828ce8fc79ac99474de7c9e782a26cc76998fbaea"
+    },
+    {
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0010",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Read original DOCX word/document.xml directly from immutable ZIP; compared semantic markers, complete paragraph text, thresholds, conjunctions and exceptions against extracted XML-order text.",
+      "source_sha256": "ed054f952c7f1ca8d513691fa0c4460a7c7de9e6c59320c1b21fb22abfbcacfa",
+      "segment_sha256": "c880224215ca684f86ecefa018baaa980fa8ff45884e94a56fe0060671353141"
+    },
+    {
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0011",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Read original DOCX word/document.xml directly from immutable ZIP; compared semantic markers, complete paragraph text, thresholds, conjunctions and exceptions against extracted XML-order text.",
+      "source_sha256": "ed054f952c7f1ca8d513691fa0c4460a7c7de9e6c59320c1b21fb22abfbcacfa",
+      "segment_sha256": "fa8db7f3c4848b0e13eee56a6eee4bb94dfacb7de663746161af3b4ed17ae46d"
+    },
+    {
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0012",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Read original DOCX word/document.xml directly from immutable ZIP; compared semantic markers, complete paragraph text, thresholds, conjunctions and exceptions against extracted XML-order text.",
+      "source_sha256": "ed054f952c7f1ca8d513691fa0c4460a7c7de9e6c59320c1b21fb22abfbcacfa",
+      "segment_sha256": "d68990cb67b14e1a83fbfe83319ad24e9e368c82a630ebc5027689fe668eb59a"
+    },
+    {
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0013",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Read original DOCX word/document.xml directly from immutable ZIP; compared semantic markers, complete paragraph text, thresholds, conjunctions and exceptions against extracted XML-order text.",
+      "source_sha256": "ed054f952c7f1ca8d513691fa0c4460a7c7de9e6c59320c1b21fb22abfbcacfa",
+      "segment_sha256": "858992a660cacf064d5668a8faf4529c72adcca6f9567218f3e30a47a4dfb8f7"
+    },
+    {
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0014",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Read original DOCX word/document.xml directly from immutable ZIP; compared semantic markers, complete paragraph text, thresholds, conjunctions and exceptions against extracted XML-order text.",
+      "source_sha256": "ed054f952c7f1ca8d513691fa0c4460a7c7de9e6c59320c1b21fb22abfbcacfa",
+      "segment_sha256": "eddac8e2ae2223b2709349a734ca121a92f44ba01b68f342bdfba23189203558"
+    },
+    {
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0015",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Read original DOCX word/document.xml directly from immutable ZIP; compared semantic markers, complete paragraph text, thresholds, conjunctions and exceptions against extracted XML-order text.",
+      "source_sha256": "ed054f952c7f1ca8d513691fa0c4460a7c7de9e6c59320c1b21fb22abfbcacfa",
+      "segment_sha256": "49bb64c58edeb9aa94e22b4d0b8ccb3e95991f7c8ee08ebd517b338ed3303cc9"
+    },
+    {
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0016",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Read original DOCX word/document.xml directly from immutable ZIP; compared semantic markers, complete paragraph text, thresholds, conjunctions and exceptions against extracted XML-order text.",
+      "source_sha256": "ed054f952c7f1ca8d513691fa0c4460a7c7de9e6c59320c1b21fb22abfbcacfa",
+      "segment_sha256": "d752689f91b17afce8f7c0c41a470bb39a56915ce097d28dd1b2b95980489b60"
+    },
+    {
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0017",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Read original DOCX word/document.xml directly from immutable ZIP; compared semantic markers, complete paragraph text, thresholds, conjunctions and exceptions against extracted XML-order text.",
+      "source_sha256": "ed054f952c7f1ca8d513691fa0c4460a7c7de9e6c59320c1b21fb22abfbcacfa",
+      "segment_sha256": "a774eaac0edf2c1c63e5235d87b7777f63dbde6cd1b3a7007ee5b527a8b830a9"
+    },
+    {
+      "path": "input/sources/procurement-standard.docx.md",
+      "anchor": "docx-p-0018",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Read original DOCX word/document.xml directly from immutable ZIP; compared semantic markers, complete paragraph text, thresholds, conjunctions and exceptions against extracted XML-order text.",
+      "source_sha256": "ed054f952c7f1ca8d513691fa0c4460a7c7de9e6c59320c1b21fb22abfbcacfa",
+      "segment_sha256": "bbdb8c4c379b90dee0ba641517d4bb6051a1a2f60c0c6c939994b3243bea27ed"
+    },
+    {
+      "path": "input/sources/revision-amendment.pdf.md",
+      "anchor": "pdf-page-0002",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Visually inspected rasterized original PDF page; compared full material clause, numerical values, timestamps, exceptions and negations with extraction.",
+      "source_sha256": "c8d035848c7a222831ccf4792210e8700fe89bf4a86e4be34b70de667175a10d",
+      "segment_sha256": "7b5453cab49105bae4f7992d6d5dd4915b65bf16b607bce6d535e4a86b1b519a"
+    },
+    {
+      "path": "input/sources/revision-amendment.pdf.md",
+      "anchor": "pdf-page-0003",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Visually inspected rasterized original PDF page; compared full material clause, numerical values, timestamps, exceptions and negations with extraction.",
+      "source_sha256": "c8d035848c7a222831ccf4792210e8700fe89bf4a86e4be34b70de667175a10d",
+      "segment_sha256": "220f8ede93fc04db4c906a634ba405c9c9ebae57bf42308277a4b29a20f82533"
+    },
+    {
+      "path": "input/sources/revision-amendment.pdf.md",
+      "anchor": "pdf-page-0004",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Visually inspected rasterized original PDF page; compared full material clause, numerical values, timestamps, exceptions and negations with extraction.",
+      "source_sha256": "c8d035848c7a222831ccf4792210e8700fe89bf4a86e4be34b70de667175a10d",
+      "segment_sha256": "bb2644a0f495bee15f0ddf4ad9233b017f4a849c376af79b3100355cc61388ca"
+    },
+    {
+      "path": "input/sources/revision-amendment.pdf.md",
+      "anchor": "pdf-page-0005",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Visually inspected rasterized original PDF page; compared full material clause, numerical values, timestamps, exceptions and negations with extraction.",
+      "source_sha256": "c8d035848c7a222831ccf4792210e8700fe89bf4a86e4be34b70de667175a10d",
+      "segment_sha256": "c6e3e398dd686081feb4c306413c40a84bcbf82cc32eb34c1cfbb2199cdf67a3"
+    },
+    {
+      "path": "input/sources/revision-amendment.pdf.md",
+      "anchor": "pdf-page-0006",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Visually inspected rasterized original PDF page; compared full material clause, numerical values, timestamps, exceptions and negations with extraction.",
+      "source_sha256": "c8d035848c7a222831ccf4792210e8700fe89bf4a86e4be34b70de667175a10d",
+      "segment_sha256": "f916c050e19c323f8fbaca3b891083ee352ea7e5effc2a00a26734f28a59598e"
+    },
+    {
+      "path": "input/sources/revision-amendment.pdf.md",
+      "anchor": "pdf-page-0007",
+      "reviewer": "audit_02m",
+      "decision": "accepted",
+      "reason": "Visually inspected rasterized original PDF page; compared full material clause, numerical values, timestamps, exceptions and negations with extraction.",
+      "source_sha256": "c8d035848c7a222831ccf4792210e8700fe89bf4a86e4be34b70de667175a10d",
+      "segment_sha256": "e66ce5620a883b5bbed6d2e5203af60b6cb8dae9df075ec438070e8db119f1e6"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "query": "\"maintenance\" OR \"delivered\"",
+  "total_matching_chunks": 23,
+  "offset": 0,
+  "limit": 60,
+  "results": [
+    {
+      "id": 15,
+      "path": "input/report.md",
+      "anchor": "C07-08",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 147,
+      "text": "**C07-08.** B's delivered acknowledgement at 03:45 UTC was timely under the authorized maintenance deferral. Sources: R03, M02, M03, M04, T04, F03.",
+      "rank": -4.315646112418706
+    },
+    {
+      "id": 41,
+      "path": "input/sources/maintenance-authorization.pdf.md",
+      "anchor": "pdf-page-0005",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 738,
+      "text": "[M04]\nThe completion certificate states that the operator knew of B during the maintenance period\nand informed the coordinator. That contact is not the human acknowledgement specified by the\nplaybook, which was delivered later and is recorded in the incident timeline. The\nauthorization does not characterize B as a false alarm or remove it from the incident\nregister. An analyst must therefore retain its accepted detection timestamp, use the\nspecific permitted deferred clock start, and compare the actual delivered acknowledgement\nagainst the resulting deadline. Counting from the original detection while ignoring the\nauthorized deferral would apply the wrong effective clock, even though that original\ndetection remains a true event.",
+      "rank": -3.131951262225299
+    },
+    {
+      "id": 35,
+      "path": "input/sources/incident-timeline.md",
+      "anchor": "T04",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 686,
+      "text": "## [T04]\n\nIncident B's accepted qualifying detection is 2030-10-27 04:10 +01:00, or 03:10 UTC. Its P2 classification and M-B operation identifier match MB-27. A delivered human acknowledgement identifying B and taking responsibility occurred at 2030-10-27 04:45 +01:00, or 03:45 UTC. No containment pause is claimed for B, and there is no P1 classification or changed maintenance scope in the supplied record. The raw elapsed interval from detection to acknowledgement is thirty-five minutes. The effective P2 acknowledgement interval must nevertheless be determined using the authorized maintenance exception, rather than treating raw elapsed time as the only possible response metric.",
+      "rank": -3.074487930488707
+    },
+    {
+      "id": 76,
+      "path": "input/sources/review-correspondence.md",
+      "anchor": "F03",
+      "document_id": "D00009",
+      "start_char": 0,
+      "end_char": 653,
+      "text": "## [F03]\n\nFor B, the review note retains 03:10 UTC as actual qualifying detection but uses 03:20 UTC, the authorized MB-27 window end, as the effective acknowledgement-clock start. Delivered acknowledgement at 03:45 UTC is twenty-five minutes after that start, within the thirty-minute allowance. The note explains that a thirty-five-minute raw detection-to-acknowledgement interval is not inherently a failure when an express scoped deferral applies. The same note explicitly rejects applying any maintenance deferral to A because A is priority P1. It does not claim that the existence of planned work alone establishes any other incident's compliance.",
+      "rank": -2.559025025220923
+    },
+    {
+      "id": 50,
+      "path": "input/sources/notification-register.md",
+      "anchor": "N01",
+      "document_id": "D00007",
+      "start_char": 0,
+      "end_char": 689,
+      "text": "## [N01]\n\nThe notification register is complete for A's technical-lead, incident-commander, and executive-duty-officer notifications from 00:00 through 02:30 UTC on October 27. It separately records queue and delivered timestamps. Technical-lead notification TL-A was queued at 00:08 UTC and delivered to the required technical lead at 00:11 UTC. A receipt token confirms delivery. No earlier delivered notification to that role occurred. An automated display highlights the queue timestamp in green because queueing succeeded; that color is not a representation that the playbook's delivered-notification deadline was satisfied. The recipient role and incident identifier are unambiguous.",
+      "rank": -2.516594265104113
+    },
+    {
+      "id": 70,
+      "path": "input/sources/response-playbook.docx.md",
+      "anchor": "docx-p-0016",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 767,
+      "text": "An expressly scoped maintenance window may defer the effective P2 acknowledgement-clock start as stated in M02. Priority P1 overrides that deferral. A maintenance window is not itself a containment-pause approval, and its duration cannot be added to an approved external-dependency pause. Where maintenance and a qualifying incident overlap, the analyst must first identify the incident's priority and the maintenance operation's authorized scope. A general statement that maintenance was underway somewhere in the service is insufficient. Unless the relevant clause says otherwise, a window beginning is included and its ending is excluded when deciding whether a detection occurred inside the window. The end timestamp is nevertheless the start of a deferred clock.",
+      "rank": -2.4825719425995456
+    },
+    {
+      "id": 51,
+      "path": "input/sources/notification-register.md",
+      "anchor": "N02",
+      "document_id": "D00007",
+      "start_char": 0,
+      "end_char": 650,
+      "text": "## [N02]\n\nIncident-commander notification IC-A was queued at 00:18 UTC and delivered to the incident commander at 00:22 UTC. No earlier delivered commander notification occurred in the complete coverage. The later fact that the commander validly approved containment pauses does not retroactively move the first notification earlier. Executive-duty-officer notification EX-A was delivered at 01:12 UTC. Its message explicitly states that the incident remained uncontained at the sixty-minute mark and requests executive coordination. This message is not a reclassification, a containment event, or an approval to disregard previous escalation delays.",
+      "rank": -2.3403940754114685
+    },
+    {
+      "id": 10,
+      "path": "input/report.md",
+      "anchor": "C07-03",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 116,
+      "text": "**C07-03.** A's delivered human acknowledgement was timely under the fifteen-minute P1 allowance. Sources: R03, T01.",
+      "rank": -2.3331267256890604
+    },
+    {
+      "id": 49,
+      "path": "input/sources/notification-register.md",
+      "anchor": "document-preamble",
+      "document_id": "D00007",
+      "start_char": 0,
+      "end_char": 140,
+      "text": "# Delivered notification register and shift handover\n\nAll organizations, people, agreements, events, and rules in this source are synthetic.",
+      "rank": -2.3331267256890604
+    },
+    {
+      "id": 37,
+      "path": "input/sources/maintenance-authorization.pdf.md",
+      "anchor": "pdf-page-0001",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 136,
+      "text": "Maintenance authorizations and scope restrictions\nAll organizations, people, agreements, events, and rules in this source are synthetic.",
+      "rank": -2.230405115564565
+    },
+    {
+      "id": 38,
+      "path": "input/sources/maintenance-authorization.pdf.md",
+      "anchor": "pdf-page-0002",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 747,
+      "text": "[M01]\nMaintenance authorization MA-27 permits controlled software work on the south archive\ncluster during the half-open UTC interval [2030-10-27 00:00, 2030-10-27 03:00). Its named\noperation is image-index rebuild, and it authorizes expected priority P2 indexing alarms\nonly. The authorization explicitly excludes priority P1 security incidents, loss of\ncontainment, and any assumption that a security incident can wait until maintenance ends.\nAlthough incident A shares some infrastructure with this cluster, its P1 classification\nremains controlling. The maintenance operator is not authorized to change an incident’s\npriority merely to obtain a deferred response clock. No evidence in the packet records a\nvalid priority reclassification of A.",
+      "rank": -2.1118274532081043
+    },
+    {
+      "id": 14,
+      "path": "input/report.md",
+      "anchor": "C07-07",
+      "document_id": "D00002",
+      "start_char": 0,
+      "end_char": 141,
+      "text": "**C07-07.** A's response clock begins at 03:00 UTC because its detection occurred during MA-27 maintenance. Sources: R03, R07, M01, M02, T01.",
+      "rank": -2.082275124650437
+    },
+    {
+      "id": 40,
+      "path": "input/sources/maintenance-authorization.pdf.md",
+      "anchor": "pdf-page-0004",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 656,
+      "text": "[M03]\nA separate authorization MB-27 covers operation M-B, a planned metadata migration affecting\nthe west archive service, during [2030-10-27 02:50 UTC, 2030-10-27 03:20 UTC). Incident B is\nexplicitly classified P2 and tied to M-B by both the accepted incident record and the\nmaintenance operator’s completion certificate. Its accepted qualifying detection is\n2030-10-27 04:10 +01:00, which is 03:10 UTC. This instant is strictly after the window\nbegins and strictly before it ends. No unplanned extension, early termination, different\ntimezone, or retroactive cancellation is recorded. The maintenance operation completed at\nthe authorized 03:20 UTC end.",
+      "rank": -1.8052361456419226
+    },
+    {
+      "id": 42,
+      "path": "input/sources/maintenance-authorization.pdf.md",
+      "anchor": "pdf-page-0006",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 725,
+      "text": "[M05]\nThe maintenance package is complete for MA-27 and MB-27 window beginnings, endings,\nauthorized operations, and priority restrictions. It includes no other window relevant to\nincidents A, B, or C during the assessment interval. This window completeness does not make\nthe monitoring data complete and does not certify incident containment. The two\nauthorizations have different scopes despite overlapping calendar dates and a shared service\noperator. MA-27 cannot be transferred to B simply because it ends near B’s window, and MB-27\ncannot excuse a P1 action for A. A document reference bearing only the word maintenance,\nwithout the operation identifier and time interval, is not sufficient to select the proper\nclause.",
+      "rank": -1.767081880376789
+    },
+    {
+      "id": 39,
+      "path": "input/sources/maintenance-authorization.pdf.md",
+      "anchor": "pdf-page-0003",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 761,
+      "text": "[M02]\nFor a P2 incident within the explicitly named maintenance operation, a qualifying detection\noccurring inside its authorized half-open window receives an effective acknowledgement-clock\nstart at the window end. A detection outside the window receives no such deferral. The\nthirty-minute P2 acknowledgement allowance then runs from that effective start, inclusive at\nits deadline. This is a specific adjustment to an acknowledgement clock, not a declaration\nthat the incident did not exist until the window ended. It does not change the accepted\ndetection record, allow a missed acknowledgement before an already-ended window to be\nexcused, or add time to a P1 containment limit. The incident and maintenance identifiers\nmust match the authorized operation.",
+      "rank": -1.760879086361625
+    },
+    {
+      "id": 77,
+      "path": "input/sources/review-correspondence.md",
+      "anchor": "F04",
+      "document_id": "D00009",
+      "start_char": 0,
+      "end_char": 672,
+      "text": "## [F04]\n\nThe review coordinator lists the three A escalation results separately for discussion. The technical-lead delivery happened eleven minutes after detection; the commander delivery happened twenty-two minutes after detection. The executive trigger occurred at 01:00 UTC because A remained uncontained, and the executive delivery followed twelve minutes later at 01:12. The coordinator asks for corrective process discussion but makes no claim that one timely stage cancels another stage's delay. The underlying register is the evidence of events; this correspondence is a calculation and interpretation aid, not an authoritative alteration of delivered timestamps.",
+      "rank": -1.3754200352641337
+    },
+    {
+      "id": 53,
+      "path": "input/sources/notification-register.md",
+      "anchor": "N04",
+      "document_id": "D00007",
+      "start_char": 0,
+      "end_char": 690,
+      "text": "## [N04]\n\nThe register covers notifications to the three specified roles, not all internal chat messages or conversations. The playbook duties concern delivered role-specific notifications, so unrelated informal awareness does not satisfy them. The register's explicit statements that no earlier deliveries occurred support bounded absence reasoning for those exact duties and interval. They do not imply that no person knew of the incident, that no containment work occurred, or that no customer communication was sent. The handover records that the executive message arrived before A's authoritative containment, consistent with the incident remaining active after the escalation trigger.",
+      "rank": -1.3612737449823404
+    },
+    {
+      "id": 54,
+      "path": "input/sources/notification-register.md",
+      "anchor": "N05",
+      "document_id": "D00007",
+      "start_char": 0,
+      "end_char": 710,
+      "text": "## [N05]\n\nA later operations summary says all relevant people were eventually informed. That broad statement is compatible with the exact delivered timestamps and does not settle whether each notification was timely. The procedure intentionally contains multiple steps rather than one aggregate requirement to tell someone. A single timely executive message cannot erase late technical-lead or commander notifications. Conversely, late early-stage notifications do not make a separately timely executive delivery late. The report must distinguish the duties by recipient, trigger, limit, and delivery event to avoid collapsing a mixed operational record into an unsupported all-compliant or all-failed summary.",
+      "rank": -1.3474154834546381
+    },
+    {
+      "id": 32,
+      "path": "input/sources/incident-timeline.md",
+      "anchor": "T01",
+      "document_id": "D00004",
+      "start_char": 0,
+      "end_char": 685,
+      "text": "## [T01]\n\nIncident A generated a raw untriaged warning at 2030-10-27 01:30 +02:00, equivalent to 2030-10-26 23:30 UTC. The coordinator accepted its qualifying detection as priority P1 at 2030-10-27 02:00 +02:00, equivalent to 00:00 UTC on October 27. The accepted classification concerns a security incident in the south archive cluster, not an expected indexing warning under MA-27. A delivered human acknowledgement accepting responsibility occurred at 2030-10-27 02:12 +02:00, equivalent to 00:12 UTC. These are separate event fields, all exact to the minute. The raw warning is not itself the qualifying detection, and the classification record has not been corrected or withdrawn.",
+      "rank": -1.240105337163293
+    },
+    {
+      "id": 43,
+      "path": "input/sources/maintenance-authorization.pdf.md",
+      "anchor": "pdf-page-0007",
+      "document_id": "D00005",
+      "start_char": 0,
+      "end_char": 730,
+      "text": "[M06]\nAn operations margin note says that analysts sometimes refer informally to the maintenance\ninterval as a quiet period. The signed authorization expressly states that this phrase has\nno additional technical meaning. It does not suspend emergency notifications, authorize\nsilent handling of security incidents, or establish that all customer traffic was absent.\nThe signed priority restriction and effective-clock clauses take precedence over this\ninformal shorthand. There is no clause requiring a reviewer to infer a favorable outcome\nwhenever work was planned. The purpose of the package is to specify exactly which response-\nclock exception is authorized and to prevent unrelated windows or priorities from being\ncombined.",
+      "rank": -1.238901646818215
+    },
+    {
+      "id": 58,
+      "path": "input/sources/response-playbook.docx.md",
+      "anchor": "docx-p-0004",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 845,
+      "text": "North Channel Observatory operates a synthetic coastal data service. This playbook governs incidents A, B, and C from October 26 through October 28, 2030. A qualifying detection is the first incident classification accepted by the incident coordinator, not an untriaged sensor signal, an email draft, a queue entry, or an invoice from a monitoring provider. Acknowledgement is a delivered human acknowledgement identifying the incident and taking responsibility for response. Containment is an authoritative confirmation that the specified incident path has been isolated; planning an isolation or signing a checklist without completing the isolation is not containment. The source files distinguish authoritative event records from attributed witness claims. The playbook contains no rule making every signed statement an infallible world fact.",
+      "rank": -1.2285939227120233
+    },
+    {
+      "id": 68,
+      "path": "input/sources/response-playbook.docx.md",
+      "anchor": "docx-p-0014",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 736,
+      "text": "Revision 2 takes effect at 2030-10-27 00:00 UTC for incidents whose qualifying detection occurs at or after that instant. Incidents detected earlier retain revision 1 throughout their response, even when containment, handover, or evidence collection occurs after the boundary. A raw warning signal before midnight does not grandfather an incident whose accepted qualifying detection occurs at midnight. The revision change affects the containment-pause cap only; the acknowledgement, maintenance, and escalation rules reproduced here apply to both versions. A dashboard displaying the currently published revision does not amend an incident's detection event or its retained version. Exact receipt at the boundary belongs to revision 2.",
+      "rank": -1.2267826796920247
+    },
+    {
+      "id": 62,
+      "path": "input/sources/response-playbook.docx.md",
+      "anchor": "docx-p-0008",
+      "document_id": "D00008",
+      "start_char": 0,
+      "end_char": 779,
+      "text": "Priority P1 requires acknowledgement within fifteen elapsed minutes after qualifying detection and containment within ninety active-response minutes after that detection. Priority P2 requires acknowledgement within thirty elapsed minutes after its effective response-clock start, with the maintenance deferral defined in M02 as the only applicable modification. The P1 acknowledgement clock is never paused or deferred. For a P1 containment clock, approved containment pauses may exclude elapsed time under R04. A pause does not alter the detection timestamp, acknowledgement clock, or escalation clock. No SLA in this dossier treats an unapproved pause request as an approved interruption, and no pause can exclude time before its approved beginning or after actual containment.",
+      "rank": -1.2148985118370357
+    }
+  ],
+  "limitations": "Ranked retrieval is not exhaustive semantic review; inspect full passages and inventory for exceptions."
+}

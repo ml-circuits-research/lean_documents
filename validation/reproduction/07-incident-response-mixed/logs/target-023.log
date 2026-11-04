@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target023.lean
+Audit.claim07 : Audit.aEffectiveStart = 0 ∧ Audit.aEffectiveStart ≠ 180
+'Audit.claim07' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.207]

@@ -1,0 +1,4 @@
+$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target009.lean
+Audit.deadline203Refuted : Audit.standardDue Audit.c203 ≠ some (Audit.at17 16) ∧
+  Audit.standardDue Audit.c203 = some (Audit.at17 17)
+'Audit.deadline203Refuted' does not depend on any axioms

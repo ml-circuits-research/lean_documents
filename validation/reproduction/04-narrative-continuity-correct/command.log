@@ -1,0 +1,145 @@
+$ python3 /home/salboaie/work/lean_documents/skills/evidence-to-proof-review/scripts/audit.py check --workspace /home/salboaie/work/lean_documents/tmp/reproduction-04-narrative-continuity-correct-43ngjm4g --lean /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lean
+{
+  "checked_at": "2026-11-04T16:57:52.704570+00:00",
+  "status": "passed",
+  "lean_version_required": "4.24.0",
+  "independent_checker": {
+    "status": "not_run",
+    "reason": "No external checker is configured; no independent-kernel assurance is claimed."
+  },
+  "targets": [
+    {
+      "module": "Audit",
+      "theorem": "Audit.keyExchangeAlive",
+      "target": null,
+      "status": "passed",
+      "axioms": [
+        "propext"
+      ],
+      "log": "logs/target-001.log",
+      "check_file": "checks/Target001.lean",
+      "model_sha256": "6c8666279ff60d5e3943f658abc1adda6db0aefc4582497ef5c2669fd84ca0d5"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.daySixDead",
+      "target": null,
+      "status": "passed",
+      "axioms": [
+        "propext"
+      ],
+      "log": "logs/target-002.log",
+      "check_file": "checks/Target002.lean",
+      "model_sha256": "6c8666279ff60d5e3943f658abc1adda6db0aefc4582497ef5c2669fd84ca0d5"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.daySixNoPhysicalAttendance",
+      "target": null,
+      "status": "passed",
+      "axioms": [
+        "propext"
+      ],
+      "log": "logs/target-003.log",
+      "check_file": "checks/Target003.lean",
+      "model_sha256": "6c8666279ff60d5e3943f658abc1adda6db0aefc4582497ef5c2669fd84ca0d5"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.revivalAndNoonLife",
+      "target": null,
+      "status": "passed",
+      "axioms": [
+        "propext"
+      ],
+      "log": "logs/target-004.log",
+      "check_file": "checks/Target004.lean",
+      "model_sha256": "6c8666279ff60d5e3943f658abc1adda6db0aefc4582497ef5c2669fd84ca0d5"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.keyExchangeAlive",
+      "target": "Audit.AliveAt (Audit.instant 2 Audit.noon)",
+      "status": "passed",
+      "axioms": [
+        "propext"
+      ],
+      "log": "logs/target-005.log",
+      "check_file": "checks/Target005.lean",
+      "model_sha256": "6c8666279ff60d5e3943f658abc1adda6db0aefc4582497ef5c2669fd84ca0d5"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.daySixDead",
+      "target": "Audit.DeadAt (Audit.instant 6 Audit.noon) ∧ ¬ Audit.AliveAt (Audit.instant 6 Audit.noon)",
+      "status": "passed",
+      "axioms": [
+        "propext"
+      ],
+      "log": "logs/target-006.log",
+      "check_file": "checks/Target006.lean",
+      "model_sha256": "6c8666279ff60d5e3943f658abc1adda6db0aefc4582497ef5c2669fd84ca0d5"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.daySixNoPhysicalAttendance",
+      "target": "∀ attends : Prop, (attends → Audit.AliveAt (Audit.instant 6 Audit.noon)) → ¬ attends",
+      "status": "passed",
+      "axioms": [
+        "propext"
+      ],
+      "log": "logs/target-007.log",
+      "check_file": "checks/Target007.lean",
+      "model_sha256": "6c8666279ff60d5e3943f658abc1adda6db0aefc4582497ef5c2669fd84ca0d5"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.revivalAndNoonLife",
+      "target": "Audit.revivalTime = Audit.instant 8 Audit.dawn ∧ Audit.AliveAt (Audit.instant 8 Audit.dawn) ∧ Audit.AliveAt (Audit.instant 8 Audit.noon) ∧ Audit.instant 8 Audit.dawn < Audit.instant 8 Audit.noon",
+      "status": "passed",
+      "axioms": [
+        "propext"
+      ],
+      "log": "logs/target-008.log",
+      "check_file": "checks/Target008.lean",
+      "model_sha256": "6c8666279ff60d5e3943f658abc1adda6db0aefc4582497ef5c2669fd84ca0d5"
+    }
+  ],
+  "limitations": "Lean checks the encoded propositions, not source authenticity, extraction accuracy, completeness, legal authority, or the adequacy of the model. Source filters are defensive checks, not a sandbox for hostile Lean code.",
+  "audit_contract": {
+    "version": 1,
+    "coverage": "legacy_unreconciled",
+    "limitation": "This older bundle has no enforced claim register or structured argument audit."
+  },
+  "input_hashes": {
+    "findings.json": "e7187ca54eef43d6de898f90e59ff776fbda29a0c5b9e0c04570a61c71454ffd",
+    "input/manifest.json": "1dca1aed4d0db6357be289b6996e855b7d239fb38daafc65945b6349250cc8f4",
+    "models/Audit.lean": "6c8666279ff60d5e3943f658abc1adda6db0aefc4582497ef5c2669fd84ca0d5"
+  },
+  "lean_version_observed": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "execution_status": "executed",
+  "artifact_hashes": {
+    "environment.lock": "5ed2d0b6eff663ee335df7c00665aba138d8a97e2a51e08dc995d204cdaa5ce9",
+    "lakefile.toml": "01a2fcdf9392e14b2fcf1c49259f3371c897156e002f56d678736f2b1e336653",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "source-ledger.jsonl": "130d7e9c7ee94a05b316ed8749bab5c0afa32db6c48ae3dc823d5276e9dad6b5",
+    "logs/lake-build.log": "e289fd1d32341bf15955111a26ecd4d961c74be876d34300898eed1be9717644",
+    "logs/lean-version.log": "52f1249d3d7d977e62ab6494d04ca8a6e1ccd083d113b69aa7f400bc21cc8ee5",
+    "logs/target-001.log": "72f4b6a1def20acb668d08758375fe06ec6d996106e3b55073918898d5ad1bb0",
+    "logs/target-002.log": "2d789a8aa4370af9da15cf1e94d1f462576ce31fac6e5505c9f337c509516512",
+    "logs/target-003.log": "a60c8c6b6502caa3a6d944fcba67bbb878b9863731901e5a0c1785f0edb22dde",
+    "logs/target-004.log": "c881439b02d5f0828689503518f5e8d2e8d5d95ffb9645a22a5281a32210d7fd",
+    "logs/target-005.log": "2ed139e13ee5bb09864cc4a270126068b8065f2b3bc90d30c4aa76146a88bf3d",
+    "logs/target-006.log": "31cc61b08d9442a122b381cc9b459dc3da11e4696fd9c5048a749cf044ad9742",
+    "logs/target-007.log": "2ca5b65d6b049271c8a587935431293e3ecb65cde02b6e5bd1fea2495b86b7aa",
+    "logs/target-008.log": "83a467593064962500990a0409c3bb2e5a020e32cd1db2138be6a7ed7c9ddfca",
+    "checks/Target001.lean": "a7357e9203cd0501f941e656e8d65efb1df061134eabb6c95cd5af6b7e10ce43",
+    "checks/Target002.lean": "57a520ea8d4a683c18db54a23979aeffddd4559c01f03b64dfa4ed9bc8a68483",
+    "checks/Target003.lean": "5074de2e0ee22f7ccc406d81c8b148b4b0836fe0d863ec34505ebfe08b5f498e",
+    "checks/Target004.lean": "b5966751b1a6e98fbf99e239d33ed1e27cf2a48911e6ed1937289e5290ed3ddd",
+    "checks/Target005.lean": "532804918cf467fd15a1245d8af53cf1dbe55d8ff0624d6549fdacb2597f3624",
+    "checks/Target006.lean": "f4df8606888c3e96d66c8dbb9b43c6b6961bfa7bbb0e9524d3fbafef2cfa8342",
+    "checks/Target007.lean": "ca4a5f71a88236008e0830c707b766aec852ee0680ce46561fae45ac310f44df",
+    "checks/Target008.lean": "109108ec0859d1cfc4f077f5c1851620ddae677530a5a1770a48ecc7e9d442f8"
+  }
+}

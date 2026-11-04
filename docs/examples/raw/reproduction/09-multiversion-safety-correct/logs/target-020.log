@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target020.lean
+Audit.claim04 : 101 ∈ Audit.n02 ∧ 100 < 101 ∧ Audit.within Audit.n02 100 = false
+'Audit.claim04' depends on axioms: [propext, Quot.sound]
+
+[exit_code=0; elapsed_seconds=0.203]
