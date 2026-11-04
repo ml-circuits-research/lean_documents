@@ -1,0 +1,26 @@
+[
+  {
+    "name": "file-catalog",
+    "url": "file:///home/salboaie/work/lean_documents/docs/examples/index.html",
+    "exit_code": 0,
+    "screenshot": "file-catalog.png"
+  },
+  {
+    "name": "http-run",
+    "url": "http://127.0.0.1:34057/examples/runs/11-report-derived-criteria-mixed.html",
+    "exit_code": 0,
+    "screenshot": "http-run.png"
+  },
+  {
+    "name": "file-mobile",
+    "url": "file:///home/salboaie/work/lean_documents/docs/examples/dossiers/12-empty-evidence.html",
+    "exit_code": 0,
+    "screenshot": "file-mobile.png"
+  },
+  {
+    "name": "http-lean",
+    "url": "http://127.0.0.1:34057/examples/view/runs/12-empty-evidence-correct/models/EmptyEvidence.lean.html",
+    "exit_code": 0,
+    "screenshot": "http-lean.png"
+  }
+]
