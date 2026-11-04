@@ -48,7 +48,29 @@ ARTIFACTS = [
     ("Semantic review and coverage", "semantic-review.md, independent-review/, coverage.md, audit-report.md", "Expose human/agent review findings, unresolved issues, exclusions, argument findings, and reported coverage.", "An executed proof is not an independent semantic review. A review file is a recorded assessment, not a guarantee of completeness."),
     ("Revision and fresh reproduction", "history/, attempts/, invalidation.json; separate reproduction snapshots", "Preserve failed attempts, changes, stale-dependency information and separately recorded later rechecks when available.", "A later proof recheck does not retroactively upgrade a legacy registry to v2 or repeat a blind domain audit."),
 ]
-CSS = """body{margin:0;background:#f5f3ed;color:#172731;font:16px/1.6 system-ui,sans-serif}header,main,footer{max-width:1180px;margin:auto;padding:22px 30px}header{border-bottom:1px solid #bac4c6}a{color:#075e78;text-underline-offset:3px}nav{display:flex;gap:20px;flex-wrap:wrap}h1{font-size:2.2rem;line-height:1.2}h2{margin-top:2rem}h3{margin-top:1.4rem}p{max-width:100ch}.card,article{background:white;padding:22px;border:1px solid #d0d8d8;border-radius:8px;margin:18px 0}.note{background:#fff3d6;padding:16px;border-left:4px solid #c67b22}.badge{display:inline-block;background:#dcecf0;border-radius:5px;padding:3px 8px;margin-right:7px}table{width:100%;border-collapse:collapse;background:white}td,th{padding:10px;border-bottom:1px solid #d0d8d8;text-align:left;vertical-align:top}table{display:block;overflow:auto}pre,code{font-family:ui-monospace,monospace}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#eef2f2;padding:16px;font-size:13px}dt{font-weight:650;margin-top:10px}dd{margin-left:18px;overflow-wrap:anywhere}blockquote{border-left:4px solid #7195a4;margin-left:0;padding-left:16px}.line{display:block;min-height:1.3em}.line:target{background:#ffe6a1}.ln{color:#667e88;display:inline-block;width:5em;text-decoration:none;user-select:none}summary{cursor:pointer;font-weight:600;padding:8px}.muted{color:#526773}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}.grid .card{margin:0}img{max-width:100%}iframe{width:100%;height:70vh;border:1px solid #bac4c6}ul{padding-left:24px}@media(max-width:600px){header,main,footer{padding:16px}h1{font-size:1.7rem}td,th{padding:7px}}"""
+CSS = """body{margin:0;background:#f5f3ed;color:#172731;font:16px/1.6 system-ui,sans-serif}header,main,footer{max-width:1180px;margin:auto;padding:22px 30px}header{border-bottom:1px solid #bac4c6}a{color:#075e78;text-underline-offset:3px}nav{display:flex;gap:20px;flex-wrap:wrap}h1{font-size:2.2rem;line-height:1.2}h2{margin-top:2rem}h3{margin-top:1.4rem}p{max-width:100ch}.card,article{background:white;padding:22px;border:1px solid #d0d8d8;border-radius:8px;margin:18px 0}.note{background:#fff3d6;padding:16px;border-left:4px solid #c67b22}.badge{display:inline-block;background:#dcecf0;border-radius:5px;padding:3px 8px;margin-right:7px}table{width:100%;border-collapse:collapse;background:white}td,th{padding:10px;border-bottom:1px solid #d0d8d8;text-align:left;vertical-align:top}table{display:block;overflow:auto}pre,code{font-family:ui-monospace,monospace}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#eef2f2;padding:16px;font-size:13px}dt{font-weight:650;margin-top:10px}dd{margin-left:18px;overflow-wrap:anywhere}blockquote{border-left:4px solid #7195a4;margin-left:0;padding-left:16px}.line{display:block;min-height:1.3em}.line:target{background:#ffe6a1}.ln{color:#667e88;display:inline-block;width:5em;text-decoration:none;user-select:none}summary{cursor:pointer;font-weight:600;padding:8px}.muted{color:#526773}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}.grid .card{margin:0}img{max-width:100%}iframe{width:100%;height:70vh;border:1px solid #bac4c6}ul{padding-left:24px}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+header,main,footer,.grid>*,.card,article,section,details,dd{min-width:0}
+h1,h2,h3,a,p,li,td,th,summary,code{overflow-wrap:anywhere}
+nav{gap:8px 18px}nav a{display:inline-flex;align-items:center;min-height:44px}
+pre,table{max-width:100%;min-width:0;overscroll-behavior-x:contain}
+.line{position:relative;padding-left:3.7em;min-height:1.6em}.ln{position:absolute;left:0;top:0;width:3.2em;text-align:right;padding-right:.5em}
+a:focus-visible,summary:focus-visible{outline:3px solid #c67b22;outline-offset:3px}
+@media(max-width:600px){
+ header,main,footer{padding:16px 12px}
+ nav{gap:4px 14px;font-size:.9rem}
+ h1{font-size:1.65rem}h2{font-size:1.3rem;margin-top:1.6rem}h3{font-size:1.08rem}
+ .grid{grid-template-columns:minmax(0,1fr);gap:14px}
+ .card,article{padding:14px;margin:14px 0}.note{padding:12px}
+ dd{margin-left:10px}ul{padding-left:20px}blockquote{padding-left:12px;margin-right:0}
+ pre{padding:10px;font-size:12px}iframe{height:60vh;min-height:280px}
+ table,tbody,tr,td{display:block;width:100%}table{background:transparent;overflow:visible}
+ thead{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%)}
+ tr{background:white;border:1px solid #d0d8d8;border-radius:6px;margin:12px 0;padding:10px}
+ td{border:0;padding:5px 0}td::before{content:attr(data-label);display:block;font-size:.75rem;font-weight:650;color:#526773}
+ td a{display:inline-block;padding:6px 0}
+}
+"""
 
 
 def sha(data: bytes) -> str:
@@ -92,7 +114,7 @@ class Publisher:
         return f'<a href="{escape(href, quote=True)}">{escape(label)}</a>'
 
     def page(self, rel: str, title: str, body: str):
-        nav = " · ".join(self.link(rel, p, t) for p, t in [("index.html", "Example catalog"), ("artifact-guide.html", "How to read the artifacts"), ("files.html", "All published files")])
+        nav = "".join(self.link(rel, p, t) for p, t in [("index.html", "Example catalog"), ("artifact-guide.html", "How to read the artifacts"), ("files.html", "All published files")])
         css = os.path.relpath(OUT / "style.css", (OUT / rel).parent)
         html = f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)} | Evidence audit examples</title><link rel="stylesheet" href="{escape(css)}"></head><body><header><nav>{nav}</nav></header><main><h1>{escape(title)}</h1>{body}</main><footer>Static study edition · works from file:// · no network or JavaScript required. Sources, audits, and evaluator expectations have different roles.</footer></body></html>'
         self.write(rel, html.encode())
@@ -140,7 +162,8 @@ class Publisher:
                 body += f'<img alt="Published original artifact" src="{src}">'
         else:
             body += "<p>Native binary artifact retained unchanged. Download DOCX files for a document viewer, or SQLite files for inspection with a SQLite client. This page does not substitute a transcription for the original.</p>"
-        self.page(rel, raw.removeprefix("raw/"), body)
+        body = '<p class="muted">Published path: <code>' + escape(raw.removeprefix("raw/")) + '</code></p>' + body
+        self.page(rel, Path(raw).name, body)
 
     def artifact_link(self, page: str, raw: str, label: str | None = None):
         if raw not in self.files:
@@ -151,7 +174,7 @@ class Publisher:
         rows = []
         for raw in sorted(files):
             info = self.inventory[raw]
-            rows.append(f'<tr><td>{self.artifact_link(page, raw, raw.removeprefix("raw/"))}</td><td>{info["bytes"]:,}</td><td>{self.link(page, raw, "Original bytes")}</td></tr>')
+            rows.append(f'<tr><td data-label="Artifact">{self.artifact_link(page, raw, raw.removeprefix("raw/"))}</td><td data-label="Bytes">{info["bytes"]:,}</td><td data-label="Download">{self.link(page, raw, "Original bytes")}</td></tr>')
         return '<table><thead><tr><th>Artifact / text or native viewer</th><th>Bytes</th><th>Download</th></tr></thead><tbody>' + "".join(rows) + "</tbody></table>"
 
     def source_table(self, page: str, files: list[str]):
@@ -169,7 +192,7 @@ class Publisher:
                 description = "Native PDF source; inspect page layout and the run’s extraction/OCR provenance. Text extraction alone does not resolve uncertain fields."
             else:
                 description = "Supplied source artifact; inspect its native format and the run’s provenance records."
-            rows.append('<tr><td>' + self.artifact_link(page, raw, raw.split("/sources/", 1)[-1]) + '</td><td>' + escape(description) + '</td><td>' + self.link(page, raw, "Original bytes") + '</td></tr>')
+            rows.append('<tr><td data-label="Source document">' + self.artifact_link(page, raw, raw.split("/sources/", 1)[-1]) + '</td><td data-label="Description">' + escape(description) + '</td><td data-label="Download">' + self.link(page, raw, "Original bytes") + '</td></tr>')
         return '<table><thead><tr><th>Source document</th><th>Document opening / format and inspection context</th><th>Download</th></tr></thead><tbody>' + "".join(rows) + '</tbody></table>'
 
     def run(self, run_id: str, source: Path, dossier: str):
