@@ -1,1 +1,5 @@
 Coordinator-authored boundary fixture and audit, not blind evaluation. Inspected zero-byte source and exact report wording; no event fact or closed-world assumption was invented. Independent review pending and explicitly not claimed here. The formal results concern text length and two admissible evidence completions, never actual clearance.
+
+## Final independent post-audit review
+
+A separate reviewer, /root/dossier_quality_review, inspected the retained report/source/model correspondence and recorded scope and limitations in independent-review.md. This was post-audit review, with evaluator expectations permitted; it is not a second blind audit or independent source-authentication check. Dossier 11 F11-07 was corrected to distinguish unsupported absent-annex content from a refuted citation characterization. Dossier 12 was inspected as coordinator-authored, not blind. No additional material correction was identified within the stated inspection scope. Final Lean checks are rerun after attaching this review.

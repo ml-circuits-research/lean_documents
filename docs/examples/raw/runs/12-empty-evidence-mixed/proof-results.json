@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-04T17:00:30.724913+00:00",
+  "checked_at": "2026-11-04T17:03:58.376682+00:00",
   "status": "passed",
   "lean_version_required": "4.24.0",
   "independent_checker": {
@@ -67,7 +67,8 @@
     "claims.json": "a965676a9f597b451c69da17d7a1454f91ec5a2697c2e40c3950aa6ddb275dc7",
     "review-plan.md": "be6383256f1b769f30cc9ffb379782e46d20a51d635c94043bffc2a41aaed18b",
     "model-notes.md": "f41bab403cb72b25d59e4510e7878aa36d30e23aca58e6f034cafbb746c2623b",
-    "semantic-review.md": "98dc7833c09d05ab800f58b10d1a043207ed87d2ae6bec8e6d00740860c8155f"
+    "semantic-review.md": "605b4e277821f5d124b5001ab75781ee6250f6e9292f33264c82e627d432ce64",
+    "independent-review.md": "52a7ede9686cce3c4c30ca96388da39d72d2a855eb055e0980ab035fec94aa9b"
   },
   "lean_version_observed": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
   "execution_status": "executed",
@@ -77,11 +78,11 @@
     "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
     "source-ledger.jsonl": "134da77d10ff64a9207dabce481826fc475d85130ca66fd045f0e82cf87bcfd6",
     "logs/lake-build.log": "00335e8af9e3884ce7c6aaa4556f50aa5c958012826f79b69e5198834ec22e42",
-    "logs/lean-version.log": "52f1249d3d7d977e62ab6494d04ca8a6e1ccd083d113b69aa7f400bc21cc8ee5",
-    "logs/target-001.log": "68c41f6b85d0d12dc32f61bbc41492a14b2697c4ef1d8bcfc417900b47d9735a",
-    "logs/target-002.log": "0605e6e22574fd455c6694b6d60179b8a5670fa846947963dfa133d5f42f074e",
-    "logs/target-003.log": "52c9302e8259fbdee150a34dfdeacbf83d7c867d2bdbabd6f1ffa4fbb10abed5",
-    "logs/target-004.log": "0c6f789da8110d03b791adf76a45b3195076c5b216487a13d97b2e8506d15a81",
+    "logs/lean-version.log": "7563cff4781043f311573dea2e67996918c82e8e73003106e1515e956a8e3429",
+    "logs/target-001.log": "6693bb370b3e1143785e2615c3ab8fe3c3c405df1afcc348a77313246448123d",
+    "logs/target-002.log": "96dd9ca520d4997ba2339d666f5c8e5f2061b3b7cbf649f01800057e85a44108",
+    "logs/target-003.log": "1fb06bb0c3bb74d528cef5495ed76b0bee9807067344ec15ee777d00ba9a9d41",
+    "logs/target-004.log": "7f60c5f4ae7683395c6c795165df2503a67670a3af76d276da43cc914ed4add2",
     "checks/Target001.lean": "96a0a75675cc8b94e7d751b84fb4dcfb79fc76acc4808b72a4c9c2ac1d990a87",
     "checks/Target002.lean": "4429efa4d2b5033fc94ffd5471bb34f4206e82e993e3fc22a4e11bbb08a4d162",
     "checks/Target003.lean": "89f8400be0f2f28b29575623dde15492058280d890d4b4a9b5b8b9ba25e1435a",

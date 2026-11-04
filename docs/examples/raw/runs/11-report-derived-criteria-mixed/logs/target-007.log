@@ -2,4 +2,4 @@ $ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin
 Audit.bEligible : Audit.eligible Audit.b
 'Audit.bEligible' does not depend on any axioms
 
-[exit_code=0; elapsed_seconds=0.150]
+[exit_code=0; elapsed_seconds=0.147]

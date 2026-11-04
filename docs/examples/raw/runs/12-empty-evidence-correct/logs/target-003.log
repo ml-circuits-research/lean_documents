@@ -2,4 +2,4 @@ $ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin
 EmptyEvidence.missingRecordDoesNotImplyFailure : ¬∀ (passed : Bool), EmptyEvidence.admissible passed → passed = false
 'EmptyEvidence.missingRecordDoesNotImplyFailure' does not depend on any axioms
 
-[exit_code=0; elapsed_seconds=0.142]
+[exit_code=0; elapsed_seconds=0.152]

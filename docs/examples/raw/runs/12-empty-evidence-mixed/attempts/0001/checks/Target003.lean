@@ -1,0 +1,3 @@
+import EmptyEvidence
+#check @EmptyEvidence.missingRecordDoesNotImplyFailure
+#print axioms EmptyEvidence.missingRecordDoesNotImplyFailure

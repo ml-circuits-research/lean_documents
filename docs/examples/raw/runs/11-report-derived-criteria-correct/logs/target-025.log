@@ -3,4 +3,4 @@ Campaign.eligibleExactly : ∀ (x : Campaign.Dispatch),
   Campaign.eligible x ↔ x = Campaign.Dispatch.a ∨ x = Campaign.Dispatch.b
 'Campaign.eligibleExactly' does not depend on any axioms
 
-[exit_code=0; elapsed_seconds=0.162]
+[exit_code=0; elapsed_seconds=0.148]

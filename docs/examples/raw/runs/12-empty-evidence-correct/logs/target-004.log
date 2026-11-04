@@ -2,4 +2,4 @@ $ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin
 EmptyEvidence.zeroCharacters : EmptyEvidence.sourceText.length = 0
 'EmptyEvidence.zeroCharacters' does not depend on any axioms
 
-[exit_code=0; elapsed_seconds=0.145]
+[exit_code=0; elapsed_seconds=0.146]

@@ -1,8 +1,8 @@
 # Synthetic audit dossiers
 
-These ten dossiers prepare validation of the skill that audits findings in supplied reports. They are synthetic examples, not real legal, audit, or literary assessments. Executed validation is stored separately under `validation/runs/`; these source dossiers remain test inputs, not proof outputs.
+These twelve dossiers prepare validation of the skill that audits findings in supplied reports. They are synthetic examples, not real legal, audit, or literary assessments. Executed validation is stored separately under `validation/runs/`; these source dossiers remain test inputs, not proof outputs.
 
-Each dossier contains a brief, anchored source documents, a SHA-256 manifest, `report.md` with deliberate errors mixed with correct claims, and `report-correct.md` with carefully scoped claims. Audit the two variants separately. A correct report may correctly acknowledge uncertainty; this is not a demand to prove unknown events.
+The first ten dossiers contain a brief, source documents and a fixture manifest. Dossiers 11 and 12 deliberately omit a brief; all runtime inputs receive hashed manifests. Each dossier supplies `report.md` with deliberate errors mixed with correct claims, and `report-correct.md` with carefully scoped claims. Audit the two variants separately. A correct report may correctly acknowledge uncertainty; this is not a demand to prove unknown events.
 
 | Dossier | Primary challenge |
 | --- | --- |
@@ -18,6 +18,11 @@ Each dossier contains a brief, anchored source documents, a SHA-256 manifest, `r
 | [09-multiversion-safety](09-multiversion-safety/README.md) | Versioned rules, table extraction, exceptions, test-group completeness and unsupported assurance |
 | [10-distributed-assurance](10-distributed-assurance/README.md) | 67 source files, late exceptions, revoked authority, missing node evidence and global claims |
 
-For each run, provide the brief, all sources, and exactly one selected report. Do not provide the alternate report, fixture README, or evaluator expectations to the auditing agent. Manifest hashes identify packaged bytes; they do not establish authenticity.
+For each run, provide all sources, exactly one selected report, and the brief only when supplied. Do not provide the alternate report, fixture README, or evaluator expectations to the auditing agent. Manifest hashes identify packaged bytes; they do not establish authenticity.
 
 The [evaluator register](evaluator/README.md) is separate. The current [independent fixture review](../docs/fixture-review.md) records the initial editorial validation; actual skill execution is recorded separately in validation/. See the [HTML implementation plan](../docs/implementation.html) for the approval boundary and validation stages.
+
+| [11-report-derived-criteria](11-report-derived-criteria/README.md) | Infer criteria without a brief; verify citations and author arguments independently of conclusions |
+| [12-empty-evidence](12-empty-evidence/README.md) | Zero-byte evidence, explicit support gaps, and formal non-entailment without fabricated quotations |
+
+Explore the [published study catalog](../docs/examples/index.html), including raw snapshots, intermediate decisions, models and actual logs. See the [independent coverage review](../docs/general-validation.html) for tested cases and remaining limits.

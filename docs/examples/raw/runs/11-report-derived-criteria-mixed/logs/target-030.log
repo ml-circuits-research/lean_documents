@@ -4,4 +4,4 @@ Audit.populationNonentailment : Audit.compatible Audit.quiet ∧
     Audit.populationTotal Audit.quiet = 50000 ∧ Audit.populationTotal Audit.extraAmount ≠ 50000
 'Audit.populationNonentailment' does not depend on any axioms
 
-[exit_code=0; elapsed_seconds=0.158]
+[exit_code=0; elapsed_seconds=0.149]

@@ -2,4 +2,4 @@ $ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin
 Campaign.settlement : Campaign.settlementTotal = 30000
 'Campaign.settlement' does not depend on any axioms
 
-[exit_code=0; elapsed_seconds=0.153]
+[exit_code=0; elapsed_seconds=0.151]

@@ -2,4 +2,4 @@ $ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin
 Campaign.balance : 55000 - Campaign.cohortTotal = 5000
 'Campaign.balance' does not depend on any axioms
 
-[exit_code=0; elapsed_seconds=0.158]
+[exit_code=0; elapsed_seconds=0.144]

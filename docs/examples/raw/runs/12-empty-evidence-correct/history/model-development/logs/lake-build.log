@@ -1,0 +1,19 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake build EmptyEvidence
+info: claim_audit: no previous manifest, creating one from scratch
+info: toolchain not updated; already up-to-date
+✖ [2/3] Building EmptyEvidence (129ms)
+trace: .> LEAN_PATH=/home/salboaie/work/lean_documents/tmp/claim-audit-3qw0_1vb/.lake/build/lib/lean /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lean /home/salboaie/work/lean_documents/tmp/claim-audit-3qw0_1vb/models/EmptyEvidence.lean -o /home/salboaie/work/lean_documents/tmp/claim-audit-3qw0_1vb/.lake/build/lib/lean/EmptyEvidence.olean -i /home/salboaie/work/lean_documents/tmp/claim-audit-3qw0_1vb/.lake/build/lib/lean/EmptyEvidence.ilean -c /home/salboaie/work/lean_documents/tmp/claim-audit-3qw0_1vb/.lake/build/ir/EmptyEvidence.c --setup /home/salboaie/work/lean_documents/tmp/claim-audit-3qw0_1vb/.lake/build/ir/EmptyEvidence.setup.json --json
+error: models/EmptyEvidence.lean:8:64: failed to synthesize
+  Decidable (admissible true ∧ admissible false)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: models/EmptyEvidence.lean:11:42: failed to synthesize
+  Decidable (admissible true)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: Lean exited with code 1
+Some required targets logged failures:
+- EmptyEvidence
+error: build failed
+
+[exit_code=1; elapsed_seconds=0.234]

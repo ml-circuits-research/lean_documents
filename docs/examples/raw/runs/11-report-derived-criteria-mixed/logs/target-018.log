@@ -2,4 +2,4 @@ $ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin
 Audit.bApproval : Audit.compliant Audit.b
 'Audit.bApproval' does not depend on any axioms
 
-[exit_code=0; elapsed_seconds=0.155]
+[exit_code=0; elapsed_seconds=0.149]

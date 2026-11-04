@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-11-04T17:00:04.657154+00:00",
+  "status": "failed",
+  "lean_version_required": "4.24.0",
+  "independent_checker": {
+    "status": "not_run",
+    "reason": "No external checker is configured; no independent-kernel assurance is claimed."
+  },
+  "targets": [],
+  "limitations": "Lean checks the encoded propositions, not source authenticity, extraction accuracy, completeness, legal authority, or the adequacy of the model. Source filters are defensive checks, not a sandbox for hostile Lean code.",
+  "audit_contract": {
+    "contract_version": 2,
+    "report_anchors": 3,
+    "claim_anchors": 2,
+    "non_claim_anchors": 1,
+    "registered_claims": 2,
+    "audited_claims": 2,
+    "deferred_claims": 0,
+    "coverage": "complete_registration",
+    "limitation": "Registration reconciles declared claims and reviewed report anchors; it does not establish semantic completeness, faithful decomposition, or that declared searches were actually performed."
+  },
+  "input_hashes": {
+    "findings.json": "637d7dd5659fda7adc44eae04e2f6785aa5b5751e6f152b61e2820f3cfaa5099",
+    "input/manifest.json": "448df3442132bed0d6e5c7ef3ac642cdb9bb8d12c8f354d1503fbc52900ac39f",
+    "models/EmptyEvidence.lean": "dd3b91fe318eb447cd435505c2a6060f4a396a274fc079abd8adbddd34da8148",
+    "claims.json": "7738769ab436e4a4bc416fd4b76ac3c5af7f03581011b870c7dd52f6f10e377b",
+    "review-plan.md": "be6383256f1b769f30cc9ffb379782e46d20a51d635c94043bffc2a41aaed18b",
+    "model-notes.md": "f41bab403cb72b25d59e4510e7878aa36d30e23aca58e6f034cafbb746c2623b",
+    "semantic-review.md": "98dc7833c09d05ab800f58b10d1a043207ed87d2ae6bec8e6d00740860c8155f"
+  },
+  "lean_version_observed": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "execution_status": "executed",
+  "error": "Lean command failed (1); see lake-build.log",
+  "artifact_hashes": {
+    "environment.lock": "5ed2d0b6eff663ee335df7c00665aba138d8a97e2a51e08dc995d204cdaa5ce9",
+    "lakefile.toml": "80d7b1af2bb8e20770bab63487c774c5497906cda71abefe3e814484a5a0e8e1",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "source-ledger.jsonl": "d071a90e3724111ba570126f8accca9f7acdc6a02a89c22b4e70a996e31fc864",
+    "logs/lake-build.log": "14ff1599f14a012969b92a255b0195e7b26379f04a065cfbbb911c852d668478",
+    "logs/lean-version.log": "636dd1a5f41f69b3dbf70d0b2c6d27ec4c485e475e16dd05484a5b03f647f2ea"
+  }
+}

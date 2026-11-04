@@ -2,4 +2,4 @@ $ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin
 Audit.releaseWindow : ¬Audit.window 15
 'Audit.releaseWindow' does not depend on any axioms
 
-[exit_code=0; elapsed_seconds=0.188]
+[exit_code=0; elapsed_seconds=0.144]
