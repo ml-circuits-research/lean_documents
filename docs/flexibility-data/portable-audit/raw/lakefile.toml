@@ -1,0 +1,8 @@
+name = "claim_audit"
+version = "0.1.0"
+
+[[lean_lib]]
+name = "AuditReviewedSources"
+srcDir = "models"
+roots = ["EvidenceLogic", "Stock.Audit", "Stock.Data"]
+globs = ["EvidenceLogic", "Stock.Audit", "Stock.Data"]

@@ -1,0 +1,13 @@
+{
+  "text": "",
+  "segments": [],
+  "tools": {
+    "python-stdlib": "3.14.8"
+  },
+  "warnings": [
+    "Unsupported document format: .html",
+    "No nonempty text segments were recovered; inspect the original document."
+  ],
+  "complete": false,
+  "status": "blocked"
+}

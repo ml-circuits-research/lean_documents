@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "dossier": "13-portable-html",
+  "brief": "None supplied; verification criteria inferred from findings and source rules.",
+  "input_bytes": "Copied unchanged from preexisting selected inputs and correct companion.",
+  "source_runs": [
+    {
+      "variant": "mixed",
+      "execution": "reused_existing_executed_audit_exact_inputs_not_rerun",
+      "workspace": "/home/salboaie/work/lean_documents/docs/flexibility-data/portable-audit/raw",
+      "input_map": [
+        {
+          "example_path": "examples/13-portable-html/report-mixed.md",
+          "run_path": "/home/salboaie/work/lean_documents/docs/flexibility-data/portable-audit/raw/input/originals/D00001.md",
+          "sha256": "721e3a2cba05950cf838fa8c5731e5d36e93f49f8f71cc00568fabd8bd7deb0e"
+        },
+        {
+          "example_path": "examples/13-portable-html/sources/stock.html",
+          "run_path": "/home/salboaie/work/lean_documents/docs/flexibility-data/portable-audit/raw/input/originals/D00002.html",
+          "sha256": "49335a218d26cb5c9a79726b21c1565eb5f5318821add20f66c1e7e4dcac7c55"
+        }
+      ]
+    },
+    {
+      "variant": "correct",
+      "execution": "new_executed_audit",
+      "workspace": "/home/salboaie/work/lean_documents/tmp/paired-current-g17n2r00/claim-audit-76p4zp3_",
+      "input_map": [
+        {
+          "example_path": "examples/13-portable-html/report-correct.md",
+          "run_path": "/home/salboaie/work/lean_documents/tmp/paired-current-g17n2r00/claim-audit-76p4zp3_/input/originals/D00001.md",
+          "sha256": "a1dd383e41334ad388cab432ec8a78558dd9aa5839c246e824d3be3237b27c47"
+        },
+        {
+          "example_path": "examples/13-portable-html/sources/stock.html",
+          "run_path": "/home/salboaie/work/lean_documents/tmp/paired-current-g17n2r00/claim-audit-76p4zp3_/input/originals/D00002.html",
+          "sha256": "49335a218d26cb5c9a79726b21c1565eb5f5318821add20f66c1e7e4dcac7c55"
+        }
+      ]
+    }
+  ],
+  "administrative_companion_note": "companion-note.md is new explanatory metadata, not evidence; README and alternate report are not supplied to either selected audit.",
+  "review_limit": "A separate coordinator reconstructed outcomes from original sources before model inspection and completed correspondence review; author and coordinator knew fixture purpose and saw both report variants, so this is nonblind. Native correct also received an actual independent Lean replay. Alternate reports were not evidence.",
+  "not_a_blind_benchmark": true
+}

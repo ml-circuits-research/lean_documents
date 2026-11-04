@@ -1,0 +1,9 @@
+# Coordinator review after source-first reconstruction
+
+This review follows independent reconstruction from the original sources before inspection of the audit models. Fixture authors also audited their own examples, so these runs are explicitly nonblind. The coordinator knew the intended demonstration and reviewed both report variants; neither alternate report was evidence. Original authenticity remains outside the proof.
+
+The typed Pause data match O1/O2 and the half-open rule. Enumerating each minute in List.range gross once and testing any eligible interval counts the union without double counting, clips to the bounded window and respects approval/case flags. Concrete results30,40 and140/141 match the sources. The symbolic touching_union and empty_interval results are separately checked, broader than the concrete numerical instances. Partial clipping remains uninstantiated and is disclosed.
+
+roundCents matches the declared ten-mills/cent, nearest-cent, ties-away-from-zero rule for signed values. +1005 and-1005 yield+101 and-101; separately rounded invoice lines total102, with the independent credit note excluded. Aggregate101 remains true for the alternative operation but fails the required order of operations. Mixed R4's conclusion is supported while gross130 is a refuted premise; its inference form is not spuriously called invalid.
+
+The historicalThresholdMet model concerns a necessary threshold only, not a sufficient entitlement definition. Its0/3 witnesses are explicitly auxiliary and do not establish actual breach counts or general entitlement. Correct report statements about unavailable history and absent reasonableness criteria remain documentary; mixed reasonableness is blocked rather than assigned a false theorem. No material mismatch was found in the final targets and stated scope. Final check must bind this review before delivery.

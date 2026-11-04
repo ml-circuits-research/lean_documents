@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target007.lean
+Settlement.actual40 : Settlement.unionMinutes Settlement.actualGross Settlement.inventory = 40
+'Settlement.actual40' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.209]

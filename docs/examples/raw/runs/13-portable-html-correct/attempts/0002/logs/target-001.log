@@ -1,0 +1,6 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target001.lean
+@EvidenceLogic.notEntailsOfCounterexample : ∀ {World : Type u_1} {evidence claim : World → Prop} {world : World},
+  evidence world → ¬claim world → ¬EvidenceLogic.Entails evidence claim
+'EvidenceLogic.notEntailsOfCounterexample' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.147]

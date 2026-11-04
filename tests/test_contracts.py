@@ -76,6 +76,46 @@ class ContractTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Every report anchor'):
             self.validate()
 
+    def test_argument_proof_links_resolve_nested_modules(self):
+        self.finding['proofs'] = [{'module': 'domain.Totals', 'theorem': 'counted_total'}]
+        self.finding['argument_audit']['report_items'][0]['proof_refs'] = [0]
+        self.finding['argument_audit']['proof_refs'] = [0]
+        rendered = '\n'.join(contracts.render_finding(self.finding))
+        self.assertIn('(models/domain/Totals.lean)', rendered)
+        self.assertNotIn('(models/domain.Totals.lean)', rendered)
+
+    def make_unsound_argument(self):
+        self.write('input/report-ledger.json', {'R0': '# Report', 'R1':
+            'The total is three. One plus two is three. All recorded amounts are five.'})
+        self.registry = contracts.initialize(self.root)
+        for row in self.registry['anchors']:
+            if row['report_anchor'] == 'R1':
+                row.update(classification='claims', reason='Reviewed conclusions and additional argument premise.')
+        self.save_registry()
+        self.finding['argument_status'] = 'unsound_argument'
+        self.finding['argument_audit']['outcome'] = 'unsound'
+        self.finding['argument_audit']['report_items'].append({
+            'kind': 'premise', 'report_anchor': 'R1', 'report_quote': 'All recorded amounts are five.',
+            'assessment': 'contradicted', 'reasoning': 'The source records one and two, not five.',
+            'evidence_refs': [0], 'proof_refs': []})
+
+    def test_supported_conclusion_with_refuted_argument_premise(self):
+        self.make_unsound_argument()
+        self.validate()
+        self.assertEqual(self.finding['semantic_state'], 'supported')
+
+    def test_unsound_requires_contradicted_premise_not_merely_missing_support(self):
+        self.make_unsound_argument()
+        self.finding['argument_audit']['report_items'][-1]['assessment'] = 'unsupported'
+        with self.assertRaisesRegex(ValueError, 'requires a contradicted report premise'):
+            self.validate()
+
+    def test_unsound_premise_needs_independent_evidence_or_proof_link(self):
+        self.make_unsound_argument()
+        self.finding['argument_audit']['report_items'][-1]['evidence_refs'] = []
+        with self.assertRaisesRegex(ValueError, 'with evidence or proof references'):
+            self.validate()
+
     def test_pending_anchor_is_rejected(self):
         self.registry['anchors'][0]['classification'] = 'pending'
         self.save_registry()

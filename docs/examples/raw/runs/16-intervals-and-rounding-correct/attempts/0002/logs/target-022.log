@@ -1,0 +1,6 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target022.lean
+Settlement.touching_union : ∀ (lo mid hi minute : Nat),
+  lo ≤ mid → mid ≤ hi → (lo ≤ minute ∧ minute < mid ∨ mid ≤ minute ∧ minute < hi ↔ lo ≤ minute ∧ minute < hi)
+'Settlement.touching_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[exit_code=0; elapsed_seconds=0.249]

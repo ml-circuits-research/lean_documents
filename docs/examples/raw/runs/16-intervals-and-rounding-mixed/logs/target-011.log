@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target011.lean
+Settlement.extensionFails : ¬Settlement.meets 181
+'Settlement.extensionFails' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.222]

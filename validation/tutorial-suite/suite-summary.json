@@ -1,0 +1,518 @@
+{
+  "schema_version": 1,
+  "scope": "Executed new study examples; independent coordinator review of nonblind fixture-author audits.",
+  "new_executions": 8,
+  "reused_existing_audits": 2,
+  "runs": [
+    {
+      "id": "13-portable-html-mixed",
+      "dossier": "13-portable-html",
+      "variant": "mixed",
+      "stage": "initial",
+      "source": "docs/flexibility-data/portable-audit/raw",
+      "reused": true,
+      "profile": "v2",
+      "published_bundle": "docs/examples/raw/runs/13-portable-html-mixed",
+      "status": "passed",
+      "conclusions": 4,
+      "declaration_and_target_checks": 19,
+      "referenced_proofs": 8,
+      "verdicts": [
+        {
+          "claim_id": "C1",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C2",
+          "semantic_state": "refuted",
+          "argument_status": "unsound_argument",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "C3",
+          "semantic_state": "supported",
+          "argument_status": "unsound_argument",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C4",
+          "semantic_state": "undetermined",
+          "argument_status": "invalid_inference",
+          "formal_status": "auxiliary"
+        }
+      ]
+    },
+    {
+      "id": "13-portable-html-correct",
+      "dossier": "13-portable-html",
+      "variant": "correct",
+      "stage": "initial",
+      "source": "tmp/paired-current-g17n2r00/portable-correct-export-final",
+      "reused": false,
+      "profile": "v2",
+      "published_bundle": "docs/examples/raw/runs/13-portable-html-correct",
+      "status": "passed",
+      "conclusions": 7,
+      "declaration_and_target_checks": 17,
+      "referenced_proofs": 6,
+      "verdicts": [
+        {
+          "claim_id": "C1",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C2",
+          "semantic_state": "supported",
+          "argument_status": "insufficient_support",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C3",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C4",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C5",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C6",
+          "semantic_state": "supported",
+          "argument_status": "insufficient_support",
+          "formal_status": "not_attempted"
+        },
+        {
+          "claim_id": "C7",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        }
+      ]
+    },
+    {
+      "id": "14-agent-native-mixed",
+      "dossier": "14-agent-native",
+      "variant": "mixed",
+      "stage": "initial",
+      "source": "tmp/agent-native-audit-AwYPQy",
+      "reused": true,
+      "profile": "agent-native",
+      "published_bundle": "docs/examples/raw/runs/14-agent-native-mixed",
+      "status": "Lean exit 0",
+      "conclusions": 3,
+      "referenced_proofs": 5,
+      "automated_helper_gate": "not_run"
+    },
+    {
+      "id": "14-agent-native-correct",
+      "dossier": "14-agent-native",
+      "variant": "correct",
+      "stage": "initial",
+      "source": "tmp/paired-current-g17n2r00/agent-native-correct-bundle",
+      "reused": false,
+      "profile": "agent-native",
+      "published_bundle": "docs/examples/raw/runs/14-agent-native-correct",
+      "status": "Lean exit 0",
+      "conclusions": 2,
+      "referenced_proofs": 3,
+      "automated_helper_gate": "not_run"
+    },
+    {
+      "id": "15-native-revision-mixed",
+      "dossier": "15-native-revision",
+      "variant": "mixed",
+      "stage": "initial",
+      "source": "tmp/native-revision-exports/initial-errors",
+      "reused": false,
+      "profile": "v2",
+      "published_bundle": "docs/examples/raw/runs/15-native-revision-mixed",
+      "status": "passed",
+      "conclusions": 7,
+      "declaration_and_target_checks": 12,
+      "referenced_proofs": 6,
+      "verdicts": [
+        {
+          "claim_id": "R1",
+          "semantic_state": "refuted",
+          "argument_status": "invalid_inference",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "R2",
+          "semantic_state": "refuted",
+          "argument_status": "invalid_inference",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "R3",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R4",
+          "semantic_state": "refuted",
+          "argument_status": "unsound_argument",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "R5",
+          "semantic_state": "undetermined",
+          "argument_status": "unsound_argument",
+          "formal_status": "auxiliary"
+        },
+        {
+          "claim_id": "R6",
+          "semantic_state": "supported",
+          "argument_status": "insufficient_support",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R7",
+          "semantic_state": "not_applicable",
+          "argument_status": "nonformal",
+          "formal_status": "not_attempted"
+        }
+      ]
+    },
+    {
+      "id": "15-native-revision-correct",
+      "dossier": "15-native-revision",
+      "variant": "correct",
+      "stage": "initial",
+      "source": "tmp/native-revision-exports/initial-correct",
+      "reused": false,
+      "profile": "v2",
+      "published_bundle": "docs/examples/raw/runs/15-native-revision-correct",
+      "status": "passed",
+      "conclusions": 7,
+      "declaration_and_target_checks": 12,
+      "referenced_proofs": 6,
+      "verdicts": [
+        {
+          "claim_id": "R1",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R2",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R3",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R4",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R5",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "auxiliary"
+        },
+        {
+          "claim_id": "R6",
+          "semantic_state": "supported",
+          "argument_status": "insufficient_support",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R7",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "not_attempted"
+        }
+      ]
+    },
+    {
+      "id": "15-native-revision-revised-mixed",
+      "dossier": "15-native-revision",
+      "variant": "mixed",
+      "stage": "revised",
+      "source": "tmp/native-revision-exports/revised-errors",
+      "reused": false,
+      "profile": "v2",
+      "published_bundle": "docs/examples/raw/runs/15-native-revision-revised-mixed",
+      "status": "passed",
+      "conclusions": 7,
+      "declaration_and_target_checks": 12,
+      "referenced_proofs": 6,
+      "verdicts": [
+        {
+          "claim_id": "R1",
+          "semantic_state": "refuted",
+          "argument_status": "unsound_argument",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "R2",
+          "semantic_state": "refuted",
+          "argument_status": "invalid_inference",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "R3",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R4",
+          "semantic_state": "refuted",
+          "argument_status": "unsound_argument",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "R5",
+          "semantic_state": "undetermined",
+          "argument_status": "unsound_argument",
+          "formal_status": "auxiliary"
+        },
+        {
+          "claim_id": "R6",
+          "semantic_state": "supported",
+          "argument_status": "insufficient_support",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R7",
+          "semantic_state": "not_applicable",
+          "argument_status": "nonformal",
+          "formal_status": "not_attempted"
+        }
+      ]
+    },
+    {
+      "id": "15-native-revision-revised-correct",
+      "dossier": "15-native-revision",
+      "variant": "correct",
+      "stage": "revised",
+      "source": "tmp/native-revision-exports/revised-correct",
+      "reused": false,
+      "profile": "v2",
+      "published_bundle": "docs/examples/raw/runs/15-native-revision-revised-correct",
+      "status": "passed",
+      "conclusions": 7,
+      "declaration_and_target_checks": 12,
+      "referenced_proofs": 6,
+      "verdicts": [
+        {
+          "claim_id": "R1",
+          "semantic_state": "refuted",
+          "argument_status": "unsound_argument",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "R2",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R3",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R4",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R5",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "auxiliary"
+        },
+        {
+          "claim_id": "R6",
+          "semantic_state": "supported",
+          "argument_status": "insufficient_support",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R7",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "not_attempted"
+        }
+      ]
+    },
+    {
+      "id": "16-intervals-and-rounding-correct",
+      "dossier": "16-intervals-and-rounding",
+      "variant": "correct",
+      "stage": "initial",
+      "source": "tmp/intervals-rounding-exports-803ww82y/correct-final",
+      "reused": false,
+      "profile": "v2",
+      "published_bundle": "docs/examples/raw/runs/16-intervals-and-rounding-correct",
+      "status": "passed",
+      "conclusions": 10,
+      "declaration_and_target_checks": 30,
+      "referenced_proofs": 11,
+      "verdicts": [
+        {
+          "claim_id": "C16-01",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C16-02",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C16-03",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C16-04",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C16-05",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C16-06",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C16-07",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C16-08",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C16-09",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "not_attempted"
+        },
+        {
+          "claim_id": "C16-10",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "not_attempted"
+        }
+      ]
+    },
+    {
+      "id": "16-intervals-and-rounding-mixed",
+      "dossier": "16-intervals-and-rounding",
+      "variant": "mixed",
+      "stage": "initial",
+      "source": "tmp/intervals-rounding-exports-803ww82y/mixed-final",
+      "reused": false,
+      "profile": "v2",
+      "published_bundle": "docs/examples/raw/runs/16-intervals-and-rounding-mixed",
+      "status": "passed",
+      "conclusions": 10,
+      "declaration_and_target_checks": 32,
+      "referenced_proofs": 13,
+      "verdicts": [
+        {
+          "claim_id": "C16-01",
+          "semantic_state": "refuted",
+          "argument_status": "unsound_argument",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "C16-02",
+          "semantic_state": "refuted",
+          "argument_status": "unsound_argument",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "C16-03",
+          "semantic_state": "refuted",
+          "argument_status": "unsound_argument",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "C16-04",
+          "semantic_state": "supported",
+          "argument_status": "unsound_argument",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C16-05",
+          "semantic_state": "refuted",
+          "argument_status": "unsound_argument",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "C16-06",
+          "semantic_state": "refuted",
+          "argument_status": "unsound_argument",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "C16-07",
+          "semantic_state": "refuted",
+          "argument_status": "unsound_argument",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "C16-08",
+          "semantic_state": "refuted",
+          "argument_status": "invalid_inference",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "C16-09",
+          "semantic_state": "undetermined",
+          "argument_status": "invalid_inference",
+          "formal_status": "auxiliary"
+        },
+        {
+          "claim_id": "C16-10",
+          "semantic_state": "undetermined",
+          "argument_status": "insufficient_support",
+          "formal_status": "blocked"
+        }
+      ]
+    }
+  ]
+}

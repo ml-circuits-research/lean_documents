@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-11-04T18:10:22.901915+00:00",
+  "status": "failed",
+  "lean_version_required": "4.24.0",
+  "independent_checker": {
+    "status": "not_run",
+    "reason": "No external checker is configured; no independent-kernel assurance is claimed."
+  },
+  "targets": [],
+  "limitations": "Lean checks the encoded propositions, not source authenticity, extraction accuracy, completeness, legal authority, or the adequacy of the model. Source filters are defensive checks, not a sandbox for hostile Lean code.",
+  "error": "Cannot read JSON /home/salboaie/work/lean_documents/tmp/native-revision-initial-errors/claim-audit-lr1e887a/findings.json: [Errno 2] No such file or directory: '/home/salboaie/work/lean_documents/tmp/native-revision-initial-errors/claim-audit-lr1e887a/findings.json'",
+  "execution_status": "failed",
+  "artifact_hashes": {
+    "environment.lock": "8a54aa40a696613ceb768f2a608fc406431dcc4cd230d4fbf578fd88deefb2dd",
+    "source-ledger.jsonl": "be466463eb59e0f591d874e61e71815cb637f969429862648d5c881ddb860352"
+  }
+}

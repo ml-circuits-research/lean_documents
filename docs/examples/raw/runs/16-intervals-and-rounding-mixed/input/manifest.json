@@ -1,0 +1,40 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "input/audit-policy.json": {
+      "sha256": "e9492dd2e14921f8e034da6ee7d87ed3bdba454b71a0af343225749271b2264a",
+      "bytes": 253,
+      "original_path": null
+    },
+    "input/report-ledger.json": {
+      "sha256": "0b900378cc34daea3d8ed01f5c3e4c01fc646b26976468c0ab9540451ccfd9d1",
+      "bytes": 1464,
+      "original_path": null
+    },
+    "input/report.md": {
+      "sha256": "2d989e6db2cf2ad1acb51c10340ae0a5434fb5ac0be1265e877fb8e1405ceefe",
+      "bytes": 1339,
+      "original_path": "/home/salboaie/work/lean_documents/examples/16-intervals-and-rounding/report.md"
+    },
+    "input/source-ledger.json": {
+      "sha256": "6e7c6b5cadaf4e83f5b831d24389a1fe33941a1a2708ace170171d16330c3859",
+      "bytes": 4661,
+      "original_path": null
+    },
+    "input/sources/invoice.md": {
+      "sha256": "9a162c5df72dd3338ca8f26d4bcd1a9ae36ce415132045858e4669665647cf50",
+      "bytes": 411,
+      "original_path": "/home/salboaie/work/lean_documents/examples/16-intervals-and-rounding/sources/invoice.md"
+    },
+    "input/sources/operations.md": {
+      "sha256": "d37bd5fa2513f026aaa85aa0258b1b7ddc130571c37aa171bbfd8ecfe2fba57d",
+      "bytes": 813,
+      "original_path": "/home/salboaie/work/lean_documents/examples/16-intervals-and-rounding/sources/operations.md"
+    },
+    "input/sources/policy.md": {
+      "sha256": "a1398fc7e4fe537f71f23802879fa74dcccf6b8e1d2e810eef2a13f9c8141bf3",
+      "bytes": 1655,
+      "original_path": "/home/salboaie/work/lean_documents/examples/16-intervals-and-rounding/sources/policy.md"
+    }
+  }
+}

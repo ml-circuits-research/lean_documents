@@ -1,0 +1,118 @@
+{
+  "status": "passed",
+  "scope": "New study examples and documentation; not a representative real-document benchmark",
+  "dossiers": 16,
+  "report_variants": 32,
+  "audit_snapshots": 34,
+  "profiles": {
+    "v2_helper": 12,
+    "agent_native": 2,
+    "legacy_v1": 20
+  },
+  "new_actual_audits": 8,
+  "earlier_mixed_audits_reused_after_input_hash_checks": 2,
+  "new_conclusion_records": 57,
+  "publication": {
+    "status": "passed",
+    "files": 12830,
+    "bytes": 131833921,
+    "html_pages": 6448,
+    "local_links_checked": 542383,
+    "errors": []
+  },
+  "published_export_verification": {
+    "status": "passed",
+    "scope": "Export integrity, exact-input identity and recorded final verification; no new Lean execution",
+    "published": true,
+    "runs": [
+      {
+        "id": "13-portable-html-mixed",
+        "profile": "v2",
+        "status": "verified",
+        "export_hashes": 172
+      },
+      {
+        "id": "13-portable-html-correct",
+        "profile": "v2",
+        "status": "verified",
+        "export_hashes": 156
+      },
+      {
+        "id": "14-agent-native-mixed",
+        "profile": "agent-native",
+        "status": "verified",
+        "export_hashes": 0
+      },
+      {
+        "id": "14-agent-native-correct",
+        "profile": "agent-native",
+        "status": "verified",
+        "export_hashes": 29
+      },
+      {
+        "id": "15-native-revision-mixed",
+        "profile": "v2",
+        "status": "verified",
+        "export_hashes": 156
+      },
+      {
+        "id": "15-native-revision-correct",
+        "profile": "v2",
+        "status": "verified",
+        "export_hashes": 150
+      },
+      {
+        "id": "15-native-revision-revised-mixed",
+        "profile": "v2",
+        "status": "verified",
+        "export_hashes": 190
+      },
+      {
+        "id": "15-native-revision-revised-correct",
+        "profile": "v2",
+        "status": "verified",
+        "export_hashes": 163
+      },
+      {
+        "id": "16-intervals-and-rounding-correct",
+        "profile": "v2",
+        "status": "verified",
+        "export_hashes": 217
+      },
+      {
+        "id": "16-intervals-and-rounding-mixed",
+        "profile": "v2",
+        "status": "verified",
+        "export_hashes": 229
+      }
+    ],
+    "stale_rejections": 4
+  },
+  "regeneration": {
+    "status": "passed",
+    "source": "Repository fixture inputs and published run snapshots; no original temporary audit workspace read by generator",
+    "identical_inventory": true,
+    "files": 12830
+  },
+  "browser": {
+    "status": "passed",
+    "page_protocol_viewport_checks": 126,
+    "widths": [
+      320,
+      390,
+      1440
+    ],
+    "protocols": [
+      "file",
+      "http"
+    ],
+    "guided_proof_navigation": "passed",
+    "revised_verdict_navigation": "passed",
+    "page_overflow": "none",
+    "javascript_errors": []
+  },
+  "diff_check": "passed",
+  "study_entry": "examples/start-here.html",
+  "coverage_matrix": "examples/capabilities.html",
+  "source_of_execution_details": "examples/raw/review/suite-summary.json"
+}

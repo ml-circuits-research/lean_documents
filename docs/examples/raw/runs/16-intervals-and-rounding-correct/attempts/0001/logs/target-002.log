@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target002.lean
+Settlement.empty_interval : ∀ (point minute : Nat), ¬(point ≤ minute ∧ minute < point)
+'Settlement.empty_interval' depends on axioms: [propext, Quot.sound]
+
+[exit_code=0; elapsed_seconds=0.243]

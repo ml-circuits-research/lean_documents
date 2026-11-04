@@ -1,0 +1,85 @@
+{
+  "reviews": [
+    {
+      "path": "input/sources/stock.html.md",
+      "anchor": "title",
+      "decision": "accepted",
+      "reviewer": "Portability audit agent, material source inspection",
+      "reason": "Read original HTML line 3 and compared its complete text and line locator with this imported segment; material wording, values and status/signature fields match. Simple raw HTML inspection, not a rendered-browser review.",
+      "source_sha256": "49335a218d26cb5c9a79726b21c1565eb5f5318821add20f66c1e7e4dcac7c55",
+      "segment_sha256": "511dc17ca760d3899b1542d018d5c99e705aa8ae3d67251c52f4df9bc7023561"
+    },
+    {
+      "path": "input/sources/stock.html.md",
+      "anchor": "h1",
+      "decision": "accepted",
+      "reviewer": "Portability audit agent, material source inspection",
+      "reason": "Read original HTML line 5 and compared its complete text and line locator with this imported segment; material wording, values and status/signature fields match. Simple raw HTML inspection, not a rendered-browser review.",
+      "source_sha256": "49335a218d26cb5c9a79726b21c1565eb5f5318821add20f66c1e7e4dcac7c55",
+      "segment_sha256": "2427104650ca0f3b3a196a42cb4c87ddda3b681a0af559a593e7f25a04d15797"
+    },
+    {
+      "path": "input/sources/stock.html.md",
+      "anchor": "scope",
+      "decision": "accepted",
+      "reviewer": "Portability audit agent, material source inspection",
+      "reason": "Read original HTML line 6 and compared its complete text and line locator with this imported segment; material wording, values and status/signature fields match. Simple raw HTML inspection, not a rendered-browser review.",
+      "source_sha256": "49335a218d26cb5c9a79726b21c1565eb5f5318821add20f66c1e7e4dcac7c55",
+      "segment_sha256": "6b9b300fff3af7b02911f12ba92fc6831a7df999c6557224273878e60e70daee"
+    },
+    {
+      "path": "input/sources/stock.html.md",
+      "anchor": "count-rule",
+      "decision": "accepted",
+      "reviewer": "Portability audit agent, material source inspection",
+      "reason": "Read original HTML line 7 and compared its complete text and line locator with this imported segment; material wording, values and status/signature fields match. Simple raw HTML inspection, not a rendered-browser review.",
+      "source_sha256": "49335a218d26cb5c9a79726b21c1565eb5f5318821add20f66c1e7e4dcac7c55",
+      "segment_sha256": "e0a0fc5c3feefd498c12a9bb6c5b02ad2fdfc8ef00393d2c7d1a57d7cedb379b"
+    },
+    {
+      "path": "input/sources/stock.html.md",
+      "anchor": "release-rule",
+      "decision": "accepted",
+      "reviewer": "Portability audit agent, material source inspection",
+      "reason": "Read original HTML line 8 and compared its complete text and line locator with this imported segment; material wording, values and status/signature fields match. Simple raw HTML inspection, not a rendered-browser review.",
+      "source_sha256": "49335a218d26cb5c9a79726b21c1565eb5f5318821add20f66c1e7e4dcac7c55",
+      "segment_sha256": "778bd0399bf411cf91439d454eaff6bac69eb6cee3af1cc701a8fa994e9ac269"
+    },
+    {
+      "path": "input/sources/stock.html.md",
+      "anchor": "row-a",
+      "decision": "accepted",
+      "reviewer": "Portability audit agent, material source inspection",
+      "reason": "Read original HTML line 9 and compared its complete text and line locator with this imported segment; material wording, values and status/signature fields match. Simple raw HTML inspection, not a rendered-browser review.",
+      "source_sha256": "49335a218d26cb5c9a79726b21c1565eb5f5318821add20f66c1e7e4dcac7c55",
+      "segment_sha256": "2d2a3430fedf6d0f0586081da1bcb45dd5361ada281e7f8803048a99ad39db9d"
+    },
+    {
+      "path": "input/sources/stock.html.md",
+      "anchor": "row-b",
+      "decision": "accepted",
+      "reviewer": "Portability audit agent, material source inspection",
+      "reason": "Read original HTML line 10 and compared its complete text and line locator with this imported segment; material wording, values and status/signature fields match. Simple raw HTML inspection, not a rendered-browser review.",
+      "source_sha256": "49335a218d26cb5c9a79726b21c1565eb5f5318821add20f66c1e7e4dcac7c55",
+      "segment_sha256": "0f71126c5d70c9b69be905a843c6f20260776da05137bbe0978af0ccdf9bd67b"
+    },
+    {
+      "path": "input/sources/stock.html.md",
+      "anchor": "row-c",
+      "decision": "accepted",
+      "reviewer": "Portability audit agent, material source inspection",
+      "reason": "Read original HTML line 11 and compared its complete text and line locator with this imported segment; material wording, values and status/signature fields match. Simple raw HTML inspection, not a rendered-browser review.",
+      "source_sha256": "49335a218d26cb5c9a79726b21c1565eb5f5318821add20f66c1e7e4dcac7c55",
+      "segment_sha256": "8bf12fd2d4a37b1ce79eae998317ff94773c8a8ea9c5d145077e4b9fd3021c2b"
+    },
+    {
+      "path": "input/sources/stock.html.md",
+      "anchor": "history",
+      "decision": "accepted",
+      "reviewer": "Portability audit agent, material source inspection",
+      "reason": "Read original HTML line 12 and compared its complete text and line locator with this imported segment; material wording, values and status/signature fields match. Simple raw HTML inspection, not a rendered-browser review.",
+      "source_sha256": "49335a218d26cb5c9a79726b21c1565eb5f5318821add20f66c1e7e4dcac7c55",
+      "segment_sha256": "a9811ff26c4ac3f9a70274cf1463e42d72efbbc632a22864999c6585bc92d03c"
+    }
+  ]
+}

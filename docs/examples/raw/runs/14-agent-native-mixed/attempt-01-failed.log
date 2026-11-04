@@ -1,0 +1,17 @@
+tmp/agent-native-audit-AwYPQy/Audit.lean:76:4: error: failed to synthesize
+  Decidable (positive { amount := 11, approved := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+tmp/agent-native-audit-AwYPQy/Audit.lean:77:4: error: failed to synthesize
+  Decidable ¬withinBudget { amount := 11, approved := false }
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+tmp/agent-native-audit-AwYPQy/Audit.lean:83:50: error: failed to synthesize
+  Decidable ¬approved { amount := 9, approved := false }
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'SpendingAudit.budgetSupported' does not depend on any axioms
+'SpendingAudit.positiveArgumentInvalid' depends on axioms: [sorryAx]
+'SpendingAudit.overBudgetRefuted' does not depend on any axioms
+'SpendingAudit.approvalUnderdetermined' depends on axioms: [sorryAx]
+'SpendingAudit.approvalNeither' depends on axioms: [sorryAx]

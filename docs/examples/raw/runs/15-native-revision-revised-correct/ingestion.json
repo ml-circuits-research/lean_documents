@@ -1,0 +1,86 @@
+{
+  "updated_at": "2026-11-04T18:11:52.367703+00:00",
+  "total_documents": 4,
+  "processed_this_batch": [
+    "D00003"
+  ],
+  "complete": false,
+  "documents": [
+    {
+      "id": "D00001",
+      "role": "report",
+      "original": "input/originals/D00001.md",
+      "logical": "input/report.md",
+      "external": "/home/salboaie/work/lean_documents/examples/15-native-revision/report-correct.md",
+      "original_sha": "8e78a2380ab307e5d79a43c6c3ecfe2a5866bf53f46190fe5b2195357b6b06c0",
+      "status": "ready",
+      "warnings": [],
+      "tools": {
+        "python-stdlib": "3.14.8"
+      },
+      "extraction_sha": "905028fdabbfc46833201c9c5e9aa3a556ea19726f7c07e17754c8cc38e3a1bf"
+    },
+    {
+      "id": "D00002",
+      "role": "source",
+      "original": "input/originals/D00002.docx",
+      "logical": "input/sources/01-policy.docx.md",
+      "external": "/home/salboaie/work/lean_documents/examples/15-native-revision/sources/01-policy.docx",
+      "original_sha": "4a0cf796e8b3917bc1606f856a688d36c5d1aac4d82a6aba8e1576be91be5c42",
+      "status": "ready",
+      "warnings": [
+        "DOCX segments follow body XML order, then header/footer members and notes/comments in member order. This is not rendered pagination or the placement of repeated page headers; no page coordinates are inferred."
+      ],
+      "tools": {
+        "python-stdlib": "3.14.8",
+        "docx-zip-xml": "Python zipfile and ElementTree 3.14.8"
+      },
+      "extraction_sha": "22df24f6a56018bfc2ee554c39d0640852a0c193a5d4f858d534e58e267cdbc8"
+    },
+    {
+      "id": "D00003",
+      "role": "source",
+      "original": "input/originals/D00003.pdf",
+      "logical": "input/sources/02-ledger.pdf.md",
+      "external": "/home/salboaie/work/lean_documents/examples/15-native-revision/revisions/02-ledger-r2.pdf",
+      "original_sha": "3c49680f3332d2f30535aff99f59c551c046d049fcc7e02444a446309cb8a6a4",
+      "status": "ready",
+      "warnings": [],
+      "tools": {
+        "python-stdlib": "3.14.8",
+        "pdfinfo": "pdfinfo version 26.01.0",
+        "pdfimages": "pdfimages version 26.01.0",
+        "pdftotext": "pdftotext version 26.01.0"
+      },
+      "extraction_sha": "99d58eaa7ea15c48847d21f0537be2be888038d9d0cd6978ddece21623c94a1c"
+    },
+    {
+      "id": "D00004",
+      "role": "source",
+      "original": "input/originals/D00004.pdf",
+      "logical": "input/sources/03-receipt-scan.pdf.md",
+      "external": "/home/salboaie/work/lean_documents/examples/15-native-revision/sources/03-receipt-scan.pdf",
+      "original_sha": "2d22efef6a77638e22040fbedad784697ae8cf45d91131a088e60d16b7e86eba",
+      "status": "partial",
+      "warnings": [
+        "pdf-page-0001: 2/41 OCR words are below confidence 85.",
+        "OCR text is not independently verified against the original visual source, regardless of confidence."
+      ],
+      "tools": {
+        "python-stdlib": "3.14.8",
+        "pdfinfo": "pdfinfo version 26.01.0",
+        "pdfimages": "pdfimages version 26.01.0",
+        "pdftotext": "pdftotext version 26.01.0",
+        "pdftoppm": "pdftoppm version 26.01.0",
+        "tesseract": "tesseract 5.5.4"
+      },
+      "extraction_sha": "2ae2a49ecf4d18d04b0a3273bc1f5dfb7d479704aae3ee9235800af5e3072c0b"
+    }
+  ],
+  "elapsed_seconds": 0.05204531799972756,
+  "budget": {
+    "max_documents": null,
+    "max_seconds": null
+  },
+  "coverage_meaning": "Extraction coverage only, not claim review completeness or OCR accuracy"
+}

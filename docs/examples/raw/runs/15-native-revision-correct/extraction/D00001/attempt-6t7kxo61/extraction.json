@@ -1,0 +1,123 @@
+{
+  "text": "<a id=\"document-preamble\"></a>\n# T7 transfer review\n\n<a id=\"R1\"></a>\nThe total T7 charge is 120 credits. The ledger lists A as 60, B as 40 and C as 20 credits; adding those lines gives 120 credits.\n\n<a id=\"R2\"></a>\nCharge A breaches the individual-charge cap. Policy P2 sets the cap at 50 credits, and the ledger records A as 60 credits.\n\n<a id=\"R3\"></a>\nThe physical receipt occurred at 16:40 local time on 4 November 2026. The physical receipt scan records that timestamp for T7.\n\n<a id=\"R4\"></a>\nThe physical receipt missed the policy P3 deadline. Policy P3 sets the receipt deadline at 16:30; the receipt scan records 16:40.\n\n<a id=\"R5\"></a>\nThe supplied records do not establish T7 release eligibility. Policy P4 requires quality and security approvals; the ledger records quality approval but supplies no security status, and the receipt records arrival only. This does not establish that security approval never occurred.\n\n<a id=\"R6\"></a>\nCharge B is 40 credits.\n\n<a id=\"R7\"></a>\nThe supplied package provides no grading criterion for calling the handover exemplary. Policy P5 expressly states that no such definition or scale is supplied; no exemplary grade is inferred.\n",
+  "segments": [
+    {
+      "anchor": "document-preamble",
+      "quote": "# T7 transfer review",
+      "locator": {
+        "kind": "text",
+        "start_line": 1,
+        "end_line": 1,
+        "start_character": 0,
+        "end_character": 20,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "R1",
+      "quote": "The total T7 charge is 120 credits. The ledger lists A as 60, B as 40 and C as 20 credits; adding those lines gives 120 credits.",
+      "locator": {
+        "kind": "text",
+        "start_line": 4,
+        "end_line": 4,
+        "start_character": 38,
+        "end_character": 166,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "R2",
+      "quote": "Charge A breaches the individual-charge cap. Policy P2 sets the cap at 50 credits, and the ledger records A as 60 credits.",
+      "locator": {
+        "kind": "text",
+        "start_line": 7,
+        "end_line": 7,
+        "start_character": 184,
+        "end_character": 306,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "R3",
+      "quote": "The physical receipt occurred at 16:40 local time on 4 November 2026. The physical receipt scan records that timestamp for T7.",
+      "locator": {
+        "kind": "text",
+        "start_line": 10,
+        "end_line": 10,
+        "start_character": 324,
+        "end_character": 450,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "R4",
+      "quote": "The physical receipt missed the policy P3 deadline. Policy P3 sets the receipt deadline at 16:30; the receipt scan records 16:40.",
+      "locator": {
+        "kind": "text",
+        "start_line": 13,
+        "end_line": 13,
+        "start_character": 468,
+        "end_character": 597,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "R5",
+      "quote": "The supplied records do not establish T7 release eligibility. Policy P4 requires quality and security approvals; the ledger records quality approval but supplies no security status, and the receipt records arrival only. This does not establish that security approval never occurred.",
+      "locator": {
+        "kind": "text",
+        "start_line": 16,
+        "end_line": 16,
+        "start_character": 615,
+        "end_character": 897,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "R6",
+      "quote": "Charge B is 40 credits.",
+      "locator": {
+        "kind": "text",
+        "start_line": 19,
+        "end_line": 19,
+        "start_character": 915,
+        "end_character": 938,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    },
+    {
+      "anchor": "R7",
+      "quote": "The supplied package provides no grading criterion for calling the handover exemplary. Policy P5 expressly states that no such definition or scale is supplied; no exemplary grade is inferred.",
+      "locator": {
+        "kind": "text",
+        "start_line": 22,
+        "end_line": 22,
+        "start_character": 956,
+        "end_character": 1147,
+        "coordinate_unit": "Unicode code points after UTF-8 BOM removal"
+      },
+      "method": "utf8",
+      "uncertainty": []
+    }
+  ],
+  "tools": {
+    "python-stdlib": "3.14.8"
+  },
+  "warnings": [],
+  "complete": true,
+  "status": "ready"
+}

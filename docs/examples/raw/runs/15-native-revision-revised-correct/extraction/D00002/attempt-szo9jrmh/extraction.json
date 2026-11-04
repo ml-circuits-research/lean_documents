@@ -1,0 +1,116 @@
+{
+  "text": "<a id=\"docx-p-0001\"></a>\nCedar laboratory transfer policy P1. Effective 4 November 2026. All entities and events are synthetic.\n\n<a id=\"docx-p-0002\"></a>\nP1: For transfer T7 on 4 November 2026, count the three ledger charges A, B and C once each, in whole credits. No tax, discount or currency conversion applies. A revised ledger explicitly supersedes the prior ledger for this transfer.\n\n<a id=\"docx-p-0003\"></a>\nP2: Each individual charge must be at most 50 credits. A charge above 50 breaches the individual-charge cap; aggregate totals do not replace this test.\n\n<a id=\"docx-p-0004\"></a>\nP3: T7 receipt is timely if the physical receipt timestamp is no later than 16:30 local time on 4 November 2026. No grace period applies. Dispatch time is irrelevant.\n\n<a id=\"docx-p-0005\"></a>\nP4: T7 release eligibility requires both quality approval and security approval by 17:00 local time. Quality approval alone is insufficient. A missing security-status field is not a statement that no approval event occurred.\n\n<a id=\"docx-p-0006\"></a>\nP5: This package contains no definition or grading scale for the adjective exemplary. The package is complete only for charges A, B and C; it is not a complete approval-event history.\n",
+  "segments": [
+    {
+      "anchor": "docx-p-0001",
+      "quote": "Cedar laboratory transfer policy P1. Effective 4 November 2026. All entities and events are synthetic.",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:p[1]",
+        "paragraph_index_in_story": 1,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": []
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-p-0002",
+      "quote": "P1: For transfer T7 on 4 November 2026, count the three ledger charges A, B and C once each, in whole credits. No tax, discount or currency conversion applies. A revised ledger explicitly supersedes the prior ledger for this transfer.",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:p[2]",
+        "paragraph_index_in_story": 2,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": []
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-p-0003",
+      "quote": "P2: Each individual charge must be at most 50 credits. A charge above 50 breaches the individual-charge cap; aggregate totals do not replace this test.",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:p[3]",
+        "paragraph_index_in_story": 3,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": []
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-p-0004",
+      "quote": "P3: T7 receipt is timely if the physical receipt timestamp is no later than 16:30 local time on 4 November 2026. No grace period applies. Dispatch time is irrelevant.",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:p[4]",
+        "paragraph_index_in_story": 4,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": []
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-p-0005",
+      "quote": "P4: T7 release eligibility requires both quality approval and security approval by 17:00 local time. Quality approval alone is insufficient. A missing security-status field is not a statement that no approval event occurred.",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:p[5]",
+        "paragraph_index_in_story": 5,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": []
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    },
+    {
+      "anchor": "docx-p-0006",
+      "quote": "P5: This package contains no definition or grading scale for the adjective exemplary. The package is complete only for charges A, B and C; it is not a complete approval-event history.",
+      "locator": {
+        "kind": "docx",
+        "member": "word/document.xml",
+        "xml_path": "/w:document/w:body/w:p[6]",
+        "paragraph_index_in_story": 6,
+        "story": "document",
+        "raw_xml_artifact": "docx-xml/document.xml",
+        "footnote_ids": [],
+        "endnote_ids": [],
+        "comment_ids": []
+      },
+      "method": "docx-xml",
+      "uncertainty": []
+    }
+  ],
+  "tools": {
+    "python-stdlib": "3.14.8",
+    "docx-zip-xml": "Python zipfile and ElementTree 3.14.8"
+  },
+  "warnings": [
+    "DOCX segments follow body XML order, then header/footer members and notes/comments in member order. This is not rendered pagination or the placement of repeated page headers; no page coordinates are inferred."
+  ],
+  "complete": true,
+  "status": "ready"
+}

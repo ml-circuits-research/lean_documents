@@ -1,0 +1,133 @@
+{
+  "schema_version": 2,
+  "anchors": [
+    {
+      "report_anchor": "P01",
+      "report_sha256": "f430ecdccb93d36061d75a0713de92bb1253e7e98f8a906e9a18c4c360614731",
+      "classification": "non_claim",
+      "reason": "Document title only."
+    },
+    {
+      "report_anchor": "P02",
+      "report_sha256": "4d66e94db63aca0b83f32592126f24c094b7c675410803b795151f0b21394e28",
+      "classification": "claims",
+      "reason": "One substantive conclusion; its supplied premises, citations and inference are audited separately below."
+    },
+    {
+      "report_anchor": "P03",
+      "report_sha256": "ab5c2a80067cbf41f911ea63c9dd9c478bbe50c2977522c50ef181cc45c0b116",
+      "classification": "claims",
+      "reason": "One substantive conclusion; its supplied premises, citations and inference are audited separately below."
+    },
+    {
+      "report_anchor": "P04",
+      "report_sha256": "4dee6f19f945af141df3c499f84e0c449d8524ae7e94b4f30ad123a3191399a8",
+      "classification": "claims",
+      "reason": "One substantive conclusion; its supplied premises, citations and inference are audited separately below."
+    },
+    {
+      "report_anchor": "P05",
+      "report_sha256": "edff2b89467d0d048f28edb189af911f7d307593115a3553fcefbb8675cf1797",
+      "classification": "claims",
+      "reason": "One substantive conclusion; its supplied premises, citations and inference are audited separately below."
+    },
+    {
+      "report_anchor": "P06",
+      "report_sha256": "b12c1954c5aa7e2519f50464860460d49e8bb9162e34ddbbc66f5495ca0131d3",
+      "classification": "claims",
+      "reason": "One substantive conclusion; its supplied premises, citations and inference are audited separately below."
+    },
+    {
+      "report_anchor": "P07",
+      "report_sha256": "0c04c26765bd9c95d99fe330006470a29eb7857c9cac924ddff441a9bc6f9dcb",
+      "classification": "claims",
+      "reason": "One substantive conclusion; its supplied premises, citations and inference are audited separately below."
+    },
+    {
+      "report_anchor": "P08",
+      "report_sha256": "b60f285f4bb6546473586fe38a75e6ef93e9312fb343dc070cb22f793ae452fd",
+      "classification": "claims",
+      "reason": "One substantive conclusion; its supplied premises, citations and inference are audited separately below."
+    },
+    {
+      "report_anchor": "P09",
+      "report_sha256": "2e65b653ff44dc5a3a394a536c48c689072ca6011f67bd689f6fbf8f6c195306",
+      "classification": "claims",
+      "reason": "One substantive conclusion; its supplied premises, citations and inference are audited separately below."
+    },
+    {
+      "report_anchor": "P10",
+      "report_sha256": "d3d9e37f436f845dabb5cdcee48025f7d7cb826570a313938a90573dec6e37f8",
+      "classification": "claims",
+      "reason": "One substantive conclusion; its supplied premises, citations and inference are audited separately below."
+    },
+    {
+      "report_anchor": "P11",
+      "report_sha256": "aa7a6a431fde106fdb3372c312d9a21615020da1e683671eacab3035e9b625fc",
+      "classification": "claims",
+      "reason": "One substantive conclusion; its supplied premises, citations and inference are audited separately below."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C16-01",
+      "report_anchor": "P02",
+      "report_quote": "The union of pauses A and B is 30 minutes.",
+      "disposition": "audited"
+    },
+    {
+      "claim_id": "C16-02",
+      "report_anchor": "P03",
+      "report_quote": "Adding touching pause C gives a 40-minute union.",
+      "disposition": "audited"
+    },
+    {
+      "claim_id": "C16-03",
+      "report_anchor": "P04",
+      "report_quote": "The actual H16 paused time remains 40 minutes after all six records are considered.",
+      "disposition": "audited"
+    },
+    {
+      "claim_id": "C16-04",
+      "report_anchor": "P05",
+      "report_quote": "H16 meets the inclusive SLA.",
+      "disposition": "audited"
+    },
+    {
+      "claim_id": "C16-05",
+      "report_anchor": "P06",
+      "report_quote": "The explicit 181-minute extension scenario fails the SLA.",
+      "disposition": "audited"
+    },
+    {
+      "claim_id": "C16-06",
+      "report_anchor": "P07",
+      "report_quote": "Invoice line L1 rounds to +101 cents.",
+      "disposition": "audited"
+    },
+    {
+      "claim_id": "C16-07",
+      "report_anchor": "P08",
+      "report_quote": "Credit note CN16 rounds to -101 cents.",
+      "disposition": "audited"
+    },
+    {
+      "claim_id": "C16-08",
+      "report_anchor": "P09",
+      "report_quote": "Invoice N16 totals +102 cents.",
+      "disposition": "audited"
+    },
+    {
+      "claim_id": "C16-09",
+      "report_anchor": "P10",
+      "report_quote": "The supplied corpus cannot establish entitlement to the historical rebate.",
+      "disposition": "audited"
+    },
+    {
+      "claim_id": "C16-10",
+      "report_anchor": "P11",
+      "report_quote": "Whether H16 compensation is reasonable remains unresolved under the supplied protocol.",
+      "disposition": "audited"
+    }
+  ]
+}

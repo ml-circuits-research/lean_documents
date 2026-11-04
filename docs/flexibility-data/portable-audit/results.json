@@ -1,0 +1,62 @@
+{
+  "workspace": "/home/salboaie/work/lean_documents/tmp/portability-wDjrwn/claim-audit-t1rmhsmr",
+  "export": "/home/salboaie/work/lean_documents/tmp/portability-wDjrwn/exported-audit",
+  "report": "/home/salboaie/work/lean_documents/tmp/portability-wDjrwn/exported-audit/audit-report.md",
+  "status": "passed",
+  "execution_status": "executed",
+  "lean_version": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "declared_and_exact_target_checks": 19,
+  "audit_contract": {
+    "contract_version": 2,
+    "report_anchors": 5,
+    "claim_anchors": 4,
+    "non_claim_anchors": 1,
+    "registered_claims": 4,
+    "audited_claims": 4,
+    "deferred_claims": 0,
+    "coverage": "complete_registration",
+    "limitation": "Registration reconciles declared claims and reviewed report anchors; it does not establish semantic completeness, faithful decomposition, or that declared searches were actually performed."
+  },
+  "axioms": [
+    "propext"
+  ],
+  "source_extraction": "Unsupported HTML preserved as blocked by built-in adapter, then imported through actual agent-extraction CLI with original line coordinates and nine inspected material acceptances.",
+  "findings": [
+    {
+      "claim_id": "C1",
+      "quote": "Counted stock is 45 units.",
+      "semantic_state": "supported",
+      "argument_status": "sufficient",
+      "formal_status": "proved"
+    },
+    {
+      "claim_id": "C2",
+      "quote": "Counted stock is 60 units.",
+      "semantic_state": "refuted",
+      "argument_status": "unsound_argument",
+      "formal_status": "refuted"
+    },
+    {
+      "claim_id": "C3",
+      "quote": "A is eligible for release.",
+      "semantic_state": "supported",
+      "argument_status": "unsound_argument",
+      "formal_status": "proved"
+    },
+    {
+      "claim_id": "C4",
+      "quote": "A never received prior clearance.",
+      "semantic_state": "undetermined",
+      "argument_status": "invalid_inference",
+      "formal_status": "auxiliary"
+    }
+  ],
+  "render_links": {
+    "local_link_count": 165,
+    "missing": []
+  },
+  "verified_export_files": 172,
+  "failed_attempts_retained": "/home/salboaie/work/lean_documents/tmp/portability-wDjrwn/claim-audit-t1rmhsmr/attempts/0001",
+  "independent_review": "Separate coordinator source-first and final model review, with explicit fixture-design familiarity; not blind or domain-expert review.",
+  "blockers": []
+}

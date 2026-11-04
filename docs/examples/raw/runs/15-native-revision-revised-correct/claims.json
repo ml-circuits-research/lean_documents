@@ -1,0 +1,97 @@
+{
+  "schema_version": 2,
+  "anchors": [
+    {
+      "report_anchor": "R1",
+      "report_sha256": "8d42f5d135503623016fc6fd32360c9fb8d9b320f9ed9c301e1bc81338f2129e",
+      "classification": "claims",
+      "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+    },
+    {
+      "report_anchor": "R2",
+      "report_sha256": "791407df5cb07fc428e0ac9f9bad2b42aabafbe5a70ec39e981ffe3433d38ae4",
+      "classification": "claims",
+      "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+    },
+    {
+      "report_anchor": "R3",
+      "report_sha256": "7f386681695d43f3e3a8ad9d210169041b3d8cd80b9a63cbb69346e52c39b117",
+      "classification": "claims",
+      "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+    },
+    {
+      "report_anchor": "R4",
+      "report_sha256": "4fd84e2175e6e198a0d04ff73abf06cb9e181513906b913ad2c0fc27f6a2ba88",
+      "classification": "claims",
+      "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+    },
+    {
+      "report_anchor": "R5",
+      "report_sha256": "ce0c7d58a7b639d296d9e2545398bfe11d045174452cd7f6dde720343b1cdf7a",
+      "classification": "claims",
+      "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+    },
+    {
+      "report_anchor": "R6",
+      "report_sha256": "9c7dafc982615d765175a80b0d5a4f65ed63d450117fc241ab20db3fe2d385cf",
+      "classification": "claims",
+      "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+    },
+    {
+      "report_anchor": "R7",
+      "report_sha256": "f181fc93a8a8faeb45640d3873dd37fc4532d531eb59674f9a98e99431cb9e29",
+      "classification": "claims",
+      "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+    },
+    {
+      "report_anchor": "document-preamble",
+      "report_sha256": "88ebd06780a279fea1d2b7018a20e49e8048980d8bc8dd1492da5f5eb14325da",
+      "classification": "non_claim",
+      "reason": "Document title only."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "R1",
+      "report_anchor": "R1",
+      "report_quote": "The total T7 charge is 120 credits.",
+      "disposition": "audited"
+    },
+    {
+      "claim_id": "R2",
+      "report_anchor": "R2",
+      "report_quote": "Charge A breaches the individual-charge cap.",
+      "disposition": "audited"
+    },
+    {
+      "claim_id": "R3",
+      "report_anchor": "R3",
+      "report_quote": "The physical receipt occurred at 16:40 local time on 4 November 2026.",
+      "disposition": "audited"
+    },
+    {
+      "claim_id": "R4",
+      "report_anchor": "R4",
+      "report_quote": "The physical receipt missed the policy P3 deadline.",
+      "disposition": "audited"
+    },
+    {
+      "claim_id": "R5",
+      "report_anchor": "R5",
+      "report_quote": "The supplied records do not establish T7 release eligibility.",
+      "disposition": "audited"
+    },
+    {
+      "claim_id": "R6",
+      "report_anchor": "R6",
+      "report_quote": "Charge B is 40 credits.",
+      "disposition": "audited"
+    },
+    {
+      "claim_id": "R7",
+      "report_anchor": "R7",
+      "report_quote": "The supplied package provides no grading criterion for calling the handover exemplary.",
+      "disposition": "audited"
+    }
+  ]
+}

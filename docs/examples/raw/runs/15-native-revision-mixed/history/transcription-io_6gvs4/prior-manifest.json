@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "algorithm": "sha256",
+  "index": "input/index.sqlite3",
+  "files": {
+    "input/audit-policy.json": {
+      "sha256": "4978e9ac9927b130eddf5fd3a37c5054fd2be7cce3ef981fad8f1c9947c0082e",
+      "bytes": 253
+    },
+    "input/catalog.json": {
+      "sha256": "52e59718b7a1b5e8d5ff5271ba6c389333618b712f6986c36a46a510a3b819f9",
+      "bytes": 1338
+    },
+    "input/index.sqlite3": {
+      "sha256": "f1e5bfc2b6a7e1cb80ef0307205553bd939c2df224227a00c2ae0760a7bfb942",
+      "bytes": 65536
+    },
+    "input/originals/D00001.md": {
+      "sha256": "3c1fa1c26b9f790bf0828698e5abefa1761ae768f8a32306fe11e5114b734abb",
+      "bytes": 898
+    },
+    "input/originals/D00002.docx": {
+      "sha256": "4a0cf796e8b3917bc1606f856a688d36c5d1aac4d82a6aba8e1576be91be5c42",
+      "bytes": 1420
+    },
+    "input/originals/D00003.pdf": {
+      "sha256": "535ad3e56da322f97d52c7bd036f66a545051f1702ce38d575c2f6ee8a262312",
+      "bytes": 1045
+    },
+    "input/originals/D00004.pdf": {
+      "sha256": "2d22efef6a77638e22040fbedad784697ae8cf45d91131a088e60d16b7e86eba",
+      "bytes": 132138
+    },
+    "input/report-ledger.json": {
+      "sha256": "5e0051cfd782f092607de7eb026425bea5f5434fb074b611359ff9fe1e75a671",
+      "bytes": 885
+    },
+    "input/report.md": {
+      "sha256": "0f02d7fe577187e915480a7faac3f41d39b3ae2565b2040de1bceef67f39f9f1",
+      "bytes": 929
+    },
+    "input/sources/01-policy.docx.md": {
+      "sha256": "22df24f6a56018bfc2ee554c39d0640852a0c193a5d4f858d534e58e267cdbc8",
+      "bytes": 1221
+    },
+    "input/sources/02-ledger.pdf.md": {
+      "sha256": "f0b44e3183ad585c4280dfc57028bde39fa20ed178b221443b703c3a05708df2",
+      "bytes": 429
+    },
+    "input/sources/03-receipt-scan.pdf.md": {
+      "sha256": "3c4d0b3768b90ec399d63647736d522a41ffe5dc273063a8922b512b25508e83",
+      "bytes": 299
+    }
+  }
+}

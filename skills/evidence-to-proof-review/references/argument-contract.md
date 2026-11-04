@@ -14,6 +14,8 @@ For **claim refutation**, identify a contradictory relevant case or a proof of t
 
 For **invalid inference**, identify the failing inference rather than just calling the report wrong. Example: a rule `(smokePassed AND securityApproved) -> ready` cannot establish readiness from smoke tests alone. A model with smoke=true, security=false, ready=false satisfies the rule and smoke premise, so the inference fails. This does not establish actual non-readiness.
 
+For **unsound justification**, identify the false offered premise or rule and the independent evidence or counterexample contradicting it. Use `unsound_argument` / `outcome: unsound`, with a contradicted quoted premise and its evidence/proof links. A report can infer a true conclusion through a valid deduction from a false premise; do not call modus ponens invalid merely because the rule it uses is false. Keep that distinct from a conclusion that does not follow even if the premises are granted.
+
 For **insufficient support**, distinguish the report's own justification from what an independent corpus search found. Name the missing premise, searched sources and limits, and why present evidence does not establish it. “No approval attachment” does not establish “approval never existed”. Conversely, independent evidence can support a poorly cited claim while its citation defect remains an audit observation.
 
 For conflicting testimony preserve both attributed statements and compare scope, time and proposition before declaring a conflict. Never resolve it by selecting whichever source agrees with the report.

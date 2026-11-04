@@ -1,0 +1,259 @@
+{
+  "status": "passed",
+  "checks": 36,
+  "errors": [],
+  "results": [
+    {
+      "protocol": "file",
+      "width": 320,
+      "file": "docs/flexibility-review.html",
+      "heading": "Audit the finding and its argument separately",
+      "overflow": false
+    },
+    {
+      "protocol": "file",
+      "width": 320,
+      "file": "docs/flexibility-data/agent-native/index.html",
+      "heading": "Lean-only audit: evidence and arguments",
+      "overflow": false
+    },
+    {
+      "protocol": "file",
+      "width": 320,
+      "file": "docs/flexibility-data/agent-native/_views/Audit.lean.html",
+      "heading": "Audit.lean",
+      "overflow": false
+    },
+    {
+      "protocol": "file",
+      "width": 320,
+      "file": "docs/flexibility-data/portable-audit/index.html",
+      "heading": "Copied-skill audit: complete workflow",
+      "overflow": false
+    },
+    {
+      "protocol": "file",
+      "width": 320,
+      "file": "docs/flexibility-data/portable-audit/_views/audit-report.md.html",
+      "heading": "audit-report.md",
+      "overflow": false
+    },
+    {
+      "protocol": "file",
+      "width": 320,
+      "file": "docs/flexibility-data/portable-audit/_views/models/Stock/Audit.lean.html",
+      "heading": "Audit.lean",
+      "overflow": false
+    },
+    {
+      "protocol": "file",
+      "width": 390,
+      "file": "docs/flexibility-review.html",
+      "heading": "Audit the finding and its argument separately",
+      "overflow": false
+    },
+    {
+      "protocol": "file",
+      "width": 390,
+      "file": "docs/flexibility-data/agent-native/index.html",
+      "heading": "Lean-only audit: evidence and arguments",
+      "overflow": false
+    },
+    {
+      "protocol": "file",
+      "width": 390,
+      "file": "docs/flexibility-data/agent-native/_views/Audit.lean.html",
+      "heading": "Audit.lean",
+      "overflow": false
+    },
+    {
+      "protocol": "file",
+      "width": 390,
+      "file": "docs/flexibility-data/portable-audit/index.html",
+      "heading": "Copied-skill audit: complete workflow",
+      "overflow": false
+    },
+    {
+      "protocol": "file",
+      "width": 390,
+      "file": "docs/flexibility-data/portable-audit/_views/audit-report.md.html",
+      "heading": "audit-report.md",
+      "overflow": false
+    },
+    {
+      "protocol": "file",
+      "width": 390,
+      "file": "docs/flexibility-data/portable-audit/_views/models/Stock/Audit.lean.html",
+      "heading": "Audit.lean",
+      "overflow": false
+    },
+    {
+      "protocol": "file",
+      "width": 1440,
+      "file": "docs/flexibility-review.html",
+      "heading": "Audit the finding and its argument separately",
+      "overflow": false
+    },
+    {
+      "protocol": "file",
+      "width": 1440,
+      "file": "docs/flexibility-data/agent-native/index.html",
+      "heading": "Lean-only audit: evidence and arguments",
+      "overflow": false
+    },
+    {
+      "protocol": "file",
+      "width": 1440,
+      "file": "docs/flexibility-data/agent-native/_views/Audit.lean.html",
+      "heading": "Audit.lean",
+      "overflow": false
+    },
+    {
+      "protocol": "file",
+      "width": 1440,
+      "file": "docs/flexibility-data/portable-audit/index.html",
+      "heading": "Copied-skill audit: complete workflow",
+      "overflow": false
+    },
+    {
+      "protocol": "file",
+      "width": 1440,
+      "file": "docs/flexibility-data/portable-audit/_views/audit-report.md.html",
+      "heading": "audit-report.md",
+      "overflow": false
+    },
+    {
+      "protocol": "file",
+      "width": 1440,
+      "file": "docs/flexibility-data/portable-audit/_views/models/Stock/Audit.lean.html",
+      "heading": "Audit.lean",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 320,
+      "file": "docs/flexibility-review.html",
+      "heading": "Audit the finding and its argument separately",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 320,
+      "file": "docs/flexibility-data/agent-native/index.html",
+      "heading": "Lean-only audit: evidence and arguments",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 320,
+      "file": "docs/flexibility-data/agent-native/_views/Audit.lean.html",
+      "heading": "Audit.lean",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 320,
+      "file": "docs/flexibility-data/portable-audit/index.html",
+      "heading": "Copied-skill audit: complete workflow",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 320,
+      "file": "docs/flexibility-data/portable-audit/_views/audit-report.md.html",
+      "heading": "audit-report.md",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 320,
+      "file": "docs/flexibility-data/portable-audit/_views/models/Stock/Audit.lean.html",
+      "heading": "Audit.lean",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 390,
+      "file": "docs/flexibility-review.html",
+      "heading": "Audit the finding and its argument separately",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 390,
+      "file": "docs/flexibility-data/agent-native/index.html",
+      "heading": "Lean-only audit: evidence and arguments",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 390,
+      "file": "docs/flexibility-data/agent-native/_views/Audit.lean.html",
+      "heading": "Audit.lean",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 390,
+      "file": "docs/flexibility-data/portable-audit/index.html",
+      "heading": "Copied-skill audit: complete workflow",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 390,
+      "file": "docs/flexibility-data/portable-audit/_views/audit-report.md.html",
+      "heading": "audit-report.md",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 390,
+      "file": "docs/flexibility-data/portable-audit/_views/models/Stock/Audit.lean.html",
+      "heading": "Audit.lean",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 1440,
+      "file": "docs/flexibility-review.html",
+      "heading": "Audit the finding and its argument separately",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 1440,
+      "file": "docs/flexibility-data/agent-native/index.html",
+      "heading": "Lean-only audit: evidence and arguments",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 1440,
+      "file": "docs/flexibility-data/agent-native/_views/Audit.lean.html",
+      "heading": "Audit.lean",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 1440,
+      "file": "docs/flexibility-data/portable-audit/index.html",
+      "heading": "Copied-skill audit: complete workflow",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 1440,
+      "file": "docs/flexibility-data/portable-audit/_views/audit-report.md.html",
+      "heading": "audit-report.md",
+      "overflow": false
+    },
+    {
+      "protocol": "http",
+      "width": 1440,
+      "file": "docs/flexibility-data/portable-audit/_views/models/Stock/Audit.lean.html",
+      "heading": "Audit.lean",
+      "overflow": false
+    }
+  ]
+}

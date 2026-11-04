@@ -1,0 +1,838 @@
+{
+  "fixture": "examples/15-native-revision",
+  "authorship": "Nonblind fixture author audit; separate coordinator source-first and model review. Not a blind accuracy benchmark.",
+  "runs": [
+    {
+      "run": "initial-errors",
+      "stage": "initial",
+      "report_variant": "deliberate-errors",
+      "workspace": "tmp/native-revision-initial-errors/claim-audit-lr1e887a",
+      "export": "tmp/native-revision-exports/initial-errors",
+      "contract_version": 2,
+      "brief_origin": "inferred",
+      "lean_version": "4.24.0",
+      "proof_status": "passed",
+      "findings": 7,
+      "referenced_proofs": 6,
+      "ledger_original_sha256": "535ad3e56da322f97d52c7bd036f66a545051f1702ce38d575c2f6ee8a262312",
+      "report_original_sha256": "3c1fa1c26b9f790bf0828698e5abefa1761ae768f8a32306fe11e5114b734abb",
+      "manifest_sha256": "7874d2f94852a339cc45022f9698f79c104375fabd054ca24e749202c97fcf5f",
+      "registration": {
+        "schema_version": 2,
+        "anchors": [
+          {
+            "report_anchor": "R1",
+            "report_sha256": "6b6618f90f728a648c2659ca03b797a6051d297c3b68dbbec6e5db54f202f294",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R2",
+            "report_sha256": "3b2e647840f04b87625b71dea2c2bd0f3dba9904bee53b2c77f43f21d9e62d0f",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R3",
+            "report_sha256": "7f386681695d43f3e3a8ad9d210169041b3d8cd80b9a63cbb69346e52c39b117",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R4",
+            "report_sha256": "17d4b724b04baf6dbf3396aacacf0e2d7bf34fafb2c0907879040f7b1e74da1e",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R5",
+            "report_sha256": "5e2ea356184d6cb85482890c588dbdc54aff2e25c6a037e00ed3557c42d9d56c",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R6",
+            "report_sha256": "9c7dafc982615d765175a80b0d5a4f65ed63d450117fc241ab20db3fe2d385cf",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R7",
+            "report_sha256": "a75e534f95dc911bf41ecf3b42686102748d7e7c5e9db0bdc817bb8d25eb0eb4",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "document-preamble",
+            "report_sha256": "88ebd06780a279fea1d2b7018a20e49e8048980d8bc8dd1492da5f5eb14325da",
+            "classification": "non_claim",
+            "reason": "Document title only."
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "R1",
+            "report_anchor": "R1",
+            "report_quote": "The total T7 charge is 130 credits.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R2",
+            "report_anchor": "R2",
+            "report_quote": "Charge A complies with the individual-charge cap.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R3",
+            "report_anchor": "R3",
+            "report_quote": "The physical receipt occurred at 16:40 local time on 4 November 2026.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R4",
+            "report_anchor": "R4",
+            "report_quote": "The physical receipt was timely under policy P3.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R5",
+            "report_anchor": "R5",
+            "report_quote": "T7 release eligibility is established.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R6",
+            "report_anchor": "R6",
+            "report_quote": "Charge B is 40 credits.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R7",
+            "report_anchor": "R7",
+            "report_quote": "The handover was exemplary.",
+            "disposition": "audited"
+          }
+        ]
+      },
+      "dependencies": {
+        "coverage": "complete",
+        "global_documents": [],
+        "claims": {
+          "R1": [
+            "D00002",
+            "D00003"
+          ],
+          "R2": [
+            "D00002",
+            "D00003"
+          ],
+          "R3": [
+            "D00004"
+          ],
+          "R4": [
+            "D00002",
+            "D00004"
+          ],
+          "R5": [
+            "D00002",
+            "D00003",
+            "D00004"
+          ],
+          "R6": [
+            "D00003"
+          ],
+          "R7": [
+            "D00002",
+            "D00003",
+            "D00004"
+          ]
+        },
+        "rationale": "Dependencies include source evidence and bounded searches. R7 scans all sources for grading criteria; therefore it is conservatively affected by ledger refresh even though its semantic result is unchanged."
+      },
+      "invalidation": null,
+      "verdicts": [
+        {
+          "claim_id": "R1",
+          "semantic_state": "refuted",
+          "argument_status": "invalid_inference",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "R2",
+          "semantic_state": "refuted",
+          "argument_status": "invalid_inference",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "R3",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R4",
+          "semantic_state": "refuted",
+          "argument_status": "unsound_argument",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "R5",
+          "semantic_state": "undetermined",
+          "argument_status": "unsound_argument",
+          "formal_status": "auxiliary"
+        },
+        {
+          "claim_id": "R6",
+          "semantic_state": "supported",
+          "argument_status": "insufficient_support",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R7",
+          "semantic_state": "not_applicable",
+          "argument_status": "nonformal",
+          "formal_status": "not_attempted"
+        }
+      ]
+    },
+    {
+      "run": "initial-correct",
+      "stage": "initial",
+      "report_variant": "correct-initially",
+      "workspace": "tmp/native-revision-initial-correct/claim-audit-ay376nye",
+      "export": "tmp/native-revision-exports/initial-correct",
+      "contract_version": 2,
+      "brief_origin": "inferred",
+      "lean_version": "4.24.0",
+      "proof_status": "passed",
+      "findings": 7,
+      "referenced_proofs": 6,
+      "ledger_original_sha256": "535ad3e56da322f97d52c7bd036f66a545051f1702ce38d575c2f6ee8a262312",
+      "report_original_sha256": "8e78a2380ab307e5d79a43c6c3ecfe2a5866bf53f46190fe5b2195357b6b06c0",
+      "manifest_sha256": "28c1e0d3d0b74ed6daa31b29c1fb6e4f7321120c92c4ada56fa492cd6de6f387",
+      "registration": {
+        "schema_version": 2,
+        "anchors": [
+          {
+            "report_anchor": "R1",
+            "report_sha256": "8d42f5d135503623016fc6fd32360c9fb8d9b320f9ed9c301e1bc81338f2129e",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R2",
+            "report_sha256": "791407df5cb07fc428e0ac9f9bad2b42aabafbe5a70ec39e981ffe3433d38ae4",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R3",
+            "report_sha256": "7f386681695d43f3e3a8ad9d210169041b3d8cd80b9a63cbb69346e52c39b117",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R4",
+            "report_sha256": "4fd84e2175e6e198a0d04ff73abf06cb9e181513906b913ad2c0fc27f6a2ba88",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R5",
+            "report_sha256": "ce0c7d58a7b639d296d9e2545398bfe11d045174452cd7f6dde720343b1cdf7a",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R6",
+            "report_sha256": "9c7dafc982615d765175a80b0d5a4f65ed63d450117fc241ab20db3fe2d385cf",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R7",
+            "report_sha256": "f181fc93a8a8faeb45640d3873dd37fc4532d531eb59674f9a98e99431cb9e29",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "document-preamble",
+            "report_sha256": "88ebd06780a279fea1d2b7018a20e49e8048980d8bc8dd1492da5f5eb14325da",
+            "classification": "non_claim",
+            "reason": "Document title only."
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "R1",
+            "report_anchor": "R1",
+            "report_quote": "The total T7 charge is 120 credits.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R2",
+            "report_anchor": "R2",
+            "report_quote": "Charge A breaches the individual-charge cap.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R3",
+            "report_anchor": "R3",
+            "report_quote": "The physical receipt occurred at 16:40 local time on 4 November 2026.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R4",
+            "report_anchor": "R4",
+            "report_quote": "The physical receipt missed the policy P3 deadline.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R5",
+            "report_anchor": "R5",
+            "report_quote": "The supplied records do not establish T7 release eligibility.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R6",
+            "report_anchor": "R6",
+            "report_quote": "Charge B is 40 credits.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R7",
+            "report_anchor": "R7",
+            "report_quote": "The supplied package provides no grading criterion for calling the handover exemplary.",
+            "disposition": "audited"
+          }
+        ]
+      },
+      "dependencies": {
+        "coverage": "complete",
+        "global_documents": [],
+        "claims": {
+          "R1": [
+            "D00002",
+            "D00003"
+          ],
+          "R2": [
+            "D00002",
+            "D00003"
+          ],
+          "R3": [
+            "D00004"
+          ],
+          "R4": [
+            "D00002",
+            "D00004"
+          ],
+          "R5": [
+            "D00002",
+            "D00003",
+            "D00004"
+          ],
+          "R6": [
+            "D00003"
+          ],
+          "R7": [
+            "D00002",
+            "D00003",
+            "D00004"
+          ]
+        },
+        "rationale": "Dependencies include source evidence and bounded searches. R7 scans all sources for grading criteria; therefore it is conservatively affected by ledger refresh even though its semantic result is unchanged."
+      },
+      "invalidation": null,
+      "verdicts": [
+        {
+          "claim_id": "R1",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R2",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R3",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R4",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R5",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "auxiliary"
+        },
+        {
+          "claim_id": "R6",
+          "semantic_state": "supported",
+          "argument_status": "insufficient_support",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R7",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "not_attempted"
+        }
+      ]
+    },
+    {
+      "run": "revised-errors",
+      "stage": "revised",
+      "report_variant": "deliberate-errors",
+      "workspace": "tmp/native-revision-revised-errors/claim-audit-revision-neuwuymk",
+      "export": "tmp/native-revision-exports/revised-errors",
+      "contract_version": 2,
+      "brief_origin": "inferred",
+      "lean_version": "4.24.0",
+      "proof_status": "passed",
+      "findings": 7,
+      "referenced_proofs": 6,
+      "ledger_original_sha256": "3c49680f3332d2f30535aff99f59c551c046d049fcc7e02444a446309cb8a6a4",
+      "report_original_sha256": "3c1fa1c26b9f790bf0828698e5abefa1761ae768f8a32306fe11e5114b734abb",
+      "manifest_sha256": "f5999cfb310cf94a165bc6c25407108a22fc4298cd816df1e85d199a06306549",
+      "registration": {
+        "schema_version": 2,
+        "anchors": [
+          {
+            "report_anchor": "R1",
+            "report_sha256": "6b6618f90f728a648c2659ca03b797a6051d297c3b68dbbec6e5db54f202f294",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R2",
+            "report_sha256": "3b2e647840f04b87625b71dea2c2bd0f3dba9904bee53b2c77f43f21d9e62d0f",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R3",
+            "report_sha256": "7f386681695d43f3e3a8ad9d210169041b3d8cd80b9a63cbb69346e52c39b117",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R4",
+            "report_sha256": "17d4b724b04baf6dbf3396aacacf0e2d7bf34fafb2c0907879040f7b1e74da1e",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R5",
+            "report_sha256": "5e2ea356184d6cb85482890c588dbdc54aff2e25c6a037e00ed3557c42d9d56c",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R6",
+            "report_sha256": "9c7dafc982615d765175a80b0d5a4f65ed63d450117fc241ab20db3fe2d385cf",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R7",
+            "report_sha256": "a75e534f95dc911bf41ecf3b42686102748d7e7c5e9db0bdc817bb8d25eb0eb4",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "document-preamble",
+            "report_sha256": "88ebd06780a279fea1d2b7018a20e49e8048980d8bc8dd1492da5f5eb14325da",
+            "classification": "non_claim",
+            "reason": "Document title only."
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "R1",
+            "report_anchor": "R1",
+            "report_quote": "The total T7 charge is 130 credits.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R2",
+            "report_anchor": "R2",
+            "report_quote": "Charge A complies with the individual-charge cap.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R3",
+            "report_anchor": "R3",
+            "report_quote": "The physical receipt occurred at 16:40 local time on 4 November 2026.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R4",
+            "report_anchor": "R4",
+            "report_quote": "The physical receipt was timely under policy P3.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R5",
+            "report_anchor": "R5",
+            "report_quote": "T7 release eligibility is established.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R6",
+            "report_anchor": "R6",
+            "report_quote": "Charge B is 40 credits.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R7",
+            "report_anchor": "R7",
+            "report_quote": "The handover was exemplary.",
+            "disposition": "audited"
+          }
+        ]
+      },
+      "dependencies": {
+        "coverage": "complete",
+        "global_documents": [],
+        "claims": {
+          "R1": [
+            "D00002",
+            "D00003"
+          ],
+          "R2": [
+            "D00002",
+            "D00003"
+          ],
+          "R3": [
+            "D00004"
+          ],
+          "R4": [
+            "D00002",
+            "D00004"
+          ],
+          "R5": [
+            "D00002",
+            "D00003",
+            "D00004"
+          ],
+          "R6": [
+            "D00003"
+          ],
+          "R7": [
+            "D00002",
+            "D00003",
+            "D00004"
+          ]
+        },
+        "rationale": "Dependencies include source evidence and bounded searches. R7 scans all sources for grading criteria; therefore it is conservatively affected by ledger refresh even though its semantic result is unchanged."
+      },
+      "invalidation": {
+        "parent_workspace": "/home/salboaie/work/lean_documents/tmp/native-revision-initial-errors/claim-audit-lr1e887a",
+        "changed_document": "D00003",
+        "old_sha256": "535ad3e56da322f97d52c7bd036f66a545051f1702ce38d575c2f6ee8a262312",
+        "new_sha256": "3c49680f3332d2f30535aff99f59c551c046d049fcc7e02444a446309cb8a6a4",
+        "affected_claims": [
+          "R1",
+          "R2",
+          "R5",
+          "R6",
+          "R7"
+        ],
+        "invalidated_manual_transcriptions": [],
+        "technical_results": "all invalidated",
+        "reason": "Affected semantic claims selected from complete source and search dependencies and their transitive claim dependents; all technical proofs still require rechecking."
+      },
+      "verdicts": [
+        {
+          "claim_id": "R1",
+          "semantic_state": "refuted",
+          "argument_status": "unsound_argument",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "R2",
+          "semantic_state": "refuted",
+          "argument_status": "invalid_inference",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "R3",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R4",
+          "semantic_state": "refuted",
+          "argument_status": "unsound_argument",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "R5",
+          "semantic_state": "undetermined",
+          "argument_status": "unsound_argument",
+          "formal_status": "auxiliary"
+        },
+        {
+          "claim_id": "R6",
+          "semantic_state": "supported",
+          "argument_status": "insufficient_support",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R7",
+          "semantic_state": "not_applicable",
+          "argument_status": "nonformal",
+          "formal_status": "not_attempted"
+        }
+      ]
+    },
+    {
+      "run": "revised-correct",
+      "stage": "revised",
+      "report_variant": "correct-initially",
+      "workspace": "tmp/native-revision-revised-correct/claim-audit-revision-f2orq5vc",
+      "export": "tmp/native-revision-exports/revised-correct",
+      "contract_version": 2,
+      "brief_origin": "inferred",
+      "lean_version": "4.24.0",
+      "proof_status": "passed",
+      "findings": 7,
+      "referenced_proofs": 6,
+      "ledger_original_sha256": "3c49680f3332d2f30535aff99f59c551c046d049fcc7e02444a446309cb8a6a4",
+      "report_original_sha256": "8e78a2380ab307e5d79a43c6c3ecfe2a5866bf53f46190fe5b2195357b6b06c0",
+      "manifest_sha256": "c4c87377d5b4da23e2345249f486d5e78d61f2eb385a61338e44a49a96102316",
+      "registration": {
+        "schema_version": 2,
+        "anchors": [
+          {
+            "report_anchor": "R1",
+            "report_sha256": "8d42f5d135503623016fc6fd32360c9fb8d9b320f9ed9c301e1bc81338f2129e",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R2",
+            "report_sha256": "791407df5cb07fc428e0ac9f9bad2b42aabafbe5a70ec39e981ffe3433d38ae4",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R3",
+            "report_sha256": "7f386681695d43f3e3a8ad9d210169041b3d8cd80b9a63cbb69346e52c39b117",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R4",
+            "report_sha256": "4fd84e2175e6e198a0d04ff73abf06cb9e181513906b913ad2c0fc27f6a2ba88",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R5",
+            "report_sha256": "ce0c7d58a7b639d296d9e2545398bfe11d045174452cd7f6dde720343b1cdf7a",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R6",
+            "report_sha256": "9c7dafc982615d765175a80b0d5a4f65ed63d450117fc241ab20db3fe2d385cf",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "R7",
+            "report_sha256": "f181fc93a8a8faeb45640d3873dd37fc4532d531eb59674f9a98e99431cb9e29",
+            "classification": "claims",
+            "reason": "The first sentence is the independently audited conclusion; remaining exact premises, citations and inference are audited as argument obligations below."
+          },
+          {
+            "report_anchor": "document-preamble",
+            "report_sha256": "88ebd06780a279fea1d2b7018a20e49e8048980d8bc8dd1492da5f5eb14325da",
+            "classification": "non_claim",
+            "reason": "Document title only."
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "R1",
+            "report_anchor": "R1",
+            "report_quote": "The total T7 charge is 120 credits.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R2",
+            "report_anchor": "R2",
+            "report_quote": "Charge A breaches the individual-charge cap.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R3",
+            "report_anchor": "R3",
+            "report_quote": "The physical receipt occurred at 16:40 local time on 4 November 2026.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R4",
+            "report_anchor": "R4",
+            "report_quote": "The physical receipt missed the policy P3 deadline.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R5",
+            "report_anchor": "R5",
+            "report_quote": "The supplied records do not establish T7 release eligibility.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R6",
+            "report_anchor": "R6",
+            "report_quote": "Charge B is 40 credits.",
+            "disposition": "audited"
+          },
+          {
+            "claim_id": "R7",
+            "report_anchor": "R7",
+            "report_quote": "The supplied package provides no grading criterion for calling the handover exemplary.",
+            "disposition": "audited"
+          }
+        ]
+      },
+      "dependencies": {
+        "coverage": "complete",
+        "global_documents": [],
+        "claims": {
+          "R1": [
+            "D00002",
+            "D00003"
+          ],
+          "R2": [
+            "D00002",
+            "D00003"
+          ],
+          "R3": [
+            "D00004"
+          ],
+          "R4": [
+            "D00002",
+            "D00004"
+          ],
+          "R5": [
+            "D00002",
+            "D00003",
+            "D00004"
+          ],
+          "R6": [
+            "D00003"
+          ],
+          "R7": [
+            "D00002",
+            "D00003",
+            "D00004"
+          ]
+        },
+        "rationale": "Dependencies include source evidence and bounded searches. R7 scans all sources for grading criteria; therefore it is conservatively affected by ledger refresh even though its semantic result is unchanged."
+      },
+      "invalidation": {
+        "parent_workspace": "/home/salboaie/work/lean_documents/tmp/native-revision-initial-correct/claim-audit-ay376nye",
+        "changed_document": "D00003",
+        "old_sha256": "535ad3e56da322f97d52c7bd036f66a545051f1702ce38d575c2f6ee8a262312",
+        "new_sha256": "3c49680f3332d2f30535aff99f59c551c046d049fcc7e02444a446309cb8a6a4",
+        "affected_claims": [
+          "R1",
+          "R2",
+          "R5",
+          "R6",
+          "R7"
+        ],
+        "invalidated_manual_transcriptions": [],
+        "technical_results": "all invalidated",
+        "reason": "Affected semantic claims selected from complete source and search dependencies and their transitive claim dependents; all technical proofs still require rechecking."
+      },
+      "verdicts": [
+        {
+          "claim_id": "R1",
+          "semantic_state": "refuted",
+          "argument_status": "unsound_argument",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "R2",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R3",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R4",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R5",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "auxiliary"
+        },
+        {
+          "claim_id": "R6",
+          "semantic_state": "supported",
+          "argument_status": "insufficient_support",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "R7",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "not_attempted"
+        }
+      ]
+    }
+  ],
+  "stale_rejections": "tmp/native-revision-build/stale-rejections.json",
+  "final_commands": "tmp/native-revision-build/final-commands.json",
+  "bounded_resume_evidence": {
+    "prepare": "tmp/native-revision-build/prepare-correct.json",
+    "resume": "tmp/native-revision-build/resume-correct.json",
+    "meaning": "Actual prepare processed report+DOCX (2/4), actual resume processed searchable PDF+scan (2/4). Scan remains explicitly partial after low-confidence OCR and reviewed transcription."
+  },
+  "ocr_review": {
+    "original_visualization": "tmp/native-revision-build/receipt-original.png",
+    "mistake": "Raw OCR Transfer:17; original visibly T7",
+    "correction_logs": [
+      "tmp/native-revision-build/transcribe-errors.json",
+      "tmp/native-revision-build/transcribe-correct.json"
+    ],
+    "scan_original_sha256": "2d22efef6a77638e22040fbedad784697ae8cf45d91131a088e60d16b7e86eba"
+  },
+  "changed_claim": "Initially correct R1 flips supported/proved\u2192refuted/refuted when C20\u2192C45 and total120\u2192145. Mixed130 remains refuted. Its old arithmetic premise is still mathematically coherent for120 but no longer authoritative.",
+  "affected_claims": [
+    "R1",
+    "R2",
+    "R5",
+    "R6",
+    "R7"
+  ],
+  "unaffected_semantic_claims": [
+    "R3",
+    "R4"
+  ],
+  "technical_invalidation": "All proof results invalidated and actually rechecked in both revised workspaces.",
+  "source_rebuild": "All three generated source byte streams match both immutable initial snapshots after deterministic rebuild in this environment."
+}

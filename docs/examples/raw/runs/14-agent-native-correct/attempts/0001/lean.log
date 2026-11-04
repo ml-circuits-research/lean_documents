@@ -1,0 +1,7 @@
+tmp/paired-current-g17n2r00/agent-native-correct/Audit.lean:23:50: error: failed to synthesize
+  Decidable ¬approved { amount := 9, approved := false }
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'SpendingCorrect.budget' does not depend on any axioms
+'SpendingCorrect.approvalOpen' depends on axioms: [sorryAx]
+'SpendingCorrect.approvalNeither' depends on axioms: [sorryAx]

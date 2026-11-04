@@ -1,0 +1,244 @@
+{
+  "13": {
+    "dossier": "13-portable-html",
+    "source_runs": [
+      {
+        "variant": "mixed",
+        "execution": "reused_existing_executed_audit_exact_inputs_not_rerun",
+        "workspace": "/home/salboaie/work/lean_documents/docs/flexibility-data/portable-audit/raw",
+        "input_map": [
+          {
+            "example_path": "examples/13-portable-html/report-mixed.md",
+            "run_path": "/home/salboaie/work/lean_documents/docs/flexibility-data/portable-audit/raw/input/originals/D00001.md",
+            "sha256": "721e3a2cba05950cf838fa8c5731e5d36e93f49f8f71cc00568fabd8bd7deb0e"
+          },
+          {
+            "example_path": "examples/13-portable-html/sources/stock.html",
+            "run_path": "/home/salboaie/work/lean_documents/docs/flexibility-data/portable-audit/raw/input/originals/D00002.html",
+            "sha256": "49335a218d26cb5c9a79726b21c1565eb5f5318821add20f66c1e7e4dcac7c55"
+          }
+        ]
+      },
+      {
+        "variant": "correct",
+        "execution": "new_executed_audit",
+        "workspace": "/home/salboaie/work/lean_documents/tmp/paired-current-g17n2r00/claim-audit-76p4zp3_",
+        "input_map": [
+          {
+            "example_path": "examples/13-portable-html/report-correct.md",
+            "run_path": "/home/salboaie/work/lean_documents/tmp/paired-current-g17n2r00/claim-audit-76p4zp3_/input/originals/D00001.md",
+            "sha256": "a1dd383e41334ad388cab432ec8a78558dd9aa5839c246e824d3be3237b27c47"
+          },
+          {
+            "example_path": "examples/13-portable-html/sources/stock.html",
+            "run_path": "/home/salboaie/work/lean_documents/tmp/paired-current-g17n2r00/claim-audit-76p4zp3_/input/originals/D00002.html",
+            "sha256": "49335a218d26cb5c9a79726b21c1565eb5f5318821add20f66c1e7e4dcac7c55"
+          }
+        ]
+      }
+    ],
+    "mixed": {
+      "status": "reused_existing_executed_success",
+      "contract_profile": "helper v2",
+      "outcomes": [
+        {
+          "claim_id": "C1",
+          "report_quote": "Counted stock is 45 units.",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C2",
+          "report_quote": "Counted stock is 60 units.",
+          "semantic_state": "refuted",
+          "argument_status": "unsound_argument",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "C3",
+          "report_quote": "A is eligible for release.",
+          "semantic_state": "supported",
+          "argument_status": "unsound_argument",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C4",
+          "report_quote": "A never received prior clearance.",
+          "semantic_state": "undetermined",
+          "argument_status": "invalid_inference",
+          "formal_status": "auxiliary"
+        }
+      ]
+    },
+    "correct": {
+      "status": "executed_success",
+      "execution_mode": "bundled_helpers_copied_self_contained",
+      "outcomes": [
+        {
+          "claim_id": "C1",
+          "report_quote": "Counted stock is 45 units",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C2",
+          "report_quote": "All rows together sum to 60 units",
+          "semantic_state": "supported",
+          "argument_status": "insufficient_support",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C3",
+          "report_quote": "that is not the defined counted-stock total.",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C4",
+          "report_quote": "A is eligible for release",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C5",
+          "report_quote": "A signature alone is insufficient",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C6",
+          "report_quote": "No historical clearance records were supplied.",
+          "semantic_state": "supported",
+          "argument_status": "insufficient_support",
+          "formal_status": "not_attempted"
+        },
+        {
+          "claim_id": "C7",
+          "report_quote": "the existence of a prior clearance is not established or refuted by this dossier.",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        }
+      ],
+      "registered_claims": 7,
+      "helper_status": "passed",
+      "proof_checks": 17,
+      "exact_target_checks": 6,
+      "axioms": [
+        "propext"
+      ],
+      "export": "/home/salboaie/work/lean_documents/tmp/paired-current-g17n2r00/portable-correct-export-final",
+      "export_files": 156,
+      "independent_review": "completed_nonblind_source_first_coordinator_review",
+      "review_artifact": "/home/salboaie/work/lean_documents/tmp/paired-current-g17n2r00/claim-audit-76p4zp3_/independent-review.md"
+    },
+    "review": "A separate coordinator reconstructed outcomes from original sources before model inspection and completed correspondence review; author and coordinator knew fixture purpose and saw both report variants, so this is nonblind. Native correct also received an actual independent Lean replay. Alternate reports were not evidence.",
+    "evaluator_expected_files_read": false
+  },
+  "14": {
+    "dossier": "14-agent-native",
+    "source_runs": [
+      {
+        "variant": "mixed",
+        "execution": "reused_existing_executed_audit_exact_inputs_not_rerun",
+        "workspace": "/home/salboaie/work/lean_documents/tmp/agent-native-audit-AwYPQy",
+        "input_map": [
+          {
+            "example_path": "examples/14-agent-native/report-mixed.md",
+            "run_path": "/home/salboaie/work/lean_documents/tmp/agent-native-audit-AwYPQy/report-mixed.md",
+            "sha256": "a3d4c3b9e40f540ea1795fe8f43fb2f0745c6c06dd1cd7158acaddacf003007d"
+          },
+          {
+            "example_path": "examples/14-agent-native/sources/source.md",
+            "run_path": "/home/salboaie/work/lean_documents/tmp/agent-native-audit-AwYPQy/source.md",
+            "sha256": "1c27a141faac2cf0f0de038c81525c460ccbef9bff03312dd77b7f73c1724207"
+          }
+        ]
+      },
+      {
+        "variant": "correct",
+        "execution": "new_executed_audit",
+        "workspace": "/home/salboaie/work/lean_documents/tmp/paired-current-g17n2r00/agent-native-correct",
+        "input_map": [
+          {
+            "example_path": "examples/14-agent-native/report-correct.md",
+            "run_path": "/home/salboaie/work/lean_documents/tmp/paired-current-g17n2r00/agent-native-correct/input/report.md",
+            "sha256": "7fbb592c0f19fb4866fd130ccc9fb9ef25d17f113b039f4376c6ee48fec0266e"
+          },
+          {
+            "example_path": "examples/14-agent-native/sources/source.md",
+            "run_path": "/home/salboaie/work/lean_documents/tmp/paired-current-g17n2r00/agent-native-correct/input/sources/source.md",
+            "sha256": "1c27a141faac2cf0f0de038c81525c460ccbef9bff03312dd77b7f73c1724207"
+          }
+        ]
+      }
+    ],
+    "mixed": {
+      "status": "reused_existing_executed_success",
+      "contract_profile": "agent-native narrative v2-equivalent mapping; not helper validated",
+      "outcomes": [
+        {
+          "claim_id": "C1",
+          "report_quote": "Item A is within budget",
+          "semantic_state": "supported",
+          "argument_status": "unsound_argument",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C2",
+          "report_quote": "Item A is over budget.",
+          "semantic_state": "refuted",
+          "argument_status": "insufficient_support",
+          "formal_status": "refuted"
+        },
+        {
+          "claim_id": "C3",
+          "report_quote": "Item A was approved.",
+          "semantic_state": "undetermined",
+          "argument_status": "insufficient_support",
+          "formal_status": "auxiliary"
+        }
+      ]
+    },
+    "correct": {
+      "status": "executed_success",
+      "execution_mode": "agent-native",
+      "outcomes": [
+        {
+          "claim_id": "C1",
+          "report_quote": "Item A is within budget",
+          "semantic_state": "supported",
+          "argument_status": "sufficient",
+          "formal_status": "proved"
+        },
+        {
+          "claim_id": "C2",
+          "report_quote": "The supplied spending record does not establish whether A was approved.",
+          "semantic_state": "supported",
+          "argument_status": "insufficient_support",
+          "formal_status": "proved"
+        }
+      ],
+      "registered_claims": 2,
+      "lean_status": "passed",
+      "exit_status": 0,
+      "exact_target_checks": 3,
+      "axioms": [],
+      "python_v2_validator": "not_attempted",
+      "failed_attempt": "attempts/0001",
+      "metadata_assurance": "agent-reviewed v2-equivalent mapping",
+      "independent_review": "completed_nonblind_source_first_coordinator_review",
+      "review_artifact": "/home/salboaie/work/lean_documents/tmp/paired-current-g17n2r00/agent-native-correct/independent-review.md",
+      "bundle": "/home/salboaie/work/lean_documents/tmp/paired-current-g17n2r00/agent-native-correct-bundle",
+      "bundle_profile": "agent-native archive, not helper export",
+      "independent_replay": "executed_exit_0_three_exact_targets_no_axioms"
+    },
+    "review": "A separate coordinator reconstructed outcomes from original sources before model inspection and completed correspondence review; author and coordinator knew fixture purpose and saw both report variants, so this is nonblind. Native correct also received an actual independent Lean replay. Alternate reports were not evidence.",
+    "evaluator_expected_files_read": false
+  }
+}

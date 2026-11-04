@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target017.lean
+StockAudit.signatureInsufficient : Stock.b ∈ Stock.rows ∧ Stock.b.signed = true ∧ ¬Stock.eligible Stock.b
+'StockAudit.signatureInsufficient' depends on axioms: [propext]
+
+[exit_code=0; elapsed_seconds=0.213]

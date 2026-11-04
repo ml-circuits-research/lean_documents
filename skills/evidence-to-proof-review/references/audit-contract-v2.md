@@ -80,9 +80,9 @@ Criteria require `origin` (`inferred`, `provided`, or `source`), an operational 
 
 ## Report argument audit
 
-`argument_audit.outcome` is one of `sufficient`, `insufficient`, `invalid`, `disputed`, `nonformal`, or `not_provided`. It describes the justification supplied **by the report**, independently of whether the auditor can substantiate the conclusion. Its required `independent_reasoning` explains that assessment using the supplied sources and any formal results.
+`argument_audit.outcome` is one of `sufficient`, `insufficient`, `invalid`, `unsound`, `disputed`, `nonformal`, or `not_provided`. It describes the justification supplied **by the report**, independently of whether the auditor can substantiate the conclusion. Its required `independent_reasoning` explains that assessment using the supplied sources and any formal results.
 
-The existing `argument_status` maps `insufficient` and `not_provided` to `insufficient_support`, and `invalid` to `invalid_inference`; other values map identically. Inconsistent statuses are rejected.
+The existing `argument_status` maps `insufficient` and `not_provided` to `insufficient_support`, `invalid` to `invalid_inference`, and `unsound` to `unsound_argument`; other values map identically. Inconsistent statuses are rejected. Use `unsound` when a material offered premise or rule is contradicted, even if the inference form is valid and the conclusion independently supported. This outcome requires a quoted `premise` assessed as `contradicted` with evidence or proof references. Use `invalid` for an inference that fails to follow from its premises; if both defects occur, explain both and classify each report item. An unsupported premise alone warrants insufficient support, not a false-premise verdict.
 
 For any outcome other than `not_provided`, quote the report premises, citations, or inferences being audited in `report_items`. A report item looks like:
 

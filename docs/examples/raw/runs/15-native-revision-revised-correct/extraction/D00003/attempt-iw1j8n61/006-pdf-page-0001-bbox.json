@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/usr/bin/pdftotext",
+    "-f",
+    "1",
+    "-l",
+    "1",
+    "-bbox-layout",
+    "-enc",
+    "UTF-8",
+    "/home/salboaie/work/lean_documents/tmp/native-revision-revised-correct/claim-audit-revision-f2orq5vc/input/originals/D00003.pdf",
+    "/home/salboaie/work/lean_documents/tmp/native-revision-revised-correct/claim-audit-revision-f2orq5vc/extraction/D00003/attempt-iw1j8n61/pdf-page-0001.bbox.xhtml"
+  ],
+  "timeout_seconds": 60,
+  "returncode": 0,
+  "stdout": "",
+  "stderr": ""
+}

@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/usr/bin/pdfinfo",
+    "/home/salboaie/work/lean_documents/tmp/native-revision-revised-correct/claim-audit-revision-f2orq5vc/input/originals/D00003.pdf"
+  ],
+  "timeout_seconds": 60,
+  "returncode": 0,
+  "stdout": "Custom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       1182 bytes\nOptimized:       no\nPDF version:     1.4\n",
+  "stderr": ""
+}

@@ -1,0 +1,778 @@
+[
+  {
+    "claim_id": "C1",
+    "report_anchor": "R1",
+    "report_quote": "Counted stock is 45 units.",
+    "question": "Does the current source-defined counted stock total exactly 45 whole units?",
+    "evidence": [
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "scope",
+        "quote": "This is the complete current stock population: A, B and C. Quantities are exact whole units at this snapshot."
+      },
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "count-rule",
+        "quote": "Counted stock includes active and quarantined rows only; archived rows are excluded."
+      },
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "row-a",
+        "quote": "A: status active; quantity 18 units; signed yes."
+      },
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "row-b",
+        "quote": "B: status quarantined; quantity 27 units; signed yes."
+      },
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "row-c",
+        "quote": "C: status archived; quantity 15 units; signed no."
+      }
+    ],
+    "rules": [
+      "Include each active or quarantined row once and exclude archived rows.",
+      "Sum the exact in-scope quantities and compare with 45."
+    ],
+    "assumptions": [
+      "The supplied register is faithfully transcribed and its stated current-population completeness and rules are accepted for this scoped audit. No historical completeness is assumed."
+    ],
+    "reasoning": [
+      "1. The current complete population is A, B and C; A is active, B quarantined and C archived.",
+      "2. The rule includes A and B and excludes C, so the relevant quantities are 18 and 27.",
+      "3. Their exact sum is 45, and the report states the same rule and operands; its conclusion and stated arithmetic argument are supported."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Stock.Audit",
+        "theorem": "StockAudit.counted45",
+        "relation": "supports",
+        "target": "Stock.total = 45"
+      }
+    ],
+    "limits": [
+      "The synthetic supplied source is not authenticated. The model checks the stated snapshot and rules; it does not establish real-world operational permission or historical events.",
+      "A separate coordinator completed source-first and model correspondence review, but knew the synthetic fixture design; this is not a blind benchmark or domain-expert certification."
+    ],
+    "recommendation": "Retain the 45-unit total with the source-defined inclusion rule.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "Does the current source-defined counted stock total exactly 45 whole units?",
+      "decision_criteria": [
+        "Include each active or quarantined row once and exclude archived rows.",
+        "Sum the exact in-scope quantities and compare with 45."
+      ],
+      "scope": "The complete current A/B/C population at 4 November 2026; historical event existence is assessed only for what this corpus can establish.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "sufficient",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "R1",
+          "report_quote": "The rule counts active or quarantined stock",
+          "assessment": "verified",
+          "reasoning": "This matches original line 7; archived C is excluded.",
+          "evidence_refs": [
+            1,
+            4
+          ],
+          "proof_refs": []
+        },
+        {
+          "kind": "premise",
+          "report_anchor": "R1",
+          "report_quote": "A contributes 18 and B contributes 27",
+          "assessment": "verified",
+          "reasoning": "The row statuses make both included, and their exact quantities match original lines 9 and 10.",
+          "evidence_refs": [
+            1,
+            2,
+            3
+          ],
+          "proof_refs": []
+        },
+        {
+          "kind": "inference",
+          "report_anchor": "R1",
+          "report_quote": "so 18 + 27 = 45.",
+          "assessment": "verified",
+          "reasoning": "The stated operands are exactly the in-scope rows; the checked filtered total establishes this arithmetic.",
+          "evidence_refs": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "proof_refs": [
+            0
+          ]
+        }
+      ],
+      "independent_reasoning": [
+        "1. The current complete population is A, B and C; A is active, B quarantined and C archived.",
+        "2. The rule includes A and B and excludes C, so the relevant quantities are 18 and 27.",
+        "3. Their exact sum is 45, and the report states the same rule and operands; its conclusion and stated arithmetic argument are supported."
+      ],
+      "evidence_refs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "proof_refs": [
+        0
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "Use exact finite arithmetic, row predicates and a separate countermodel where indicated; proof targets represent only the source-linked scoped obligations.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "Stock.rows represents the complete source population, Stock.counted implements the status rule, and Stock.total sums only A=18 and B=27. The equality is the exact 45-unit claim, conditional on source fidelity."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the complete supplied HTML, original lines 1-14, and every report paragraph; no other source was supplied.",
+      "queries": [],
+      "inspected": [
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "title"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "h1"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "scope"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "count-rule"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "release-rule"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "row-a"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "row-b"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "row-c"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "history"
+        }
+      ],
+      "limitations": [
+        "A complete supplied file inventory and current stock population do not establish a complete historical event history. No external source was searched."
+      ],
+      "conclusion": "3. Their exact sum is 45, and the report states the same rule and operands; its conclusion and stated arithmetic argument are supported."
+    }
+  },
+  {
+    "claim_id": "C2",
+    "report_anchor": "R2",
+    "report_quote": "Counted stock is 60 units.",
+    "question": "Does the current source-defined counted stock total 60 whole units?",
+    "evidence": [
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "scope",
+        "quote": "This is the complete current stock population: A, B and C. Quantities are exact whole units at this snapshot."
+      },
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "count-rule",
+        "quote": "Counted stock includes active and quarantined rows only; archived rows are excluded."
+      },
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "row-a",
+        "quote": "A: status active; quantity 18 units; signed yes."
+      },
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "row-b",
+        "quote": "B: status quarantined; quantity 27 units; signed yes."
+      },
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "row-c",
+        "quote": "C: status archived; quantity 15 units; signed no."
+      }
+    ],
+    "rules": [
+      "Apply the counted-status filter before summing; archived stock is excluded.",
+      "Distinguish the arithmetic total of all rows from the total of counted rows."
+    ],
+    "assumptions": [
+      "The supplied register is faithfully transcribed and its stated current-population completeness and rules are accepted for this scoped audit. No historical completeness is assumed."
+    ],
+    "reasoning": [
+      "1. The all-row quantities do sum to 60, so the addition itself is not the error.",
+      "2. The report includes archived C=15 despite the explicit exclusion rule; C is not in the counted set.",
+      "3. The source-defined counted total is 45, which differs from 60; the exact claim is false within this snapshot model. The offered inclusion premise is false; its arithmetic is valid, but the argument is unsound."
+    ],
+    "semantic_state": "refuted",
+    "argument_status": "unsound_argument",
+    "formal_status": "refuted",
+    "proofs": [
+      {
+        "module": "Stock.Audit",
+        "theorem": "StockAudit.notCounted60",
+        "relation": "refutes",
+        "target": "Stock.total \u2260 60"
+      },
+      {
+        "module": "Stock.Audit",
+        "theorem": "StockAudit.allRows60",
+        "relation": "auxiliary",
+        "target": "(Stock.rows.map Stock.Row.quantity).sum = 60"
+      },
+      {
+        "module": "Stock.Audit",
+        "theorem": "StockAudit.archivedExcluded",
+        "relation": "auxiliary",
+        "target": "Stock.counted Stock.c = false"
+      }
+    ],
+    "limits": [
+      "The synthetic supplied source is not authenticated. The model checks the stated snapshot and rules; it does not establish real-world operational permission or historical events.",
+      "A separate coordinator completed source-first and model correspondence review, but knew the synthetic fixture design; this is not a blind benchmark or domain-expert certification."
+    ],
+    "recommendation": "Replace 60 with 45 for counted stock; 60 may be labelled as the total of all recorded statuses.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "Does the current source-defined counted stock total 60 whole units?",
+      "decision_criteria": [
+        "Apply the counted-status filter before summing; archived stock is excluded.",
+        "Distinguish the arithmetic total of all rows from the total of counted rows."
+      ],
+      "scope": "The complete current A/B/C population at 4 November 2026; historical event existence is assessed only for what this corpus can establish.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "unsound",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "R2",
+          "report_quote": "All three rows contribute",
+          "assessment": "contradicted",
+          "reasoning": "Archived C does not contribute under the counted-stock rule; it is in the table but outside the counted set.",
+          "evidence_refs": [
+            0,
+            1,
+            4
+          ],
+          "proof_refs": [
+            2
+          ]
+        },
+        {
+          "kind": "inference",
+          "report_anchor": "R2",
+          "report_quote": "18 + 27 + 15 = 60.",
+          "assessment": "verified",
+          "reasoning": "The all-row arithmetic is correct, although applying that sum to counted stock is invalid.",
+          "evidence_refs": [
+            2,
+            3,
+            4
+          ],
+          "proof_refs": [
+            1
+          ]
+        }
+      ],
+      "independent_reasoning": [
+        "1. The all-row quantities do sum to 60, so the addition itself is not the error.",
+        "2. The report includes archived C=15 despite the explicit exclusion rule; C is not in the counted set.",
+        "3. The source-defined counted total is 45, which differs from 60; the exact claim is false within this snapshot model. The offered inclusion premise is false; its arithmetic is valid, but the argument is unsound."
+      ],
+      "evidence_refs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "proof_refs": [
+        0,
+        1,
+        2
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "Use exact finite arithmetic, row predicates and a separate countermodel where indicated; proof targets represent only the source-linked scoped obligations.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "The target negates the exact claimed counted total after applying original line 7 to the current rows. It refutes this modelled claim, not the faithful addition of all source quantities."
+        },
+        {
+          "proof_ref": 1,
+          "explanation": "This unfiltered sum verifies the author arithmetic separately; it is auxiliary and does not support the counted-stock conclusion."
+        },
+        {
+          "proof_ref": 2,
+          "explanation": "C is archived at original line 11 and excluded by original line 7; this isolates the unsupported inclusion premise."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the complete supplied HTML, original lines 1-14, and every report paragraph; no other source was supplied.",
+      "queries": [],
+      "inspected": [
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "title"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "h1"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "scope"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "count-rule"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "release-rule"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "row-a"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "row-b"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "row-c"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "history"
+        }
+      ],
+      "limitations": [
+        "A complete supplied file inventory and current stock population do not establish a complete historical event history. No external source was searched."
+      ],
+      "conclusion": "3. The source-defined counted total is 45, which differs from 60; the exact claim is false within this snapshot model. The offered inclusion premise is false; its arithmetic is valid, but the argument is unsound."
+    }
+  },
+  {
+    "claim_id": "C3",
+    "report_anchor": "R3",
+    "report_quote": "A is eligible for release.",
+    "question": "Does A meet the source release criterion, and does a signature alone justify that conclusion?",
+    "evidence": [
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "scope",
+        "quote": "This is the complete current stock population: A, B and C. Quantities are exact whole units at this snapshot."
+      },
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "release-rule",
+        "quote": "A row is eligible for release if and only if it is active and signed."
+      },
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "row-a",
+        "quote": "A: status active; quantity 18 units; signed yes."
+      },
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "row-b",
+        "quote": "B: status quarantined; quantity 27 units; signed yes."
+      }
+    ],
+    "rules": [
+      "Release eligibility holds exactly when the row is active AND signed.",
+      "Test A against both conditions, then test the report signature-only implication separately."
+    ],
+    "assumptions": [
+      "The supplied register is faithfully transcribed and its stated current-population completeness and rules are accepted for this scoped audit. No historical completeness is assumed."
+    ],
+    "reasoning": [
+      "1. A is active and signed, so independent source evidence satisfies both release conditions.",
+      "2. The report verifies only A signature and then asserts a signature-only rule, omitting active status.",
+      "3. B is an in-scope signed quarantined row and therefore not eligible; it is a counterexample to the proposed signature-only rule.",
+      "4. A eligibility remains supported. The author justification is unsound because its sufficient-condition premise is false; the inference form would be valid if that premise were true. The counterexample does not refute A eligibility."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "unsound_argument",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Stock.Audit",
+        "theorem": "StockAudit.aEligible",
+        "relation": "supports",
+        "target": "Stock.eligible Stock.a"
+      },
+      {
+        "module": "Stock.Audit",
+        "theorem": "StockAudit.signatureInsufficient",
+        "relation": "auxiliary",
+        "target": "Stock.b \u2208 Stock.rows \u2227 Stock.b.signed = true \u2227 \u00ac Stock.eligible Stock.b"
+      }
+    ],
+    "limits": [
+      "The synthetic supplied source is not authenticated. The model checks the stated snapshot and rules; it does not establish real-world operational permission or historical events.",
+      "A separate coordinator completed source-first and model correspondence review, but knew the synthetic fixture design; this is not a blind benchmark or domain-expert certification."
+    ],
+    "recommendation": "Retain A eligibility but replace the signature-only explanation with the two verified conditions: active and signed.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "Does A meet the source release criterion, and does a signature alone justify that conclusion?",
+      "decision_criteria": [
+        "Release eligibility holds exactly when the row is active AND signed.",
+        "Test A against both conditions, then test the report signature-only implication separately."
+      ],
+      "scope": "The complete current A/B/C population at 4 November 2026; historical event existence is assessed only for what this corpus can establish.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "unsound",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "R3",
+          "report_quote": "A is signed",
+          "assessment": "verified",
+          "reasoning": "The A row states signed yes.",
+          "evidence_refs": [
+            2
+          ],
+          "proof_refs": []
+        },
+        {
+          "kind": "premise",
+          "report_anchor": "R3",
+          "report_quote": "a signature alone is sufficient for release.",
+          "assessment": "contradicted",
+          "reasoning": "The source requires active status as well; B is signed yet fails eligibility. The general sufficiency rule is false in the supplied population.",
+          "evidence_refs": [
+            0,
+            1,
+            3
+          ],
+          "proof_refs": [
+            1
+          ]
+        }
+      ],
+      "independent_reasoning": [
+        "1. A is active and signed, so independent source evidence satisfies both release conditions.",
+        "2. The report verifies only A signature and then asserts a signature-only rule, omitting active status.",
+        "3. B is an in-scope signed quarantined row and therefore not eligible; it is a counterexample to the proposed signature-only rule.",
+        "4. A eligibility remains supported. The author justification is unsound because its sufficient-condition premise is false; the inference form would be valid if that premise were true. The counterexample does not refute A eligibility."
+      ],
+      "evidence_refs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "proof_refs": [
+        0,
+        1
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "Use exact finite arithmetic, row predicates and a separate countermodel where indicated; proof targets represent only the source-linked scoped obligations.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "A has active status and signed yes at original line 9. Stock.eligible encodes the biconditional at line 8, and the theorem establishes both conditions for A."
+        },
+        {
+          "proof_ref": 1,
+          "explanation": "B is an actual member of the current population, signed yes but quarantined. This is a witness against signature-only sufficiency, not a refutation of A release eligibility."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the complete supplied HTML, original lines 1-14, and every report paragraph; no other source was supplied.",
+      "queries": [],
+      "inspected": [
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "title"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "h1"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "scope"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "count-rule"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "release-rule"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "row-a"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "row-b"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "row-c"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "history"
+        }
+      ],
+      "limitations": [
+        "A complete supplied file inventory and current stock population do not establish a complete historical event history. No external source was searched."
+      ],
+      "conclusion": "4. A eligibility remains supported. The author justification is unsound because its sufficient-condition premise is false; the inference form would be valid if that premise were true. The counterexample does not refute A eligibility."
+    }
+  },
+  {
+    "claim_id": "C4",
+    "report_anchor": "R4",
+    "report_quote": "A never received prior clearance.",
+    "question": "Does the absence of supplied historical records establish that A never received earlier clearance?",
+    "evidence": [
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "scope",
+        "quote": "This is the complete current stock population: A, B and C. Quantities are exact whole units at this snapshot."
+      },
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "count-rule",
+        "quote": "Counted stock includes active and quarantined rows only; archived rows are excluded."
+      },
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "release-rule",
+        "quote": "A row is eligible for release if and only if it is active and signed."
+      },
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "row-a",
+        "quote": "A: status active; quantity 18 units; signed yes."
+      },
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "row-b",
+        "quote": "B: status quarantined; quantity 27 units; signed yes."
+      },
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "row-c",
+        "quote": "C: status archived; quantity 15 units; signed no."
+      },
+      {
+        "path": "input/sources/stock.html.md",
+        "anchor": "history",
+        "quote": "This file contains no historical clearance records. It is not a history of clearance events."
+      }
+    ],
+    "rules": [
+      "Treat the current population completeness statement as current-only.",
+      "Require historical event evidence or a justified complete historical registry before concluding no earlier clearance existed.",
+      "Test whether opposite historical states remain consistent with every current source fact."
+    ],
+    "assumptions": [
+      "The supplied register is faithfully transcribed and its stated current-population completeness and rules are accepted for this scoped audit. No historical completeness is assumed."
+    ],
+    "reasoning": [
+      "1. Full reading confirms that no historical clearance record is supplied; the source explicitly disclaims an event history.",
+      "2. Current-stock completeness does not state historical-clearance completeness and imposes no condition linking current status to earlier events.",
+      "3. Two models retain the identical current facts but assign opposite truth values to whether a prior clearance occurred; neither documentary support nor refutation of the historical event claim follows.",
+      "4. The missing historical premise is a support gap. The report absence-to-nonexistence inference is invalid, but the underlying historical claim remains undetermined rather than false."
+    ],
+    "semantic_state": "undetermined",
+    "argument_status": "invalid_inference",
+    "formal_status": "auxiliary",
+    "proofs": [
+      {
+        "module": "Stock.Audit",
+        "theorem": "StockAudit.historyUnderdetermined",
+        "relation": "auxiliary",
+        "target": "EvidenceLogic.Underdetermined Stock.currentEvidence Stock.noPriorClearance"
+      },
+      {
+        "module": "Stock.Audit",
+        "theorem": "StockAudit.noHistoricalEntailment",
+        "relation": "auxiliary",
+        "target": "\u00ac EvidenceLogic.Entails Stock.currentEvidence Stock.noPriorClearance"
+      }
+    ],
+    "limits": [
+      "The synthetic supplied source is not authenticated. The model checks the stated snapshot and rules; it does not establish real-world operational permission or historical events.",
+      "A separate coordinator completed source-first and model correspondence review, but knew the synthetic fixture design; this is not a blind benchmark or domain-expert certification."
+    ],
+    "recommendation": "Replace the event claim with the bounded statement that no historical record was supplied, or obtain an authoritative historical registry with a justified completeness scope.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "Does the absence of supplied historical records establish that A never received earlier clearance?",
+      "decision_criteria": [
+        "Treat the current population completeness statement as current-only.",
+        "Require historical event evidence or a justified complete historical registry before concluding no earlier clearance existed.",
+        "Test whether opposite historical states remain consistent with every current source fact."
+      ],
+      "scope": "The complete current A/B/C population at 4 November 2026; historical event existence is assessed only for what this corpus can establish.",
+      "missing_definitions": [
+        "No complete historical clearance registry or historical rule linking events to this snapshot is supplied."
+      ],
+      "alternatives": [
+        "Interpreting absence as absence of supplied documentation would be a narrower supported statement, but the report asserts nonexistence of events."
+      ]
+    },
+    "argument_audit": {
+      "outcome": "invalid",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "R4",
+          "report_quote": "No historical clearance record was supplied",
+          "assessment": "verified",
+          "reasoning": "The entire supplied source was inspected; line 12 explicitly states this limited absence of documentation. The report is not independent history evidence.",
+          "evidence_refs": [
+            6
+          ],
+          "proof_refs": []
+        },
+        {
+          "kind": "inference",
+          "report_anchor": "R4",
+          "report_quote": "No historical clearance record was supplied, so no earlier clearance existed.",
+          "assessment": "unsupported",
+          "reasoning": "No complete historical registry or rule connecting absence of supplied records to absence of events is supplied. The checked countermodel invalidates the implication; it does not contradict the actual historical conclusion.",
+          "evidence_refs": [
+            0,
+            6
+          ],
+          "proof_refs": [
+            0,
+            1
+          ]
+        }
+      ],
+      "independent_reasoning": [
+        "1. Full reading confirms that no historical clearance record is supplied; the source explicitly disclaims an event history.",
+        "2. Current-stock completeness does not state historical-clearance completeness and imposes no condition linking current status to earlier events.",
+        "3. Two models retain the identical current facts but assign opposite truth values to whether a prior clearance occurred; neither documentary support nor refutation of the historical event claim follows.",
+        "4. The missing historical premise is a support gap. The report absence-to-nonexistence inference is invalid, but the underlying historical claim remains undetermined rather than false."
+      ],
+      "evidence_refs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "proof_refs": [
+        0,
+        1
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "Use a bounded full-corpus search plus two explicitly consistent historical assignments to prove non-entailment. Only auxiliary proof status is justified because no historical event truth is established.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "The fixed current facts constrain neither historical Boolean value. Both witnesses satisfy the same current model; one has no prior clearance and the other has a prior clearance. This is formal underdetermination in the declared model, not proof that either historical event occurred."
+        },
+        {
+          "proof_ref": 1,
+          "explanation": "The true-history witness satisfies the current evidence but falsifies no-prior-clearance, showing that the documentary model does not entail the historical negation. Source-to-model adequacy and real history remain outside the kernel proof."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the complete supplied HTML, original lines 1-14, and every report paragraph; no other source was supplied.",
+      "queries": [],
+      "inspected": [
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "title"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "h1"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "scope"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "count-rule"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "release-rule"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "row-a"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "row-b"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "row-c"
+        },
+        {
+          "path": "input/sources/stock.html.md",
+          "anchor": "history"
+        }
+      ],
+      "limitations": [
+        "A complete supplied file inventory and current stock population do not establish a complete historical event history. No external source was searched."
+      ],
+      "conclusion": "4. The missing historical premise is a support gap. The report absence-to-nonexistence inference is invalid, but the underlying historical claim remains undetermined rather than false."
+    }
+  }
+]

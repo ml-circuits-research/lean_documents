@@ -1,0 +1,17 @@
+{
+  "dossier": "16-intervals-and-rounding",
+  "runs": [
+    {
+      "variant": "correct",
+      "workspace": "/home/salboaie/work/lean_documents/tmp/claim-audit-nnzy59u0",
+      "export": "/home/salboaie/work/lean_documents/tmp/intervals-rounding-exports-803ww82y/correct-final",
+      "summary": "examples/16-intervals-and-rounding/validation/summary.json"
+    },
+    {
+      "variant": "mixed",
+      "workspace": "/home/salboaie/work/lean_documents/tmp/claim-audit-veigq18r",
+      "export": "/home/salboaie/work/lean_documents/tmp/intervals-rounding-exports-803ww82y/mixed-final",
+      "summary": "examples/16-intervals-and-rounding/validation/summary.json"
+    }
+  ]
+}

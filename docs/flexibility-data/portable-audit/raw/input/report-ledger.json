@@ -1,0 +1,7 @@
+{
+  "R1": "Counted stock is 45 units. The rule counts active or quarantined stock; A contributes 18 and B contributes 27, so 18 + 27 = 45.",
+  "R2": "Counted stock is 60 units. All three rows contribute: 18 + 27 + 15 = 60.",
+  "R3": "A is eligible for release. A is signed, and a signature alone is sufficient for release.",
+  "R4": "A never received prior clearance. No historical clearance record was supplied, so no earlier clearance existed.",
+  "document-preamble": "# Stock findings"
+}

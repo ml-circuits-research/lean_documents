@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "dossier": "16-intervals-and-rounding",
+  "validation_kind": "actual_nonblind_fixture_author_audits_with_separate_source_first_coordinator_review",
+  "status": "passed",
+  "runs": [
+    {
+      "variant": "correct",
+      "workspace": "/home/salboaie/work/lean_documents/tmp/claim-audit-nnzy59u0",
+      "export": "/home/salboaie/work/lean_documents/tmp/intervals-rounding-exports-803ww82y/correct-final",
+      "selected_report": "report-correct.md",
+      "contract_version": 2,
+      "brief_origin": "inferred",
+      "check_status": "passed",
+      "checked_at": "2026-11-04T18:15:46.363880+00:00",
+      "lean_version": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+      "registered_claims": 10,
+      "audited_claims": 10,
+      "deferred_claims": 0,
+      "coverage": "complete_registration",
+      "semantic_counts": {
+        "supported": 10
+      },
+      "formal_counts": {
+        "proved": 8,
+        "not_attempted": 2
+      },
+      "argument_counts": {
+        "sufficient": 10
+      },
+      "actual_target_checks": 30,
+      "exact_finding_target_checks": 11,
+      "proof_results_sha256": "3c281dd576799e3a8be662f653806fab8a05977f0c0e598d2f935b15aaa80e05",
+      "export_manifest_sha256": "6aaf004bce2f35f6e5438098b2d7fa675797d85e24d162a6573838a2393bad64",
+      "export_files": 217,
+      "proof_logs": "/home/salboaie/work/lean_documents/tmp/intervals-rounding-exports-803ww82y/correct-final/logs",
+      "human_report": "/home/salboaie/work/lean_documents/tmp/intervals-rounding-exports-803ww82y/correct-final/audit-report.md",
+      "review_bound_files": [
+        "semantic-review.md",
+        "independent-review.md"
+      ],
+      "source_first_review_export_hashed": true,
+      "independent_kernel_checker": "not_run"
+    },
+    {
+      "variant": "mixed",
+      "workspace": "/home/salboaie/work/lean_documents/tmp/claim-audit-veigq18r",
+      "export": "/home/salboaie/work/lean_documents/tmp/intervals-rounding-exports-803ww82y/mixed-final",
+      "selected_report": "report.md",
+      "contract_version": 2,
+      "brief_origin": "inferred",
+      "check_status": "passed",
+      "checked_at": "2026-11-04T18:15:47.506806+00:00",
+      "lean_version": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+      "registered_claims": 10,
+      "audited_claims": 10,
+      "deferred_claims": 0,
+      "coverage": "complete_registration",
+      "semantic_counts": {
+        "refuted": 7,
+        "supported": 1,
+        "undetermined": 2
+      },
+      "formal_counts": {
+        "refuted": 7,
+        "proved": 1,
+        "auxiliary": 1,
+        "blocked": 1
+      },
+      "argument_counts": {
+        "unsound_argument": 7,
+        "invalid_inference": 2,
+        "insufficient_support": 1
+      },
+      "actual_target_checks": 32,
+      "exact_finding_target_checks": 13,
+      "proof_results_sha256": "8bd25000e91ee778752af585b77e5e2c3caf01e418dc18ae2741585323151126",
+      "export_manifest_sha256": "851375f4d49ae2eaac551e5db85804d900233df0214fbf70580e205b318ba4a1",
+      "export_files": 229,
+      "proof_logs": "/home/salboaie/work/lean_documents/tmp/intervals-rounding-exports-803ww82y/mixed-final/logs",
+      "human_report": "/home/salboaie/work/lean_documents/tmp/intervals-rounding-exports-803ww82y/mixed-final/audit-report.md",
+      "review_bound_files": [
+        "semantic-review.md",
+        "independent-review.md"
+      ],
+      "source_first_review_export_hashed": true,
+      "independent_kernel_checker": "not_run"
+    }
+  ],
+  "limits": [
+    "Synthetic source authenticity is not established.",
+    "The fixture author saw both report variants; neither audit is blind.",
+    "Only the selected report and sources are evidence.",
+    "Partial-window clipping is uninstantiated; whole-window exclusion is checked.",
+    "Generic proofs cover touching and empty interval membership, not universal union cardinality or rounding correctness.",
+    "Historical threshold witnesses do not establish actual breach counts or sufficient rebate entitlement.",
+    "An undefined reasonableness standard blocks a substantive verdict.",
+    "No external independent kernel checker was run."
+  ],
+  "retained_prior_exports": [
+    "/home/salboaie/work/lean_documents/tmp/intervals-rounding-exports-803ww82y/correct",
+    "/home/salboaie/work/lean_documents/tmp/intervals-rounding-exports-803ww82y/mixed"
+  ],
+  "retained_prior_exports_reason": "Earlier final review wording was made more precise about helper-bound review files versus export-manifest-bound source-first notes; all exports are retained."
+}

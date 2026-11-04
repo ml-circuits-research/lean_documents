@@ -1,4 +1,4 @@
-# Supported extraction formats
+# Built-in extraction adapters and flexible alternatives
 
 `extractors.extract_document(path, artifact_dir, *, ocr_language="eng", timeout=60, max_pages=None)` returns:
 
@@ -40,3 +40,7 @@ Embedded objects, drawings, equations, text boxes, unsupported block/cell struct
 ## Validation
 
 `tests/test_extractors.py` creates independent synthetic UTF-8, DOCX, PDF, and raster inputs under retained `tmp/extractor-tests-*` directories. It exercises actual available Poppler and Tesseract tools, plus clearly identified unit-test failure simulations. Each run writes a capabilities inventory and reports any missing-tool skips explicitly. Successful tests of clean examples do not remove the need to inspect new documents and OCR uncertainty.
+
+## Other formats and agent tools
+
+The formats above describe optional bundled adapters, not the scope of the method. The agent may use its available document tools for another encoding, spreadsheet, HTML, transcript or other inspectable source. Preserve the original, actual coordinates, uncertainty and coverage, then use [agent extraction import](agent-extraction.md) or [agent-native execution](agent-native-workflow.md). An unavailable adapter is not evidence that the document is empty or that a claim is false.

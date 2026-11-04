@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target032.lean
+Settlement.historicalAlternatives : ¬Settlement.historicalThresholdMet 0 ∧ Settlement.historicalThresholdMet 3
+'Settlement.historicalAlternatives' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.212]

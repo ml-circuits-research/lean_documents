@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "algorithm": "sha256",
+  "index": "input/index.sqlite3",
+  "files": {
+    "input/audit-policy.json": {
+      "sha256": "4978e9ac9927b130eddf5fd3a37c5054fd2be7cce3ef981fad8f1c9947c0082e",
+      "bytes": 253
+    },
+    "input/catalog.json": {
+      "sha256": "527e8744b4e3a43ac7ee01a835d0162e7d6925e7463ac15d5b15293c628d4f53",
+      "bytes": 648
+    },
+    "input/index.sqlite3": {
+      "sha256": "05ccf39113f2d71effe451fc22ef9510eb5ab8c4bbc3314d9bc1d046358291ee",
+      "bytes": 45056
+    },
+    "input/originals/D00001.md": {
+      "sha256": "a1dd383e41334ad388cab432ec8a78558dd9aa5839c246e824d3be3237b27c47",
+      "bytes": 698
+    },
+    "input/originals/D00002.html": {
+      "sha256": "49335a218d26cb5c9a79726b21c1565eb5f5318821add20f66c1e7e4dcac7c55",
+      "bytes": 838
+    },
+    "input/report-ledger.json": {
+      "sha256": "eec2597f2c2e884482dba90af7da0e1de69fbdca661d25a4b0ffd36ff092a8c9",
+      "bytes": 768
+    },
+    "input/report.md": {
+      "sha256": "4e70e589f2faa95f83f55fb6cd418db816916af3e35856003a16c91d9e2b11f8",
+      "bytes": 800
+    },
+    "input/sources/stock.html.md": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  }
+}

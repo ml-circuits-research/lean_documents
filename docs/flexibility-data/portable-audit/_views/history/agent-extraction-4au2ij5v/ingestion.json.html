@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ingestion.json · Evidence-to-Proof Review</title><link rel="stylesheet" href="../../../../../assets/style.css"></head><body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../../../../../index.html">Evidence-to-Proof Review</a><nav aria-label="Artifact navigation"><a href="../../../index.html">Back to review</a><a href="../../../../../examples/index.html">Example catalog</a></nav></header><main id="main"><h1>ingestion.json</h1><p><code>history/agent-extraction-4au2ij5v/ingestion.json</code></p><p><a href="../../../raw/history/agent-extraction-4au2ij5v/ingestion.json">Open original file</a></p><pre><code>{
+  &quot;updated_at&quot;: &quot;2026-11-04T17:51:46.939985+00:00&quot;,
+  &quot;total_documents&quot;: 2,
+  &quot;processed_this_batch&quot;: [
+    &quot;D00001&quot;,
+    &quot;D00002&quot;
+  ],
+  &quot;complete&quot;: false,
+  &quot;documents&quot;: [
+    {
+      &quot;id&quot;: &quot;D00001&quot;,
+      &quot;role&quot;: &quot;report&quot;,
+      &quot;original&quot;: &quot;input/originals/D00001.md&quot;,
+      &quot;logical&quot;: &quot;input/report.md&quot;,
+      &quot;external&quot;: &quot;/home/salboaie/work/lean_documents/tmp/portability-wDjrwn/supplied/report.md&quot;,
+      &quot;original_sha&quot;: &quot;721e3a2cba05950cf838fa8c5731e5d36e93f49f8f71cc00568fabd8bd7deb0e&quot;,
+      &quot;status&quot;: &quot;ready&quot;,
+      &quot;warnings&quot;: [],
+      &quot;tools&quot;: {
+        &quot;python-stdlib&quot;: &quot;3.14.8&quot;
+      },
+      &quot;extraction_sha&quot;: &quot;1b067379bc33056a18b5ea7ce43ee5eb83354ed513d3e3b4c7040a223bff08b8&quot;
+    },
+    {
+      &quot;id&quot;: &quot;D00002&quot;,
+      &quot;role&quot;: &quot;source&quot;,
+      &quot;original&quot;: &quot;input/originals/D00002.html&quot;,
+      &quot;logical&quot;: &quot;input/sources/stock.html.md&quot;,
+      &quot;external&quot;: &quot;/home/salboaie/work/lean_documents/tmp/portability-wDjrwn/supplied/sources/stock.html&quot;,
+      &quot;original_sha&quot;: &quot;49335a218d26cb5c9a79726b21c1565eb5f5318821add20f66c1e7e4dcac7c55&quot;,
+      &quot;status&quot;: &quot;blocked&quot;,
+      &quot;warnings&quot;: [
+        &quot;Unsupported document format: .html&quot;,
+        &quot;No nonempty text segments were recovered; inspect the original document.&quot;
+      ],
+      &quot;tools&quot;: {
+        &quot;python-stdlib&quot;: &quot;3.14.8&quot;
+      },
+      &quot;extraction_sha&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;
+    }
+  ],
+  &quot;elapsed_seconds&quot;: 0.006494273999123834,
+  &quot;budget&quot;: {
+    &quot;max_documents&quot;: null,
+    &quot;max_seconds&quot;: null
+  },
+  &quot;coverage_meaning&quot;: &quot;Extraction coverage only, not claim review completeness or OCR accuracy&quot;
+}
+</code></pre></main><footer>Preserved execution artifacts. Text viewers work offline and over HTTP.</footer></body></html>

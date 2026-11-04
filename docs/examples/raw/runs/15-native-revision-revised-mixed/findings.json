@@ -1,0 +1,831 @@
+[
+  {
+    "claim_id": "R1",
+    "report_quote": "The total T7 charge is 130 credits.",
+    "report_anchor": "R1",
+    "question": "Does the reported T7 total equal the current authoritative sum of A, B and C?",
+    "evidence": [
+      {
+        "path": "input/sources/01-policy.docx.md",
+        "anchor": "docx-p-0002",
+        "quote": "P1: For transfer T7 on 4 November 2026, count the three ledger charges A, B and C once each, in whole credits. No tax, discount or currency conversion applies. A revised ledger explicitly supersedes the prior ledger for this transfer."
+      },
+      {
+        "path": "input/sources/02-ledger.pdf.md",
+        "anchor": "pdf-page-0001",
+        "quote": "Cedar laboratory T7 charge and quality ledger - revision 2\nTransfer date: 4 November 2026. Unit: whole credits.\nCharge A: 60 credits.\nCharge B: 40 credits.\nCharge C: 45 credits.\nThis is the complete charge list for transfer T7. Count each line once.\nQuality approval: granted at 16:00 local time on 4 November 2026.\nSecurity approval status: not supplied. This ledger is not an approval-event history.\nRevision 2 supersedes revision 1 for T7. Charge C is corrected from 20 to 45 credits. All\nother fields remain unchanged."
+      }
+    ],
+    "rules": [
+      "P1: sum the complete current three-charge list once without adjustments."
+    ],
+    "assumptions": [
+      "Interpret the supplied synthetic records as the authoritative documentary package for T7 on 4 November 2026.",
+      "The manually reviewed source-to-symbol translation is faithful; Lean verifies only the encoded proposition."
+    ],
+    "reasoning": [
+      "The applicable ledger revision records charges 60, 40 and 45 whole credits. P1 makes this a closed list of three charges, each counted once.",
+      "Their sum is 145, so the exact report total 130 is contradicted by the complete charge list.",
+      "The unchanged report also offers the now-superseded C=20 premise; revision 2 expressly supersedes revision 1. This is a source-version mismatch, not contradictory simultaneous ledgers."
+    ],
+    "semantic_state": "refuted",
+    "argument_status": "unsound_argument",
+    "formal_status": "refuted",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim1",
+        "relation": "refutes",
+        "target": "Audit.currentLedger.chargeA + Audit.currentLedger.chargeB + Audit.currentLedger.chargeC \u2260 130"
+      }
+    ],
+    "limits": [
+      "The dossier is synthetic; hashes and Lean do not authenticate real-world events.",
+      "The auditor authored the fixture: this is a nonblind demonstration with a separate coordinator source-first/model review, not a blind accuracy benchmark."
+    ],
+    "recommendation": "Replace the claim with the source-grounded result explained above; do not infer absent historical events.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "Does the reported T7 total equal the current authoritative sum of A, B and C?",
+      "decision_criteria": [
+        "P1: sum the complete current three-charge list once without adjustments."
+      ],
+      "scope": "Transfer T7, 4 November 2026; current supplied source revision only. No separate brief was supplied.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "unsound",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "R1",
+          "report_quote": "The ledger lists A as 60, B as 40 and C as 20 credits",
+          "assessment": "contradicted",
+          "reasoning": "The current ledger C value is 45. Revision 2 supersedes revision 1.",
+          "evidence_refs": [
+            1
+          ],
+          "proof_refs": []
+        },
+        {
+          "kind": "inference",
+          "report_anchor": "R1",
+          "report_quote": "adding those lines gives 130 credits.",
+          "assessment": "contradicted",
+          "reasoning": "For the stated report operands 60+40+20=120. The asserted sum130 is arithmetically false, independently of the later C correction.",
+          "evidence_refs": [
+            1
+          ],
+          "proof_refs": []
+        }
+      ],
+      "independent_reasoning": [
+        "The applicable ledger revision records charges 60, 40 and 45 whole credits. P1 makes this a closed list of three charges, each counted once.",
+        "Their sum is 145, so the exact report total 130 is contradicted by the complete charge list.",
+        "The unchanged report also offers the now-superseded C=20 premise; revision 2 expressly supersedes revision 1. This is a source-version mismatch, not contradictory simultaneous ledgers."
+      ],
+      "evidence_refs": [
+        0,
+        1
+      ],
+      "proof_refs": [
+        0
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "A small arithmetic or Boolean target checks the stated operational issue without assuming the conclusion.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "The applicable ledger revision records charges 60, 40 and 45 whole credits. P1 makes this a closed list of three charges, each counted once. Their sum is 145, so the exact report total 130 is contradicted by the complete charge list. The unchanged report also offers the now-superseded C=20 premise; revision 2 expressly supersedes revision 1. This is a source-version mismatch, not contradictory simultaneous ledgers. Source facts are assumptions of this translation; this target does not authenticate records."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the exact report finding and all evidence passages listed here in context; checked current ledger version, governing rule and receipt where relevant.",
+      "queries": [],
+      "inspected": [
+        {
+          "path": "input/sources/01-policy.docx.md",
+          "anchor": "docx-p-0002"
+        },
+        {
+          "path": "input/sources/02-ledger.pdf.md",
+          "anchor": "pdf-page-0001"
+        }
+      ],
+      "limitations": [
+        "This is a bounded search of the supplied package, with no outside or missing approval-event records."
+      ],
+      "conclusion": "The applicable ledger revision records charges 60, 40 and 45 whole credits. P1 makes this a closed list of three charges, each counted once. Their sum is 145, so the exact report total 130 is contradicted by the complete charge list. The unchanged report also offers the now-superseded C=20 premise; revision 2 expressly supersedes revision 1. This is a source-version mismatch, not contradictory simultaneous ledgers."
+    }
+  },
+  {
+    "claim_id": "R2",
+    "report_quote": "Charge A complies with the individual-charge cap.",
+    "report_anchor": "R2",
+    "question": "Does charge A satisfy the inclusive individual-charge cap?",
+    "evidence": [
+      {
+        "path": "input/sources/01-policy.docx.md",
+        "anchor": "docx-p-0003",
+        "quote": "P2: Each individual charge must be at most 50 credits. A charge above 50 breaches the individual-charge cap; aggregate totals do not replace this test."
+      },
+      {
+        "path": "input/sources/02-ledger.pdf.md",
+        "anchor": "pdf-page-0001",
+        "quote": "Cedar laboratory T7 charge and quality ledger - revision 2\nTransfer date: 4 November 2026. Unit: whole credits.\nCharge A: 60 credits.\nCharge B: 40 credits.\nCharge C: 45 credits.\nThis is the complete charge list for transfer T7. Count each line once.\nQuality approval: granted at 16:00 local time on 4 November 2026.\nSecurity approval status: not supplied. This ledger is not an approval-event history.\nRevision 2 supersedes revision 1 for T7. Charge C is corrected from 20 to 45 credits. All\nother fields remain unchanged."
+      }
+    ],
+    "rules": [
+      "P2: an individual charge complies exactly when it is at most 50 credits."
+    ],
+    "assumptions": [
+      "Interpret the supplied synthetic records as the authoritative documentary package for T7 on 4 November 2026.",
+      "The manually reviewed source-to-symbol translation is faithful; Lean verifies only the encoded proposition."
+    ],
+    "reasoning": [
+      "The ledger records A=60 credits; P2 sets an inclusive per-charge maximum of 50.",
+      "60 exceeds 50. A is an in-scope counterexample to compliance; no aggregate averaging or exception is available."
+    ],
+    "semantic_state": "refuted",
+    "argument_status": "invalid_inference",
+    "formal_status": "refuted",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim2",
+        "relation": "refutes",
+        "target": "\u00ac (Audit.currentLedger.chargeA \u2264 Audit.individualCap)"
+      }
+    ],
+    "limits": [
+      "The dossier is synthetic; hashes and Lean do not authenticate real-world events.",
+      "The auditor authored the fixture: this is a nonblind demonstration with a separate coordinator source-first/model review, not a blind accuracy benchmark."
+    ],
+    "recommendation": "Replace the claim with the source-grounded result explained above; do not infer absent historical events.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "Does charge A satisfy the inclusive individual-charge cap?",
+      "decision_criteria": [
+        "P2: an individual charge complies exactly when it is at most 50 credits."
+      ],
+      "scope": "Transfer T7, 4 November 2026; current supplied source revision only. No separate brief was supplied.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "invalid",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "R2",
+          "report_quote": "Policy P2 sets the cap at 50 credits, and the ledger records A as 60 credits.",
+          "assessment": "verified",
+          "reasoning": "Both the inclusive cap50 and A60 premise match the sources.",
+          "evidence_refs": [
+            0,
+            1
+          ],
+          "proof_refs": []
+        },
+        {
+          "kind": "inference",
+          "report_anchor": "R2",
+          "report_quote": "Charge A complies with the individual-charge cap.",
+          "assessment": "contradicted",
+          "reasoning": "60>50, so breach follows and compliance does not.",
+          "evidence_refs": [
+            0,
+            1
+          ],
+          "proof_refs": [
+            0
+          ]
+        }
+      ],
+      "independent_reasoning": [
+        "The ledger records A=60 credits; P2 sets an inclusive per-charge maximum of 50.",
+        "60 exceeds 50. A is an in-scope counterexample to compliance; no aggregate averaging or exception is available."
+      ],
+      "evidence_refs": [
+        0,
+        1
+      ],
+      "proof_refs": [
+        0
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "A small arithmetic or Boolean target checks the stated operational issue without assuming the conclusion.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "The ledger records A=60 credits; P2 sets an inclusive per-charge maximum of 50. 60 exceeds 50. A is an in-scope counterexample to compliance; no aggregate averaging or exception is available. Source facts are assumptions of this translation; this target does not authenticate records."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the exact report finding and all evidence passages listed here in context; checked current ledger version, governing rule and receipt where relevant.",
+      "queries": [],
+      "inspected": [
+        {
+          "path": "input/sources/01-policy.docx.md",
+          "anchor": "docx-p-0003"
+        },
+        {
+          "path": "input/sources/02-ledger.pdf.md",
+          "anchor": "pdf-page-0001"
+        }
+      ],
+      "limitations": [
+        "This is a bounded search of the supplied package, with no outside or missing approval-event records."
+      ],
+      "conclusion": "The ledger records A=60 credits; P2 sets an inclusive per-charge maximum of 50. 60 exceeds 50. A is an in-scope counterexample to compliance; no aggregate averaging or exception is available."
+    }
+  },
+  {
+    "claim_id": "R3",
+    "report_quote": "The physical receipt occurred at 16:40 local time on 4 November 2026.",
+    "report_anchor": "R3",
+    "question": "Does the original scan record the exact receipt timestamp claimed for T7?",
+    "evidence": [
+      {
+        "path": "input/sources/03-receipt-scan.pdf.md",
+        "anchor": "pdf-page-0001-reviewed-0001",
+        "quote": "CEDAR LABORATORY - PHYSICAL RECEIPT\nTransfer: T7\nReceipt date: 4 November 2026\nPhysical receipt time: 16:40 local time\nDispatch time: 16:10 local time\nRecorded by: Receiving desk\nThis receipt records physical arrival only.\nIt does not record quality or security approval."
+      }
+    ],
+    "rules": [
+      "Use physical receipt time, with date and transfer identity preserved."
+    ],
+    "assumptions": [
+      "Interpret the supplied synthetic records as the authoritative documentary package for T7 on 4 November 2026.",
+      "The manually reviewed source-to-symbol translation is faithful; Lean verifies only the encoded proposition."
+    ],
+    "reasoning": [
+      "The visually inspected original identifies T7 and receipt time 16:40 on the stated date. Raw OCR misreads T7 as 17; the reviewed transcription corrects that identifier.",
+      "The typed Receipt record preserves transfer identity T7, calendar date 2026-11-04 and receipt minute 1000 (16:40). The exact target checks all three recorded fields; documentary attribution rests on the reviewed scan."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim3",
+        "relation": "supports",
+        "target": "Audit.currentReceipt.transfer = \"T7\" \u2227 Audit.currentReceipt.date = \"2026-11-04\" \u2227 Audit.currentReceipt.minute = 1000"
+      }
+    ],
+    "limits": [
+      "The dossier is synthetic; hashes and Lean do not authenticate real-world events.",
+      "The auditor authored the fixture: this is a nonblind demonstration with a separate coordinator source-first/model review, not a blind accuracy benchmark.",
+      "Original OCR remains available; reviewed transcription corrects T7/17. Coordinates/confidences describe the original extraction, not independent witnesses."
+    ],
+    "recommendation": "Retain the claim with its stated documentary scope.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "Does the original scan record the exact receipt timestamp claimed for T7?",
+      "decision_criteria": [
+        "Use physical receipt time, with date and transfer identity preserved."
+      ],
+      "scope": "Transfer T7, 4 November 2026; current supplied source revision only. No separate brief was supplied.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "sufficient",
+      "report_items": [
+        {
+          "kind": "citation",
+          "report_anchor": "R3",
+          "report_quote": "The physical receipt scan records that timestamp for T7.",
+          "assessment": "verified",
+          "reasoning": "The visually inspected original identifies T7 and receipt time 16:40 on the stated date. Raw OCR misreads T7 as 17; the reviewed transcription corrects that identifier. The typed Receipt record preserves transfer identity T7, calendar date 2026-11-04 and receipt minute 1000 (16:40). The exact target checks all three recorded fields; documentary attribution rests on the reviewed scan.",
+          "evidence_refs": [
+            0
+          ],
+          "proof_refs": [
+            0
+          ]
+        }
+      ],
+      "independent_reasoning": [
+        "The visually inspected original identifies T7 and receipt time 16:40 on the stated date. Raw OCR misreads T7 as 17; the reviewed transcription corrects that identifier.",
+        "The typed Receipt record preserves transfer identity T7, calendar date 2026-11-04 and receipt minute 1000 (16:40). The exact target checks all three recorded fields; documentary attribution rests on the reviewed scan."
+      ],
+      "evidence_refs": [
+        0
+      ],
+      "proof_refs": [
+        0
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "A small arithmetic or Boolean target checks the stated operational issue without assuming the conclusion.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "The visually inspected original identifies T7 and receipt time 16:40 on the stated date. Raw OCR misreads T7 as 17; the reviewed transcription corrects that identifier. The typed Receipt record preserves transfer identity T7, calendar date 2026-11-04 and receipt minute 1000 (16:40). The exact target checks all three recorded fields; documentary attribution rests on the reviewed scan. Source facts are assumptions of this translation; this target does not authenticate records."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the exact report finding and all evidence passages listed here in context; checked current ledger version, governing rule and receipt where relevant.",
+      "queries": [],
+      "inspected": [
+        {
+          "path": "input/sources/03-receipt-scan.pdf.md",
+          "anchor": "pdf-page-0001-reviewed-0001"
+        }
+      ],
+      "limitations": [
+        "This is a bounded search of the supplied package, with no outside or missing approval-event records."
+      ],
+      "conclusion": "The visually inspected original identifies T7 and receipt time 16:40 on the stated date. Raw OCR misreads T7 as 17; the reviewed transcription corrects that identifier. The typed Receipt record preserves transfer identity T7, calendar date 2026-11-04 and receipt minute 1000 (16:40). The exact target checks all three recorded fields; documentary attribution rests on the reviewed scan."
+    }
+  },
+  {
+    "claim_id": "R4",
+    "report_quote": "The physical receipt was timely under policy P3.",
+    "report_anchor": "R4",
+    "question": "Was physical receipt on time under the applicable receipt rule, rather than the approval rule?",
+    "evidence": [
+      {
+        "path": "input/sources/01-policy.docx.md",
+        "anchor": "docx-p-0004",
+        "quote": "P3: T7 receipt is timely if the physical receipt timestamp is no later than 16:30 local time on 4 November 2026. No grace period applies. Dispatch time is irrelevant."
+      },
+      {
+        "path": "input/sources/03-receipt-scan.pdf.md",
+        "anchor": "pdf-page-0001-reviewed-0001",
+        "quote": "CEDAR LABORATORY - PHYSICAL RECEIPT\nTransfer: T7\nReceipt date: 4 November 2026\nPhysical receipt time: 16:40 local time\nDispatch time: 16:10 local time\nRecorded by: Receiving desk\nThis receipt records physical arrival only.\nIt does not record quality or security approval."
+      }
+    ],
+    "rules": [
+      "P3: timely receipt requires receipt time \u226416:30 on 4 November 2026."
+    ],
+    "assumptions": [
+      "Interpret the supplied synthetic records as the authoritative documentary package for T7 on 4 November 2026.",
+      "The manually reviewed source-to-symbol translation is faithful; Lean verifies only the encoded proposition."
+    ],
+    "reasoning": [
+      "P3 sets the receipt cutoff at 16:30 with no grace period. The reviewed scan records receipt at 16:40, ten minutes after that cutoff.",
+      "The 16:10 dispatch is not receipt. The 17:00 approval deadline in P4 does not alter P3."
+    ],
+    "semantic_state": "refuted",
+    "argument_status": "unsound_argument",
+    "formal_status": "refuted",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim4",
+        "relation": "refutes",
+        "target": "\u00ac (Audit.currentReceipt.minute \u2264 Audit.receiptDeadline)"
+      }
+    ],
+    "limits": [
+      "The dossier is synthetic; hashes and Lean do not authenticate real-world events.",
+      "The auditor authored the fixture: this is a nonblind demonstration with a separate coordinator source-first/model review, not a blind accuracy benchmark.",
+      "Original OCR remains available; reviewed transcription corrects T7/17. Coordinates/confidences describe the original extraction, not independent witnesses."
+    ],
+    "recommendation": "Replace the claim with the source-grounded result explained above; do not infer absent historical events.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "Was physical receipt on time under the applicable receipt rule, rather than the approval rule?",
+      "decision_criteria": [
+        "P3: timely receipt requires receipt time \u226416:30 on 4 November 2026."
+      ],
+      "scope": "Transfer T7, 4 November 2026; current supplied source revision only. No separate brief was supplied.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "unsound",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "R4",
+          "report_quote": "The applicable receipt deadline was 17:00, and the receipt scan records 16:40.",
+          "assessment": "contradicted",
+          "reasoning": "P3 sets the receipt cutoff at 16:30 with no grace period. The reviewed scan records receipt at 16:40, ten minutes after that cutoff. The 16:10 dispatch is not receipt. The 17:00 approval deadline in P4 does not alter P3.",
+          "evidence_refs": [
+            0,
+            1
+          ],
+          "proof_refs": [
+            0
+          ]
+        }
+      ],
+      "independent_reasoning": [
+        "P3 sets the receipt cutoff at 16:30 with no grace period. The reviewed scan records receipt at 16:40, ten minutes after that cutoff.",
+        "The 16:10 dispatch is not receipt. The 17:00 approval deadline in P4 does not alter P3."
+      ],
+      "evidence_refs": [
+        0,
+        1
+      ],
+      "proof_refs": [
+        0
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "A small arithmetic or Boolean target checks the stated operational issue without assuming the conclusion.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "P3 sets the receipt cutoff at 16:30 with no grace period. The reviewed scan records receipt at 16:40, ten minutes after that cutoff. The 16:10 dispatch is not receipt. The 17:00 approval deadline in P4 does not alter P3. Source facts are assumptions of this translation; this target does not authenticate records."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the exact report finding and all evidence passages listed here in context; checked current ledger version, governing rule and receipt where relevant.",
+      "queries": [],
+      "inspected": [
+        {
+          "path": "input/sources/01-policy.docx.md",
+          "anchor": "docx-p-0004"
+        },
+        {
+          "path": "input/sources/03-receipt-scan.pdf.md",
+          "anchor": "pdf-page-0001-reviewed-0001"
+        }
+      ],
+      "limitations": [
+        "This is a bounded search of the supplied package, with no outside or missing approval-event records."
+      ],
+      "conclusion": "P3 sets the receipt cutoff at 16:30 with no grace period. The reviewed scan records receipt at 16:40, ten minutes after that cutoff. The 16:10 dispatch is not receipt. The 17:00 approval deadline in P4 does not alter P3."
+    }
+  },
+  {
+    "claim_id": "R5",
+    "report_quote": "T7 release eligibility is established.",
+    "report_anchor": "R5",
+    "question": "Do these supplied records establish both required approval premises without treating missing security status as a negative event?",
+    "evidence": [
+      {
+        "path": "input/sources/01-policy.docx.md",
+        "anchor": "docx-p-0005",
+        "quote": "P4: T7 release eligibility requires both quality approval and security approval by 17:00 local time. Quality approval alone is insufficient. A missing security-status field is not a statement that no approval event occurred."
+      },
+      {
+        "path": "input/sources/02-ledger.pdf.md",
+        "anchor": "pdf-page-0001",
+        "quote": "Cedar laboratory T7 charge and quality ledger - revision 2\nTransfer date: 4 November 2026. Unit: whole credits.\nCharge A: 60 credits.\nCharge B: 40 credits.\nCharge C: 45 credits.\nThis is the complete charge list for transfer T7. Count each line once.\nQuality approval: granted at 16:00 local time on 4 November 2026.\nSecurity approval status: not supplied. This ledger is not an approval-event history.\nRevision 2 supersedes revision 1 for T7. Charge C is corrected from 20 to 45 credits. All\nother fields remain unchanged."
+      },
+      {
+        "path": "input/sources/03-receipt-scan.pdf.md",
+        "anchor": "pdf-page-0001-reviewed-0001",
+        "quote": "CEDAR LABORATORY - PHYSICAL RECEIPT\nTransfer: T7\nReceipt date: 4 November 2026\nPhysical receipt time: 16:40 local time\nDispatch time: 16:10 local time\nRecorded by: Receiving desk\nThis receipt records physical arrival only.\nIt does not record quality or security approval."
+      },
+      {
+        "path": "input/sources/01-policy.docx.md",
+        "anchor": "docx-p-0006",
+        "quote": "P5: This package contains no definition or grading scale for the adjective exemplary. The package is complete only for charges A, B and C; it is not a complete approval-event history."
+      }
+    ],
+    "rules": [
+      "P4 requires quality AND security approval; unknown security status is not false."
+    ],
+    "assumptions": [
+      "Interpret the supplied synthetic records as the authoritative documentary package for T7 on 4 November 2026.",
+      "The manually reviewed source-to-symbol translation is faithful; Lean verifies only the encoded proposition."
+    ],
+    "reasoning": [
+      "P4 requires both quality and security approvals by 17:00. The ledger records quality at 16:00 but expressly supplies no security status. The scan records arrival only; P5 denies approval-history completeness.",
+      "Two compatible possibilities remain: timely security approval occurred, or it did not. Actual eligibility is unresolved, and its establishment from this package fails. The mixed report wording is epistemic: its asserted certainty is unsupported even though the underlying eligibility event is left undetermined.",
+      "The Lean counterexample q=true, s=false refutes the offered quality-only rule. It does not prove actual security refusal or actual ineligibility."
+    ],
+    "semantic_state": "undetermined",
+    "argument_status": "unsound_argument",
+    "formal_status": "auxiliary",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim5",
+        "relation": "auxiliary",
+        "target": "\u00ac (\u2200 q s : Bool, q = true \u2192 (q = true \u2227 s = true))"
+      }
+    ],
+    "limits": [
+      "The dossier is synthetic; hashes and Lean do not authenticate real-world events.",
+      "The auditor authored the fixture: this is a nonblind demonstration with a separate coordinator source-first/model review, not a blind accuracy benchmark.",
+      "Original OCR remains available; reviewed transcription corrects T7/17. Coordinates/confidences describe the original extraction, not independent witnesses.",
+      "No complete approval-event history is supplied; neither approval absence nor actual ineligibility is established."
+    ],
+    "recommendation": "Replace the claim with the source-grounded result explained above; do not infer absent historical events.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "Do these supplied records establish both required approval premises without treating missing security status as a negative event?",
+      "decision_criteria": [
+        "P4 requires quality AND security approval; unknown security status is not false."
+      ],
+      "scope": "Transfer T7, 4 November 2026; current supplied source revision only. No separate brief was supplied.",
+      "missing_definitions": [],
+      "alternatives": [
+        "Eligibility may hold or fail depending on the unprovided security event."
+      ]
+    },
+    "argument_audit": {
+      "outcome": "unsound",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "R5",
+          "report_quote": "The ledger records quality approval at 16:00",
+          "assessment": "verified",
+          "reasoning": "Quality approval at16:00 is explicitly recorded.",
+          "evidence_refs": [
+            1
+          ],
+          "proof_refs": []
+        },
+        {
+          "kind": "premise",
+          "report_anchor": "R5",
+          "report_quote": "quality approval alone establishes release eligibility.",
+          "assessment": "contradicted",
+          "reasoning": "P4 expressly denies quality-only sufficiency; the Boolean witness makes the missing required security condition explicit.",
+          "evidence_refs": [
+            0
+          ],
+          "proof_refs": [
+            0
+          ]
+        },
+        {
+          "kind": "inference",
+          "report_anchor": "R5",
+          "report_quote": "T7 release eligibility is established.",
+          "assessment": "unsupported",
+          "reasoning": "The offered sufficient rule is false. The corpus cannot establish actual eligibility or its negation; the report certainty is unsupported.",
+          "evidence_refs": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "proof_refs": [
+            0
+          ]
+        }
+      ],
+      "independent_reasoning": [
+        "P4 requires both quality and security approvals by 17:00. The ledger records quality at 16:00 but expressly supplies no security status. The scan records arrival only; P5 denies approval-history completeness.",
+        "Two compatible possibilities remain: timely security approval occurred, or it did not. Actual eligibility is unresolved, and its establishment from this package fails. The mixed report wording is epistemic: its asserted certainty is unsupported even though the underlying eligibility event is left undetermined.",
+        "The Lean counterexample q=true, s=false refutes the offered quality-only rule. It does not prove actual security refusal or actual ineligibility."
+      ],
+      "evidence_refs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "proof_refs": [
+        0
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "A small arithmetic or Boolean target checks the stated operational issue without assuming the conclusion.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "P4 requires both quality and security approvals by 17:00. The ledger records quality at 16:00 but expressly supplies no security status. The scan records arrival only; P5 denies approval-history completeness. Two compatible possibilities remain: timely security approval occurred, or it did not. Actual eligibility is unresolved, and its establishment from this package fails. The mixed report wording is epistemic: its asserted certainty is unsupported even though the underlying eligibility event is left undetermined. The Lean counterexample q=true, s=false refutes the offered quality-only rule. It does not prove actual security refusal or actual ineligibility. Source facts are assumptions of this translation; this target does not authenticate records."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the exact report finding and all evidence passages listed here in context; checked current ledger version, governing rule and receipt where relevant.",
+      "queries": [],
+      "inspected": [
+        {
+          "path": "input/sources/01-policy.docx.md",
+          "anchor": "docx-p-0005"
+        },
+        {
+          "path": "input/sources/02-ledger.pdf.md",
+          "anchor": "pdf-page-0001"
+        },
+        {
+          "path": "input/sources/03-receipt-scan.pdf.md",
+          "anchor": "pdf-page-0001-reviewed-0001"
+        },
+        {
+          "path": "input/sources/01-policy.docx.md",
+          "anchor": "docx-p-0006"
+        }
+      ],
+      "limitations": [
+        "This is a bounded search of the supplied package, with no outside or missing approval-event records."
+      ],
+      "conclusion": "P4 requires both quality and security approvals by 17:00. The ledger records quality at 16:00 but expressly supplies no security status. The scan records arrival only; P5 denies approval-history completeness. Two compatible possibilities remain: timely security approval occurred, or it did not. Actual eligibility is unresolved, and its establishment from this package fails. The mixed report wording is epistemic: its asserted certainty is unsupported even though the underlying eligibility event is left undetermined. The Lean counterexample q=true, s=false refutes the offered quality-only rule. It does not prove actual security refusal or actual ineligibility."
+    }
+  },
+  {
+    "claim_id": "R6",
+    "report_quote": "Charge B is 40 credits.",
+    "report_anchor": "R6",
+    "question": "Is the unsupported report amount for B independently documented?",
+    "evidence": [
+      {
+        "path": "input/sources/02-ledger.pdf.md",
+        "anchor": "pdf-page-0001",
+        "quote": "Cedar laboratory T7 charge and quality ledger - revision 2\nTransfer date: 4 November 2026. Unit: whole credits.\nCharge A: 60 credits.\nCharge B: 40 credits.\nCharge C: 45 credits.\nThis is the complete charge list for transfer T7. Count each line once.\nQuality approval: granted at 16:00 local time on 4 November 2026.\nSecurity approval status: not supplied. This ledger is not an approval-event history.\nRevision 2 supersedes revision 1 for T7. Charge C is corrected from 20 to 45 credits. All\nother fields remain unchanged."
+      }
+    ],
+    "rules": [
+      "Read the B entry and preserve its whole-credit unit."
+    ],
+    "assumptions": [
+      "Interpret the supplied synthetic records as the authoritative documentary package for T7 on 4 November 2026.",
+      "The manually reviewed source-to-symbol translation is faithful; Lean verifies only the encoded proposition."
+    ],
+    "reasoning": [
+      "The ledger directly records B=40 credits in both revisions.",
+      "The report gives no derivation or citation for this sentence. Independent evidence supports it, while its author-supplied support is absent. The theorem reads the named chargeB field of the typed Ledger record, whose source correspondence is documented."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "insufficient_support",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "Audit",
+        "theorem": "Audit.claim6",
+        "relation": "supports",
+        "target": "Audit.currentLedger.chargeB = 40"
+      }
+    ],
+    "limits": [
+      "The dossier is synthetic; hashes and Lean do not authenticate real-world events.",
+      "The auditor authored the fixture: this is a nonblind demonstration with a separate coordinator source-first/model review, not a blind accuracy benchmark."
+    ],
+    "recommendation": "Retain the claim with its stated documentary scope.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "Is the unsupported report amount for B independently documented?",
+      "decision_criteria": [
+        "Read the B entry and preserve its whole-credit unit."
+      ],
+      "scope": "Transfer T7, 4 November 2026; current supplied source revision only. No separate brief was supplied.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "not_provided",
+      "report_items": [],
+      "independent_reasoning": [
+        "The ledger directly records B=40 credits in both revisions.",
+        "The report gives no derivation or citation for this sentence. Independent evidence supports it, while its author-supplied support is absent. The theorem reads the named chargeB field of the typed Ledger record, whose source correspondence is documented."
+      ],
+      "evidence_refs": [
+        0
+      ],
+      "proof_refs": [
+        0
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "A small arithmetic or Boolean target checks the stated operational issue without assuming the conclusion.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "The ledger directly records B=40 credits in both revisions. The report gives no derivation or citation for this sentence. Independent evidence supports it, while its author-supplied support is absent. The theorem reads the named chargeB field of the typed Ledger record, whose source correspondence is documented. Source facts are assumptions of this translation; this target does not authenticate records."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the exact report finding and all evidence passages listed here in context; checked current ledger version, governing rule and receipt where relevant.",
+      "queries": [],
+      "inspected": [
+        {
+          "path": "input/sources/02-ledger.pdf.md",
+          "anchor": "pdf-page-0001"
+        }
+      ],
+      "limitations": [
+        "This is a bounded search of the supplied package, with no outside or missing approval-event records."
+      ],
+      "conclusion": "The ledger directly records B=40 credits in both revisions. The report gives no derivation or citation for this sentence. Independent evidence supports it, while its author-supplied support is absent. The theorem reads the named chargeB field of the typed Ledger record, whose source correspondence is documented."
+    }
+  },
+  {
+    "claim_id": "R7",
+    "report_quote": "The handover was exemplary.",
+    "report_anchor": "R7",
+    "question": "Does the supplied package define an operational grading criterion for exemplary?",
+    "evidence": [
+      {
+        "path": "input/sources/01-policy.docx.md",
+        "anchor": "docx-p-0006",
+        "quote": "P5: This package contains no definition or grading scale for the adjective exemplary. The package is complete only for charges A, B and C; it is not a complete approval-event history."
+      },
+      {
+        "path": "input/sources/02-ledger.pdf.md",
+        "anchor": "pdf-page-0001",
+        "quote": "Cedar laboratory T7 charge and quality ledger - revision 2\nTransfer date: 4 November 2026. Unit: whole credits.\nCharge A: 60 credits.\nCharge B: 40 credits.\nCharge C: 45 credits.\nThis is the complete charge list for transfer T7. Count each line once.\nQuality approval: granted at 16:00 local time on 4 November 2026.\nSecurity approval status: not supplied. This ledger is not an approval-event history.\nRevision 2 supersedes revision 1 for T7. Charge C is corrected from 20 to 45 credits. All\nother fields remain unchanged."
+      },
+      {
+        "path": "input/sources/03-receipt-scan.pdf.md",
+        "anchor": "pdf-page-0001-reviewed-0001",
+        "quote": "CEDAR LABORATORY - PHYSICAL RECEIPT\nTransfer: T7\nReceipt date: 4 November 2026\nPhysical receipt time: 16:40 local time\nDispatch time: 16:10 local time\nRecorded by: Receiving desk\nThis receipt records physical arrival only.\nIt does not record quality or security approval."
+      }
+    ],
+    "rules": [
+      "No supplied exemplary grading criterion; do not invent a scale."
+    ],
+    "assumptions": [
+      "Interpret the supplied synthetic records as the authoritative documentary package for T7 on 4 November 2026.",
+      "The manually reviewed source-to-symbol translation is faithful; Lean verifies only the encoded proposition."
+    ],
+    "reasoning": [
+      "P5 expressly states that no definition or grading scale for exemplary is supplied. The ledger and receipt contain event and amount records, not a grading scale.",
+      "Exemplary has no operational decision criterion here. No numeric result or timestamp settles that evaluative judgment."
+    ],
+    "semantic_state": "not_applicable",
+    "argument_status": "nonformal",
+    "formal_status": "not_attempted",
+    "proofs": [],
+    "limits": [
+      "The dossier is synthetic; hashes and Lean do not authenticate real-world events.",
+      "The auditor authored the fixture: this is a nonblind demonstration with a separate coordinator source-first/model review, not a blind accuracy benchmark.",
+      "The absence of a supplied grading criterion is not a universal impossibility of qualitative evaluation."
+    ],
+    "recommendation": "Replace the claim with the source-grounded result explained above; do not infer absent historical events.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "Does the supplied package define an operational grading criterion for exemplary?",
+      "decision_criteria": [
+        "No supplied exemplary grading criterion; do not invent a scale."
+      ],
+      "scope": "Transfer T7, 4 November 2026; current supplied source revision only. No separate brief was supplied.",
+      "missing_definitions": [
+        "No operational exemplary grading scale."
+      ],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "nonformal",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "R7",
+          "report_quote": "No grading criterion is offered for this evaluation.",
+          "assessment": "nonformal",
+          "reasoning": "P5 expressly states that no definition or grading scale for exemplary is supplied. The ledger and receipt contain event and amount records, not a grading scale. Exemplary has no operational decision criterion here. No numeric result or timestamp settles that evaluative judgment.",
+          "evidence_refs": [
+            0,
+            1,
+            2
+          ],
+          "proof_refs": []
+        }
+      ],
+      "independent_reasoning": [
+        "P5 expressly states that no definition or grading scale for exemplary is supplied. The ledger and receipt contain event and amount records, not a grading scale.",
+        "Exemplary has no operational decision criterion here. No numeric result or timestamp settles that evaluative judgment."
+      ],
+      "evidence_refs": [
+        0,
+        1,
+        2
+      ],
+      "proof_refs": [],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "Documentary interpretation or evaluative scope is the issue; no faithful additional Lean target is claimed.",
+      "correspondence": []
+    },
+    "support_search": {
+      "scope": "Read the exact report finding and all evidence passages listed here in context; checked current ledger version, governing rule and receipt where relevant.",
+      "queries": [],
+      "inspected": [
+        {
+          "path": "input/sources/01-policy.docx.md",
+          "anchor": "docx-p-0006"
+        },
+        {
+          "path": "input/sources/02-ledger.pdf.md",
+          "anchor": "pdf-page-0001"
+        },
+        {
+          "path": "input/sources/03-receipt-scan.pdf.md",
+          "anchor": "pdf-page-0001-reviewed-0001"
+        }
+      ],
+      "limitations": [
+        "This is a bounded search of the supplied package, with no outside or missing approval-event records."
+      ],
+      "conclusion": "P5 expressly states that no definition or grading scale for exemplary is supplied. The ledger and receipt contain event and amount records, not a grading scale. Exemplary has no operational decision criterion here. No numeric result or timestamp settles that evaluative judgment."
+    }
+  }
+]

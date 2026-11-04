@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target007.lean
+Audit.claim1 : Audit.currentLedger.chargeA + Audit.currentLedger.chargeB + Audit.currentLedger.chargeC = 120
+'Audit.claim1' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.150]

@@ -35,6 +35,10 @@ DESCRIPTIONS = {
     "10": "Sixty operational records plus cross-document identity, delegated authority, rule transitions, board exceptions, and differently bounded completeness claims.",
     "11": "Report-derived criteria without a separate brief: arithmetic, bounded exceptions, citation fidelity, conclusion versus argument, dependencies, conflicts, and population scope.",
     "12": "An actually empty source file: distinguish a verified observation about zero bytes from unsupported clearance claims, without fabricated quotations or closed-world assumptions.",
+    "13": "Start here: portable HTML extraction, independent conclusion and argument checks, exact arithmetic, countermodels and reusable Lean modules.",
+    "14": "The same evidence obligations with Lean and agent tools alone: supported conclusions, false argument premises and formal underdetermination, without Python audit gates.",
+    "15": "Current-contract native DOCX/PDF/OCR audit, followed by a source correction, stale-result rejection, dependency review and revised verdicts.",
+    "16": "Overlapping and touching SLA pauses, exact deadline boundaries and half-cent rounding, with scoped invoice and historical-evidence claims.",
 }
 ARTIFACTS = [
     ("Input snapshots and manifests", "input/report*, input/sources/, input/originals/, manifest.json, input/manifest.json", "Identify the exact selected report and supplied evidence; hashes bind bytes and native originals remain downloadable.", "Hashes do not authenticate a document or certify its factual truth. The alternate report is never evidence for the selected report."),
@@ -114,7 +118,7 @@ class Publisher:
         return f'<a href="{escape(href, quote=True)}">{escape(label)}</a>'
 
     def page(self, rel: str, title: str, body: str):
-        nav = "".join(self.link(rel, p, t) for p, t in [("index.html", "Example catalog"), ("artifact-guide.html", "How to read the artifacts"), ("files.html", "All published files")])
+        nav = "".join(self.link(rel, p, t) for p, t in [("start-here.html", "Start here"), ("capabilities.html", "Coverage & limits"), ("index.html", "Example catalog"), ("artifact-guide.html", "How to read the artifacts"), ("files.html", "All published files")])
         css = os.path.relpath(OUT / "style.css", (OUT / rel).parent)
         html = f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)} | Evidence audit examples</title><link rel="stylesheet" href="{escape(css)}"></head><body><header><nav>{nav}</nav></header><main><h1>{escape(title)}</h1>{body}</main><footer>Static study edition · works from file:// · no network or JavaScript required. Sources, audits, and evaluator expectations have different roles.</footer></body></html>'
         self.write(rel, html.encode())
@@ -199,6 +203,9 @@ class Publisher:
         page = f"runs/{run_id}.html"
         prefix = f"runs/{run_id}"
         files = self.snapshot(source, prefix, exclude=("evaluator",))
+        execution = read_json(source / "run.json", {})
+        if execution.get("execution_mode") == "agent-native":
+            return self.native_run(run_id, source, dossier, files, execution)
         registry = read_json(source / "claims.json", {})
         findings = read_json(source / "findings.json", [])
         if isinstance(findings, dict):
@@ -260,24 +267,62 @@ class Publisher:
         self.page(page, run_id, body)
         return {"id": run_id, "dossier": dossier, "schema_version": version, "findings": len(findings), "proof_status": proofs.get("status", "not supplied"), "execution_status": proofs.get("execution_status", "not recorded"), "source": source_label}
 
+    def native_run(self, run_id, source, dossier, files, execution):
+        """Expose native assurance without inventing helper contracts or proof logs."""
+        page = f"runs/{run_id}.html"
+        def link(name, label=None):
+            return self.artifact_link(page, f"raw/runs/{run_id}/{name}", label or name)
+        status_file = source / 'lean-exit-status.txt'
+        recorded_exit = status_file.read_text().strip() if status_file.exists() else 'not recorded'
+        source_label = str(source.relative_to(ROOT)) if source.is_relative_to(ROOT) else str(source)
+        if source.resolve() == (OUT / 'raw/runs' / run_id).resolve():
+            source_label = self.old_runs.get(run_id, {}).get('source', source_label)
+        body = '<p>' + self.link(page, f'dossiers/{dossier}.html', 'Back to both report variants') + '</p>'
+        body += '<p class="badge">Agent-native audit · Lean execution, agent-reviewed metadata</p>'
+        body += '<p class="note">This route does not claim a passed Python v2 contract or Lake build. '
+        body += 'Read the execution record and semantic review to distinguish actual formal checks from agent-reviewed evidence correspondence and coverage.</p>'
+        body += '<p>Recorded Lean exit status: <strong>' + escape(recorded_exit) + '</strong>. '
+        body += 'The publisher displays preserved artifacts and does not rerun Lean.</p>'
+        body += '<h2>Read this run in order</h2><ol>'
+        inputs = [(execution.get('selected_report', 'report-mixed.md'), 'Selected supplied report')]
+        inputs += [(name, 'Original documentary source: ' + name) for name in execution.get('sources', ['source.md'])]
+        for name, label in inputs + [('audit-report.md', 'Claim-by-claim audit, facts, methods and limits'),
+                            ('run.json', 'Execution mode and assurance record'), ('Audit.lean', 'Model, exact-target assertions and axiom checks'),
+                            ('lean.log', 'Actual Lean output'), ('independent-review.md', 'Separate semantic review')]:
+            if (source / name).is_file():
+                body += '<li>' + link(name, label) + '</li>'
+        body += '</ol><h2>Recorded assurance</h2>' + data_html(execution)
+        report = source / 'audit-report.md'
+        if report.exists():
+            body += '<h2>Full audit explanation</h2><pre>' + escape(report.read_text()) + '</pre>'
+        body += '<h2>Complete run artifact browser</h2>' + self.file_table(page, files)
+        self.page(page, run_id, body)
+        return {'id': run_id, 'dossier': dossier, 'schema_version': None, 'execution_mode': 'agent-native',
+                'findings': execution.get('registered_conclusions', 0), 'proof_status': 'recorded exit ' + recorded_exit,
+                'execution_status': 'see native assurance record', 'source': source_label}
+
     def dossier(self, source: Path, runs: list[dict]):
         dossier = source.name
         page = f"dossiers/{dossier}.html"
-        files = self.snapshot(source, f"dossiers/{dossier}", exclude=("evaluator", "authoring"))
+        files = self.snapshot(source, f"dossiers/{dossier}", exclude=("evaluator", "authoring", "masters"))
         body = '<p>' + escape(DESCRIPTIONS.get(dossier[:2], "Supplied synthetic report audit dossier.")) + '</p><p class="note">Audit one supplied report against the shared sources. The other report and evaluator expectations are not evidence. Fixture README statements about preparation describe the original input package; executed audit records are linked separately below.</p>'
         body += '<h2>Report variants and actual audit records</h2><div class="grid">'
         for variant, filename in [("mixed", "report.md"), ("correct", "report-correct.md")]:
+            if variant == 'mixed' and not (source / filename).is_file() and (source / 'report-mixed.md').is_file():
+                filename = 'report-mixed.md'
             body += f'<section class="card"><h3>{variant.capitalize()} supplied report</h3><p>' + self.artifact_link(page, f"raw/dossiers/{dossier}/{filename}", filename) + '</p>'
             related = [r for r in runs if r["dossier"] == dossier and r["id"].endswith("-" + variant)]
             for run in related:
-                body += '<p>' + self.link(page, f'runs/{run["id"]}.html', "Open detailed audit, arguments, Lean targets and actual logs") + f'</p><p>{run["findings"]} findings · {"v2" if run["schema_version"] == 2 else "legacy v1"} · recorded proof status: {escape(str(run["proof_status"]))}</p>'
+                profile = 'agent-native' if run.get('execution_mode') == 'agent-native' else 'v2' if run['schema_version'] == 2 else 'legacy v1'
+                stage = 'Revised source audit' if '-revised-' in run['id'] else 'Initial source audit'
+                body += '<p>' + self.link(page, f'runs/{run["id"]}.html', stage + ': arguments, Lean targets and logs') + f'</p><p>{run["findings"]} findings · {profile} · recorded proof status: {escape(str(run["proof_status"]))}</p>'
             if not related:
                 body += '<p>No audit bundle published for this variant.</p>'
             body += '</section>'
         body += '</div><h2>Source documents</h2><p>Open any file to inspect its text or native original. Run input snapshots retain the exact bytes and extraction state used by that audit; the dossier files below describe the supplied fixture.</p>'
         body += self.source_table(page, [f for f in files if "/sources/" in f])
         body += '<h2>Context and input inventory</h2>' + self.file_table(page, [f for f in files if "/sources/" not in f])
-        body += '<p>Authoring masters are excluded: native DOCX/PDF/OCR ingestion must be assessed against the actual source files. A separate review brief is optional; dossier 11 intentionally has none.</p>'
+        body += '<p>Authoring masters are excluded: native DOCX/PDF/OCR ingestion must be assessed against the actual source files. A separate review brief is optional; dossiers 11–16 intentionally derive criteria without one.</p>'
         expectations = source / "evaluator"
         shared = ROOT / "examples/evaluator" / (dossier + ".json")
         if expectations.exists() or shared.exists():
@@ -298,6 +343,36 @@ class Publisher:
                 path.unlink()
         inventory = {"schema_version": 1, "algorithm": "sha256", "scope": "All generated pages and published snapshots except this self-referential inventory", "generator": "validation/publish_examples.py", "command": command, "runs": runs, "files": self.inventory}
         (OUT / "publication-integrity.json").write_text(json.dumps(inventory, indent=2, ensure_ascii=False) + "\n")
+
+    def tutorials(self, runs):
+        """A current learning path and a coverage matrix backed by preserved records."""
+        for name, title in [('start-here', 'Start here: one finding, two verdicts'),
+                            ('revision-walkthrough', 'Native documents, corrected evidence and changed verdicts')]:
+            self.page(name + '.html', title, (ROOT / 'validation/tutorial-content' / (name + '.html')).read_text())
+        self.snapshot(ROOT / 'validation/tutorial-suite', 'review')
+        matrix = read_json(ROOT / 'validation/tutorial-suite/capabilities.json')
+        groups = Counter('agent-native' if r.get('execution_mode') == 'agent-native' else
+                         'v2 helper' if r['schema_version'] == 2 else 'legacy v1' for r in runs)
+        body = '<p>This matrix separates executed audit scenarios, implementation tests and untested limits. '
+        body += 'Counts describe preserved audit snapshots, not independently authenticated conclusions or statistical accuracy.</p>'
+        body += '<h2>Published audit profiles</h2>' + data_html(dict(groups))
+        body += '<p>The revised-source snapshots reuse the same supplied report, so snapshot count is larger than report count. '
+        body += 'The older mixed examples 13/14 are reused only after source/report byte identity checks; their correct companions have separate new executions. '
+        body += 'New examples are nonblind fixture-author audits with coordinator review. Registry version alone is not a new execution.</p>'
+        body += '<p>' + self.artifact_link('capabilities.html', 'raw/review/suite-summary.json', 'New-run execution inventory') + ' · '
+        body += self.artifact_link('capabilities.html', 'raw/review/capabilities.json', 'Machine-readable coverage matrix') + '</p>'
+        def evidence_link(item):
+            path, _, fragment = item['path'].partition('#')
+            return self.link('capabilities.html', path, item['label'], fragment)
+        for item in matrix['capabilities']:
+            category = matrix['categories'][item['evidence_kind']]
+            body += '<section class="card" id="' + escape(item['id']) + '"><h2>' + escape(item['capability']) + '</h2>'
+            body += '<p class="badge">' + escape(category) + '</p><p>' + escape(item['establishes']) + '</p>'
+            body += '<ul>' + ''.join('<li>' + evidence_link(e) + '</li>' for e in item['evidence']) + '</ul>'
+            body += '<p class="note">' + escape(item['limits']) + '</p></section>'
+        body += '<h2>What this suite does not establish</h2><p>Coverage of these mechanisms does not establish semantic completeness for an arbitrary dossier. '
+        body += 'A claim with no adequate criterion or unavailable evidence can remain unresolved. No empty success label substitutes for a proof or source review.</p>'
+        self.page('capabilities.html', 'Capability coverage and remaining limits', body)
 
 
 class Links(HTMLParser):
@@ -360,13 +435,13 @@ def main():
         return
     dossiers = sorted(p for p in (ROOT / "examples").glob("[0-9][0-9]-*") if p.is_dir())
     sources = {p.name: p for p in sorted((ROOT / "validation/runs").iterdir()) if p.is_dir()}
-    if not args.extra_run:
-        previous = read_json(OUT / "publication-integrity.json", {})
-        for run in previous.get("runs", []):
-            if run["id"] not in sources:
-                published = OUT / "raw/runs" / run["id"]
-                if published.is_dir():
-                    args.extra_run.append(run["id"] + "=" + str(published))
+    explicit_ids = {spec.partition("=")[0] for spec in args.extra_run}
+    previous = read_json(OUT / "publication-integrity.json", {})
+    for run in previous.get("runs", []):
+        if run["id"] not in sources and run["id"] not in explicit_ids:
+            published = OUT / "raw/runs" / run["id"]
+            if published.is_dir():
+                args.extra_run.append(run["id"] + "=" + str(published))
     for spec in args.extra_run:
         name, sep, value = spec.partition("=")
         if not sep or not re.fullmatch(r"[a-zA-Z0-9_-]+", name):
@@ -391,11 +466,20 @@ def main():
         guide += f'<section class="card"><h2>{escape(title)}</h2><p><code>{escape(paths)}</code></p><p>{escape(establishes)}</p><p class="note">{escape(limits)}</p></section>'
     guide += '<h2>Publication integrity and omissions</h2><p>' + pub.link("artifact-guide.html", "publication-integrity.json", "Publication SHA-256 inventory") + ' records every snapshot source and every generated file. Original audit/export manifests are retained untouched. A publication hash establishes byte identity with the copied artifact; it is not a new audit or proof check. Toolchain binaries, build caches, symlinks, and fixture authoring masters are excluded. Native originals and intermediate indexes are retained.</p><h2>Missing and partial coverage</h2><p>Only artifacts present in the supplied bundles are shown. No missing criterion, argument audit, provenance coordinate, proof, review, or failed attempt is reconstructed as though it had been executed. Legacy results and fresh rechecks remain separately labeled. Evaluator expectations are available only in the explicitly marked study area.</p>'
     pub.page("artifact-guide.html", "How to read an evidence-backed audit", guide)
+    pub.tutorials(runs)
     cards = []
-    for dossier in dossiers:
+    priority = {'13': 0, '15': 1, '16': 2, '14': 3, '11': 4, '12': 5}
+    for dossier in sorted(dossiers, key=lambda d: (priority.get(d.name[:2], 6), d.name)):
         related = [r for r in runs if r["dossier"] == dossier.name]
         cards.append('<section class="card"><h2>' + pub.link("index.html", f"dossiers/{dossier.name}.html", dossier.name) + '</h2><p>' + escape(DESCRIPTIONS.get(dossier.name[:2], "")) + f'</p><p>{len(related)} separate report audits · {sum(r["findings"] for r in related)} recorded findings</p></section>')
-    body = f'<p>Explore {len(dossiers)} synthetic dossiers and {len(runs)} separately supplied report audits: the source documents, exact claims, intermediate decisions, Lean code, and actual saved proof logs. Each dossier pairs a deliberately mixed report with a cautious report intended to be correct.</p><p class="note">The first ten dossiers retain legacy v1 audit bundles. Dossier 11 exercises v2 registration, inferred criteria, and separate audits of report arguments and conclusions without a separate brief. Dossier 12 tests an empty evidence file; it is coordinator-authored and audited, not blind, with independent post-review recorded separately. A proof passing does not certify source authenticity, extraction accuracy, or model adequacy.</p><p>Start with a dossier, choose one report variant, then follow its detailed findings to source snapshots and exact target logs. Missing arguments can be valuable support-gap findings without establishing that a conclusion is false.</p><div class="grid">' + "".join(cards) + '</div><h2>Offline inspection and reproducibility</h2><p>Every link stays inside this published catalog. HTML contains all displayed data; no fetch, server, network, or JavaScript is needed. PDFs and images use the browser’s native viewer, while DOCX and SQLite files can be downloaded unchanged.</p><p>' + pub.link("index.html", "README.md", "Regeneration instructions") + ' · ' + pub.link("index.html", "publication-integrity.json", "Publication integrity inventory") + '</p>'
+    legacy = sum(r['schema_version'] == 1 for r in runs)
+    native = sum(r.get('execution_mode') == 'agent-native' for r in runs)
+    registered = len(runs) - legacy - native
+    body = f'<p>Explore {len(dossiers)} synthetic dossiers, {len(dossiers)*2} supplied report variants and {len(runs)} audit snapshots, including source revisions. Sources, findings, intermediate decisions, Lean code and actual logs are inspectable offline.</p>'
+    body += '<section class="card"><h2>' + pub.link('index.html', 'start-here.html', 'Start here: one finding, two verdicts') + '</h2><p>Follow a correct conclusion with a false offered rule from original text through the model and actual Lean checks. Then compare the separately audited correct report.</p><p>'
+    body += pub.link('index.html', 'revision-walkthrough.html', 'Next: native documents and a corrected source') + ' · ' + pub.link('index.html', 'capabilities.html', 'Coverage matrix and remaining limits') + '</p></section>'
+    body += f'<p class="note">{registered} v2 helper audit snapshots, {native} agent-native audits and {legacy} historical legacy v1 audits. Native execution does not claim Python helper gates. Revised-source audits retain the same report, whose originally correct conclusions may become outdated. A successful proof does not certify source authenticity or model adequacy.</p>'
+    body += '<h2>Current learning examples, then historical domain examples</h2><div class="grid">' + ''.join(cards) + '</div><h2>Offline inspection and reproducibility</h2><p>Every link stays inside this published catalog. HTML contains all displayed data; no fetch, server, network or JavaScript is needed. PDFs and images use native browser viewers; DOCX and SQLite files download unchanged.</p><p>' + pub.link('index.html', 'README.md', 'Regeneration instructions') + ' · ' + pub.link('index.html', 'publication-integrity.json', 'Publication integrity inventory') + '</p>'
     pub.page("index.html", "Evidence audit example catalog", body)
     pub.finish(runs, args.extra_run)
     check_site()

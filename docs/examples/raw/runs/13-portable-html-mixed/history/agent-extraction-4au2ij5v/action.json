@@ -1,0 +1,11 @@
+{
+  "action": "import-agent-extraction",
+  "document_id": "D00002",
+  "at": "2026-11-04T17:52:07.210366+00:00",
+  "original_sha256": "49335a218d26cb5c9a79726b21c1565eb5f5318821add20f66c1e7e4dcac7c55",
+  "bundle_sha256": "883ad822a2df572cd0b90ffba73cf4c58d5b3ce48df3e31a4e52e5f28fb36622",
+  "prior_manifest_sha256": "8ab8feee22c8d4910971ebffc652da3e710db28ab4b6f680e244b60d76fb8fb2",
+  "state": "recorded",
+  "archived": [],
+  "current_manifest_sha256": "fa4f05672acc5943ac2c2ca4984c6faa9b8ad3d1274958cac0c5fac53cb41b03"
+}

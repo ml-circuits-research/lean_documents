@@ -1,0 +1,190 @@
+{
+  "checked_at": "2026-11-04T18:11:16.933331+00:00",
+  "status": "passed",
+  "lean_version_required": "4.24.0",
+  "independent_checker": {
+    "status": "not_run",
+    "reason": "No external checker is configured; no independent-kernel assurance is claimed."
+  },
+  "targets": [
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim1",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-001.log",
+      "check_file": "checks/Target001.lean",
+      "model_sha256": "2b497cf5762cb5e01d2ec5fcdde8d3f7a13e57adbeaccde27940bce6bccaa859"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim2",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-002.log",
+      "check_file": "checks/Target002.lean",
+      "model_sha256": "2b497cf5762cb5e01d2ec5fcdde8d3f7a13e57adbeaccde27940bce6bccaa859"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim3",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-003.log",
+      "check_file": "checks/Target003.lean",
+      "model_sha256": "2b497cf5762cb5e01d2ec5fcdde8d3f7a13e57adbeaccde27940bce6bccaa859"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim4",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-004.log",
+      "check_file": "checks/Target004.lean",
+      "model_sha256": "2b497cf5762cb5e01d2ec5fcdde8d3f7a13e57adbeaccde27940bce6bccaa859"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim5",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-005.log",
+      "check_file": "checks/Target005.lean",
+      "model_sha256": "2b497cf5762cb5e01d2ec5fcdde8d3f7a13e57adbeaccde27940bce6bccaa859"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim6",
+      "target": null,
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-006.log",
+      "check_file": "checks/Target006.lean",
+      "model_sha256": "2b497cf5762cb5e01d2ec5fcdde8d3f7a13e57adbeaccde27940bce6bccaa859"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim1",
+      "target": "(60 + 40 + 20 : Nat) ≠ 130",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-007.log",
+      "check_file": "checks/Target007.lean",
+      "model_sha256": "2b497cf5762cb5e01d2ec5fcdde8d3f7a13e57adbeaccde27940bce6bccaa859"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim2",
+      "target": "¬ ((60 : Nat) ≤ 50)",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-008.log",
+      "check_file": "checks/Target008.lean",
+      "model_sha256": "2b497cf5762cb5e01d2ec5fcdde8d3f7a13e57adbeaccde27940bce6bccaa859"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim3",
+      "target": "(16 * 60 + 40 : Nat) = 1000",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-009.log",
+      "check_file": "checks/Target009.lean",
+      "model_sha256": "2b497cf5762cb5e01d2ec5fcdde8d3f7a13e57adbeaccde27940bce6bccaa859"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim4",
+      "target": "¬ ((16 * 60 + 40 : Nat) ≤ 16 * 60 + 30)",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-010.log",
+      "check_file": "checks/Target010.lean",
+      "model_sha256": "2b497cf5762cb5e01d2ec5fcdde8d3f7a13e57adbeaccde27940bce6bccaa859"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim5",
+      "target": "¬ (∀ q s : Bool, q = true → (q = true ∧ s = true))",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-011.log",
+      "check_file": "checks/Target011.lean",
+      "model_sha256": "2b497cf5762cb5e01d2ec5fcdde8d3f7a13e57adbeaccde27940bce6bccaa859"
+    },
+    {
+      "module": "Audit",
+      "theorem": "Audit.claim6",
+      "target": "(40 : Nat) = 40",
+      "status": "passed",
+      "axioms": [],
+      "log": "logs/target-012.log",
+      "check_file": "checks/Target012.lean",
+      "model_sha256": "2b497cf5762cb5e01d2ec5fcdde8d3f7a13e57adbeaccde27940bce6bccaa859"
+    }
+  ],
+  "limitations": "Lean checks the encoded propositions, not source authenticity, extraction accuracy, completeness, legal authority, or the adequacy of the model. Source filters are defensive checks, not a sandbox for hostile Lean code.",
+  "audit_contract": {
+    "contract_version": 2,
+    "report_anchors": 8,
+    "claim_anchors": 7,
+    "non_claim_anchors": 1,
+    "registered_claims": 7,
+    "audited_claims": 7,
+    "deferred_claims": 0,
+    "coverage": "complete_registration",
+    "limitation": "Registration reconciles declared claims and reviewed report anchors; it does not establish semantic completeness, faithful decomposition, or that declared searches were actually performed."
+  },
+  "input_hashes": {
+    "findings.json": "aaeb3853b3945badaaa51419c2186935581125c43e18f4dcc26240b5f624e58e",
+    "input/manifest.json": "7874d2f94852a339cc45022f9698f79c104375fabd054ca24e749202c97fcf5f",
+    "models/Audit.lean": "2b497cf5762cb5e01d2ec5fcdde8d3f7a13e57adbeaccde27940bce6bccaa859",
+    "extraction-review.json": "95be9823ac8275c404281c7e2771ad61134daf438f6964929a61a515dd8261b8",
+    "coverage-acknowledgement.json": "d40fbf40f754e62a2b20cf26384f9448db81f59556c038d346134ce99dc1d77e",
+    "manual-transcriptions.jsonl": "bde539456656d6a34c28a84f75b13aba64ef1123c8bcbb6fd8b431bff9b0cd18",
+    "extraction-lock.json": "f1e2ae74c21f3aef718306d0e316c5710b99368e9d091df0c93f805abc121ac5",
+    "claims.json": "e9cd0ded8c466c8d11478529e082bc724afe1215ddaa3d906b0b58094bb6204d",
+    "review-plan.md": "0d3bd98c7513d598002a8f988790e3202b8dfd3a9fadf424700cbb5ea272ee32",
+    "model-notes.md": "d29c2b4105964211c0e400d51d8c5394a8e546016c7ec5731a82b6eaae3d663b",
+    "semantic-review.md": "b942d7de198aa41b8d78b14ea2d45a7a9ba261bdafc9f99777c53728f0648f96"
+  },
+  "lean_version_observed": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "execution_status": "executed",
+  "artifact_hashes": {
+    "environment.lock": "5a14ea62c3fa547990b70e824b634598f1d290f8a0434fcf2b31a866a8c116fc",
+    "lakefile.toml": "427b26319faecd569f35efbd2c38e3ff1b8f48939b04ec2e32eadfe735db9c5b",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "source-ledger.jsonl": "be466463eb59e0f591d874e61e71815cb637f969429862648d5c881ddb860352",
+    "logs/lake-build.log": "212e27967f6596f06d1fbd2ae5773d70752794551c513e1e4c01b6caa0938e2e",
+    "logs/lean-version.log": "fa5a68856a556a159f606019b5f62f7c32fd38e9dfe8136cd3025acc7641de44",
+    "logs/target-001.log": "15fdcc7af2e674ab2a540785139087b9e1b99bfd1ca77f87c52c7be7ea138158",
+    "logs/target-002.log": "d4d5b3473c8f89a866935c937dff83f8a3130b5e2fb1d0c87493560bf451d1cd",
+    "logs/target-003.log": "5f397b089d9fedbcbe05ecf82d398dac9d4fd4e088f75519a95d251e9c7c04c2",
+    "logs/target-004.log": "6dc2c7c489707e420ef4e3c20c864151a5528f55008f197f3e9e8d0fe8bcc269",
+    "logs/target-005.log": "88acb8b51baa5b4f3d01dc724448baeecf865c6be0e6e20ca6fab470330964fc",
+    "logs/target-006.log": "fe30956a69c0ceac1edffa70d26eb9f07e9d21839edd01076627eea08e2bd7c2",
+    "logs/target-007.log": "3d71d6e1a3b029a869e01affab6bed444f7e9356f0537e874ebda6deabde6322",
+    "logs/target-008.log": "fd1271d552e5287681d2be4bf82edd9ac5e81a588bf7dcbf18b66695218e0c3e",
+    "logs/target-009.log": "e0abaa22930da410998615454217c7e9a7d9a267d94d23318e044204c2d80725",
+    "logs/target-010.log": "dcf2d0c7988551f266542516a8edfd6844afe3f9b337aa3d30b94c102d419c22",
+    "logs/target-011.log": "8bb3f6f98808cfa2bf42247ffc6bde9b754c5726ddede1f4755c4ed1b38c9445",
+    "logs/target-012.log": "7973504f586359c4df7f298d978c020e64f5b7604f0960a220dee2d2f0b5acb2",
+    "checks/Target001.lean": "2793966f841e3f6ddda66f073aaf5540ce058af7b18e5fb4e5f1fcbfad22fdd6",
+    "checks/Target002.lean": "d3be826ebd71c85ed396f812523133b33bd6da4d0a523af4408768243fc87ae2",
+    "checks/Target003.lean": "40cb1614c4242262d721d0a211f434a5ea7e10c6b4851f3d0ae37d24df1ac0c1",
+    "checks/Target004.lean": "1c5a260e193406a2d95fd326ae4bb4073fea63408a85d31ac2f718a7553ec0cb",
+    "checks/Target005.lean": "5e7aacae351302bd99ac3b397edcb8aa3bbc66af47fe032f0a4cc3bd552146fb",
+    "checks/Target006.lean": "1fea9466c9d7fb5d8a8c7243155306c1a3990dfadbf65fa8a43d74133bc96ba3",
+    "checks/Target007.lean": "d13db41204f8725423837438d2c764f400946c3b6d7903c50fc201aac90adda6",
+    "checks/Target008.lean": "072ff28b323fccf0597796d14735b58c4e9158e6282f95869968fbcf46f20035",
+    "checks/Target009.lean": "00f8407f64571c6b3ca141d0317d172265783a0b7fefbfb29a005313e4fed883",
+    "checks/Target010.lean": "2df3dd671c375fd82c88813b6b88acd38d63e6e05fe80b5ab3852d09cfea9c51",
+    "checks/Target011.lean": "047f99ef26ede59c31c6f72056e73acbd35d84f099a4287005ae0c5f3763966c",
+    "checks/Target012.lean": "9d48cc69dba020cbe75e2ac614e315dbffe87c78acee89658e94e223a0df811d"
+  }
+}

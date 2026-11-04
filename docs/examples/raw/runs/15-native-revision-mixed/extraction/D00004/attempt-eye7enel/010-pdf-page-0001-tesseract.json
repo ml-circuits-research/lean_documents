@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/home/salboaie/.local/bin/tesseract",
+    "/home/salboaie/work/lean_documents/tmp/native-revision-initial-errors/claim-audit-lr1e887a/extraction/D00004/attempt-eye7enel/pdf-page-0001-raster.png",
+    "/home/salboaie/work/lean_documents/tmp/native-revision-initial-errors/claim-audit-lr1e887a/extraction/D00004/attempt-eye7enel/pdf-page-0001",
+    "-l",
+    "eng",
+    "--psm",
+    "3",
+    "-c",
+    "tessedit_create_tsv=1",
+    "-c",
+    "tessedit_create_txt=0"
+  ],
+  "timeout_seconds": 60,
+  "returncode": 0,
+  "stdout": "",
+  "stderr": ""
+}

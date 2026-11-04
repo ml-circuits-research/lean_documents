@@ -1,0 +1,7 @@
+{
+  "changed_document": "D00002",
+  "affected_claims": [],
+  "technical_results": "all invalidated",
+  "reason": "Agent extraction changed effective evidence; every finding requires renewed review.",
+  "previous_state": "history/agent-extraction-4au2ij5v"
+}

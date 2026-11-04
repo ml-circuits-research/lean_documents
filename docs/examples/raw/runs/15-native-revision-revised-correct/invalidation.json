@@ -1,0 +1,16 @@
+{
+  "parent_workspace": "/home/salboaie/work/lean_documents/tmp/native-revision-initial-correct/claim-audit-ay376nye",
+  "changed_document": "D00003",
+  "old_sha256": "535ad3e56da322f97d52c7bd036f66a545051f1702ce38d575c2f6ee8a262312",
+  "new_sha256": "3c49680f3332d2f30535aff99f59c551c046d049fcc7e02444a446309cb8a6a4",
+  "affected_claims": [
+    "R1",
+    "R2",
+    "R5",
+    "R6",
+    "R7"
+  ],
+  "invalidated_manual_transcriptions": [],
+  "technical_results": "all invalidated",
+  "reason": "Affected semantic claims selected from complete source and search dependencies and their transitive claim dependents; all technical proofs still require rechecking."
+}

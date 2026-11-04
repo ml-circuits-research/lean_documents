@@ -25,12 +25,14 @@ import corrections
 import contracts
 
 VERSION = '4.24.0'
+MODULE_NAME = r'[A-Za-z_][A-Za-z0-9_]*(?:\.[A-Za-z_][A-Za-z0-9_]*)*'
+MODULE_POLICY = 'Init/Std and recursively inspected local models only'
 REQUIRED = {'claim_id', 'report_quote', 'report_anchor', 'question', 'evidence', 'rules',
             'assumptions', 'reasoning', 'semantic_state', 'argument_status',
             'formal_status', 'proofs', 'limits', 'recommendation'}
 STATES = {
     'semantic_state': {'supported', 'refuted', 'both', 'undetermined', 'not_applicable'},
-    'argument_status': {'sufficient', 'insufficient_support', 'invalid_inference', 'disputed', 'nonformal'},
+    'argument_status': {'sufficient', 'insufficient_support', 'invalid_inference', 'unsound_argument', 'disputed', 'nonformal'},
     'formal_status': {'proved', 'refuted', 'auxiliary', 'not_attempted', 'blocked'},
 }
 CAVEAT = ('Lean checks the encoded propositions, not source authenticity, extraction accuracy, '
@@ -109,7 +111,49 @@ def verify_manifest(root):
     return manifest
 
 
+def validate_lean_version(value):
+    if not isinstance(value, str) or not re.fullmatch(r'4\.(?:0|[1-9][0-9]*)\.(?:0|[1-9][0-9]*)', value):
+        raise AuditError('Lean version must be a stable Lean 4 release such as 4.24.0')
+    return value
+
+
+def required_lean_version(root):
+    policy = root / 'input/audit-policy.json'
+    return validate_lean_version(read_json(policy).get('lean_version', VERSION) if policy.is_file() else VERSION)
+
+
+def module_path(module):
+    if not re.fullmatch(MODULE_NAME, module):
+        raise AuditError('Module must use plain dotted identifiers')
+    return 'models/' + module.replace('.', '/') + '.lean'
+
+
+def model_inventory(root):
+    directory = root / 'models'
+    if directory.is_symlink():
+        raise AuditError('The models directory cannot be a symlink')
+    modules = {}
+    for path in sorted(directory.rglob('*')):
+        if path.is_symlink():
+            if not path.resolve().is_relative_to(directory.resolve()):
+                raise AuditError(f'Model symlink escapes models directory: {path.name}')
+            if path.is_dir():
+                raise AuditError('Model directory symlinks are not supported; use ordinary directories')
+        if path.suffix in {'.olean', '.ilean', '.so', '.o', '.a', '.bc'}:
+            raise AuditError(f'Unreviewed compiled model artifact: {path.name}')
+        if path.suffix != '.lean' or not path.is_file():
+            continue
+        module = '.'.join(path.relative_to(directory).with_suffix('').parts)
+        if not re.fullmatch(MODULE_NAME, module) or path.relative_to(root).as_posix() != module_path(module):
+            raise AuditError('Model paths must use plain dotted module identifiers')
+        if module.split('.')[0] in {'Init', 'Std', 'Lean', 'Lake'}:
+            raise AuditError('Local models cannot shadow toolchain module names')
+        modules[module] = path
+    return modules
+
+
 def prepare(args):
+    lean_version = validate_lean_version(getattr(args, 'lean_version', VERSION))
     proposed_temp = Path(args.temp_root or Path.cwd() / 'tmp').resolve()
     if any(Path(p).is_dir() and proposed_temp.is_relative_to(Path(p).resolve()) for p in args.sources):
         raise AuditError('Temporary root must be outside supplied source directories')
@@ -174,7 +218,7 @@ def prepare(args):
     (root / 'source-ledger.jsonl').write_text(''.join(json.dumps(row, ensure_ascii=False) + '\n' for row in ledger_rows), encoding='utf-8')
     write_json(root / 'input/report-ledger.json', paragraphs((root / 'input/report.md').read_text(encoding='utf-8')))
     write_json(root / 'input/audit-policy.json', {'contract_version': 2,
-        'brief_origin': 'provided' if brief else 'inferred',
+        'brief_origin': 'provided' if brief else 'inferred', 'lean_version': lean_version,
         'default_mandate': 'Audit every material report claim and its justification against the supplied sources; derive and disclose criteria without assuming the claim.'})
     contracts.initialize(root)
     files = {p.relative_to(root).as_posix(): {'sha256': digest(p), 'bytes': p.stat().st_size,
@@ -183,7 +227,7 @@ def prepare(args):
     write_json(root / 'input/manifest.json', {'algorithm': 'sha256', 'files': files})
     write_json(root / 'manifest.json', {'algorithm': 'sha256', 'files': files})
     write_json(root / 'run.json', {'created_at': now(), 'workspace': str(root),
-               'lean_version': VERSION, 'purpose': 'Audit the supplied report against supplied sources',
+               'lean_version': lean_version, 'purpose': 'Audit the supplied report against supplied sources',
                'limitations': CAVEAT})
     return {'workspace': str(root), 'source_ledger': 'input/source-ledger.json', 'report_ledger': 'input/report-ledger.json'}
 
@@ -242,16 +286,16 @@ def findings(root):
                 raise AuditError(f'{ident}: malformed proof reference')
             for field in ('module', 'theorem', 'relation', 'target'):
                 nonempty_string(proof[field], f'{ident}.proof.{field}')
-            if not re.fullmatch(r'[A-Z][A-Za-z0-9_]*', proof['module']):
-                raise AuditError(f'{ident}: module must be a simple capitalized name')
+            if not re.fullmatch(MODULE_NAME, proof['module']):
+                raise AuditError(f'{ident}: module must use plain dotted identifiers')
             if not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_\'.]*', proof['theorem']):
                 raise AuditError(f'{ident}: invalid theorem name')
             if proof['relation'] not in {'supports', 'refutes', 'auxiliary'}:
                 raise AuditError(f'{ident}: invalid proof relation')
-            if '\n' in proof['target'] or '--' in proof['target'] or '/-' in proof['target'] or '#' in proof['target']:
+            target = lean_code(proof['target'], reject_comments=True)
+            if '\n' in proof['target'] or '#' in target:
                 raise AuditError(f'{ident}: target must be a single proposition without commands/comments')
-            target = proof['target']
-            if re.search(r'\b(theorem|lemma|def|example|import|axiom|by|where|end|namespace|section|set_option|attribute|elab|macro|initialize)\b|:=|[;`\"]', target):
+            if re.search(r'\b(theorem|lemma|def|example|import|axiom|by|where|end|namespace|section|set_option|attribute|elab|macro|initialize)\b|:=|[;`]', target):
                 raise AuditError(f'{ident}: target contains unsupported command or tactic syntax')
             stack = []
             pairs = {')': '(', ']': '[', '}': '{'}
@@ -279,40 +323,91 @@ def findings(root):
     return data
 
 
-def strip_comments(text):
-    # Lean comments nest. Preserve newlines for declaration extraction.
+def lean_code(text, *, reject_comments=False, mask_strings=True):
+    """Mask literal/comment contents while preserving positions and newlines.
+
+    This lexical gate is defense in depth for reviewed source, not a Lean parser.
+    Interpolated strings are rejected because their embedded terms need parsing.
+    """
     out, i, depth = [], 0, 0
+    def masked(value):
+        return ''.join('\n' if c == '\n' else ' ' for c in value)
     while i < len(text):
-        if text[i:i+2] == '/-':
-            depth += 1; out.append('  '); i += 2
-        elif depth and text[i:i+2] == '-/':
-            depth -= 1; out.append('  '); i += 2
-        elif not depth and text[i:i+2] == '--':
-            end = text.find('\n', i)
-            if end < 0: break
-            out.append(' ' * (end-i)); i = end
-        else:
-            out.append(text[i] if not depth or text[i] == '\n' else ' '); i += 1
-    if depth:
-        raise AuditError('Unclosed Lean comment')
+        if depth:
+            if text.startswith('/-', i):
+                depth += 1; out.append('  '); i += 2
+            elif text.startswith('-/', i):
+                depth -= 1; out.append('  '); i += 2
+            else:
+                out.append('\n' if text[i] == '\n' else ' '); i += 1
+            continue
+        if text.startswith('/-', i) or text.startswith('--', i):
+            if reject_comments:
+                raise AuditError('Target must be a single proposition without commands/comments')
+            if text.startswith('/-', i):
+                depth = 1; out.append('  '); i += 2
+            else:
+                end = text.find('\n', i)
+                if end < 0: end = len(text)
+                out.append(masked(text[i:end])); i = end
+            continue
+        raw = re.match(r'r(#+)?"', text[i:]) if i == 0 or not (text[i-1].isalnum() or text[i-1] in "_'") else None
+        if text[i] == '"' or raw:
+            if i and text[i-1] == '!':
+                raise AuditError('Interpolated Lean strings require unsupported embedded-term inspection')
+            start = i
+            if raw:
+                closing = '"' + (raw.group(1) or '')
+                end = text.find(closing, i + len(raw.group()))
+                if end < 0: raise AuditError('Unclosed Lean string')
+                i = end + len(closing)
+            else:
+                i += 1
+                while i < len(text) and text[i] != '"':
+                    i += 2 if text[i] == '\\' else 1
+                if i >= len(text): raise AuditError('Unclosed Lean string')
+                i += 1
+            value = text[start:i]
+            out.append(masked(value) if mask_strings else value)
+            continue
+        # Apostrophes may also occur in identifiers; only mask complete character literals.
+        char = re.match(r"'(?:\\(?:u[0-9A-Fa-f]{4}|x[0-9A-Fa-f]{2}|.)|[^'\\\n])'", text[i:]) if text[i] == "'" else None
+        if char and (i == 0 or not (text[i-1].isalnum() or text[i-1] in "_'")):
+            value = char.group(); out.append(masked(value) if mask_strings else value); i += len(value)
+            continue
+        out.append(text[i]); i += 1
+    if depth: raise AuditError('Unclosed Lean comment')
     return ''.join(out)
 
 
-def inspect_model(path):
-    source = strip_comments(path.read_text(encoding='utf-8'))
+def strip_comments(text):
+    return lean_code(text, mask_strings=False)
+
+
+def inspect_model(path, local_modules=()):
+    source = lean_code(path.read_text(encoding='utf-8'))
     forbidden = r'\b(sorry|admit|axiom|axioms|native_decide|unsafe|meta|run_tac|elab|elab_rules|macro|macro_rules|syntax|initialize|builtin_initialize|implemented_by|extern|opaque)\b|#|\bset_option\b'
     if re.search(forbidden, source):
         raise AuditError(f'Forbidden or unauditable Lean construct in {path.name}')
-    for line in source.splitlines():
-        if re.match(r'\s*import\b', line):
-            for module in line.strip().split()[1:]:
-                if not re.fullmatch(r'(Init|Std)(\.[A-Za-z0-9_]+)*', module):
-                    raise AuditError(f'Only Init/Std imports are permitted: {module}')
+    # A Lean import command takes one module identifier; comments and whitespace
+    # may separate it from the keyword. Inspect tokens rather than physical lines.
+    tokens = re.findall(MODULE_NAME + r'|[^\s]', source)
+    for index, token in enumerate(tokens):
+        if token != 'import':
+            continue
+        next_index = index + 1
+        if next_index < len(tokens) and tokens[next_index] == 'all':
+            next_index += 1
+        module = tokens[next_index] if next_index < len(tokens) else ''
+        if not re.fullmatch(MODULE_NAME, module):
+            raise AuditError('Import must name an allowed module')
+        if module not in local_modules and not re.fullmatch(r'(Init|Std)(\.[A-Za-z_][A-Za-z0-9_]*)*', module):
+            raise AuditError(f'Only Init/Std or reviewed local model imports are permitted: {module}')
     declarations, namespaces = [], []
     for line in source.splitlines():
         ns = re.match(r'\s*namespace\s+([\w.]+)\s*$', line)
         end = re.match(r'\s*end(?:\s+([\w.]+))?\s*$', line)
-        dec = re.match(r'\s*(?:(?:private|protected|noncomputable)\s+)*(theorem|lemma)\s+([\w.\']+)', line)
+        dec = re.match(r"\s*(?:(?:private|protected|noncomputable)\s+)*(theorem|lemma)\s+([\w.']+)", line)
         if ns:
             namespaces.append(ns.group(1))
         elif end and namespaces and (end.group(1) is None or end.group(1) == namespaces[-1]):
@@ -321,13 +416,13 @@ def inspect_model(path):
             if re.match(r'\s*private\b', line):
                 raise AuditError('Private theorem declarations cannot be audited by external name')
             declarations.append('.'.join(namespaces + [dec.group(2)]))
-    if len(re.findall(r'\b(?:theorem|lemma)\s+[\w.\']+', source)) != len(declarations):
+    if len(re.findall(r"\b(?:theorem|lemma)\s+[\w.']+", source)) != len(declarations):
         raise AuditError('Each theorem must start on its own line with a conventional declaration')
     return declarations
 
 
 def snapshot(root):
-    paths = [root / 'findings.json', root / 'input/manifest.json'] + sorted((root / 'models').glob('*.lean'))
+    paths = [root / 'findings.json', root / 'input/manifest.json'] + list(model_inventory(root).values())
     paths += [root / name for name in ('extraction-review.json', 'coverage-acknowledgement.json', 'revision-review.json', 'invalidation.json', 'manual-transcriptions.jsonl')]
     paths += [root / 'extraction-lock.json']
     if (root / 'input/audit-policy.json').is_file():
@@ -376,7 +471,8 @@ def check(args):
     if logs.exists(): shutil.rmtree(logs)
     logs.mkdir()
     if (root / 'checks').exists(): shutil.rmtree(root / 'checks')
-    results = {'checked_at': now(), 'status': 'failed', 'lean_version_required': VERSION,
+    (root / 'environment.lock').unlink(missing_ok=True)
+    results = {'checked_at': now(), 'status': 'failed', 'lean_version_required': None,
                'independent_checker': {'status': 'not_run', 'reason': 'No external checker is configured; no independent-kernel assurance is claimed.'},
                'targets': [], 'limitations': CAVEAT}
     if getattr(args, 'checker', None):
@@ -384,13 +480,16 @@ def check(args):
             'reason': 'Requested replay has not been reached; earlier gates and model checks must succeed first.'}
     write_json(root / 'proof-results.json', results)
     try:
+        verify_manifest(root)
+        required_version = required_lean_version(root)
+        results['lean_version_required'] = required_version
         data = findings(root)
         results['audit_contract'] = (contracts.validate(root, data) if (root / 'input/audit-policy.json').is_file() else
             {'version': 1, 'coverage': 'legacy_unreconciled', 'limitation': 'This older bundle has no enforced claim register or structured argument audit.'})
         if (root / 'lakefile.lean').exists():
             raise AuditError('Unreviewed lakefile.lean overrides the controlled configuration')
-        models = sorted((root / 'models').glob('*.lean'))
-        declarations = {p.stem: inspect_model(p) for p in models}
+        models = model_inventory(root)
+        declarations = {module: inspect_model(path, models) for module, path in models.items()}
         proofs = [p for f in data for p in f['proofs']]
         for proof in proofs:
             if proof['module'] not in declarations or proof['theorem'] not in declarations[proof['module']]:
@@ -399,8 +498,8 @@ def check(args):
         if not models and not proofs:
             results.update(status='not_run', execution_status='not_run',
                 reason='No formal models or proof references; documentary audit only.')
-            write_json(root / 'environment.lock', {'lean_version_required': VERSION, 'execution_status': 'not_run',
-                'module_policy': 'Init/Std only', 'reason': results['reason']})
+            write_json(root / 'environment.lock', {'lean_version_required': required_version, 'execution_status': 'not_run',
+                'module_policy': MODULE_POLICY, 'reason': results['reason']})
             results['artifact_hashes'] = artifact_hashes(root)
             write_json(root / 'proof-results.json', results)
             return results
@@ -411,25 +510,31 @@ def check(args):
         for key in ('LEAN_PATH', 'LEAN_SRC_PATH', 'LEAN_SYSROOT', 'LAKE_HOME'):
             env.pop(key, None)
         version = execute([str(lean), '--version'], root, logs / 'lean-version.log', args.timeout, env)
-        if not re.search(r'\bversion 4\.24\.0\b', version):
-            raise AuditError(f'Lean {VERSION} required; observed {version.strip()}')
         results['lean_version_observed'] = version.strip()
+        observed = re.search(r'\bversion ([^\s,;()]+)', version)
+        if observed is None or observed.group(1) != required_version:
+            results['execution_status'] = 'version_mismatch'
+            write_json(root / 'environment.lock', {'lean_version_required': required_version,
+                'lean_version_observed': version.strip(), 'execution_status': 'version_mismatch',
+                'module_policy': MODULE_POLICY})
+            raise AuditError(f'Lean {required_version} required; observed {version.strip()}')
         results['execution_status'] = 'executed'
-        write_json(root / 'environment.lock', {'lean_version_required': VERSION, 'lean_version_observed': version.strip(),
-            'execution_status': 'executed', 'module_policy': 'Init/Std only',
+        write_json(root / 'environment.lock', {'lean_version_required': required_version, 'lean_version_observed': version.strip(),
+            'execution_status': 'executed', 'module_policy': MODULE_POLICY,
             'executables': {str(p): digest(p) for p in (lean, lake)}})
-        (root / 'lean-toolchain').write_text(f'leanprover/lean4:v{VERSION}\n')
+        (root / 'lean-toolchain').write_text(f'leanprover/lean4:v{required_version}\n')
         config = 'name = "claim_audit"\nversion = "0.1.0"\n'
-        for module in declarations:
-            if not re.fullmatch(r'[A-Z][A-Za-z0-9_]*', module):
-                raise AuditError('Model filenames must be simple capitalized module names')
-            config += f'\n[[lean_lib]]\nname = "{module}"\nsrcDir = "models"\n'
+        # A single controlled library owns every reviewed module, including helpers.
+        # Explicit roots/globs avoid overlapping-library resolution for nested modules.
+        config += '\n[[lean_lib]]\nname = "AuditReviewedSources"\nsrcDir = "models"\n'
+        config += 'roots = ' + json.dumps(list(declarations)) + '\n'
+        config += 'globs = ' + json.dumps(list(declarations)) + '\n'
         (root / 'lakefile.toml').write_text(config, encoding='utf-8')
         # Rebuild in a clean controlled build tree, without cached unreviewed objects.
         if (root / '.lake').exists(): shutil.rmtree(root / '.lake')
         if (root / 'lake-manifest.json').exists(): (root / 'lake-manifest.json').unlink()
         if models:
-            execute([str(lake), 'build', *declarations], root, logs / 'lake-build.log', args.timeout, env)
+            execute([str(lake), 'build', 'AuditReviewedSources'], root, logs / 'lake-build.log', args.timeout, env)
         checks = root / 'checks'; checks.mkdir(exist_ok=True)
         # Every declared theorem is audited even if no finding references it.
         requests = [(module, theorem, None) for module, names in declarations.items() for theorem in names]
@@ -449,7 +554,7 @@ def check(args):
                 raise AuditError(f'No axiom inspection result for {theorem}')
             results['targets'].append({'module': module, 'theorem': theorem, 'target': target,
                 'status': 'passed', 'axioms': axioms, 'log': log.relative_to(root).as_posix(),
-                'check_file': checkfile.relative_to(root).as_posix(), 'model_sha256': digest(root / f'models/{module}.lean')})
+                'check_file': checkfile.relative_to(root).as_posix(), 'model_sha256': digest(models[module])})
         if getattr(args, 'checker', None):
             checker = Path(args.checker).resolve()
             replay_logs = []
@@ -470,9 +575,10 @@ def check(args):
     except (AuditError, OSError, ValueError) as exc:
         results['error'] = str(exc)
         results.setdefault('execution_status', 'unavailable' if 'Cannot execute' in str(exc) else 'failed')
-        if results['execution_status'] == 'unavailable':
-            write_json(root / 'environment.lock', {'lean_version_required': VERSION, 'execution_status': 'unavailable',
-                'module_policy': 'Init/Std only', 'error': str(exc)})
+        if not (root / 'environment.lock').is_file():
+            write_json(root / 'environment.lock', {'lean_version_required': results['lean_version_required'],
+                'execution_status': results['execution_status'],
+                'module_policy': MODULE_POLICY, 'error': str(exc)})
         results['artifact_hashes'] = artifact_hashes(root)
         write_json(root / 'proof-results.json', results)
         raise AuditError(str(exc)) from exc
@@ -494,7 +600,7 @@ def verified(root):
         raise AuditError('No successful proof check for the current findings, models, and input manifest')
     if results.get('artifact_hashes') != artifact_hashes(root):
         raise AuditError('Verification logs, checks, or environment artifacts changed since checking')
-    if results['status'] == 'not_run' and (any(f['proofs'] for f in data) or list((root / 'models').glob('*.lean'))):
+    if results['status'] == 'not_run' and (any(f['proofs'] for f in data) or model_inventory(root)):
         raise AuditError('Formal artifacts cannot be delivered as a documentary-only audit')
     for finding in data:
         for proof in finding['proofs']:
@@ -564,7 +670,7 @@ def render(args):
         for p in f['proofs']:
             target = next(t for t in results['targets'] if all(t.get(k) == p[k] for k in ('module', 'theorem', 'target')))
             lines += [f'- `{p["theorem"]}` in module `{p["module"]}` ({p["relation"]}): `{p["target"]}`.',
-                      f'  [Model](models/{p["module"]}.lean) · [Executed check]({target["check_file"]}) · [Actual proof log]({target["log"]})', '']
+                      f'  [Model]({module_path(p["module"])}) · [Executed check]({target["check_file"]}) · [Actual proof log]({target["log"]})', '']
         lines += ['### Recommendation', '', f['recommendation'], '']
         coverage += [f'| {f["claim_id"]} | {f["semantic_state"]} | {f["argument_status"]} | {f["formal_status"]} |']
     coverage += ['', 'Coverage enumerates submitted findings; it does not establish that every report claim was identified.', '']
@@ -577,7 +683,7 @@ def export(args):
     root = Path(args.workspace).resolve()
     if (root / 'input/audit-policy.json').is_file():
         required = ['review-plan.md', 'semantic-review.md']
-        if list((root / 'models').glob('*.lean')): required.append('model-notes.md')
+        if model_inventory(root): required.append('model-notes.md')
         for name in required:
             if not (root / name).is_file() or not (root / name).read_text(encoding='utf-8').strip():
                 raise AuditError(f'Export requires completed {name}; record limitations honestly')
@@ -622,9 +728,16 @@ def transcribe(args):
     return corrections.transcribe(args.workspace, args.path, args.anchor, args.text_file, args.reviewer, args.reason)
 
 
+def import_extraction(args):
+    import agent_extraction
+    return agent_extraction.import_extraction(args.workspace, args.document_id, args.bundle)
+
+
 def doctor(args):
     result = {'python': sys.version, 'sqlite': corpus.sqlite3.sqlite_version,
-              'stdlib_only_runtime': True, 'lean_version_required': VERSION, 'tools': {}}
+              'stdlib_only_runtime': True, 'lean_version_default': VERSION,
+              'lean_version_policy': 'Each audit pins a stable Lean 4 version in its immutable input policy; older bundles default to ' + VERSION,
+              'module_policy': MODULE_POLICY, 'tools': {}}
     try:
         with corpus.sqlite3.connect(':memory:') as probe:
             probe.execute('CREATE VIRTUAL TABLE probe USING fts5(text)')
@@ -656,6 +769,7 @@ def main(argv=None):
     prep.add_argument('--brief', help='Optional review instructions; otherwise derive criteria from the report and sources'); prep.add_argument('--report', required=True)
     prep.add_argument('--sources', required=True, nargs='+'); prep.add_argument('--temp-root', default=None)
     prep.add_argument('--indexed', action='store_true', help='Use coordinate-preserving adapters and the disk-backed corpus index')
+    prep.add_argument('--lean-version', default=VERSION, help='Stable Lean 4 release pinned into this audit input policy')
     prep.add_argument('--ocr-language', default='eng')
     prep.add_argument('--extract-timeout', type=float, default=60)
     prep.add_argument('--max-pages', type=int)
@@ -674,6 +788,8 @@ def main(argv=None):
     sub = commands.add_parser('transcribe'); sub.add_argument('--workspace', required=True)
     sub.add_argument('--path', required=True); sub.add_argument('--anchor', required=True)
     sub.add_argument('--text-file', required=True); sub.add_argument('--reviewer', required=True); sub.add_argument('--reason', required=True)
+    sub = commands.add_parser('import-extraction'); sub.add_argument('--workspace', required=True)
+    sub.add_argument('--document-id', required=True); sub.add_argument('--bundle', required=True)
     sub = commands.add_parser('doctor'); sub.add_argument('--lean')
     for name in ('check', 'render', 'export'):
         sub = commands.add_parser(name); sub.add_argument('--workspace', required=True)
@@ -684,7 +800,7 @@ def main(argv=None):
         if name == 'export': sub.add_argument('--destination', required=True)
     args = parser.parse_args(argv)
     try:
-        result = globals()[args.command](args)
+        result = globals()[args.command.replace('-', '_')](args)
     except (AuditError, OSError, UnicodeError, ValueError, corpus.sqlite3.Error) as exc:
         print(json.dumps({'error': str(exc)}), file=sys.stderr)
         return 1

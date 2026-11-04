@@ -1,0 +1,33 @@
+{
+  "input/report.md": {
+    "P01": "# H16 settlement review",
+    "P02": "[R1] The union of pauses A and B is 40 minutes. Their individual twenty-minute durations can be added without removing overlap.",
+    "P03": "[R2] Adding touching pause C gives a 41-minute union. A shared endpoint counts as one additional stopped minute beyond the forty distinct minutes.",
+    "P04": "[R3] The actual H16 paused time is 51 minutes after all six records are considered. X contributes ten minutes and the zero-length Z contributes one minute to the forty-minute union.",
+    "P05": "[R4] H16 meets the inclusive SLA. Its gross duration is 130 minutes, so even with no pauses it is within the 140-minute limit.",
+    "P06": "[R5] The explicit 181-minute extension scenario meets the SLA. An extra tolerance minute is allowed beyond the 140-minute limit.",
+    "P07": "[R6] Invoice line L1 rounds to +100 cents. Exact half-cent ties round toward zero under P3.",
+    "P08": "[R7] Credit note CN16 rounds to -100 cents. Exact negative half-cent ties round toward zero under P3.",
+    "P09": "[R8] Invoice N16 totals +101 cents. Adding unrounded lines gives 1010 mills and rounding that aggregate gives 101 cents.",
+    "P10": "[R9] H16 is entitled to the historical rebate. The absence of prior-quarter records is sufficient to infer at least three prior-quarter breaches.",
+    "P11": "[R10] H16 compensation is reasonable. Any settlement processed by this protocol necessarily satisfies its reasonableness standard."
+  },
+  "input/sources/invoice.md": {
+    "P01": "# H16 settlement amounts",
+    "P02": "[I1] Invoice N16 contains precisely three signed lines: service component L1 +1005 mills; service component L2 +1005 mills; adjustment L3 -1000 mills. These amounts are exact, not measured approximations. No tax or additional lines apply.",
+    "P03": "[I2] The separately issued credit note CN16 is -1005 mills and is excluded from invoice N16's total. Its exact absolute magnitude is 1005 mills."
+  },
+  "input/sources/operations.md": {
+    "P01": "# H16 operations ledger",
+    "P02": "[O1] Incident H16 opened at minute 0 and restoration occurred at minute 180. Approved H16 pause A is [20,40); approved H16 pause B is [30,50). Both records refer to the same stopped-service clock and overlap.",
+    "P03": "[O2] Approved H16 pause C is [50,60). Approved H16 administrative marker Z is [60,60). Approved pause X is [70,80) but is marked other-case H17. Approved H16 pause Y is [190,200), wholly outside the actual incident window. A, B, C, Z, X and Y are the complete pause inventory for H16's actual decision.",
+    "P04": "[O3] This delivery contains only the H16 incident record. No August, September or October incident records, aggregate breach counts, or completeness certification for those months are supplied. The absence of those records does not assert that no earlier breaches occurred."
+  },
+  "input/sources/policy.md": {
+    "P01": "# Harbor Relay settlement protocol SR-16",
+    "P02": "[P1] This synthetic protocol governs incident H16 and its November 2026 invoice. All times are integer minute offsets from 09:00 UTC on 2 November 2026. Pause intervals are half-open [start,end); a minute belongs to the interval exactly when start <= minute < end. The gross incident window is [0,180). Count each paused minute once using the union of approved in-scope intervals, clipped to the gross window. An interval of zero length contributes zero. Intervals marked other-case never pause H16.",
+    "P03": "[P2] The SLA limit is 140 chargeable minutes inclusive. Chargeable time is gross elapsed minutes minus distinct approved in-scope paused minutes. An incident meets the SLA exactly when chargeable time <= 140. For the explicit extension scenario only, restoration occurs at minute 181 and all listed pause intervals and scope flags remain unchanged. No automatic tolerance minute applies.",
+    "P04": "[P3] Monetary source amounts are signed integer mills: ten mills equal one cent. Round each invoice line separately to integer cents, choosing the nearest cent and resolving an exact half-cent tie away from zero. For a negative credit, round its absolute magnitude under the same rule and restore the negative sign. Sum the signed rounded lines; never round the unrounded invoice aggregate instead. The separate credit note is not an invoice line.",
+    "P05": "[P4] A historical rebate requires at least three SLA breaches during August through October 2026. An H16 decision in November cannot establish the earlier-quarter breach count. This protocol provides no definition, benchmark, or test for whether compensation is reasonable."
+  }
+}

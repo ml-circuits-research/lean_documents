@@ -1,0 +1,58 @@
+{
+  "execution_mode": "agent-native",
+  "contract_version": 2,
+  "contract_profile": "agent-reviewed v2-equivalent artifact mapping; Python contract gate not run",
+  "selected_report": "input/report.md",
+  "sources": [
+    "input/sources/source.md"
+  ],
+  "brief_origin": "inferred",
+  "lean_version": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "command": [
+    "/home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lean",
+    "/home/salboaie/work/lean_documents/tmp/paired-current-g17n2r00/agent-native-correct/Audit.lean"
+  ],
+  "exit_status": 0,
+  "registered_conclusions": 2,
+  "referenced_theorems": 3,
+  "checks": {
+    "lean_compilation": "executed",
+    "exact_targets": "executed",
+    "axiom_audit": "executed",
+    "source_hashes": "executed",
+    "quote_correspondence": "agent_reviewed",
+    "claim_register_reconciliation": "agent_reviewed",
+    "source_to_model": "agent_reviewed",
+    "independent_review": "executed_nonblind_coordinator_review",
+    "python_v2_validator": "not_attempted",
+    "lake_build": "not_attempted",
+    "external_libraries": "none",
+    "external_checker": "not_attempted",
+    "independent_lean_replay": "executed_exit_0_three_targets_no_axioms"
+  },
+  "axioms": [],
+  "artifact_mapping": {
+    "claims": "claims.json",
+    "findings": "findings.json",
+    "source_facts": "source-ledger.jsonl",
+    "report_passages": "report-ledger.json",
+    "originals": "input/",
+    "input_hashes": "inputs.sha256",
+    "model_and_exact_targets": "Audit.lean",
+    "compiler_output": "lean.log",
+    "compiler_exit": "lean-exit-status.txt",
+    "model_mapping": "model-notes.md",
+    "review": "semantic-review.md",
+    "coverage": "coverage.md",
+    "independent_review": "independent-review.md",
+    "source_first_review": "source-first-review.md",
+    "independent_lean_log": "independent-lean.log"
+  },
+  "failed_attempts": [
+    "attempts/0001"
+  ],
+  "limitations": [
+    "Separate coordinator review and replay were executed; author and coordinator knew the fixture purpose, so this is not a blind benchmark.",
+    "Python used only to serialize authored artifacts; no Python audit/proof validator was executed."
+  ]
+}

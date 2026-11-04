@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target030.lean
+Settlement.aggregateIs101 : Settlement.roundCents Settlement.invoiceLines.sum = 101
+'Settlement.aggregateIs101' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.222]

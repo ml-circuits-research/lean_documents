@@ -1,0 +1,5 @@
+{
+  "revision_manifest_sha256": "fa4f05672acc5943ac2c2ca4984c6faa9b8ad3d1274958cac0c5fac53cb41b03",
+  "reviewed_claims": [],
+  "reason": "The import occurred before any findings existed; all four claims below are authored from the imported original-source review."
+}

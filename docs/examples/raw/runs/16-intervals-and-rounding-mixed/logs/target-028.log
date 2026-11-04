@@ -1,0 +1,5 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target028.lean
+Settlement.positiveNot100 : Settlement.roundCents 1005 ≠ 100
+'Settlement.positiveNot100' does not depend on any axioms
+
+[exit_code=0; elapsed_seconds=0.205]

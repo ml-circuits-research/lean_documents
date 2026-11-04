@@ -1,0 +1,70 @@
+[
+  {
+    "variant": "errors",
+    "action": "check",
+    "workspace": "/home/salboaie/work/lean_documents/tmp/native-revision-revised-errors/claim-audit-revision-neuwuymk",
+    "command": [
+      "python3",
+      "skills/evidence-to-proof-review/scripts/audit.py",
+      "check",
+      "--workspace",
+      "/home/salboaie/work/lean_documents/tmp/native-revision-revised-errors/claim-audit-revision-neuwuymk",
+      "--lean",
+      "/home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lean"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"R1: evidence quote does not match its anchored source paragraph\"}\n",
+    "phase": "After refresh, before any revised findings, model parameters, extraction review or revision acknowledgement."
+  },
+  {
+    "variant": "errors",
+    "action": "render",
+    "workspace": "/home/salboaie/work/lean_documents/tmp/native-revision-revised-errors/claim-audit-revision-neuwuymk",
+    "command": [
+      "python3",
+      "skills/evidence-to-proof-review/scripts/audit.py",
+      "render",
+      "--workspace",
+      "/home/salboaie/work/lean_documents/tmp/native-revision-revised-errors/claim-audit-revision-neuwuymk"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"R1: evidence quote does not match its anchored source paragraph\"}\n",
+    "phase": "After refresh, before any revised findings, model parameters, extraction review or revision acknowledgement."
+  },
+  {
+    "variant": "correct",
+    "action": "check",
+    "workspace": "/home/salboaie/work/lean_documents/tmp/native-revision-revised-correct/claim-audit-revision-f2orq5vc",
+    "command": [
+      "python3",
+      "skills/evidence-to-proof-review/scripts/audit.py",
+      "check",
+      "--workspace",
+      "/home/salboaie/work/lean_documents/tmp/native-revision-revised-correct/claim-audit-revision-f2orq5vc",
+      "--lean",
+      "/home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lean"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"R1: evidence quote does not match its anchored source paragraph\"}\n",
+    "phase": "After refresh, before any revised findings, model parameters, extraction review or revision acknowledgement."
+  },
+  {
+    "variant": "correct",
+    "action": "render",
+    "workspace": "/home/salboaie/work/lean_documents/tmp/native-revision-revised-correct/claim-audit-revision-f2orq5vc",
+    "command": [
+      "python3",
+      "skills/evidence-to-proof-review/scripts/audit.py",
+      "render",
+      "--workspace",
+      "/home/salboaie/work/lean_documents/tmp/native-revision-revised-correct/claim-audit-revision-f2orq5vc"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"R1: evidence quote does not match its anchored source paragraph\"}\n",
+    "phase": "After refresh, before any revised findings, model parameters, extraction review or revision acknowledgement."
+  }
+]

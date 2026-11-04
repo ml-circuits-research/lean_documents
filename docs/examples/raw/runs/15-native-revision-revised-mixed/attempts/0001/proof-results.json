@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-11-04T18:12:05.147060+00:00",
+  "status": "failed",
+  "lean_version_required": "4.24.0",
+  "independent_checker": {
+    "status": "not_run",
+    "reason": "No external checker is configured; no independent-kernel assurance is claimed."
+  },
+  "targets": [],
+  "limitations": "Lean checks the encoded propositions, not source authenticity, extraction accuracy, completeness, legal authority, or the adequacy of the model. Source filters are defensive checks, not a sandbox for hostile Lean code.",
+  "error": "R1: evidence quote does not match its anchored source paragraph",
+  "execution_status": "failed",
+  "artifact_hashes": {
+    "environment.lock": "ff275c0f735e774516bf5f32376e0dcbacb9049b3bf44ca8fac96904697bdcc7",
+    "lakefile.toml": "427b26319faecd569f35efbd2c38e3ff1b8f48939b04ec2e32eadfe735db9c5b",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "source-ledger.jsonl": "9f89351c97d3aa816215f62bd59fa221d7807d905a136086bb3f720ec580c67a"
+  }
+}

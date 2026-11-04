@@ -1,0 +1,13 @@
+{
+  "P01": "# H16 settlement review",
+  "P02": "[R1] The union of pauses A and B is 30 minutes. Their common ten minutes are counted once under P1.",
+  "P03": "[R2] Adding touching pause C gives a 40-minute union. Half-open boundaries join [20,50) and [50,60) without a duplicate or extra minute.",
+  "P04": "[R3] The actual H16 paused time remains 40 minutes after all six records are considered. Z has zero length, X is other-case, and Y lies outside the actual window.",
+  "P05": "[R4] H16 meets the inclusive SLA. Its gross 180 minutes minus 40 paused minutes gives exactly the permitted 140 chargeable minutes.",
+  "P06": "[R5] The explicit 181-minute extension scenario fails the SLA. With Y still outside the scenario window, 181 minus 40 is 141, above the inclusive 140-minute limit.",
+  "P07": "[R6] Invoice line L1 rounds to +101 cents. Its +1005 mills is exactly +100.5 cents, and P3 resolves the tie away from zero.",
+  "P08": "[R7] Credit note CN16 rounds to -101 cents. P3 applies away-from-zero rounding to the exact negative half-cent tie.",
+  "P09": "[R8] Invoice N16 totals +102 cents. The separately rounded lines are +101, +101 and -100 cents, and the credit note is excluded.",
+  "P10": "[R9] The supplied corpus cannot establish entitlement to the historical rebate. P4 requires three prior-quarter breaches and O3 supplies no prior-quarter breach history.",
+  "P11": "[R10] Whether H16 compensation is reasonable remains unresolved under the supplied protocol. P4 supplies no operational definition or benchmark for reasonableness."
+}

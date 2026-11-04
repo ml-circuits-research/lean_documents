@@ -1,0 +1,9 @@
+$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake build AuditReviewedSources
+info: claim_audit: no previous manifest, creating one from scratch
+info: toolchain not updated; already up-to-date
+✔ [2/5] Built EvidenceLogic (173ms)
+✔ [3/5] Built Stock.Data (285ms)
+✔ [4/5] Built Stock.Audit (237ms)
+Build completed successfully (5 jobs).
+
+[exit_code=0; elapsed_seconds=0.639]

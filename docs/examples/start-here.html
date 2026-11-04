@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Start here: one finding, two verdicts | Evidence audit examples</title><link rel="stylesheet" href="style.css"></head><body><header><nav><a href="start-here.html">Start here</a><a href="capabilities.html">Coverage &amp; limits</a><a href="index.html">Example catalog</a><a href="artifact-guide.html">How to read the artifacts</a><a href="files.html">All published files</a></nav></header><main><h1>Start here: one finding, two verdicts</h1><p>Begin with a claim whose conclusion is correct but whose offered rule is false. Follow the exact report text, original evidence, inferred question, Lean target and recorded result. This is an executed current-contract example, not a hypothetical workflow.</p>
+<p class="note">The skill audits an existing report. The agent reconstructs documentary meaning and writes the formal model; Lean checks the resulting propositions. The preparation command alone does not perform that semantic work.</p>
+<h2>1. Read the supplied claim and its argument</h2>
+<blockquote>A is eligible for release. A is signed, and a signature alone is sufficient for release.</blockquote>
+<p>This is R3 in <a href="view/dossiers/13-portable-html/report-mixed.md.html">the mixed report</a>. It contains a conclusion, an observed premise and a proposed general rule. They need separate checks. The other report is an alternative test input, never evidence for this one.</p>
+<h2>2. Return to the original sources</h2>
+<p><a href="view/dossiers/13-portable-html/sources/stock.html.html">Read the original HTML</a>. Line 8 requires a row to be both active and signed. Line 9 records A as active and signed. Line 10 records B as quarantined and signed. The rule and both rows are needed: inspecting only A would miss the defect in the argument.</p>
+<table><thead><tr><th>Source fact or rule</th><th>Representation</th><th>What it establishes</th></tr></thead><tbody>
+<tr><td data-label="Source">Release iff active AND signed</td><td data-label="Symbol"><code>Stock.eligible row</code></td><td data-label="Meaning">Both conditions are required in this supplied policy.</td></tr>
+<tr><td data-label="Source">A active and signed</td><td data-label="Symbol"><code>Stock.a</code></td><td data-label="Meaning">A satisfies the actual rule.</td></tr>
+<tr><td data-label="Source">B quarantined and signed</td><td data-label="Symbol"><code>Stock.b</code></td><td data-label="Meaning">A signature is insufficient in general.</td></tr>
+</tbody></table>
+<p>See <a href="view/runs/13-portable-html-mixed/model-notes.md.html">the source-to-symbol map</a> and <a href="view/runs/13-portable-html-mixed/extraction-review.json.html">review acceptances</a>. The HTML was processed through an agent-produced extraction; original hashes, line coordinates and material review are retained. Review acceptance is an accountable inspection record, not a machine proof of faithful reading.</p>
+<h2>3. Infer the questions without a separate brief</h2>
+<ol><li>Does A meet both conditions in the supplied rule?</li><li>Is the report's signature-only rule true for the relevant rows?</li><li>Does the report cite or state accurate premises?</li></ol>
+<p>Do not assume the report's general rule just because the author uses it. Read <a href="view/runs/13-portable-html-mixed/review-plan.md.html">the plan</a> and <a href="view/runs/13-portable-html-mixed/findings.json.html">the criteria and argument items</a>. The domain is this stock snapshot; the model does not authorize a real shipment.</p>
+<h2>4. Choose a proof and a counterexample</h2>
+<pre><code>-- The conclusion is supported.
+Stock.eligible Stock.a
+
+-- The report's proposed rule has an actual in-domain counterexample.
+Stock.b ∈ Stock.rows ∧ Stock.b.signed = true ∧ ¬ Stock.eligible Stock.b</code></pre>
+<p>The second target is about B and the proposed general rule. It does not refute A's eligibility. A deduction using a false rule may still have a valid inference form: the defect here is the offered rule, not modus ponens itself.</p>
+<h2>5. Inspect the reviewed model and actual Lean checks</h2>
+<p><a href="view/runs/13-portable-html-mixed/models/Stock/Data.lean.html">Data and rule definitions</a> · <a href="view/runs/13-portable-html-mixed/models/Stock/Audit.lean.html">Theorems and proofs</a> · <a href="view/runs/13-portable-html-mixed/proof-results.json.html">Recorded exact-target and axiom checks</a>.</p>
+<p>The helper rebuilds the reviewed local modules, compiles exact target assertions and inspects theorem dependencies. Read the target files and logs linked under <a href="runs/13-portable-html-mixed.html#finding-3">C3's formal evidence</a>. A declaration check and an exact-target check can refer to the same theorem; check counts are not counts of independent real-world conclusions.</p>
+<h2>6. Read the two verdicts together</h2>
+<table><thead><tr><th>Dimension</th><th>Result</th><th>Reason</th></tr></thead><tbody>
+<tr><td data-label="Dimension">Conclusion</td><td data-label="Result">Supported / proved in model</td><td data-label="Reason">A is active and signed.</td></tr>
+<tr><td data-label="Dimension">Author justification</td><td data-label="Result">Unsound argument</td><td data-label="Reason">B refutes the signature-only premise.</td></tr>
+<tr><td data-label="Dimension">Semantic limits</td><td data-label="Result">Explicit source assumptions</td><td data-label="Reason">Original authenticity and source-to-model interpretation are not established by Lean.</td></tr>
+</tbody></table>
+<p>Read <a href="view/runs/13-portable-html-mixed/audit-report.md.html">the complete audit</a> and <a href="view/runs/13-portable-html-mixed/independent-review.md.html">coordinator review</a>. The fixture was deliberately designed; this is not a blind estimate of real-document accuracy.</p>
+<h2>7. Compare neighboring outcomes</h2>
+<ul><li><a href="runs/13-portable-html-mixed.html#finding-1">C1: supported conclusion and adequate argument</a> — counted stock is 45.</li><li><a href="runs/13-portable-html-mixed.html#finding-2">C2: refuted conclusion</a> — all-row arithmetic is 60, but archived stock must be excluded.</li><li><a href="runs/13-portable-html-mixed.html#finding-4">C4: unsupported history and invalid inference</a> — missing historical records do not establish that clearance never occurred; two admissible histories disagree.</li><li><a href="runs/13-portable-html-correct.html">Correct report, separately executed audit</a> — a correct statement can still have no supplied derivation. Arguments elsewhere in the same report must be considered.</li></ul>
+<h2>8. Follow the rest of the learning path</h2>
+<ol><li><a href="dossiers/14-agent-native.html">Run with Lean and agent tools alone</a>: see exactly which metadata checks were agent-reviewed instead of automated.</li><li><a href="revision-walkthrough.html">Native document correction and changed verdicts</a>: inspect OCR, stale-result rejection and renewed proof checks.</li><li><a href="dossiers/16-intervals-and-rounding.html">Overlapping intervals and half-cent ties</a>: distinguish defined boundary rules from assumptions.</li><li><a href="capabilities.html">Coverage matrix</a>: separate current audits, legacy demonstrations, mechanism tests and untested limits.</li></ol>
+<h2>Run the method on another report</h2>
+<pre><code>python3 skills/evidence-to-proof-review/scripts/audit.py prepare \
+  --indexed --report your-report.pdf --sources your-dossier/
+
+# The agent reads sources, registers claims, infers criteria,
+# reviews extraction and writes the audit and Lean model.
+python3 skills/evidence-to-proof-review/scripts/audit.py check \
+  --workspace tmp/YOUR_RUN --lean /absolute/path/to/lean</code></pre>
+<p>These are usage instructions, not a claim that the placeholder commands were executed. Each actual run has its own retained workspace and observed toolchain version. Missing tools, ambiguous passages and exhausted budgets remain visible in the audit.</p>
+</main><footer>Static study edition · works from file:// · no network or JavaScript required. Sources, audits, and evaluator expectations have different roles.</footer></body></html>

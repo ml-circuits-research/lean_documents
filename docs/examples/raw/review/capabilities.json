@@ -1,0 +1,323 @@
+{
+  "schema_version": 1,
+  "scope": "Study coverage, not an accuracy score or universal certification.",
+  "categories": {
+    "current_v2": "Executed v2 helper audits",
+    "agent_native": "Executed Lean; agent-reviewed metadata",
+    "v2_and_legacy": "Mixed generation of clearly labelled audit evidence",
+    "legacy_audits": "Historical executed v1 audits",
+    "mechanism_tests": "Executed implementation or ingestion tests",
+    "not_demonstrated": "No such execution claimed"
+  },
+  "capabilities": [
+    {
+      "id": "basic-flow",
+      "capability": "Report findings \u2192 facts \u2192 methods \u2192 proof \u2192 verdict",
+      "evidence_kind": "current_v2",
+      "evidence": [
+        {
+          "path": "start-here.html",
+          "label": "Guided C3 walkthrough"
+        },
+        {
+          "path": "runs/13-portable-html-mixed.html",
+          "label": "Mixed report audit"
+        },
+        {
+          "path": "runs/13-portable-html-correct.html",
+          "label": "Correct report audit"
+        }
+      ],
+      "establishes": "Executed audits with inferred criteria, source mappings, separate argument items and actual target checks.",
+      "limits": "Synthetic record; source authenticity and arbitrary future interpretations are not certified."
+    },
+    {
+      "id": "argument-premise",
+      "capability": "Correct conclusion with a refuted offered premise",
+      "evidence_kind": "current_v2",
+      "evidence": [
+        {
+          "path": "runs/13-portable-html-mixed.html#finding-3",
+          "label": "Signature-only rule"
+        },
+        {
+          "path": "runs/16-intervals-and-rounding-mixed.html#finding-4",
+          "label": "False gross-duration premise"
+        }
+      ],
+      "establishes": "The conclusion stays supported while the argument is unsound; exact counterevidence is explained.",
+      "limits": "False premise and invalid inference are different defects; the latter is not inferred merely from the former."
+    },
+    {
+      "id": "support-gap",
+      "capability": "Invalid inference and insufficient evidence",
+      "evidence_kind": "current_v2",
+      "evidence": [
+        {
+          "path": "runs/13-portable-html-mixed.html#finding-4",
+          "label": "Missing clearance history"
+        },
+        {
+          "path": "runs/12-empty-evidence-mixed.html",
+          "label": "Empty evidence"
+        },
+        {
+          "path": "runs/15-native-revision-correct.html#finding-6",
+          "label": "Correct assertion without supplied argument"
+        }
+      ],
+      "establishes": "Bounded searches and auxiliary countermodels; independently correct conclusions can still lack author support.",
+      "limits": "Failure to find a proof alone is not non-entailment, and non-entailment is not proof of the event\u2019s negation."
+    },
+    {
+      "id": "native-route",
+      "capability": "Agent tools and Lean without Python audit gates",
+      "evidence_kind": "agent_native",
+      "evidence": [
+        {
+          "path": "runs/14-agent-native-mixed.html",
+          "label": "Mixed native audit"
+        },
+        {
+          "path": "runs/14-agent-native-correct.html",
+          "label": "Correct native audit"
+        }
+      ],
+      "establishes": "Actual Lean execution, exact targets, axiom reports and separate review in both report variants.",
+      "limits": "Metadata checks are agent-reviewed; no Python-v2 or Lake success is claimed."
+    },
+    {
+      "id": "portable-import",
+      "capability": "Copied skill, HTML import and reviewed local modules",
+      "evidence_kind": "current_v2",
+      "evidence": [
+        {
+          "path": "dossiers/13-portable-html.html",
+          "label": "Paired portable dossier"
+        },
+        {
+          "path": "view/runs/13-portable-html-correct/extraction-review.json.html",
+          "label": "Original-source acceptances"
+        }
+      ],
+      "establishes": "Audits run from a copied skill; a non-native format enters through original-bound, reviewed extraction; nested modules are rebuilt.",
+      "limits": "This validates the shown HTML route, not every file format or every installed Lean library."
+    },
+    {
+      "id": "native-correction",
+      "capability": "DOCX/PDF/OCR with a real transcription correction",
+      "evidence_kind": "current_v2",
+      "evidence": [
+        {
+          "path": "revision-walkthrough.html",
+          "label": "Native workflow"
+        },
+        {
+          "path": "view/runs/15-native-revision-correct/manual-transcriptions.jsonl.html",
+          "label": "T7 versus OCR17 correction"
+        }
+      ],
+      "establishes": "Original formats, actual OCR, visual inspection, attributed correction and retained raw extraction.",
+      "limits": "The scan remains partial with explicit acknowledgement; broad handwriting or multilingual OCR accuracy is not measured."
+    },
+    {
+      "id": "revision",
+      "capability": "Source revision, dependency invalidation and changed verdict",
+      "evidence_kind": "current_v2",
+      "evidence": [
+        {
+          "path": "revision-walkthrough.html",
+          "label": "Before/after explanation"
+        },
+        {
+          "path": "view/review/stale-rejections.json.html",
+          "label": "Four actual stale-result rejections"
+        }
+      ],
+      "establishes": "Corrected C20\u2192C45 flips total120 from supported to refuted; all technical results rechecked; original history retained.",
+      "limits": "Narrow semantic dependencies are declared and reviewed; unchanged semantic verdicts still require technical checks."
+    },
+    {
+      "id": "resume",
+      "capability": "Bounded extraction, resumption and partial acknowledgement",
+      "evidence_kind": "current_v2",
+      "evidence": [
+        {
+          "path": "view/review/prepare-correct.json.html",
+          "label": "Initial2/4 batch"
+        },
+        {
+          "path": "view/review/resume-correct.json.html",
+          "label": "Remaining2/4 batch"
+        },
+        {
+          "path": "view/runs/15-native-revision-correct/coverage-acknowledgement.json.html",
+          "label": "Partial-scan scope"
+        }
+      ],
+      "establishes": "A finite document batch really stops and resumes without pretending the partial scan is fully certain.",
+      "limits": "Batch completion is not exhaustive semantic interpretation."
+    },
+    {
+      "id": "overlap",
+      "capability": "Overlapping/touching intervals and zero-length exclusions",
+      "evidence_kind": "current_v2",
+      "evidence": [
+        {
+          "path": "runs/16-intervals-and-rounding-correct.html#finding-1",
+          "label": "Overlap30"
+        },
+        {
+          "path": "runs/16-intervals-and-rounding-correct.html#finding-2",
+          "label": "Touching union40"
+        },
+        {
+          "path": "runs/16-intervals-and-rounding-correct.html#finding-3",
+          "label": "Zero/out-of-scope records"
+        }
+      ],
+      "establishes": "Concrete unique-minute unions plus generic half-open touching and empty-interval Lean theorems.",
+      "limits": "Partial clipping of an interval crossing a window boundary is not instantiated; no general union-cardinality theorem is claimed."
+    },
+    {
+      "id": "ties",
+      "capability": "Exact positive/negative half-cent ties and rounding order",
+      "evidence_kind": "current_v2",
+      "evidence": [
+        {
+          "path": "runs/16-intervals-and-rounding-correct.html#finding-6",
+          "label": "Positive tie"
+        },
+        {
+          "path": "runs/16-intervals-and-rounding-correct.html#finding-7",
+          "label": "Negative tie"
+        },
+        {
+          "path": "runs/16-intervals-and-rounding-correct.html#finding-8",
+          "label": "Per-line102 versus aggregate101"
+        }
+      ],
+      "establishes": "A supplied away-from-zero policy is executed with exact signed integers, without floating-point approximation.",
+      "limits": "This is one explicit policy, not a claim that all accounting systems use the same rule."
+    },
+    {
+      "id": "symbolic",
+      "capability": "General quantified propositions beyond finite fixture arithmetic",
+      "evidence_kind": "current_v2",
+      "evidence": [
+        {
+          "path": "view/runs/16-intervals-and-rounding-correct/models/IntervalModel.lean.html",
+          "label": "Generic interval membership laws"
+        }
+      ],
+      "establishes": "Touching_union and empty_interval are quantified over arbitrary natural-number offsets; concrete targets are separate.",
+      "limits": "No general statistical or causal inference framework is validated by those propositions."
+    },
+    {
+      "id": "undefined",
+      "capability": "Missing operational criteria and honest abstention",
+      "evidence_kind": "current_v2",
+      "evidence": [
+        {
+          "path": "runs/16-intervals-and-rounding-mixed.html#finding-10",
+          "label": "Undefined reasonableness"
+        },
+        {
+          "path": "runs/15-native-revision-mixed.html#finding-7",
+          "label": "Nonformal exemplary judgment"
+        }
+      ],
+      "establishes": "No invented rubric; documentary statements that criteria are missing can be supported.",
+      "limits": "Absence of a rubric does not establish that the qualitative judgment is false."
+    },
+    {
+      "id": "conflicts",
+      "capability": "Contradictory sources, scope and attribution",
+      "evidence_kind": "v2_and_legacy",
+      "evidence": [
+        {
+          "path": "dossiers/11-report-derived-criteria.html",
+          "label": "V2 conflicts and citations"
+        },
+        {
+          "path": "dossiers/05-conflicting-evidence.html",
+          "label": "Legacy attributed conflicts"
+        }
+      ],
+      "establishes": "Sources remain separately attributed; the report\u2019s certainty can fail while the underlying event stays unresolved.",
+      "limits": "Historical v1 audits do not acquire v2 guarantees by publication or proof replay."
+    },
+    {
+      "id": "versions",
+      "capability": "Temporal/version rules, exceptions and narrative testimony",
+      "evidence_kind": "legacy_audits",
+      "evidence": [
+        {
+          "path": "dossiers/02-versioned-deadlines.html",
+          "label": "Versioned deadlines"
+        },
+        {
+          "path": "dossiers/04-narrative-continuity.html",
+          "label": "Narrative attribution"
+        },
+        {
+          "path": "dossiers/06-procurement-contract.html",
+          "label": "Scoped exceptions"
+        }
+      ],
+      "establishes": "Executed source-linked examples of these semantic problems, clearly labelled legacy.",
+      "limits": "These are historical demonstrations, not fresh validations of every latest helper control."
+    },
+    {
+      "id": "mechanisms",
+      "capability": "Integrity gates, malformed inputs and dependency propagation",
+      "evidence_kind": "mechanism_tests",
+      "evidence": [
+        {
+          "path": "view/review/helper-tests.log.html",
+          "label": "159-test executed regression log"
+        }
+      ],
+      "establishes": "Technical rejection tests include changed quotes/targets, unapproved axioms, imported-source review and transitive claim dependencies.",
+      "limits": "A passed implementation test is not a new independently audited dossier."
+    },
+    {
+      "id": "scale",
+      "capability": "Disk-backed indexing and resumption at larger input counts",
+      "evidence_kind": "mechanism_tests",
+      "evidence": [
+        {
+          "path": "view/review/historical-scale.json.html",
+          "label": "Historical1002-document ingestion run"
+        },
+        {
+          "path": "dossiers/10-distributed-assurance.html",
+          "label": "Historical67-source audit"
+        }
+      ],
+      "establishes": "Executed ingestion/retrieval scale check and a separate multi-document synthetic audit.",
+      "limits": "The1002-document run does not measure large-corpus semantic accuracy."
+    },
+    {
+      "id": "version-selection",
+      "capability": "Per-run Lean version selection",
+      "evidence_kind": "mechanism_tests",
+      "evidence": [
+        {
+          "path": "view/review/helper-tests.log.html",
+          "label": "Version policy and mismatch checks"
+        }
+      ],
+      "establishes": "Policy binding and wrong-version rejection tested; current real executions use4.24.0.",
+      "limits": "A successful alternate Lean release is not demonstrated."
+    },
+    {
+      "id": "remaining",
+      "capability": "Real-document reliability, cryptographic authenticity and broad OCR",
+      "evidence_kind": "not_demonstrated",
+      "evidence": [],
+      "establishes": "These limits are exposed rather than assigned fabricated execution results.",
+      "limits": "No representative blind real-dossier benchmark, source-signature authentication, statistical calibration or broad handwriting/multilingual scan benchmark is supplied."
+    }
+  ]
+}

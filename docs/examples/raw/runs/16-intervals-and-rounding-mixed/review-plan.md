@@ -1,0 +1,3 @@
+# Review plan
+
+Contract v2; criteria are inferred from the selected supplied report and SR-16. No separate brief exists. Read all three source files and every report paragraph. Register ten numbered conclusions; audit each offered premise, citation and inference separately. Search all authorized sources for counterevidence. Check interval union, inclusive deadline and exact signed rounding using finite typed definitions; retain missing history and undefined reasonableness as support gaps. No alternate report or evaluator outcomes are audit evidence. This is a nonblind fixture-author audit, explicitly disclosed; a separate root reviewer derives a source-first view before checking model correspondence. Keep all runs and logs.

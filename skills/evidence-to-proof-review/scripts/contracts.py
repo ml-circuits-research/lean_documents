@@ -13,7 +13,7 @@ from pathlib import Path
 CAVEAT = ('Registration reconciles declared claims and reviewed report anchors; '
           'it does not establish semantic completeness, faithful decomposition, '
           'or that declared searches were actually performed.')
-OUTCOMES = {'sufficient', 'insufficient', 'invalid', 'disputed', 'nonformal', 'not_provided'}
+OUTCOMES = {'sufficient', 'insufficient', 'invalid', 'unsound', 'disputed', 'nonformal', 'not_provided'}
 ASSESSMENTS = {'verified', 'unsupported', 'contradicted', 'disputed', 'nonformal'}
 
 
@@ -243,7 +243,7 @@ def validate(root, findings, source_lookup=None):
         if not _choice(outcome, OUTCOMES):
             raise ValueError(f'{ident}: invalid report argument outcome')
         expected_status = {'insufficient': 'insufficient_support', 'invalid': 'invalid_inference',
-                           'not_provided': 'insufficient_support'}.get(outcome, outcome)
+                           'unsound': 'unsound_argument', 'not_provided': 'insufficient_support'}.get(outcome, outcome)
         if finding.get('argument_status') != expected_status:
             raise ValueError(f'{ident}: argument_status disagrees with report argument outcome')
         _strings(argument.get('independent_reasoning'), ident + '.argument_audit.independent_reasoning', True)
@@ -262,6 +262,10 @@ def validate(root, findings, source_lookup=None):
             _text(item.get('reasoning'), ident + '.report argument item.reasoning')
             _refs(item.get('evidence_refs'), len(evidence), ident + '.report item.evidence_refs')
             _refs(item.get('proof_refs'), len(proofs), ident + '.report item.proof_refs')
+        if outcome == 'unsound' and not any(
+                item['kind'] == 'premise' and item['assessment'] == 'contradicted'
+                and (item['evidence_refs'] or item['proof_refs']) for item in items):
+            raise ValueError(f'{ident}: unsound argument requires a contradicted report premise with evidence or proof references')
         deps = _strings(argument.get('claim_dependencies'), ident + '.claim_dependencies')
         if len(deps) != len(set(deps)) or any(dep not in submitted for dep in deps):
             raise ValueError(f'{ident}: dependencies must name distinct audited claim IDs')
@@ -352,7 +356,7 @@ def render_finding(finding):
             result.append(f"[evidence {ref}]({e['path']}) at `{e['anchor']}`")
         for ref in item['proof_refs']:
             p = finding['proofs'][ref]
-            result.append(f"[proof {ref}: {p['theorem']}](models/{p['module']}.lean)")
+            result.append(f"[proof {ref}: {p['theorem']}](models/{p['module'].replace('.', '/')}.lean)")
         return ', '.join(result) or 'No linked evidence or proof.'
     for item in argument['report_items']:
         lines += [f"Report {item['kind']} at `{item['report_anchor']}`:", '',

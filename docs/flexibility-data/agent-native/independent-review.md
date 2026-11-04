@@ -1,0 +1,43 @@
+# Independent semantic and proof review
+
+Reviewed 4 November 2026. The reviewer first read only `source.md` and the selected `report-mixed.md`, derived the outcomes below, and communicated those outcomes before opening `Case.lean`, `Audit.lean`, or the proposed audit report. The alternate report and evaluator outcomes were not read. Shared filesystem access limits procedural independence; this is an independent reconstruction, not an isolated information-security experiment.
+
+## Independent outcomes
+
+- **R1:** The conclusion is supported: S1 gives amount 9 and S2 defines the threshold as at most 10. The report's universal rule that every positive amount is within budget is false: 11 is positive and exceeds 10. The conclusion and argument premise therefore have different outcomes.
+- **R2:** Refuted under the disclosed interpretation of “over budget” as the negation of S2's within-budget condition. The recorded amount cannot satisfy that interpretation because 9 is at most 10. No additional argument is supplied by R2.
+- **R3:** Underdetermined with insufficient report support. S3 expressly permits approval and nonapproval. Two admissible worlds distinguish those states; no conclusion about actual nonapproval follows. No additional argument is supplied by R3.
+
+## Source-to-model and target correspondence
+
+`World.amount : Nat` and `dossier w := w.amount = 9` represent the recorded value in S1. `withinBudget w := w.amount ≤ 10` represents S2. `World.approved : Bool`, unconstrained by `dossier`, captures S3's two possible approval states. Natural-number amounts are a declared modeling restriction; the actual value, threshold, and counterexample used here lie in that domain. These data do not authenticate events.
+
+The final targets match the independent outcomes:
+
+| Target | Assessment |
+| --- | --- |
+| `Supports dossier withinBudget` | Establishes a nonempty evidence model and within-budget status for every admissible world. |
+| `¬ Entails positive withinBudget` | Refutes the report's universal rule using amount 11. The counterexample need not satisfy the actual-item dossier, because the rule ranges over positive amounts generally. |
+| `Refutes dossier (fun w => ¬ withinBudget w)` | Refutes R2 under its expressly disclosed numeric interpretation. |
+| `Underdetermined dossier approved` | Exhibits amount-9 worlds with opposite approval states. |
+| `¬ Supports dossier approved ∧ ¬ Refutes dossier approved` | Establishes neither direction is entailed in the declared model; this does not establish actual nonapproval. |
+
+The support and refutation definitions explicitly require a satisfying world, so the direct verdicts are not consequences of an inconsistent evidence predicate. The two approval witnesses satisfy the same dossier. Each referenced theorem has an explicit exact-type assertion and an axiom-print command in the compiled combined file.
+
+## Review correction and reconciliation
+
+The initial model/report called the universal-rule result `positiveArgumentInvalid`. I requested a more precise account: modus ponens would remain valid if the report's universal premise were true; the defect is that premise, not the inference form. The final theorem is `positiveRuleRefuted`, and final C1 expressly identifies the false premise while preserving the supported conclusion. The final report also discloses the natural-number restriction and the interpretation of “over budget.” These changes resolve the correspondence concerns raised in review.
+
+## Executed verification
+
+The existing final logs and status report Lean 4.24.0 compilation with exit status 0 and no axioms for the five referenced theorems. I additionally copied the final combined model to a fresh retained directory and ran the installed Lean 4.24.0 executable directly. This independent replay exited 0 and printed no axiom dependencies for all five referenced results. Exact-type assertions compiled in that replay. The copied model and final `Audit.lean` had the identical SHA-256 hash:
+
+`b89c9dd914fc55d8916aeb19291d321493970ebb4c30cf16bf41e358151fb131`
+
+Replay artifacts: `../agent-native-independent-replay-H5OvPR/`, including `Audit.lean`, `lean.log`, `exit-status.txt`, and `model-hashes.txt`. I also executed `sha256sum -c inputs.sha256`; both the selected report and source matched. No Python audit checker, Lake build, external checker, or separate kernel implementation was used for this replay. The agent-native assurance record correctly distinguishes executed formal checks from agent-reviewed quotations, source correspondence and registration.
+
+No remaining material semantic mismatch was found for these three scoped conclusions and the one report-rule obligation. This small synthetic run does not establish universal document handling, source authenticity, real-world completeness, or correctness of arbitrary future formalizations.
+
+## Separate implementation follow-up
+
+The earlier identical-original refresh bug is repaired: I reran the retained reproduction using the fixed helper. The revised imported document remained `ready` after retry; identical reimport correctly returned `changed: false`. The fixed replay workspace is `tmp/flexibility-review/post-review-hmwxy43w/runs/claim-audit-revision-bhz_wh5x` relative to the repository root. Code inspection also confirms that the argument renderer now replaces dots with directory separators in nested Lean proof links. These observations concern the optional helper and are separate from this agent-native audit's executed assurance.

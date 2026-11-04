@@ -89,6 +89,9 @@ def _schema(db):
 
 
 def prepare(args):
+    lean_version=getattr(args,'lean_version','4.24.0')
+    if not isinstance(lean_version,str) or not re.fullmatch(r'4\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)',lean_version):
+        raise ValueError('lean_version must be a stable Lean 4 release (4.x.y)')
     temp_root=Path(args.temp_root or Path.cwd()/'tmp').resolve();temp_root.mkdir(parents=True,exist_ok=True)
     sources=[Path(p).resolve() for p in args.sources]
     for source in sources:
@@ -119,11 +122,11 @@ def prepare(args):
         catalog.append({'id':ident,'role':role,'original':original,'logical':logical,'external':str(path),'original_sha':sha(root/original)})
     db.commit();db.close()
     save(root/'input/catalog.json',catalog)
-    save(root/'run.json',{'schema_version':2,'workspace':str(root),'created_at':stamp(),
+    save(root/'run.json',{'schema_version':2,'workspace':str(root),'created_at':stamp(),'lean_version':lean_version,
         'retention':'Retain until explicit user cleanup request','extraction':{
         'ocr_language':getattr(args,'ocr_language','eng'),'timeout':getattr(args,'extract_timeout',60),
         'max_pages':getattr(args,'max_pages',None)},'limitations':'Retrieval is not exhaustive semantic review; extraction is not authenticity.'})
-    save(root/'input/audit-policy.json', {'contract_version':2, 'brief_origin':'provided' if brief else 'inferred',
+    save(root/'input/audit-policy.json', {'contract_version':2, 'lean_version':lean_version, 'brief_origin':'provided' if brief else 'inferred',
         'default_mandate':'Audit every material report claim and its justification against the supplied sources; derive and disclose criteria without assuming the claim.'})
     manifest(root)
     return resume(root,max_documents=getattr(args,'max_documents',None),max_seconds=getattr(args,'max_seconds',None))
@@ -141,6 +144,11 @@ def resume(root,*,max_documents=None,max_seconds=None,retry=False,max_pages=None
     candidates=db.execute("SELECT * FROM documents WHERE status='pending'"+(" OR status IN ('blocked','partial')" if retry else '')+" ORDER BY id").fetchall()
     processed=[]
     for row in candidates:
+        # Explicit imported extractions remain authoritative through native retries.
+        # A refresh with new original bytes invalidates this binding automatically.
+        imported=json.loads(row['tools']).get('agent_extraction',{})
+        if imported.get('original_sha256')==row['original_sha']:
+            continue
         if (max_documents is not None and len(processed)>=max_documents) or (max_seconds is not None and time.monotonic()-started>=max_seconds): break
         original=root/row['original']
         if sha(original)!=row['original_sha']: db.close();raise ValueError('Original snapshot changed')
@@ -187,6 +195,15 @@ def resume(root,*,max_documents=None,max_seconds=None,retry=False,max_pages=None
         db.commit();processed.append(row['id'])
         # Atomic per-document checkpoint: a killed converter leaves pending work;
         # committed records are preserved even if the batch stops afterward.
+    db.close()
+    return finalize(root,processed,prior_manifest_sha,started,max_documents,max_seconds)
+
+
+def finalize(root,processed,prior_manifest_sha,started=None,max_documents=None,max_seconds=None):
+    """Synchronize ledgers, claim registration, coverage, and integrity locks."""
+    root=Path(root)
+    if started is None:started=time.monotonic()
+    db=connection(root);db.row_factory=sqlite3.Row
     rows=[dict(r) for r in db.execute('SELECT * FROM documents ORDER BY id')]
     with (root/'source-ledger.jsonl').open('w') as stream:
         for seg in db.execute('SELECT * FROM segments ORDER BY document_id,anchor'):
@@ -250,12 +267,20 @@ def assert_reviewable(root,findings):
         raise ValueError('Incomplete ingestion must be resumed or explicitly accounted for in coverage-acknowledgement.json (document_id, reason, impact)')
     reviews=read(root/'extraction-review.json').get('reviews',[]) if (root/'extraction-review.json').exists() else []
     for finding in findings:
-        for evidence in finding['evidence']+[{'path':'input/report.md','anchor':finding['report_anchor']}]:
+        direct=finding['formal_status'] in {'proved','refuted'}
+        argument=finding.get('argument_audit',{})
+        passages=[(item,direct or bool(finding.get('proofs'))) for item in finding['evidence']]
+        passages.append(({'path':'input/report.md','anchor':finding['report_anchor']},direct))
+        passages.extend(({'path':'input/report.md','anchor':item['report_anchor']},
+                         direct or bool(item.get('proof_refs')))
+                        for item in argument.get('report_items',[]))
+        passages.extend((item,direct) for item in finding.get('support_search',{}).get('inspected',[]))
+        for evidence,requires_review in passages:
             seg=passage(root,evidence['path'],evidence['anchor'])
             if not seg or not seg['uncertainty']:continue
             accepted=any(r.get('path')==evidence['path'] and r.get('anchor')==evidence['anchor'] and r.get('decision')=='accepted' and r.get('reviewer') and r.get('reason') and r.get('source_sha256')==seg['locator']['original_sha256'] and r.get('segment_sha256')==hashlib.sha256(seg['quote'].encode()).hexdigest() for r in reviews)
-            if not accepted and finding['formal_status'] in {'proved','refuted'}:
-                raise ValueError(f'{finding["claim_id"]}: uncertain extraction requires explicit original-source review before direct formal verdict')
+            if not accepted and requires_review:
+                raise ValueError(f'{finding["claim_id"]}: uncertain extraction requires explicit original-source review before direct formal verdict or source-linked proof')
     invalidation=root/'invalidation.json'
     if invalidation.exists():
         state=read(invalidation);review=read(root/'revision-review.json') if (root/'revision-review.json').exists() else {}
@@ -345,8 +370,17 @@ def refresh(root,document_id,replacement,*,temp_root=None):
     for entry in catalog:
         if entry['id']==document_id:entry.update(original_sha=sha(original),external=str(replacement))
     save(target/'input/catalog.json',catalog)
+    new_original_sha=sha(original)
+    imported=json.loads(selected['tools']).get('agent_extraction',{})
+    # A new revision may point to another file with identical bytes. Its imported
+    # projection still has a valid original binding and must keep its declared
+    # extraction coverage; native retry deliberately does not replace it.
+    imported_coverage=imported.get('coverage',{}).get('status')
+    status=('ready' if imported_coverage=='complete' else 'partial') if (
+        imported.get('original_sha256')==new_original_sha and imported_coverage in {'complete','partial'}
+    ) else 'pending'
     with connection(target,True) as db:
-        db.execute("UPDATE documents SET status='pending',original_sha=?,external=? WHERE id=?",(sha(original),str(replacement),document_id))
+        db.execute("UPDATE documents SET status=?,original_sha=?,external=? WHERE id=?",(status,new_original_sha,str(replacement),document_id))
     old_findings=read(target/'findings.json') if (target/'findings.json').exists() else []
     try:
         mapping=read(target/'dependencies.json') if (target/'dependencies.json').exists() else {}

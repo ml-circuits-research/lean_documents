@@ -1,0 +1,79 @@
+{
+  "reviews": [
+    {
+      "path": "input/sources/03-receipt-scan.pdf.md",
+      "anchor": "pdf-page-0001-reviewed-0001",
+      "decision": "accepted",
+      "reviewer": "Native revision dossier author (nonblind)",
+      "reason": "Visually inspected the original scan raster using view_image: transfer is T7, but OCR reads 17. Verified date, 16:40 receipt, 16:10 dispatch and approval disclaimer. Corrected only the identifier; preserved original OCR.",
+      "source_sha256": "2d22efef6a77638e22040fbedad784697ae8cf45d91131a088e60d16b7e86eba",
+      "segment_sha256": "6b055a816a147bf014dba5a6b88d850a4a70e868bc79b1557a6369019de05aee",
+      "reviewed_at": "2026-11-04T18:09:00.087882+00:00",
+      "attestation": "The caller explicitly attests original-source inspection for this manual transcription.",
+      "source_anchor": "pdf-page-0001"
+    },
+    {
+      "path": "input/sources/01-policy.docx.md",
+      "anchor": "docx-p-0001",
+      "reviewer": "Native revision dossier author (nonblind)",
+      "decision": "accepted",
+      "reason": "Inspected original word/document.xml directly: simple ordered paragraphs with no tables, headers, revisions or hidden content. Material wording matches this extracted paragraph.",
+      "source_sha256": "4a0cf796e8b3917bc1606f856a688d36c5d1aac4d82a6aba8e1576be91be5c42",
+      "segment_sha256": "d5313b049343384c561348852278cf9fd3192704552f23ec7ddbcdd5ef39ba83"
+    },
+    {
+      "path": "input/sources/01-policy.docx.md",
+      "anchor": "docx-p-0002",
+      "reviewer": "Native revision dossier author (nonblind)",
+      "decision": "accepted",
+      "reason": "Inspected original word/document.xml directly: simple ordered paragraphs with no tables, headers, revisions or hidden content. Material wording matches this extracted paragraph.",
+      "source_sha256": "4a0cf796e8b3917bc1606f856a688d36c5d1aac4d82a6aba8e1576be91be5c42",
+      "segment_sha256": "bfe6b5ac2f56c1ac6a2f85f7343606c593b99c5fc149919c3cc74a537b381227"
+    },
+    {
+      "path": "input/sources/01-policy.docx.md",
+      "anchor": "docx-p-0003",
+      "reviewer": "Native revision dossier author (nonblind)",
+      "decision": "accepted",
+      "reason": "Inspected original word/document.xml directly: simple ordered paragraphs with no tables, headers, revisions or hidden content. Material wording matches this extracted paragraph.",
+      "source_sha256": "4a0cf796e8b3917bc1606f856a688d36c5d1aac4d82a6aba8e1576be91be5c42",
+      "segment_sha256": "52915f4c7cd33a57b976aa0c4e428dbec8d74d5130454237a8204ea4554a59b7"
+    },
+    {
+      "path": "input/sources/01-policy.docx.md",
+      "anchor": "docx-p-0004",
+      "reviewer": "Native revision dossier author (nonblind)",
+      "decision": "accepted",
+      "reason": "Inspected original word/document.xml directly: simple ordered paragraphs with no tables, headers, revisions or hidden content. Material wording matches this extracted paragraph.",
+      "source_sha256": "4a0cf796e8b3917bc1606f856a688d36c5d1aac4d82a6aba8e1576be91be5c42",
+      "segment_sha256": "9179b68b7195da1196f897e484f0a3e6c6dda56f67e542793618c6229cd1efab"
+    },
+    {
+      "path": "input/sources/01-policy.docx.md",
+      "anchor": "docx-p-0005",
+      "reviewer": "Native revision dossier author (nonblind)",
+      "decision": "accepted",
+      "reason": "Inspected original word/document.xml directly: simple ordered paragraphs with no tables, headers, revisions or hidden content. Material wording matches this extracted paragraph.",
+      "source_sha256": "4a0cf796e8b3917bc1606f856a688d36c5d1aac4d82a6aba8e1576be91be5c42",
+      "segment_sha256": "d3a91961a5d9c3fbcf6de247026f318c4573348aa2bf5a581887fc6055446d1d"
+    },
+    {
+      "path": "input/sources/01-policy.docx.md",
+      "anchor": "docx-p-0006",
+      "reviewer": "Native revision dossier author (nonblind)",
+      "decision": "accepted",
+      "reason": "Inspected original word/document.xml directly: simple ordered paragraphs with no tables, headers, revisions or hidden content. Material wording matches this extracted paragraph.",
+      "source_sha256": "4a0cf796e8b3917bc1606f856a688d36c5d1aac4d82a6aba8e1576be91be5c42",
+      "segment_sha256": "8544ab2d6fee242242dc0a0e4c9b690f01ac5ba40e0a93d94b808561fb54025c"
+    },
+    {
+      "path": "input/sources/02-ledger.pdf.md",
+      "anchor": "pdf-page-0001",
+      "reviewer": "Native revision dossier author (nonblind)",
+      "decision": "accepted",
+      "reason": "Rendered the original PDF and visually inspected it with view_image: A60, B40, C20, date, units, complete-charge statement, quality16:00 and unprovided security all match; revision2 supersession text inspected where applicable.",
+      "source_sha256": "535ad3e56da322f97d52c7bd036f66a545051f1702ce38d575c2f6ee8a262312",
+      "segment_sha256": "e7b1fe7d94361607d298bec3d1bd8e6ac2aacbec7ee3839420d2af87e18f89d1"
+    }
+  ]
+}

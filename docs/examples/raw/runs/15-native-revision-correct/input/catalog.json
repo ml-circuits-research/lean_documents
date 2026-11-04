@@ -1,0 +1,34 @@
+[
+  {
+    "id": "D00001",
+    "role": "report",
+    "original": "input/originals/D00001.md",
+    "logical": "input/report.md",
+    "external": "/home/salboaie/work/lean_documents/examples/15-native-revision/report-correct.md",
+    "original_sha": "8e78a2380ab307e5d79a43c6c3ecfe2a5866bf53f46190fe5b2195357b6b06c0"
+  },
+  {
+    "id": "D00002",
+    "role": "source",
+    "original": "input/originals/D00002.docx",
+    "logical": "input/sources/01-policy.docx.md",
+    "external": "/home/salboaie/work/lean_documents/examples/15-native-revision/sources/01-policy.docx",
+    "original_sha": "4a0cf796e8b3917bc1606f856a688d36c5d1aac4d82a6aba8e1576be91be5c42"
+  },
+  {
+    "id": "D00003",
+    "role": "source",
+    "original": "input/originals/D00003.pdf",
+    "logical": "input/sources/02-ledger.pdf.md",
+    "external": "/home/salboaie/work/lean_documents/examples/15-native-revision/sources/02-ledger.pdf",
+    "original_sha": "535ad3e56da322f97d52c7bd036f66a545051f1702ce38d575c2f6ee8a262312"
+  },
+  {
+    "id": "D00004",
+    "role": "source",
+    "original": "input/originals/D00004.pdf",
+    "logical": "input/sources/03-receipt-scan.pdf.md",
+    "external": "/home/salboaie/work/lean_documents/examples/15-native-revision/sources/03-receipt-scan.pdf",
+    "original_sha": "2d22efef6a77638e22040fbedad784697ae8cf45d91131a088e60d16b7e86eba"
+  }
+]

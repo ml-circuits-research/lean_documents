@@ -1,0 +1,1678 @@
+[
+  {
+    "claim_id": "C16-01",
+    "report_anchor": "P02",
+    "report_quote": "The union of pauses A and B is 30 minutes.",
+    "question": "How many distinct minutes lie in A or B within the actual gross window?",
+    "evidence": [
+      {
+        "path": "input/sources/policy.md",
+        "anchor": "P02",
+        "quote": "[P1] This synthetic protocol governs incident H16 and its November 2026 invoice. All times are integer minute offsets from 09:00 UTC on 2 November 2026. Pause intervals are half-open [start,end); a minute belongs to the interval exactly when start <= minute < end. The gross incident window is [0,180). Count each paused minute once using the union of approved in-scope intervals, clipped to the gross window. An interval of zero length contributes zero. Intervals marked other-case never pause H16."
+      },
+      {
+        "path": "input/sources/operations.md",
+        "anchor": "P02",
+        "quote": "[O1] Incident H16 opened at minute 0 and restoration occurred at minute 180. Approved H16 pause A is [20,40); approved H16 pause B is [30,50). Both records refer to the same stopped-service clock and overlap."
+      }
+    ],
+    "rules": [
+      "[P1] This synthetic protocol governs incident H16 and its November 2026 invoice. All times are integer minute offsets from 09:00 UTC on 2 November 2026. Pause intervals are half-open [start,end); a minute belongs to the interval exactly when start <= minute < end. The gross incident window is [0,180). Count each paused minute once using the union of approved in-scope intervals, clipped to the gross window. An interval of zero length contributes zero. Intervals marked other-case never pause H16."
+    ],
+    "assumptions": [
+      "The synthetic source transcriptions are faithful and SR-16 applies to H16; no external facts are added."
+    ],
+    "reasoning": [
+      "A covers minutes 20 through 39 and B covers 30 through 49. Their overlap is 30 through 39, so their union is 20 through 49: 30 minutes. Adding 20 and 20 double-counts ten minutes."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "IntervalModel",
+        "theorem": "Settlement.overlap30",
+        "target": "Settlement.unionMinutes 180 [Settlement.a, Settlement.b] = 30",
+        "relation": "supports"
+      }
+    ],
+    "limits": [
+      "The supplied corpus is the entire search boundary. The model does not authenticate sources or establish missing historical events. Partial-window clipping is not independently exercised by this dossier."
+    ],
+    "recommendation": "Use a 30-minute union for A and B.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "How many distinct minutes lie in A or B within the actual gross window?",
+      "decision_criteria": [
+        "A covers minutes 20 through 39 and B covers 30 through 49. Their overlap is 30 through 39, so their union is 20 through 49: 30 minutes. Adding 20 and 20 double-counts ten minutes."
+      ],
+      "scope": "H16 actual and explicitly identified extension scenario, invoice N16, separate CN16, and the explicitly scoped August\u2013October historical prerequisite.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "sufficient",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "P02",
+          "report_quote": "Their common ten minutes are counted once under P1.",
+          "assessment": "verified",
+          "reasoning": "A covers minutes 20 through 39 and B covers 30 through 49. Their overlap is 30 through 39, so their union is 20 through 49: 30 minutes. Adding 20 and 20 double-counts ten minutes.",
+          "evidence_refs": [
+            0,
+            1
+          ],
+          "proof_refs": [
+            0
+          ]
+        },
+        {
+          "kind": "citation",
+          "report_anchor": "P02",
+          "report_quote": "P1",
+          "assessment": "verified",
+          "reasoning": "The cited passage exists and its content matches the attributed bounded statement.",
+          "evidence_refs": [
+            0
+          ],
+          "proof_refs": []
+        }
+      ],
+      "independent_reasoning": [
+        "A covers minutes 20 through 39 and B covers 30 through 49. Their overlap is 30 through 39, so their union is 20 through 49: 30 minutes. Adding 20 and 20 double-counts ten minutes."
+      ],
+      "evidence_refs": [
+        0,
+        1
+      ],
+      "proof_refs": [
+        0
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "Use finite interval union and exact signed integer rounding, with direct targets and explicitly auxiliary checks.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "A covers minutes 20 through 39 and B covers 30 through 49. Their overlap is 30 through 39, so their union is 20 through 49: 30 minutes. Adding 20 and 20 double-counts ten minutes. The model transcribes the cited integer values and the explicit policy, assuming faithful source transcription and protocol applicability. It does not authenticate records."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the complete three-file source corpus and this report paragraph, including policy, full pause inventory, invoice and explicit historical limitations.",
+      "queries": [
+        "H16",
+        "pause",
+        "SLA",
+        "round",
+        "historical",
+        "reasonable"
+      ],
+      "inspected": [
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P05"
+        }
+      ],
+      "limitations": [
+        "No external sources, missing historical records, or alternate report were used as evidence."
+      ],
+      "conclusion": "A covers minutes 20 through 39 and B covers 30 through 49. Their overlap is 30 through 39, so their union is 20 through 49: 30 minutes. Adding 20 and 20 double-counts ten minutes."
+    }
+  },
+  {
+    "claim_id": "C16-02",
+    "report_anchor": "P03",
+    "report_quote": "Adding touching pause C gives a 40-minute union.",
+    "question": "How many distinct minutes lie in A, B or touching C within the actual gross window?",
+    "evidence": [
+      {
+        "path": "input/sources/policy.md",
+        "anchor": "P02",
+        "quote": "[P1] This synthetic protocol governs incident H16 and its November 2026 invoice. All times are integer minute offsets from 09:00 UTC on 2 November 2026. Pause intervals are half-open [start,end); a minute belongs to the interval exactly when start <= minute < end. The gross incident window is [0,180). Count each paused minute once using the union of approved in-scope intervals, clipped to the gross window. An interval of zero length contributes zero. Intervals marked other-case never pause H16."
+      },
+      {
+        "path": "input/sources/operations.md",
+        "anchor": "P02",
+        "quote": "[O1] Incident H16 opened at minute 0 and restoration occurred at minute 180. Approved H16 pause A is [20,40); approved H16 pause B is [30,50). Both records refer to the same stopped-service clock and overlap."
+      },
+      {
+        "path": "input/sources/operations.md",
+        "anchor": "P03",
+        "quote": "[O2] Approved H16 pause C is [50,60). Approved H16 administrative marker Z is [60,60). Approved pause X is [70,80) but is marked other-case H17. Approved H16 pause Y is [190,200), wholly outside the actual incident window. A, B, C, Z, X and Y are the complete pause inventory for H16's actual decision."
+      }
+    ],
+    "rules": [
+      "[P1] This synthetic protocol governs incident H16 and its November 2026 invoice. All times are integer minute offsets from 09:00 UTC on 2 November 2026. Pause intervals are half-open [start,end); a minute belongs to the interval exactly when start <= minute < end. The gross incident window is [0,180). Count each paused minute once using the union of approved in-scope intervals, clipped to the gross window. An interval of zero length contributes zero. Intervals marked other-case never pause H16."
+    ],
+    "assumptions": [
+      "The synthetic source transcriptions are faithful and SR-16 applies to H16; no external facts are added."
+    ],
+    "reasoning": [
+      "A and B already cover [20,50). C covers [50,60). Their touching boundary adds no minute beyond the enumerated 20 through 59, giving 40 minutes."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "IntervalModel",
+        "theorem": "Settlement.touching40",
+        "target": "Settlement.unionMinutes 180 [Settlement.a, Settlement.b, Settlement.c] = 40",
+        "relation": "supports"
+      },
+      {
+        "module": "IntervalModel",
+        "theorem": "Settlement.touching_union",
+        "target": "\u2200 (lo mid hi minute : Nat), lo \u2264 mid \u2192 mid \u2264 hi \u2192 (((lo \u2264 minute \u2227 minute < mid) \u2228 (mid \u2264 minute \u2227 minute < hi)) \u2194 (lo \u2264 minute \u2227 minute < hi))",
+        "relation": "auxiliary"
+      }
+    ],
+    "limits": [
+      "The supplied corpus is the entire search boundary. The model does not authenticate sources or establish missing historical events. Partial-window clipping is not independently exercised by this dossier."
+    ],
+    "recommendation": "Use a 40-minute union after adding C.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "How many distinct minutes lie in A, B or touching C within the actual gross window?",
+      "decision_criteria": [
+        "A and B already cover [20,50). C covers [50,60). Their touching boundary adds no minute beyond the enumerated 20 through 59, giving 40 minutes."
+      ],
+      "scope": "H16 actual and explicitly identified extension scenario, invoice N16, separate CN16, and the explicitly scoped August\u2013October historical prerequisite.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "sufficient",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "P03",
+          "report_quote": "Half-open boundaries join [20,50) and [50,60) without a duplicate or extra minute.",
+          "assessment": "verified",
+          "reasoning": "A and B already cover [20,50). C covers [50,60). Their touching boundary adds no minute beyond the enumerated 20 through 59, giving 40 minutes.",
+          "evidence_refs": [
+            0,
+            1,
+            2
+          ],
+          "proof_refs": [
+            0,
+            1
+          ]
+        }
+      ],
+      "independent_reasoning": [
+        "A and B already cover [20,50). C covers [50,60). Their touching boundary adds no minute beyond the enumerated 20 through 59, giving 40 minutes."
+      ],
+      "evidence_refs": [
+        0,
+        1,
+        2
+      ],
+      "proof_refs": [
+        0,
+        1
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "Use finite interval union and exact signed integer rounding, with direct targets and explicitly auxiliary checks.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "A and B already cover [20,50). C covers [50,60). Their touching boundary adds no minute beyond the enumerated 20 through 59, giving 40 minutes. The model transcribes the cited integer values and the explicit policy, assuming faithful source transcription and protocol applicability. It does not authenticate records."
+        },
+        {
+          "proof_ref": 1,
+          "explanation": "This symbolic half-open membership equivalence applies to ordered endpoints, independently of incident values. It explains why touching intervals do not add an extra boundary minute; it is auxiliary rather than a source authenticity result."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the complete three-file source corpus and this report paragraph, including policy, full pause inventory, invoice and explicit historical limitations.",
+      "queries": [
+        "H16",
+        "pause",
+        "SLA",
+        "round",
+        "historical",
+        "reasonable"
+      ],
+      "inspected": [
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P05"
+        }
+      ],
+      "limitations": [
+        "No external sources, missing historical records, or alternate report were used as evidence."
+      ],
+      "conclusion": "A and B already cover [20,50). C covers [50,60). Their touching boundary adds no minute beyond the enumerated 20 through 59, giving 40 minutes."
+    }
+  },
+  {
+    "claim_id": "C16-03",
+    "report_anchor": "P04",
+    "report_quote": "The actual H16 paused time remains 40 minutes after all six records are considered.",
+    "question": "What is the union duration after zero-length, case-scope and window rules are applied to the complete actual inventory?",
+    "evidence": [
+      {
+        "path": "input/sources/policy.md",
+        "anchor": "P02",
+        "quote": "[P1] This synthetic protocol governs incident H16 and its November 2026 invoice. All times are integer minute offsets from 09:00 UTC on 2 November 2026. Pause intervals are half-open [start,end); a minute belongs to the interval exactly when start <= minute < end. The gross incident window is [0,180). Count each paused minute once using the union of approved in-scope intervals, clipped to the gross window. An interval of zero length contributes zero. Intervals marked other-case never pause H16."
+      },
+      {
+        "path": "input/sources/operations.md",
+        "anchor": "P02",
+        "quote": "[O1] Incident H16 opened at minute 0 and restoration occurred at minute 180. Approved H16 pause A is [20,40); approved H16 pause B is [30,50). Both records refer to the same stopped-service clock and overlap."
+      },
+      {
+        "path": "input/sources/operations.md",
+        "anchor": "P03",
+        "quote": "[O2] Approved H16 pause C is [50,60). Approved H16 administrative marker Z is [60,60). Approved pause X is [70,80) but is marked other-case H17. Approved H16 pause Y is [190,200), wholly outside the actual incident window. A, B, C, Z, X and Y are the complete pause inventory for H16's actual decision."
+      }
+    ],
+    "rules": [
+      "[P1] This synthetic protocol governs incident H16 and its November 2026 invoice. All times are integer minute offsets from 09:00 UTC on 2 November 2026. Pause intervals are half-open [start,end); a minute belongs to the interval exactly when start <= minute < end. The gross incident window is [0,180). Count each paused minute once using the union of approved in-scope intervals, clipped to the gross window. An interval of zero length contributes zero. Intervals marked other-case never pause H16."
+    ],
+    "assumptions": [
+      "The synthetic source transcriptions are faithful and SR-16 applies to H16; no external facts are added."
+    ],
+    "reasoning": [
+      "The complete inventory covers forty actual-window minutes. Z=[60,60) contains no minute; X belongs to H17; Y=[190,200) has no member in [0,180). Neither a zero-length marker nor another case adds a minute."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "IntervalModel",
+        "theorem": "Settlement.actual40",
+        "target": "Settlement.unionMinutes Settlement.actualGross Settlement.inventory = 40",
+        "relation": "supports"
+      },
+      {
+        "module": "IntervalModel",
+        "theorem": "Settlement.empty_interval",
+        "target": "\u2200 (point minute : Nat), \u00ac (point \u2264 minute \u2227 minute < point)",
+        "relation": "auxiliary"
+      }
+    ],
+    "limits": [
+      "The supplied corpus is the entire search boundary. The model does not authenticate sources or establish missing historical events. Partial-window clipping is not independently exercised by this dossier."
+    ],
+    "recommendation": "Retain 40 actual paused minutes and exclude Z, X and Y under the separate rules.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "What is the union duration after zero-length, case-scope and window rules are applied to the complete actual inventory?",
+      "decision_criteria": [
+        "The complete inventory covers forty actual-window minutes. Z=[60,60) contains no minute; X belongs to H17; Y=[190,200) has no member in [0,180). Neither a zero-length marker nor another case adds a minute."
+      ],
+      "scope": "H16 actual and explicitly identified extension scenario, invoice N16, separate CN16, and the explicitly scoped August\u2013October historical prerequisite.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "sufficient",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "P04",
+          "report_quote": "Z has zero length, X is other-case, and Y lies outside the actual window.",
+          "assessment": "verified",
+          "reasoning": "The complete inventory covers forty actual-window minutes. Z=[60,60) contains no minute; X belongs to H17; Y=[190,200) has no member in [0,180). Neither a zero-length marker nor another case adds a minute.",
+          "evidence_refs": [
+            0,
+            1,
+            2
+          ],
+          "proof_refs": [
+            0,
+            1
+          ]
+        }
+      ],
+      "independent_reasoning": [
+        "The complete inventory covers forty actual-window minutes. Z=[60,60) contains no minute; X belongs to H17; Y=[190,200) has no member in [0,180). Neither a zero-length marker nor another case adds a minute."
+      ],
+      "evidence_refs": [
+        0,
+        1,
+        2
+      ],
+      "proof_refs": [
+        0,
+        1
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "Use finite interval union and exact signed integer rounding, with direct targets and explicitly auxiliary checks.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "The complete inventory covers forty actual-window minutes. Z=[60,60) contains no minute; X belongs to H17; Y=[190,200) has no member in [0,180). Neither a zero-length marker nor another case adds a minute. The model transcribes the cited integer values and the explicit policy, assuming faithful source transcription and protocol applicability. It does not authenticate records."
+        },
+        {
+          "proof_ref": 1,
+          "explanation": "The symbolic target states no natural minute is both at least and below the same endpoint. P1 uses that half-open convention, so Z contributes zero. This does not establish other interval scopes."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the complete three-file source corpus and this report paragraph, including policy, full pause inventory, invoice and explicit historical limitations.",
+      "queries": [
+        "H16",
+        "pause",
+        "SLA",
+        "round",
+        "historical",
+        "reasonable"
+      ],
+      "inspected": [
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P05"
+        }
+      ],
+      "limitations": [
+        "No external sources, missing historical records, or alternate report were used as evidence."
+      ],
+      "conclusion": "The complete inventory covers forty actual-window minutes. Z=[60,60) contains no minute; X belongs to H17; Y=[190,200) has no member in [0,180). Neither a zero-length marker nor another case adds a minute."
+    }
+  },
+  {
+    "claim_id": "C16-04",
+    "report_anchor": "P05",
+    "report_quote": "H16 meets the inclusive SLA.",
+    "question": "Does actual gross duration minus its paused union satisfy the inclusive 140-minute SLA?",
+    "evidence": [
+      {
+        "path": "input/sources/policy.md",
+        "anchor": "P02",
+        "quote": "[P1] This synthetic protocol governs incident H16 and its November 2026 invoice. All times are integer minute offsets from 09:00 UTC on 2 November 2026. Pause intervals are half-open [start,end); a minute belongs to the interval exactly when start <= minute < end. The gross incident window is [0,180). Count each paused minute once using the union of approved in-scope intervals, clipped to the gross window. An interval of zero length contributes zero. Intervals marked other-case never pause H16."
+      },
+      {
+        "path": "input/sources/policy.md",
+        "anchor": "P03",
+        "quote": "[P2] The SLA limit is 140 chargeable minutes inclusive. Chargeable time is gross elapsed minutes minus distinct approved in-scope paused minutes. An incident meets the SLA exactly when chargeable time <= 140. For the explicit extension scenario only, restoration occurs at minute 181 and all listed pause intervals and scope flags remain unchanged. No automatic tolerance minute applies."
+      },
+      {
+        "path": "input/sources/operations.md",
+        "anchor": "P02",
+        "quote": "[O1] Incident H16 opened at minute 0 and restoration occurred at minute 180. Approved H16 pause A is [20,40); approved H16 pause B is [30,50). Both records refer to the same stopped-service clock and overlap."
+      },
+      {
+        "path": "input/sources/operations.md",
+        "anchor": "P03",
+        "quote": "[O2] Approved H16 pause C is [50,60). Approved H16 administrative marker Z is [60,60). Approved pause X is [70,80) but is marked other-case H17. Approved H16 pause Y is [190,200), wholly outside the actual incident window. A, B, C, Z, X and Y are the complete pause inventory for H16's actual decision."
+      }
+    ],
+    "rules": [
+      "[P1] This synthetic protocol governs incident H16 and its November 2026 invoice. All times are integer minute offsets from 09:00 UTC on 2 November 2026. Pause intervals are half-open [start,end); a minute belongs to the interval exactly when start <= minute < end. The gross incident window is [0,180). Count each paused minute once using the union of approved in-scope intervals, clipped to the gross window. An interval of zero length contributes zero. Intervals marked other-case never pause H16.",
+      "[P2] The SLA limit is 140 chargeable minutes inclusive. Chargeable time is gross elapsed minutes minus distinct approved in-scope paused minutes. An incident meets the SLA exactly when chargeable time <= 140. For the explicit extension scenario only, restoration occurs at minute 181 and all listed pause intervals and scope flags remain unchanged. No automatic tolerance minute applies."
+    ],
+    "assumptions": [
+      "The synthetic source transcriptions are faithful and SR-16 applies to H16; no external facts are added."
+    ],
+    "reasoning": [
+      "The ledger gives gross 180, and the approved in-case union is 40. Thus chargeable time is 140. P2 includes equality, establishing that H16 meets the SLA."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "IntervalModel",
+        "theorem": "Settlement.exactDeadline",
+        "target": "Settlement.meets Settlement.actualGross",
+        "relation": "supports"
+      }
+    ],
+    "limits": [
+      "The supplied corpus is the entire search boundary. The model does not authenticate sources or establish missing historical events. Partial-window clipping is not independently exercised by this dossier."
+    ],
+    "recommendation": "Retain SLA compliance using gross 180, paused 40 and chargeable 140.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "Does actual gross duration minus its paused union satisfy the inclusive 140-minute SLA?",
+      "decision_criteria": [
+        "The ledger gives gross 180, and the approved in-case union is 40. Thus chargeable time is 140. P2 includes equality, establishing that H16 meets the SLA."
+      ],
+      "scope": "H16 actual and explicitly identified extension scenario, invoice N16, separate CN16, and the explicitly scoped August\u2013October historical prerequisite.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "sufficient",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "P05",
+          "report_quote": "Its gross 180 minutes minus 40 paused minutes gives exactly the permitted 140 chargeable minutes.",
+          "assessment": "verified",
+          "reasoning": "The ledger gives gross 180, and the approved in-case union is 40. Thus chargeable time is 140. P2 includes equality, establishing that H16 meets the SLA.",
+          "evidence_refs": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "proof_refs": [
+            0
+          ]
+        }
+      ],
+      "independent_reasoning": [
+        "The ledger gives gross 180, and the approved in-case union is 40. Thus chargeable time is 140. P2 includes equality, establishing that H16 meets the SLA."
+      ],
+      "evidence_refs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "proof_refs": [
+        0
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "Use finite interval union and exact signed integer rounding, with direct targets and explicitly auxiliary checks.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "The ledger gives gross 180, and the approved in-case union is 40. Thus chargeable time is 140. P2 includes equality, establishing that H16 meets the SLA. The model transcribes the cited integer values and the explicit policy, assuming faithful source transcription and protocol applicability. It does not authenticate records."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the complete three-file source corpus and this report paragraph, including policy, full pause inventory, invoice and explicit historical limitations.",
+      "queries": [
+        "H16",
+        "pause",
+        "SLA",
+        "round",
+        "historical",
+        "reasonable"
+      ],
+      "inspected": [
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P05"
+        }
+      ],
+      "limitations": [
+        "No external sources, missing historical records, or alternate report were used as evidence."
+      ],
+      "conclusion": "The ledger gives gross 180, and the approved in-case union is 40. Thus chargeable time is 140. P2 includes equality, establishing that H16 meets the SLA."
+    }
+  },
+  {
+    "claim_id": "C16-05",
+    "report_anchor": "P06",
+    "report_quote": "The explicit 181-minute extension scenario fails the SLA.",
+    "question": "Does the explicit 181-minute extension satisfy the same inclusive SLA with unchanged intervals?",
+    "evidence": [
+      {
+        "path": "input/sources/policy.md",
+        "anchor": "P02",
+        "quote": "[P1] This synthetic protocol governs incident H16 and its November 2026 invoice. All times are integer minute offsets from 09:00 UTC on 2 November 2026. Pause intervals are half-open [start,end); a minute belongs to the interval exactly when start <= minute < end. The gross incident window is [0,180). Count each paused minute once using the union of approved in-scope intervals, clipped to the gross window. An interval of zero length contributes zero. Intervals marked other-case never pause H16."
+      },
+      {
+        "path": "input/sources/policy.md",
+        "anchor": "P03",
+        "quote": "[P2] The SLA limit is 140 chargeable minutes inclusive. Chargeable time is gross elapsed minutes minus distinct approved in-scope paused minutes. An incident meets the SLA exactly when chargeable time <= 140. For the explicit extension scenario only, restoration occurs at minute 181 and all listed pause intervals and scope flags remain unchanged. No automatic tolerance minute applies."
+      },
+      {
+        "path": "input/sources/operations.md",
+        "anchor": "P02",
+        "quote": "[O1] Incident H16 opened at minute 0 and restoration occurred at minute 180. Approved H16 pause A is [20,40); approved H16 pause B is [30,50). Both records refer to the same stopped-service clock and overlap."
+      },
+      {
+        "path": "input/sources/operations.md",
+        "anchor": "P03",
+        "quote": "[O2] Approved H16 pause C is [50,60). Approved H16 administrative marker Z is [60,60). Approved pause X is [70,80) but is marked other-case H17. Approved H16 pause Y is [190,200), wholly outside the actual incident window. A, B, C, Z, X and Y are the complete pause inventory for H16's actual decision."
+      }
+    ],
+    "rules": [
+      "[P1] This synthetic protocol governs incident H16 and its November 2026 invoice. All times are integer minute offsets from 09:00 UTC on 2 November 2026. Pause intervals are half-open [start,end); a minute belongs to the interval exactly when start <= minute < end. The gross incident window is [0,180). Count each paused minute once using the union of approved in-scope intervals, clipped to the gross window. An interval of zero length contributes zero. Intervals marked other-case never pause H16.",
+      "[P2] The SLA limit is 140 chargeable minutes inclusive. Chargeable time is gross elapsed minutes minus distinct approved in-scope paused minutes. An incident meets the SLA exactly when chargeable time <= 140. For the explicit extension scenario only, restoration occurs at minute 181 and all listed pause intervals and scope flags remain unchanged. No automatic tolerance minute applies."
+    ],
+    "assumptions": [
+      "The synthetic source transcriptions are faithful and SR-16 applies to H16; no external facts are added."
+    ],
+    "reasoning": [
+      "At gross 181, Y still begins after the window. The union stays 40, giving 141 chargeable minutes. P2 allows 140 inclusive and explicitly excludes a tolerance minute, so the extended incident fails."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "IntervalModel",
+        "theorem": "Settlement.extensionFails",
+        "target": "\u00ac Settlement.meets 181",
+        "relation": "supports"
+      }
+    ],
+    "limits": [
+      "The supplied corpus is the entire search boundary. The model does not authenticate sources or establish missing historical events. Partial-window clipping is not independently exercised by this dossier."
+    ],
+    "recommendation": "Record the extension as failing at 141 chargeable minutes.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "Does the explicit 181-minute extension satisfy the same inclusive SLA with unchanged intervals?",
+      "decision_criteria": [
+        "At gross 181, Y still begins after the window. The union stays 40, giving 141 chargeable minutes. P2 allows 140 inclusive and explicitly excludes a tolerance minute, so the extended incident fails."
+      ],
+      "scope": "H16 actual and explicitly identified extension scenario, invoice N16, separate CN16, and the explicitly scoped August\u2013October historical prerequisite.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "sufficient",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "P06",
+          "report_quote": "With Y still outside the scenario window, 181 minus 40 is 141, above the inclusive 140-minute limit.",
+          "assessment": "verified",
+          "reasoning": "At gross 181, Y still begins after the window. The union stays 40, giving 141 chargeable minutes. P2 allows 140 inclusive and explicitly excludes a tolerance minute, so the extended incident fails.",
+          "evidence_refs": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "proof_refs": [
+            0
+          ]
+        }
+      ],
+      "independent_reasoning": [
+        "At gross 181, Y still begins after the window. The union stays 40, giving 141 chargeable minutes. P2 allows 140 inclusive and explicitly excludes a tolerance minute, so the extended incident fails."
+      ],
+      "evidence_refs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "proof_refs": [
+        0
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "Use finite interval union and exact signed integer rounding, with direct targets and explicitly auxiliary checks.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "At gross 181, Y still begins after the window. The union stays 40, giving 141 chargeable minutes. P2 allows 140 inclusive and explicitly excludes a tolerance minute, so the extended incident fails. The model transcribes the cited integer values and the explicit policy, assuming faithful source transcription and protocol applicability. It does not authenticate records."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the complete three-file source corpus and this report paragraph, including policy, full pause inventory, invoice and explicit historical limitations.",
+      "queries": [
+        "H16",
+        "pause",
+        "SLA",
+        "round",
+        "historical",
+        "reasonable"
+      ],
+      "inspected": [
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P05"
+        }
+      ],
+      "limitations": [
+        "No external sources, missing historical records, or alternate report were used as evidence."
+      ],
+      "conclusion": "At gross 181, Y still begins after the window. The union stays 40, giving 141 chargeable minutes. P2 allows 140 inclusive and explicitly excludes a tolerance minute, so the extended incident fails."
+    }
+  },
+  {
+    "claim_id": "C16-06",
+    "report_anchor": "P07",
+    "report_quote": "Invoice line L1 rounds to +101 cents.",
+    "question": "What integer cent amount does the exact positive half-cent line produce under away-from-zero rounding?",
+    "evidence": [
+      {
+        "path": "input/sources/policy.md",
+        "anchor": "P04",
+        "quote": "[P3] Monetary source amounts are signed integer mills: ten mills equal one cent. Round each invoice line separately to integer cents, choosing the nearest cent and resolving an exact half-cent tie away from zero. For a negative credit, round its absolute magnitude under the same rule and restore the negative sign. Sum the signed rounded lines; never round the unrounded invoice aggregate instead. The separate credit note is not an invoice line."
+      },
+      {
+        "path": "input/sources/invoice.md",
+        "anchor": "P02",
+        "quote": "[I1] Invoice N16 contains precisely three signed lines: service component L1 +1005 mills; service component L2 +1005 mills; adjustment L3 -1000 mills. These amounts are exact, not measured approximations. No tax or additional lines apply."
+      }
+    ],
+    "rules": [
+      "[P3] Monetary source amounts are signed integer mills: ten mills equal one cent. Round each invoice line separately to integer cents, choosing the nearest cent and resolving an exact half-cent tie away from zero. For a negative credit, round its absolute magnitude under the same rule and restore the negative sign. Sum the signed rounded lines; never round the unrounded invoice aggregate instead. The separate credit note is not an invoice line."
+    ],
+    "assumptions": [
+      "The synthetic source transcriptions are faithful and SR-16 applies to H16; no external facts are added."
+    ],
+    "reasoning": [
+      "1005 mills divided by ten is 100.5 cents. P3 sends the exact positive tie away from zero to 101 cents; 100 would implement the wrong tie policy."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "IntervalModel",
+        "theorem": "Settlement.positiveTie",
+        "target": "Settlement.roundCents 1005 = 101",
+        "relation": "supports"
+      }
+    ],
+    "limits": [
+      "The supplied corpus is the entire search boundary. The model does not authenticate sources or establish missing historical events. Partial-window clipping is not independently exercised by this dossier."
+    ],
+    "recommendation": "Record L1 as +101 cents.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "What integer cent amount does the exact positive half-cent line produce under away-from-zero rounding?",
+      "decision_criteria": [
+        "1005 mills divided by ten is 100.5 cents. P3 sends the exact positive tie away from zero to 101 cents; 100 would implement the wrong tie policy."
+      ],
+      "scope": "H16 actual and explicitly identified extension scenario, invoice N16, separate CN16, and the explicitly scoped August\u2013October historical prerequisite.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "sufficient",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "P07",
+          "report_quote": "Its +1005 mills is exactly +100.5 cents, and P3 resolves the tie away from zero.",
+          "assessment": "verified",
+          "reasoning": "1005 mills divided by ten is 100.5 cents. P3 sends the exact positive tie away from zero to 101 cents; 100 would implement the wrong tie policy.",
+          "evidence_refs": [
+            0,
+            1
+          ],
+          "proof_refs": [
+            0
+          ]
+        },
+        {
+          "kind": "citation",
+          "report_anchor": "P07",
+          "report_quote": "P3",
+          "assessment": "verified",
+          "reasoning": "The cited passage exists and its content matches the attributed bounded statement.",
+          "evidence_refs": [
+            0
+          ],
+          "proof_refs": []
+        }
+      ],
+      "independent_reasoning": [
+        "1005 mills divided by ten is 100.5 cents. P3 sends the exact positive tie away from zero to 101 cents; 100 would implement the wrong tie policy."
+      ],
+      "evidence_refs": [
+        0,
+        1
+      ],
+      "proof_refs": [
+        0
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "Use finite interval union and exact signed integer rounding, with direct targets and explicitly auxiliary checks.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "1005 mills divided by ten is 100.5 cents. P3 sends the exact positive tie away from zero to 101 cents; 100 would implement the wrong tie policy. The model transcribes the cited integer values and the explicit policy, assuming faithful source transcription and protocol applicability. It does not authenticate records."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the complete three-file source corpus and this report paragraph, including policy, full pause inventory, invoice and explicit historical limitations.",
+      "queries": [
+        "H16",
+        "pause",
+        "SLA",
+        "round",
+        "historical",
+        "reasonable"
+      ],
+      "inspected": [
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P05"
+        }
+      ],
+      "limitations": [
+        "No external sources, missing historical records, or alternate report were used as evidence."
+      ],
+      "conclusion": "1005 mills divided by ten is 100.5 cents. P3 sends the exact positive tie away from zero to 101 cents; 100 would implement the wrong tie policy."
+    }
+  },
+  {
+    "claim_id": "C16-07",
+    "report_anchor": "P08",
+    "report_quote": "Credit note CN16 rounds to -101 cents.",
+    "question": "What integer cent amount does the exact negative half-cent credit produce under away-from-zero rounding?",
+    "evidence": [
+      {
+        "path": "input/sources/policy.md",
+        "anchor": "P04",
+        "quote": "[P3] Monetary source amounts are signed integer mills: ten mills equal one cent. Round each invoice line separately to integer cents, choosing the nearest cent and resolving an exact half-cent tie away from zero. For a negative credit, round its absolute magnitude under the same rule and restore the negative sign. Sum the signed rounded lines; never round the unrounded invoice aggregate instead. The separate credit note is not an invoice line."
+      },
+      {
+        "path": "input/sources/invoice.md",
+        "anchor": "P03",
+        "quote": "[I2] The separately issued credit note CN16 is -1005 mills and is excluded from invoice N16's total. Its exact absolute magnitude is 1005 mills."
+      }
+    ],
+    "rules": [
+      "[P3] Monetary source amounts are signed integer mills: ten mills equal one cent. Round each invoice line separately to integer cents, choosing the nearest cent and resolving an exact half-cent tie away from zero. For a negative credit, round its absolute magnitude under the same rule and restore the negative sign. Sum the signed rounded lines; never round the unrounded invoice aggregate instead. The separate credit note is not an invoice line."
+    ],
+    "assumptions": [
+      "The synthetic source transcriptions are faithful and SR-16 applies to H16; no external facts are added."
+    ],
+    "reasoning": [
+      "The absolute credit magnitude is 1005 mills, or 100.5 cents. Round magnitude to 101 and restore the negative sign: -101 cents. Moving to -100 would round the tie toward zero."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "IntervalModel",
+        "theorem": "Settlement.negativeTie",
+        "target": "Settlement.roundCents (-1005) = -101",
+        "relation": "supports"
+      }
+    ],
+    "limits": [
+      "The supplied corpus is the entire search boundary. The model does not authenticate sources or establish missing historical events. Partial-window clipping is not independently exercised by this dossier."
+    ],
+    "recommendation": "Record CN16 as -101 cents.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "What integer cent amount does the exact negative half-cent credit produce under away-from-zero rounding?",
+      "decision_criteria": [
+        "The absolute credit magnitude is 1005 mills, or 100.5 cents. Round magnitude to 101 and restore the negative sign: -101 cents. Moving to -100 would round the tie toward zero."
+      ],
+      "scope": "H16 actual and explicitly identified extension scenario, invoice N16, separate CN16, and the explicitly scoped August\u2013October historical prerequisite.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "sufficient",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "P08",
+          "report_quote": "P3 applies away-from-zero rounding to the exact negative half-cent tie.",
+          "assessment": "verified",
+          "reasoning": "The absolute credit magnitude is 1005 mills, or 100.5 cents. Round magnitude to 101 and restore the negative sign: -101 cents. Moving to -100 would round the tie toward zero.",
+          "evidence_refs": [
+            0,
+            1
+          ],
+          "proof_refs": [
+            0
+          ]
+        },
+        {
+          "kind": "citation",
+          "report_anchor": "P08",
+          "report_quote": "P3",
+          "assessment": "verified",
+          "reasoning": "The cited passage exists and its content matches the attributed bounded statement.",
+          "evidence_refs": [
+            0
+          ],
+          "proof_refs": []
+        }
+      ],
+      "independent_reasoning": [
+        "The absolute credit magnitude is 1005 mills, or 100.5 cents. Round magnitude to 101 and restore the negative sign: -101 cents. Moving to -100 would round the tie toward zero."
+      ],
+      "evidence_refs": [
+        0,
+        1
+      ],
+      "proof_refs": [
+        0
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "Use finite interval union and exact signed integer rounding, with direct targets and explicitly auxiliary checks.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "The absolute credit magnitude is 1005 mills, or 100.5 cents. Round magnitude to 101 and restore the negative sign: -101 cents. Moving to -100 would round the tie toward zero. The model transcribes the cited integer values and the explicit policy, assuming faithful source transcription and protocol applicability. It does not authenticate records."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the complete three-file source corpus and this report paragraph, including policy, full pause inventory, invoice and explicit historical limitations.",
+      "queries": [
+        "H16",
+        "pause",
+        "SLA",
+        "round",
+        "historical",
+        "reasonable"
+      ],
+      "inspected": [
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P05"
+        }
+      ],
+      "limitations": [
+        "No external sources, missing historical records, or alternate report were used as evidence."
+      ],
+      "conclusion": "The absolute credit magnitude is 1005 mills, or 100.5 cents. Round magnitude to 101 and restore the negative sign: -101 cents. Moving to -100 would round the tie toward zero."
+    }
+  },
+  {
+    "claim_id": "C16-08",
+    "report_anchor": "P09",
+    "report_quote": "Invoice N16 totals +102 cents.",
+    "question": "What is the signed sum after rounding each of the three invoice lines separately?",
+    "evidence": [
+      {
+        "path": "input/sources/policy.md",
+        "anchor": "P04",
+        "quote": "[P3] Monetary source amounts are signed integer mills: ten mills equal one cent. Round each invoice line separately to integer cents, choosing the nearest cent and resolving an exact half-cent tie away from zero. For a negative credit, round its absolute magnitude under the same rule and restore the negative sign. Sum the signed rounded lines; never round the unrounded invoice aggregate instead. The separate credit note is not an invoice line."
+      },
+      {
+        "path": "input/sources/invoice.md",
+        "anchor": "P02",
+        "quote": "[I1] Invoice N16 contains precisely three signed lines: service component L1 +1005 mills; service component L2 +1005 mills; adjustment L3 -1000 mills. These amounts are exact, not measured approximations. No tax or additional lines apply."
+      },
+      {
+        "path": "input/sources/invoice.md",
+        "anchor": "P03",
+        "quote": "[I2] The separately issued credit note CN16 is -1005 mills and is excluded from invoice N16's total. Its exact absolute magnitude is 1005 mills."
+      }
+    ],
+    "rules": [
+      "[P3] Monetary source amounts are signed integer mills: ten mills equal one cent. Round each invoice line separately to integer cents, choosing the nearest cent and resolving an exact half-cent tie away from zero. For a negative credit, round its absolute magnitude under the same rule and restore the negative sign. Sum the signed rounded lines; never round the unrounded invoice aggregate instead. The separate credit note is not an invoice line."
+    ],
+    "assumptions": [
+      "The synthetic source transcriptions are faithful and SR-16 applies to H16; no external facts are added."
+    ],
+    "reasoning": [
+      "Round +1005 to +101, +1005 to +101, and -1000 to -100. Sum is +102 cents. The aggregate 1010 mills rounds to +101, but P3 expressly requires per-line rounding and excludes the separate CN16 credit note."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "proved",
+    "proofs": [
+      {
+        "module": "IntervalModel",
+        "theorem": "Settlement.invoice102",
+        "target": "Settlement.invoiceTotal = 102",
+        "relation": "supports"
+      },
+      {
+        "module": "IntervalModel",
+        "theorem": "Settlement.aggregateIs101",
+        "target": "Settlement.roundCents Settlement.invoiceLines.sum = 101",
+        "relation": "auxiliary"
+      }
+    ],
+    "limits": [
+      "The supplied corpus is the entire search boundary. The model does not authenticate sources or establish missing historical events. Partial-window clipping is not independently exercised by this dossier."
+    ],
+    "recommendation": "Record invoice N16 as +102 cents; keep CN16 separate.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "What is the signed sum after rounding each of the three invoice lines separately?",
+      "decision_criteria": [
+        "Round +1005 to +101, +1005 to +101, and -1000 to -100. Sum is +102 cents. The aggregate 1010 mills rounds to +101, but P3 expressly requires per-line rounding and excludes the separate CN16 credit note."
+      ],
+      "scope": "H16 actual and explicitly identified extension scenario, invoice N16, separate CN16, and the explicitly scoped August\u2013October historical prerequisite.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "sufficient",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "P09",
+          "report_quote": "The separately rounded lines are +101, +101 and -100 cents, and the credit note is excluded.",
+          "assessment": "verified",
+          "reasoning": "Round +1005 to +101, +1005 to +101, and -1000 to -100. Sum is +102 cents. The aggregate 1010 mills rounds to +101, but P3 expressly requires per-line rounding and excludes the separate CN16 credit note.",
+          "evidence_refs": [
+            0,
+            1,
+            2
+          ],
+          "proof_refs": [
+            0,
+            1
+          ]
+        }
+      ],
+      "independent_reasoning": [
+        "Round +1005 to +101, +1005 to +101, and -1000 to -100. Sum is +102 cents. The aggregate 1010 mills rounds to +101, but P3 expressly requires per-line rounding and excludes the separate CN16 credit note."
+      ],
+      "evidence_refs": [
+        0,
+        1,
+        2
+      ],
+      "proof_refs": [
+        0,
+        1
+      ],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "Use finite interval union and exact signed integer rounding, with direct targets and explicitly auxiliary checks.",
+      "correspondence": [
+        {
+          "proof_ref": 0,
+          "explanation": "Round +1005 to +101, +1005 to +101, and -1000 to -100. Sum is +102 cents. The aggregate 1010 mills rounds to +101, but P3 expressly requires per-line rounding and excludes the separate CN16 credit note. The model transcribes the cited integer values and the explicit policy, assuming faithful source transcription and protocol applicability. It does not authenticate records."
+        },
+        {
+          "proof_ref": 1,
+          "explanation": "The three I1 signed mills sum to 1010, which rounds to 101 cents. This verifies the alternative aggregate calculation only; P3 prohibits using it as the invoice total. The direct total target instead sums rounded lines."
+        }
+      ]
+    },
+    "support_search": {
+      "scope": "Read the complete three-file source corpus and this report paragraph, including policy, full pause inventory, invoice and explicit historical limitations.",
+      "queries": [
+        "H16",
+        "pause",
+        "SLA",
+        "round",
+        "historical",
+        "reasonable"
+      ],
+      "inspected": [
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P05"
+        }
+      ],
+      "limitations": [
+        "No external sources, missing historical records, or alternate report were used as evidence."
+      ],
+      "conclusion": "Round +1005 to +101, +1005 to +101, and -1000 to -100. Sum is +102 cents. The aggregate 1010 mills rounds to +101, but P3 expressly requires per-line rounding and excludes the separate CN16 credit note."
+    }
+  },
+  {
+    "claim_id": "C16-09",
+    "report_anchor": "P10",
+    "report_quote": "The supplied corpus cannot establish entitlement to the historical rebate.",
+    "question": "Do the supplied sources establish the necessary prior-quarter breach threshold for historical rebate entitlement?",
+    "evidence": [
+      {
+        "path": "input/sources/policy.md",
+        "anchor": "P05",
+        "quote": "[P4] A historical rebate requires at least three SLA breaches during August through October 2026. An H16 decision in November cannot establish the earlier-quarter breach count. This protocol provides no definition, benchmark, or test for whether compensation is reasonable."
+      },
+      {
+        "path": "input/sources/operations.md",
+        "anchor": "P04",
+        "quote": "[O3] This delivery contains only the H16 incident record. No August, September or October incident records, aggregate breach counts, or completeness certification for those months are supplied. The absence of those records does not assert that no earlier breaches occurred."
+      }
+    ],
+    "rules": [
+      "[P4] A historical rebate requires at least three SLA breaches during August through October 2026. An H16 decision in November cannot establish the earlier-quarter breach count. This protocol provides no definition, benchmark, or test for whether compensation is reasonable."
+    ],
+    "assumptions": [
+      "The synthetic source transcriptions are faithful and SR-16 applies to H16; no external facts are added."
+    ],
+    "reasoning": [
+      "P4 makes three earlier-quarter breaches a necessary condition. O3 explicitly provides no earlier-quarter counts or events. Neither a zero count nor three breaches may be asserted as actual. Counts zero and three illustrate why the available history does not select a threshold outcome; meeting the threshold alone is not proved sufficient for entitlement."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "not_attempted",
+    "proofs": [],
+    "limits": [
+      "The supplied corpus is the entire search boundary. The model does not authenticate sources or establish missing historical events. Partial-window clipping is not independently exercised by this dossier."
+    ],
+    "recommendation": "Obtain the August\u2013October breach records and any additional entitlement requirements before deciding the historical rebate.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "Do the supplied sources establish the necessary prior-quarter breach threshold for historical rebate entitlement?",
+      "decision_criteria": [
+        "P4 makes three earlier-quarter breaches a necessary condition. O3 explicitly provides no earlier-quarter counts or events. Neither a zero count nor three breaches may be asserted as actual. Counts zero and three illustrate why the available history does not select a threshold outcome; meeting the threshold alone is not proved sufficient for entitlement."
+      ],
+      "scope": "H16 actual and explicitly identified extension scenario, invoice N16, separate CN16, and the explicitly scoped August\u2013October historical prerequisite.",
+      "missing_definitions": [],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "sufficient",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "P10",
+          "report_quote": "P4 requires three prior-quarter breaches and O3 supplies no prior-quarter breach history.",
+          "assessment": "verified",
+          "reasoning": "P4 makes three earlier-quarter breaches a necessary condition. O3 explicitly provides no earlier-quarter counts or events. Neither a zero count nor three breaches may be asserted as actual. Counts zero and three illustrate why the available history does not select a threshold outcome; meeting the threshold alone is not proved sufficient for entitlement.",
+          "evidence_refs": [
+            0,
+            1
+          ],
+          "proof_refs": []
+        },
+        {
+          "kind": "citation",
+          "report_anchor": "P10",
+          "report_quote": "P4",
+          "assessment": "verified",
+          "reasoning": "The cited passage exists and its content matches the attributed bounded statement.",
+          "evidence_refs": [
+            0
+          ],
+          "proof_refs": []
+        },
+        {
+          "kind": "citation",
+          "report_anchor": "P10",
+          "report_quote": "O3",
+          "assessment": "verified",
+          "reasoning": "The cited passage exists and its content matches the attributed bounded statement.",
+          "evidence_refs": [
+            1
+          ],
+          "proof_refs": []
+        }
+      ],
+      "independent_reasoning": [
+        "P4 makes three earlier-quarter breaches a necessary condition. O3 explicitly provides no earlier-quarter counts or events. Neither a zero count nor three breaches may be asserted as actual. Counts zero and three illustrate why the available history does not select a threshold outcome; meeting the threshold alone is not proved sufficient for entitlement."
+      ],
+      "evidence_refs": [
+        0,
+        1
+      ],
+      "proof_refs": [],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "A bounded documentary metaclaim is checked by source inspection; no historical fact or undefined qualitative judgment is encoded as a theorem.",
+      "correspondence": []
+    },
+    "support_search": {
+      "scope": "Read the complete three-file source corpus and this report paragraph, including policy, full pause inventory, invoice and explicit historical limitations.",
+      "queries": [
+        "H16",
+        "pause",
+        "SLA",
+        "round",
+        "historical",
+        "reasonable"
+      ],
+      "inspected": [
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P05"
+        }
+      ],
+      "limitations": [
+        "No external sources, missing historical records, or alternate report were used as evidence."
+      ],
+      "conclusion": "P4 makes three earlier-quarter breaches a necessary condition. O3 explicitly provides no earlier-quarter counts or events. Neither a zero count nor three breaches may be asserted as actual. Counts zero and three illustrate why the available history does not select a threshold outcome; meeting the threshold alone is not proved sufficient for entitlement."
+    }
+  },
+  {
+    "claim_id": "C16-10",
+    "report_anchor": "P11",
+    "report_quote": "Whether H16 compensation is reasonable remains unresolved under the supplied protocol.",
+    "question": "Does the supplied protocol define an operational standard permitting a reasonableness verdict?",
+    "evidence": [
+      {
+        "path": "input/sources/policy.md",
+        "anchor": "P05",
+        "quote": "[P4] A historical rebate requires at least three SLA breaches during August through October 2026. An H16 decision in November cannot establish the earlier-quarter breach count. This protocol provides no definition, benchmark, or test for whether compensation is reasonable."
+      }
+    ],
+    "rules": [
+      "[P4] A historical rebate requires at least three SLA breaches during August through October 2026. An H16 decision in November cannot establish the earlier-quarter breach count. This protocol provides no definition, benchmark, or test for whether compensation is reasonable."
+    ],
+    "assumptions": [
+      "The synthetic source transcriptions are faithful and SR-16 applies to H16; no external facts are added."
+    ],
+    "reasoning": [
+      "P4 explicitly states that no definition, benchmark or test of reasonable compensation is supplied. Full source inspection finds no substitute standard. A substantive reasonableness conclusion cannot be determined without an authorized criterion. This is not a refutation of compensation being reasonable."
+    ],
+    "semantic_state": "supported",
+    "argument_status": "sufficient",
+    "formal_status": "not_attempted",
+    "proofs": [],
+    "limits": [
+      "The supplied corpus is the entire search boundary. The model does not authenticate sources or establish missing historical events. Partial-window clipping is not independently exercised by this dossier."
+    ],
+    "recommendation": "Obtain an authorized definition or benchmark before assessing reasonableness.",
+    "criteria": {
+      "origin": "inferred",
+      "operational_question": "Does the supplied protocol define an operational standard permitting a reasonableness verdict?",
+      "decision_criteria": [
+        "P4 explicitly states that no definition, benchmark or test of reasonable compensation is supplied. Full source inspection finds no substitute standard. A substantive reasonableness conclusion cannot be determined without an authorized criterion. This is not a refutation of compensation being reasonable."
+      ],
+      "scope": "H16 actual and explicitly identified extension scenario, invoice N16, separate CN16, and the explicitly scoped August\u2013October historical prerequisite.",
+      "missing_definitions": [
+        "Operational reasonableness criterion."
+      ],
+      "alternatives": []
+    },
+    "argument_audit": {
+      "outcome": "sufficient",
+      "report_items": [
+        {
+          "kind": "premise",
+          "report_anchor": "P11",
+          "report_quote": "P4 supplies no operational definition or benchmark for reasonableness.",
+          "assessment": "verified",
+          "reasoning": "P4 explicitly states that no definition, benchmark or test of reasonable compensation is supplied. Full source inspection finds no substitute standard. A substantive reasonableness conclusion cannot be determined without an authorized criterion. This is not a refutation of compensation being reasonable.",
+          "evidence_refs": [
+            0
+          ],
+          "proof_refs": []
+        },
+        {
+          "kind": "citation",
+          "report_anchor": "P11",
+          "report_quote": "P4",
+          "assessment": "verified",
+          "reasoning": "The cited passage exists and its content matches the attributed bounded statement.",
+          "evidence_refs": [
+            0
+          ],
+          "proof_refs": []
+        }
+      ],
+      "independent_reasoning": [
+        "P4 explicitly states that no definition, benchmark or test of reasonable compensation is supplied. Full source inspection finds no substitute standard. A substantive reasonableness conclusion cannot be determined without an authorized criterion. This is not a refutation of compensation being reasonable."
+      ],
+      "evidence_refs": [
+        0
+      ],
+      "proof_refs": [],
+      "claim_dependencies": []
+    },
+    "formalization": {
+      "rationale": "A bounded documentary metaclaim is checked by source inspection; no historical fact or undefined qualitative judgment is encoded as a theorem.",
+      "correspondence": []
+    },
+    "support_search": {
+      "scope": "Read the complete three-file source corpus and this report paragraph, including policy, full pause inventory, invoice and explicit historical limitations.",
+      "queries": [
+        "H16",
+        "pause",
+        "SLA",
+        "round",
+        "historical",
+        "reasonable"
+      ],
+      "inspected": [
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/invoice.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/operations.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P01"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P02"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P03"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P04"
+        },
+        {
+          "path": "input/sources/policy.md",
+          "anchor": "P05"
+        }
+      ],
+      "limitations": [
+        "No external sources, missing historical records, or alternate report were used as evidence."
+      ],
+      "conclusion": "P4 explicitly states that no definition, benchmark or test of reasonable compensation is supplied. Full source inspection finds no substitute standard. A substantive reasonableness conclusion cannot be determined without an authorized criterion. This is not a refutation of compensation being reasonable."
+    }
+  }
+]
