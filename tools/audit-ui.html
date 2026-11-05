@@ -41,7 +41,7 @@ function markdown(text){
  const boundary=(line,next)=>/^\s*(?:#{1,6}\s|>|`{3,}|~{3,}|(?:[-*_]\s*){3,}$)/.test(line)||!!list(line)||(line.includes('|')&&divider(next));
  while(i<lines.length){const line=lines[i];if(!line.trim()){i++;continue;}const anchor=/^\s*<a\s+id=["']([\w.-]+)["']\s*><\/a>\s*$/.exec(line);if(anchor){html+='<span id="'+esc(anchor[1])+'"></span>';i++;continue;}
   const fence=/^\s*(`{3,}|~{3,})(.*)$/.exec(line);if(fence){const chunks=[];i++;while(i<lines.length&&!new RegExp('^\\s*'+fence[1][0]+'{'+fence[1].length+',}\\s*$').test(lines[i]))chunks.push(lines[i++]);if(i<lines.length)i++;html+='<pre><code>'+esc(chunks.join('\n'))+'</code></pre>';continue;}
-  const h=/^\s*(#{1,6})\s+(.*?)(?:\s+#+\s*)?$/.exec(line);if(h){html+='<h'+h[1].length+' id="'+esc(headingId(h[2]))+'">'+inline(h[2])+'</h'+h[1].length+'>';i++;continue;}
+  const h=/^\s*(#{1,6})\s+(.*?)(?:\s+#+\s*)?$/.exec(line);if(h){const anchor=/^([RS]\d+)\b/.exec(h[2]);if(anchor)html+='<span id="'+esc(headingId(anchor[1]))+'"></span>';html+='<h'+h[1].length+' id="'+esc(headingId(h[2]))+'">'+inline(h[2])+'</h'+h[1].length+'>';i++;continue;}
   if(/^\s*(?:[-*_]\s*){3,}$/.test(line)){html+='<hr>';i++;continue;}
   if(/^\s*>/.test(line)){const block=[];while(i<lines.length&&/^\s*>/.test(lines[i]))block.push(lines[i++].replace(/^\s*> ?/,''));html+='<blockquote>'+markdown(block.join('\n'))+'</blockquote>';continue;}
   if(line.includes('|')&&divider(lines[i+1])){const heads=cells(line);html+='<table><thead><tr>'+heads.map(c=>'<th>'+inline(c)+'</th>').join('')+'</tr></thead><tbody>';i+=2;while(i<lines.length&&lines[i].trim()&&lines[i].includes('|'))html+='<tr>'+cells(lines[i++]).map(c=>'<td>'+inline(c)+'</td>').join('')+'</tr>';html+='</tbody></table>';continue;}

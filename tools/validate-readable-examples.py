@@ -9,7 +9,8 @@ import sys
 from urllib.parse import urlencode, urlsplit
 from urllib.request import urlopen
 
-DEFAULTS = ['acquisition-financing', 'project-funding-gate', 'story-timeline', 'narrative-consistency', 'poem-form-and-voice']
+CASES = ['acquisition-financing', 'project-funding-gate', 'operating-budget', 'research-funding', 'story-timeline', 'narrative-consistency', 'poem-form-and-voice']
+DEFAULTS = [case + suffix for case in CASES for suffix in ('', '-ro')]
 STEPS = ['registration', 'evidence', 'analysis', 'verification', 'verdict']
 REPO = Path(__file__).resolve().parents[1]
 
@@ -80,6 +81,18 @@ def main(argv=None):
                 return label
             return '[' + label + '](' + os.path.relpath(destination, output.parent) + ')'
 
+        originals = [f for f in example.get('files', []) if f.get('role') == 'source' or f.get('path') == report['path']]
+        expected_sources = set()
+        for original in originals:
+            source = original.get('role') == 'source'
+            preserved = 'inputs/sources/' + PurePosixPath(original['path']).name if source else 'inputs/report' + PurePosixPath(original['path']).suffix
+            if source:
+                expected_sources.add(preserved)
+            artifact(preserved)
+            current = fetch('/api/file?' + urlencode({'example': example['id'], 'path': original['path'], 'hash': '1'}))
+            require(current.get('sha256') == cached.get(preserved, {}).get('sha256'), scope + ': current input differs from the audited snapshot: ' + original['path'])
+        retained_sources = {f['path'] for f in data.get('files', []) if f['path'].startswith('inputs/sources/')}
+        require(expected_sources == retained_sources, scope + ': current and audited source inventories differ')
         artifact(data.get('auditReportPath'))
         findings = data.get('findings', [])
         require(bool(findings), scope + ': no findings')
@@ -135,7 +148,7 @@ def main(argv=None):
     text += '## Reports\n\n' + table(['Example', 'Report', 'Run', 'Process', 'Delivery', 'Findings', 'Check', 'Document'], summaries)
     text += '\n## Individual findings\n\n' + table(['Example', 'Report', 'Finding', 'Semantic result', 'Formal result', 'Individual steps'], details)
     text += '\n## Blockers\n\n' + ('\n\n'.join(dict.fromkeys(blockers)) if blockers else 'None identified by these structural and retained-artifact checks.')
-    text += '\n\n## Limits\n\nThis checks declared outcomes, current bindings, individual recorded steps and accessible proof artifacts. It does not certify source authenticity, semantic correspondence, completeness of literary interpretation or independent kernel correctness.\n'
+    text += '\n\n## Limits\n\nThis checks declared outcomes, current bindings, current example input bytes, individual recorded steps and accessible proof artifacts. It does not certify source authenticity, semantic correspondence, completeness of literary interpretation or independent kernel correctness.\n'
     output.parent.mkdir(parents=True, exist_ok=True); output.write_text(text, encoding='utf-8')
     print(str(output)); return int(bool(blockers))
 

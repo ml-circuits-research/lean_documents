@@ -16,6 +16,8 @@ vm.runInContext(sourceHTML.split('<script>')[1].split('async function catalog()'
 const rendered=vm.runInContext("markdown('# Heading\\n\\n- One\\n- Two\\n\\n> Quote\\n\\n###### Small\\n\\n| Column | Other |\\n| --- | --- |\\n| Value | Entry |\\n\\n[Evidence](../input/source.md)\\n\\n```lean\\ntheorem demo : True := by trivial\\n```')",renderer);
 for(const tag of ['<h1','<ul>','<blockquote>','<h6','<thead>','<th>','<code>','data-md-link='])assert(rendered.includes(tag),'Markdown element missing: '+tag);
 assert(!vm.runInContext("inline('[Bad](javascript:alert)')",renderer).includes('<a'),'Executable links are not rendered');
+const anchored=vm.runInContext("markdown('## S01 — Chapter 1\\n\\nSource text\\n\\n## R01 — Conclusion')",renderer);
+assert(anchored.includes('id="md-s01"')&&anchored.includes('id="md-r01"'),'Short source and report citations have stable section anchors');
 assert.equal(vm.runInContext("resolveDocumentLink('work/a/traces/step.md','../input/source.md').path",renderer),'work/a/input/source.md');
 assert.throws(()=>vm.runInContext("resolveDocumentLink('one.md','../../outside.md')",renderer));
 const catalogResponse=await fetch(origin+'/api/examples');
@@ -135,6 +137,9 @@ try{
  const linkedPath=path.posix.normalize(path.posix.join(path.posix.dirname(tracePath),decodeURIComponent(reference.split('#')[0])));
  await js("document.querySelector('[data-test-link=yes]').click()");await until(`document.getElementById('verification-document').dataset.artifactPath===${quote(linkedPath)}`);
  assert.equal(await js("document.getElementById('verification-document').dataset.sourceId"),finished.id);
+ const fragment=decodeURIComponent(reference.split('#')[1]||'');
+ if(fragment)assert(await js(`[...document.querySelectorAll('#verification-document [id]')].some(e=>e.id===${quote(fragment)}||e.id===headingId(${quote(fragment)}))`),'Evidence citation resolves to its exact section');
+
  await js("[...document.querySelectorAll('.document-link')].find(a=>a.dataset.path.endsWith('.lean')).click()");
  await until("document.getElementById('verification-document').dataset.artifactPath?.endsWith('.lean')");
  assert(await js("/theorem|namespace/.test(document.getElementById('verification-document').textContent)"),'Actual Lean code shown');

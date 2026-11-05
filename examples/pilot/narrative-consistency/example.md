@@ -1,4 +1,4 @@
-# Read identities and testimony in The Name on the Crate
+# The Name on the Crate — a story in five chapters
 
 ## Description
 
@@ -26,6 +26,15 @@ No
 | --- | --- |
 | Correct report | report-correct.md |
 | Report with failures | report-errors.md |
+
+## Original filenames
+
+| File | Original name |
+| --- | --- |
+| sources/the-name-on-the-crate.md | The Name on the Crate — complete story.md |
+| sources/reading-conventions.md | The Name on the Crate — edition note.md |
+| report-correct.md | The Name on the Crate — careful reading.md |
+| report-errors.md | The Name on the Crate — disputed reading.md |
 
 ## Format version
 

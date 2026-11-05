@@ -1,4 +1,4 @@
-# Review an acquisition financing proposal
+# Westhaven Packaging — acquisition financing
 
 ## Description
 
@@ -22,6 +22,14 @@ English
 | --- | --- |
 | Correct report | report-correct.md |
 | Report with failures | report-errors.md |
+
+## Original filenames
+
+| File | Original name |
+| --- | --- |
+| sources/approval-correspondence.md | Financing approval correspondence |
+| sources/financing-schedule.md | Acquisition financing schedule |
+| sources/lending-terms.md | Agreed leverage test |
 
 ## Format version
 

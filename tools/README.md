@@ -42,10 +42,10 @@ node tools/test-report-generation.mjs
 node tools/test-audit-workspace.mjs investment-approval
 node tools/test-audit-workspace.mjs investment-approval-ro
 python3 -m unittest discover -s tests -p 'test_document_audit.py' -v
-python3 tools/validate-readable-examples.py --output tmp/readable-pilot/new-five-validation.md
+python3 tools/validate-readable-examples.py --output tmp/readable-pilot/example-validation.md
 ```
 
-Server tests use controlled isolated inputs. Proof tests execute real Lean. Browser tests read the running application without creating examples or mutating audit documents. Their artifacts remain under `tmp/` for inspection. The read-only example validator checks the five added dossiers, both current report variants, retained source snapshots, individual phases, proof targets and logs. It returns a failure while any required run is pending or incomplete and writes a readable summary; it does not substitute structural validity for semantic review.
+Server tests use controlled isolated inputs. Proof tests execute real Lean. Browser tests read the running application without creating examples or mutating audit documents. Their artifacts remain under `tmp/` for inspection. The read-only example validator checks the seven added dossiers in both languages, both current report variants, retained source snapshots, individual phases, proof targets and logs. It returns a failure while any required run is pending or incomplete and writes a readable summary; it does not substitute structural validity for semantic review.
 
 ## Current examples
 
@@ -54,8 +54,10 @@ Server tests use controlled isolated inputs. Proof tests execute real Lean. Brow
 | Investment approval (English and Romanian) | Valuation, allocation limit and missing clearance evidence. |
 | Acquisition financing | Net debt, the leverage ceiling and lender approval authority. |
 | Project funding release | Matching cash, milestone acceptance and board approval. |
+| Annual IT budget | Recurring and one-off costs, VAT, annual allocation and delegated approval. |
+| ThermalLoop research funding | Eligible costs, independent replication and an unknown ethics determination. |
 | The Last Crossing | Elapsed time, inconsistent testimony and an unstated motive. |
 | The Name on the Crate | Names versus people, incompatible locations and an unknown motive. |
 | The House at Low Tide | Exact verse-line counts, repeated openings and unsupported universal reception. |
 
-The five added English dossiers each contain two separate supplied reports. A correct report can accurately identify a failed covenant or an evidence gap: “correct” describes its claims, not approval of the transaction. The auditor receives only the selected report and sources. Evaluator expectations and independent review notes remain outside the source corpus. Formal checks concern the supplied facts and declared reading conventions, not document authenticity, literary quality or actual reader psychology.
+The seven added dossiers each have English and Romanian editions, with two separate supplied reports in each edition. A correct report can accurately identify a failed covenant or an evidence gap: “correct” describes its claims, not approval of the transaction. The auditor receives only the selected report and sources. Evaluator expectations and independent review notes remain outside the source corpus. Formal checks concern the supplied facts and declared reading conventions, not document authenticity, literary quality or actual reader psychology.

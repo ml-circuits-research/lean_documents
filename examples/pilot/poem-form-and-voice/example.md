@@ -1,4 +1,4 @@
-# Examine a poem's form and emotional voice
+# The House at Low Tide — form and poetic voice
 
 ## Description
 
@@ -26,6 +26,13 @@ No
 | --- | --- |
 | Correct report | report-correct.md |
 | Report with failures | report-errors.md |
+
+## Original filenames
+
+| File | Original name |
+| --- | --- |
+| sources/editorial-note.md | Editorial note for The House at Low Tide |
+| sources/poem.md | The House at Low Tide |
 
 ## Format version
 

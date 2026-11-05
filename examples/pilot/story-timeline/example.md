@@ -1,4 +1,4 @@
-# Read the timeline of The Last Crossing
+# The Last Crossing — a story in five chapters
 
 ## Description
 
@@ -26,6 +26,15 @@ No
 | --- | --- |
 | Correct report | report-correct.md |
 | Report with failures | report-errors.md |
+
+## Original filenames
+
+| File | Original name |
+| --- | --- |
+| sources/the-last-crossing.md | The Last Crossing — complete story.md |
+| sources/reading-conventions.md | The Last Crossing — edition note.md |
+| report-correct.md | The Last Crossing — careful reading.md |
+| report-errors.md | The Last Crossing — disputed reading.md |
 
 ## Format version
 

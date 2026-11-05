@@ -1,4 +1,4 @@
-# Verificarea aprobării unei investiții
+# Cedar Components — aprobarea investiției
 
 ## Description
 

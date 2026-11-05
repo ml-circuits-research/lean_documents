@@ -1,4 +1,4 @@
-# Review a project funding release
+# Harbour House — project funding release
 
 ## Description
 
@@ -22,6 +22,14 @@ English
 | --- | --- |
 | Correct report | report-correct.md |
 | Report with failures | report-errors.md |
+
+## Original filenames
+
+| File | Original name |
+| --- | --- |
+| sources/funding-policy.md | Project funding conditions |
+| sources/project-register.md | Project funding and milestone register |
+| sources/release-authority.md | Release authority and approval correspondence |
 
 ## Format version
 
