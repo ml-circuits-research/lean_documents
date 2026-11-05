@@ -1,3 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target014.lean
-Audit.claim04 : Audit.availableA ≠ 148
-'Audit.claim04' does not depend on any axioms

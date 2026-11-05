@@ -1,9 +1,0 @@
-{
-  "documents": [
-    {
-      "document_id": "D00004",
-      "reason": "OCR misreads transfer T7 as 17; the original scan was visually inspected and a reviewed full-page transcription was added while preserving OCR. Low-confidence extraction remains partial.",
-      "impact": "Receipt-dependent conclusions use the reviewed transcription, not the mistaken identifier. No claim of globally perfect OCR or machine-certified complete ingestion is made."
-    }
-  ]
-}

@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Recorded audit phase event",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "event_id",
+    "timestamp",
+    "phase",
+    "status",
+    "title",
+    "description",
+    "claim_ids",
+    "inputs",
+    "outputs"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "UTC timestamp."
+    },
+    "phase": {
+      "enum": [
+        "intake",
+        "extraction",
+        "claims",
+        "evidence",
+        "modeling",
+        "verification",
+        "review",
+        "reporting"
+      ]
+    },
+    "status": {
+      "enum": [
+        "started",
+        "completed",
+        "failed",
+        "blocked",
+        "note"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Normalized path relative to the journal directory."
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "snapshot": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Optional historical content-addressed snapshot, relative to the journal directory."
+          }
+        }
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Normalized path relative to the journal directory."
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "snapshot": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Optional historical content-addressed snapshot, relative to the journal directory."
+          }
+        }
+      }
+    },
+    "command": {
+      "type": "string"
+    },
+    "result": {
+      "type": "string"
+    },
+    "claim_step": {
+      "enum": [
+        "registration",
+        "evidence",
+        "analysis",
+        "verification",
+        "verdict"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "claim_step"
+        ]
+      },
+      "then": {
+        "properties": {
+          "claim_ids": {
+            "minItems": 1,
+            "maxItems": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,5 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target011.lean
-StockAudit.noHistoricalEntailment : ¬EvidenceLogic.Entails Stock.currentEvidence Stock.noPriorClearance
-'StockAudit.noHistoricalEntailment' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.208]

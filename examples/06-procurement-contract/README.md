@@ -1,19 +1,15 @@
-# 06-procurement-contract: synthetic native-document audit dossier
+# Were the purchases properly approved?
 
-This dossier is wholly invented. Its standards, organizations, agreements, testimony, incidents, currencies, and dates are not claims about actual entities or real legal/operational requirements. It tests auditing supplied findings against a substantial finite corpus, including document extraction and semantic uncertainty.
+A laboratory buys supplies and equipment under changing purchasing rules. Check a review of purchase amounts, approvals and emergency exceptions.
 
-The audit inputs are `brief.md`, exactly one selected report (`report.md` or `report-correct.md`), and these seven actual source files:
+**Question:** Does the purchasing review apply the right amounts, authority and exceptions?
 
-- `approval-attestations.scan.pdf`
-- `delegation-notice.md`
-- `exception-file.md`
-- `procurement-standard.docx`
-- `purchase-register.md`
-- `reconciliation-correspondence.md`
-- `revision-amendment.pdf`
+Upload purchasing rules in DOCX, a PDF amendment, scanned statements, purchase records and correspondence. Choose either [the careful report](report-correct.md) or [the report with deliberate errors](report.md) and audit it separately against all files in [sources/](sources/). Include `brief.md` for the supplied review conventions.
 
-Each report contains eighteen findings. Run the two report variants separately over the same corpus. The mixed variant intentionally contains incorrect or unsupported assertions; the careful alternative states documented conclusions and evidentiary limits. Neither is a source for the other. The selected report is always visible to the auditor; expected outcomes are separate under `examples/evaluator/` and withheld in blind evaluation.
+The audit can check combined purchases, currency conversion, rounding, approval limits and the scope of exceptions. It reviews the supplied report, including its reasons and citations; it does not write the original report.
 
-The DOCX is native structured text, the ordinary PDF has a searchable text layer, and the `.scan.pdf` consists of raster page images without a hidden text layer. Native plaintext masters remain only in `authoring/` for reproducible fixture construction. They are not audit inputs and must not be used to bypass DOCX/PDF extraction or OCR. All other source documents are Markdown with stable anchors. `manifest.json` hashes actual brief, report, and source bytes after native rendering.
+Missing contract material and conflicting statements leave some questions open. An invoice or accepted delivery alone does not establish payment.
 
-`build-notes.md` documents source markers and deterministic generation. No Lean audit or independent review of these new cases is claimed by the fixture author. Evaluation targets remain editorial until independently audited and checked.
+These are fictional examples. Keep this guide, the alternate report, metadata, generation files and evaluator material outside the audit input. Evaluator expectations are withheld during a blind audit; the selected report and source documents are always available.
+
+Historical execution records are indexed under [validation/runs](../../validation/runs/). This guide does not constitute a new validation run. Original reports and sources retain their bytes so they can be matched to prior results. New runs belong under `tmp/audit-runs/`, with a separate directory for each report.

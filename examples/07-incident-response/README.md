@@ -1,19 +1,15 @@
-# 07-incident-response: synthetic native-document audit dossier
+# Did the team respond in time?
 
-This dossier is wholly invented. Its standards, organizations, agreements, testimony, incidents, currencies, and dates are not claims about actual entities or real legal/operational requirements. It tests auditing supplied findings against a substantial finite corpus, including document extraction and semantic uncertainty.
+A service team reviews incidents across a clock change and planned maintenance. Check its response times and claims about what happened.
 
-The audit inputs are `brief.md`, exactly one selected report (`report.md` or `report-correct.md`), and these seven actual source files:
+**Question:** Does the incident report calculate the right response and notification deadlines?
 
-- `containment-attestations.scan.pdf`
-- `incident-timeline.md`
-- `maintenance-authorization.pdf`
-- `monitoring-coverage.md`
-- `notification-register.md`
-- `response-playbook.docx`
-- `review-correspondence.md`
+Upload a response playbook, incident and notification logs, maintenance permissions, monitoring coverage and scanned statements. Choose either [the careful report](report-correct.md) or [the report with deliberate errors](report.md) and audit it separately against all files in [sources/](sources/). Include `brief.md` for the supplied review conventions.
 
-Each report contains eighteen findings. Run the two report variants separately over the same corpus. The mixed variant intentionally contains incorrect or unsupported assertions; the careful alternative states documented conclusions and evidentiary limits. Neither is a source for the other. The selected report is always visible to the auditor; expected outcomes are separate under `examples/evaluator/` and withheld in blind evaluation.
+The audit can check time-zone conversion, approved pauses, delivered notifications and the applicable policy version. It reviews the supplied report, including its reasons and citations; it does not write the original report.
 
-The DOCX is native structured text, the ordinary PDF has a searchable text layer, and the `.scan.pdf` consists of raster page images without a hidden text layer. Native plaintext masters remain only in `authoring/` for reproducible fixture construction. They are not audit inputs and must not be used to bypass DOCX/PDF extraction or OCR. All other source documents are Markdown with stable anchors. `manifest.json` hashes actual brief, report, and source bytes after native rendering.
+A monitoring gap cannot prove that a data transfer did or did not occur. Conflicting witness accounts must stay visible.
 
-`build-notes.md` documents source markers and deterministic generation. No Lean audit or independent review of these new cases is claimed by the fixture author. Evaluation targets remain editorial until independently audited and checked.
+These are fictional examples. Keep this guide, the alternate report, metadata, generation files and evaluator material outside the audit input. Evaluator expectations are withheld during a blind audit; the selected report and source documents are always available.
+
+Historical execution records are indexed under [validation/runs](../../validation/runs/). This guide does not constitute a new validation run. Original reports and sources retain their bytes so they can be matched to prior results. New runs belong under `tmp/audit-runs/`, with a separate directory for each report.

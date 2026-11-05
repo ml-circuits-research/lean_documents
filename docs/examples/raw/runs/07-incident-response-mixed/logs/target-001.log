@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target001.lean
-Audit.claim01 : Audit.aDetection = 0
-'Audit.claim01' does not depend on any axioms

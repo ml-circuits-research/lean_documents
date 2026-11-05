@@ -1,3 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target020.lean
-Audit.claim11 : ¬∀ (c b f s : Bool), Audit.release true c b f s = true
-'Audit.claim11' does not depend on any axioms

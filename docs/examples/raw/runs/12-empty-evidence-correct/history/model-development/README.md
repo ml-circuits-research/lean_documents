@@ -1,1 +1,0 @@
-This is the preserved first failed model-development attempt, not a successful proof. Lean could not synthesize Decidable through the opaque admissible predicate. The final model uses constructor and definitional reduction instead; its semantics and supplied data are unchanged. Current checked models and logs are at the run root. The historical failure is retained for study.

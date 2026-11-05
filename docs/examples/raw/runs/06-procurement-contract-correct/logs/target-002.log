@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target002.lean
-Audit.rackSum : Audit.rackTotal = 2500000
-'Audit.rackSum' does not depend on any axioms

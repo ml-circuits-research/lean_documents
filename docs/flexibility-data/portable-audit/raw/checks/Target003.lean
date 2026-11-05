@@ -1,3 +1,0 @@
-import EvidenceLogic
-#check @EvidenceLogic.supportAndRefutationIncompatible
-#print axioms EvidenceLogic.supportAndRefutationIncompatible

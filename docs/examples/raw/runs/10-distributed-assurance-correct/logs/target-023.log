@@ -1,6 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target023.lean
-Audit.universalCounterexample : ∀ (recorded : List Audit.Release),
-  Audit.n58 ∈ recorded → ¬∀ (r : Audit.Release), r ∈ recorded → Audit.authorized r = true
-'Audit.universalCounterexample' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.229]

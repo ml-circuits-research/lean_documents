@@ -1,7 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target033.lean
-Audit.objectiveFailures : Audit.compliant (Audit.competitionSatisfied 2 Audit.rackTotal false false) true = false ∧
-  Audit.compliant (Audit.competitionSatisfied 1 2250000 false false) true = false ∧
-    Audit.compliant (Audit.competitionSatisfied 2 1500000 false false) false = false
-'Audit.objectiveFailures' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.214]

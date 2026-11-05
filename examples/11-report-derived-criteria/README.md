@@ -1,13 +1,15 @@
-# 11: report-derived review criteria
+# Which deliveries can be paid?
 
-This entirely synthetic dossier exercises an audit of a supplied report against cross-document evidence without a separate review brief. Internal policy DP-7, all names, records, amounts, and dates are invented. The substantive reports already exist; the auditor's task is to audit their findings and arguments, not to generate the original report.
+A campaign review describes four dispatches, their costs and whether they qualify for settlement. Check its findings against dispatch rules and records.
 
-For each independent audit, supply exactly one of `report.md` and `report-correct.md` together with the five files in `sources/`. Both reports contain twelve numbered findings. Derive verification questions from every finding, including qualifications, source-attribution statements, and supplied arguments. The alternate report is not evidence. No `brief.md` exists or is required. Source documents carry their own applicable rules, dates, units, and scope.
+**Question:** Does the report correctly identify the costs and dispatches eligible for settlement?
 
-`report.md` is the deliberately mixed report; `report-correct.md` is the cautious alternative. The examples combine arithmetic, a bounded temporal exception, citation fidelity, independent evaluation of a conclusion and its stated argument, missing evidence, an undefined qualitative criterion, chained eligibility dependencies, conflicting sources, and cohort-versus-population scope.
+Upload dispatch policy, a four-row ledger, a destination list, delivery records and an attachment register. Choose either [the careful report](report-correct.md) or [the report with deliberate errors](report.md) and audit it separately against all files in [sources/](sources/). No separate brief is needed; derive the questions from the report and source rules.
 
-**Blind-review boundary:** do not give a blind auditor this README, the alternate report, or anything under `evaluator/`. Stage only the selected report and `sources/` into a distinct retained directory under repository `tmp/`. Evaluator-only design expectations are in `evaluator/expected-outcomes.md`; they are not source evidence and must remain withheld throughout blind review.
+The audit can check spending, remaining budget, approval exceptions, destination eligibility and the report’s supporting arguments. It reviews the supplied report, including its reasons and citations; it does not write the original report.
 
-All numbers and policy predicates are finite and suitable for small Lean checks. A Lean proof over extracted facts establishes only the modeled proposition under its stated assumptions; it does not authenticate the records or resolve conflicting real-world evidence. Textual support gaps and undefined criteria remain valuable findings without being recast as proofs that the underlying substantive assertion is false.
+The four rows do not describe all forty dispatches. Conflicting delivery records and a missing later-period annex limit other conclusions.
 
-This dossier contains authored source and report fixtures plus design expectations. It does not itself contain executed audits, Lean proofs, proof logs, or validation results. Validation must be performed separately for each variant, with actual logs preserved in its run directory.
+These are fictional examples. Keep this guide, the alternate report, metadata, generation files and evaluator material outside the audit input. Evaluator expectations are withheld during a blind audit; the selected report and source documents are always available.
+
+Historical execution records are indexed under [validation/runs](../../validation/runs/). This guide does not constitute a new validation run. Original reports and sources retain their bytes so they can be matched to prior results. New runs belong under `tmp/audit-runs/`, with a separate directory for each report.

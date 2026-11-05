@@ -1,6 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target009.lean
-Audit.claim02Conflict : Audit.qa.scope = Audit.ops.scope ∧
-  Audit.qa.issuer ≠ Audit.ops.issuer ∧ Audit.qa.assertsEnabled = true ∧ Audit.ops.assertsEnabled = false
-'Audit.claim02Conflict' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.213]

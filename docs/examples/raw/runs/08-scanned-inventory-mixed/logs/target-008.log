@@ -1,3 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target008.lean
-Audit.claim08 : Audit.deliveredB ≠ Audit.requestedB
-'Audit.claim08' does not depend on any axioms

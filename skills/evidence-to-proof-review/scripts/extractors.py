@@ -28,6 +28,11 @@ class ExtractionFailure(Exception):
 
 
 class Context:
+    record_suffix = '.json'
+
+    def write_record(self, path, record):
+        Path(path).write_text(json.dumps(record, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+
     def __init__(self, artifact_dir, timeout):
         self.artifacts = Path(artifact_dir)
         self.artifacts.mkdir(parents=True, exist_ok=True)
@@ -49,7 +54,7 @@ class Context:
 
     def command(self, args, label):
         self.command_index += 1
-        log = self.artifacts / f'{self.command_index:03d}-{label}.json'
+        log = self.artifacts / f'{self.command_index:03d}-{label}{self.record_suffix}'
         record = {'command': [str(a) for a in args], 'timeout_seconds': self.timeout}
         try:
             result = subprocess.run([str(a) for a in args], stdout=subprocess.PIPE,
@@ -59,13 +64,13 @@ class Context:
                           stderr=result.stderr.decode('utf-8', errors='replace'))
         except subprocess.TimeoutExpired as exc:
             record.update(error='timeout', stdout=_decode(exc.stdout), stderr=_decode(exc.stderr))
-            log.write_text(json.dumps(record, indent=2) + '\n', encoding='utf-8')
+            self.write_record(log, record)
             raise ExtractionFailure(f'{label} timed out after {self.timeout} seconds; see {log.name}') from exc
         except OSError as exc:
             record.update(error=str(exc))
-            log.write_text(json.dumps(record, indent=2) + '\n', encoding='utf-8')
+            self.write_record(log, record)
             raise ExtractionFailure(f'{label} could not execute: {exc}') from exc
-        log.write_text(json.dumps(record, indent=2) + '\n', encoding='utf-8')
+        self.write_record(log, record)
         if result.returncode:
             raise ExtractionFailure(f'{label} failed with exit code {result.returncode}; see {log.name}')
         return result.stdout, result.stderr
@@ -94,7 +99,7 @@ class Context:
         result = {'text': text + ('\n' if text else ''), 'segments': self.segments,
                   'tools': self.tools, 'warnings': self.warnings, 'complete': self.complete,
                   'status': status}
-        (self.artifacts / 'extraction.json').write_text(json.dumps(result, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+        self.write_record(self.artifacts / ('extraction' + self.record_suffix), result)
         return result
 
 
@@ -263,7 +268,7 @@ def _pdf(path, ctx, language, max_pages):
             ctx.command([pdftotext, '-f', str(page), '-l', str(page), '-bbox-layout', '-enc', 'UTF-8', path, bbox_path], anchor + '-bbox')
             text, locator = _pdf_page(bbox_path.read_bytes(), page)
             locator.update(bbox_artifact=bbox_path.name, total_pages=page_count)
-            (ctx.artifacts / (anchor + '.words.json')).write_text(json.dumps(locator, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+            ctx.write_record(ctx.artifacts / (anchor + '.words' + ctx.record_suffix), locator)
             if text.strip():
                 uncertainty = ['PDF word coordinates and text are converter outputs; visual reading order, tables, and typography require source inspection.']
                 if page in image_pages:
@@ -442,7 +447,7 @@ def _docx(path, ctx):
                 walk(document, '/w:'+_local(document.tag))
 
 
-def extract_document(path: Path, artifact_dir: Path, *, ocr_language='eng', timeout=60, max_pages=None):
+def extract_document(path: Path, artifact_dir: Path, *, ocr_language='eng', timeout=60, max_pages=None, context_factory=Context):
     """Extract inspected text and original coordinates, preserving raw artifacts.
 
     ``complete`` describes coverage/recoverability, not source authenticity or OCR
@@ -450,7 +455,7 @@ def extract_document(path: Path, artifact_dir: Path, *, ocr_language='eng', time
     ``blocked`` means no nonempty text was recovered. Caller preserves originals.
     Existing artifacts are not deleted; callers must use a distinct run directory.
     """
-    ctx = Context(artifact_dir, timeout)
+    ctx = context_factory(artifact_dir, timeout)
     path = Path(path).resolve()
     try:
         if not path.is_file(): raise ExtractionFailure(f'Input file does not exist: {path}')

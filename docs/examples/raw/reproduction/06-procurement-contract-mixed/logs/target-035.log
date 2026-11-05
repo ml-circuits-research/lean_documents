@@ -1,5 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target035.lean
-Audit.claim17UniversalFalse : ¬∀ (p : Audit.CoveredPurchase), p ∈ Audit.covered → Audit.compliant p = true
-'Audit.claim17UniversalFalse' depends on axioms: [propext]
-
-[exit_code=0; elapsed_seconds=0.210]

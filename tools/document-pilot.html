@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report review</title>
+<style>
+:root{font:15px/1.6 system-ui,sans-serif;color:#253247;background:#f5f6f8;--line:#dce2ea;--muted:#637287;--blue:#28569a}*{box-sizing:border-box}body{margin:0}button,a{font:inherit}button{cursor:pointer;color:inherit;background:white;border:1px solid var(--line);border-radius:6px;padding:8px 13px}button:hover{background:#edf3fc}button:disabled{opacity:.55;cursor:default}a{color:var(--blue);text-underline-offset:3px}h1,h2,h3,h4,h5,h6{line-height:1.3;margin:0 0 14px}h1{font-size:27px}h2{font-size:22px}h3{font-size:17px}p{margin:0 0 15px}header{background:white;border-bottom:1px solid var(--line);padding:24px max(24px,calc((100vw - 1260px)/2))}.row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.between{justify-content:space-between}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:8px}.muted,small{color:var(--muted)}#report-name{margin:6px 0 12px}.badge{font-size:12px;border-radius:20px;padding:4px 10px;background:#edf1f6;display:inline-block}.supported{background:#e4f2e8;color:#1c653a}.refuted{background:#fbe7e5;color:#9c3026}.undetermined,.both{background:#fff1d2;color:#805f1a}.primary{background:var(--blue);border-color:var(--blue);color:white}.primary:hover{background:#20477f}main{max-width:1260px;margin:28px auto;padding:0 24px}.workspace{display:grid;grid-template-columns:minmax(260px,.8fr) minmax(0,1.6fr);gap:28px;align-items:start}aside h2{font-size:16px;margin-bottom:12px}.finding-list{border:1px solid var(--line);border-radius:7px;overflow:hidden;background:white}.finding-row{display:block;width:100%;border:0;border-bottom:1px solid var(--line);border-radius:0;text-align:left;padding:15px 16px}.finding-row:last-child{border-bottom:0}.finding-row[aria-current=true]{background:#eaf1fc;box-shadow:inset 3px 0 var(--blue)}.finding-row .claim{margin:9px 0 0;font-size:14px;line-height:1.5}.summary{background:white;border:1px solid var(--line);border-radius:8px;padding:28px}.summary h3{margin-top:24px}.summary .claim{font-size:18px;line-height:1.6;margin-top:18px}.summary .actions{margin-top:28px}.notice{padding:16px;background:#edf3fa;border-radius:6px;margin:16px 0}.error{color:#a12821;background:#fff0ed;padding:12px 20px;white-space:pre-wrap}.error:empty{display:none}.empty{padding:24px;color:var(--muted)}#detail{width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;border:0;border-radius:0;padding:0;overflow:hidden;background:#f5f6f8}#detail[open]{display:flex;flex-direction:column}#detail::backdrop{background:#17233a80}.document-header{flex:none;background:white;border-bottom:1px solid var(--line);padding:18px 28px}.document-header h2{font-size:19px;margin:0}.document-nav{display:flex;flex-wrap:wrap;align-items:baseline;gap:5px 15px;font-size:13px;margin-top:12px}.document-nav a[aria-current=page]{font-weight:650;text-decoration-thickness:2px}.document-scroll{flex:1;min-height:0;overflow:auto;padding:24px}.document-paper{background:white;border:1px solid var(--line);border-radius:5px;max-width:1040px;margin:0 auto;padding:36px 44px;min-width:0}.document-paper h2{margin-top:30px}.document-paper h3,.document-paper h4,.document-paper h5,.document-paper h6{margin-top:22px}.document-paper p,.document-paper li{line-height:1.75}.document-paper ul,.document-paper ol{padding-left:25px}.document-paper li>p{margin:4px 0}.document-paper blockquote{border-left:3px solid #afc5e5;margin:18px 0;padding:3px 18px;color:#4c5e78}.document-paper table{width:100%;border-collapse:collapse;font-size:13px;margin:20px 0;table-layout:fixed}.document-paper th,.document-paper td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top;overflow-wrap:anywhere}.document-paper th{background:#f0f4f9}pre{padding:16px;border-radius:5px;background:#f0f3f7;white-space:pre-wrap;overflow-wrap:anywhere;overflow:auto;font:13px/1.6 ui-monospace,monospace}code{font-family:ui-monospace,monospace;font-size:.9em;overflow-wrap:anywhere}.path{display:block;font:11px/1.5 ui-monospace,monospace;color:var(--muted);overflow-wrap:anywhere}.file-caption{border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:24px}.native{width:100%;height:65vh;border:1px solid var(--line);object-fit:contain}.input-list{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px;font-size:13px}.prose{overflow-wrap:anywhere}.hidden{display:none!important}@media(max-width:760px){header{padding:18px}main{padding:0 16px;margin:18px auto}.workspace{display:block}aside{margin-bottom:18px}.finding-list{max-height:32vh;overflow:auto}.summary{padding:21px}.document-header{padding:14px 16px}.document-scroll{padding:10px}.document-paper{padding:22px 18px}.document-paper table{font-size:12px}h1{font-size:23px}}
+</style>
+<header id="pilot-header"><div class="row between"><div><p class="eyebrow">Evidence-backed report review</p><h1 id="example-name">Loading verification…</h1><p id="report-name" class="muted"></p><span id="example-location" class="path"></span></div><button id="source-documents" disabled>Source documents</button></div><div class="row"><span id="run-status" class="badge">Loading</span><small id="run-context"></small><button id="refresh">Refresh</button></div></header>
+<div id="error" class="error" role="alert"></div>
+<main><div class="workspace"><aside><h2>Report findings</h2><div id="finding-list" class="finding-list"><p class="empty">The findings will appear here as the audit runs.</p></div></aside><section id="executive-summary" class="summary"><h2>Select a finding</h2><p class="muted">Read its conclusion, how it was checked, and what remains uncertain.</p></section></div></main>
+<dialog id="detail"><div class="document-header"><div class="row between"><div><p class="eyebrow" id="document-kind">Verification document</p><h2 id="document-title">Full verification</h2></div><button id="close-document">Close</button></div><nav id="document-links" class="document-nav" aria-label="Verification documents"></nav><div id="input-list" class="input-list hidden"></div></div><div id="document-error" class="error" role="alert"></div><div class="document-scroll"><article id="document-body" class="document-paper prose"></article></div></dialog>
+<script>
+const $=id=>document.getElementById(id);
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const outcome={supported:'Supported',refuted:'Contradicted',undetermined:'Not established',both:'Conflicting evidence',not_applicable:'Not a factual claim'};
+const states={queued:'Waiting to start',running:'Audit in progress',finalizing:'Preparing the report',finished:'Audit finished',incomplete:'Audit incomplete',failed:'Audit failed',stopped:'Audit stopped',interrupted:'Audit interrupted'};
+const steps=[['registration','Claim'],['evidence','Evidence'],['analysis','Analysis'],['verification','Checks'],['verdict','Verdict']];
+let example=null,report=null,run=null,selectedClaim=null,loading=false,selectionVersion=0,documentVersion=0,currentDocument=null,documentMode='finding',documentRun=null,documentClaim=null;
+function fail(e){$('error').textContent=e.message||String(e);}
+function guard(fn){return (...args)=>Promise.resolve().then(()=>fn(...args)).catch(fail);}
+async function api(url){const r=await fetch(url);const data=await r.json();if(!r.ok)throw Error(data.error||r.statusText);return data;}
+function visibleFile(p){return typeof p==='string'&&!/\.(?:jsonl?|ndjson)$/i.test(p);}
+function fileURL(context,extra=''){return '/api/file?'+(context.scope==='run'?'run=':'example=')+encodeURIComponent(context.id)+'&path='+encodeURIComponent(context.path)+extra;}
+function artifactTitle(p){return p.split('/').pop().replace(/\.md$/i,'').replace(/[-_]/g,' ').replace(/^./,c=>c.toUpperCase());}
+function plain(text){return String(text||'').replace(/\[([^\]]+)\]\([^)]*\)/g,'$1').replace(/^\s*#{1,6}\s+/gm,'').replace(/[*`]/g,'').trim();}
+function selectedFinding(){return run?.findings?.find(f=>f.claim_id===selectedClaim)||null;}
+function workspacePath(p,audit=run){if(!p)return null;if(audit.files?.some(f=>f.path===p))return p;const base=audit.findingsPath?.replace(/(?:claims\.md|findings\.json)$/,'')||'';return base+p;}
+function headingId(t){return 'md-'+t.toLowerCase().replace(/<[^>]*>/g,'').replace(/[^\p{L}\p{N}]+/gu,'-').replace(/^-|-$/g,'');}
+function inline(t){
+ const token=/(`+)([\s\S]*?)\1|!?\[([^\]]+)\]\((<[^>]+>|[^\s)]+)(?:\s+"[^"]*")?\)|\*\*([^*]+)\*\*|__([^_]+)__|\*([^*\n]+)\*|_([^_\n]+)_/g;let html='',at=0;
+ for(const m of String(t).matchAll(token)){html+=esc(t.slice(at,m.index));at=m.index+m[0].length;
+  if(m[1])html+='<code>'+esc(m[2])+'</code>';
+  else if(m[3]){const href=m[4].replace(/^<|>$/g,'');const label=m[3].includes('/')?esc(artifactTitle(m[3]))+'<span class="path">'+esc(m[3])+'</span>':esc(m[3]);html+=/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(href)?label:'<a href="#" data-md-link="'+esc(href)+'">'+label+'</a>';}
+  else if(m[5]||m[6])html+='<strong>'+esc(m[5]||m[6])+'</strong>';else html+='<em>'+esc(m[7]||m[8])+'</em>';
+ }return (html+esc(t.slice(at))).replaceAll('&lt;br&gt;','<br>').replaceAll('&lt;br /&gt;','<br>').replace(/&amp;(amp|lt|gt|quot|apos|#(?:[0-9]+|x[0-9a-f]+));/gi,'&$1;');
+}
+function markdown(text){
+ const lines=String(text).replace(/\r\n?/g,'\n').split('\n');let html='',i=0;
+ const cells=line=>line.trim().replace(/^\||\|$/g,'').split(/(?<!\\)\|/).map(x=>x.trim().replace(/\\\|/g,'|'));
+ const divider=line=>/^\s*\|?\s*:?-{3,}:?\s*(?:\|\s*:?-{3,}:?\s*)+\|?\s*$/.test(line||'');
+ const list=line=>/^(\s*)([-+*]|\d+[.)])\s+(.*)$/.exec(line||'');
+ const boundary=(line,next)=>/^\s*(?:#{1,6}\s|>|`{3,}|~{3,}|(?:[-*_]\s*){3,}$)/.test(line)||!!list(line)||(line.includes('|')&&divider(next));
+ while(i<lines.length){const line=lines[i];if(!line.trim()){i++;continue;}const anchor=/^\s*<a\s+id=["']([\w.-]+)["']\s*><\/a>\s*$/.exec(line);if(anchor){html+='<span id="'+esc(anchor[1])+'"></span>';i++;continue;}
+  const fence=/^\s*(`{3,}|~{3,})(.*)$/.exec(line);if(fence){const chunks=[];i++;while(i<lines.length&&!new RegExp('^\\s*'+fence[1][0]+'{'+fence[1].length+',}\\s*$').test(lines[i]))chunks.push(lines[i++]);if(i<lines.length)i++;html+='<pre><code>'+esc(chunks.join('\n'))+'</code></pre>';continue;}
+  const h=/^\s*(#{1,6})\s+(.*?)(?:\s+#+\s*)?$/.exec(line);if(h){html+='<h'+h[1].length+' id="'+esc(headingId(h[2]))+'">'+inline(h[2])+'</h'+h[1].length+'>';i++;continue;}
+  if(/^\s*(?:[-*_]\s*){3,}$/.test(line)){html+='<hr>';i++;continue;}
+  if(/^\s*>/.test(line)){const block=[];while(i<lines.length&&/^\s*>/.test(lines[i]))block.push(lines[i++].replace(/^\s*> ?/,''));html+='<blockquote>'+markdown(block.join('\n'))+'</blockquote>';continue;}
+  if(line.includes('|')&&divider(lines[i+1])){const heads=cells(line);html+='<table><thead><tr>'+heads.map(c=>'<th>'+inline(c)+'</th>').join('')+'</tr></thead><tbody>';i+=2;while(i<lines.length&&lines[i].trim()&&lines[i].includes('|'))html+='<tr>'+cells(lines[i++]).map(c=>'<td>'+inline(c)+'</td>').join('')+'</tr>';html+='</tbody></table>';continue;}
+  const first=list(line);if(first){const indent=first[1].length,ordered=/\d/.test(first[2]),tag=ordered?'ol':'ul';html+='<'+tag+(ordered?' start="'+parseInt(first[2],10)+'"':'')+'>';
+   while(i<lines.length){const item=list(lines[i]);if(!item||item[1].length!==indent||/\d/.test(item[2])!==ordered)break;const body=[item[3]];i++;
+    while(i<lines.length&&lines[i].trim()&&((/^\s*/.exec(lines[i])[0].length)>indent)){body.push(lines[i].slice(Math.min(lines[i].search(/\S/),indent+2)));i++;}
+    html+='<li>'+markdown(body.join('\n'))+'</li>';
+   }html+='</'+tag+'>';continue;}
+  const paragraph=[line];i++;while(i<lines.length&&lines[i].trim()&&!boundary(lines[i],lines[i+1]))paragraph.push(lines[i++]);html+='<p>'+inline(paragraph.join('\n')).replace(/ {2}\n/g,'<br>')+'</p>';
+ }return html;
+}
+function resolveDocumentLink(base,href){
+ if(/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(href))throw Error('Only local artifact links can be opened here.');
+ const hashAt=href.indexOf('#'),fragment=hashAt<0?'':decodeURIComponent(href.slice(hashAt+1));const raw=decodeURIComponent((hashAt<0?href:href.slice(0,hashAt)).split('?')[0]);
+ if(!raw)return {path:base,fragment};if(raw.startsWith('/')||raw.includes('\\')||raw.includes('\0'))throw Error('The artifact link must stay inside the selected folder.');
+ const parts=base.split('/').slice(0,-1);for(const segment of raw.split('/')){if(!segment||segment==='.')continue;if(segment==='..'){if(!parts.length)throw Error('The artifact link escapes the selected folder.');parts.pop();}else parts.push(segment);}return {path:parts.join('/'),fragment};
+}
+function documentLink(label,context){const a=document.createElement('a');a.href=fileURL(context);a.textContent=label;a.dataset.path=context.path;a.onclick=e=>{e.preventDefault();openDocument(context).catch(documentError);};return a;}
+function documentError(e){$('document-error').textContent=e.message||String(e);}
+function narrativePath(f){return f?.document_path||f?.path||null;}
+function findingDocuments(f,audit=run){
+ if(!audit||!f)return [];const list=[];const full=narrativePath(f);if(full&&visibleFile(full))list.push({label:'Full verification',path:workspacePath(full,audit)});
+ for(const [step,label] of steps){const events=(f.trace_events||audit.phases||[]).filter(e=>e.claim_ids?.length===1&&e.claim_ids[0]===f.claim_id&&e.claim_step===step&&e.path&&visibleFile(e.path));events.forEach((e,i)=>list.push({label:label+(events.length>1?' '+(i+1):''),path:workspacePath(e.path,audit)}));}
+ for(const p of f.proofs||[]){let proof=p.path;if(!proof){const candidates=[p.module,p.module+'.lean','models/'+p.module.replaceAll('.','/')+'.lean'];proof=candidates.map(p=>workspacePath(p,audit)).find(p=>audit.files?.some(x=>x.path===p));}if(proof&&/\.lean$/i.test(proof))list.push({label:'Proof code'+(f.proofs.length>1?' · '+p.theorem:''),path:workspacePath(proof,audit)});}
+ const seen=new Set();return list.filter(x=>!seen.has(x.path)&&seen.add(x.path));
+}
+function updateDocumentNavigation(){
+ $('document-links').innerHTML='';if(documentMode!=='finding')return;const f=documentClaim;if(!f||!documentRun)return;
+ for(const doc of findingDocuments(f,documentRun)){const a=documentLink(doc.label,{scope:'run',id:documentRun.id,path:doc.path});if(currentDocument?.path===doc.path)a.setAttribute('aria-current','page');$('document-links').append(a);}
+}
+function render(){
+ $('example-name').textContent=example?.title||'Report review';$('example-location').textContent=example?.folder||'';$('report-name').textContent=report?.label||'Select a report';$('source-documents').disabled=!example;
+ $('run-status').textContent=run?(states[run.status]||run.status):'No verification yet';$('run-context').textContent=run?new Date(run.created).toLocaleString()+' · '+(run.reportAvailability?.message||''):'The supplied report and source documents are available below.';
+ const signature=JSON.stringify([run?.id,run?.findings,selectedClaim]);if($('finding-list').dataset.signature!==signature){$('finding-list').dataset.signature=signature;$('finding-list').innerHTML='';
+  for(const f of run?.findings||[]){const b=document.createElement('button');b.className='finding-row';b.dataset.claimId=f.claim_id;b.setAttribute('aria-current',String(f.claim_id===selectedClaim));b.innerHTML='<div class="row between"><small>'+esc(f.claim_id)+'</small><span class="badge '+esc(f.semantic_state)+'">'+esc(outcome[f.semantic_state]||'Pending')+'</span></div><p class="claim">'+esc(f.report_quote)+'</p>';b.onclick=()=>{selectionVersion++;selectedClaim=f.claim_id;render();};$('finding-list').append(b);}
+  if(!run?.findings?.length)$('finding-list').innerHTML='<p class="empty">'+esc(run&&['running','queued','finalizing'].includes(run.status)?'The audit is working. Its findings will appear here.':'No findings have been recorded yet.')+'</p>';
+ }
+ const f=selectedFinding(),summary=$('executive-summary');const summarySignature=JSON.stringify([f,run?.status,run?.reportAvailability,run?.proofIntegrity]);if(summary.dataset.signature===summarySignature)return;summary.dataset.signature=summarySignature;
+ if(!f){summary.innerHTML='<h2>'+(run?'Verification in progress':'Your report and evidence')+'</h2><p>'+esc(run?.reportAvailability?.message||'Open Source documents to read the report and the evidence supplied for this review.')+'</p>';return;}
+ const x=f.executive_summary||{};summary.innerHTML='<p class="eyebrow">'+esc(f.claim_id)+' · Executive summary</p><h2>'+esc(outcome[f.semantic_state]||'Finding')+'</h2><p class="claim">'+esc(f.report_quote)+'</p><h3>Conclusion</h3><p>'+esc(plain(x.conclusion||f.recommendation||'No conclusion has been recorded.'))+'</p><h3>How it was verified</h3><p>'+esc(plain(x.how_verified||(Array.isArray(f.reasoning)?f.reasoning[0]:f.reasoning)||'The verification explanation is being prepared.'))+'</p><h3>Limits</h3><p>'+esc(plain(x.limits||(f.limits||[]).join(' ')||'No limits have been recorded.'))+'</p>'+(run.proofIntegrity?.status==='changed'?'<p class="notice">The current files no longer match their saved checks. Read the verification limits before relying on this result.</p>':'')+'<div class="actions"><button id="read-verification" class="primary">Read full verification</button></div>';
+ $('read-verification').disabled=!narrativePath(f);$('read-verification').onclick=guard(()=>openFindingDocument(f));
+}
+function openDialog(){if(!$('detail').open)$('detail').showModal();}
+async function openFindingDocument(f){
+ documentMode='finding';documentRun=run;documentClaim=f;$('document-kind').textContent='Finding '+f.claim_id;$('document-title').textContent='Full verification';$('input-list').classList.add('hidden');openDialog();updateDocumentNavigation();
+ await openDocument({scope:'run',id:run.id,path:workspacePath(narrativePath(f))});
+}
+async function openSources(){
+ if(!example)return;documentMode='inputs';$('document-kind').textContent=example.title;$('document-title').textContent='Source documents and report';$('document-links').innerHTML='';$('input-list').classList.remove('hidden');$('input-list').innerHTML='';const files=example.files.filter(f=>['report','source'].includes(f.role)&&visibleFile(f.path));
+ for(const f of files)$('input-list').append(documentLink(f.role==='report'?(example.reports.find(r=>r.path===f.path)?.label||'Supplied report'):(f.name||artifactTitle(f.path)),{scope:'example',id:example.id,path:f.path}));
+ openDialog();if(files.length)await openDocument({scope:'example',id:example.id,path:files[0].path});else $('document-body').innerHTML='<p>No input document has been supplied.</p>';
+}
+async function openDocument(context,offset=0){
+ if(!context.path||!visibleFile(context.path))throw Error('This is an internal data file. Open its narrative verification document instead.');
+ const version=++documentVersion;$('document-error').textContent='';$('document-body').innerHTML='<p class="muted">Opening document…</p>';
+ const data=await api(fileURL(context,'&offset='+offset));if(version!==documentVersion)return;currentDocument={...context};const body=$('document-body');body.dataset.path=context.path;body.dataset.sourceId=context.id;body.dataset.scope=context.scope;
+ const heading='<div class="file-caption row between"><div><p class="eyebrow" style="margin:0">'+esc(/\.lean$/i.test(context.path)?'Formal proof source':'Retained document')+'</p><span class="path">'+esc(context.path)+'</span></div><a href="'+fileURL(context,'&download=1')+'">Download</a></div>';
+ if(/\.pdf$/i.test(context.path))body.innerHTML=heading+'<iframe class="native" title="PDF document" src="'+fileURL(context,'&inline=1')+'"></iframe>';
+ else if(/\.(png|jpe?g|webp)$/i.test(context.path))body.innerHTML=heading+'<img class="native" alt="Source document" src="'+fileURL(context,'&inline=1')+'">';
+ else if(data.text===null)body.innerHTML=heading+'<h1>'+esc(artifactTitle(context.path))+'</h1><p>Download this file to inspect its original contents.</p>';
+ else if(context.path.endsWith('.md'))body.innerHTML=heading+markdown(data.text);
+ else body.innerHTML=heading+'<h1>'+esc(artifactTitle(context.path))+'</h1>'+(/\.lean$/i.test(context.path)?'<p class="muted">This is the explicit model checked by Lean. Its scope and source correspondence are explained in the verification document.</p>':'')+'<pre><code>'+esc(data.text)+'</code></pre>';
+ for(const link of body.querySelectorAll('[data-md-link]')){
+  const raw=link.dataset.mdLink;if(!visibleFile(raw.split('#')[0])){link.replaceWith(document.createTextNode(link.textContent));continue;}
+  link.onclick=e=>{e.preventDefault();(async()=>{const ref=resolveDocumentLink(context.path,raw);if(ref.path!==context.path)await openDocument({...context,path:ref.path});if(ref.fragment){const heading=[...body.querySelectorAll('[id]')].find(h=>h.id===ref.fragment||h.id===headingId(ref.fragment)||h.id.startsWith(headingId(ref.fragment)+'-'));heading?.scrollIntoView({block:'nearest'});}})().catch(documentError);};
+ }
+ if(data.nextOffset!==null&&data.nextOffset!==undefined){const next=document.createElement('button');next.textContent='Read next part';next.onclick=()=>openDocument(context,data.nextOffset).catch(documentError);body.append(next);}
+ if(offset){const first=document.createElement('button');first.textContent='Back to beginning';first.onclick=()=>openDocument(context,0).catch(documentError);body.append(first);}
+ updateDocumentNavigation();$('document-body').parentElement.scrollTop=0;
+}
+async function refresh(){
+ if(loading)return;loading=true;try{const items=await api('/api/examples');example=items.find(e=>e.id===example?.id)||items.find(e=>e.pilot||/pilot/i.test(e.id))||items[0];if(!example){$('example-name').textContent='No report is available yet';return;}
+ const latest=example.runs?.[0];report=example.reports.find(r=>r.path===(report?.path||latest?.reportPath))||example.reports[0]||null;const chosen=example.runs?.find(r=>r.reportPath===report?.path);const version=selectionVersion;
+ if(chosen){const next=await api('/api/runs/'+encodeURIComponent(chosen.id));if(version!==selectionVersion)return;if(run?.id!==next.id){selectedClaim=null;selectionVersion++;}run=next;if(!run.findings?.some(f=>f.claim_id===selectedClaim))selectedClaim=run.findings?.[0]?.claim_id||null;}else run=null;
+ render();if($('detail').open&&documentMode==='finding')updateDocumentNavigation();
+ }catch(e){fail(e);}finally{loading=false;}
+}
+$('source-documents').onclick=guard(openSources);$('refresh').onclick=refresh;$('close-document').onclick=()=>$('detail').close();$('detail').addEventListener('close',()=>{documentVersion++;});
+refresh();setInterval(refresh,3000);
+</script>
+</html>

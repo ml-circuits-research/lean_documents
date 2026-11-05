@@ -1,6 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target009.lean
-Audit.claim3 : Audit.currentReceipt.transfer = "T7" ∧
-  Audit.currentReceipt.date = "2026-11-04" ∧ Audit.currentReceipt.minute = 1000
-'Audit.claim3' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.168]

@@ -1,5 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target021.lean
-Settlement.touching40 : Settlement.unionMinutes 180 [Settlement.a, Settlement.b, Settlement.c] = 40
-'Settlement.touching40' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.220]

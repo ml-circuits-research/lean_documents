@@ -126,7 +126,7 @@ def prepare(args):
         'retention':'Retain until explicit user cleanup request','extraction':{
         'ocr_language':getattr(args,'ocr_language','eng'),'timeout':getattr(args,'extract_timeout',60),
         'max_pages':getattr(args,'max_pages',None)},'limitations':'Retrieval is not exhaustive semantic review; extraction is not authenticity.'})
-    save(root/'input/audit-policy.json', {'contract_version':2, 'lean_version':lean_version, 'brief_origin':'provided' if brief else 'inferred',
+    save(root/'input/audit-policy.json', {'contract_version':2, 'require_claim_traces':bool(getattr(args,'require_claim_traces',False)), 'lean_version':lean_version, 'brief_origin':'provided' if brief else 'inferred',
         'default_mandate':'Audit every material report claim and its justification against the supplied sources; derive and disclose criteria without assuming the claim.'})
     manifest(root)
     return resume(root,max_documents=getattr(args,'max_documents',None),max_seconds=getattr(args,'max_seconds',None))

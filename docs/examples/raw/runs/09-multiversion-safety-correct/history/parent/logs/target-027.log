@@ -1,5 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target027.lean
-Audit.claim10 : Audit.x99 = Audit.Attempt.invalid 85 ∧ Audit.validMeasurement Audit.x99 = none
-'Audit.claim10' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.219]

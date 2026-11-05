@@ -1,6 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target029.lean
-Audit.claim13 : Audit.aRaw = -30 ∧
-  Audit.aDetection = 0 ∧ Audit.revision Audit.aDetection = 2 ∧ Audit.revision Audit.aDetection ≠ 1
-'Audit.claim13' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.211]

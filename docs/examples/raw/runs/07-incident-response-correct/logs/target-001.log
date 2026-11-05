@@ -1,3 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target001.lean
-Audit.qualifyingDetection : Audit.warningA = -30 ∧ Audit.detectionA = 0 ∧ Audit.warningA < Audit.detectionA
-'Audit.qualifyingDetection' does not depend on any axioms

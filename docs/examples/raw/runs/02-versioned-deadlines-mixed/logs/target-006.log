@@ -1,4 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target006.lean
-Audit.timely202Refuted : Audit.standardDue Audit.c202 = some (Audit.at17 19) ∧
-  ¬Audit.timely Audit.c202.submission (Audit.at17 19)
-'Audit.timely202Refuted' does not depend on any axioms

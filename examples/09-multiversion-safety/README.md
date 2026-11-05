@@ -1,9 +1,15 @@
-# 09-multiversion-safety: synthetic dossier
+# Did the equipment pass its tests?
 
-This invented packet has 7 source files and approximately 3863 source words before native rendering. It contains no real-world operational or safety advice.
+An equipment reviewer compares laboratory tests with changing acceptance limits. Check whether each test uses the right rule and any applicable exception.
 
-Audit `report-correct.md` and `report.md` separately against `brief.md` and every file in `sources/`. Auditors receive the selected supplied report and all sources. Only evaluator expectations, stored outside this dossier, are withheld. Reports are objects of review, never source evidence for each other.
+**Question:** Does the report support each test result and release claim?
 
-Native files use stable bracket markers. Cite the original file and marker, and preserve page or table context. Authoring material is outside the audit inputs under `examples/builders/`; it must not replace native extraction or OCR. The manifest hashes source, brief, and report bytes. README and manifest are entry metadata. Fixture preparation claims no executed Lean result.
+Upload DOCX specifications and an exception, PDF test results, calibration records and release requirements. Choose either [the careful report](report-correct.md) or [the report with deliberate errors](report.md) and audit it separately against all files in [sources/](sources/). Include `brief.md` for the supplied review conventions.
 
-Native DOCX specifications contain real tables and an incorporated exception annex. The five-page PDF retains run validity, environment, and unit identity. This synthetic technical case gives no real-world safety advice.
+The audit can check limits for each test date and temperature, repeated measurements, calibration validity and release approval. It reviews the supplied report, including its reasons and citations; it does not write the original report.
+
+Passing one measured test does not establish that the entire device is safe. Missing measurements and unsupported operating conditions remain limits.
+
+These are fictional examples. Keep this guide, the alternate report, metadata, generation files and evaluator material outside the audit input. Evaluator expectations are withheld during a blind audit; the selected report and source documents are always available.
+
+Historical execution records are indexed under [validation/runs](../../validation/runs/). This guide does not constitute a new validation run. Original reports and sources retain their bytes so they can be matched to prior results. New runs belong under `tmp/audit-runs/`, with a separate directory for each report.

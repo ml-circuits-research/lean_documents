@@ -1,4 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target011.lean
-Audit.commanderLate : ¬Audit.timely Audit.detectionA Audit.commanderDelivered 20 ∧
-  Audit.commanderDelivered - (Audit.detectionA + 20) = 2
-'Audit.commanderLate' does not depend on any axioms

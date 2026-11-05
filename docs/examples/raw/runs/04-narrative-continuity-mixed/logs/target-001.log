@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target001.lean
-Audit.claim01 : Audit.keyStoryTime = Audit.tick 2 12 ∧ Audit.ConfirmedAliveAt Audit.keyStoryTime
-'Audit.claim01' does not depend on any axioms

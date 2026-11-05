@@ -1,6 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target003.lean
-Audit.claim03 : Audit.baseLimit 2 Audit.Profile.normal 20 = some 100 ∧
-  Audit.n01.length = 3 ∧ Audit.within Audit.n01 100 = true
-'Audit.claim03' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.208]

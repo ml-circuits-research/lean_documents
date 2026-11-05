@@ -1,5 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target005.lean
-Audit.claim05 : ¬Audit.NeverDiedBefore9
-'Audit.claim05' depends on axioms: [propext]
-
-[exit_code=0; elapsed_seconds=0.146]

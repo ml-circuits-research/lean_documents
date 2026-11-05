@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target015.lean
-Audit.claim15Conflict : Audit.eliseAffirmsIsolation0500 = true ∧ Audit.pavelDeniesIsolation0500 = true
-'Audit.claim15Conflict' does not depend on any axioms

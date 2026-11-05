@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target006.lean
-Audit.claim06 : Audit.ConfirmedAliveAt (Audit.tick 8 12)
-'Audit.claim06' does not depend on any axioms

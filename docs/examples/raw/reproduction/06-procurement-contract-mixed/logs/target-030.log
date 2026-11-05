@@ -1,6 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target030.lean
-Audit.compatibilityAlternatives : Audit.onlyCompatible Audit.CompatibilityTest.warranty true true = true ∧
-  Audit.onlyCompatible Audit.CompatibilityTest.physical true true = false
-'Audit.compatibilityAlternatives' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.216]

@@ -1,7 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake build EmptyEvidence
-info: claim_audit: no previous manifest, creating one from scratch
-info: toolchain not updated; already up-to-date
-✔ [2/3] Built EmptyEvidence (134ms)
-Build completed successfully (3 jobs).
-
-[exit_code=0; elapsed_seconds=0.234]

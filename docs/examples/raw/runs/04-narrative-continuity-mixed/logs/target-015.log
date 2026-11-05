@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target015.lean
-Audit.claim07 : ¬Audit.AlwaysDeadAfter5
-'Audit.claim07' does not depend on any axioms

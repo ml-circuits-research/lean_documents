@@ -1,5 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target012.lean
-Audit.c08 : ¬Audit.Standard Audit.c102 ∧ Audit.Emergency Audit.c102 ∧ Audit.Authorized Audit.c102
-'Audit.c08' depends on axioms: [propext]
-
-[exit_code=0; elapsed_seconds=0.213]

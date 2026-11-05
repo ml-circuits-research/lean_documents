@@ -1,6 +1,0 @@
-{
-  "lean_version_required": "4.24.0",
-  "execution_status": "failed",
-  "module_policy": "Init/Std and recursively inspected local models only",
-  "error": "R1: uncertain extraction requires explicit original-source review before direct formal verdict or source-linked proof"
-}

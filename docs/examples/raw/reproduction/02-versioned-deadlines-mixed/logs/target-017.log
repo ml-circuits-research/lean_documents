@@ -1,5 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target017.lean
-Audit.version203 : Audit.revision Audit.c203 = 2
-'Audit.version203' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.206]

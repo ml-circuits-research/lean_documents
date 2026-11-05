@@ -1,5 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target009.lean
-Audit.notAllPrior : ¬∀ (x : Audit.Dispatch), x ∈ Audit.cohort → Audit.ordinary x
-'Audit.notAllPrior' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.168]

@@ -1,6 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target024.lean
-Audit.claim07 : Audit.baseLimit 2 Audit.Profile.cold 5 = some 150 ∧
-  Audit.c01.length = 3 ∧ Audit.within Audit.c01 150 = true
-'Audit.claim07' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.206]

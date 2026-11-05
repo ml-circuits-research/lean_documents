@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target022.lean
-Audit.p15Approval : Audit.validDana true 1490000 Audit.expiry (Audit.expiry + 1)
-'Audit.p15Approval' does not depend on any axioms

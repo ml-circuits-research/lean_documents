@@ -1,7 +1,15 @@
-# 03-audit-arithmetic: synthetic dossier
+# Do the payment totals add up?
 
-This dossier is entirely synthetic. Names, dates, amounts, institutions, and events are invented for a bounded audit exercise. It is documentation and fixture preparation only; it contains no skill implementation, Lean code, or executed validation result.
+A reviewer checks four payments from a larger set. Compare the reported spending, remaining budget and approval problems with the ledger.
 
-Two supplied reports are available for separate audits: `report.md` is a deliberately mixed draft, and `report-correct.md` is a cautious alternative intended to be correct. Neither report is source evidence for the other. The audit inputs for either audit are `brief.md`, its selected report, and the four Markdown documents in `sources/`. Read the brief for conventions and audit the selected report's stable claim IDs against the source paragraph anchors. `manifest.json` binds the exact UTF-8 bytes of those inputs with SHA-256 hashes; `README.md` is an entry guide, not an audit input.
+**Question:** Are the totals and approval claims supported by the four payment records?
 
-An independent reviewer should receive only this dossier directory. Evaluator material outside this directory must not be passed to blind reviewers. A prospective formal disposition is a planning judgment and must never be reported as an executed Lean result.
+Upload a payment ledger, review method, inspection note and attachment register. Choose either [the careful report](report-correct.md) or [the report with deliberate errors](report.md) and audit it separately against all files in [sources/](sources/). Include `brief.md` for the supplied review conventions.
+
+The audit can check sums, budget subtraction, approval counts and what the selected sample actually covers. It reviews the supplied report, including its reasons and citations; it does not write the original report.
+
+Four selected payments do not establish the rate of problems across all payments. A listed but missing attachment does not supply its contents.
+
+These are fictional examples. Keep this guide, the alternate report, metadata, generation files and evaluator material outside the audit input. Evaluator expectations are withheld during a blind audit; the selected report and source documents are always available.
+
+Historical execution records are indexed under [validation/runs](../../validation/runs/). This guide does not constitute a new validation run. Original reports and sources retain their bytes so they can be matched to prior results. New runs belong under `tmp/audit-runs/`, with a separate directory for each report.

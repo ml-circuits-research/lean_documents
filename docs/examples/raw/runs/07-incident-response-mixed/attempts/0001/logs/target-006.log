@@ -1,4 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target006.lean
-Audit.claim06 : Audit.pauseConditions = true ∧
-  Audit.rawPauseA = 70 ∧ Audit.excludedA = 45 ∧ Audit.excludedA < Audit.rawPauseA
-'Audit.claim06' does not depend on any axioms

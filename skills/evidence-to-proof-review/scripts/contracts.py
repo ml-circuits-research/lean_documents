@@ -164,6 +164,8 @@ def validate(root, findings, source_lookup=None):
     Findings' base fields and actual proof execution remain the caller's duty.
     """
     root = Path(root)
+    policy_path = root / 'input/audit-policy.json'
+    require_traces = _read(policy_path).get('require_claim_traces', False) if policy_path.is_file() else False
     report = _object(_read(root / 'input/report-ledger.json'), 'report ledger')
     registry = _object(_read(root / 'claims.json'), 'claims registry')
     if registry.get('schema_version') != 2:
@@ -206,6 +208,10 @@ def validate(root, findings, source_lookup=None):
     for finding in _list(findings, 'findings'):
         _object(finding, 'finding')
         ident = _text(finding.get('claim_id'), 'finding.claim_id')
+        if require_traces or 'executive_summary' in finding:
+            summary = _object(finding.get('executive_summary'), f'{ident}.executive_summary')
+            for field in ('conclusion', 'how_verified', 'limits'):
+                _text(summary.get(field), f'{ident}.executive_summary.{field}')
         if ident in submitted:
             raise ValueError(f'Duplicate finding claim_id: {ident}')
         if ident not in registered:

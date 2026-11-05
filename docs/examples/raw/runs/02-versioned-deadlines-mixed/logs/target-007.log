@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target007.lean
-Audit.version203 : Audit.revision Audit.c203 = 2
-'Audit.version203' does not depend on any axioms

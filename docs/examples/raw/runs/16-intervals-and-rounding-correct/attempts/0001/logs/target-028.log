@@ -1,5 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target028.lean
-Settlement.negativeTie : Settlement.roundCents (-1005) = -101
-'Settlement.negativeTie' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.230]

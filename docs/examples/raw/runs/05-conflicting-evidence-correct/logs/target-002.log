@@ -1,5 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target002.lean
-Audit.testimonyConflict : Audit.qa.issuer ≠ Audit.ops.issuer ∧
-  Audit.qa.context = Audit.ops.context ∧
-    Audit.qa.enabled = true ∧ Audit.ops.enabled = false ∧ Audit.qa.enabled ≠ Audit.ops.enabled
-'Audit.testimonyConflict' does not depend on any axioms

@@ -1,7 +1,0 @@
-# Semantic correspondence review
-
-Reviewer: coordinating agent, distinct from the audit author, with fixture-design familiarity. The initial audit was performed without evaluator answers or the alternate report.
-
-Reviewed all ten report claims, authoritative chronology, explicit world rules and bounded revival catalog, flashback, dialogue, findings and model. Time coordinates are declared order encodings, not claims about actual dawn clock hours. Day-6 physical attendance is refuted through the independently sourced necessary-life condition and the persistent dead interval. The explicit day-2 scene supplies the witness against a day-7 event reading. Speech is a typed attributed record and never an unconditional world fact. The day-5 death is a positive witness against never-died; the day-8 living state is a witness against permanent death. The no-revival conclusion alone relies on the expressly complete bounded catalog. Unknown Ivo location and aesthetic assessment retain nonformal or support-gap outcomes. No exported target relies on extrapolating the chosen end-of-day boundary beyond the supplied interval.
-
-Accepted with the stated source-transcription, scope and interpretation assumptions. The model's witness-based universal refutations do not require an exhaustive discretization of story time. Technical checks do not establish authenticity or a general account of narrative quality. A separate reviewer will further inspect the source-to-target mapping.

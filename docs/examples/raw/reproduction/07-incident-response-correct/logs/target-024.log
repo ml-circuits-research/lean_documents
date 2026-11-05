@@ -1,6 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target024.lean
-Audit.bAcknowledgement : Audit.startB = 200 ∧
-  Audit.acknowledgementB - Audit.startB = 25 ∧ Audit.timely Audit.startB Audit.acknowledgementB 30
-'Audit.bAcknowledgement' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.208]

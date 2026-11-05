@@ -1,6 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target016.lean
-Audit.n09PermitFailure : Audit.minuteAt 19 23 59 < Audit.minuteAt 21 10 0 ∧
-  Audit.minuteAt 20 23 59 < Audit.minuteAt 21 10 0 ∧ Audit.n09PermitAt (Audit.minuteAt 21 10 0) = false
-'Audit.n09PermitFailure' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.200]

@@ -1,7 +1,0 @@
-{
-  "created_at": "2026-11-04T16:48:05.115976+00:00",
-  "workspace": "/home/salboaie/work/lean_documents/tmp/claim-audit-zzclcagd",
-  "lean_version": "4.24.0",
-  "purpose": "Audit the supplied report against supplied sources",
-  "limitations": "Lean checks the encoded propositions, not source authenticity, extraction accuracy, completeness, legal authority, or the adequacy of the model. Source filters are defensive checks, not a sandbox for hostile Lean code."
-}

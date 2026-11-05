@@ -1,4 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target011.lean
-Audit.sampleExceptionRate : Audit.sample.length = 4 ∧
-  Audit.exceptionCount = 2 ∧ Audit.exceptionCount * 100 = 50 * Audit.sample.length
-'Audit.sampleExceptionRate' does not depend on any axioms

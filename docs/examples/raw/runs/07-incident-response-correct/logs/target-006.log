@@ -1,5 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target006.lean
-Audit.approvedPausesCapped : Audit.validPause Audit.pause1 ∧
-  Audit.validPause Audit.pause2 ∧
-    Audit.pause1.ends ≤ Audit.pause2.starts ∧ Audit.pauseMinutes = 70 ∧ Audit.excludedA = 45
-'Audit.approvedPausesCapped' does not depend on any axioms

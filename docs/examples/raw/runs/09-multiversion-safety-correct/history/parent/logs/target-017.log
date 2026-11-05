@@ -1,7 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target017.lean
-Audit.claim01Arithmetic : Audit.l01.length = 3 ∧
-  Audit.within Audit.l01 120 = true ∧
-    Audit.maximum Audit.l01 = 118 ∧ Audit.maximum Audit.l01 < 120 ∧ 120 - Audit.maximum Audit.l01 = 2
-'Audit.claim01Arithmetic' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.209]

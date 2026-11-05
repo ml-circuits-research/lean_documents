@@ -1,3 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target022.lean
-Audit.claim05 : Audit.p14Cents = 2499999 ∧ Audit.p14Cents ≠ 2500000 ∧ Audit.competitionRequired 2 Audit.p14Cents = false
-'Audit.claim05' does not depend on any axioms

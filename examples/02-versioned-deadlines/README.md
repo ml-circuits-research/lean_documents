@@ -1,9 +1,15 @@
-# Synthetic versioned deadlines dossier
+# Was the submission on time?
 
-All entities, workflow rules, dates, and records in this dossier are invented for audit preparation. The fixture is not legal or contractual advice.
+The submission deadline changes while applications are being processed. Check which rule applies to each case and whether its submission was late.
 
-The audit inputs are `brief.md`, one selected report (`report.md` or `report-correct.md`), and the four source Markdown files in `sources/`; `manifest.json` binds their bytes by SHA-256. Stable anchors identify paragraphs and claims. Read both rule versions and the amendment: later processing does not necessarily imply applicability of the later rule.
+**Question:** Does the report use the right deadline for each application?
 
-The dossier exercises a version boundary, leap-day calendar arithmetic, exclusive versus inclusive endpoints, a misleading system label, and a missing annex. Separate evaluator files outside this directory contain editorial targets and must not be supplied to a blind auditor. No Lean workflow has been run or verified for this dossier.
+Upload two rule versions, a transition amendment, receipt and submission records, and a transfer note. Choose either [the careful report](report-correct.md) or [the report with deliberate errors](report.md) and audit it separately against all files in [sources/](sources/). Include `brief.md` for the supplied review conventions.
 
-Run two independent audits over the same source corpus: the mixed/erroneous `report.md` and the cautious `report-correct.md`. Both are supplied audit inputs, not requested generated outputs. The selected report must always be visible to the auditor. Only evaluator expectations are withheld for a blind audit. The manifest includes both variants; select exactly one per run.
+The audit can check calendar calculations, the changeover date and submissions exactly at the deadline. It reviews the supplied report, including its reasons and citations; it does not write the original report.
+
+One case depends on a missing annex. Its deadline cannot be filled in from the ordinary-case rule.
+
+These are fictional examples. Keep this guide, the alternate report, metadata, generation files and evaluator material outside the audit input. Evaluator expectations are withheld during a blind audit; the selected report and source documents are always available.
+
+Historical execution records are indexed under [validation/runs](../../validation/runs/). This guide does not constitute a new validation run. Original reports and sources retain their bytes so they can be matched to prior results. New runs belong under `tmp/audit-runs/`, with a separate directory for each report.

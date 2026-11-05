@@ -162,6 +162,28 @@
           },
           "additionalProperties": false
         }
+      },
+      "executive_summary": {
+        "type": "object",
+        "required": [
+          "conclusion",
+          "how_verified",
+          "limits"
+        ],
+        "properties": {
+          "conclusion": {
+            "type": "string",
+            "minLength": 1
+          },
+          "how_verified": {
+            "type": "string",
+            "minLength": 1
+          },
+          "limits": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
       }
     },
     "additionalProperties": true

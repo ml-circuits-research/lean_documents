@@ -1,8 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target007.lean
-Audit.claim06Countermodels : Audit.possibleApproved.packageContainsRegister = false ∧
-  Audit.possibleUnapproved.packageContainsRegister = false ∧
-    Audit.possibleApproved.approvalBeforeProposedStart = true ∧
-      Audit.possibleUnapproved.approvalBeforeProposedStart = false
-'Audit.claim06Countermodels' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.211]

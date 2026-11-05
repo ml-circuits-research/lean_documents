@@ -1,6 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target015.lean
-Audit.claim16Alternatives : Audit.possiblePaid.signedInvoice = true ∧
-  Audit.possibleUnpaid.signedInvoice = true ∧
-    Audit.possiblePaid.deliveryAccepted = true ∧
-      Audit.possibleUnpaid.deliveryAccepted = true ∧ Audit.possiblePaid.paid = true ∧ Audit.possibleUnpaid.paid = false
-'Audit.claim16Alternatives' does not depend on any axioms

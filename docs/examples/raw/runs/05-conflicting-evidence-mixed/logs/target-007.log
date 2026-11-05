@@ -1,7 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target007.lean
-Audit.claim06Alternatives : Audit.possibleVerified.markerPresent = true ∧
-  Audit.possibleUnverified.markerPresent = true ∧
-    Audit.possibleVerified.verificationArtifactSupplied = false ∧
-      Audit.possibleUnverified.verificationArtifactSupplied = false ∧
-        Audit.possibleVerified.verifiedBeforeCutoff = true ∧ Audit.possibleUnverified.verifiedBeforeCutoff = false
-'Audit.claim06Alternatives' does not depend on any axioms

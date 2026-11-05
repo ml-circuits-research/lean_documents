@@ -1,5 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target006.lean
-Audit.devonN51 : Audit.scope Audit.Principal.devon 51 (Audit.minuteAt 20 9 0) = false
-'Audit.devonN51' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.205]

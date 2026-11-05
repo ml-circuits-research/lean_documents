@@ -1,7 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target012.lean
-Audit.populationLowerBound : ∀ (unsampledMissing : Nat),
-  unsampledMissing ≤ 16 →
-    2 ≤ Audit.populationExceptions unsampledMissing ∧ Audit.populationExceptions unsampledMissing ≤ 18
-'Audit.populationLowerBound' depends on axioms: [propext, Classical.choice, Quot.sound]
-
-[exit_code=0; elapsed_seconds=0.237]

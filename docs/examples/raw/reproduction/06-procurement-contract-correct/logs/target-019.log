@@ -1,8 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target019.lean
-Audit.p13Normalization : Audit.p13Num = 249999975 ∧
-  Audit.p13Den = 10000 ∧
-    Audit.p13Cents = 2500000 ∧
-      Audit.threshold 2 ≤ Audit.p13Cents ∧ 9 < 11 ∧ Audit.competitionSatisfied 2 Audit.p13Cents true false = true
-'Audit.p13Normalization' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.221]

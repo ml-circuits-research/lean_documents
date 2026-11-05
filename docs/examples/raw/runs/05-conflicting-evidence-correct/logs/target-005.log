@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target005.lean
-Audit.readinessNotEntailed : ¬∀ (smoke security ready : Prop), smoke → (smoke ∧ security → ready) → ready
-'Audit.readinessNotEntailed' does not depend on any axioms

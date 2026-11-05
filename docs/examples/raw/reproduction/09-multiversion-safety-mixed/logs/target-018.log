@@ -1,5 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target018.lean
-Audit.claim09 : ¬Audit.n03RunDay ≤ Audit.k2ExpiryDay
-'Audit.claim09' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.155]

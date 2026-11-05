@@ -1,3 +1,0 @@
-# Review plan
-
-No separate brief. Infer the seven conclusion questions from report R1-R7 and source P1-P5. The first sentence of each report finding is the registered conclusion; audit every remaining premise/citation/inference as an exact report argument obligation. Read all three sources. Use arithmetic for totals, cap and time; Boolean counterexample only for quality-only sufficiency. Treat missing security status as open. The title is non-claim. Bound ingestion deliberately and resume it. Original scan was visually inspected; T7/17 OCR error requires the controlled transcription. No evaluator material enters the source set.

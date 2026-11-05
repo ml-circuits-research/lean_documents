@@ -1,9 +1,15 @@
-# 10-distributed-assurance: synthetic dossier
+# Did every site have permission?
 
-This invented packet has 67 source files and approximately 10897 source words before native rendering. It contains no real-world operational or safety advice.
+A service reviews releases across sixty operating nodes. Check its broad claims against individual records, permits, delegated authority and exceptions.
 
-Audit `report-correct.md` and `report.md` separately against `brief.md` and every file in `sources/`. Auditors receive the selected supplied report and all sources. Only evaluator expectations, stored outside this dossier, are withheld. Reports are objects of review, never source evidence for each other.
+**Question:** Can the report justify its permission claims for the recorded releases?
 
-Native files use stable bracket markers. Cite the original file and marker, and preserve page or table context. Authoring material is outside the audit inputs under `examples/builders/`; it must not replace native extraction or OCR. The manifest hashes source, brief, and report bytes. README and manifest are entry metadata. Fixture preparation claims no executed Lean result.
+Upload governance rules, identity records, a DOCX delegation, a PDF registry and the complete nested source directory. Choose either [the careful report](report-correct.md) or [the report with deliberate errors](report.md) and audit it separately against all files in [sources/](sources/). Include `brief.md` for the supplied review conventions.
 
-The packet contains sixty distinct operational records, a native authority document, a five-page identity registry, and separate rules and final exception sources. Identity completeness, event completeness, and permit-history completeness are deliberately distinct.
+The audit can check permit dates, who a signature identifies, approval scope and exceptions that affect individual releases. It reviews the supplied report, including its reasons and citations; it does not write the original report.
+
+A list of nodes is not a complete event history. Some histories are explicitly incomplete, so a missing permit cannot always establish an unauthorized release.
+
+These are fictional examples. Keep this guide, the alternate report, metadata, generation files and evaluator material outside the audit input. Evaluator expectations are withheld during a blind audit; the selected report and source documents are always available.
+
+Historical execution records are indexed under [validation/runs](../../validation/runs/). This guide does not constitute a new validation run. Original reports and sources retain their bytes so they can be matched to prior results. New runs belong under `tmp/audit-runs/`, with a separate directory for each report.

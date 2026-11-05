@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target004.lean
-Audit.exceptionTotal : Audit.total Audit.exceptions = 75000
-'Audit.exceptionTotal' does not depend on any axioms

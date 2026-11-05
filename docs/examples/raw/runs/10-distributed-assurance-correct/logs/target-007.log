@@ -1,8 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target007.lean
-Audit.n57Exception : Audit.boardWindow Audit.n57.node Audit.n57.time = true ∧
-  Audit.n57.approvalTime = some (Audit.minuteAt 22 9 0) ∧
-    Audit.boardWindow Audit.n57.node (Audit.minuteAt 22 9 0) = true ∧
-      Audit.ordinaryRoute Audit.n57 = false ∧ Audit.boardRoute Audit.n57 = true ∧ Audit.authorized Audit.n57 = true
-'Audit.n57Exception' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.201]

@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target008.lean
-Audit.claim07Conflict : Audit.miraAffirmsStart0900 = true ∧ Audit.leonDeniesStart0900 = true
-'Audit.claim07Conflict' does not depend on any axioms

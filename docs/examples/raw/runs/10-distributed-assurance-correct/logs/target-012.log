@@ -1,5 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target012.lean
-Audit.n60KnownAuthorized : Audit.ordinaryRoute Audit.n60 = true ∧ Audit.authorized Audit.n60 = true
-'Audit.n60KnownAuthorized' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.197]

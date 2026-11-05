@@ -1,4 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target010.lean
-Audit.budgetDifference : Audit.budget - Audit.sampleTotal = 25000 ∧
-  Audit.budget - Audit.sampleTotal ≠ 35000 ∧ Audit.sampleTotal ≤ Audit.budget
-'Audit.budgetDifference' does not depend on any axioms

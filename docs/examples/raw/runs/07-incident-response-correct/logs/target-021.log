@@ -1,4 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target021.lean
-Audit.containmentLate : 90 < Audit.activeA ∧
-  Audit.activeA - 90 = 5 ∧ Audit.timely Audit.detectionA Audit.acknowledgementA 15
-'Audit.containmentLate' does not depend on any axioms

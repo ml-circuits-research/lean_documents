@@ -1,7 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target002.lean
-@EvidenceLogic.underdeterminedNeither : ∀ {World : Type u_1} {evidence claim : World → Prop},
-  EvidenceLogic.Underdetermined evidence claim →
-    ¬EvidenceLogic.Supports evidence claim ∧ ¬EvidenceLogic.Refutes evidence claim
-'EvidenceLogic.underdeterminedNeither' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.147]

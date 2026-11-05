@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target003.lean
-Audit.claim03 : Audit.standardDeadline Audit.d202 = some 28380 ∧ 28380 < Audit.d202.submitted
-'Audit.claim03' does not depend on any axioms

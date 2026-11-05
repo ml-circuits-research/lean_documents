@@ -1,6 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target012.lean
-Audit.eligibleMembers : Audit.eligible Audit.a ∧
-  Audit.eligible Audit.b ∧ ¬Audit.eligible Audit.c ∧ ¬Audit.eligible Audit.d
-'Audit.eligibleMembers' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.144]

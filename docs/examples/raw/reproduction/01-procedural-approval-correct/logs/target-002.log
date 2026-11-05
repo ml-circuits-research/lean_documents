@@ -1,5 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target002.lean
-Audit.c02 : Audit.c102.approval = none ∧ Audit.RecordKind.request ≠ Audit.RecordKind.approval
-'Audit.c02' depends on axioms: [propext]
-
-[exit_code=0; elapsed_seconds=0.230]

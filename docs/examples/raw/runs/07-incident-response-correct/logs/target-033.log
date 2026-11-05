@@ -1,4 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target033.lean
-Audit.gapUnderdetermined : ∀ (event : Bool),
-  ∃ w, w.retainedGapSamples = false ∧ w.listedAlarmsOutsideGap = false ∧ w.exfiltrationInGap = event
-'Audit.gapUnderdetermined' does not depend on any axioms

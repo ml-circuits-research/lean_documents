@@ -1,7 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target009.lean
-Audit.claim08 : Audit.n03ChannelBAvailable = false ∧
-  Audit.n03Second = Audit.Attempt.aborted ∧
-    Audit.n03Third = Audit.Attempt.absent ∧ Audit.validMeasurement Audit.n03Third = none
-'Audit.claim08' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.199]

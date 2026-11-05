@@ -1,5 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target001.lean
-Audit.c01 : Audit.Standard Audit.c101 ∧ 520 < 540
-'Audit.c01' depends on axioms: [propext]
-
-[exit_code=0; elapsed_seconds=0.229]

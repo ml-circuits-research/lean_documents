@@ -1,7 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target009.lean
-Audit.r17CompetitionFailure : Audit.threshold (Audit.revisionAt (-1)) < 2250000 ∧
-  Audit.competitionSatisfied 1 2250000 false false = false ∧
-    Audit.compliant (Audit.competitionSatisfied 1 2250000 false false) true = false
-'Audit.r17CompetitionFailure' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.219]

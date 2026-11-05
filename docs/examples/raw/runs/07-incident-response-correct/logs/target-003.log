@@ -1,4 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target003.lean
-Audit.acknowledgementTimely : Audit.acknowledgementA - Audit.detectionA = 12 ∧
-  Audit.timely Audit.detectionA Audit.acknowledgementA 15
-'Audit.acknowledgementTimely' does not depend on any axioms

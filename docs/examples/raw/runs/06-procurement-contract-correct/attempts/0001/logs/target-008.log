@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target008.lean
-Audit.r17Version : Audit.revisionAt (-1) = 1 ∧ Audit.r17AddedRequirement = false ∧ Audit.r17PriceIncrease = false
-'Audit.r17Version' does not depend on any axioms

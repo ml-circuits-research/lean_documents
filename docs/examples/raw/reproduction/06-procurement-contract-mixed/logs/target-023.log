@@ -1,5 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target023.lean
-Audit.claim06 : Audit.delegatedApproval true 1490000 21180 21181 = true ∧ 21180 < 21181
-'Audit.claim06' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.228]

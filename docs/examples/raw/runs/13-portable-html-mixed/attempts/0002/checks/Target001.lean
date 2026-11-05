@@ -1,3 +1,0 @@
-import EvidenceLogic
-#check @EvidenceLogic.notEntailsOfCounterexample
-#print axioms EvidenceLogic.notEntailsOfCounterexample

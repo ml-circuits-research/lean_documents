@@ -1,4 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target010.lean
-Audit.claim10 : Audit.technical.queued ≤ Audit.aDetection + 10 ∧
-  ¬Audit.technical.delivered ≤ Audit.aDetection + 10 ∧ Audit.technical.delivered = 11
-'Audit.claim10' does not depend on any axioms

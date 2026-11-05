@@ -1,6 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target023.lean
-Audit.p16ApprovalFailure : 1500000 ≤ 1500000 ∧
-  ¬Audit.validDana true 1500000 (Audit.expiry + 1) (Audit.expiry + 10) ∧ Audit.p16ValidApproval = false
-'Audit.p16ApprovalFailure' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.236]

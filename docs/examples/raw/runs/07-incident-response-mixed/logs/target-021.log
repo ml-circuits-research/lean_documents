@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target021.lean
-Audit.claim05 : ¬Audit.activeA ≤ 90 ∧ Audit.activeA - 90 = 5
-'Audit.claim05' does not depend on any axioms

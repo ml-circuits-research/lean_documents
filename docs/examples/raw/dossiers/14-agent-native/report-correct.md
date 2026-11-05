@@ -1,4 +1,0 @@
-# Alternative correct report (not the selected audit input)
-
-[R1] Item A is within budget: the recorded amount 9 is at most 10 units.
-[R2] The supplied spending record does not establish whether A was approved.

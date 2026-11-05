@@ -1,9 +1,0 @@
-[A01]
-Purchasing officer Mara Voss signed an attestation on June 28 at 14:00 UTC. The
-signed statement reads: "For P-21, the director granted the written order approval at
-10:00 UTC on June 27, before the 10:30 commitment. I examined the signed approval at
-the purchasing desk." The attestation identifies the order, date, person, and
-approval event unambiguously. It does not merely say that approval was requested or
-that Mara expected approval. This statement is positive testimony about the event.
-The scan records the statement and its signature; it does not provide the allegedly
-examined approval document itself.

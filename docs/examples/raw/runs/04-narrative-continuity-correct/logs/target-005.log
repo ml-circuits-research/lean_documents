@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target005.lean
-Audit.keyExchangeAlive : Audit.AliveAt (Audit.instant 2 Audit.noon)
-'Audit.keyExchangeAlive' depends on axioms: [propext]

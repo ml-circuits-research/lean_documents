@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target003.lean
-Audit.c03 : Audit.Emergency Audit.c102 ∧ Audit.c102.incident = true ∧ 605 < 615 ∧ 2055 = 615 + 1440
-'Audit.c03' depends on axioms: [propext]

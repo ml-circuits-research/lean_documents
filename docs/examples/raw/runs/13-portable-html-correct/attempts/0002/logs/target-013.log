@@ -1,5 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target013.lean
-StockAudit.allRows60 : (List.map Stock.Row.quantity Stock.rows).sum = 60
-'StockAudit.allRows60' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.217]

@@ -1,3 +1,0 @@
-# Semantic review
-
-This run was authored and semantically reviewed by the fixture author, who read the native source extraction and visually inspected the original scan. It is explicitly NONBLIND. No independent review is asserted at this stage. Review found and corrected raw OCR transfer 17 to original T7 through the controlled transcription operation, retaining both versions. Reasoning distinguishes false conclusions, false offered rules, invalid arithmetic inference, missing support and an undefined evaluative criterion. The current ledger revision was reviewed before model parameters were set.

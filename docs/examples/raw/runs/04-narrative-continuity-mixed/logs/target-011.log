@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target011.lean
-Audit.claim03 : ¬Audit.keyStoryTime / 24 + 1 = 7
-'Audit.claim03' does not depend on any axioms

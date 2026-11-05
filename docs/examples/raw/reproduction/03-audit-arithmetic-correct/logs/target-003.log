@@ -1,6 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target003.lean
-Audit.exactExceptions : Audit.sample.length = 4 ∧
-  Audit.exceptions.length = 2 ∧ Audit.exceptionIDs = [Audit.p03ID, Audit.p04ID]
-'Audit.exactExceptions' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.209]

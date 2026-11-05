@@ -1,6 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target014.lean
-Audit.sixtyNodes : Audit.nodes.length = 60 ∧
-  Audit.nodes.Nodup ∧ Audit.nodes.head? = some 1 ∧ Audit.nodes.getLast? = some 60
-'Audit.sixtyNodes' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.203]

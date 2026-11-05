@@ -1,7 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target008.lean
-Audit.revivalAndNoonLife : Audit.revivalTime = Audit.instant 8 Audit.dawn ∧
-  Audit.AliveAt (Audit.instant 8 Audit.dawn) ∧
-    Audit.AliveAt (Audit.instant 8 Audit.noon) ∧ Audit.instant 8 Audit.dawn < Audit.instant 8 Audit.noon
-'Audit.revivalAndNoonLife' depends on axioms: [propext]
-
-[exit_code=0; elapsed_seconds=0.204]

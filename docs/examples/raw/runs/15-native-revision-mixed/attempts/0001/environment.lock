@@ -1,6 +1,0 @@
-{
-  "lean_version_required": "4.24.0",
-  "execution_status": "failed",
-  "module_policy": "Init/Std and recursively inspected local models only",
-  "error": "Cannot read JSON /home/salboaie/work/lean_documents/tmp/native-revision-initial-errors/claim-audit-lr1e887a/findings.json: [Errno 2] No such file or directory: '/home/salboaie/work/lean_documents/tmp/native-revision-initial-errors/claim-audit-lr1e887a/findings.json'"
-}

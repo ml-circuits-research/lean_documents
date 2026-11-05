@@ -1,6 +1,0 @@
-name = "claim_audit"
-version = "0.1.0"
-
-[[lean_lib]]
-name = "Campaign"
-srcDir = "models"

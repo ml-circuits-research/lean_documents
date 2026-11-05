@@ -29,6 +29,8 @@ example : IntendedProposition := Audit.checkedTheorem
 
 ## Assurance record
 
+Maintain the same [phase journal](phase-journal.md) using agent tools when Python is unavailable. Record each finding individually through registration, evidence, analysis, verification and verdict, with single-claim `claim_step` events and retained intermediate snapshots. Shared events do not replace those traces. Include a grounded `executive_summary` with conclusion, how_verified and limits for each finding. Disclose which mechanical profile gates were not executed. Record actual timestamps, claim links and exact artifact hashes at each action. Missing historical events remain unknown; never synthesize a completed phase from the existence of an output file.
+
 A minimal execution record can state which checks were `executed`, `agent_reviewed`, `unavailable`, `failed` or `not_attempted`: Lean compilation, exact targets, axiom audit, source hashes, quote correspondence, claim-register reconciliation, source-to-model review, external dependency review, and independent review. Attach evidence for executed checks. Distinguish the real Lean success from agent-reviewed metadata; neither implies source authenticity.
 
 For visual or unsupported document formats, [agent extraction import](agent-extraction.md) lets available agent tools produce projections that the bundled helpers can subsequently ingest. Choosing agent-native analysis does not require writing a new converter plugin or copying this repository's examples.

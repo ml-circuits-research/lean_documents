@@ -1,9 +1,0 @@
-{
-  "documents": [
-    {
-      "document_id": "D00003",
-      "reason": "OCR uncertainty remains in metadata; all material A01-A04 scan pages visually inspected and manually corrected under append-only hash-bound transcription.",
-      "impact": "C07-C15 uses reviewed anchors for exact 05:00 contradiction, 05:10/05:30 signing times, no retraction and no priority. No material text remains unreadable; underlying testimony conflict remains unresolved. Original OCR retained."
-    }
-  ]
-}

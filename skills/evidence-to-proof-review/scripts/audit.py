@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 import re
 import shutil
+import shlex
 import subprocess
 import sys
 import tempfile
@@ -23,6 +24,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import corpus
 import corrections
 import contracts
+import journal
 
 VERSION = '4.24.0'
 MODULE_NAME = r'[A-Za-z_][A-Za-z0-9_]*(?:\.[A-Za-z_][A-Za-z0-9_]*)*'
@@ -153,6 +155,16 @@ def model_inventory(root):
 
 
 def prepare(args):
+    result = _prepare(args)
+    root = Path(result['workspace'])
+    journal.append(root, phase='intake', status='completed', title='Workspace prepared',
+        description='The preparation helper preserved inputs and initialized the workspace. This event does not record agent analysis or semantic review.',
+        outputs=[p for p in ('run.json', 'manifest.json', 'claims.json') if (root / p).is_file()],
+        command=getattr(args, '_journal_command', None), result='Workspace preparation returned successfully.')
+    return result
+
+
+def _prepare(args):
     lean_version = validate_lean_version(getattr(args, 'lean_version', VERSION))
     proposed_temp = Path(args.temp_root or Path.cwd() / 'tmp').resolve()
     if any(Path(p).is_dir() and proposed_temp.is_relative_to(Path(p).resolve()) for p in args.sources):
@@ -218,6 +230,7 @@ def prepare(args):
     (root / 'source-ledger.jsonl').write_text(''.join(json.dumps(row, ensure_ascii=False) + '\n' for row in ledger_rows), encoding='utf-8')
     write_json(root / 'input/report-ledger.json', paragraphs((root / 'input/report.md').read_text(encoding='utf-8')))
     write_json(root / 'input/audit-policy.json', {'contract_version': 2,
+        'require_claim_traces': bool(getattr(args, 'require_claim_traces', False)),
         'brief_origin': 'provided' if brief else 'inferred', 'lean_version': lean_version,
         'default_mandate': 'Audit every material report claim and its justification against the supplied sources; derive and disclose criteria without assuming the claim.'})
     contracts.initialize(root)
@@ -484,6 +497,7 @@ def check(args):
         required_version = required_lean_version(root)
         results['lean_version_required'] = required_version
         data = findings(root)
+        results['claim_trace_contract'] = journal.validate_claim_traces(root, data, getattr(args, 'journal_root', None))
         results['audit_contract'] = (contracts.validate(root, data) if (root / 'input/audit-policy.json').is_file() else
             {'version': 1, 'coverage': 'legacy_unreconciled', 'limitation': 'This older bundle has no enforced claim register or structured argument audit.'})
         if (root / 'lakefile.lean').exists():
@@ -613,10 +627,12 @@ def verified(root):
 def render(args):
     root = Path(args.workspace).resolve()
     data, results = verified(root)
+    traces = journal.validate_claim_traces(root, data, getattr(args, 'journal_root', None))
     lines = ['# Evidence-backed claim audit', '', CAVEAT, '',
              ('Technical verification: executed successfully using ' + results['lean_version_observed']
               if results['status'] == 'passed' else 'Formal verification: not run. Documentary audit only.'), '',
              '[Proof results](proof-results.json) · [Input manifest](input/manifest.json)', '']
+    lines += ['Individual trace profile: ' + traces['profile'] + '.', '']
     coverage = ['# Claim coverage', '']
     if (root / 'input/audit-policy.json').is_file():
         contract_lines = contracts.render_coverage(root, data)
@@ -644,6 +660,9 @@ def render(args):
                     coverage += ['Reason: ' + item['reason'], '', 'Impact: ' + item['impact'], '']
     coverage += ['', '## Claim outcomes', '', '| Claim | Semantic state | Argument status | Formal status |', '|---|---|---|---|']
     for f in data:
+        if 'executive_summary' in f:
+            summary = f['executive_summary']
+            lines += [f'## {f["claim_id"]}: Executive summary', '', summary['conclusion'], '', 'How verified: ' + summary['how_verified'], '', 'Limits: ' + summary['limits'], '']
         lines += [f'## {f["claim_id"]}', '', '### Exact report claim', '',
                   f'`input/report.md#{f["report_anchor"]}`', '', '> ' + f['report_quote'].replace('\n', '\n> '), '',
                   '### Verification question', '', f['question'], '', '### Source evidence', '']
@@ -768,6 +787,7 @@ def main(argv=None):
     prep = commands.add_parser('prepare')
     prep.add_argument('--brief', help='Optional review instructions; otherwise derive criteria from the report and sources'); prep.add_argument('--report', required=True)
     prep.add_argument('--sources', required=True, nargs='+'); prep.add_argument('--temp-root', default=None)
+    prep.add_argument('--require-claim-traces', action='store_true', help='Require individually recorded claim steps and executive summaries')
     prep.add_argument('--indexed', action='store_true', help='Use coordinate-preserving adapters and the disk-backed corpus index')
     prep.add_argument('--lean-version', default=VERSION, help='Stable Lean 4 release pinned into this audit input policy')
     prep.add_argument('--ocr-language', default='eng')
@@ -793,14 +813,40 @@ def main(argv=None):
     sub = commands.add_parser('doctor'); sub.add_argument('--lean')
     for name in ('check', 'render', 'export'):
         sub = commands.add_parser(name); sub.add_argument('--workspace', required=True)
+        sub.add_argument('--journal-root', help='Containing audit root for phases.jsonl')
         if name == 'check':
             sub.add_argument('--lean', required=True); sub.add_argument('--timeout', type=float, default=60)
             sub.add_argument('--checker', help='Optional compatible lean4checker binary for fresh environment replay')
             sub.add_argument('--checker-timeout', type=float, default=300)
         if name == 'export': sub.add_argument('--destination', required=True)
     args = parser.parse_args(argv)
+    invocation = shlex.join([sys.executable, str(Path(__file__).resolve()), *(sys.argv[1:] if argv is None else argv)])
+    args._journal_command = invocation
     try:
-        result = globals()[args.command.replace('-', '_')](args)
+        operation = globals()[args.command.replace('-', '_')]
+        if args.command in ('check', 'render'):
+            root = Path(args.workspace)
+            phase = 'verification' if args.command == 'check' else 'reporting'
+            journal_root = getattr(args, 'journal_root', None)
+            journal.append(root, journal_root=journal_root, phase=phase, status='started',
+                title=f'{args.command} helper started', description='Automated helper execution; semantic phases are recorded separately by the agent.',
+                inputs=[p for p in ('findings.json', 'claims.json') if (root / p).is_file()], command=invocation)
+            try:
+                result = operation(args)
+            except (AuditError, OSError, UnicodeError, ValueError, corpus.sqlite3.Error) as exc:
+                journal.append(root, journal_root=journal_root, phase=phase, status='failed',
+                    title=f'{args.command} helper failed', description=str(exc), command=invocation, result='Helper failed; no success is asserted.')
+                raise
+            names = ('proof-results.json', 'environment.lock') if args.command == 'check' else ('audit-report.md', 'coverage.md')
+            outputs = [p for p in names if (root / p).is_file()]
+            if args.command == 'check':
+                for directory, pattern in (('checks', '*.lean'), ('logs', '*.log')):
+                    outputs.extend(p.relative_to(root).as_posix() for p in sorted((root / directory).rglob(pattern)) if p.is_file())
+            journal.append(root, journal_root=journal_root, phase=phase, status='completed',
+                title=f'{args.command} helper completed', description='The helper returned successfully; its output defines the scope of this result.',
+                outputs=outputs, command=invocation, result='Helper returned successfully.')
+        else:
+            result = operation(args)
     except (AuditError, OSError, UnicodeError, ValueError, corpus.sqlite3.Error) as exc:
         print(json.dumps({'error': str(exc)}), file=sys.stderr)
         return 1

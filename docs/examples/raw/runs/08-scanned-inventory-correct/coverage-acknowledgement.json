@@ -1,9 +1,0 @@
-{
-  "documents": [
-    {
-      "document_id": "D00008",
-      "reason": "OCR ingestion remains partial due low-confidence characters and omitted pale bottom D quantity field. Every original scan page was actually viewed. Five controlled reviewed-0001 transcriptions correct legible markers/time/punctuation; original OCR and histories remain. Page5 reviewed text covers the legible main text, not a definitive transcription of the pale bottom field.",
-      "impact": "The exact A/B container counts and signed movement stages used for formal arithmetic were legible and corroborated by journal/correspondence. The faint D numeral is not promoted into accepted quantity: receiver acceptance is blank, unsigned messages differ, and recount evidence is missing. C08-OK-11 explicitly reports this unresolved acceptance; no numeric proof uses a guessed D amount. No page is omitted, but no complete visual-to-text extraction of the pale field is claimed."
-    }
-  ]
-}

@@ -1,4 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target008.lean
-Audit.manifestExact : Audit.manifest.length = 3 ∧
-  Audit.manifest.Nodup ∧ Audit.manifest = [Audit.Entry.a01, Audit.Entry.a02, Audit.Entry.a03]
-'Audit.manifestExact' does not depend on any axioms

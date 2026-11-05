@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target004.lean
-Audit.missingApprovalTotal : Audit.exceptionTotal = 75000
-'Audit.missingApprovalTotal' does not depend on any axioms

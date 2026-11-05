@@ -1,6 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target026.lean
-Audit.claim12 : Audit.Lot.A ∈ Audit.completeMovementLots ∧
-  Audit.Lot.B ∈ Audit.completeMovementLots ∧ ¬Audit.Lot.D ∈ Audit.completeMovementLots
-'Audit.claim12' depends on axioms: [propext]
-
-[exit_code=0; elapsed_seconds=0.199]

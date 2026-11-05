@@ -1,3 +1,0 @@
-$ /tmp/lean-4.24.0-linux/bin/lake env lean checks/Target016.lean
-Audit.claim10 : Audit.NoRevivalBefore6
-'Audit.claim10' depends on axioms: [propext]

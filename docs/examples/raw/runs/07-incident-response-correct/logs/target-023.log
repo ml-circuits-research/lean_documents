@@ -1,4 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target023.lean
-Audit.noMaintenanceForA : Audit.effectiveStart 1 false Audit.detectionA 0 180 = Audit.detectionA ∧
-  Audit.effectiveStart 1 true Audit.detectionA 0 180 = Audit.detectionA
-'Audit.noMaintenanceForA' does not depend on any axioms

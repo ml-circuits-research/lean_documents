@@ -1,5 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target003.lean
-Audit.claim03 : Audit.bookA = 148
-'Audit.claim03' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.204]

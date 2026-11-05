@@ -1,1 +1,0 @@
-Inspect the report and the sole source file. Infer whether each claim concerns source contents, evidential determination, or an actual clearance event. Check zero bytes without inventing a quotation. No external search or completeness rule. Classify both conclusions and assess their stated arguments separately.

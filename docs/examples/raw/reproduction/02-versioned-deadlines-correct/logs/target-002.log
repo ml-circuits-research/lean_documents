@@ -1,7 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target002.lean
-Audit.claim02 : Audit.revision Audit.d202 = Audit.Revision.one ∧
-  Audit.d202.received + 1 = Audit.boundary ∧
-    ∀ (a : Nat), Audit.revision (Audit.withAssignment Audit.d202 a) = Audit.Revision.one
-'Audit.claim02' does not depend on any axioms
-
-[exit_code=0; elapsed_seconds=0.239]

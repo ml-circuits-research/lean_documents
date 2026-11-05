@@ -1,3 +1,0 @@
-$ /home/salboaie/.local/share/evidence-to-proof/toolchains/lean-4.24.0-linux/bin/lake env lean checks/Target015.lean
-Audit.claim05 : Audit.delegated 41 20 = true
-'Audit.claim05' does not depend on any axioms
